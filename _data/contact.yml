@@ -14,9 +14,9 @@
   icon: "fa-solid fa-headset"
   url: 'https://cal.com/muness'
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+# - type: email
+#   icon: "fas fa-envelope"
+#   noblank: true # open link in current tab
 
 # - type: rss
 #   icon: "fas fa-rss"
