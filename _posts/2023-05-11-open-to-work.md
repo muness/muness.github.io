@@ -7,7 +7,7 @@ comments: false
 pin: true
 ---
 
-I want to help you make 10x through stronger data foundations and a focus on the most important.
+I want to help 10x you through strong data foundations and a focus on the most important.
 
 Why you want to talk to me:
 
