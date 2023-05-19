@@ -1,6 +1,7 @@
 ---
 layout: default
 # Index page
+title: "Home"
 ---
 
 # Muness Castle
