@@ -4,5 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Muness is a Executive with 20+ years of experience in technology organizations. I have expertise in strategy, management, organizational design and software architecture. He is known for getting the right things done by developing autonomous, mission-driven teams whose members challenge and support one another.
