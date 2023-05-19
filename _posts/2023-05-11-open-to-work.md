@@ -1,7 +1,6 @@
 ---
 title: "Open to Work!"
 date: 2023-05-11 10:00:00 +0500
-tags: [open-to-work]     # TAG names should always be lowercase
 author: muness
 toc: false
 comments: false
