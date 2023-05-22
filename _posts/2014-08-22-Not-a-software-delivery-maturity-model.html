@@ -1,0 +1,77 @@
+---
+layout: post
+title: Not a software delivery maturity model
+date: 2014-08-22 21:11:51 UTC
+updated: 2014-08-22 21:11:51 UTC
+comments: false
+categories: ["agile", "change", "continuous improvement",  "extreme programming", "lean practices"]
+---
+<h3>Not a what?</h3>
+<p/>
+Over years of building software, I've found that when there's a performance problem, I usually jump to conclusions, put in a crazy fix and observe that it makes no real difference. I then remember what I've learned a dozen times, step back, instrument the systems involved, collect and analyze performance data. Lo and behold, the solution put in place usually has a significant impact.
+<p/>
+<blockquote>Optimization matters only when it matters. When it matters, it matters a lot, but <a href="http://www.flounder.com/optimization.htm">until you know that it matters, don't waste a lot of time doing it</a>.</blockquote>
+<p/>
+In my experience, the same tendency to guess at problems and apply fixes randomly applies to improving software teams. Here's a process I use to avoid such unilateral process changes and instead talk openly about issues and create consensus before acting.
+<h3>But we follow [insert methodology here]. Why would we change anything?</h3>
+At OOPSLA 2005, <a href="http://www.vanderburg.org/">Glenn Vanderburg</a> presented a paper, <a href="http://www.vanderburg.org/Writing/xpannealed.pdf">A Simple Model of Agile Software Processes – or – Extreme Programming Annealed (PDF)</a> that I've thought about every few months since.
+<p/>
+My takeaway: XP practices are a coherent set of practices that support the success factor whose health is necessary for software. Embracing the individual practices isn't the point. What matters is ensuring that those success factor are healthy. If you're aware and mature enough to swap a practice out while maintaining the health of that area, go for it; by doing so, over time you can create a process that better suits your needs than the generic one.
+<h3>Let's get to it...</h3>
+For a software delivery organization, here's the list of those success factor that I start with:
+<ul>
+<li>Asthetic design: Does it hurt my eyes to use this app?</li>
+<li>Company direction: What are our goals? What do we do? What are our values? Does everyone understand them?</li>
+<li>Design and architecture: Is your system robust? Is the emergent architecture you have today what you'd use if you were designing the system today? Can you diagnose issues across systems?</li>
+<li>Dev: Are the individual systems easy to change? Do they fail too often?</li>
+<li>Inter-team collaboration: Do teams work well together?</li>
+<li>Intra-team collaboration: Do members of a team feel like they have common goals and priorities?</li>
+<li>People: Are we supporting people? Are we giving people information they need? How do well do we make decisions?</li>
+<li>Portfolio management: Are we focusing our teams on the right projects?</li>
+<li>Product vision: Are we building a system that makes for <a href="http://vimeo.com/theblnbusinessofsoftware/review/54469442/9e94db785d">badass users</a>?</li>
+<li>Reliability: Can we run this? Can we recover quickly enough when we fail?</li>
+<li>Scalability: Do we understand the scaling characterstics of this system and are they appropriate for what we're doing?</li>
+<li>Security: Do we understand the security risks and are they appropriate for this system?</li>
+<li>Usability: Are we building a system people enjoy using?</li>
+</ul>
+<h3>Now what?</h3>
+As a team, review the list of success factors and come up with ones that work for you. Then use interviews and <a href="http://en.wikipedia.org/wiki/Blink_(book)">expert intuition</a> to assess which of the success factors matter most right now and how the team thinks you're doing. Here's an example:<br/>
+<img border="0" src="http://1.bp.blogspot.com/-nM0GuKa65sQ/U83OgANMAmI/AAAAAAAAF60/JiekzujillE/s600/Capture.PNG" /><br/><img border="0" src="http://2.bp.blogspot.com/-zgE7MWeUrsc/U83NU5ledwI/AAAAAAAAF6g/c6X3luLs-UI/s600/Capture-2.PNG" />
+<p/>
+Note that I sorted the list by ratio of competence relative to perceived importance. That gives you a suggested order of what you should tackle first. For the first 3 factors, come up with a list of practices that people on the team has used, seen used or have heard or read about that may help you improve it. With the people who will be impacted by any changes, review current practices and potential practices you could introduce. Finally, pick one that you can try quickly at a small scale. Now <a href="http://leanchange.org/2014/06/why-changes-should-be-called-experiments/">experiment</a>.
+<p/>
+For example, here are some practices I'd consider implementing when looking for ways to improve code quality:
+<ul>
+<li>CI</li>
+<li>Code reviews</li>
+<li>Coding standard</li>
+<li>Pair programming</li>
+<li>Pull requests</li>
+<li>QA by developers who didn’t develop the code</li>
+<li>Refactoring as an explicit, expected step during development</li>
+<li>Static code analysis</li>
+<li>TDD</li>
+</ul>
+<h3>What about me?</h3>
+If you're assessing a software delivery organization, formally or not, come up with your own <em>not a software delivery maturity model</em> success factors list and practice list. It should be a list that you can relate to your own past experiences as a team.
+<p/>
+Most importantly, remember that improvement isn't something you do in isolation but is rather a team activity. With the whole team working together, you'll gather better information, have a more nuanced analysis, a better chance of consensus and ownership of the improvement process.
+<h3>You just don't get us: we're a special snowflake!</h3>
+I concede that you are unique. You should think of other people's practices as tools in a global toolkit. You get to pick which ones are relevant to you. But don't create all of your practices from scratch or assume that other people's experiences are irrelevant to you.
+<p/>
+<blockquote>Immature poets imitate; mature poets steal; bad poets deface what they take, and good poets make it into something better, or at least something different. <em>The good poet welds his theft into a whole of feeling which is unique, utterly different from that from which it was torn</em>; the bad poet throws it into something which has no cohesion. A good poet will usually borrow from authors remote in time, or alien in language, or diverse in interest. -- <a href="http://www.bartleby.com/200/sw11.html">T.S. Elliot</a></blockquote>
+<h3>Doesn't this model imply I may not need some practices already in place?</h3>
+Absolutely.<p/>
+But you may not want to stop them: You don't want to kill a practice that people value or enjoy. If you see a conflict between an existing practice and a potential one, be honest; explain to the team where you see the conflict and work with them to resolve it.
+<h3>Should I <em>only</em> implement changes that improve the weakest factor?</h3>
+No! Limiting the number of improvement projects your team is implementing indicates that you have a bottleneck in your improvement process, probably a manager. If so, you're <a href="http://www.leanblog.org/2014/07/picking-on-the-pick-chart/">going about it the wrong way</a>.<p/>
+Improvement processes can be going on at once improving various factors.
+<h3>What if the improvement process takes a long time to implement?</h3>
+Then implement a different practice. Or find a way to chop it up into smaller chunks. You need <a href="http://progressprinciple.com/books/single/the_progress_principle">lots of small wins</a>, at least at first.
+<p/>Or do it anyway. The key is to find a way to measure results along the way so you can adapt or abort it if it isn't working.
+<h3>Why do you say this <em>not</em> a software delivery maturity model?</h3>
+It isn't <em>a</em> model but rather <em>your</em> model: It only works in context; customize it before using.
+<h3>Now what?</h3>
+If you think this might help, use it! Over the next week, draft a version of the table for your team. Share it with your team members and incorporate their feedback. Pick one of the red areas in the table, and introduce one practice that could help improve that area. Set a timeframe for the experiment and iterate.
+<hr>
+<p/>Thanks to <a href="https://twitter.com/bendycode">Stephen Anderson</a> for discussing the process and <a href="http://jasonrudolph.com/">Jason Rudolph</a> for feedback on making the post more relevant and actionable.

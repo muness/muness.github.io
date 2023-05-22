@@ -1,0 +1,110 @@
+---
+layout: post
+title: Testing declarative code
+date: 2008-04-12 14:00:29 UTC
+updated: 2008-04-12 14:00:29 UTC
+comments: false
+categories: bdd tdd waste
+---
+<p>For a while now, I've had my doubts about the usefulness of one aspect of test driven development (which applies equally well to behavior driven development): that it should be done 100% of the time.</p>
+
+<p>The first time I came across this, was at ThoughtWorks.  The question was whether we should TDD declarative delegations.  I remember a several hour long conversation about the merits of tests for Forwardable based delegations.
+<code>
+<pre>
+class A
+  extend Forwardable
+  def initialize(b)
+    @b = b
+  end
+  def_delegator :@b, :some_method  # Should I write a test before writing this declaration?!
+end
+</pre>
+</code>
+</p>
+
+<p>
+A specification for this declaration would be:
+<code>
+<pre>
+describe "A" do
+  it "delegates some_method to b" do
+    a = A.new(stub(:some_method => :x))
+    a.some_method.should == :x
+    # or you could use the <a href=http://handoff.rubyforge.org/>Handoff</a> assertion:
+    assert_handoff.from(A.new).to(:@b).for_method(:some_method)
+  end
+end
+</pre>
+</code>
+</p>
+
+<p>I didn't get the fuss -- it was clear to me that testing such delegations was wasteful and a maintenance hassle.  But I didn't realize that this was part of a larger argument.</p>
+
+<h1>Not an isolated case</h1>
+<p>Since then, I've learned that to some developers this is a general rule.  Here's another example, re testing stock ActiveRecord validation declarations, e.g.:
+<code>
+<pre>
+class Model < ActiveRecord::Base
+  validates_presence_of :attr_1
+end
+</pre>
+</code>
+</p>
+
+<p>
+The test for this would be:
+<code>
+<pre>
+describe "Model" do
+  it "validates_presence_of :attr_1" do
+    model = Model.new
+    model.valid?
+    model.errors.on(:attr_1).should == "must not be blank"
+  end
+  # or you might write a helper that reflects on validates_presence_of declarations
+  test_model_validates_presence_of Model, :attr_1
+end
+</pre>
+</code>
+</p>
+
+<p>It took me a while (too long) to get the general pattern: these discussions I kept finding myself in all had to do with testing declarations.</p>
+
+<h1>How did we get here?</h1>
+
+<p>Test driven development as best as I can tell is a - pragmatic - descendant of formal specifications:
+<blockquote>
+"A formal specification is a mathematical description of software or hardware that may be used to develop an implementation. It describes what the system should do, not how the system should do it. Given such a specification, it is possible to use formal verification techniques to demonstrate that a candidate system design is correct with respect to the specification."
+</blockquote>
+</p>
+
+<p>
+<strong>Writing formal specifications for the majority of the software isn't practical.  Writing tests first provides us a simple, practical way to write executable specifications.</strong>  True, they don't give us the ability to use "formal verification techniques" to prove anything about our code, but they do give us confidence that our code does what our tests say the code does (as much confidence as we have in our tests).
+</p>
+
+<h1>The rule</h1>
+
+<p>The rule regarding TDD is: If you can TDD it and it's destined to be production code, you should TDD it.</p>
+
+<p>
+The problem I find with this rule is that it causes us to write tests like those above that duplicates the declarative code.  At best case it goes like this:
+<code>
+<pre>
+  # We write this code first in the spec:
+  test_model_validates_presence_of Model, :attr_1 
+  # we run it and watch it fail...
+  # and then we write this in the model class:
+  validates_presence_of :attr_1 
+  # rerun the test and watch it pass...
+</pre>
+</code>
+</p>
+
+<p>
+I find this wasteful:  We first implement the <code>test_declaration_is_called</code> (in this case, <code>test_model_validates_presence_of</code>) for every declaration.  After all that work (and not to mention code that we have to maintain) we end up with a test that tells us what the declaration itself does.  But with less readability and intent.  Indeed, <strong>declarative code is in fact formal specification</strong>.
+</p>
+
+<h1>Guidelines not rules</h1>
+<p>Writing tests first is a great guideline.  I do it <strong>almost</strong> all the time.  But I don't do it all the time.  It makes me <em>angry</em> when I change declarative code only to have a test that looks exactly the same fail as well.</p>
+
+<p>OK, tests for declarations don't really make me angry.  But they do make me wonder if the developer who wrote the test really likes to answer the question, "are you sure that you're sure that you want to do what you just said you want to do?"</p>

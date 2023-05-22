@@ -1,0 +1,26 @@
+---
+layout: post
+title: It's your data, not TripIt's... an example of dragging information out of your buried data
+date: 2014-08-26 15:36:24 UTC
+updated: 2014-08-26 15:36:24 UTC
+comments: false
+categories: spreadsheets tax tripit
+---
+<em>Update</em>: I have another <a href="http://muness.blogspot.com/2014/07/its-your-data-not-tripits-take-2.html">blogpost</a> with an example of how to pull your trip it data (using a Ruby library and OAuth) into an XML file.
+
+<hr/>
+
+My tax accountant recently asked me for a rundown of days I had traveled for work in 2013. I use TripIt pro to track my travel, this should be trivial. Hooray for SaaS!<br />
+<br />
+Alas, I log in, and look around... nah, no reports here. The closest thing is the <a href="https://www.tripit.com/trip/listPast">past trips list</a>. Alas I can't filter by a date range or destination or purpose. (Aside: the "Traveler" filter is implemented client side and takes down the 10 listed to 0-10 entries. A minimal viable version of the feature. And now we can ignore it. Bah humbug, I say!) No matter, I can do this myself in a spreadsheet, I'll just export my trips out to a csv...<br />
+<br />
+Thwarted again! TripIt doesn't provide an export from what I can tell. A <a href="http://bit.ly/1q9FrQn">google search leads me in the right direction</a>. The first link is to a discussion about moving data to other systems for analysis of one's own flight data. It refers to <a href="http://openflights.org/">OpenFlights.org</a> being able to <a href="http://openflights.org/blog/2012/03/16/import-flights-from-tripit/">import TripIt</a> flight information. A couple of clicks later and yet another sign up to yet another site and a dozen more click I had my TripIt data imported to Openflight.org. And another click later I had it exported to a <a href="https://docs.google.com/spreadsheets/d/16f1fgjvuyW3vvCHQHe6PCfoTSHT0U6ToZ_-Z0H28W4E/edit#gid=0">csv</a>. Finally, my - flight - data is mine!<br />
+<br />
+As I am sure you've guessed, I am not really done shaving yaks. Along the way the data got stripped down to flight information, not trip information. So I have to <a href="https://docs.google.com/spreadsheets/d/16f1fgjvuyW3vvCHQHe6PCfoTSHT0U6ToZ_-Z0H28W4E/edit#gid=1888096476">recreate that</a>.<br />
+<br />
+Finally I have the data my accountant needs. But I don't want to send him csv, but rather just the info he wants: which days did I not work in Ohio, <a href="https://docs.google.com/spreadsheets/d/16f1fgjvuyW3vvCHQHe6PCfoTSHT0U6ToZ_-Z0H28W4E/edit#gid=2024031244">a pivot table later, and I have what he wants</a>. There's actually a bug in this calculation, but I'll leave grumbling about the issues I have with Google Spreadsheets vis a vis Excel for another post.<br />
+<br />
+Unlike my previous post, I didn't write any Python or Ruby to solve my problem though I <a href="https://github.com/ianalexander/tripit-python">was</a> <a href="https://github.com/flextrip/tripit">tempted</a> (and still am: when I do this next time I'll probably use the ruby library to generate the csv in hopes that I don't have to fill in trip purpose, fill in return automatically and get non-flight trip data in). Using spreadsheets in lieu of real programming, I've been able to tackle a surprising number of problems over the last couple of years. Little ones like the one presented, but also more interesting problems like analyzing sales trends for a client and ball-parking the completion date for a 6+ month data center migration so we could schedule with vendors, business teams and engineering teams. Or tracking down why Akamai CDN usage had gone up over a couple of quarters and prioritizing which technical fixes to put in place first. Or calculating billable utilization rates monthly by team over a couple of years.<br />
+<br />
+If you want to hear more about one of those cases <a href="http://twitter.com/muness">let me know</a>. For now, I encourage you to put your data in spreadsheets and play around: they're good for a lot more than laying out your data into a grid.<br />
+<br />

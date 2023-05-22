@@ -1,0 +1,16 @@
+---
+layout: post
+title: Where there's smoke signals...
+date: 2008-03-14 17:37:03 UTC
+updated: 2008-03-14 17:37:03 UTC
+comments: false
+categories: build campfire communication ruby tools
+---
+In a <a href=http://muness.blogspot.com/2008/02/ccrb-campfire-notifier-released.html>previous post</a>, I briefly described how we were using cc_campfire_notifier to get build success/failure notifications in campfire.  cc_campfire_notifier has lost momentum over the last couple of months.  Since we actively rely on the notifier for several projects, we've now forked it as <A HREF=http://opensource.thinkrelevance.com/wiki/smoke_signals>smoke_signals</a>.
+<p>The first release offers the following improvements:
+<ul>
+<li>Each notification includes a link back to the CruiseControl.rb build (so you have one-click access to the full details for each build).
+<li>Recognizes apr_error errors as SVN errors (so you'll spend less time scratching your head over generic build failure messages).
+<li>Speaks once into the campfire room whenever an unexpected error occurs (as opposed to speaking once per line in the backtrace).
+</ul> 
+<p>Check out the notifier's <a href=http://opensource.thinkrelevance.com/wiki/smoke_signals>home page</a> for installation instructions or head on over to <a href=http://github.com/relevance/smoke_signals/tree>GitHub to browse the code</a>.

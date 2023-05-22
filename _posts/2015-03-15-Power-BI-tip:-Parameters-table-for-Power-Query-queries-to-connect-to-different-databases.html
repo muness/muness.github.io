@@ -1,0 +1,39 @@
+I've been using Microsoft's Power BI to help a wonderful client of mine build self-service BI for their analysts and away from a system where they generate csv data dumps out of a Mainframe and then load them manually into Excel spreadsheets.
+<p>
+Most analysts love to use Excel, so Power BI is a no-brainer for getting them their data but <a href="https://support.office.com/en-us/article/Introduction-to-Microsoft-Power-Query-for-Excel-6E92E2F4-2079-4E1F-BAD5-89F6269CD605">Power Query</a> M, though incredibly powerful, doesn't have a way to switch which DB to use. As a developer who develops against my local machine, tests in a test environment and only then promotes my code to production and gives it to the users, is unacceptable.
+<p>
+Here's a workaround I came up for specifying which Server and DB to use through parameters. It's based on <a href="http://blog.oraylis.de/2013/05/using-dynamic-parameter-values-in-power-query-queries/">Using dynamic parameter values in Power Query Queries</a>. That approach doesn't explain how to use it to connect to different Servers or DBs, which it turns out is trivial, but it also expects the order of parameters not to change, something that strikes me as much too fragile.
+<p>
+First, create a new Sheet and in it, create a table in Excel. You'll need to columns, <code>Name of Parameter</code> and <code>Value</code>. For dynamically specifying the server and database to use, add two rows, with the <code>Name of Parameter</code> of <code>DB Server</code> and <code>DB</code>. Under the <code>Value</code> enter the server and database you want to use.
+<br/>
+<a href="http://1.bp.blogspot.com/-P8U5nQToLVk/VQX_ouki2cI/AAAAAAAAGhU/et8q4LpdoKc/s1600/Parameters%2Btable.PNG" imageanchor="1" ><img border="0" src="http://1.bp.blogspot.com/-P8U5nQToLVk/VQX_ouki2cI/AAAAAAAAGhU/et8q4LpdoKc/s400/Parameters%2Btable.PNG" /></a>
+<br/>
+Don't forget to (Home ribbon) "Format As Table" then (Table Tools / Design ribbon) set the table name to what you want to call it, Parameters, in this example.
+<p>Now, we'll use these parameters in our Power Query queries to the DB. To edit your query: (Power Query ribbon) Show Pane, Right click on the query. Then, in the Query Editor that pops up, (in the Home ribbon), click "Advanced Editor". This will show you the source code of the in <a href="https://support.office.com/en-us/article/Learn-about-Power-Query-formulas-6BC50988-022B-4799-A709-F8AAFDEE2B2F">Power Query Formula language</a> (usually called "M" by Power BI users). Here's an example query:
+<pre><code>
+let
+    Source = Sql.Database("devserver", "maindb", [Query="SELECT * FROM [Reporting].[Users]"])
+in
+    Source
+</code>
+</pre>
+
+<p>We're going to change the query to load the parameters and use them instead of the hardcoded "dbserver" and "maindb" in Sql.Database function call.
+
+<pre><code>
+let
+    Parameters = Excel.CurrentWorkbook(){[Name="Parameters"]}[Content],
+    DBServer = Table.SelectRows(Parameters, each [Name of Parameter] = "DB Server"){0}[Value],
+    DB = Table.SelectRows(Parameters, each [Name of Parameter] = "DB"){0}[Value],
+
+    Source = Sql.Database(DBServer, DB, [Query="SELECT * FROM [Reporting].[Users]"])
+in
+    Source
+</code>
+</pre>
+
+<p>You'll then change every query that uses this DB to similarly get those parameters first and then use them in the Sql.Database call. The code duplication is unfortunate. I tried a couple of other approaches that take advantage of Power Query's (creating a power query for each of the parameters and creating a function that passes the parameter name) but Power Query's security model doesn't (at least of March 2015) allow another Power Query query or function when retrieving data from an external source.
+
+<p>We're done. To try it out and use a different Server or DB, modify the Parameters table as necessary then refresh the individual query (right click on the query and refresh) or all your queries (Data ribbon then Refresh All).
+
+<p>If you've never connected to the new server via power query, you'll get a popup asking for them as usual when first connecting to a new database. That popup only works properly when you refresh a single query, so you'll want to do that if it looks like your Refresh All is hanging.
