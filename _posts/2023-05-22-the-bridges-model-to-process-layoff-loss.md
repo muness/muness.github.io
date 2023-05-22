@@ -37,14 +37,19 @@ The model also specifies four tactics to respond to loss, along with their defin
 ## My losses and how I am dealing with them
 
 I went over the types of losses and identified the ones I felt the most. I then chose how to respond to each.
+
 - **Structure** is important to me. As someone with a tendency towards depression when I am not productive, I find structure to be a major help.
+
    During a typical workday I start with a workout, prep for the day (reviewing my mid-term goals, weekly goals and daily agenda). I then make up a daily planner with the meetings for the day and then slot in my tasks and breaks into the buckets of time that remain.
     Without work and the 5-7 meetings a day I usually have, the idea of letting the structure go was appealing. Then I remembered my tendency to spiral. So I decided to **restore** the structure: I still wake up early, get a workout in and make up an agenda every day.
 - I've learned to develop **attachments** at work. I spend most of my time with my coworkers. Remote or not, we face challenges together, have fun and even take coffee breaks.
-    The good thing about friendships you make at work, I've learned, is that they out survive your working relationship. So I've **restored** many of these, meeting with some "work friends" periodically. I've also learned to **replace** some of the more casual, weak connections at work through social networks, checking in on folks once in a while and joining groups with common interests (rucking, IT execs, ex-\<company> slack channels).
+
+    The good thing about friendships you make at work, I've learned, is that they outlive your working relationships. So I've **restored** many of these, meeting with some "work friends" periodically. I've also learned to **replace** some of the more casual, weak connections at work through social networks, checking in on folks once in a while and joining groups with common interests (rucking, IT execs, ex-\<company> slack channels).
 - Loss of **future** aspirations and goals has been a tough one. My teams and I had hit stride and were building momentum. We were working on a cool LLM-based project and how to measure whether interactions were successful. We were defining success for users and collaborating with many other teams in those measurements.
+
     I've **replaced** those aspirations with new ones around reaching more people through writing and being more holistic in how I measure success in all manner of things.
 - In the past loss of **purpose** was one that got to me. And it took me many months to process it. But when I did, it was through a major **redesign**: I decided to switch from application development to data engineering and insights.
+
     This time, my purpose hasn't changed: I am want to help groups of people achieve things that are important to them and to do them better. The context in which I am doing this in is different: I am trying to help my friends, former colleagues and broader network.
 
 ## Change happens. Embrace loss and grow through it
@@ -57,7 +62,7 @@ You got this.
 
 ## Resources
 
-- [Books by William Bridges | Transition Management Leaders (wmbridges.com)](https://wmbridges.com/books/)
+- [Books by William Bridges](https://wmbridges.com/books/)
 - [Bridges' Transition Model - Guiding People Through Change by Managing Endings (mindtools.com)](https://www.mindtools.com/afhbe6s/bridges-transition-model)
-- At The Table episode [80. Change is Easy, Transition is Hard | The Table Group](https://www.tablegroup.com/80-change-is-easy-transition-is-hard/) and [Transition-Management](https://de7pikzj4hvyk.cloudfront.net/wp-content/uploads/2021/05/04155840/Transition-Management.pdf) leave behind.
-- At The Table episode [81. Navigating the Neutral Zone | The Table Group](https://www.tablegroup.com/81-navigating-the-neutral-zone/)
+- At The Table episode [80. Change is Easy, Transition is Hard](https://www.tablegroup.com/80-change-is-easy-transition-is-hard/) and [Transition-Management](https://de7pikzj4hvyk.cloudfront.net/wp-content/uploads/2021/05/04155840/Transition-Management.pdf) leave behind.
+- At The Table episode [81. Navigating the Neutral Zone](https://www.tablegroup.com/81-navigating-the-neutral-zone/)
