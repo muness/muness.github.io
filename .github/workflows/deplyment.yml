@@ -25,37 +25,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          # submodules: true
-          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
-          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
-
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v3
-
-      - name: Build the site in the jekyll/builder container
-        run: |
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
-
-      # - name: Test site
-      #   run: |
-      #     docker run \
-      #     -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-      #     jekyll/builder:latest /bin/bash -c \
-      #     "chmod -R 777 /srv/jekyll && bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href"
-
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          path: "${{ github.workspace }}/_site${{ steps.pages.outputs.base_path }}"
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
 
   deploy:
     environment:
