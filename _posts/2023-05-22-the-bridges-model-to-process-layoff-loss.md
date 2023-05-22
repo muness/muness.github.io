@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2023-05-11 10:00:00 +0500
+date: 2023-05-22 11:00:00 +0500
 author: muness
 title: 'Using the Bridges Model to process Layoff Loss'
 ---
