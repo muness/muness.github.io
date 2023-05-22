@@ -1,4 +1,11 @@
-# The Bridges Model to process Layoff Loss
+---
+comments: true
+date: 2023-05-11 10:00:00 +0500
+author: muness
+title: 'Using the Bridges Model to process Layoff Loss'
+---
+
+# Using the Bridges Model to process Layoff Loss
 
 I was laid off from Shopify recently. I'd used the Bridges Transition Model in the past to help teams I worked with process change. So I thought I'd apply it to myself.
 
