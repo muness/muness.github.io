@@ -23,3 +23,7 @@ platforms:
   # - type: Weibo
   #   icon: "fab fa-weibo"
   #   link: "http://service.weibo.com/share/share.php?title=TITLE&url=URL"
+
+  - type: Get future posts in your inbox
+    icon: "fa-solid fa-inbox"
+    link: "https://follow.it/muness-castle?leanpub"
