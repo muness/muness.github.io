@@ -37,7 +37,8 @@ Today we had our first call. We did a round of introductions and the Quantix fol
   - 💡 I have a decent elevator pitch, but it's worth a concerted effort and trial run with a friend.
 - Check that your resume parses correctly. Some tools I found
   - ⚙️ [Resume Parser by Affinda](https://www.affinda.com/resume-parser) - check the json file generated! It's pretty cool how it extracts skills from each position listed. I imagine some companies lean on this to do a filter pass.
-  - ⚙️ [Resume Parser](https://resume-parser.vercel.app/) - if this one's right, my resume currently only parses the overview. Yikes!
+  - ⚙️💡 [Resume Parser](https://resume-parser.vercel.app/) - if this one's right, my resume currently only parses the overview. Yikes!
+  - ⚙️💡 [LinkedIn Resume Builder](https://www.linkedin.com/help/linkedin/answer/a551182/linkedin-resume-builder) - Haven't tried this one yet, but apparently LinkedIn's resume builder includes an ATS checker.
 
 And I'll add one more:
 
