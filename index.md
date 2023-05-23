@@ -4,7 +4,7 @@ layout: default
 title: "Home"
 ---
 
-# Hi 👋
+## Hi 👋
 
 I am Muness, a technology executive with 20+ years of experience in technology organizations.
 
