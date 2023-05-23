@@ -5,11 +5,11 @@ author: muness
 title: 'Using the Bridges Model to process Layoff Loss'
 ---
 
-# Using the Bridges Model to process Layoff Loss
+## Using the Bridges Model to process Layoff Loss
 
 I was laid off from Shopify recently. I'd used the Bridges Transition Model in the past to help teams I worked with process change. So I thought I'd apply it to myself.
 
-## Loss in the Bridges Transition Model
+### Loss in the Bridges Transition Model
 
 In the Bridges Transition Model, "transitions start with ending". And endings are about identifying and processing the losses we feel due to the change.
 
@@ -29,6 +29,8 @@ Here are the 7 types of loss defined in the Bridges Transition Model, with an ex
   - *Example:* Feeling powerless or unable to control the situation leading to the layoff or the search for a new job.
 - **Identity:** This type of loss refers to the loss of a sense of self-identity, such as due to a major life change, trauma, or illness.
   - *Example:* Losing one's sense of identity as a valued employee or team member after being laid off.
+
+### Responding to loss
 
 The model also specifies four tactics to respond to loss, along with their definitions and example of how it might be used to tackle a type of loss:
 
