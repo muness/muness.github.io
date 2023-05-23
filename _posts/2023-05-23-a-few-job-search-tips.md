@@ -16,7 +16,7 @@ Today we had our first call. We did a round of introductions and the Quantix fol
 - Some say that the [OpenToWork frame on LinkedIn](https://www.linkedin.com/pulse/how-activate-open-work-feature-your-linkedin-/) profile has led to _fewer_ interviews.
   - Suggested removing it and trying that.
   - ✅ Seemed worth a try, done.
-- A lot of people are applying to positions. As a result there's an aggressive filtering step. One of those is to **check for any mismatches between LinkedIn Profiles and resume**.
+- A lot of people are applying to positions. As a result there's an aggressive filtering step. One of those is to **check for any mismatches between LinkedIn Profiles and resume**. Specifically confirm that employment from/to and titles match between the too. It's OK to have a different level of detail in each.
   - ✅ Double checked my resume and profile.
 - After cold applying to positions check to **see if you have a connection to the hiring manager or recruiter and ask to put in an introduction/ good word** in on your behalf.
   - 💡 I need to do a better job at this:
