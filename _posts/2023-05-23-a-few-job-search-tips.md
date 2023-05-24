@@ -7,7 +7,7 @@ title: 'A few job search tips'
 
 ## A few job search tips
 
-This good folks at [Quantix](https://www.quantixinc.com/) recently set up a networking group for some IT executives. The idea is to create a community for those of us looking for positions to connect and learn from one another's experience.
+The good folks at [Quantix](https://www.quantixinc.com/) recently set up a networking group for some IT executives. The idea is to create a community for those of us looking for positions to connect and learn from one another's experience.
 
 ### Some tips we talked about
 
