@@ -19,7 +19,7 @@ About me:
 - [Resume](https://1drv.ms/w/s!And2E8-H55CngT8kdlMoKrbt67SZ?e=KrUgRI)
 - [Schedule time with me](https://cal.com/muness)
 
-  <form action="https://api.follow.it/subscription-form/N1FrNUtrYUpsaUpraUxLbDJNa0ZRbGRPWExpN3N4YjJJQTRiZE9JOEF1LzdpYTd0dUxZbjlUWWZ0OUo2Vkl4alpmaStzeC9nRmVvZVV0N2JKYXd1LzZFbmRFcDlVdVBPNzVtWXlHWkFMVjFTcnVmVlJXTW1Lb2JyUVhWZXFxejZ8NHRnN1ZWS1cxbjdIbTZuSnp3eDFpV0tycU8yYjZMZk56Q05BWktBNXgyZz0=/8" method="post">
+<form action="https://api.follow.it/subscription-form/N1FrNUtrYUpsaUpraUxLbDJNa0ZRbGRPWExpN3N4YjJJQTRiZE9JOEF1LzdpYTd0dUxZbjlUWWZ0OUo2Vkl4alpmaStzeC9nRmVvZVV0N2JKYXd1LzZFbmRFcDlVdVBPNzVtWXlHWkFMVjFTcnVmVlJXTW1Lb2JyUVhWZXFxejZ8NHRnN1ZWS1cxbjdIbTZuSnp3eDFpV0tycU8yYjZMZk56Q05BWktBNXgyZz0=/8" method="post">
   Subscribe to get new posts in your email inbox:
   <input type="text" name="email">
   <input type="submit" value="Subscribe">
