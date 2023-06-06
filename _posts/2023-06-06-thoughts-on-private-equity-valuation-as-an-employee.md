@@ -2,7 +2,7 @@
 comments: true
 date: 2023-06-06 17:30:00 +0500
 author: muness
-title: 'On private equity valuation as an employee'
+title: 'Thoughts on private equity valuation as an employee'
 ---
 
 ## tl;dr
