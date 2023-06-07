@@ -24,7 +24,7 @@ The ways I explored this:
 
 ### Reactions from friends and broader community
 
-Some of the themese I heard:
+Some of the themes I heard:
 
 - Private company equity is worth $0.
 - A lot are seeing hesitation from larger companies with frozen or delayed hiring cycles.
