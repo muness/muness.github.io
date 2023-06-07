@@ -5,7 +5,7 @@ author: muness
 title: 'LLM Prompt Types'
 ---
 
-You've heard about Prompt Engineering. You know that it's something buzz wordy that people who've bought into the LLM hype go on about. What are they? Why do they work? How should you evaluate them? In this post I explore types of prompts and why they matter when using LLMs.
+You've heard about Prompt Engineering. You know that it's something buzz wordy that people who've bought into the LLM hype go on about. What are prompts? Why do they work? How should you evaluate them? In this post I explore types of prompts and why they matter when using LLMs.
 
 ## Why do prompts matter?
 
