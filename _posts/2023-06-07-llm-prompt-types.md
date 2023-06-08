@@ -69,7 +69,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 - **When it might be most useful:** When you need a specific piece of information or a yes/no answer.
 - **LLM suitability**: 1/5. LLMs can provide incorrect yes/no answers if the correct answer is not well-represented in their training data. They are also susceptible to hallucination, generating information that isn't accurate.
 - **Examples:**
-  - "Who is the current President of the United States?"
+  - "Is the Earth flat?"
+  - "Is artificial intelligence capable of human emotions?"
   - "Is it raining in Seattle right now?"
 - **Tradeoffs:** Can provide quick and clear answers, but not suitable for open-ended discussions or creative tasks.
 - **Similar prompts:** Classification Prompts, Retrieval Prompts, Translation Prompts
@@ -141,8 +142,9 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 - **When it might be most useful:** When you want to explore potential scenarios or outcomes.
 - **LLM suitability**: 3/5. LLMs can generate creative and diverse responses to hypothetical scenarios or outcomes. However, the plausibility and coherence of the responses can vary.
 - **Examples:**
-  - "What would you do if you won the lottery?"
-  - "How would you react if aliens made contact with Earth?"
+  - "What might happen if all cars were replaced with self-driving vehicles?"
+  - "How would society change if all jobs were automated?"
+  - "What might the world look like if humans could live for 200 years?"
 - **Tradeoffs:** Can stimulate creative thinking and problem-solving, but responses may be speculative and not based on reality.
 - **Similar prompts:** Counterfactual Prompts
 - **Context or facts that would be useful to include:** The hypothetical scenario or outcome that the prompt is asking to explore.
@@ -155,7 +157,7 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 - **LLM suitability**: 3/5. LLMs can engage in a conversation or dialogue, responding to interactive prompts. However, maintaining a coherent and contextually accurate conversation over a long series of interactions can be challenging.
 - **Examples:**
   - "How could we improve the virality of this post?"
-  - "What are your thoughts on the book 'It'?"
+  - "What are the main differences between the two approaches above? Compare and contrast them"
 - **Tradeoffs:** Can encourage interaction and engagement, but requires the ability to understand and respond to a variety of inputs.
 - **Similar prompts:** Contextual Prompts
 - **Context or facts that would be useful to include:** The topic of conversation or the previous interactions that the prompt is referring to.
@@ -167,8 +169,8 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 - **When it might be most useful:** When you want to encourage free thinking and creativity.
 - **LLM suitability**: 3/5. LLMs can generate creative and diverse responses to open-ended prompts.
 - **Examples:**
-  - "What is your opinion on climate change?"
-  - "Describe a memorable experience from your childhood."
+  - "Discuss the impact of the internet on global culture."
+  - "What are the potential implications of gene editing technologies like CRISPR?"
 - **Tradeoffs:** Can lead to diverse and creative responses, but may be more difficult to evaluate due to the variety of possible answers.
 - **Similar prompts:** Generative Prompts, Exploratory Prompts
 - **Context or facts that would be useful to include:** The topic or question that the prompt is asking to explore or answer.
@@ -180,8 +182,9 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 - **When it might be most useful:** When you want to encourage introspection and self-reflection.
 - **LLM suitability**: 2/5. While LLMs can generate responses to reflective prompts, they lack personal experiences or emotions, so their responses are based on patterns in the training data and may not be meaningful.
 - **Examples:**
-  - "How do you feel about your performance in the last project?"
-  - "What did you learn from your last relationship?"
+  - "What are the implications of the discovery of the Higgs Boson for our understanding of the universe?"
+  - "How has the invention of the internet changed the way we communicate and access information?"
+  - "What impact has the theory of evolution had on our understanding of life on Earth?"
 - **Tradeoffs:** Can lead to personal and insightful responses, but may be difficult for those who are not comfortable with self-reflection.
 - **Similar prompts:** Hypothetical Prompts
 - **Context or facts that would be useful to include:** The event or situation that the prompt is asking to reflect on.
