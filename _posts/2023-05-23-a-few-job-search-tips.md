@@ -3,6 +3,7 @@ comments: true
 date: 2023-05-23 12:45:00 +0500
 author: muness
 title: 'A few job search tips'
+last_modified: 2023-06-08 12:35:00 +0500
 ---
 
 ## A few job search tips
@@ -39,6 +40,7 @@ Today we had our first call. We did a round of introductions and the Quantix fol
   - ⚙️ [Resume Parser by Affinda](https://www.affinda.com/resume-parser) - check the json file generated! It's pretty cool how it extracts skills from each position listed. I imagine some companies lean on this to do a filter pass.
   - ⚙️💡 [Resume Parser](https://resume-parser.vercel.app/) - if this one's right, my resume currently only parses at the overview level. Yikes! UPDATE, 2023-06-06: I confirmed with several formats and from multiple people that this only shows the overview.
   - ⚙️💡 [LinkedIn Resume Builder](https://www.linkedin.com/help/linkedin/answer/a551182/linkedin-resume-builder) - Haven't tried this one yet, but apparently LinkedIn's resume builder includes an ATS checker.
+  - ⚙️✅ [Adzuna resume checker](https://www.adzuna.com/value-my-resume) This job matching site includes a resume checker. The attempt at estimating my value led to a value that was lower than I've been paid in 15+ years. However it was a decent resume parser.
 
 And I'll add one more:
 
