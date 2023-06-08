@@ -62,6 +62,15 @@ Some of the themes I heard:
     - 08 Valuations, explained
     - 09 Who can invest in startups?
     - 10 How venture capital works
+- Peter Walker, Head of Insights at Carta [on startup equity distribution to first hires](https://www.linkedin.com/feed/update/urn:li:activity:7066805030913277952/)
+  - What: a post on distribution of equity among the first five hires in startup companies.
+  - Takeaways:
+    - Initial equity grants tend to be top-heavy, with the first hire receiving the largest percentage.
+    - Significant drop-off in equity for hires 3, 4, and 5.
+- Sam Altman on [Employee Equity](https://blog.samaltman.com/employee-equity) back in 2014.
+  - What: A call from Sam Altman to grant more equity to employees and with more favorable terms.
+- [State of startup compensation, H2 2022](https://carta.com/blog/state-of-startup-compensation-h2-2022/) and the [H1 2022 report](https://carta.com/blog/compensation-report-h1-2022/) from Carta
+  - What: analysis from Carta on startup comp in H2 2022 and H1 2022.
 
 ### Equity-specific questions
 
