@@ -27,24 +27,24 @@ When I work with LLMs I consider the type of use case scenario I am in, and the 
 
 ### Overview
 
-Here's a list of types of prompts I find myself using:
+Here's a list of types of prompts I find myself using and how well current general purpose LLMs are suited to them:
 
-| No. | Prompt Type | Description |
-| --- | ----------- | ----------- |
-| 1 | Classification Prompts | Categorizes text into specific groups. |
-| 2 | Closed-ended Prompts | Seeks specific information or a yes/no answer. |
-| 3 | Contextual Prompts | Leverages the conversation or situation context. |
-| 4 | Counterfactual Prompts | Explores "what if" scenarios or alternative perspectives. |
-| 5 | Exploratory Prompts | Dives deep into a topic or concept. |
-| 6 | Generative Prompts | Sparks new ideas or content. |
-| 7 | Hypothetical Prompts | Imagines potential scenarios or outcomes. |
-| 8 | Interactive Prompts | Engages in a conversation or dialogue. |
-| 9 | Open-ended Prompts | Encourages free thinking and creativity. |
-| 10 | Reflective Prompts | Promotes introspection and self-reflection. |
-| 11 | Retrieval Prompts | Retrieves a specific piece of information or fact. |
-| 12 | Rewrite Prompts | Simplifies, paraphrases, or changes the tone of text. |
-| 13 | Socratic Prompts | Stimulates critical thinking and deep understanding. |
-| 14 | Translation Prompts | Translates text across languages or domains. |
+| No. | Prompt Type | Description |LLM suitability|
+| --- | ----------- | ----------- |---------------|
+| 1 | Classification Prompts | Categorizes text into specific groups. |☆☆|
+| 2 | Closed-ended Prompts | Seeks specific information or a yes/no answer. |☆|
+| 3 | Contextual Prompts | Leverages the conversation or situation context. |☆☆☆|
+| 4 | Counterfactual Prompts | Explores "what if" scenarios or alternative perspectives. |☆☆☆|
+| 5 | Exploratory Prompts | Dives deep into a topic or concept. |☆☆☆☆|
+| 6 | Generative Prompts | Sparks new ideas or content. |☆☆☆☆|
+| 7 | Hypothetical Prompts | Imagines potential scenarios or outcomes. |☆☆☆|
+| 8 | Interactive Prompts | Engages in a conversation or dialogue. |☆☆☆|
+| 9 | Open-ended Prompts | Encourages free thinking and creativity. |☆☆☆|
+| 10 | Reflective Prompts | Promotes introspection and self-reflection. |☆|
+| 11 | Retrieval Prompts | Retrieves a specific piece of information or fact. |☆|
+| 12 | Rewrite Prompts | Simplifies, paraphrases, or changes the tone of text. |☆☆☆☆|
+| 13 | Socratic Prompts | Stimulates critical thinking and deep understanding. |☆☆☆|
+| 14 | Translation Prompts | Translates text across languages or domains. |☆☆☆☆☆|
 
 While there is some overlap (for example, a Socratic prompt can also be an open-ended prompt, or a retrieval prompt can also be a closed-ended prompt), each type of prompt has its unique characteristics and uses.
 
@@ -52,8 +52,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 1. Classification Prompts
 
-- **Type:** Closed-ended
 - **When it might be most useful:** When you need to classify a piece of text into a specific category.
+- **LLM suitability**: 2/5. LLMs can classify text into specific categories, but the accuracy can depend on the representation of the categories in the training data. They may misclassify if the categories are not well-represented or clear in the training data.
 - **Examples:**
   - "Is this review positive or negative?"
   - "What emotion is being expressed in this sentence?"
@@ -65,8 +65,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 2. Closed-ended Prompts
 
-- **Type:** General
 - **When it might be most useful:** When you need a specific piece of information or a yes/no answer.
+- **LLM suitability**: 1/5. LLMs can provide incorrect yes/no answers if the correct answer is not well-represented in their training data. They are also susceptible to hallucination, generating information that isn't accurate.
 - **Examples:**
   - "Who is the current President of the United States?"
   - "Is it raining in Seattle right now?"
@@ -78,8 +78,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 3. Contextual Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When the context of the conversation or the situation is important.
+- **LLM suitability**: 3/5. LLMs can leverage the conversation or situation context to generate relevant responses. However, maintaining context over a long series of interactions can be challenging.
 - **Examples:**
   - "Given our discussion on climate change, what are your thoughts on renewable energy?"
   - "Considering the current market trends, should we invest in technology stocks?"
@@ -91,8 +91,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 4. Counterfactual Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to explore alternative scenarios or perspectives.
+- **LLM suitability**: 3/5: LLMs can generate responses to "what if" scenarios or alternative perspectives. However, the plausibility and coherence of the responses can vary.
 - **Examples:**
   - "What would have happened if the internet was never invented?"
   - "How would the story of Romeo and Juliet end if they didn't die?"
@@ -104,8 +104,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 5. Exploratory Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to delve deeper into a topic or concept.
+- **LLM suitability**: 4/5: LLMs can provide detailed responses to exploratory prompts, diving deep into a topic or concept. However, the accuracy of the information can depend on the representation of the topic in the training data.
 - **Examples:**
   - "Discuss the implications of artificial intelligence on society."
   - "Explore the themes in the novel 'To Kill a Mockingbird'."
@@ -117,8 +117,8 @@ While there is some overlap (for example, a Socratic prompt can also be an open-
 
 #### 6. Generative Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to generate new ideas or content.
+- **LLM suitability**: 4/5: LLMs are good at generating new content, such as writing a story or generating ideas. However, the coherence and quality of the generated content can vary.
 - **Examples:**
   - "Write a short story about a robot that falls in love."
   - "Create a list of potential names for a new planet."
@@ -137,8 +137,8 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 
 #### 7. Hypothetical Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to explore potential scenarios or outcomes.
+- **LLM suitability**: 3/5. LLMs can generate creative and diverse responses to hypothetical scenarios or outcomes. However, the plausibility and coherence of the responses can vary.
 - **Examples:**
   - "What would you do if you won the lottery?"
   - "How would you react if aliens made contact with Earth?"
@@ -150,11 +150,11 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 
 #### 8. Interactive Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to engage in a conversation or dialogue.
+- **LLM suitability**: 3/5. LLMs can engage in a conversation or dialogue, responding to interactive prompts. However, maintaining a coherent and contextually accurate conversation over a long series of interactions can be challenging.
 - **Examples:**
-  - "How was your day?"
-  - "What are your thoughts on the latest episode of 'Game of Thrones'?"
+  - "How could we improve the virality of this post?"
+  - "What are your thoughts on the book 'It'?"
 - **Tradeoffs:** Can encourage interaction and engagement, but requires the ability to understand and respond to a variety of inputs.
 - **Similar prompts:** Contextual Prompts
 - **Context or facts that would be useful to include:** The topic of conversation or the previous interactions that the prompt is referring to.
@@ -163,8 +163,8 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 
 #### 9. Open-ended Prompts
 
-- **Type:** General
 - **When it might be most useful:** When you want to encourage free thinking and creativity.
+- **LLM suitability**: 3/5. LLMs can generate creative and diverse responses to open-ended prompts.
 - **Examples:**
   - "What is your opinion on climate change?"
   - "Describe a memorable experience from your childhood."
@@ -176,8 +176,8 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 
 #### 10. Reflective Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to encourage introspection and self-reflection.
+- **LLM suitability**: 2/5. While LLMs can generate responses to reflective prompts, they lack personal experiences or emotions, so their responses are based on patterns in the training data and may not be meaningful.
 - **Examples:**
   - "How do you feel about your performance in the last project?"
   - "What did you learn from your last relationship?"
@@ -189,8 +189,8 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 
 #### 11. Retrieval Prompts
 
-- **Type:** Closed-ended
 - **When it might be most useful:** When you need to retrieve a specific piece of information or fact.
+- **LLM suitability**: 1/5. While LLMs can retrieve information from their training data, they can sometimes "hallucinate" or generate incorrect or fabricated information. This is because they don't have access to real-time or updated information and rely on patterns in the data they were trained on.
 - **Examples:**
   - "What is the capital of France?"
   - "Who wrote 'To Kill a Mockingbird'?"
@@ -199,6 +199,16 @@ Intriguingly, when I asked ChatGPT what type of prompt it considered a summariza
 - **Context or facts that would be useful to include:** The specific piece of information or fact that is being asked for.
 - **Recommendation of how one could evaluate responses:** Check if the response correctly provides the specific piece of information or fact that was asked for.
 - **Summary:** Retrieval prompts are like asking someone to find a specific piece of information. You can evaluate the response by checking if it correctly provides the specific piece of information.
+
+Retrieval prompts and closed-ended prompts both aim to extract specific information, but they differ in their application and the nature of the information they seek.
+
+**Retrieval Prompts** are used to retrieve a specific piece of information or fact from a large dataset or knowledge base. They are often used in the context of question-answering systems where the model is expected to pull out a specific fact or piece of information from its training data. For example, "What is the capital of France?" or "Who won the Nobel Prize in Literature in 2020?".
+
+**Closed-ended Prompts**, on the other hand, are designed to elicit a specific, often binary, response. These prompts are typically used when the answer is a simple fact or a yes/no answer. For example, "Is Paris the capital of France?" or "Did Alice Munro win the Nobel Prize in Literature in 2020?".
+
+While both types of prompts seek specific information, the key difference lies in the nature of the response. Retrieval prompts expect the model to search its training data for a specific fact or piece of information, while closed-ended prompts expect a simple, often binary, response.
+
+In some cases, the distinction between these two types of prompts can be blurry, as both are used to extract specific information. However, the distinction lies in the nature of the question and the expected response. Whether they should be considered as one type or two distinct types can depend on the specific use case and the level of granularity one wishes to apply in categorizing prompts.
 
 #### 12. Rewrite Prompts
 
@@ -211,8 +221,8 @@ So, while rewrite prompts don't fit neatly into one category, they can be consid
 
 Here's how we might describe them:
 
-- **Type:** Generative / Translation
 - **When it might be most useful:** When you want to express the same idea or information differently, such as simplifying complex text, paraphrasing, or changing the tone.
+- **LLM suitability**: 4/5. LLMs are good at rewriting tasks, such as paraphrasing, simplifying text, or changing the tone of the text.
 - **Examples:**
   - "Rewrite this sentence in simpler terms: 'The photosynthesis process is primarily responsible for converting light energy into chemical energy.'"
   - "Paraphrase this statement: 'It's raining cats and dogs.'"
@@ -224,8 +234,8 @@ Here's how we might describe them:
 
 #### 13. Socratic Prompts
 
-- **Type:** Open-ended
 - **When it might be most useful:** When you want to stimulate critical thinking and deep understanding.
+- **LLM suitability**: 3/5. LLMs can generate thoughtful responses to Socratic prompts, encouraging critical thinking and exploration of ideas.
 - **Examples:**
   - "Why do you think the character acted that way in the story?"
   - "What evidence can you find to support your argument?"
@@ -237,8 +247,8 @@ Here's how we might describe them:
 
 #### 14. Translation Prompts
 
-- **Type:** Closed-ended
 - **When it might be most useful:** When you need to translate text from one language or domain to another.
+- **LLM suitability**: 5/5. LLMs excel at translating text between languages, especially between languages that are well-represented in their training data.
 - **Examples:**
   - "Translate the following English text to Spanish: 'Good morning, how are you?'"
   - "Translate the following French text to English: 'Bonjour, comment ça va?'"
