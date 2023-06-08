@@ -3,7 +3,7 @@ comments: true
 date: 2023-06-07 16:40:00 +0500
 author: muness
 title: 'LLM Prompt Types'
-last_modified_at: 2023-06-08 10:45:00 +0500
+last_modified_at: 2023-06-08 11:00:00 +0500
 ---
 
 You've heard about Prompt Engineering. You know that it's something buzz wordy that people who've bought into the LLM hype go on about. What are prompts? Why do they work? How should you evaluate them? In this post I explore types of prompts, which ones work best in today's general purpose LLMs and why prompts matter when using LLMs.
