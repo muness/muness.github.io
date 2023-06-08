@@ -373,4 +373,4 @@ Additional context also matters. If you provide information in the prompt, the m
 
 Tone and style specification can also influence the model's response. If you specify in the prompt that you want a formal response, the model will try to use more formal language in its response. If you specify a casual tone, the model will use more informal language. I often specify the format as a markdown bullet list with specific properties spelled out, for example.
 
- If you're not getting value from your use of LLMs consider that they're a tool that you have to learn to use. Prompt engineering is crucial when using an LLM because the model bases its response entirely on the prompt and the patterns it learned during training. The type of prompt, additional context, and tone and style specification all play a significant role in shaping the model's response.
+ If you're not getting value from your use of LLMs consider that they're a tool that you have to learn to use. Or maybe the type of prompt you're using isn't a great use case for current LLMs. Can you improve the prompt or reframe the problem to better leverage the LLM?
