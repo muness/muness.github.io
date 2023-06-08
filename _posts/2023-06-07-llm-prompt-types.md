@@ -3,9 +3,10 @@ comments: true
 date: 2023-06-07 16:40:00 +0500
 author: muness
 title: 'LLM Prompt Types'
+last_modified_at: 2023-06-08 10:45:00 +0500
 ---
 
-You've heard about Prompt Engineering. You know that it's something buzz wordy that people who've bought into the LLM hype go on about. What are prompts? Why do they work? How should you evaluate them? In this post I explore types of prompts and why they matter when using LLMs.
+You've heard about Prompt Engineering. You know that it's something buzz wordy that people who've bought into the LLM hype go on about. What are prompts? Why do they work? How should you evaluate them? In this post I explore types of prompts, which ones work best in today's general purpose LLMs and why prompts matter when using LLMs.
 
 ## Why do prompts matter?
 
@@ -40,7 +41,7 @@ Here's a list of types of prompts I find myself using and how well current gener
 | 7 | Hypothetical Prompts | Imagines potential scenarios or outcomes. |☆☆☆|
 | 8 | Interactive Prompts | Engages in a conversation or dialogue. |☆☆☆|
 | 9 | Open-ended Prompts | Encourages free thinking and creativity. |☆☆☆|
-| 10 | Reflective Prompts | Promotes introspection and self-reflection. |☆|
+| 10 | Reflective Prompts | Promotes introspection and self-reflection. |☆☆|
 | 11 | Retrieval Prompts | Retrieves a specific piece of information or fact. |☆|
 | 12 | Rewrite Prompts | Simplifies, paraphrases, or changes the tone of text. |☆☆☆☆|
 | 13 | Socratic Prompts | Stimulates critical thinking and deep understanding. |☆☆☆|
