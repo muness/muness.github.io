@@ -14,17 +14,32 @@ Cal("ui", {"styles":{"branding":{"brandColor":"#e1eeba"}},"hideEventTypeDetails"
 </script>
 <!-- Cal element-click embed code ends -->
 
-## Hi 👋
+## About me
 
-I am Muness, a technology executive with 20+ years of experience in technology organizations.
+Hi 👋 I am Muness, a technology executive with over 20 years of experience in technology organizations. I specialize in data engineering, strategy, management, organizational design, and software architecture.
 
-I have expertise in data, strategy, management, organizational design and software architecture. I'm known for getting the right things done by developing autonomous, mission-driven teams whose members challenge and support one another.
+### Mission
 
-About me:
+My personal mission is to develop 10x teams that achieve worthy goals through clear vision, compelling strategy, and extreme ownership. I believe in the power of data to inform decisions and drive strategy. I'm passionate about helping organizations make better use of their data.
+
+### Career success
+
+Throughout my career, I've been known for getting the right things done by developing autonomous, mission-driven teams. I foster a culture of collaboration and accountability, where team members challenge and support one another. I value judgment, boldness, healthy conflict, feedback, and autonomy. I've had the privilege of leading data teams at companies like Shopify, Zapier, and JPMC, where I've devised and implemented data strategy that led to significant improvements in effectiveness and creating data-informed organizations.
+
+- **Transformative Leadership at Shopify**: Successfully transitioned multiple data teams from a support function to strategic partners, contributing to the scaling of the organization with increased impact and visibility. Established a reputation as a trustworthy partner, sought after for feedback, ideas, and support.
+- **Cultivating a Data-Driven Culture at Zapier**: Spearheaded the development of a culture centered on data-informed decision-making. Pioneered a platform enabling Analytics Engineers and Data Scientists to independently deliver valuable insights while building a future-proof data infrastructure.
+- **Advocacy for Data-Informed Decision Making**: Consistently champions the use of data to inform strategic decisions. Leverages data for business success in professional roles and thought leadership.
+- **Resilience and Personal Growth**: Demonstrated resilience through career transitions and personal growth. Developed systems that foster presence, calmness, and vulnerability, enhancing personal relationships and resilience in the face of change.
+
+### Contacting me
+
+If you'd like to discuss potential collaboration, job opportunities, or just chat about data and leadership, <a href="#" data-cal-link="muness/meet">schedule time to chat</a>. I look forward to connecting with you!
+
+### Find me on the interwebs
 
 - [LinkedIn profile](https://linkedin.com/in/muness)
 - [Twitter](https://twitter.com/muness)
-- [GitHub](https://github.com/muness)
 - [Manager Readme](https://managerreadme.com/readme/muness)
-- [Resume](./assets/muness-resume.pdf)
-- <a href="#" data-cal-link="muness/meet">Schedule time to chat</a>
+- [Resume](/assets/muness-resume.pdf)
+- [Blog](/blog) where I write about topics like data strategy, leadership, and career transitions
+- [Schedule time to chat](https://cal.com/muness/c)
