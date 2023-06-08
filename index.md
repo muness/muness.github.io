@@ -20,7 +20,7 @@ Hi 👋 I am Muness, a technology executive with over 20 years of experience in 
 
 ### Mission
 
-My personal mission is to develop 10x teams that achieve worthy goals through clear vision, compelling strategy, and extreme ownership. I believe in the power of data to inform decisions and drive strategy. I'm passionate about helping organizations make better use of their data.
+Engineering & Analytics leader committed to 10x'ing data teams and achieving worthy goals through clear vision, compelling strategy, extreme ownership, and calm intensity. I believe in the power of data to inform decisions and drive strategy. I'm passionate about helping organizations make better use of their data.
 
 ### Career success
 
