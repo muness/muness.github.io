@@ -18,10 +18,7 @@ Cal("ui", {"styles":{"branding":{"brandColor":"#e1eeba"}},"hideEventTypeDetails"
 
 Hi 👋 I am Muness, a technology executive with over 20 years of experience in technology organizations. I specialize in data engineering, strategy, management, organizational design, and software architecture.
 
-### Mission
-
-Engineering & Analytics leader committed to 10x'ing data teams and achieving worthy goals through clear vision, compelling strategy, extreme ownership, and calm intensity. I believe in the power of data to inform decisions and drive strategy. I'm passionate about helping organizations make better use of their data.
-
+My mission is to 10x your data to achieve worthy goals. I do this through clear vision, compelling strategy, extreme ownership, and calm intensity. I believe in the power of data to inform decisions and drive strategy.
 ### Career success
 
 Throughout my career, I've been known for getting the right things done by developing autonomous, mission-driven teams. I foster a culture of collaboration and accountability, where team members challenge and support one another. I value judgment, boldness, healthy conflict, feedback, and autonomy. I've had the privilege of leading data teams at companies like Shopify, Zapier, and JPMC, where I've devised and implemented data strategy that led to significant improvements in effectiveness and creating data-informed organizations.
@@ -30,6 +27,8 @@ Throughout my career, I've been known for getting the right things done by devel
 - **Cultivating a Data-Driven Culture at Zapier**: Spearheaded the development of a culture centered on data-informed decision-making. Pioneered a platform enabling Analytics Engineers and Data Scientists to independently deliver valuable insights while building a future-proof data infrastructure.
 - **Advocacy for Data-Informed Decision Making**: Consistently champions the use of data to inform strategic decisions. Leverages data for business success in professional roles and thought leadership.
 - **Resilience and Personal Growth**: Demonstrated resilience through career transitions and personal growth. Developed systems that foster presence, calmness, and vulnerability, enhancing personal relationships and resilience in the face of change.
+
+Before focusing on data I developed web apps for 15+ years as a developer, agile coach and engineering leader.
 
 ### Contacting me
 
