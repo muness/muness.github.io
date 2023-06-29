@@ -14,6 +14,18 @@ I know it can inspire and align Engineering and Data teams and make no further c
 
 A major caveat is that this post is focused on the _structure_ of a strategy document, not about developing the strategy. That is hard and is out of scope here. For now I'll say that my favorite take on strategy development is to understand where you are, where you're going and that the way there is usually not the most obvious one. [Design In Practice](/posts/design-in-practice-writeup/) provides a starting point.
 
+This essay really fits into a series that I've considered writing for a years:
+
+- Using [The First 90 Days](https://hbr.org/books/watkins) to learn about a new challenge or role,
+- Use those learnings to collaboratively develop a strategy.
+- The [Five Dysfunctions of a team](https://www.tablegroup.com/product/dysfunctions/) and how they prevent buy-in.
+- Documenting and revisiting strategy (this article).
+- Making strategy relevant from planning on through to daily tasks.
+- Adopting the ideas in [Drive](https://www.danpink.com/books/drive/) by developing individual growth plans. They use an adapted version of the process presented here.
+- Reflecting on progress and communicating it to stakeholders (marketing our work).
+
+If you're interested in one or more of those, let me know!
+
 ## The Importance of Strategy Clarity  
 
 In his book, [Common Sense Leadership Matters](https://www.peteblaber.com/items/common-sense-leadership-matters), Pete Blaber highlights patterns of healthy leadership. Among these are a shared sense of purpose, free-flowing communication, and the presence of the 'why' behind orders or directives. These elements are crucial for strategy communication.
@@ -24,11 +36,11 @@ Clarity is vital for a team's freedom to make sensible choices on the spot and t
 
 ## A Framework for Communicating Strategy  
 
-In summary, I expect 2-3 pages per functional area covering the following:
+In summary, to communicate strategy, I put together 2-3 pages per functional area covering the following:
 
 - **Vision**: This is the inspirational, common purpose that brings us together to serve a greater need.  
 - **Stakeholder Needs and Strengths**: Here we identify which stakeholders we need to satisfy to meet our vision and what their needs are. We also state their strengths and how we can leverage them.
-- **Context**: This includes our accomplishments and a SWOT overview.
+- **Context**: This includes our accomplishments and a Strength, Weaknesses, Opportunities and Threats analysis summary.
 - **Strategy**: This is what we'll do to address stakeholder needs. It doesn't go into the specifics of how.
 - **Tactics**: These are the actions each subgroup will take to address the strategy. They leave room for the next level of leadership to decide on how to execute them.
 - **Tactics and Strategy Tree**: These are supplemented / fleshed out by following a strategy and tactics tree down through the issue tracking system we use.
