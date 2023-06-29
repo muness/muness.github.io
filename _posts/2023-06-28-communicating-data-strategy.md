@@ -16,7 +16,7 @@ A major caveat is that this post is focused on the _structure_ of a strategy doc
 
 This essay really fits into a series that I've considered writing for a years:
 
-- Using [The First 90 Days](https://hbr.org/books/watkins) to learn about a new challenge or role,
+- Using [The First 90 Days](https://hbr.org/books/watkins) to learn about a new challenge or role.
 - Use those learnings to collaboratively develop a strategy.
 - The [Five Dysfunctions of a team](https://www.tablegroup.com/product/dysfunctions/) and how they prevent buy-in.
 - Documenting and revisiting strategy (this article).
