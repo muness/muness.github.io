@@ -20,7 +20,7 @@ This essay really fits into a series that I've considered writing for a years:
 - The [Five Dysfunctions of a team](https://www.tablegroup.com/product/dysfunctions/) and how they prevent buy-in.
 - Documenting and revisiting strategy (this article).
 - Making strategy relevant from planning on through to daily tasks.
-- Adopting the ideas in [Drive](https://www.danpink.com/books/drive/) by developing individual growth plans. They use an adapted version of the process presented here.
+- Adopting the ideas in [Drive](https://www.danpink.com/books/drive/) for developing individual growth plans. I use an adapted version of the process presented here.
 - Reflecting on progress and communicating it to stakeholders.
 
 If you're interested in one or more of those, let me know!
