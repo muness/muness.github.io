@@ -1,6 +1,7 @@
 ---
-title: "Communicating Data Strategy"
+title: "Documenting Strategy: Lessons from Leading Data and Engineering Teams"
 date: 2023-06-28 15:00:00 +0500
+updated: 2023-06-30 16:50:00 +0500
 author: muness
 comments: true
 pin: true
@@ -17,16 +18,16 @@ A major caveat is that this post is focused on the _structure_ of a strategy doc
 This essay really fits into a series that I've considered writing for a years:
 
 - Using [The First 90 Days](https://hbr.org/books/watkins) to learn about a new challenge or role.
-- Use those learnings to collaboratively develop a strategy.
+- Use early learnings to collaboratively develop strategy.
 - The [Five Dysfunctions of a team](https://www.tablegroup.com/product/dysfunctions/) and how they prevent buy-in.
 - Documenting and revisiting strategy (this article).
 - Making strategy relevant from planning on through to daily tasks.
 - Adopting the ideas in [Drive](https://www.danpink.com/books/drive/) by developing individual growth plans. They use an adapted version of the process presented here.
-- Reflecting on progress and communicating it to stakeholders (marketing our work).
+- Reflecting on progress and communicating it to stakeholders.
 
 If you're interested in one or more of those, let me know!
 
-## The Importance of Strategy Clarity  
+## The Importance of Strategy Clarity
 
 In his book, [Common Sense Leadership Matters](https://www.peteblaber.com/items/common-sense-leadership-matters), Pete Blaber highlights patterns of healthy leadership. Among these are a shared sense of purpose, free-flowing communication, and the presence of the 'why' behind orders or directives. These elements are crucial for strategy communication.
 
@@ -117,60 +118,59 @@ Acting with intent is a crucial aspect of making strategy relevant. Every decisi
 
 ---
 
-## Example strategy document - Data function strategy  
+## Example strategy document - Data Governance strategy  
 
-The following is an example of applying the framework for a data organization. It's a real example, from a company we’ll call Company X. I leave out the Epic/Story/Issue/Task strategy & tactic tree because I couldn't figure out a way to make it valuable for illustrative purposes and it was unwieldy to add to a post.
+The following is a small scale example of documenting strategy using the framework presented. It's a real world one from a consulting engagement I've been working on. I was brought in to "Implement a Data Governance function" for a newly created Data team within an established, 300M+/yr business.
 
-### Data function - Vision Statement Example
-
-"We aspire to leverage data to enrich our understanding of the needs and behavior of users, customers, and partners at Company X. Through data insights and products, we aim to uncover new strategic opportunities, drive faster user-centric decisions, and make Company X's products smarter."
-
-### Data function - Stakeholder Needs Example
-
-Our stakeholders include users, customers, and partners. They need:
-
-- Proactive data narratives that serve as catalysts for business change.  
-- Cross-domain cutting insights that break down knowledge silos at Company X.  
-- Data products that nudge users towards optimal experiences.  
-- Leading indicators that facilitate reacting before opportunities pass us by or problems grow too large.  
-
-### Data function - Context Example
-
-Our accomplishments include:
-
-- Enhancing infrastructure resilience through data mining and pattern recognition.  
-- Establishing valuable thought partnerships that we leverage to Influence product roadmaps, pricing structure and understanding revenue from various customers, features and integrations.  
-- Spreading data expertise across Company X.  
-
-Our SWOT analysis reveals:
-
-- Strengths: Ubiquity across Company X, data expertise, ability to influence strategic roadmaps.  
-- Weaknesses: Limited local expertise in specific business domains.  
-- Opportunities: Proactive recommendations to company, zone, and team strategies/roadmaps, direct influence on user/partner experience.  
-- Threats: Sub-optimization as operations grow and become more complex.  
-
-### Data function - Strategy Example
-
-Our strategy is built on three pillars: Influence, Integrate, and Empower.
-
-- **Influence:** We influence strategic roadmaps by proactively offering compelling data narratives that serve as catalysts for business change.  
-- **Integrate:** We consume and leverage the local expertise of stakeholders, distill it, standardize it, and serve it back at scale.  
-- **Empower:** All employees and products have access to data, analysis, and tools to answer their own questions. We provide education and coaching on how to leverage data in their day-to-day work.
-
-### Data function - Tactics Example
-
-- **Influence:** Steer high-stakes human decisions and strategic roadmaps through proactive, novel analysis and quantitative research. Advocate for global optimization over local optimization when they are in conflict.  
-- **Integrate:** Establish valuable thought partnerships that we can leverage to Influence. Make our recommendations and models more actionable. Spread expertise across Company X.  
-- **Empower:** Make data easy to use. Offer a mix of training, coaching, and documentation to enable stakeholders to do their own day-to-day analysis and opportunity sizing. Improve data quality and reliability.  
+1. **Vision**: Accelerate value delivery through Data Governance
+2. **Stakeholder Needs and Strengths**:
+    - Internal SMEs and external analysts
+    - Stakeholder Strengths: Highly technical with deep domain expertise.
+    - Needs: Greater collaboration with the rest of the business, faster value delivery to stakeholders.
+3. **Context**:
+    - Accomplishments: Quick setup of a pipeline that processes data from dozens of upstream sources into a data warehouse.
+    - Strengths: Competent, fast moving cross-functional team.
+    - Weaknesses: Need for faster delivery of value to stakeholders.
+    - Opportunities: Greater collaboration with the rest of the business.
+    - Threats: Losing trust due to mis-represented data or questionable data.
+4. **Strategy**:
+    - Establish shared understanding for internal stakeholders.
+    - Develop trust in the data.
+    - Understand Fabric's governance capabilities and integrations.
+    - Enable data distribution.
+    - Enable meta-programming of transformation.
+5. **Tactics**:
+    - Tier 1: Port the Excel Glossary to an off the shelf data catalog.
+    - Tier 1: Prototype a test harness suitable within a Spark (Synapse) environment.
+    - Tier 1.5: Explore and understand Microsoft Fabric's governance capabilities and integrations.
+    - Tier 2: Set up a catalog that allows PowerBI and Serverless SQL Server to distribute data.
+    - Tier 2: Develop a mapping system to enable meta-programming of transformation.
 
 ## Critique of the Example Strategy document for a Data function  
 
-And here’s a critique, courtesy of ChatGPT-4 of the example strategy using the criteria to illustrate how it might be improved in future iterations:  
+And here’s a critique, courtesy of ChatGPT-4 of the example strategy using the criteria presented above:
 
-- **Necessity:** The objectives outlined in the strategy are necessary to meet the vision of leveraging data to enrich Company X’s understanding of the needs and behavior of users, customers, and partners.  
-- **Viability:** The tactics listed under each pillar are viable and actionable. However, it would be beneficial to explore alternative tactics and assess how the chosen ones outperform them.  
-- **Sufficiency:** The set of tactics is sufficient to meet the higher-level objectives. However, it would be useful to periodically review and update them to ensure they continue to meet the evolving needs of the stakeholders.  
-- **Connected:** The strategy fits into a hierarchy, with the top level being the vision. However, it could be more explicit about how each pillar and tactic contribute to the overall vision.  
+The example strategy follows the framework well and provides clear and actionable steps. Let's critique it:
+
+1. **Vision**: "Accelerate value delivery through Data Governance"
+   - This is clear, concise, and aspirational. It offers a common purpose that stakeholders can rally behind and serves as the guiding star for strategic decisions.
+2. **Stakeholder Needs and Strengths**:
+   - Stakeholders are well-identified and their strengths and needs are clearly stated. The identified needs align with the vision, which is crucial for strategic alignment.
+3. **Context**:
+   - The accomplishments, strengths, and weaknesses are clearly stated. The opportunity identified aligns with the overall vision and strategy, which is beneficial for strategic planning.
+   - However, the threat is somewhat vague. It could be improved by providing a more specific example or detailing potential consequences.
+4. **Strategy**:
+   - The strategies are clear and directly address the stakeholders' needs, which are key for effectiveness. They are broad enough to be flexible in the face of changing circumstances.
+5. **Tactics**:
+   - The tactics are well-defined and directly support the strategy. They are actionable, measurable, and leave room for the leadership to decide on execution.
+   - However, for the tactic "Tier 1: Port the Excel Glossary to an off the shelf data catalog," it might be helpful to specify which data catalog will be used or how the best one will be selected.
+
+Overall, the example strategy is solid and aligns well with the given framework. It provides a clear roadmap of what needs to be done to meet the vision, which is crucial for effective strategy communication. Now let's evaluate the example strategy against the criteria of necessity, viability, sufficiency, and connectedness:
+
+1. **Necessity**: The strategy and tactics provided are necessary for achieving the vision. The strategy addresses the needs of stakeholders, and the tactics are essential for implementing the strategy. For instance, porting the Excel Glossary to a data catalog is a necessary step in establishing a shared understanding among stakeholders.
+2. **Viability**: The strategy is viable as it focuses on improving collaboration and accelerating value delivery, which are realistic and achievable goals. The tactics are also viable; they propose practical actions like prototyping a test harness and exploring Microsoft Fabric's governance capabilities. However, as mentioned earlier, for the tactic "Port the Excel Glossary to an off the shelf data catalog," it would be more viable if a specific data catalog tool was identified or a process for selecting one was outlined.
+3. **Sufficiency**: The set of tactics seems sufficient to meet the higher-level objectives outlined in the strategy. They cover a range of areas from establishing shared understanding to enabling data distribution and meta-programming of transformation. However, the sufficiency of the tactics may also depend on the specific context of the organization, and whether there are other, unmentioned needs or challenges that need to be addressed.
+4. **Connectedness**: The vision, strategy, and tactics are well connected. The tactics directly support the strategy, and the strategy aligns with the vision. Each level of the strategy is aimed at achieving the level above it, ensuring that all actions are moving in the same direction.
 
 ---
 
@@ -181,3 +181,5 @@ Strategy that works today may not work in a year. So treat it as a journey of di
 Once developed and embraced, a strategy document serves as a compass. It guides us in the right direction, keeps us aligned with our vision, and helps us make decisions that are consistent with our goals. But like any compass, it's only useful if we refer to it regularly, understand it, and apply it wisely.
 
 Make strategy a part of everyday conversations. Use it to inspire, to guide, and to drive your teams forward. Help them create their our own future. And hence a journey worth embarking on.
+
+Many thanks to Ale Cabrera and Drazen Urch for providing feedback that made this post better.
