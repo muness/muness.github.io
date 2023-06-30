@@ -7,7 +7,7 @@ comments: true
 pin: true
 ---
 
-At multiple points in my career, I've noticed that teams are more engaged and successful when their strategy is clear, cohesive and inspiring. This realization motivated me to explore various frameworks for developing and communicating strategy. The most valuable of these was the [Strategy and Tactics](https://cdn.ymaws.com/www.tocico.org/resource/resmgr/files-members/toc_korea_2008_the_strategy.pdf) (S&T) framework by Dr. Eliyahu M. Goldratt. This framework inspired me to develop my own approach.
+At multiple points in my career, I've noticed that teams are more engaged and successful when their strategy is clear, cohesive and inspiring. This realization motivated me to explore various frameworks for developing and communicating strategy. The most valuable of these was the [Strategy and Tactics](https://cdn.ymaws.com/www.tocico.org/resource/resmgr/files-members/toc_korea_2008_the_strategy.pdf) (S&T) framework by Dr. Eliyahu M. Goldratt. His framework inspired me to develop my own approach.
 
 I know this framework can inspire and align teams because I've seen it work! I've also used a variant of this, but applied at the individual career growth level to accelerate my personal growth and to help others do the same, with various levels of success.
 
