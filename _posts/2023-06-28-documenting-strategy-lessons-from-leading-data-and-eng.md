@@ -7,11 +7,9 @@ comments: true
 pin: true
 ---
 
-At multiple points in my career, I've noticed that teams are more engaged and successful when their strategy is clear, cohesive and inspiring. This realization motivated me to explore various frameworks for developing and communicating strategy.
+At multiple points in my career, I've noticed that teams are more engaged and successful when their strategy is clear, cohesive and inspiring. This realization motivated me to explore various frameworks for developing and communicating strategy. The most valuable of these was the [Strategy and Tactics](https://cdn.ymaws.com/www.tocico.org/resource/resmgr/files-members/toc_korea_2008_the_strategy.pdf) (S&T) framework by Dr. Eliyahu M. Goldratt. This framework inspired me to develop my own approach.
 
-The most valuable of these was the [Strategy and Tactics](https://cdn.ymaws.com/www.tocico.org/resource/resmgr/files-members/toc_korea_2008_the_strategy.pdf) (S&T) framework by Dr. Eliyahu M. Goldratt. This framework inspired me to develop my own approach.
-
-I know it can inspire and align Engineering and Data teams and make no further claims than that because I've seen it work! I've also used a variant of this, but applied at the individual career growth level to accelerate my personal growth and to help others do the same, with various levels of success.
+I know this framework can inspire and align teams because I've seen it work! I've also used a variant of this, but applied at the individual career growth level to accelerate my personal growth and to help others do the same, with various levels of success.
 
 A major caveat is that this post is focused on the _structure_ of a strategy document, not about developing the strategy. That is hard and is out of scope here. For now I'll say that my favorite take on strategy development is to understand where you are, where you're going and that the way there is usually not the most obvious one. [Design In Practice](/posts/design-in-practice-writeup/) provides a starting point.
 
