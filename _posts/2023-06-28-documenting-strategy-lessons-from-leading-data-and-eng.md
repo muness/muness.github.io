@@ -1,7 +1,7 @@
 ---
 title: "Documenting Strategy: Lessons from Leading Data and Engineering Teams"
 date: 2023-06-28 15:00:00 +0500
-updated: 2023-06-30 16:50:00 +0500
+updated: 2023-07-02 15:20:00 +0500
 author: muness
 comments: true
 pin: true
