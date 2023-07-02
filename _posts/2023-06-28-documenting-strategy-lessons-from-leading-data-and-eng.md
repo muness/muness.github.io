@@ -25,7 +25,7 @@ This essay really fits into a series that I've considered writing for a years:
 
 If you're interested in one or more of those, let me know!
 
-## The Importance of Strategy Clarity
+## The Importance of Strategic Clarity
 
 In his book, [Common Sense Leadership Matters](https://www.peteblaber.com/items/common-sense-leadership-matters), Pete Blaber highlights patterns of healthy leadership. Among these are a shared sense of purpose, free-flowing communication, and the presence of the 'why' behind orders or directives. These elements are crucial for strategy communication.
 
