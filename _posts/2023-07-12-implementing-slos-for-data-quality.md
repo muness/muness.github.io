@@ -81,9 +81,9 @@ Sure, let's flesh out these SLIs:
 - **Reserved Capacity Utilization**: In infrastructure, we often reserve capacity for workloads. If peak utilization < 100% of reserved, per resource type, we've reserved more than we need to. I've seen this in practice with a BigQuery user and their with BI Engine reservations, for example, where a team had reserved 200GB of capacity but they didn't even have 20 tables <= 10GB each (which is the max size of a table that can be sped up using BI Engine), meaning they were paying for capacity that couldn't even be used.
 - **Cost**: We can compare cost week on week or month on month per resource type to detect spikes in cost growth.
 
-##### Coherence and Coupling
+#### Adherence with Design Patterns
 
-Coherence refers to the ability to use different parts of the warehouse together in a meaningful and consistent manner. Low coupling, on the other hand, means that the design of one part of the warehouse does not overly depend on the design of another part. Some potential SLIs for data warehouses include:
+Adherence to established design patterns in data warehousing can significantly impact data quality. Consistent application of these patterns ensures that data is organized and structured in a way that is predictable and easy to understand. This can reduce errors and improve the overall quality of the data. Here are some potential Service Level Indicators (SLIs) for assessing adherence to common design patterns:
 
 - **Conformed Dimensions**: The use of [Conformed Dimensions](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/conformed-dimension/) can be viewed as an SLI of coherence, allowing "both analytic consistency and reduced future development costs". Measuring this in an entirely automated way might be tricky: I'd start by identifying duplicate column names across table and ensuring, manually that they all mean the same thing. When we detect mismatches, we note them as negative indicators.
 - **Adherence to star schema**: Does the data warehouse follow the star schema design, which is known for its simplicity and effectiveness? This can be measured by checking if the tables in the warehouse follow the star schema design, with one fact table connected to multiple dimension tables.Sure, here are some potential bullet points:
