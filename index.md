@@ -38,7 +38,6 @@ If you'd like to discuss potential collaboration, job opportunities, or just cha
 
 - [LinkedIn profile](https://linkedin.com/in/muness)
 - [Twitter](https://twitter.com/muness)
-- [Manager Readme](https://managerreadme.com/readme/muness)
 - [Resume](/assets/muness-resume.pdf)
 - [Blog](/blog) where I write about topics like data strategy, leadership, and career transitions
 - [Schedule time to chat](https://cal.com/muness/c)
