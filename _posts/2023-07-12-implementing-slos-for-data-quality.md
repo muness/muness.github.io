@@ -41,8 +41,6 @@ An error budget is the amount of error that you're willing to tolerate. If your 
 
 These are high-level examples and the actual implementation would depend on the specifics of your data and your data pipeline. However, they should give you a starting point for defining your own SLIs.
 
-Sure, let's flesh out these SLIs:
-
 #### Data SLIs
 
 ##### Usability
