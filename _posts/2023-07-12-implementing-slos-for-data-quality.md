@@ -168,7 +168,12 @@ These are just examples and the actual documents would depend on the specifics o
 
 ## Conclusion
 
-In conclusion, implementing SLOs for data quality is a complex but crucial task. By understanding and applying the concepts of SLOs, error budgets, and SLIs, you can ensure that your data pipeline provides a high level of service to its users. And by continuously improving your SLO targets, you can drive your data pipeline to new heights of quality and reliability.
+Implementing SLOs for data quality isn't straightforward. By defining and measuring quality:
+
+- we are clearer within our teams and with our stakeholders about what we mean.
+- we significantly improve our signal to noise ratio when it comes to uncovering and addressing quality problems. (How often have you muted that `#data-quality-alerts` channel?!)
+- we create room for addressing quality problems when it's oh so easy to keep shipping more features instead.
+- we avoid gold-plating and improving quality past the point where it benefits us to do so.
 
 ## Glossary of Terms
 
