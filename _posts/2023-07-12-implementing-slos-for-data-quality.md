@@ -16,7 +16,7 @@ Note that a later chapter in the same book covers applying SLOs to [Data Process
 
 ## Why Data Engineering needs SLOs
 
-In the realm of data, just as in software engineering, 100% quality (or reliability) is neither achievable nor desirable. Instead, we aim for a high level of quality that balances the need for accuracy with the practical realities of data collection and processing. This is where service level objectives (SLOs) and error budgets come into play.
+In the realm of data, 100% quality is neither achievable nor desirable. Instead, we aim for a high level of quality that balances the need for accuracy with the practical realities of data collection and processing. This is where service level objectives (SLOs) and error budgets come into play.
 
 **Service Level Objectives (SLOs)** are specific, measurable goals that represent the desired level of service. They are typically expressed as a percentage, such as "99.9% of data records should be error-free."
 
