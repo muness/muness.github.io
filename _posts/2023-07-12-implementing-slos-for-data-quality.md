@@ -4,7 +4,6 @@ date: 2023-07-12 14:00:00 +0500
 author: muness
 comments: true
 pin: true
-draft: true
 ---
 
 The most important chapter in [Google's SRE Workbook](https://sre.google/books/) is on [implementing SLOs](https://sre.google/workbook/implementing-slos/):
