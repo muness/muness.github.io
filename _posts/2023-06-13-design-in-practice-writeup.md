@@ -33,7 +33,7 @@ Hickey emphasizes the importance of writing things down during the design proces
 
 Throughout design there's an ongoing process of decision-making. You need to constantly decide what's in or out of scope, and whether to proceed or pivot based on your findings. This is not a one-time event but a continuous process that shapes your design journey.
 
-Early on in design I suggest a lightweight process for documenting decisions. A doc or spreadsheet with a list of the decision, why it was made, when is sufficient. [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html)s are a good way to capture decisions once you get to the design and development phases.
+Early on in design I suggest a lightweight process for documenting decisions. A doc or spreadsheet with a list of the decision, why it was made, when is sufficient. [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) are a good way to capture decisions once you get to the design and development phases.
 
 ## The Phases of Design
 
