@@ -10,7 +10,9 @@ The most important chapter in [Google's SRE Workbook](https://sre.google/books/)
 
 > Service level objectives (SLOs) specify a target level for the reliability of your service. Because SLOs are key to making data-driven decisions about reliability, they’re at the core of SRE practices.
 
-Achieving a suitable level of Data Quality is a key aspect of Data and we need a systemic way to measure and improve it. These well understood and used mental models from the SRE world can be applied to Data Engineering to do just that. As such this post presents the SRE ideas of Error budget policies, SLOs and suggests how they can be applied to data quality. I intentionally modeled the structure of the post to match the chapter.
+Like reliability in the SRE world, quality is a key aspect of Data Engineering. The SRE world has developed tools around specifying, measuring and achieving reliability goals. These practices from the SRE world can be applied to specifying, measuring and achieving quality in Data Engineering. 
+
+This post presents the SRE ideas of Error budget policies, SLOs and suggests how they can be applied to data quality. The post is intentionally structured the same way as the implementing SLO chapter in the SRE Workbook: they did a masterful job of communicating a lot into one chapter, and I wanted to leverage their work.
 
 Note that a later chapter in the same book covers applying SLOs to [Data Processing Pipelines](https://sre.google/workbook/data-processing/). I didn't find it to be a suitable primer on applying SLOs to Data Quality, hence this post.
 
