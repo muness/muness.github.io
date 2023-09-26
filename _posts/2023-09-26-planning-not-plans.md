@@ -92,7 +92,7 @@ Your mission or aim provides direction. It's the compass guiding your tasks, goa
 - Determine the skills and knowledge you need to acquire to get there.
 - Revisit and refine your aim periodically.
 
-### 4. How Do I Use 90-Day Priorities?
+### 4. Use the Priorities
 
 90-day priorities aren't just a list of tasks. They’re a structured approach to growth, aligning daily tasks with longer-term goals and aspirations.
 
@@ -101,6 +101,9 @@ Your mission or aim provides direction. It's the compass guiding your tasks, goa
 - Every week, break down your priorities into actionable tasks. Consider: what is the one most important thing I can do this week to move towards this priority?
 - Review your priorities regularly.
 - Adjust as needed based on progress and changing circumstances.
+- Run them by your manager. Ask them to validate the priorities and provide feedback.
+- Run them by your reports. Make sure they understand why you're doing what you're doing and ask for feedback to make sure you're not missing anything important to them.
+- Run them by your peers. They can help you see ways to achieve your priorities that you might not have thought of.
 
 ---
 
