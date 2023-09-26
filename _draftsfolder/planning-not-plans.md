@@ -209,7 +209,7 @@ As I join TechCorp, my priorities are:
 
 ## Embracing the Journey
 
-Reflecting on my last few years, I've come to realize that while our goals seem appealing, it's the process — rooted in intentional planning, adaptability, and continuous learning — that has unleashed my growth and reinforced a growth mindset. This framework has taught me to value lessons, challenge, and the guidance I receive along my journey.
+Reflecting on the last few years, I've come to realize that while goals seem appealing, it's the journey — intentional planning, adaptability, and continuous learning — that has unleashed my growth and reinforced a growth mindset. This approach propelled me forward but also reinforced my growth mindset, teaching me to cherish the lessons, challenges, and guidance I get along the way.
 
 But here's the beautiful part: this isn't just my story. The essence of this approach is universally applicable. While I've laid out my experiences and methods, the core principles can resonate with anyone, anywhere. It's not just about setting goals but the deliberation, the reflection, and the intentional steps we take towards them. It's about harnessing the power of focused intent, the beauty of adaptability, and the joy of continuous learning. I've used adaptations of the framework to plan teams, help friends get over existential crises and in my coaching.
 
