@@ -223,3 +223,19 @@ Reflecting on the last few years, I've come to realize that while goals seem app
 But here's the beautiful part: this isn't just my story. The essence of this approach is universally applicable. While I've laid out my experiences and methods, the core principles can resonate with anyone, anywhere. It's not just about setting goals but the deliberation, the reflection, and the intentional steps we take towards them. It's about harnessing the power of focused intent, the beauty of adaptability, and the joy of continuous learning. I've used adaptations of the framework to plan teams, help friends get over existential crises and in my coaching.
 
 Dive in, make it yours, and tell me about it. How did it work for you? Where did you tweak? I'd love to hear your stories!
+
+# Credits and Testimonials
+
+## Credits
+
+- [The First 90 Days](https://hbr.org/books/watkins) by Michael D. Watkins. This helped me understand the importance of the first 90 days in a new role, and success through a learning mindset. After my coach helped me apply these ideas to be successful in new roles, I got the idea of making this a rolling 90-day plan that supports my growth.
+- [Stategy and Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF) by Eli Goldratt, Rami Goldratt and Eli Abramov. While it may be obvious to all of you, the idea of a hierarchy of strategy and tactic (and strategy and tactic nested under them) was a revelation to me. I've used this idea to help me think about my priorities and how they relate to my mission.
+- [The Path Between The Seas](https://www.simonandschuster.com/books/The-Path-Between-the-Seas/David-McCullough/9780743262132) by David McCullough. This book helped me understand that we can in fact emark on projects that we have no idea how to complete. We can learn and discover as we go.
+- [Outcomes over Output](https://www.senseandrespondpress.com/managing-outcomes) by Joshua Seiden. It's not about the output, it's about the outcomes we achieve. So a planning system that focuses on outcomes and pushes out plans until the last minute makes sense and is worth bragging about.
+- The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to consider if that's the best way to meet their goals.
+- My coach, Daphne who helps me embrace a growth mindset and apply it to my whole life.
+- Many thanks to Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
+
+## Testimonials
+
+> My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me. -Ale Cabrera
