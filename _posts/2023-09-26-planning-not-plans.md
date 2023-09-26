@@ -1,3 +1,11 @@
+---
+title: "Planning Not Plans: Rolling 90 Day Priorities"
+date: 2023-09-26 18:00:00 +0500
+author: muness
+toc: true
+comments: true
+pin: true
+---
 
 # Planning not plans: Rolling 90 Day Priorities
 
@@ -232,7 +240,7 @@ Dive in, make it yours, and tell me about it. How did it work for you? Where did
 - [Stategy and Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF) by Eli Goldratt, Rami Goldratt and Eli Abramov. While it may be obvious to all of you, the idea of a hierarchy of strategy and tactic (and strategy and tactic nested under them) was a revelation to me. I've used this idea to help me think about my priorities and how they relate to my mission.
 - [The Path Between The Seas](https://www.simonandschuster.com/books/The-Path-Between-the-Seas/David-McCullough/9780743262132) by David McCullough. This book helped me understand that we can in fact emark on projects that we have no idea how to complete. We can learn and discover as we go.
 - [Outcomes over Output](https://www.senseandrespondpress.com/managing-outcomes) by Joshua Seiden. It's not about the output, it's about the outcomes we achieve. So a planning system that focuses on outcomes and pushes out plans until the last minute makes sense and is worth bragging about.
-- The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to consider if that's the best way to meet their goals.
+- The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to reconsider whether what they're doing is the best way to meet their goals.
 - My coach, Daphne who helps me embrace a growth mindset and apply it to my whole life.
 - Many thanks to Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
 
