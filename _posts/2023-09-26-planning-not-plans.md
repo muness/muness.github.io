@@ -7,8 +7,6 @@ comments: true
 pin: true
 ---
 
-# Planning not plans: Rolling 90 Day Priorities
-
 ## What is this?
 
 This is a comprehensive, adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with precision and confidence.
@@ -232,9 +230,9 @@ But here's the beautiful part: this isn't just my story. The essence of this app
 
 Dive in, make it yours, and tell me about it. How did it work for you? Where did you tweak? I'd love to hear your stories!
 
-# Credits and Testimonials
+## Credits and Testimonials
 
-## Credits
+### Credits
 
 - [The First 90 Days](https://hbr.org/books/watkins) by Michael D. Watkins. This helped me understand the importance of the first 90 days in a new role, and success through a learning mindset. After my coach helped me apply these ideas to be successful in new roles, I got the idea of making this a rolling 90-day plan that supports my growth.
 - [Stategy and Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF) by Eli Goldratt, Rami Goldratt and Eli Abramov. While it may be obvious to all of you, the idea of a hierarchy of strategy and tactic (and strategy and tactic nested under them) was a revelation to me. I've used this idea to help me think about my priorities and how they relate to my mission.
@@ -244,6 +242,6 @@ Dive in, make it yours, and tell me about it. How did it work for you? Where did
 - My coach, Daphne who helps me embrace a growth mindset and apply it to my whole life.
 - Many thanks to Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
 
-## Testimonials
+### Testimonials
 
 > My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me. -Ale Cabrera
