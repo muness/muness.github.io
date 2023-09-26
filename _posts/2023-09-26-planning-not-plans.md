@@ -1,6 +1,7 @@
 ---
 title: "Planning Not Plans: Rolling 90 Day Priorities"
 date: 2023-09-26 18:00:00 +0500
+updated: 2023-09-26 16:40:00 +0500
 author: muness
 toc: true
 comments: true
@@ -105,7 +106,7 @@ Your mission or aim provides direction. It's the compass guiding your tasks, goa
 
 ## Example Worksheet: Joining TechCorp
 
-To better illustrate the application of this system, here's an example from my recent experience joining a new company. I updated my previous worksheet, adding in priorities that aligned with my new role. After the worksheet, I included an example of how I used the worksheet to decide on weekly tasks.
+To better illustrate the application of this system, here's an example from my recent experience joining a new company. I updated my previous worksheet, adding in priorities that aligned with my new role. After the worksheet, I included an example of how I used the worksheet to decide on weekly tasks. It's obviously edited for anonymity and obfuscation.
 
 ### Accomplishments
 
@@ -172,7 +173,9 @@ As I join TechCorp, my priorities are:
    - Review and synthesize available resources.
    - Continuously refine understanding in collaboration with experts.
 
-And here are tasks (or placeholders for tasks, it's OK, you can figure it out as you go!) I came up with on a Monday morning those were my priorities:
+### Weekly Priorities Review
+
+Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you go!) I came up with on a Monday morning:
 
 1. **Team Management & Development**
 
@@ -191,10 +194,9 @@ And here are tasks (or placeholders for tasks, it's OK, you can figure it out as
    - **Engage with stakeholders to understand expectations:**
      - TODO: Schedule sessions with key department stakeholders.
      - TODO: Share current impressions of the team's contributions with the department head and gather feedback.
-     - TODO: Participate in a departmental strategy meeting and take notes for follow-up.
 
    - **Familiarize with system portfolio, ensuring alignment with strategic vision:**
-     - TODO: Deep dive into the primary project management tool to understand the overall project status.
+     - TODO: Deep dive into Jira to understand the overall project status.
      - TODO: Begin discussions with the QA team assigned to understand collaboration opportunities.
 
    - **Develop a team charter and ensure understanding across the board:**
@@ -209,7 +211,7 @@ And here are tasks (or placeholders for tasks, it's OK, you can figure it out as
      - [Further tasks related to collaborating with stakeholders can be added here.]
 
    - **Ensure structural alignment and develop tactical plans for execution:**
-     - [Further tasks related to structural alignment can be added here.]
+     - Pass this week.
 
 4. **Company Induction**
 
@@ -217,7 +219,7 @@ And here are tasks (or placeholders for tasks, it's OK, you can figure it out as
      - [Tasks related to engaging in listening sessions can be added here.]
 
    - **Review and synthesize available resources:**
-     - TODO: Go through company induction materials available online and follow up with queries.
+     - Pass this week.
 
    - **Continuously refine understanding in collaboration with experts:**
      - TODO: Schedule a discussion with a subject matter expert from another department to deepen understanding.
