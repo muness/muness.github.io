@@ -1,19 +1,32 @@
 
 # Planning not plans: Rolling 90 Day Priorities
 
-As Winston Churchill once noted, “Plans are of little importance, but planning is essential.” Planning is a living, breathing process that provides a roadmap to guide our actions and ensure alignment with a long-term mission.
-
 ## What is this?
 
-This is a framework I've relied on over the last few years and shared with success with friends and colleagues is the Rolling 90 Day Priorities system. My criteria for the framework included:
+This is a comprehensive, adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with precision and confidence.
 
-- Helps me clarify my strengths and mission to those around me.
-- Grounded in past achievements.
-- Aligns day to day tasks with the long term mission and mid-term priorities.
-- Easy to update as circumstances change or when I've made enough progress to move on to the next priority.
-- Encourages failing fast. If I pick a task that doesn't work out I haven't invested a lot of time into it and can move on to others.
+Military strategist and President Dwight D. Eisenhower once said,
+> "Plans are nothing; planning is everything."
 
-A critical component of the framework is **acting with intent**. Knowing where you've been, your strengths, and your mission helps you chart a course for the future. By connecting the dots between your past achievements, your innate talents, and your overarching objectives, you create a roadmap for success.
+This encapsulates the essence of my approach. While static plans can become obsolete in the face of rapidly changing circumstances, the act of planning equips us with the flexibility, insight, and resilience to adapt and pivot as needed. The framework isn't about meticulously crafted plans set in stone; it's about cultivating a mindset of preparation, agility, and continuous learning.
+
+Several criteria came up as I've iterated over this framework:
+
+- **Clarity of Direction:**
+  > "If you don't know where you are going, any road will get you there." – Lewis Carroll
+
+  It's imperative to have clear priorities and understand the rationale behind them.
+- **Reality-Check:** Grounding our objectives in past achievements ensures they're rooted in reality and builds on proven strengths.
+
+- **Proactive Living:**
+  > "The future depends on what you do today." – Mahatma Gandhi
+
+  The world is full of distractions and external demands. This framework ensures we don't become passive recipients of life's agenda but active directors of our destiny.
+- **Adaptive Evolution:** Life's only constant is change. A robust system needs to be easy to update, reflecting evolving goals and circumstances.
+
+- **Quick Recovery:** By focusing on short, 90-day sprints, this approach fosters a "fail fast, learn faster" attitude. If a certain direction proves unfruitful, little time is wasted, and course corrections can be made swiftly.
+
+So, while the detailed plans may evolve, the process of planning, with its introspection, foresight, and adaptability guide me.
 
 ## Activities overview
 
