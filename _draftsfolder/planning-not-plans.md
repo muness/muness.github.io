@@ -16,17 +16,26 @@ Several criteria came up as I've iterated over this framework:
   > "If you don't know where you are going, any road will get you there." – Lewis Carroll
 
   It's imperative to have clear priorities and understand the rationale behind them.
-- **Reality-Check:** Grounding our objectives in past achievements ensures they're rooted in reality and builds on proven strengths.
+- **Reality-Check:**
+  > "Success is not final; failure is not fatal: It is the courage to continue that counts." – Winston Churchill
 
-- **Proactive Living:**
+  Grounding our objectives in past achievements ensures they're rooted in reality and builds on proven strengths.
+- **Proactive:**
   > "The future depends on what you do today." – Mahatma Gandhi
 
   The world is full of distractions and external demands. This framework ensures we don't become passive recipients of life's agenda but active directors of our destiny.
-- **Adaptive Evolution:** Life's only constant is change. A robust system needs to be easy to update, reflecting evolving goals and circumstances.
 
-- **Quick Recovery:** By focusing on short, 90-day sprints, this approach fosters a "fail fast, learn faster" attitude. If a certain direction proves unfruitful, little time is wasted, and course corrections can be made swiftly.
+- **Adaptive:**
+  > "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change." – Charles Darwin
 
-So, while the detailed plans may evolve, the process of planning, with its introspection, foresight, and adaptability guide me.
+  Life's only constant is change. A robust system needs to be easy to update, reflecting evolving goals and circumstances.
+
+- **Quick Recovery:**
+  > "Our greatest glory is not in never falling, but in rising every time we fall." – Confucius
+
+  By focusing on short, 90-day sprints, this approach fosters a "fail fast, learn faster" attitude. If a certain direction proves unfruitful, little time is wasted, and course corrections can be made swiftly.
+
+While the specifics evolve, the process of planning, with its introspection, foresight, and adaptability guide me.
 
 ## Activities overview
 
@@ -52,7 +61,7 @@ Before setting future goals, it's crucial to recognize and celebrate past succes
 
 **Tips:**
 
-- Maintain a monthly or weekly log of your accomplishments.
+- Maintain a weekly or even daily log of your accomplishments. I capture feedback and wins in my daily digital journal so I can search for them later.
 - Don't just list tasks completed; note the impact they had.
 - Share your accomplishments with a mentor or colleague to gain perspective.
 
@@ -157,7 +166,7 @@ As I join TechCorp, my priorities are:
    - Review and synthesize available resources.
    - Continuously refine understanding in collaboration with experts.
 
-**Here are example tasks from a week during when those were my priorities:**
+And here are tasks (or placeholders for tasks, it's OK, you can figure it out as you go!) I came up with on a Monday morning those were my priorities:
 
 1. **Team Management & Development**
 
