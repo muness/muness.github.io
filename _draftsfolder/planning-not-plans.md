@@ -140,7 +140,7 @@ As I join TechCorp, my priorities are:
 1. **Team Management & Development**
    - Understand and address individual needs and aspirations.
    - Clarify expectations and facilitate smooth onboarding.
-   - Ascertain hiring necessities and streamline the process.
+   - Understand hiring priorities and process.
 
 2. **Role & Contribution Analysis**
    - Engage with stakeholders to understand expectations.
@@ -168,20 +168,8 @@ As I join TechCorp, my priorities are:
    - **Clarify expectations and facilitate smooth onboarding:**
      - TODO: Check in with new team member during their first week.
 
-   - **Get engaged in the hiring process:**
-     - TODO: Review hiring plans and requirements.
-
-1. **Team Management & Development**
-
-   - **Understand and address individual needs and aspirations:**
-     - TODO: Create a list of 1:1s, detailing frequency and topic for each. Request administrative assistance for scheduling.
-     - TODO: Initiate meetings with team members to establish rapport and understand their expectations.
-
-   - **Clarify expectations and facilitate smooth onboarding:**
-     - TODO: Check in with new team member during their first week.
-
-   - **Ascertain hiring necessities and streamline the process:**
-     - TODO: Coordinate with the HR representative to understand recruiting requirements and how the team can assist.
+   - **Understand hiring priorities and process:**
+     - TODO: Coordinate with the my managers and HR to understand recruiting requirements and how we can assist.
 
 2. **Role & Contribution Analysis**
 
@@ -219,4 +207,10 @@ As I join TechCorp, my priorities are:
    - **Continuously refine understanding in collaboration with experts:**
      - TODO: Schedule a discussion with a subject matter expert from another department to deepen understanding.
 
-By applying a Rolling 90 Day Priorities system, you can grow with clarity and purpose. Consider applying it if you learn but haven't been as deliberate as you'd like in your growth.
+## Embracing the Journey
+
+Reflecting on my last few years, I've come to realize that while our goals seem appealing, it's the process — rooted in intentional planning, adaptability, and continuous learning — that has unleashed my growth and reinforced a growth mindset. This framework has taught me to value lessons, challenge, and the guidance I receive along my journey.
+
+But here's the beautiful part: this isn't just my story. The essence of this approach is universally applicable. While I've laid out my experiences and methods, the core principles can resonate with anyone, anywhere. It's not just about setting goals but the deliberation, the reflection, and the intentional steps we take towards them. It's about harnessing the power of focused intent, the beauty of adaptability, and the joy of continuous learning. I've used adaptations of the framework to plan teams, help friends get over existential crises and in my coaching.
+
+Dive in, make it yours, and tell me about it. How did it work for you? Where did you tweak? I'd love to hear your stories!
