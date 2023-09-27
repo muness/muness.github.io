@@ -1,7 +1,7 @@
 ---
 title: "Planning Not Plans: Rolling 90 Day Priorities"
 date: 2023-09-26 18:00:00 +0500
-updated: 2023-09-26 16:40:00 +0500
+updated: 2023-09-27 13:10:00 +0500
 author: muness
 toc: true
 comments: true
@@ -227,14 +227,6 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
    - **Continuously refine understanding in collaboration with experts:**
      - TODO: Schedule a discussion with a subject matter expert from another department to deepen understanding.
 
-## Embracing the Journey
-
-Reflecting on the last few years, I've come to realize that while goals seem appealing, it's the journey — intentional planning, adaptability, and continuous learning — that has unleashed my growth and reinforced a growth mindset. This approach propelled me forward but also reinforced my growth mindset, teaching me to cherish the lessons, challenges, and guidance I get along the way.
-
-But here's the beautiful part: this isn't just my story. The essence of this approach is universally applicable. While I've laid out my experiences and methods, the core principles can resonate with anyone, anywhere. It's not just about setting goals but the deliberation, the reflection, and the intentional steps we take towards them. It's about harnessing the power of focused intent, the beauty of adaptability, and the joy of continuous learning. I've used adaptations of the framework to plan teams, help friends get over existential crises and in my coaching.
-
-Dive in, make it yours, and tell me about it. How did it work for you? Where did you tweak? I'd love to hear your stories!
-
 ## Credits and Testimonials
 
 ### Credits
@@ -245,8 +237,19 @@ Dive in, make it yours, and tell me about it. How did it work for you? Where did
 - [Outcomes over Output](https://www.senseandrespondpress.com/managing-outcomes) by Joshua Seiden. It's not about the output, it's about the outcomes we achieve. So a planning system that focuses on outcomes and pushes out plans until the last minute makes sense and is worth bragging about.
 - The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to reconsider whether what they're doing is the best way to meet their goals.
 - My coach, Daphne who helps me embrace a growth mindset and apply it to my whole life.
+- The dozens of friends, mentees and teammates who've tried past versions of the framework and helped me make it better.
 - Many thanks to Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
 
 ### Testimonials
 
+You too should send me your testimonials so I can add them here!
+
 > My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me. -Ale Cabrera
+
+## Embracing the Journey
+
+Reflecting on the last few years, I've learned that while goals seem appealing, it's the journey — intentional planning, adaptability, and continuous learning — that has unleashed my growth and nudges me towards a growth mindset.
+
+But here's the beautiful part: this isn't just my story. The essence of this approach is universally applicable. While I've laid out my experiences and methods, the core principles can resonate with anyone. It's not just about setting goals but the deliberation, the reflection, and the intentional steps we take towards them. It's also about harnessing the power of focused intent, the fun of adapting, and the joy of continuous learning.
+
+Dive in, make it yours, and tell me about it. How did it work for you? Where did you tweak? I'd love to hear your stories!
