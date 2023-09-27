@@ -242,9 +242,9 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
 
 ### Testimonials
 
-You too should send me your testimonials so I can add them here!
-
 > My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me. -Ale Cabrera
+
+If you've used this framework, send me your testimonials so I can add them here!
 
 ## Embracing the Journey
 
