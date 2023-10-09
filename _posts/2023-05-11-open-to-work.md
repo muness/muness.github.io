@@ -4,7 +4,7 @@ date: 2023-05-11 10:00:00 +0500
 author: muness
 toc: false
 comments: false
-pin: true
+pin: false
 ---
 
 I want to help 10x you through strong data foundations and a focus on the most important.
