@@ -69,7 +69,7 @@ Starting this system requires a significant time investment. Begin with one acti
 
 **Criteria**:
 
-- Don't just list tasks completed; note the impact they had.. Instead of "I did hard things X, Y and Z" describe what the increased revenue, improved roadmap, better user experience, opportunities, capabilities or cost cutting your work facilitated.
+- Don't just list tasks completed; note the impact they had. Instead of "I did hard things X, Y and Z" describe what the increased revenue, improved roadmap, better user experience, opportunities, capabilities or cost cutting your work facilitated.
 
 **Tips:**
 
