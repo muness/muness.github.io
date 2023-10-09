@@ -1,7 +1,7 @@
 ---
 title: "Planning Not Plans: Rolling 90 Day Priorities"
 date: 2023-09-26 18:00:00 +0500
-updated: 2023-09-27 13:10:00 +0500
+updated: 2023-10-09 09:55:00 +0500
 author: muness
 toc: true
 comments: true
@@ -44,66 +44,109 @@ Several criteria came up as I've iterated over this framework:
 
 While the specifics evolve, the process of planning, with its introspection, foresight, and adaptability guide me.
 
-## Activities overview
+## Activities Overview
 
-| Activity                | Refresh Frequency | Initial investment (hrs) | Refresh investment (hrs) |
-| ----------------------- | ----------------- | ------------------------ | ------------------------ |
-| Reflect on achievements | Annual            | 4                        | 2                        |
-| Recognize your strengths | Annual           | 4                        | 1                        |
-| Affirm your mission     | Annual            | 4                        | 2                        |
-| Set Priorities          | Quarterly and as needed         | 6                        | 3                        |
-| Weekly Priorities Review| Weekly            | n/a                      | .5                       |
+| Activity                   | Refresh Frequency | Initial investment (hrs) | Recurring investment (hrs) |
+|----------------------------|-------------------|--------------------------|--------------------------|
+| Reflect on Achievements    | Annual            | 3                        | 1.5                      |
+| Recognize Your Strengths   | Annual            | 3                        | 1                        |
+| Affirm Your Mission        | Annual            | 3                        | 1.5                      |
+| Aim & Set Priorities       | Quarterly and as needed | 4                  | 2                        |
+| Use the Priorities (Weekly Review)| Weekly     | n/a                      | 1                        |
 
-1. **Reflect on Achievements:** Document your proudest professional moments. Think of how they made a difference in terms of revenue, user experience, or other tangible impacts.
-2. **Recognize Your Strengths:** Examine your achievements and discern the skills that helped you accomplish them. Tools like the Enneagram or Working Genius can provide insights.
-3. **Affirm Your Mission:** Create a personal mission statement. Think about what you want to be remembered for.
-4. **Set Priorities:** Combining the “Aim” and “Identify small wins” steps, list your growth areas for the next quarter. Ensure that these align with your mission, leverage your strengths, and can be realistically achieved in three months. These priorities will be your focus areas, guiding your efforts for the next 90 days.
-5. **Weekly Priorities Review:** Each week, review your set priorities and adjust based on current circumstances, opportunities, or challenges. Look for ways to leverage your unique strengths and the current situation to progress towards your quarterly outcomes.
+1. **Reflect on Achievements:** List out 3 things you're most proud of from your work over the last few years. Highlight their impact, such as increased revenue or improved user experience.
+2. **Recognize Your Strengths:** Reflect on your achievements and identify the strengths that played a role. Consider tools like [Working Genius](https://www.workinggenius.com/) for deeper insights.
+3. **Affirm Your Mission:** Craft a personal mission statement. Visualize where you want to be and what legacy you aim to leave behind.
+4. **Aim & Set Priorities:** Define your growth areas for the upcoming quarter. Align them with your mission, leverage your strengths, and ensure they're achievable within the time frame.
+5. **Use the Priorities (Weekly Review):** Each week, break down your 90-day priorities into actionable tasks for that specific week. Adjust as you progress and as circumstances change.
 
-When you first implement this system, the investment level is high. Aim to do one to two activities a week. And once you've tried it a couple of times, make it your own.
+Starting this system requires a significant time investment. Begin with one activity a week, allowing yourself time to reflect between each. The initial run-through may take 4-6 weeks. Take your time and let it naturally integrate into your routine.
 
 ### 1. Reflect on Achievements
 
-Before setting future goals, it's crucial to recognize and celebrate past successes. Reflecting on achievements provides motivation and a clear understanding of capabilities.
+- **What**: List out 3 things you're most proud of from your work over the last few years.
+- **Why**: Before setting future goals, it's crucial to recognize and celebrate past successes. Reflecting on achievements provides motivation and a clear understanding of capabilities.
+
+**Criteria**:
+
+- Don't just list tasks completed; note the impact they had.. Instead of "I did hard things X, Y and Z" describe what the increased revenue, improved roadmap, better user experience, opportunities, capabilities or cost cutting your work facilitated.
 
 **Tips:**
 
-- Maintain a weekly or even daily log of your accomplishments. I capture feedback and wins in my daily digital journal so I can search for them later.
-- Don't just list tasks completed; note the impact they had.
+- Look through Impact Reviews.
+- Look at your resume/LinkedIn profile and think about major deliverables.
 - Share your accomplishments with a mentor or colleague to gain perspective.
+- Going forward, maintain a weekly or even daily log of your accomplishments. That will make it easier for future iterations. I capture feedback and wins in my daily digital journal so I can search for them later. See more at [write a brag document](https://jvns.ca/blog/brag-documents/?msclkid=f9bd0feab45611eca0e56b7f0347c0c1).
 
 ### 2. Know Your Strengths
 
-Recognizing your strengths gives you an edge. It enables you to play to your advantages, making tasks more effortless and impactful.
+- **What**: Reflect on your achievement list and write out the strengths that helped you accomplish them.
+- **Why**: Recognizing your strengths gives you an edge. It enables you to play to your advantages, making tasks more effortless and impactful.
 
 **Tips:**
 
 - Request feedback from peers and supervisors.
 - Reflect on the tasks you found most engaging and fulfilling.
-- Consider using psychometric tests. Don't just take the results at face value; reflect on them and discuss them with others and make your own conclusions about your strengths.
+- Consider using psychometric tests. Don't just take the results at face value; reflect on them and discuss them with others and make your own conclusions about your strengths. My favorite is [Working Genius](https://www.workinggenius.com/). Others include [Strengths Finder](https://www.gallup.com/cliftonstrengths/en/strengthsfinder.aspx) and [Enneagram](https://www.enneagraminstitute.com/).
 
-### 3. Aim
+### 3. Affirm your mission
 
-Your mission or aim provides direction. It's the compass guiding your tasks, goals, and ambitions.
+- **What**: Write down what motivates you. Think of this as your personal mission statement.
+- **Why**: Your mission or aim provides direction. It's the compass guiding your tasks, goals, and ambitions.
+
+**Criteria**:
+
+- Do you see how the motivation played into your accomplishments?
+- Do your strengths match up with your motivation?
 
 **Tips:**
 
 - Visualize where you want to be in 3-5 years.
 - Determine the skills and knowledge you need to acquire to get there.
-- Revisit and refine your aim periodically.
+- Revisit and refine your mission periodically.
 
-### 4. Use the Priorities
+### 4. Aim
 
-90-day priorities aren't just a list of tasks. They’re a structured approach to growth, aligning daily tasks with longer-term goals and aspirations.
+- **What**: List your growth areas. Think of this as your strategy for furthering your mission. These are your priorities for the next 90 days.
+- **Why**: By focusing on a few key areas, you can make significant progress. This approach also ensures you don't spread yourself too thin.
+
+**Criteria:**
+
+- These are hard and take a long time to achieve. The harder the growth area, the more it motivates.
+- Not about a title: Think in terms of skills you want to develop, experiences you want to have, people you want to build relationships with.
+- Few: Hone in on the 3 most important to your motivation. These are hard and will take many years. As such, make sure that they'll energize you by virtue of aligning with your mission.
+- Important. The growth strategy has a clear connection to your mission.
+- Viable:
+  - Leverage your strengths.
+  - Have relevance at work.
+  - You can find mentors, peers, books, courses that will help.
+- Preferably connects to the purpose of the group you’re part of (craft, Job to Be Done you're solving, product area).
+
+**Tips:**
+
+- Look back at the achievements you already have. How could it have gone even better? How could you have delivered it faster?
+- In 5 years, what would you like to be on your achievement list? What would it take to achieve them?
+- What do you see others accomplishing that you want to do too?
+- What would Mastery look like for the skills you already have and you're most eager to grow?
+- Run them by your peers. Make sure they understand why you're doing what you're doing and ask for feedback to make sure you're not missing anything important to them.
+
+### 5. Use the Priorities
+
+- **What**: The most important tasks you can take _this week_ to move towards your priorities.
+- **Why**: Priorities aren't just a list of tasks. They’re a structured approach to growth, aligning daily tasks with longer-term goals and aspirations.
+
+**Criteria**:
+
+- No more than 5 per week.
+- Important: These tasks have a clear connection to your priorities. They are in fact the most important tasks you can do this week to further them.
+- Viable: You can do them this week. They're not dependent on others or on things outside your control.
+- Realistic: You can do them this week, given your other commitments. Take no more than a few hours each.
 
 **Tips:**
 
 - Every week, break down your priorities into actionable tasks. Consider: what is the one most important thing I can do this week to move towards this priority?
-- Review your priorities regularly.
-- Adjust as needed based on progress and changing circumstances.
-- Run them by your manager. Ask them to validate the priorities and provide feedback.
-- Run them by your reports. Make sure they understand why you're doing what you're doing and ask for feedback to make sure you're not missing anything important to them.
-- Run them by your peers. They can help you see ways to achieve your priorities that you might not have thought of.
+- Run them by your manager. Ask them to validate the tasks and provide feedback.
+- Note and celebrate progress in the past week. Did they help you move towards your priorities? Did you learn anything that will help you do better next week?
 
 ---
 
@@ -190,7 +233,7 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
      - TODO: Check in with new team member during their first week.
 
    - **Understand hiring priorities and process:**
-     - TODO: Coordinate with the my managers and HR to understand recruiting requirements and how we can assist.
+     - TODO: Coordinate with managers and HR to understand recruiting requirements and how we can assist.
 
 2. **Role & Contribution Analysis**
 
@@ -211,7 +254,7 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
      - TODO: Start engaging with Project Managers for strategy and planning inputs. Adjust schedule if not accomplished in the current week.
 
    - **Collaborate with internal and external stakeholders:**
-     - [Further tasks related to collaborating with stakeholders can be added here.]
+     - \[Further tasks related to collaborating with stakeholders can be added here.]
 
    - **Ensure structural alignment and develop tactical plans for execution:**
      - Pass this week.
@@ -219,7 +262,7 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
 4. **Company Induction**
 
    - **Engage in listening sessions with various departments:**
-     - [Tasks related to engaging in listening sessions can be added here.]
+     - \[Tasks related to engaging in listening sessions can be added here.]
 
    - **Review and synthesize available resources:**
      - Pass this week.
@@ -237,8 +280,8 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
 - [Outcomes over Output](https://www.senseandrespondpress.com/managing-outcomes) by Joshua Seiden. It's not about the output, it's about the outcomes we achieve. So a planning system that focuses on outcomes and pushes out plans until the last minute makes sense and is worth bragging about.
 - The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to reconsider whether what they're doing is the best way to meet their goals.
 - My coach, Daphne who helps me embrace a growth mindset and apply it to my whole life.
-- The dozens of friends, mentees and teammates who've tried past versions of the framework and helped me make it better.
-- Many thanks to Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
+- The dozens of friends, people I've mentored and teammates who've tried past versions of the framework and helped me make it better.
+- Many thanks to Jason Rudolph, Jay Floyd and Ale Cabrera for reading drafts of this and providing feedback that made it much better.
 
 ### Testimonials
 
