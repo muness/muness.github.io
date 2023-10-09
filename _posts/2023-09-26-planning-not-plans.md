@@ -10,7 +10,7 @@ pin: true
 
 ## What is this?
 
-This is a comprehensive, adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with precision and confidence.
+This is a comprehensive, adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with confidence.
 
 Military strategist and President Dwight D. Eisenhower once said,
 > "Plans are nothing; planning is everything."
@@ -46,13 +46,15 @@ While the specifics evolve, the process of planning, with its introspection, for
 
 ## Activities Overview
 
-| Activity                   | Refresh Frequency | Initial investment (hrs) | Recurring investment (hrs) |
+| Activity                   | Maximum Refresh Frequency | Initial investment (hrs) | Recurring investment (hrs) |
 |----------------------------|-------------------|--------------------------|--------------------------|
-| Reflect on Achievements    | Annual            | 3                        | 1.5                      |
-| Recognize Your Strengths   | Annual            | 3                        | 1                        |
-| Affirm Your Mission        | Annual            | 3                        | 1.5                      |
-| Aim & Set Priorities       | Quarterly and as needed | 4                  | 2                        |
-| Use the Priorities (Weekly Review)| Weekly     | n/a                      | 1                        |
+| Reflect on Achievements    | Annual           | 3                        | 1.5                      |
+| Recognize Your Strengths   | Bi-annually            | 3                        | 1                        |
+| Affirm Your Mission        | Bi-annually            | 3                        | 1.5                      |
+| Aim & Set Priorities       | Quarterly  | 4                  | 2                        |
+| Use the Priorities (aka Weekly Review)| Weekly     | n/a                      | 1                        |
+
+(Note that refresh frequencies are max recommendations, investment times are estimates.
 
 1. **Reflect on Achievements:** List out 3 things you're most proud of from your work over the last few years. Highlight their impact, such as increased revenue or improved user experience.
 2. **Recognize Your Strengths:** Reflect on your achievements and identify the strengths that played a role. Consider tools like [Working Genius](https://www.workinggenius.com/) for deeper insights.
@@ -87,7 +89,7 @@ Starting this system requires a significant time investment. Begin with one acti
 
 - Request feedback from peers and supervisors.
 - Reflect on the tasks you found most engaging and fulfilling.
-- Consider using psychometric tests. Don't just take the results at face value; reflect on them and discuss them with others and make your own conclusions about your strengths. My favorite is [Working Genius](https://www.workinggenius.com/). Others include [Strengths Finder](https://www.gallup.com/cliftonstrengths/en/strengthsfinder.aspx) and [Enneagram](https://www.enneagraminstitute.com/).
+- Consider using psychometric tests. Don't just take the results at face value; reflect on them and discuss them with others and make your own conclusions about your strengths. My favorite is [Working Genius](https://www.workinggenius.com/). Others include [StrengthsFinder](https://www.gallup.com/cliftonstrengths/en/strengthsfinder.aspx) and [Enneagram](https://www.enneagraminstitute.com/).
 
 ### 3. Affirm your mission
 
@@ -105,7 +107,7 @@ Starting this system requires a significant time investment. Begin with one acti
 - Determine the skills and knowledge you need to acquire to get there.
 - Revisit and refine your mission periodically.
 
-### 4. Aim
+### 4. Aim & Set Priorities
 
 - **What**: List your growth areas. Think of this as your strategy for furthering your mission. These are your priorities for the next 90 days.
 - **Why**: By focusing on a few key areas, you can make significant progress. This approach also ensures you don't spread yourself too thin.
