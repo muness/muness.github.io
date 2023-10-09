@@ -46,18 +46,18 @@ While the specifics evolve, the process of planning, with its introspection, for
 
 ## Activities Overview
 
-| Activity                   | Maximum Refresh Frequency | Initial investment (hrs) | Recurring investment (hrs) |
+| Activity                   | Maximum Refresh Frequency | Initial investment<br/>(hrs) | Recurring investment<br/> (hrs) |
 |----------------------------|-------------------|--------------------------|--------------------------|
 | Reflect on Achievements    | Annual           | 3                        | 1.5                      |
 | Recognize Your Strengths   | Bi-annually            | 3                        | 1                        |
 | Affirm Your Mission        | Bi-annually            | 3                        | 1.5                      |
 | Aim & Set Priorities       | Quarterly  | 4                  | 2                        |
-| Use the Priorities (aka Weekly Review)| Weekly     | n/a                      | 1                        |
+| Use the Priorities<br/>aka Weekly Review| Weekly     | n/a                      | 1                        |
 
-(Note that refresh frequencies are max recommendations, investment times are estimates.
+Note that refresh frequencies are max recommendations, investment times are estimates.
 
-1. **Reflect on Achievements:** List out 3 things you're most proud of from your work over the last few years. Highlight their impact, such as increased revenue or improved user experience.
-2. **Recognize Your Strengths:** Reflect on your achievements and identify the strengths that played a role. Consider tools like [Working Genius](https://www.workinggenius.com/) for deeper insights.
+1. **Reflect on Achievements:** List out 3 things you're most proud of from over the last few years. Highlight their impact, such as increased revenue or improved user experience.
+2. **Recognize Your Strengths:** Reflect on your achievements and identify the strengths that played a role.
 3. **Affirm Your Mission:** Craft a personal mission statement. Visualize where you want to be and what legacy you aim to leave behind.
 4. **Aim & Set Priorities:** Define your growth areas for the upcoming quarter. Align them with your mission, leverage your strengths, and ensure they're achievable within the time frame.
 5. **Use the Priorities (Weekly Review):** Each week, break down your 90-day priorities into actionable tasks for that specific week. Adjust as you progress and as circumstances change.
