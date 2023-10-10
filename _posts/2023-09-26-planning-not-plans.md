@@ -10,7 +10,7 @@ pin: true
 
 ## What is this?
 
-This is a comprehensive, adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with confidence.
+This is an adaptive framework I've developed and refined over the years to guide personal and professional growth. At its core, the methodology is anchored in the principle of **acting with intent**. By examining my history, understanding my strengths, and setting forth a clear mission, I can aim with confidence.
 
 Military strategist and President Dwight D. Eisenhower once said,
 > "Plans are nothing; planning is everything."
