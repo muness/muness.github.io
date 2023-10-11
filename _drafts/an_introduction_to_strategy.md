@@ -2,7 +2,7 @@
 
 Once we get into the corporate world, we hear about strategy. We get this sense it's something we _should_ do, but no one seems to define it, and it's so big, spanning so many people we don't really know _what_ it is. Here's my take: **Strategy is a process for plodding our way towards nontrivial objectives, an inseparable interplay of objectives and tactics.**. It's about slowly but surely navigating the maze of challenges to reach our significant goals.
 
-How we do it is even less obvious as it's a process that happens over time, spanning multiple levels of an organization...
+*How* we do it is even less obvious as it's a process that happens over time, spanning multiple levels of an organization...
 
 Two of my favorite books on strategy are _[Good Strategy Bad Strategy: The Difference and Why It Matters](https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/)_ by Richard Rumelt and _[Winners: And How They Succeed](https://www.simonandschuster.com/books/Winners/Alastair-Campbell/9781681772356)_ by Alastair Campbell. But neither defines strategy, jumping straight into ways of doing it well or poorly.
 
@@ -14,9 +14,9 @@ One, as far as I know unpublished, paper by Goldratt, _[Strategy And Tactics](ht
 
 **Strategy** sets the stage for your overarching goal—your destination. While **tactics** represent the concrete actions—like paths or roads—you'll take to get there. **Why does strategy matter?** Without a defined strategy, efforts become scattered and misaligned, causing unnecessary detours in your journey. A clear strategy provides direction, ensuring every step you take moves you closer to your destination.
 
-## Strategy vs Tactics
+## Strategy and Tactics
 
-Within the S&T Trees framework:
+Within the S&T Trees framework, startegy and tactics go hand in hand. A strategy without tactics is just a dream, and tactics without strategy is just busy work. The two are inseparable, and you need both.
 
 - **Strategy** answers the "What?" and "Why?", laying out the goal and its rationale.
 - **Tactics** focus on the "How?", detailing the specific actions to reach the strategic objectives. Every tactic must align with a strategic objective, and conversely, every strategic objective should have associated tactical actions.
