@@ -1,14 +1,14 @@
 # An introduction to Strategy
 
-Once we get into the corporate world, we hear about strategy. We get this sense it's something we _should_ do, but no one seems to define it, and it's so big, spanning so many people we don't really know _what_ it is. Here's my take: **Strategy is a process for plodding our way towards nontrivial objectives, an inseparable interplay of objectives and tactics.**. It's about slowly but surely navigating the maze of challenges to reach our significant goals.
+Entering the corporate world, we're often introduced to the concept of strategy, something we are told we should be doing. Yet, for all its ubiquity, a clear definition and actionable guidance often remain elusive, leading many to wonder: *what* exactly is strategy? My take: **strategy is a process for advancing towards important objectives by weaving objectives and tactics**. It's not a static and comprehensive plan but an evolving process. As one objective is met, strategy is reassessed, refined, and realigned to address the next goal.
 
-*How* we do it is even less obvious as it's a process that happens over time, spanning multiple levels of an organization...
+Understanding the *how* can be even more intricate, given that strategy unfolds over time and often involves layers within an organization...
 
 Two of my favorite books on strategy are _[Good Strategy Bad Strategy: The Difference and Why It Matters](https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/)_ by Richard Rumelt and _[Winners: And How They Succeed](https://www.simonandschuster.com/books/Winners/Alastair-Campbell/9781681772356)_ by Alastair Campbell. But neither defines strategy, jumping straight into ways of doing it well or poorly.
 
 Even strategy expert Michael Porter's _What Is Strategy?_ in the [On Strategy](https://store.hbr.org/product/hbr-s-10-must-reads-on-strategy-including-featured-article-what-is-strategy-by-michael-e-porter/12601) HBR collection jumps straight into what strategy isn't (Operational Effectiveness Is Not Strategy) and the How of strategy (creation of a unique and valuable position, choose what _not_ to do, creating fit).
 
-One, as far as I know unpublished, paper by Goldratt, _[Strategy And Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF)_ (S&T) takes a different approach defining what a strategy is, how it's different from tactics and explains how they should be applied together, as a connected tree of objectives. It's a dense paper and rather in need of edits for typos and clarity. While I keep referencing it, many people I point at the article find it dense and hard to follow, so this post is my alternative, hopefully easier to summary of Strategy And Tactics. Do read the paper, because it's full of gems that will help you better iterate towards your own objectives.
+An unpublished, paper by Goldratt, _[Strategy And Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF)_ (S&T) takes a different approach defining what a strategy is, how it's different from tactics and explains how they should be applied together, as a connected tree of objectives. It's a dense paper and rather in need of edits for typos and clarity. While I keep referencing it, many people I point at the article find it dense and hard to follow, so this post is my alternative, hopefully easier to summary of Strategy And Tactics. Do read the paper, because it's full of gems that will help you better iterate towards your own objectives.
 
 ## What is Strategy?
 
@@ -68,4 +68,6 @@ Note: This tree is an example, and should be further expanded to include more ob
 
 ## Takeaway
 
-Strategy isn't a buzzword: it's about figuring out a path towards a goal. The S&T Trees framework offers a tangible way to visualize and critique your strategic journey. It also gives you a way to split work, giving people owning different branches autonomy while connecting all the strategies and nested tactics back to the common objectives.
+Strategy isn't just a buzzword: it's about forging a path towards meaningful goals. The S&T Trees framework offers a tangible blueprint for mapping and evaluating your strategic journey. Beyond providing a structure, it allows for delegation across branches, fostering autonomy while ensuring alignment towards the broader objectives.
+
+While S&T Trees lay a foundation for meeting objectives, remember that [planning is more important than plans](/blog/2023-09-26-planning-not-plans). Overloading your S&T tree with details from the beginning is not necessary. Instead, prioritize the most important branches, work through them and, as those mature, progressively flesh out and tackle other branches.
