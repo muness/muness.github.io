@@ -1,6 +1,8 @@
 # An introduction to Strategy
 
-Once we get into the corporate world, we hear about strategy. We get this sense it's something we _should_ do, but no one seems to define it, and it's so big, spanning so many people we don't really know _what_ it is. _How_ we do it is even less obvious as it's a process that happens over time, spanning multiple levels of an organization.
+Once we get into the corporate world, we hear about strategy. We get this sense it's something we _should_ do, but no one seems to define it, and it's so big, spanning so many people we don't really know _what_ it is. Here's my take: **Strategy is a process for plodding our way towards nontrivial objectives, an inseparable interplay of objectives and tactics.**. It's about slowly but surely navigating the maze of challenges to reach our significant goals.
+
+How we do it is even less obvious as it's a process that happens over time, spanning multiple levels of an organization...
 
 Two of my favorite books on strategy are _[Good Strategy Bad Strategy: The Difference and Why It Matters](https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/)_ by Richard Rumelt and _[Winners: And How They Succeed](https://www.simonandschuster.com/books/Winners/Alastair-Campbell/9781681772356)_ by Alastair Campbell. But neither defines strategy, jumping straight into ways of doing it well or poorly.
 
