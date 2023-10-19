@@ -1,7 +1,7 @@
 ---
-title: "Planning Not Plans: Rolling 90 Day Priorities"
+title: "Planning Not Plans: Rolling Priorities"
 date: 2023-09-26 18:00:00 +0500
-last_modified_at: 2023-10-09 09:55:00 +0500
+last_modified_at: 2023-10-19 09:15:00 +0500
 author: muness
 toc: true
 comments: true
@@ -46,7 +46,7 @@ While the specifics evolve, the process of planning, with its introspection, for
 
 ## Activities Overview
 
-| Activity                   | Maximum Refresh Frequency | Initial investment<br/>(hrs) | Recurring investment<br/> (hrs) |
+| Activity                   | Recommended Refresh Frequency | Initial investment<br/>(hrs) | Recurring investment<br/> (hrs) |
 |----------------------------|-------------------|--------------------------|--------------------------|
 | Reflect on Achievements    | Annual           | 3                        | 1.5                      |
 | Recognize Your Strengths   | Bi-annually            | 3                        | 1                        |
