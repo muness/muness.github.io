@@ -16,7 +16,7 @@ Before we delve deeper, let's clarify the distinction between outputs and outcom
 - **Outputs** refer to the tangible, direct artifacts or deliverables produced through efforts. They are quantifiable and can be easily measured but don't reflect the value or impact created for users or stakeholders. For instance, developing a certain number of features or completing tasks are examples of outputs.
 - **Outcomes**, on the other hand, are the changes or benefits that occur as a result of the outputs. They reflect the value delivered to users and are about changing behavior or impression. For instance, improved user satisfaction, increased engagement, or achieving a significant milestone are examples of outcomes.
 
-## Exploring The Essence of Outcomes
+## Outcomes and other frameworks
 
 Seiden's emphasis on outcomes aligns well with modern strategic thinking, mirroring the ethos of flexible planning seen in other frameworks like Goldratt's [Strategy & Tactics Trees](/posts/on-s-and-t-trees/). Seiden critiques the traditional approach of chasing high-level, ambiguous goals, stating, "These impact-level targets are too complex to be useful to our teams."
 
