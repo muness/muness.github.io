@@ -1,4 +1,11 @@
-# Outcomes and Outputs: A book summary
+---
+title: "Outcomes Over Outputs: A book summary"
+date: 2023-10-27 18:20:00 +0500
+author: muness
+toc: true
+comments: true
+pin: false
+---
 
 In _[Outcomes Over Output](https://www.senseandrespondpress.com/managing-outcomes)_, Joshua Seiden advocates for a shift from the traditional output-driven approach to a more outcome-centered mindset in product development. He scrutinizes the inflexibility of adhering to predefined outputs which often don't align with the evolving needs and expectations of users.
 
