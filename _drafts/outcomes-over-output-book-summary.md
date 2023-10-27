@@ -51,17 +51,27 @@ Seiden's perspective on MVP promotes a culture of experimentation, learning, and
 
 ## Shifting Organizational Focus
 
-The book notes the propensity of organizations to structure around products or channels rather than behaviors or customer journeys, which inadvertently places more emphasis on outputs over outcomes. Seiden says, "so often, our organizations are set up around product or channel vs. behavior or customer journey. And when we do that, we’re implicitly de-prioritizing outcomes and prioritizing outputs."
+Seiden observes a common organizational tendency to structure around products or channels rather than focusing on behaviors or customer journeys, which often leads to a priority on outputs over outcomes. Here’s how Seiden articulates this shift and its implications:
 
-In the context of technology initiatives, this shift means transcending traditional metrics like features delivered (or points delivered!), and instead, focusing on new behaviors encouraged by the work. It's a move from output-based planning, which often struggles with prioritization due to a disconnect from value delivery, to an outcome-based approach where success metrics are established upfront. This approach encourages continuous assessment and iteration, enabling teams to realign efforts based on performance reviews, and pivot when necessary to ensure value delivery.
+### Organization Structure and Its Pitfalls
 
-While he doesn't discuss technical debt explicitly, Seiden implies that while addressing technical debt is important, it should be tied to the broader goal of enabling new capabilities. The _management of technical debt is not an end in itself_ but a means to facilitate better outcomes, both for users and the organization.
+Seiden notes, "so often, our organizations are set up around product or channel vs. behavior or customer journey. And when we do that, we’re implicitly de-prioritizing outcomes and prioritizing outputs." In the realm of technology initiatives, this translates to an overemphasis on traditional metrics like features delivered, often at the expense of fostering new behaviors or enhancing user experiences.
 
-Seiden highlights the importance of clarity in intention by mentioning, "In outcome-based work, teams need to be really clear about the value they are trying to create, and they do this by specifying two critical outcomes of the work: the outcome they are seeking for the customer or user, and the outcome they are seeking for the business. These two outcomes must be linked."
+### Transcending Traditional Metrics
 
-This shift necessitates establishing clear hypotheses and success measures before embarking on a project. Seiden shares a narrative, “For us it’s about establishing hypotheses and measures of success before we start on an effort,”... “If the change looks like it’s working, we look for other areas of the business to work on. If it’s not working like we thought it would, it raises the priority and we take another run at it.”
+The shift Seiden advocates for involves transcending traditional metrics and instead, focusing on new behaviors encouraged by the work. It’s a transition from output-based planning, which often faces challenges with prioritization due to a disconnect from value delivery, to an outcome-based approach where success metrics are established upfront. This approach encourages continuous assessment and iteration, enabling teams to realign efforts based on performance reviews and pivot when necessary to ensure value delivery.
 
-I think of this as an explicit statement of the mechanism of action, which is often implicit in traditional planning. For example, by listing this mechanism of action: "By adding a personalized recommendation feature, we expect to enhance user engagement, leading to an increase in the average time spent on the platform and a 10% uptick in monthly active users," we now have hypothesis that can be tested and evaluated.
+### Addressing Technical Debt
+
+While not discussed explicitly, Seiden implies that addressing technical debt is crucial but should be tied to the broader goal of enabling new capabilities. The management of technical debt is not an end in itself but a means to facilitate better outcomes, both for users and the organization.
+
+### Clarity in Intention and Hypothesis-Driven Action
+
+Seiden emphasizes the importance of having clear intentions by stating, "In outcome-based work, teams need to be really clear about the value they are trying to create..." This shift necessitates establishing clear hypotheses and success measures before embarking on a project. Seiden shares a narrative about establishing hypotheses and measures of success, which if proven to be working, prompts looking for other areas of the business to work on. If not, it raises the priority and necessitates another attempt at it.
+
+#### Mechanism of Action
+
+By articulating a mechanism of action, teams make explicit what traditionally remains implicit in planning. For instance, stating: "By adding a personalized recommendation feature, we expect to enhance user engagement, leading to an increase in the average time spent on the platform and a 10% uptick in monthly active users," provides a testable hypothesis.
 
 - **Action**: Adding a personalized recommendation feature.
 - **Expected Outcomes**: Enhanced user engagement, increased average time spent on the platform, and a 10% uptick in monthly active users.
@@ -70,7 +80,9 @@ I think of this as an explicit statement of the mechanism of action, which is of
   - **Average Session Duration**: Any noticeable change in the average time spent on the platform post-implementation can provide immediate feedback on the feature's impact.
   - **User Feedback**: Collecting user feedback on the new feature can provide early insights into its acceptance and effectiveness.
 
-By identifying such leading indicators, the team can monitor the feature. This allows for a more iterative approach to evaluation, where data on user engagement and session duration can be analyzed in days not weeks. If the leading indicators show unfavorable trends, the team can quickly adjust or abort the initiative without having to wait for the long-term outcome of monthly active user growth.
+By identifying leading indicators, teams can monitor features in a more iterative evaluation approach. This enables quicker adjustments based on data-driven insights, ensuring that efforts remain aligned with delivering value, both in the short-term and long-term.
+
+### From Feature-Centric to Outcome-Driven Planning
 
 Through these insights, Seiden propels the idea of moving away from a feature-centric planning to a more holistic, outcome-driven planning, ensuring that the work done is aligned with the value it's intended to deliver. He reflects on the challenge of prioritization in a feature-based planning model, "the feature-based way of planning work had made it hard to prioritize work. This is a basic problem of output-based planning. How can you figure out what features are important if you aren’t sure which features will deliver value?"
 
