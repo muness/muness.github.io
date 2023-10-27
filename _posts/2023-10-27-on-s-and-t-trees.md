@@ -23,7 +23,7 @@ An unpublished, paper by Goldratt, *[Strategy And Tactics](https://goldrattresea
 
 ## Strategy and Tactics
 
-Within the S&T Trees framework, startegy and tactics go hand in hand. A strategy without tactics is just a dream, and tactics without strategy is just busy work. The two are inseparable, and you need both.
+**A strategy without tactics is just a dream, and tactics without strategy is just busy work.** The S&T Trees framework embraces this mindset wherein startegy and tactics go hand in hand. The two are inseparable, and you need both.
 
 - **Strategy** answers the "What?" and "Why?", laying out the goal and its rationale.
 - **Tactics** focus on the "How?", detailing the specific actions to reach the strategic objectives. Every tactic must align with a strategic objective, and conversely, every strategic objective should have associated tactical actions.
