@@ -1,4 +1,11 @@
-# An introduction to Strategy
+---
+title: "A summary of Strategy & Tactics Trees"
+date: 2023-10-27 18:00:00 +0500
+author: muness
+toc: true
+comments: true
+pin: true
+---
 
 Entering the corporate world, we're often introduced to the concept of strategy, something we are told we should be doing. Yet, for all its ubiquity, a clear definition and actionable guidance often remain elusive, leading many to wonder: *what* exactly is strategy? My take: **strategy is a process for advancing towards important objectives by weaving objectives and tactics**. It's not a static and comprehensive plan but an evolving process. As one objective is met, strategy is reassessed, refined, and realigned to address the next goal.
 
