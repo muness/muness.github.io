@@ -11,9 +11,11 @@ Before we delve deeper, let's clarify the distinction between outputs and outcom
 
 ## The Essence of Outcomes
 
-Seiden's emphasis on outcomes as smaller, manageable targets aligns with the ethos of flexible planning. He critiques high-level, ambiguous goals stating, "These impact-level targets are too complex to be useful to our teams.
+Seiden's emphasis on outcomes aligns well with modern strategic thinking, mirroring the ethos of flexible planning seen in other frameworks like Goldratt's [Strategy & Tactics Trees](/posts/on-s-and-t-trees/). Seiden critiques the traditional approach of chasing high-level, ambiguous goals, stating, "These impact-level targets are too complex to be useful to our teams."
 
-Instead, we need to ask our teams to work on outcomes—the smaller, more manageable targets that, taken together, will create the impact we want. We do this by asking them to focus on changing customer behavior in a way that drives business results." This resonates with Goldratt's take in [Strategy & Tactics Trees](/posts/on-s-and-t-trees/).
+For instance, consider a goal of increasing user engagement on a digital platform. In a traditional output-centric approach, the focus might be on deploying a set number of new features.
+
+However, Seiden would advocate for a more outcome-centric approach, where the focus shifts to the actual impact of those features on user engagement levels. As a Strategy & Tactics Tree framing the strategic outcome would be to enhance user engagement, and the tactics would specify actions like optimizing the user interface, introducing interactive elements, or launching engagement-boosting campaigns. Each tactic is aligned with the outcome, and the progress is iteratively validated to ensure the desired outcome is being moved towards.
 
 ## Redefining MVP
 
