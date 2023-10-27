@@ -105,4 +105,4 @@ Note: This tree is an example, and should be further expanded to include more ob
 
 Strategy isn't just a buzzword: it's about forging a path towards meaningful goals. The S&T Trees framework offers a tangible blueprint for mapping and evaluating your strategic journey. Beyond providing a structure, it allows for delegation across branches, fostering autonomy while ensuring alignment towards the broader objectives.
 
-While S&T Trees lay a foundation for meeting objectives, remember that [planning is more important than plans](/blog/2023-09-26-planning-not-plans). Overloading your S&T tree with details from the beginning is not necessary. Instead, prioritize the most important branches, work through them and, as those mature, progressively flesh out and tackle other branches.
+While S&T Trees lay a foundation for meeting objectives, remember that [planning is more important than plans](/posts/planning-not-plans/). Overloading your S&T tree with details from the beginning is not necessary. Instead, prioritize the most important branches, work through them and, as those mature, progressively flesh out and tackle other branches.
