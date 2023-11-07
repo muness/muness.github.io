@@ -1,7 +1,7 @@
 ---
 title: "Planning Not Plans: Rolling Priorities"
 date: 2023-09-26 18:00:00 +0500
-last_modified_at: 2023-10-19 09:15:00 +0500
+last_modified_at: 2023-11-07 14:40:00 +0500
 author: muness
 toc: true
 comments: true
@@ -287,7 +287,12 @@ Here are tasks (or placeholders for tasks, it's OK, you can figure it out as you
 
 ### Testimonials
 
-> My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me. -Ale Cabrera
+Ale Cabrera:
+> My imposter syndrome hasn't fully gone away, but we’re at peace now. When I start having the familiar feelings, I just look at my doc and I feel relieved. It works for me.
+
+Jason Rudolph:
+> Most growth systems seem to assume that your path should be determined by your strengths, or by the company's needs, or by the intersection of the two. For me, that's always resulted in a plan I've found uninspiring.
+> Muness's system reveals the missing components: I needed to identify what motivates me, the growth endeavors that I'm most proud of, and the accomplishments of the people that I look up to. The result: A plan that truly inspires me and has guided me toward fulfilling growth for more than a year now.
 
 If you've used this framework, send me your testimonials so I can add them here!
 
