@@ -5,6 +5,7 @@ author: muness
 toc: false
 comments: false
 pin: false
+hidden: true
 ---
 
 I want to help 10x you through strong data foundations and a focus on the most important.
