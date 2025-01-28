@@ -9,7 +9,7 @@ pin: true
 
 ## **Introduction: Connecting Theory to Practice**
 
-In earlier blog posts, I explore frameworks for effective leadership, from documenting strategy and planning dynamically to focusing on outcomes and leveraging structured tools like S\&T trees. This follow-up highlights how my leadership team and I apply these principles while leading a data and engineering platform organization.
+In earlier blog posts, I explore frameworks for effective leadership, from documenting strategy and planning dynamically to focusing on outcomes and leveraging structured tools like Strategy And Tactics (S&T) trees. This follow-up highlights how my leadership team and I apply these principles while leading a data and engineering platform organization.
 
 Platform teams operate at a unique intersection—their success depends on enabling other teams to succeed. This requires careful prioritization, clear communication, and a focus on delivering measurable outcomes. Knowing what we want to achieve doesn’t always mean we know how to achieve it. Often, we need examples of what good looks like to translate abstract goals into actionable steps.
 
@@ -29,9 +29,9 @@ Platform teams thrive when their contributions clearly link to organizational su
 
 One team member shares:
 
-*“Working on a platform team is challenging. We do not have a direct impact on top-line metrics, which makes it difficult to measure our success. From a strategic standpoint, we constantly need to validate that what we prioritize will contribute to the success of other teams. This requires ongoing communication with those teams to ensure our strategic vision aligns with the teams we support.*
-
-*“I hope your efforts at clarifying strategy are well received by others, but for me, it’s extremely valuable, so I wanted to express my gratitude for the effort that went into it. It’s very motivating\!”*
+> *“Working on a platform team is challenging. We do not have a direct impact on top-line metrics, which makes it difficult to measure our success. From a strategic standpoint, we constantly need to validate that what we prioritize will contribute to the success of other teams. This requires ongoing communication with those teams to ensure our strategic vision aligns with the teams we support."*
+>
+> *“I hope your efforts at clarifying strategy are well received by others, but for me, it’s extremely valuable, so I wanted to express my gratitude for the effort that went into it. It’s very motivating\!”*
 
 This clarity motivates the team and builds trust. It also provides a shared framework to guide alignment with other teams, even in a decentralized environment.
 
@@ -75,9 +75,9 @@ This combination of outcomes, satisfaction criteria, and mechanisms bridges the 
 
 ---
 
-## **S\&T Trees: Structuring Dependencies and Objectives**
+## **S&T Trees: Structuring Dependencies and Objectives**
 
-We use structured tools like S\&T trees to connect company goals to actionable work, fostering alignment and engagement at every level. For example, in a recent strategy brief, we:
+We use structured tools like Strategy and Tactic trees to connect company goals to actionable work, fostering alignment and engagement at every level. For example, in a recent strategy brief, we:
 
 1. **Referenced Company Goals**: We started by outlining how our team’s work supports high-level organizational objectives.
 2. **Defined Themes**: We identified themes that contribute directly to those goals, providing focus and clarity for our efforts.
@@ -107,7 +107,7 @@ This follow-up builds on concepts I discuss in earlier posts:
 - [Documenting Strategy](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/)
 - [Planning, Not Plans](https://muness.com/posts/planning-not-plans/)
 - [Outcomes Over Outputs](https://muness.com/posts/outcomes-over-output-book-summary/)
-- [On S\&T Trees](https://muness.com/posts/on-s-and-t-trees/)
+- [On S&T Trees](https://muness.com/posts/on-s-and-t-trees/)
 
 These articles delve deeper into the frameworks and principles I reference here, providing the foundation for the approaches we use.
 
