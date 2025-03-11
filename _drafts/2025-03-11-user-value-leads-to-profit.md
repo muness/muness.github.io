@@ -1,0 +1,75 @@
+---
+title: "User Value Comes First, Profit Follows"
+date: 2025-03-11 11:00:00 +0500
+author: muness
+toc: false
+comments: false
+pin: false
+draft: true
+---
+
+In many organizations, the obsession with profit can obscure a far more critical foundation for sustainable success: product–market fit. With the rapid rise of generative AI reshaping industries, the window for maintaining a strong connection between product and market is narrowing. When companies lose focus on building products that truly resonate with users, they often pivot toward short-term revenue extraction—a strategy that, as Reforge’s article on [Product–Market Fit Collapse](https://www.reforge.com/blog/product-market-fit-collapse) explains, can trigger a vicious cycle of customer churn, escalating acquisition costs, and ultimately, collapse.
+
+In this post, I argue that product–market fit must come (and stay!) first. Profit should not be the initial goal but rather a byproduct of delivering genuine value to users. Drawing on insights from Kathy Sierra’s Creating Badass Users, real-world product challenges, and the powerful flywheel of net revenue retention, we’ll explore how a value-first mindset not only empowers users but also drives long-term, sustainable growth.
+
+⸻
+
+## The Pitfalls of a Profit-First Mindset
+
+When a company prioritizes profit over user value, it risks making decisions that boost revenue in the short term while undermining long-term engagement. For example, you might see teams pushing outputs—whether it’s rapid feature releases, aggressive monetization tactics, or revenue-centric KPIs. These outputs can be misleading: they mask the reality that the product isn’t addressing user needs.
+
+When everyone focuses on immediate revenue or task completion, strategy loses its cohesion: Different teams within a company can end up chasing disparate metrics.  Instead of a unified vision that puts the user first, you get internal silos where each group—be it revenue teams, marketing, or engineering—pulls in a different direction. This misalignment can ultimately stunt growth and make it harder to adapt as user needs evolve.
+
+### The Flywheel Effect of Net Retained Revenue
+
+A crucial component of sustainable growth is the ability to expand revenue from your existing customers, a concept known as net revenue retention (NRR). When companies invest in enhancing the user experience and consistently deliver ongoing value, they create a flywheel effect: satisfied users not only stay longer, but they also tend to increase their spending over time through upsells, cross-sells, or by referring new users. This organic, self-reinforcing cycle minimizes reliance on aggressive new customer acquisition.
+
+In contrast, a profit-first approach that neglects existing users forces a business into a costly cycle. As users churn or generate diminishing returns, the company must continually acquire new customers to replace lost revenue. The high Customer Acquisition Cost (CAC) associated with this model eats into growth and often results in unsustainable margins.
+
+For a deeper dive into how focusing on net revenue retention can drive long-term growth, check out [Net revenue retention: Definition, formula & ways to improve NRR](https://www.paddle.com/blog/net-revenue-retention-the-new-benchmark-metric-for-saas). The article explains how prioritizing existing customer success not only stabilizes revenue but also fuels future expansion.
+
+Profit-first strategies lead to a culture where making decisions solely based on financial outcomes becomes the norm. When the focus is only on bottom-line metrics, productsbecome transactional. Users start to see the product as a means to an end—a tool to complete a task rather than an experience that makes them feel empowered. This transactional view can erode trust and brand loyalty over time, leaving companies vulnerable to competitors who prioritize deeper user engagement. In my experience, it's a dangerous path that can lead to a downward spiral of declining NRR.
+
+⸻
+
+## Badass Users: More Than a Catchphrase
+
+*Kathy Sierra*’s [Badass: Making Users Awesome](https://www.amazon.com/Badass-Making-Awesome-Kathy-Sierra/dp/1491919019?tag=googhydr-20&source=dsa&hvcampaign=books&gclid=CjwKCAjwvr--BhB5EiwAd5YbXkPeUh1FIee-wM5p1BY8qzU28x5DzKln70_aWr3JovLy9Ua7rpT84hoCupIQAvD_BwE) isn’t about adding flashy features or superficial *cool* factors. It’s about  empowering users. When users feel that your product genuinely makes their lives better—when they feel more capable, informed, or even inspired—they become more than just customers; they become advocates. They start telling their friends, posting, and turning into organic growth engines for your product. NRR goes up, and the flywheel starts spinning.
+
+A product that makes its users feel *badass* creates an emotional connection that goes far beyond functionality. Think of a well-designed productivity tool that not only helps you manage tasks but also makes you feel in control of your day. Or a financial app that simplifies complex processes so thoroughly that users feel like they’re mastering their finances. These experiences resonate on an emotional level and are difficult for competitors to replicate through mere feature copying.
+
+Over time, when a company consistently delivers empowering experiences, the brand itself becomes synonymous with value and trust. This isn’t built overnight—it comes from a relentless focus on solving real user problems, refining the experience, and maintaining a deep understanding of what users truly need. In such an environment, profit isn’t a forced outcome; it emerges naturally as users invest more time, trust, and advocacy in the brand.
+
+## Outcomes Over Outputs: Rethinking Success
+
+Outputs are the tangible deliverables—a new feature here, a revenue spike there. Outcomes, on the other hand, are the meaningful changes in users’ lives: improved productivity, enhanced well-being, or greater financial security. While outputs are easy to measure, they often serve as proxies that may not capture the real impact of your product.
+
+In my post on [Outcomes over Output](https://muness.com/posts/outcomes-over-output-book-summary/), I argued that what truly matters is the impact on the user. If your product helps users solve important problems or achieve significant goals, those outcomes drive engagement, retention, and word-of-mouth. This shift in focus—from counting features delivered to understanding how users benefit—can redefine what success looks like for your organization.
+
+Consider how some of the most successful tech companies operate. They don’t obsess over quarterly revenue figures in isolation; they invest heavily in user research, iterating on product design until they create experiences that genuinely resonate. This builds a foundation where every small win in user satisfaction compounds over time, creating a snowball effect that if there's sustained product market fit, leads to sustainable growth.
+
+⸻
+
+## The JTBD Framework: Uncovering Deep User Needs
+
+One of the most effective ways to transition from a profit-first to a value-first mindset is by employing the Jobs-to-be-Done (JTBD) framework. Rather than asking “What features should we add?” JTBD shifts the conversation to “What job is the user hiring our product to do?” This reframing helps teams dive into the underlying problems and aspirations of their users, beyond superficial requests or industry trends.
+
+By applying the JTBD framework, teams can uncover hidden user motivations and tailor their solutions accordingly. This leads to more innovative product features and also creates alignment between what users need and what the business delivers. The result is a product that has product market fit and drives value for users and sometimes to the company.
+
+## Integrating Value-Driven Strategies in Product Teams
+
+The cornerstone of a value-driven approach is a commitment to understanding your users. This means investing in both qualitative and quantitative research, running regular user interviews, surveys, and usability studies. Tools like JTBD help frame these conversations around real problems rather than assumed desires.
+
+Traditional KPIs such as revenue or task completion are important, but they should be superceded by metrics that reflect user success. For instance, measure user retention, engagement rates, and where possible, the tangible benefits users report. When teams are evaluated on how well they help users achieve their *jobs*, the strategy shifts toward a more user-centric mindset.
+
+A value-first approach requires breaking down silos. Whether you’re in product management, engineering, marketing, or design, everyone must share a unified vision centered on the user. Regular cross-functional meetings, integrated planning sessions, and a shared roadmap that emphasizes user outcomes over individual outputs are crucial.
+
+---
+
+## Value First, Profit Follows
+
+By shifting our focus from chasing profit to cultivating genuine user value, we embrace a strategy that puts product–market fit at its core. As we navigate an era of rapid technological disruption—especially with the rise of generative AI—it’s more critical than ever to nurture our existing customer base and innovate continuously. By harnessing the flywheel effect of net revenue retention and employing frameworks like JTBD, we evolve our products to empower users and be more likely to drive sustainable, long-term growth.
+
+A profit-first approach often prioritizes short-term revenue boosts—extracting every possible dollar from each interaction—but this comes at a high cost. By focusing on immediate profits, companies neglect customer value. This undermines the flywheel effect that drives net revenue retention (NRR). When users aren’t engaged or empowered, churn increases and opportunities for upselling, cross-selling, and referrals shrink. In essence, the short-term gains of a profit-first mindset erode the long-term engine of organic growth, forcing companies to spend more on acquiring new customers at a much higher Customer Acquisition Cost (CAC), and ultimately, harming profit.
+
+I challenge you to rethink your current approach: What job is your product truly hired to do, and how can you make your users feel genuinely empowered? The answers to these questions are where long term profit comes from.
