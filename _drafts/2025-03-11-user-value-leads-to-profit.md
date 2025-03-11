@@ -52,9 +52,11 @@ Consider how some of the most successful tech companies operate. They don’t ob
 
 ## Applying the Jobs-to-Be-Done Framework
 
-One of the most effective ways to transition from a profit-first to a value-first mindset is by employing the Jobs-to-be-Done (JTBD) framework. Rather than asking “What features should we add?” JTBD shifts the conversation to “What job is the user hiring our product to do?” This reframing helps teams dive into the underlying problems and aspirations of their users, beyond superficial requests or industry trends.
+One of the most effective ways to transition from a profit-first to a value-first mindset is by employing the Jobs-to-Be-Done (JTBD) framework. Rather than asking “What features should we add?” JTBD shifts the conversation to “What job is the user hiring our product to do?” This reframing helps teams dive into the underlying problems and aspirations of their users—often revealing that what users initially say they want is not always aligned with what they truly need.
 
-By applying the JTBD framework, teams can uncover hidden user motivations and tailor their solutions accordingly. This leads to more innovative product features and also creates alignment between what users need and what the business delivers. The result is a product that has product market fit and drives value for users and sometimes to the company.
+A practical example of JTBD in action occurs when a new feature is released with the assumption that it addresses a specific user need. However, after launch, usage data and feedback may show that users are interacting with the feature in unexpected ways. This divergence can indicate that the underlying job—the true challenge or goal the user is trying to accomplish—is different from what was initially assumed. Recognizing this, teams can pivot: rather than investing further in the original feature, they can iterate and develop multiple new features designed to address the real JTBD.
+
+In many cases, users don’t use software in the ways we expect. Their behavior provides clues about their genuine challenges and motivations. By refining our understanding of the JTBD, we can realign development efforts to build solutions that deliver genuine value. This iterative process leads to more innovative product features and promotes alignment between feature development and user needs.
 
 ## Integrating Value-Driven Strategies in Product Teams
 
