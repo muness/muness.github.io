@@ -11,8 +11,6 @@ In many organizations, obsession with profit can obscure an aspect of sustainabl
 
 In this post, I argue that product–market fit must come (and stay!) first. Profit should not be the initial goal but rather a byproduct of delivering genuine value to users. Drawing on insights from Kathy Sierra’s Creating Badass Users, real-world product challenges, and the powerful flywheel of net revenue retention, we’ll explore how a value-first mindset not only empowers users but also drives long-term, sustainable growth.
 
-⸻
-
 ## Pitfalls of a Profit-First Mindset
 
 When a company prioritizes profit over user value, it risks making decisions that boost revenue in the short term while undermining long-term engagement. For example, you might see teams pushing outputs—whether it’s rapid feature releases, aggressive monetization tactics, or revenue-centric KPIs. These outputs can be misleading: they mask the reality that the product isn’t addressing user needs.
@@ -28,8 +26,6 @@ In contrast, a profit-first approach that neglects existing users forces a busin
 For a deeper dive into how focusing on net revenue retention can drive long-term growth, check out [Net revenue retention: Definition, formula & ways to improve NRR](https://www.paddle.com/blog/net-revenue-retention-the-new-benchmark-metric-for-saas). The article explains how prioritizing existing customer success not only stabilizes revenue but also fuels future expansion.
 
 Profit-first strategies lead to a culture where making decisions solely based on financial outcomes becomes the norm. When the focus is only on bottom-line metrics, products become transactional. Users start to see the product as a means to an end—a tool to complete a task rather than an experience that makes them feel empowered. This transactional view can erode trust and brand loyalty over time, leaving companies vulnerable to competitors who prioritize deeper user engagement. In my experience, it's a dangerous path that can lead to a downward spiral of declining NRR.
-
-⸻
 
 ## Empowering Users
 
