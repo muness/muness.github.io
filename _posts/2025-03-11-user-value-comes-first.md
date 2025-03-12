@@ -35,7 +35,7 @@ A product that makes its users feel *badass* creates an emotional connection tha
 
 Over time, when a company consistently delivers empowering experiences, its brand becomes synonymous with value and trust. From what I've seen, this comes from a relentless focus on solving real user problems, refining the experience, and maintaining a deep understanding of what users truly need. In such an environment, profit emerges as users invest more time, trust, and advocacy in the product.
 
-## Customer Obsession: Lessons from Amazon
+### Customer Obsession: Lessons from Amazon
 
 Jeff Bezos’ 2013 [investor letter](https://www.sec.gov/Archives/edgar/data/1018724/000119312513151836/d511111dex991.htm) offers powerful insights into the value of relentless customer focus. As he wrote, "We see our customers as invited guests to a party, and we are the hosts. It’s our job every day to make every important aspect of the customer experience a little bit better." This statement underscores the importance of refining the user experience to leave a positive, lasting impression.
 
@@ -49,7 +49,7 @@ In my post on [Outcomes over Output](https://muness.com/posts/outcomes-over-outp
 
 Consider how some of the most successful tech companies operate. They don’t obsess over quarterly revenue figures in isolation; they invest in user research and iterate on product design until they create experiences that resonate.
 
-## Applying the Jobs-to-Be-Done Framework
+### Applying the Jobs-to-Be-Done Framework
 
 One of the most effective ways to transition from a profit-first to a value-first mindset is by employing the Jobs-to-Be-Done (JTBD) framework. Rather than asking “What features should we add?” JTBD shifts the conversation to “What job is the user hiring our product to do?” This reframing helps teams dive into the underlying problems and aspirations of their users—often revealing that what users initially say they want is not always aligned with what they truly need.
 
@@ -57,7 +57,7 @@ A practical example of JTBD in action occurs when a new feature is released with
 
 Often, users don’t use software in the ways we expect. Their behavior provides clues about their genuine challenges and motivations. By refining our understanding of the JTBD, we can realign development efforts to build solutions that deliver value.
 
-## Integrating Value-Driven Strategies in Product Teams
+### Integrating Value-Driven Strategies in Product Teams
 
 The cornerstone of a value-driven approach is a commitment to understanding your users. This means investing in qualitative and quantitative research, running regular user interviews, surveys, and usability studies. Tools like JTBD help frame these conversations around real problems rather than assumed desires.
 
