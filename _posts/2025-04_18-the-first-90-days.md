@@ -1,4 +1,11 @@
-# The First 90 Days as a _Metis_ Mission
+---
+title: "The First 90 Days as a _Metis_ Mission"
+date: 2025-04-18 13:30:00 +0500
+author: muness
+toc: true
+comments: true
+pin: true
+---
 
 When you start a new role, it often feels like stepping into a foreign country. You have the skills and experience that got you the job, but suddenly you’re the outsider trying to make sense of new terrain. Leadership coach Michael Watkins famously likens joining a new company to being an organ transplant – and you are the new organ.
 
