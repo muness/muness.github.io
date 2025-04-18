@@ -1,5 +1,5 @@
 ---
-title: "The First 90 Days as a _Metis_ Mission"
+title: "The First 90 Days as a Metis Mission"
 date: 2025-04-18 13:30:00 +0500
 author: muness
 toc: true
