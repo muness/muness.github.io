@@ -111,7 +111,7 @@ By the end of the first 90 days, ideally you have integrated well (organism not 
 
 ### Start with the outcome
 
-I believe that the central outcome of these first 90 days is to build trust. Trust isn't a vague concept—it's tangible, measurable, and critical to your success. It’s clearly articulated in **The Trust Equation**, by Maister, Green, and Galford:
+I believe that the central outcome of these first 90 days is to build trust. Trust isn't a vague concept—it's tangible, measurable, and critical to your success. It’s articulated in **The Trust Equation**, by Maister, Green, and Galford:
 
 ```trust
 Trust = (Credibility + Reliability + Intimacy) / Self-orientation
