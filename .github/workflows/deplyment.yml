@@ -46,7 +46,9 @@ jobs:
             ${{ runner.os }}-gems-
 
       - name: Install dependencies
-        run: bundle install --path vendor/bundle
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install
 
       - name: Build with Jekyll
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
