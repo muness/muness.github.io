@@ -147,11 +147,13 @@ Here's how I suggest approaching your first three months:
 
 - **Weeks 9–12, "What Techne to Apply"**: Finally, apply your general knowledge strategically and humbly. Integrate your techne carefully with the metis you've acquired, ensuring you deliver credible solutions tailored to local realities.
 
-### Building Authentic Trust
+### Building Trust
 
 - **Stay curious**. People trust those who listen deeply.
 - **Prioritize relationship-building**. Don't wait for a crisis to meet your neighbors.
 - **Balance your expertise (techne) with humility (for the metis)**. Apply your skills with sensitivity to context.
 - **Reflect and align expectations**. Trust grows through clear, open communication.
 
-The outcome of your first 90 days isn't just acceptance, it's trust. Trust is your most precious currency, earned through credibility, reliability, intimacy, and genuine group-orientation. Trust becomes the foundation for everything meaningful you aim to accomplish in your new role.
+The outcome of your initial days in new role is trust. Trust is your most precious currency, earned through credibility, reliability, intimacy, and genuine group-orientation. Trust becomes the foundation for everything meaningful you aim to accomplish in your new role.
+
+As you navigate your first 90 days, ask yourself: “What metis should I be learning if I am to be successful?” Because if you are, you’re at least developing trust by showing humility and respect for the local knowledge. And that’s a great start.
