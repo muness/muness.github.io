@@ -154,6 +154,4 @@ Here's how I suggest approaching your first three months:
 - **Balance your expertise (techne) with humility (for the metis)**. Apply your skills with sensitivity to context.
 - **Reflect and align expectations**. Trust grows through clear, open communication.
 
-The outcome of your initial days in new role is trust. Trust is your most precious currency, earned through credibility, reliability, intimacy, and genuine group-orientation. Trust becomes the foundation for everything meaningful you aim to accomplish in your new role.
-
-As you navigate your first 90 days, ask yourself: “What metis should I be learning if I am to be successful?” Because if you are, you’re at least developing trust by showing humility and respect for the local knowledge. And that’s a great start.
+The outcome of your initial days in new role is trust. Trust is your most precious currency, earned through credibility, reliability, intimacy, and genuine group-orientation. Trust becomes the foundation for everything meaningful you aim to accomplish in your new role. As you navigate your first 90 days, ask yourself: “What metis should I be learning to be successful?” Because if you are, you’re at least developing trust by showing humility and respect for the local knowledge. And that’s a great start.
