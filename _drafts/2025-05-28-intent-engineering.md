@@ -49,7 +49,7 @@ These phases encourage pausing to think strategically: just enough to avoid gett
 
 As ChatGPT and other LLMs arrived on the scene, I naturally began experimenting with them through chat interfaces and an Obsidian-backed server setup. These tools extended my use of Design in Practice—previously limited to conversations with peers and personal notes—into a powerful, AI-augmented “Second Brain,” helping me document, clarify, and iterate my thinking _and execution_ more intentionally and effectively.
 
-Rather than jumping straight into rapid-fire experimentation (Vibe Coding) without guardrails, I now blend fast iterations with structured reflection and checkpoints. I call this **Intent Engineering**, and it looks like this:
+Rather than jumping straight into rapid-fire experimentation (Vibe Coding) without guardrails, I blend fast iterations with structured reflection and checkpoints. I call this **Intent Engineering**, and it looks like this:
 
 * Clarify Intent: Begin by clearly stating your goal in a single sentence. This keeps your efforts focused and aligned.
 * Burst: Use AI to rapidly generate ideas, suggestions, or solutions related to your intent.
@@ -61,9 +61,9 @@ Analogy: It’s like skiing downhill—speed can be exhilarating, but control an
 
 ## Common Skepticism FAQ
 
-* “Isn’t Vibe Coding reckless?”: It can be—but only if it’s unstructured. When guided by intentional reflection, it becomes incredibly powerful.
-* “Why trust AI if it can give bad advice?”: Think of AI as a tool, not as a replacement for judgment. **Design sense, nuance, judgment, and comfort with disagreeableness** are now more important than ever. AI amplifies human decisions, so quality input leads to quality outcomes.
-* “Won’t structured processes slow me down?”: Brief, deliberate pauses actually speed you up by preventing wasted effort. You’ll solve real problems instead of chasing unproductive rabbit holes.
+* “Isn’t Vibe Coding reckless?”: Yes. When guided by intentional reflection, it becomes less so. It can even be an accelerator for creative problem-solving. The key is to balance speed with strategic pauses.
+* “Why use ChatGPT/AI/LLMs if they give bad advice?”: You shouldn’t blindly trust AI—it’s a tool, not a decision-maker. **Your design sense, judgment, nuance, and comfort challenging advice are more important than ever**.
+* “Won’t structured processes slow me down?”: Yes. That's  the point. Brief, deliberate pauses help you solve the right problems instead of the wrong ones.
 
 ## From Prompt Engineering to Intent Engineering: An Evolutionary Journey
 
@@ -79,16 +79,22 @@ We embraced a series of increasingly advanced—and often messy—approaches:
 
 Each of these steps provided valuable lessons, gradually shaping an understanding of how to integrate AI tools effectively:
 
-* Prompt Engineering taught careful articulation.
-* RAG and Context Windows emphasized targeted context.
-* Graph-based Approaches highlighted structured relationships.
-* Chained Prompts illustrated automation’s promise and peril.
-* Vibe Coding stressed the critical need for clear intention and structured reflection.
+* Prompts need careful thought.
+* Context must be selective.
+* Structure matters greatly.
+* Automation requires oversight.
+* Rapid iteration requires clear intent.
+* The buck stops with you. AI is a tool, not an excuse for poor judgment.
 
 Intent Engineering combines clear intent, rapid experimentation, structured checkpoints, and reflective evaluation. It acknowledges the limitations and strengths of each preceding method, balancing strategic thought with tactical execution.
 
 ## Invitation to Skeptics: Try Intent Engineering for Yourself
 
-You don’t have to dive headfirst into AI-driven iteration overnight. Start small: pick one challenge, clearly state your intent, and use the structured Design in Practice steps to stay grounded.
+You don’t need to commit fully right away. Here’s a simple exercise to get started with Intent Engineering:
+
+* Pick one small task or challenge.
+* Write down your intent clearly (one sentence).
+* Use ChatGPT briefly to explore a few solutions.
+* Stop after five minutes. Pick the best idea, document your rationale using the Design in Practice steps, then act.
 
 Give it a try: you might discover, as I did, that AI combined with intentional pauses is an unstoppable combination for effective, efficient problem-solving.
