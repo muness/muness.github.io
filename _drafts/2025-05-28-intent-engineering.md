@@ -65,7 +65,7 @@ My midnight anecdote ordering overpriced cables underscores this: a \$40 impulse
 
 **Practical Mini-Template:**
 
-Use this during your next Vibe Coding session. At each pause, capture succinct answers to stay aligned:
+Use this during your next Intent Engineering session. At each pause, capture succinct answers to stay aligned:
 
 ```markdown
 🔖 Project: ______________________________
