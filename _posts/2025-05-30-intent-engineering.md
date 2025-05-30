@@ -1,8 +1,9 @@
 ---
 comments: true
-date: 2023-05-21 17:00:00 +0500
+date: 2023-030 13:00:00 +0500
 author: muness
 title: 'Intent Engineering: From Vibe Coding to Productive Outcomes'
+pin: true
 ---
 
 ## Introduction
