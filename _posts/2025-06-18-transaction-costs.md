@@ -16,7 +16,8 @@ pin: true
 
 ## Overview
 
-This narrative integrates three classic economic lenses, Brook’s Law, Coase’s Transaction-Cost Theory, and North’s Institutional Framework with practical R\&D efforts ([Cloud Atlas](https://github.com/orgs/cloud-atlas-ai/repositories), Asgard, [Intent Engineering](https://muness.com/posts/intent-engineering/)) we’ve been exploring since ChatGPT hit the scene.
+This narrative integrates three classic economic lenses, Brook’s Law, Coase’s Transaction-Cost Theory, and North’s Institutional Framework with practical R&D efforts ([Cloud Atlas](https://github.com/orgs/cloud-atlas-ai/repositories), Asgard, [Intent Engineering](https://muness.com/posts/intent-engineering/)) we’ve been exploring since ChatGPT hit the scene.
+
 
 Our thesis: *AI-native workflow tools can help teams spend less time on overhead and more time doing meaningful, high-impact work. By reshaping how organizations coordinate, these tools shift the focus from bureaucratic friction to flow, empowering people to do more important, rewarding work.*
 
