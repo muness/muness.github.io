@@ -31,6 +31,12 @@ Principles provide the foundation, but rituals turn them into daily practice. Ri
 
 > *“It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.”* — Charles Darwin
 
+## Nested Feedback Loops
+
+A healthy growth system relies on nested feedback loops operating at different scales. Small-scale rituals, like daily focus or weekly reviews, strengthen and inform larger ones such as quarterly reflections and mission affirmations. Conversely, these larger-scale rituals guide and protect the smaller ones, creating a dynamic balance that sustains growth.
+
+If a practice is removed, it’s essential to replace it with something that provides feedback at the same scale and frequency to maintain this balance. Think of it as "defense in depth"—if one ritual misses something, another catches it, ensuring nothing slips through the cracks. This layered approach to feedback keeps your growth system resilient and responsive.
+
 ## Activities Overview
 
 | Activity                | Purpose                                    | Frequency       | Principle Emphasized      |
