@@ -8,7 +8,7 @@ comments: false
 pin: false
 ---
 
-This is an older version of my planning system. Go over to [Open Horizons](/tbd) for the latest version.
+This is an older version of my planning system. Go over to [Open Horizons](/posts/open-horizons) for the latest version.
 
 ## What is this?
 
