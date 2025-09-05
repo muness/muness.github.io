@@ -35,7 +35,7 @@ Principles provide the foundation, but rituals turn them into daily practice. Ri
 
 A healthy growth system relies on nested feedback loops operating at different scales. Small-scale rituals, like daily focus or weekly reviews, strengthen and inform larger ones such as quarterly reflections and mission affirmations. Conversely, these larger-scale rituals guide and protect the smaller ones, creating a dynamic balance that sustains growth.
 
-If a practice is removed, it’s essential to replace it with something that provides feedback at the same scale and frequency to maintain this balance. Think of it as "defense in depth"—if one ritual misses something, another catches it, ensuring nothing slips through the cracks. This layered approach to feedback keeps your growth system resilient and responsive.
+Don’t drop a ritual without substituting something that preserves the same signal at the same scale. If a practice is removed, it’s essential to explicitly replace it with something that provides feedback at the same scale and frequency to maintain this balance. Think of it as "defense in depth"—if one ritual misses something, another catches it, ensuring nothing slips through the cracks. This layered approach to feedback keeps your growth system resilient and responsive.
 
 ## Activities Overview
 
