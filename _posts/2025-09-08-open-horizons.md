@@ -11,17 +11,19 @@ excerpt: "A flexible, principle-driven framework to help you clarify your direct
 
 ## What is this?
 
-> *“The key is not to prioritize what’s on your schedule, but to schedule your priorities.”* — Stephen Covey
-> *“In the middle of difficulty lies opportunity.”* — Albert Einstein
-
 Open Horizons is a personal growth framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
 
 ## Principles
 
-Principles provide the foundation, but rituals turn them into daily practice. Rituals are small, repeatable actions that embed principles into your life. They help you stay aligned, adapt to change, and build habits that support your growth journey.
+Principles set the foundation. Without them, rituals are just empty motions. With them, rituals become ways to practice what matters. Small, repeatable actions embed principles into daily life—keeping you aligned, adaptable, and building habits that support your growth.
+
+> Learn it first through ritual. Then, as you grok the principles, make it your own by adapting the rituals.
 
 1. **Aim With Clarity**
    Define what success means to you. Clarity in your aims helps you make better decisions, focus your energy, and measure progress meaningfully. Without clear aims, effort can scatter and motivation wane.
+
+   > You’re more likely to get where you want to go if you know where you’re going.
+
 2. **Nurture a Growth Mindset**
    Embrace learning and development as ongoing processes. Recognize strengths and weaknesses without judgment and see challenges as opportunities to grow rather than threats.
 3. **Planning Over Plans**
@@ -30,8 +32,6 @@ Principles provide the foundation, but rituals turn them into daily practice. Ri
    Sustain momentum by regularly reflecting, celebrating wins, and making thoughtful adjustments. Build margin to absorb shocks and enable bold swings, ensuring your growth remains dynamic, resilient, and adaptable.
 5. **Leverage Strengths**
    Build on what energizes and empowers you. While growth areas are important, your strengths are your foundation for success and resilience.
-
-> *“It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.”* — Charles Darwin
 
 ## Nested Feedback Loops
 
@@ -239,7 +239,9 @@ Jason Rudolph:
 
 ## Embracing the Journey
 
-Personal growth is not a destination but a continuous journey filled with reflection, adaptation, and discovery. Open Horizons invites you to revisit your aims regularly, nurture your strengths, and keep momentum through intentional rituals. As Confucius said, *“It does not matter how slowly you go as long as you do not stop.”* Embrace the process with patience and curiosity, and find joy in the unfolding path of continuous learning and improvement.
+Personal growth is not a destination but a continuous journey filled with reflection, adaptation, and discovery. Open Horizons invites you to revisit your aims regularly, nurture your strengths, and keep momentum through intentional rituals.
+
+> “Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.” — Viktor Frankl
 
 ## Appendix: Example Worksheet
 
