@@ -246,7 +246,7 @@ Personal growth is not a destination but a continuous journey filled with reflec
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix: Example Worksheet</strong> (click to expand)</summary>
 
-**Reflect on Achievements**
+### Reflect on Achievements
 
 - Guided a teammate through a tough project and saw them grow in confidence.
 - Helped an organization shift from output-driven planning to outcome-driven learning.
@@ -254,7 +254,7 @@ Personal growth is not a destination but a continuous journey filled with reflec
 - Balanced professional work with family caregiving responsibilities during a difficult season.
 - Created space for honest disagreement in a team that led to a better decision.
 
-**Strengths**
+### Strengths
 
 - Strategic thinking and problem-solving with calm intensity.
 - Empathy and effective communication that build trust and alignment.
@@ -262,37 +262,37 @@ Personal growth is not a destination but a continuous journey filled with reflec
 - Ability to synthesize complex information into clear, actionable insights.
 - Leadership that inspires and empowers teams.
 
-**Mission**
+### Mission
 
 To empower teams to create meaningful, user-centered products that improve lives and foster growth. I strive to lead with integrity, curiosity, and a commitment to continuous learning.
 
-**Aims (Outcomes & Possible Tactics)**
+### Aims (Outcomes & Possible Tactics)
 
-**Aim 1 — Create leverage through technology as a force‑multiplier**
+#### Aim 1 — Create leverage through technology as a force‑multiplier
 
 *Outcome:* People and organizations achieve outcomes they couldn’t without new tools.
 
 *Possible tactics:* Join roles where technology is central to strategy; run small prototypes that demonstrate behavior change (not just features); document and share force‑multiplier patterns.
 
-**Aim 2 — Enable alignment and resilience in how people work**
+#### Aim 2 — Enable alignment and resilience in how people work
 
 *Outcome:* Teams operate with clarity, adaptability, and health — whether via management, consulting, or peer influence.
 
 *Possible tactics:* Introduce lightweight strategy↔ops↔data rituals; model alignment practices in any role; mentor catalysts who can spread resilience.
 
-**Aim 3 — Reach and equip people who seek better ways of working**
+#### Aim 3 — Reach and equip people who seek better ways of working
 
 *Outcome:* Ideas and frameworks resonate with ready learners who carry them into their own contexts.
 
 *Possible tactics:* Host “Thinking Time” sparring sessions; publish short essays distilling mental models; invest selectively in communities with high resonance.
 
-**Aim 4 — Build and protect margin — at work and in life**
+#### Aim 4 — Build and protect margin — at work and in life
 
 *Outcome:* There is buffer to make better choices, absorb shocks, and take big swings.
 
 *Possible tactics:* Evaluate opportunities by how they strengthen margin; choose contexts that support honesty and adaptability; protect time for reflection and renewal; create margin systems at work (slack in schedules, space for experiments).
 
-**Weekly Review Example (Outcome‑linked)**
+### Weekly Review Example (Outcome‑linked)
 
 - Pick 3–5 tasks tied explicitly to one or more Aims (label them Aim 1–4).
 - [Aim 1] Ship a 1‑day prototype that tests a behavior‑change hypothesis; define success criteria up front.
@@ -301,4 +301,3 @@ To empower teams to create meaningful, user-centered products that improve lives
 - [Aim 4] Block two hours for reflection/care; identify one work choice that increases margin next week.
 
 </details>
-
