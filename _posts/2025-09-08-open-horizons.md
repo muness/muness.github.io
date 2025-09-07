@@ -26,8 +26,8 @@ Principles provide the foundation, but rituals turn them into daily practice. Ri
    Embrace learning and development as ongoing processes. Recognize strengths and weaknesses without judgment and see challenges as opportunities to grow rather than threats.
 3. **Planning Over Plans**
    Prioritize adaptability and momentum over rigid adherence to plans. Use planning as a tool to guide your actions, not as a constraint that stifles responsiveness or creativity.
-4. **Keep Momentum Alive**
-   Regular reflection, celebration of wins, and adjustment keep your growth dynamic and sustainable. Momentum fuels motivation and helps you overcome obstacles.
+4. **Sustain Momentum**
+   Sustain momentum by regularly reflecting, celebrating wins, and making thoughtful adjustments. Build margin to absorb shocks and enable bold swings, ensuring your growth remains dynamic, resilient, and adaptable.
 5. **Leverage Strengths**
    Build on what energizes and empowers you. While growth areas are important, your strengths are your foundation for success and resilience.
 
@@ -48,7 +48,7 @@ Don’t drop a ritual without substituting something that preserves the same sig
 | Affirm Your Mission     | Clarify motivating purpose                  | Quarterly       | Aim With Clarity          |
 | Aim & Set Priorities    | Define focused growth areas                  | Quarterly       | Planning Over Plans       |
 | Weekly Review           | Break priorities into actionable tasks     | Weekly          | Planning Over Plans       |
-| Daily Focus             | Connect daily work to long-term aims       | Daily           | Keep Momentum Alive       |
+| Daily Focus             | Connect daily work to long-term aims       | Daily           | Sustain Momentum          |
 
 Starting Open Horizons may feel like a significant commitment. The initial run-through of these activities usually takes 4–6 weeks as you build habits and understanding. A practical approach is to focus on one activity per week, allowing each ritual to embed naturally before adding the next.
 
@@ -248,19 +248,40 @@ Personal growth is not a destination but a continuous journey filled with reflec
 
 ### Reflect on Achievements
 
-- Guided a teammate through a tough project and saw them grow in confidence.
-- Helped an organization shift from output-driven planning to outcome-driven learning.
-- Wrote and shared a framework that others still use today.
-- Balanced professional work with family caregiving responsibilities during a difficult season.
-- Created space for honest disagreement in a team that led to a better decision.
+#### Zapier Data: Building a Foundation for Insight and Leverage
+- Conceived, built, and shipped the Zapier Data Platform, enabling the company to “see itself” for the first time through reliable, trusted product and business data.
+- Led the transition from ad hoc reporting to a robust, self-serve analytics ecosystem, empowering teams to make data-informed decisions.
+- Drove adoption by partnering with stakeholders, running workshops, and building a culture of curiosity and experimentation with data.
+
+#### Strategic Engagement and Team Empowerment at NerdWallet
+- Orchestrated a cross-functional initiative to clarify product strategy, resulting in a shared vision and roadmap adopted by leadership.
+- Mentored product managers, engineers, and analysts to become “force multipliers” for their teams, fostering a culture of ownership and continuous improvement.
+- Modeled and taught alignment rituals (e.g., weekly strategy check-ins, explicit decision logs) that improved clarity and reduced thrash.
+
+#### Embracing a Growth Mindset and Helping Others Grow
+- Regularly coached peers and direct reports through challenging transitions—career pivots, new roles, and ambiguous projects—by listening deeply and offering frameworks for thinking.
+- Created and shared personal growth frameworks (like Open Horizons) that others have adopted and adapted for their own journeys.
+- Consistently sought feedback and reflected on failures as fuel for learning, modeling vulnerability and resilience for others.
 
 ### Strengths
 
-- Strategic thinking and problem-solving with calm intensity.
-- Empathy and effective communication that build trust and alignment.
-- Adaptability and resilience under pressure.
-- Ability to synthesize complex information into clear, actionable insights.
-- Leadership that inspires and empowers teams.
+- **Strategic Vision**
+  - Sees patterns and possibilities others miss; connects dots across domains and time horizons.
+  - **Expressions:**
+    - “Compression engine”—distilling complexity into clear, actionable insights.
+    - Spotting leverage points and designing force-multiplier systems.
+
+- **Calm Intensity**
+  - Brings focused energy and steadiness, especially in ambiguity or crisis.
+  - **Expressions:**
+    - Holding space for honest disagreement and surfacing the real issues.
+    - Teaching and mentorship—helping others navigate challenges with clarity and confidence.
+
+- **Wonder & Discernment**
+  - Approaches problems with curiosity and rigorous sense-making.
+  - **Expressions:**
+    - Asking “why” and “what if” to challenge assumptions and unlock new approaches.
+    - Synthesizing feedback and signals from diverse sources to guide teams.
 
 ### Mission
 
@@ -268,29 +289,46 @@ To empower teams to create meaningful, user-centered products that improve lives
 
 ### Aims (Outcomes & Possible Tactics)
 
-#### Aim 1 — Create leverage through technology as a force‑multiplier
-
-*Outcome:* People and organizations achieve outcomes they couldn’t without new tools.
-
-*Possible tactics:* Join roles where technology is central to strategy; run small prototypes that demonstrate behavior change (not just features); document and share force‑multiplier patterns.
-
-#### Aim 2 — Enable alignment and resilience in how people work
-
-*Outcome:* Teams operate with clarity, adaptability, and health — whether via management, consulting, or peer influence.
-
-*Possible tactics:* Introduce lightweight strategy↔ops↔data rituals; model alignment practices in any role; mentor catalysts who can spread resilience.
-
-#### Aim 3 — Reach and equip people who seek better ways of working
-
-*Outcome:* Ideas and frameworks resonate with ready learners who carry them into their own contexts.
-
-*Possible tactics:* Host “Thinking Time” sparring sessions; publish short essays distilling mental models; invest selectively in communities with high resonance.
-
-#### Aim 4 — Build and protect margin — at work and in life
+#### Aim 1 — Build and Protect Margin — at Work and in Life
 
 *Outcome:* There is buffer to make better choices, absorb shocks, and take big swings.
 
-*Possible tactics:* Evaluate opportunities by how they strengthen margin; choose contexts that support honesty and adaptability; protect time for reflection and renewal; create margin systems at work (slack in schedules, space for experiments).
+*Tactics:*
+
+- Evaluate opportunities by how they strengthen (not erode) margin.
+- Choose contexts that support honesty, adaptability, and slack.
+- Protect time for reflection and renewal; create “margin systems” at work (slack in schedules, space for experiments).
+- Say “no” or “not now” to commitments that would erode margin.
+
+#### Aim 2 — Create Leverage Through Technology as a Force-Multiplier
+
+*Outcome:* People and organizations achieve outcomes they couldn’t without new tools or approaches.
+
+*Tactics:*
+
+- Join or create roles where technology is central to strategy, not just execution.
+- Run small prototypes that demonstrate behavior change (not just features).
+- Document and share force-multiplier patterns; teach others to spot and build leverage.
+
+#### Aim 3 — Enable Alignment and Resilience in How People Work
+
+*Outcome:* Teams operate with clarity, adaptability, and health—whether via management, consulting, or peer influence.
+
+*Tactics:*
+
+- Introduce lightweight strategy↔ops↔data rituals (e.g., alignment check-ins, explicit decision logs).
+- Model alignment practices in any role, especially in ambiguous or shifting contexts.
+- Mentor “catalysts” who can spread resilience and alignment throughout the organization.
+
+#### Aim 4 — Reach and Equip People Who Seek Better Ways of Working
+
+*Outcome:* Ideas and frameworks resonate with ready learners who carry them into their own contexts.
+
+*Tactics:*
+
+- Host “Thinking Time” sparring sessions for open-ended exploration.
+- Publish short essays or notes distilling mental models and practical tools.
+- Invest selectively in communities with high resonance and multiplier potential.
 
 ### Weekly Review Example (Outcome‑linked)
 
