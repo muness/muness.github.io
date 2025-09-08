@@ -1,12 +1,12 @@
 ---
-title: "Open Horizons: A Framework for Personal Growth"
+title: "Open Horizons: A Framework for Growth"
 date: 2025-09-08
 author: muness
 toc: true
 comments: true
 pin: true
-tags: [personal-growth, framework, productivity]
-excerpt: "A flexible, principle-driven framework to help you clarify your direction, nurture your strengths, and maintain momentum in your personal growth journey."
+tags: [growth, framework, productivity]
+excerpt: "A flexible, principle-driven framework to help you clarify your direction, nurture your strengths, and maintain momentum in your growth journey."
 ---
 
 ## What is this?
