@@ -312,11 +312,18 @@ Personal growth is not a destination but a continuous journey filled with reflec
 - Mentored product managers, engineers, and analysts to become “force multipliers” for their teams, fostering a culture of ownership and continuous improvement.
 - Modeled and taught alignment rituals (e.g., weekly strategy check-ins, explicit decision logs) that improved clarity and reduced thrash.
 
+
 #### Embracing a Growth Mindset and Helping Others Grow
 
 - Regularly coached friends and colleagues through challenging transitions—career pivots, new roles, and ambiguous projects—by listening deeply and offering frameworks for thinking.
 - Created and shared personal growth frameworks (like Open Horizons) that others have adopted and adapted for their own journeys.
 - Consistently sought feedback and reflected on failures as fuel for learning, modeling vulnerability and resilience for others.
+
+#### Admired Achievements (what I want to do too)
+
+- Ship a widely adopted internal tool that changes how teams make decisions.
+- Teach a simple alignment ritual that spreads across orgs without me in the room.
+- Publish a concise field guide that practitioners cite and reuse.
 
 <a id="strengths-example"></a>
 ### Strengths
@@ -342,7 +349,7 @@ Personal growth is not a destination but a continuous journey filled with reflec
 <a id="mission-example"></a>
 ### Mission
 
-To empower teams to create meaningful, user-centered products that improve lives and foster growth. I strive to lead with integrity, curiosity, and a commitment to continuous learning.
+Over the next 3–5 years, I will empower teams to create meaningful, user-centered products that improve lives and foster growth—leading with integrity, curiosity, and a commitment to continuous learning.
 
 <a id="aims-example"></a>
 ### Aims (Outcomes & Possible Tactics)
@@ -358,6 +365,11 @@ _Tactics:_
 - Protect time for reflection and renewal; create “margin systems” at work (slack in schedules, space for experiments).
 - Say “no” or “not now” to commitments that would erode margin.
 
+#### Signals of progress
+- Monthly buffer increases; fewer emergency crunches.
+- Protected focus hours per week are stable (or rising).
+- Observable stress indicators trending down (self/partner check‑ins).
+
 #### Aim 2 — Create Leverage Through Technology as a Force-Multiplier
 
 _Outcome:_ People and organizations achieve outcomes they couldn’t without new tools or approaches.
@@ -367,6 +379,11 @@ _Tactics:_
 - Join or create roles where technology is central to strategy, not just execution.
 - Run small prototypes that demonstrate behavior change (not just features).
 - Document and share force-multiplier patterns; teach others to spot and build leverage.
+
+#### Signals of progress
+- Prototype → adoption rate improves; time-to-first-use shrinks.
+- Demonstrated time saved or capability unlocked (before/after).
+- Number of teams using/asking for the tool or pattern.
 
 #### Aim 3 — Enable Alignment and Resilience in How People Work
 
@@ -378,6 +395,11 @@ _Tactics:_
 - Model alignment practices in any role, especially in ambiguous or shifting contexts.
 - Mentor “catalysts” who can spread resilience and alignment throughout the organization.
 
+#### Signals of progress
+- Decision latency down; fewer rework cycles from misalignment.
+- Clear charters/decision logs adopted by adjacent teams.
+- Mentored “carriers” propagating the practices.
+
 #### Aim 4 — Reach and Equip People Who Seek Better Ways of Working
 
 _Outcome:_ Ideas and frameworks resonate with ready learners who carry them into their own contexts.
@@ -388,9 +410,14 @@ _Tactics:_
 - Publish short essays or notes distilling mental models and practical tools.
 - Invest selectively in communities with high resonance and multiplier potential.
 
+#### Signals of progress
+- Essays/notes published (cadence maintained); reuse/citations visible.
+- Thinking Time sessions resulting in actionable artifacts.
+- Inbound requests for sessions or materials from new teams/people.
+
 <a id="daily-focus-example"></a>
 ### Daily Focus Snapshot (Example)
-- **Morning (3–5 min):** Review aims (Aim 1–3), note 1–3 tasks you’ll approach differently to advance an aim.
+- **Morning (3–5 min):** Review aims (Aim 1–4), note 1–3 tasks you’ll approach differently to advance an aim.
   _Example:_ “In the design review, ask one question that tests alignment to Aim 2 (leverage through tech).”
 - **Evening (3–5 min):** Capture 1 win, 1 learning, 1 adjustment for tomorrow.
   _Example:_ “Win: Stakeholders agreed to pilot the small ritual. Learning: we need clearer success criteria. Adjustment: draft the criteria first thing tomorrow (ties to Aim 3).”
@@ -398,11 +425,10 @@ _Tactics:_
 <a id="weekly-review-example"></a>
 ### Weekly Review Example (Outcome‑linked)
 
-- Pick 3–5 tasks tied explicitly to one or more Aims (label them Aim 1–4).
-- [Aim 1] Ship a 1‑day prototype that tests a behavior‑change hypothesis; define success criteria up front.
-- [Aim 2] Add a 15‑minute alignment ritual to a standing meeting; capture one decision and one learn.
-- [Aim 3] Host one 30‑minute “Thinking Time” chat; publish one 300‑word note that emerged from it.
-- [Aim 4] Block two hours for reflection/care; identify one work choice that increases margin next week.
+- [Aim 1] Block two hours for reflection/care; identify one work choice that increases margin next week.
+- [Aim 2] Ship a 1‑day prototype that tests a behavior‑change hypothesis; define success criteria up front.
+- [Aim 3] Add a 15‑minute alignment ritual to a standing meeting; capture one decision and one learn.
+- [Aim 4] Host one 30‑minute “Thinking Time” chat; publish one 300‑word note that emerged from it.
 
  </details>
 
