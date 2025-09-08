@@ -33,6 +33,13 @@ Principles set the foundation. Without them, rituals are just empty motions. Wit
 5. **Leverage Strengths**
    Build on what energizes and empowers you. While growth areas are important, your strengths are your foundation for success and resilience.
 
+**Callout — What stuck for one reader:**
+> Three bits that were revelations for me:
+>
+> - List out 3 things you're most proud of from your work over the last few years.
+> - What do you see others accomplishing that you want to do too?
+> - These are hard and will take many years. Make sure they energize you by virtue of aligning with your mission.
+
 ## Nested Feedback Loops
 
 A healthy growth system relies on nested feedback loops operating at different scales. Small-scale rituals, like daily focus or weekly reviews, strengthen and inform larger ones such as quarterly reflections and mission affirmations. Conversely, these larger-scale rituals guide and protect the smaller ones, creating a dynamic balance that sustains growth.
@@ -50,9 +57,12 @@ Don’t drop a ritual without substituting something that preserves the same sig
 | [Weekly Review](#5-weekly-review)           | Break priorities into actionable tasks     | Weekly          | Planning Over Plans       |
 | [Daily Focus](#6-daily-focus)             | Connect daily work to long-term aims       | Daily           | Sustain Momentum          |
 
+
 Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
 
+<a id="1-reflect-on-achievements"></a>
 ### 1. Reflect on Achievements
+
 
 Reflection on your achievements serves as an essential anchor in your growth journey. By regularly reviewing what you have accomplished and the impact you have made, you reinforce your sense of progress and build confidence. This ritual helps you stay grounded in reality, ensuring that your aims remain connected to tangible outcomes and meaningful success.
 
@@ -82,9 +92,12 @@ It grounds your personal growth in reality, boosting confidence and providing a 
 
 Try alternative reflection methods like informal conversations, visual timelines, or storytelling to capture your impact in ways that feel natural to you.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
 
+_See example output in the [Appendix](#reflect-example)._
+
+<a id="2-recognize-strengths"></a>
 ### 2. Recognize Strengths
+
 
 Understanding and leveraging your strengths is vital for sustainable growth. This ritual encourages you to identify the qualities and skills that energize you, enabling you to focus your efforts where you are most effective. Recognizing strengths not only builds confidence but also helps you approach challenges with resilience and a positive mindset.
 
@@ -111,9 +124,12 @@ Recognizing strengths helps you build sustainable growth by leveraging what you 
 
 Consider journaling your experiences or having informal peer conversations to uncover strengths in a way that fits your style.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
 
+_See example output in the [Appendix](#strengths-example)._
+
+<a id="3-affirm-your-mission"></a>
 ### 3. Affirm Your Mission
+
 
 A clear and compelling personal mission provides direction and motivation. This ritual invites you to articulate your core purpose and guiding principles, serving as a compass that aligns your efforts and decisions. Regularly affirming your mission helps maintain focus and inspires commitment to your growth journey.
 
@@ -139,9 +155,12 @@ A clear mission statement serves as a compass, focusing your energy and filterin
 
 Use alternative expressions such as storytelling or value identification to keep your purpose clear.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
 
+_See example output in the [Appendix](#mission-example)._
+
+<a id="4-aim--set-priorities"></a>
 ### 4. Aim & Set Priorities
+
 
 Setting clear and focused priorities is crucial for maintaining momentum and direction. This ritual guides you to define a limited number of growth areas that challenge you and align with your mission. By concentrating your efforts, you can make meaningful progress without becoming overwhelmed.
 
@@ -170,9 +189,12 @@ Focused aims help maintain momentum and prevent overwhelm. Aim bigger than a few
 
 Try shorter cycles, flexible themes, or evolving focus areas to keep intentionality without rigidity.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
 
+_See example output in the [Appendix](#aims-example)._
+
+<a id="5-weekly-review"></a>
 ### 5. Weekly Review
+
 
 Regularly reviewing your weekly progress keeps your growth aligned and adaptable. This ritual helps break down priorities into manageable tasks, allowing you to adjust plans as needed and maintain steady momentum. Weekly reviews foster accountability and ensure you stay connected to your broader aims.
 
@@ -199,9 +221,12 @@ Maintains alignment, adapts to changes, and sustains momentum.
 
 Use informal check-ins, quick daily scans, or collaborative planning sessions for regular progress reviews.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
 
+_See example output in the [Appendix](#weekly-review-example)._
+
+<a id="6-daily-focus"></a>
 ### 6. Daily Focus
+
 
 Daily focus rituals connect your everyday actions to your long-term goals. By starting and ending each day with intention and reflection, you sustain motivation and keep your efforts aligned. This practice helps you build momentum through consistent, purposeful engagement with your aims.
 
@@ -227,7 +252,7 @@ Connects daily work to long-term goals, sustaining motivation and momentum.
 
 Try micro-reflections, mindfulness breaks, or integrate reflection into existing routines like commutes or pauses.
 
-_See example output in the [Appendix](#appendix-example-worksheet)._
+_See example output in the [Appendix](#daily-focus-example)._
 
 ## Credits
 
@@ -263,6 +288,7 @@ Personal growth is not a destination but a continuous journey filled with reflec
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix: Example Worksheet</strong> (click to expand)</summary>
 
+<a id="reflect-example"></a>
 ### Reflect on Achievements
 
 #### Zapier Data: Building a Foundation for Insight and Leverage
@@ -280,6 +306,7 @@ Personal growth is not a destination but a continuous journey filled with reflec
 - Created and shared personal growth frameworks (like Open Horizons) that others have adopted and adapted for their own journeys.
 - Consistently sought feedback and reflected on failures as fuel for learning, modeling vulnerability and resilience for others.
 
+<a id="strengths-example"></a>
 ### Strengths
 
 - **Strategic Vision**
@@ -300,10 +327,12 @@ Personal growth is not a destination but a continuous journey filled with reflec
     - Asking “why” and “what if” to challenge assumptions and unlock new approaches.
     - Synthesizing feedback and signals from diverse sources to guide teams.
 
+<a id="mission-example"></a>
 ### Mission
 
 To empower teams to create meaningful, user-centered products that improve lives and foster growth. I strive to lead with integrity, curiosity, and a commitment to continuous learning.
 
+<a id="aims-example"></a>
 ### Aims (Outcomes & Possible Tactics)
 
 #### Aim 1 — Build and Protect Margin — at Work and in Life
@@ -347,6 +376,14 @@ To empower teams to create meaningful, user-centered products that improve lives
 - Publish short essays or notes distilling mental models and practical tools.
 - Invest selectively in communities with high resonance and multiplier potential.
 
+<a id="daily-focus-example"></a>
+### Daily Focus Snapshot (Example)
+- **Morning (3–5 min):** Review aims (Aim 1–3), note 1–3 tasks you’ll approach differently to advance an aim.
+  _Example:_ “In the design review, ask one question that tests alignment to Aim 2 (leverage through tech).”
+- **Evening (3–5 min):** Capture 1 win, 1 learning, 1 adjustment for tomorrow.
+  _Example:_ “Win: Stakeholders agreed to pilot the small ritual. Learning: we need clearer success criteria. Adjustment: draft the criteria first thing tomorrow (ties to Aim 3).”
+
+<a id="weekly-review-example"></a>
 ### Weekly Review Example (Outcome‑linked)
 
 - Pick 3–5 tasks tied explicitly to one or more Aims (label them Aim 1–4).
