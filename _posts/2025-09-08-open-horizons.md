@@ -43,14 +43,14 @@ Don’t drop a ritual without substituting something that preserves the same sig
 
 | Activity                | Purpose                                    | Frequency       | Principle Emphasized      |
 |-------------------------|--------------------------------------------|-----------------|--------------------------|
-| Reflect on Achievements | Ground direction in real impact            | Quarterly       | Aim With Clarity          |
-| Recognize Strengths     | Identify and leverage personal strengths   | Quarterly       | Nurture a Growth Mindset |
-| Affirm Your Mission     | Clarify motivating purpose                  | Quarterly       | Aim With Clarity          |
-| Aim & Set Priorities    | Define focused growth areas                  | Quarterly       | Planning Over Plans       |
-| Weekly Review           | Break priorities into actionable tasks     | Weekly          | Planning Over Plans       |
-| Daily Focus             | Connect daily work to long-term aims       | Daily           | Sustain Momentum          |
+| [Reflect on Achievements](#1-reflect-on-achievements) | Ground direction in real impact            | Quarterly       | Aim With Clarity          |
+| [Recognize Strengths](#2-recognize-strengths)     | Identify and leverage personal strengths   | Quarterly       | Nurture a Growth Mindset |
+| [Affirm Your Mission](#3-affirm-your-mission)     | Clarify motivating purpose                  | Quarterly       | Aim With Clarity          |
+| [Aim & Set Priorities](#4-aim--set-priorities)    | Define focused growth areas                  | Quarterly       | Planning Over Plans       |
+| [Weekly Review](#5-weekly-review)           | Break priorities into actionable tasks     | Weekly          | Planning Over Plans       |
+| [Daily Focus](#6-daily-focus)             | Connect daily work to long-term aims       | Daily           | Sustain Momentum          |
 
-Starting Open Horizons may feel like a significant commitment. The initial run-through of these activities usually takes 4–6 weeks as you build habits and understanding. A practical approach is to focus on one activity per week, allowing each ritual to embed naturally before adding the next.
+Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
 
 ### 1. Reflect on Achievements
 
@@ -75,10 +75,14 @@ It grounds your personal growth in reality, boosting confidence and providing a 
 - Review impact/performance notes and your resume/LinkedIn.
 - Share your list with a peer or mentor for perspective.
 - Maintain a simple “wins” log to make future reflections easier.
+- Consider keeping a running “brag document” ([Julia Evans’s guide](https://jvns.ca/blog/brag-documents/)) to capture wins as they happen.
+- Make a short "Admired Achievements" list: who do you look up to, and what are they accomplishing that you want to do too?
 
 #### If this doesn't work
 
 Try alternative reflection methods like informal conversations, visual timelines, or storytelling to capture your impact in ways that feel natural to you.
+
+_See example output in the [Appendix](#appendix-example-worksheet)._
 
 ### 2. Recognize Strengths
 
@@ -107,6 +111,8 @@ Recognizing strengths helps you build sustainable growth by leveraging what you 
 
 Consider journaling your experiences or having informal peer conversations to uncover strengths in a way that fits your style.
 
+_See example output in the [Appendix](#appendix-example-worksheet)._
+
 ### 3. Affirm Your Mission
 
 A clear and compelling personal mission provides direction and motivation. This ritual invites you to articulate your core purpose and guiding principles, serving as a compass that aligns your efforts and decisions. Regularly affirming your mission helps maintain focus and inspires commitment to your growth journey.
@@ -133,6 +139,8 @@ A clear mission statement serves as a compass, focusing your energy and filterin
 
 Use alternative expressions such as storytelling or value identification to keep your purpose clear.
 
+_See example output in the [Appendix](#appendix-example-worksheet)._
+
 ### 4. Aim & Set Priorities
 
 Setting clear and focused priorities is crucial for maintaining momentum and direction. This ritual guides you to define a limited number of growth areas that challenge you and align with your mission. By concentrating your efforts, you can make meaningful progress without becoming overwhelmed.
@@ -143,10 +151,11 @@ Define no more than three key growth areas each quarter that stretch you and ali
 
 #### Why
 
-Focused aims help maintain momentum and prevent overwhelm.
+Focused aims help maintain momentum and prevent overwhelm. Aim bigger than a few months—think in years. These aims should be difficult and energizing because they align with your mission.
 
 #### Criteria
 
+- Long-horizon: Likely to span years, not months.
 - Hard: Worth stretching for.
 - Important: Directly linked to your mission.
 - Viable: Leverages strengths and has support.
@@ -160,6 +169,8 @@ Focused aims help maintain momentum and prevent overwhelm.
 #### If this doesn't work
 
 Try shorter cycles, flexible themes, or evolving focus areas to keep intentionality without rigidity.
+
+_See example output in the [Appendix](#appendix-example-worksheet)._
 
 ### 5. Weekly Review
 
@@ -188,6 +199,8 @@ Maintains alignment, adapts to changes, and sustains momentum.
 
 Use informal check-ins, quick daily scans, or collaborative planning sessions for regular progress reviews.
 
+_See example output in the [Appendix](#appendix-example-worksheet)._
+
 ### 6. Daily Focus
 
 Daily focus rituals connect your everyday actions to your long-term goals. By starting and ending each day with intention and reflection, you sustain motivation and keep your efforts aligned. This practice helps you build momentum through consistent, purposeful engagement with your aims.
@@ -213,6 +226,8 @@ Connects daily work to long-term goals, sustaining motivation and momentum.
 #### If this doesn't work
 
 Try micro-reflections, mindfulness breaks, or integrate reflection into existing routines like commutes or pauses.
+
+_See example output in the [Appendix](#appendix-example-worksheet)._
 
 ## Credits
 
