@@ -268,8 +268,8 @@ Try micro-reflections, mindfulness breaks, or integrate reflection into existing
 This framework was inspired and informed by the works and teachings of:
 
 - [The First 90 Days](https://hbr.org/books/watkins) by Michael D. Watkins. This helped me understand the importance of the first 90 days in a new role, and success through a learning mindset. After my coach helped me apply these ideas to be successful in new roles, I got the idea of making this a rolling 90-day plan that supports my growth.
-- [Stategy and Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF) by Eli Goldratt, Rami Goldratt and Eli Abramov. While it may be obvious to all of you, the idea of a hierarchy of strategy and tactic (and strategy and tactic nested under them) was a revelation to me. I've used this idea to help me think about my priorities and how they relate to my mission.
-- [The Path Between The Seas](https://www.simonandschuster.com/books/The-Path-Between-the-Seas/David-McCullough/9780743262132) by David McCullough. This book helped me understand that we can in fact emark on projects that we have no idea how to complete. We can learn and discover as we go.
+- [Strategy and Tactics](https://goldrattresearchlabs.com/pdf/other-authors/_Strategy_and_Tactics__-_by_Eli_Goldratt,_Rami_Gol.PDF) by Eli Goldratt, Rami Goldratt and Eli Abramov. While it may be obvious to all of you, the idea of a hierarchy of strategy and tactic (and strategy and tactic nested under them) was a revelation to me. I've used this idea to help me think about my priorities and how they relate to my mission.
+- [The Path Between The Seas](https://www.simonandschuster.com/books/The-Path-Between-the-Seas/David-McCullough/9780743262132) by David McCullough. This book helped me understand that we can in fact embark on projects that we have no idea how to complete. We can learn and discover as we go.
 - [Outcomes over Output](https://www.senseandrespondpress.com/managing-outcomes) by Joshua Seiden. It's not about the output, it's about the outcomes we achieve. So a planning system that focuses on outcomes and pushes out plans until the last minute makes sense and is worth bragging about.
 - The Working Genius [book](https://www.workinggenius.com/) and [podcast](https://workinggeniuspodcast.libsyn.com/) by Patrick Lencioni. This helped me understand that we each have strengths, and we should leverage them and not lament all the weaknesses we have. He also helped me not feel guilty about my habit of [asking people why they're doing things](https://www.tablegroup.com/88-the-power-of-daily-disruption/) and urging them to reconsider whether what they're doing is the best way to meet their goals.
 - Glenn Vanderburg’s paper [Extreme Programming Annealed](https://vanderburg.org/writing/xpannealed.pdf) sharpened my understanding of reinforcing processes. He showed that healthy systems rely on nested feedback loops at multiple scales, and that if you remove a practice, you must replace it with something that provides feedback at the same level. That framing deeply influenced how I think about Open Horizons.
@@ -301,17 +301,20 @@ Personal growth is not a destination but a continuous journey filled with reflec
 ### Reflect on Achievements
 
 #### Zapier Data: Building a Foundation for Insight and Leverage
+
 - Conceived, built, and shipped the Zapier Data Platform, enabling the company to “see itself” for the first time through reliable, trusted product and business data.
 - Led the transition from ad hoc reporting to a robust, self-serve analytics ecosystem, empowering teams to make data-informed decisions.
 - Drove adoption by partnering with stakeholders, running workshops, and building a culture of curiosity and experimentation with data.
 
 #### Strategic Engagement and Team Empowerment at NerdWallet
+
 - Orchestrated a cross-functional initiative to clarify product strategy, resulting in a shared vision and roadmap adopted by leadership.
 - Mentored product managers, engineers, and analysts to become “force multipliers” for their teams, fostering a culture of ownership and continuous improvement.
 - Modeled and taught alignment rituals (e.g., weekly strategy check-ins, explicit decision logs) that improved clarity and reduced thrash.
 
 #### Embracing a Growth Mindset and Helping Others Grow
-- Regularly coached peers and direct reports through challenging transitions—career pivots, new roles, and ambiguous projects—by listening deeply and offering frameworks for thinking.
+
+- Regularly coached friends and colleagues through challenging transitions—career pivots, new roles, and ambiguous projects—by listening deeply and offering frameworks for thinking.
 - Created and shared personal growth frameworks (like Open Horizons) that others have adopted and adapted for their own journeys.
 - Consistently sought feedback and reflected on failures as fuel for learning, modeling vulnerability and resilience for others.
 
