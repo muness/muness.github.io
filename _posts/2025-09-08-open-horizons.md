@@ -46,9 +46,9 @@ A healthy growth system relies on nested feedback loops operating at different s
 
 Don’t drop a ritual without substituting something that preserves the same signal at the same scale. If a practice is removed, it’s essential to explicitly replace it with something that provides feedback at the same scale and frequency to maintain this balance. Think of it as "defense in depth"—if one ritual misses something, another catches it, ensuring nothing slips through the cracks. This layered approach to feedback keeps your growth system resilient and responsive.
 
-## Activities Overview
+## Rituals Overview
 
-| Activity                | Purpose                                    | Frequency       | Principle Emphasized      |
+| Ritual                | Purpose                                    | Frequency       | Principle Emphasized      |
 |-------------------------|--------------------------------------------|-----------------|--------------------------|
 | [Reflect on Achievements](#1-reflect-on-achievements) | Ground direction in real impact            | Quarterly       | Aim With Clarity          |
 | [Recognize Strengths](#2-recognize-strengths)     | Identify and leverage personal strengths   | Quarterly       | Nurture a Growth Mindset |
@@ -60,11 +60,15 @@ Don’t drop a ritual without substituting something that preserves the same sig
 
 Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
 
-_Examples for each ritual live in the Appendix; the links below will auto‑expand the Appendix and jump to the right spot._
+_Examples for each ritual live in the Appendix._
 
+## Rituals in Detail
 
+<a id="1-reflect-on-achievements"></a>
+### 1. Reflect on Achievements
 
 Reflection on your achievements serves as an essential anchor in your growth journey. By regularly reviewing what you have accomplished and the impact you have made, you reinforce your sense of progress and build confidence. This ritual helps you stay grounded in reality, ensuring that your aims remain connected to tangible outcomes and meaningful success.
+[↳ Example](#reflect-example)
 
 #### What
 
@@ -88,16 +92,17 @@ It grounds your personal growth in reality, boosting confidence and providing a 
 - Consider keeping a running “brag document” ([Julia Evans’s guide](https://jvns.ca/blog/brag-documents/)) to capture wins as they happen.
 - Make a short "Admired Achievements" list: who do you look up to, and what are they accomplishing that you want to do too?
 
-#### If this doesn't work
+#### Adaptations
 
 Try alternative reflection methods like informal conversations, visual timelines, or storytelling to capture your impact in ways that feel natural to you.
 
 
-[↳ Example](#reflect-example)
 
-
+<a id="2-recognize-strengths"></a>
+### 2. Recognize Strengths
 
 Understanding and leveraging your strengths is vital for sustainable growth. This ritual encourages you to identify the qualities and skills that energize you, enabling you to focus your efforts where you are most effective. Recognizing strengths not only builds confidence but also helps you approach challenges with resilience and a positive mindset.
+[↳ Example](#strengths-example)
 
 #### What
 
@@ -118,16 +123,17 @@ Recognizing strengths helps you build sustainable growth by leveraging what you 
 - Request feedback from peers and managers.
 - Use strengths assessment tools to supplement self-awareness.
 
-#### If this doesn't work
+#### Adaptations
 
 Consider journaling your experiences or having informal peer conversations to uncover strengths in a way that fits your style.
 
 
-[↳ Example](#strengths-example)
 
-
+<a id="3-affirm-your-mission"></a>
+### 3. Affirm Your Mission
 
 A clear and compelling personal mission provides direction and motivation. This ritual invites you to articulate your core purpose and guiding principles, serving as a compass that aligns your efforts and decisions. Regularly affirming your mission helps maintain focus and inspires commitment to your growth journey.
+[↳ Example](#mission-example)
 
 #### What
 
@@ -147,16 +153,17 @@ A clear mission statement serves as a compass, focusing your energy and filterin
 - Keep your mission visible and revisit it regularly.
 - Express your mission through conversations, visual boards, or core values.
 
-#### If this doesn't work
+#### Adaptations
 
 Use alternative expressions such as storytelling or value identification to keep your purpose clear.
 
 
-[↳ Example](#mission-example)
 
-
+<a id="4-aim--set-priorities"></a>
+### 4. Aim & Set Priorities
 
 Setting clear and focused priorities is crucial for maintaining momentum and direction. This ritual guides you to define a limited number of growth areas that challenge you and align with your mission. By concentrating your efforts, you can make meaningful progress without becoming overwhelmed.
+[↳ Example](#aims-example)
 
 #### What
 
@@ -179,16 +186,17 @@ Focused aims help maintain momentum and prevent overwhelm. Aim bigger than a few
 - Reflect on what would amplify past wins.
 - Discuss priorities with peers to test relevance and feasibility.
 
-#### If this doesn't work
+#### Adaptations
 
 Try shorter cycles, flexible themes, or evolving focus areas to keep intentionality without rigidity.
 
 
-[↳ Example](#aims-example)
 
-
+<a id="5-weekly-review"></a>
+### 5. Weekly Review
 
 Regularly reviewing your weekly progress keeps your growth aligned and adaptable. This ritual helps break down priorities into manageable tasks, allowing you to adjust plans as needed and maintain steady momentum. Weekly reviews foster accountability and ensure you stay connected to your broader aims.
+[↳ Example](#weekly-review-example)
 
 #### What
 
@@ -209,16 +217,17 @@ Maintains alignment, adapts to changes, and sustains momentum.
 - Reflect on lessons learned from the previous week.
 - Identify what to stop or pause to focus on priorities.
 
-#### If this doesn't work
+#### Adaptations
 
 Use informal check-ins, quick daily scans, or collaborative planning sessions for regular progress reviews.
 
 
-[↳ Example](#weekly-review-example)
 
-
+<a id="6-daily-focus"></a>
+### 6. Daily Focus
 
 Daily focus rituals connect your everyday actions to your long-term goals. By starting and ending each day with intention and reflection, you sustain motivation and keep your efforts aligned. This practice helps you build momentum through consistent, purposeful engagement with your aims.
+[↳ Example](#daily-focus-example)
 
 #### What
 
@@ -238,11 +247,9 @@ Connects daily work to long-term goals, sustaining motivation and momentum.
 - Keep aims visible throughout the day.
 - Recall and lean on your strengths.
 
-#### If this doesn't work
+#### Adaptations
 
 Try micro-reflections, mindfulness breaks, or integrate reflection into existing routines like commutes or pauses.
-
-[↳ Example](#daily-focus-example)
 
 ## Credits
 
