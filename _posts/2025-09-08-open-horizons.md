@@ -5,7 +5,6 @@ author: muness
 toc: true
 comments: true
 pin: true
-tags: [growth, framework, productivity]
 excerpt: "A flexible, principle-driven framework to help you clarify your direction, nurture your strengths, and maintain momentum in your growth journey."
 ---
 
