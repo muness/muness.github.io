@@ -60,8 +60,8 @@ Don’t drop a ritual without substituting something that preserves the same sig
 
 Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
 
-<a id="1-reflect-on-achievements"></a>
-### 1. Reflect on Achievements
+_Examples for each ritual live in the Appendix; the links below will auto‑expand the Appendix and jump to the right spot._
+
 
 
 Reflection on your achievements serves as an essential anchor in your growth journey. By regularly reviewing what you have accomplished and the impact you have made, you reinforce your sense of progress and build confidence. This ritual helps you stay grounded in reality, ensuring that your aims remain connected to tangible outcomes and meaningful success.
@@ -93,10 +93,8 @@ It grounds your personal growth in reality, boosting confidence and providing a 
 Try alternative reflection methods like informal conversations, visual timelines, or storytelling to capture your impact in ways that feel natural to you.
 
 
-_See example output in the [Appendix](#reflect-example)._
+[↳ Example](#reflect-example)
 
-<a id="2-recognize-strengths"></a>
-### 2. Recognize Strengths
 
 
 Understanding and leveraging your strengths is vital for sustainable growth. This ritual encourages you to identify the qualities and skills that energize you, enabling you to focus your efforts where you are most effective. Recognizing strengths not only builds confidence but also helps you approach challenges with resilience and a positive mindset.
@@ -125,10 +123,8 @@ Recognizing strengths helps you build sustainable growth by leveraging what you 
 Consider journaling your experiences or having informal peer conversations to uncover strengths in a way that fits your style.
 
 
-_See example output in the [Appendix](#strengths-example)._
+[↳ Example](#strengths-example)
 
-<a id="3-affirm-your-mission"></a>
-### 3. Affirm Your Mission
 
 
 A clear and compelling personal mission provides direction and motivation. This ritual invites you to articulate your core purpose and guiding principles, serving as a compass that aligns your efforts and decisions. Regularly affirming your mission helps maintain focus and inspires commitment to your growth journey.
@@ -156,10 +152,8 @@ A clear mission statement serves as a compass, focusing your energy and filterin
 Use alternative expressions such as storytelling or value identification to keep your purpose clear.
 
 
-_See example output in the [Appendix](#mission-example)._
+[↳ Example](#mission-example)
 
-<a id="4-aim--set-priorities"></a>
-### 4. Aim & Set Priorities
 
 
 Setting clear and focused priorities is crucial for maintaining momentum and direction. This ritual guides you to define a limited number of growth areas that challenge you and align with your mission. By concentrating your efforts, you can make meaningful progress without becoming overwhelmed.
@@ -190,10 +184,8 @@ Focused aims help maintain momentum and prevent overwhelm. Aim bigger than a few
 Try shorter cycles, flexible themes, or evolving focus areas to keep intentionality without rigidity.
 
 
-_See example output in the [Appendix](#aims-example)._
+[↳ Example](#aims-example)
 
-<a id="5-weekly-review"></a>
-### 5. Weekly Review
 
 
 Regularly reviewing your weekly progress keeps your growth aligned and adaptable. This ritual helps break down priorities into manageable tasks, allowing you to adjust plans as needed and maintain steady momentum. Weekly reviews foster accountability and ensure you stay connected to your broader aims.
@@ -222,10 +214,8 @@ Maintains alignment, adapts to changes, and sustains momentum.
 Use informal check-ins, quick daily scans, or collaborative planning sessions for regular progress reviews.
 
 
-_See example output in the [Appendix](#weekly-review-example)._
+[↳ Example](#weekly-review-example)
 
-<a id="6-daily-focus"></a>
-### 6. Daily Focus
 
 
 Daily focus rituals connect your everyday actions to your long-term goals. By starting and ending each day with intention and reflection, you sustain motivation and keep your efforts aligned. This practice helps you build momentum through consistent, purposeful engagement with your aims.
@@ -252,7 +242,7 @@ Connects daily work to long-term goals, sustaining motivation and momentum.
 
 Try micro-reflections, mindfulness breaks, or integrate reflection into existing routines like commutes or pauses.
 
-_See example output in the [Appendix](#daily-focus-example)._
+[↳ Example](#daily-focus-example)
 
 ## Credits
 
@@ -392,4 +382,28 @@ To empower teams to create meaningful, user-centered products that improve lives
 - [Aim 3] Host one 30‑minute “Thinking Time” chat; publish one 300‑word note that emerged from it.
 - [Aim 4] Block two hours for reflection/care; identify one work choice that increases margin next week.
 
-</details>
+ </details>
+
+<script>
+(function() {
+  function openIfInsideDetails(el) {
+    if (!el) return;
+    const details = el.closest && el.closest('details');
+    if (details && !details.open) {
+      details.open = true;
+    }
+    // Try to scroll after opening
+    setTimeout(function() {
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+    }, 0);
+  }
+  function handleHash() {
+    const id = decodeURIComponent(location.hash.replace('#',''));
+    if (!id) return;
+    const target = document.getElementById(id);
+    openIfInsideDetails(target);
+  }
+  window.addEventListener('hashchange', handleHash);
+  document.addEventListener('DOMContentLoaded', handleHash);
+})();
+</script>
