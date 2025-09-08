@@ -4,9 +4,11 @@ date: 2023-09-26 18:00:00 +0500
 last_modified_at: 2023-11-07 14:40:00 +0500
 author: muness
 toc: true
-comments: true
-pin: true
+comments: false
+pin: false
 ---
+
+This is an older version of my planning system. Go over to [Open Horizons](/posts/open-horizons) for the latest version.
 
 ## What is this?
 
