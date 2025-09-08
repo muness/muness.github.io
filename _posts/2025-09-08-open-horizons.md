@@ -1,5 +1,5 @@
 ---
-title: "Open Horizons: A Framework for Growth"
+title: "Open Horizons: Aim. Do. Reflect."
 date: 2025-09-08
 author: muness
 toc: true
@@ -45,7 +45,7 @@ If the previous section explained the engine, this section defines the fuel. Pri
 2. **Nurture a Growth Mindset**
    Embrace learning and development as ongoing processes. Recognize strengths and weaknesses without judgment and see challenges as opportunities to grow rather than threats.
 3. **Planning Over Plans**
-   Prioritize adaptability and momentum over rigid adherence to plans. Use planning as a tool to guide your actions, not as a constraint that stifles responsiveness or creativity.
+   Prioritize adaptability and momentum over rigid adherence to plans. Use planning as a tool to guide your actions, not as a constraint that stifles responsiveness or creativity. Recover quickly when plans falter—momentum matters more than perfection.
 4. **Sustain Momentum**
    Sustain momentum by regularly reflecting, celebrating wins, and making thoughtful adjustments. Build margin to absorb shocks and enable bold swings, ensuring your growth remains dynamic, resilient, and adaptable.
 5. **Leverage Strengths**
@@ -69,7 +69,7 @@ Don’t drop a ritual without substituting something that preserves the same sig
 | [Daily Focus](#6-daily-focus)             | Connect daily work to long-term aims       | Daily           | Sustain Momentum          |
 
 
-Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
+Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next. This is onboarding guidance, not a permanent limit.
 
 _Example output of each ritual live in the Appendix._
 
@@ -243,7 +243,7 @@ Daily focus rituals connect your everyday actions to your long-term goals. By st
 
 #### What
 
-A brief morning and evening routine to plan and reflect on your day in alignment with your aims and strengths.
+A brief morning and evening routine to plan and reflect on your day in alignment with your aims and strengths. Glance at your top strengths; pick one to consciously use today.
 
 #### Why
 
