@@ -13,7 +13,7 @@ excerpt: "A flexible, principle-driven framework to help you clarify your direct
 
 _Open Horizons_ is a growth framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
 
-### How this system is different
+### Why this works (design choices)
 
 What stood out about this process for one user:
 > Three bits that were revelations for me:
@@ -26,26 +26,22 @@ What stood out about this process for one user:
 >
 > The last one was essential in making me think big. It instructed me to _not_ think about things that I could accomplish in ~5 months, but instead aim bigger. That bigger aim ended up being critical to the inspirations that I took from this process.
 
-These prompts change how growth works. They anchor you in reality, point you toward concrete exemplars, and force a long horizon. In practice:
+These design choices are the engine that makes Open Horizons work in real life. They anchor you in reality, point you toward concrete exemplars, and force a long horizon. In practice:
 
 - **Reality anchor (proud achievements).** Starting from lived impact prevents vanity goals. You see what actually produced outcomes for you—contexts, behaviors, strengths—and can deliberately do more of that.
 - **Aspirational modeling (admired accomplishments).** Naming who you look up to and what they’ve achieved injects direction, standards, and concrete examples. It turns "grow" into "grow toward this," which accelerates learning.
 - **Energy gate + horizon (years, not months).** By encouraging long‑horizon, energizing aims, you avoid short‑termism and pick pursuits that can sustain effort through setbacks. This keeps the system inspiring instead of becoming another checklist.
-- **Strengths visibility (compounding use).** Explicitly listing and revisiting your strengths primes you to use them more. Usage builds skill and confidence, compounding over time.
+
+Together, these are _design choices_—how the system is built. The next section covers the _principles_—the beliefs that the rituals are meant to practice.
 
 _Net effect:_ these prompts create a closed loop between **what’s real**, **what’s possible**, and **what’s worth years of your life** — a loop many growth systems skip.
 
 ## Principles
 
-Principles set the foundation. Without them, rituals are just empty motions. With them, rituals become ways to practice what matters. Small, repeatable actions embed principles into daily life—keeping you aligned, adaptable, and building habits that support your growth.
-
-> Learn it first through ritual. Then, as you grok the principles, make it your own by adapting the rituals.
+If the previous section explained the engine, this section defines the fuel. Principles set the foundation for what we practice; without them, rituals risk becoming empty motions. With them, rituals become ways to practice what matters. Small, repeatable actions embed principles into daily life—keeping you aligned, adaptable, and building habits that support your growth. _Learn it first through ritual. Then, as you grok the principles, make it your own by adapting the rituals._
 
 1. **Aim With Clarity**
-   Define what success means to you. Clarity in your aims helps you make better decisions, focus your energy, and measure progress meaningfully. Without clear aims, effort can scatter and motivation wane.
-
-   > You’re more likely to get where you want to go if you know where you’re going.
-
+   Define what success means to you. Clarity in your aims helps you make better decisions, focus your energy, and measure progress meaningfully. Without clear aims, effort can scatter and motivation wane. In other words, _You’re more likely to get where you want to go if you know where you’re going._
 2. **Nurture a Growth Mindset**
    Embrace learning and development as ongoing processes. Recognize strengths and weaknesses without judgment and see challenges as opportunities to grow rather than threats.
 3. **Planning Over Plans**
@@ -63,7 +59,7 @@ Don’t drop a ritual without substituting something that preserves the same sig
 
 ## Rituals Overview
 
-| Ritual                | Purpose                                    | Frequency       | Principle Emphasized      |
+| Ritual                | Purpose                                    | Frequency       | Principle Practiced      |
 |-------------------------|--------------------------------------------|-----------------|--------------------------|
 | [Reflect on Achievements](#1-reflect-on-achievements) | Ground direction in real impact            | Quarterly       | Aim With Clarity          |
 | [Recognize Strengths](#2-recognize-strengths)     | Identify and leverage personal strengths   | Quarterly       | Nurture a Growth Mindset |
@@ -350,9 +346,9 @@ To empower teams to create meaningful, user-centered products that improve lives
 
 #### Aim 1 — Build and Protect Margin — at Work and in Life
 
-*Outcome:* There is buffer to make better choices, absorb shocks, and take big swings.
+_Outcome:_ There is buffer to make better choices, absorb shocks, and take big swings.
 
-*Tactics:*
+_Tactics:_
 
 - Evaluate opportunities by how they strengthen (not erode) margin.
 - Choose contexts that support honesty, adaptability, and slack.
@@ -361,9 +357,9 @@ To empower teams to create meaningful, user-centered products that improve lives
 
 #### Aim 2 — Create Leverage Through Technology as a Force-Multiplier
 
-*Outcome:* People and organizations achieve outcomes they couldn’t without new tools or approaches.
+_Outcome:_ People and organizations achieve outcomes they couldn’t without new tools or approaches.
 
-*Tactics:*
+_Tactics:_
 
 - Join or create roles where technology is central to strategy, not just execution.
 - Run small prototypes that demonstrate behavior change (not just features).
@@ -371,9 +367,9 @@ To empower teams to create meaningful, user-centered products that improve lives
 
 #### Aim 3 — Enable Alignment and Resilience in How People Work
 
-*Outcome:* Teams operate with clarity, adaptability, and health—whether via management, consulting, or peer influence.
+_Outcome:_ Teams operate with clarity, adaptability, and health—whether via management, consulting, or peer influence.
 
-*Tactics:*
+_Tactics:_
 
 - Introduce lightweight strategy↔ops↔data rituals (e.g., alignment check-ins, explicit decision logs).
 - Model alignment practices in any role, especially in ambiguous or shifting contexts.
@@ -381,9 +377,9 @@ To empower teams to create meaningful, user-centered products that improve lives
 
 #### Aim 4 — Reach and Equip People Who Seek Better Ways of Working
 
-*Outcome:* Ideas and frameworks resonate with ready learners who carry them into their own contexts.
+_Outcome:_ Ideas and frameworks resonate with ready learners who carry them into their own contexts.
 
-*Tactics:*
+_Tactics:_
 
 - Host “Thinking Time” sparring sessions for open-ended exploration.
 - Publish short essays or notes distilling mental models and practical tools.
