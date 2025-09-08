@@ -11,7 +11,29 @@ excerpt: "A flexible, principle-driven framework to help you clarify your direct
 
 ## What is this?
 
-Open Horizons is a personal growth framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
+_Open Horizons_ is a growth framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
+
+### How this system is different
+
+What stood out about this process for one user:
+> Three bits that were revelations for me:
+>
+> 1. List out 3 things you're most proud of from your work over the last few years.
+> 2. What do you see others accomplishing that you want to do too?
+> 3. These are hard and will take many years. Make sure they energize you by virtue of aligning with your mission.
+>
+> Those first two nudged me to: name what motivates me, surface the growth endeavors I'm most proud of, and study the accomplishments of the people I look up to.
+>
+> The last one was essential in making me think big. It instructed me to _not_ think about things that I could accomplish in ~5 months, but instead aim bigger. That bigger aim ended up being critical to the inspirations that I took from this process.
+
+These prompts change how growth works. They anchor you in reality, point you toward concrete exemplars, and force a long horizon. In practice:
+
+- **Reality anchor (proud achievements).** Starting from lived impact prevents vanity goals. You see what actually produced outcomes for you—contexts, behaviors, strengths—and can deliberately do more of that.
+- **Aspirational modeling (admired accomplishments).** Naming who you look up to and what they’ve achieved injects direction, standards, and concrete examples. It turns "grow" into "grow toward this," which accelerates learning.
+- **Energy gate + horizon (years, not months).** By encouraging long‑horizon, energizing aims, you avoid short‑termism and pick pursuits that can sustain effort through setbacks. This keeps the system inspiring instead of becoming another checklist.
+- **Strengths visibility (compounding use).** Explicitly listing and revisiting your strengths primes you to use them more. Usage builds skill and confidence, compounding over time.
+
+_Net effect:_ these prompts create a closed loop between **what’s real**, **what’s possible**, and **what’s worth years of your life** — a loop many growth systems skip.
 
 ## Principles
 
@@ -31,14 +53,7 @@ Principles set the foundation. Without them, rituals are just empty motions. Wit
 4. **Sustain Momentum**
    Sustain momentum by regularly reflecting, celebrating wins, and making thoughtful adjustments. Build margin to absorb shocks and enable bold swings, ensuring your growth remains dynamic, resilient, and adaptable.
 5. **Leverage Strengths**
-   Build on what energizes and empowers you. While growth areas are important, your strengths are your foundation for success and resilience.
-
-**Callout — What stuck for one reader:**
-> Three bits that were revelations for me:
->
-> - List out 3 things you're most proud of from your work over the last few years.
-> - What do you see others accomplishing that you want to do too?
-> - These are hard and will take many years. Make sure they energize you by virtue of aligning with your mission.
+   Build on what energizes and empowers you. While growth areas are important, your strengths are your foundation for success and resilience. By naming and revisiting your strengths, you prime yourself to use them more often—practice that compounds, turning strengths into superpowers.
 
 ## Nested Feedback Loops
 
@@ -60,7 +75,7 @@ Don’t drop a ritual without substituting something that preserves the same sig
 
 Starting Open Horizons may feel like a significant commitment. When getting started, a practical approach is to adopt one activity per week, allowing each ritual to embed naturally before adding the next.
 
-_Examples for each ritual live in the Appendix._
+_Example output of each ritual live in the Appendix._
 
 ## Rituals in Detail
 
@@ -68,7 +83,7 @@ _Examples for each ritual live in the Appendix._
 ### 1. Reflect on Achievements
 
 Reflection on your achievements serves as an essential anchor in your growth journey. By regularly reviewing what you have accomplished and the impact you have made, you reinforce your sense of progress and build confidence. This ritual helps you stay grounded in reality, ensuring that your aims remain connected to tangible outcomes and meaningful success.
-[↳ Example](#reflect-example)
+ [↳ Example](#reflect-example)
 
 #### What
 
@@ -102,7 +117,7 @@ Try alternative reflection methods like informal conversations, visual timelines
 ### 2. Recognize Strengths
 
 Understanding and leveraging your strengths is vital for sustainable growth. This ritual encourages you to identify the qualities and skills that energize you, enabling you to focus your efforts where you are most effective. Recognizing strengths not only builds confidence but also helps you approach challenges with resilience and a positive mindset.
-[↳ Example](#strengths-example)
+ [↳ Example](#strengths-example)
 
 #### What
 
@@ -110,7 +125,7 @@ This ritual involves identifying your personal strengths—the qualities, skills
 
 #### Why
 
-Recognizing strengths helps you build sustainable growth by leveraging what you do best.
+Recognizing strengths helps you build sustainable growth by leveraging what you do best. Keeping strengths visible elevates them in your daily decisions, making you more likely to use them—usage that strengthens them further.
 
 #### Criteria
 
@@ -122,6 +137,7 @@ Recognizing strengths helps you build sustainable growth by leveraging what you 
 
 - Request feedback from peers and managers.
 - Use strengths assessment tools to supplement self-awareness.
+- Keep your top 3–5 strengths visible (sticky note, doc header, home screen) to cue their use.
 
 #### Adaptations
 
@@ -133,7 +149,7 @@ Consider journaling your experiences or having informal peer conversations to un
 ### 3. Affirm Your Mission
 
 A clear and compelling personal mission provides direction and motivation. This ritual invites you to articulate your core purpose and guiding principles, serving as a compass that aligns your efforts and decisions. Regularly affirming your mission helps maintain focus and inspires commitment to your growth journey.
-[↳ Example](#mission-example)
+ [↳ Example](#mission-example)
 
 #### What
 
@@ -163,7 +179,7 @@ Use alternative expressions such as storytelling or value identification to keep
 ### 4. Aim & Set Priorities
 
 Setting clear and focused priorities is crucial for maintaining momentum and direction. This ritual guides you to define a limited number of growth areas that challenge you and align with your mission. By concentrating your efforts, you can make meaningful progress without becoming overwhelmed.
-[↳ Example](#aims-example)
+ [↳ Example](#aims-example)
 
 #### What
 
@@ -196,7 +212,7 @@ Try shorter cycles, flexible themes, or evolving focus areas to keep intentional
 ### 5. Weekly Review
 
 Regularly reviewing your weekly progress keeps your growth aligned and adaptable. This ritual helps break down priorities into manageable tasks, allowing you to adjust plans as needed and maintain steady momentum. Weekly reviews foster accountability and ensure you stay connected to your broader aims.
-[↳ Example](#weekly-review-example)
+ [↳ Example](#weekly-review-example)
 
 #### What
 
@@ -227,7 +243,7 @@ Use informal check-ins, quick daily scans, or collaborative planning sessions fo
 ### 6. Daily Focus
 
 Daily focus rituals connect your everyday actions to your long-term goals. By starting and ending each day with intention and reflection, you sustain motivation and keep your efforts aligned. This practice helps you build momentum through consistent, purposeful engagement with your aims.
-[↳ Example](#daily-focus-example)
+ [↳ Example](#daily-focus-example)
 
 #### What
 
