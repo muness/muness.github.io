@@ -1,6 +1,7 @@
 ---
 title: "Open Horizons: Aim. Do. Reflect."
-date: 2025-09-08
+date: "2025-09-08 13:00:00 +0500"
+last_modified_at: "2025-09-09 14:15:00 +0500"
 author: muness
 toc: true
 comments: true
