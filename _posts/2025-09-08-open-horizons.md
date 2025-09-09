@@ -11,7 +11,7 @@ excerpt: "A flexible, principle-driven framework to help you clarify your direct
 
 ## What is this?
 
-_Open Horizons_ is a growth framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
+_Open Horizons_ is a framework designed to help you clarify your direction, nurture your strengths, and maintain momentum. It’s a flexible, principle-driven approach that adapts to your unique context and evolves with you.
 
 ### Why this works (design choices)
 
