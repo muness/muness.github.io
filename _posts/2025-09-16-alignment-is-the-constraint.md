@@ -109,9 +109,19 @@ When alignment is in place, speed compounds. But when it is missing, speed seduc
 
 Acceleration is seductive. It tempts us with speed, but without alignment it wrecks us on the rocks.
 
-The instinct to “do more, faster” is powerful because output is visible and measurable. A new feature shipped or a backlog cleared feels like momentum. But this is the siren call: speed creates the illusion of progress even when direction is missing. Misfires like feature factories and high‑profile flameouts often share the same root cause: teams listened to the siren song of acceleration and lost sight of alignment.
+The instinct to *do more, faster* is powerful because output is visible and measurable. A new feature shipped or a backlog cleared feels like momentum. But this is the siren call: speed creates the illusion of progress even when direction is missing. Misfires like feature factories and high‑profile flameouts often share the same root cause: teams listened to the siren song of acceleration and lost sight of alignment.
 
 This is the same trap I described in [User Value Comes First](https://muness.com/posts/user-value-comes-first/): teams can chase financial proxies or feature output, but when those are not aligned to user value, churn and wasted effort compound.
+
+### Not either/or — but don’t start with productivity
+
+This is not an anti‑productivity screed. Flow efficiency, tooling, automation, and AI assistance absolutely matter—**once the aim, mechanism, and feedback loop are in place**. But *starting with productivity* sends teams in the wrong direction for three reasons:
+
+1. **Proxy worship.** Local throughput goes up, but the outcome doesn’t move. Teams celebrate cycle‑time wins while the user behavior we care about is unchanged.
+2. **Premature optimization.** We tune the non‑constraint. Effort piles onto dashboards, tooling, and process tweaks while the real bottleneck—shared aims and a testable mechanism—remains untouched.
+3. **Narrative drift.** People get very good at shipping *something* and begin to mistake activity for progress. The org’s story shifts from *Why this?* to *How fast?*.
+
+I’m sorry/not sorry to say it this bluntly: **if you lead with productivity, you can optimize your way into the ditch.** The path to hell is paved with good intentions and great velocity metrics. Start by aligning on *what good looks like* (Aim), *why this should work* (Mechanism), and *how we’ll know quickly if we’re wrong* (Feedback). Then—by all means—pour on the speed.
 
 ## Common misfires
 
