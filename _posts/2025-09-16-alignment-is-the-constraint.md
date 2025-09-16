@@ -12,7 +12,9 @@ excerpt: "Acceleration is a siren call. Alignment is the constraint. A Critical 
 
 ## Overview
 
-I listened to the EconTalk episode **[How Did America Build the Arsenal of Democracy? (with Brian Potter)](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter)** and it sharpened something I keep seeing: most orgs try to accelerate delivery when the real bottleneck is alignment.
+For 30 years, across startups and public companies, I have watched the same failure mode repeat. When results lag, leaders reach for acceleration. They add people, stack more projects, tighten deadlines, and automate. Velocity goes up. Rework, frustration, and missed outcomes go up too. The bottleneck was not delivery. It was alignment.
+
+The [Arsenal of Democracy story on EconTalk](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter) shows the order of operations in the extreme. Alignment unlocked speed, not the other way around.
 
 **Thesis:** Unless you have reason to believe otherwise, assume that **alignment** is the system constraint. Until shared aims, a clear mechanism of action, and fast feedback are in place, more speed produces more rework. The first step is to demystify strategy itself. If alignment is the constraint, then we need a shared, minimal definition of what strategy really is.
 
