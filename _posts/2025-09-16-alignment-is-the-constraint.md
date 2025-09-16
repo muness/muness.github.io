@@ -28,6 +28,11 @@ Strategy does not need mystique. Use a minimal loop:
 
 Feedback acts as a real-world sufficiency test: are our tactics actually enough to move the Aim?
 
+
+An Aim is not just an internal target like “ship features” or “increase revenue.” It should anchor to real user outcomes — the same way I argued in [User Value Comes First](https://muness.com/posts/user-value-comes-first/) that growth only comes from delivering genuine value, not from chasing profit-first outputs.
+
+An Aim should also be phrased as the *change in user behavior we seek*, not just internal outputs. As I argued in [Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/), outputs are deliverables; outcomes are the user behaviors and benefits that prove value.
+
 Example:
 
 - Aim: increase retention
@@ -50,14 +55,20 @@ Naming the aim, mechanism, and feedback gives a team strategy in miniature. But 
 
 A brilliant strategy on paper means little without a concrete path to implement it. Pragmatic leaders define **mechanisms** that link goals to daily execution. As Jeff Bezos puts it, "Good intentions don't work, mechanisms do" ([AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-eight-maturity/theme-8.html)). In practice, a mechanism is a **repeatable process or tool** that is adopted by the team and **regularly inspected for effectiveness** ([AWS ORR mechanism](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/building-mechanisms.html)).
 
+
 Two useful examples teams can borrow:
 
 - **Working Backwards (PR/FAQ):** write the press release and FAQ before building to force clarity on customer value and assumptions ([Working Backwards](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)).
 - **Weekly Business Review:** review controllable input metrics weekly to course-correct early ([Commoncog on Amazon's WBR](https://commoncog.com/the-amazon-weekly-business-review/)).
 
+Clear, structured strategy documents are also mechanisms. As I described in [Documenting Strategy](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/), tools like S&T Trees help ensure every tactic is necessary, viable, sufficient, and connected — the hallmarks of alignment.
+
 Without such mechanisms, even well-intentioned teams drift. Studies and reviews estimate **about two thirds of strategic efforts fail in execution**, not because the strategy is bad but because the "how" breaks down ([HBR](https://hbr.org/2017/11/executives-fail-to-execute-strategy-because-theyre-too-internally-focused); [Fortune summary](https://www.forbes.com/sites/kenmakovsky/2012/03/22/the-reason-ceos-fail-an-update/)). Good strategy names the **how**, and great organizations deliberately build mechanisms (frameworks, processes, incentives) to carry that how into effect.
 
+
 A compact [alignment template and playbook](#worksheets-and-playbook) are included at the end of this essay to help teams translate these mechanisms into practice.
+
+Treat each mechanism slice as an MVP in Seiden’s sense — the *smallest thing you can do to learn if the hypothesis is correct* ([Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/)).
 
 But even the best mechanisms will not help if they are aimed at the wrong bottleneck. Goldratt’s Critical Chain lens gives us a way to ask: what is the real constraint?
 
@@ -68,9 +79,12 @@ Eli Goldratt’s [view](https://en.wikipedia.org/wiki/The_Goal_(novel)) is simpl
 
 Leaders often assume the constraint is **delivery**. More engineers, tighter sprints, more automation, more AI. In practice, the constraint is usually **alignment**:
 
-- Without shared aims, teams push in different directions
-- Without mechanisms, work cannot be validated
-- Without feedback, confidence drifts away from reality
+
+    - Without shared aims, teams push in different directions
+    - Without mechanisms, work cannot be validated
+    - Without feedback, confidence drifts away from reality
+
+In [Real-World Application of Strategic Clarity](https://muness.com/posts/real-world-application-of-strategic-clarity-in-platform-leadership/), I showed how platform teams demonstrated this in practice: their real constraint was not delivery speed but alignment with the org they served.
 
 When alignment is the constraint, adding speed multiplies misaligned work. Faster drift, more rework, more burnout.
 
@@ -113,16 +127,21 @@ The instinct to “do more, faster” is powerful because output is visible and 
 
 This section sets up the cautionary tales that follow. Misfires like feature factories and high‑profile flameouts often share the same root cause — teams listened to the siren song of acceleration and lost sight of alignment.
 
+This is the same trap I described in [User Value Comes First](https://muness.com/posts/user-value-comes-first/): teams can chase financial proxies or feature output, but when those are not aligned to user value, churn and wasted effort compound.
+
 If teams are wondering how to escape the siren call, the [mini playbook](#worksheets-and-playbook) at the end gives a 30‑minute starting ritual.
 
 ## Common misfires
 
 Speed that outruns alignment creates expensive noise, not outcomes. The patterns below show up everywhere.
 
+
 - **More, faster:** assumes delivery is the constraint. Result: more of the wrong work
 - **Metrics without a mechanism:** numbers move, story does not
 - **Snapshots without flow:** counts today but no cycle time or path distribution
 - **Business as usual:** new aims, old routines. As Roosevelt put it, we must discard the notion of business as usual
+
+More output is not progress if it fails to change user behavior. Outcomes — not feature counts — tell you whether the mechanism is working ([Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/)).
 
 ### When speed outruns alignment
 
@@ -132,7 +151,13 @@ Many failures in tech can be traced to teams focusing on delivery velocity while
 
 ### Limits and tells
 
+
 This post assumes alignment is the constraint. Alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slidedeck and is alive in the day-to-day rhythm of the team**.
+
+Operational tells from [Operational Data Primer](https://muness.com/posts/operational-data-primer/):
+- Flow efficiency < 40% with ballooning WIP → delivery, not alignment, is the constraint
+- Control-chart breaches → real change, not noise; adjust the plan
+- Snapshot dashboards with no state transitions → blind to cycle time and conversion; instrument transitions first
 
 If a team is already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time.
 
@@ -150,10 +175,11 @@ The same lesson applies today: tools amplify alignment when used well, and ampli
 
 If teams are excited about LLMs, do not read this as anti speed. LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
 
+
 Codify the mechanism:
 
 - Teams can use an LLM to draft the One page Alignment Sheet from meeting notes and docs. Have it normalize team jargon and map terms to the metric tree and definitions.
-- Connect to shared data sources through a semantic layer so queries reference the same facts and names. This keeps the mechanism and the metrics in sync across teams.
+- Connect to shared data sources through a semantic layer so queries reference the same facts and names. As I noted in [Operational Data Primer](https://muness.com/posts/operational-data-primer/), consistent vocab and event models are what keep mechanisms and metrics in sync across teams.
 
 Close the loop faster:
 
@@ -172,7 +198,12 @@ LLMs multiply value once the alignment loop exists. Aim and mechanism first, fee
 
 ## Closing
 
+
 Speed is not the point. Alignment is the constraint. Aim more, plan less, communicate better, learn faster. When the mechanism is explicit and the feedback is fast, speed becomes a multiplier, not a mirage.
+
+This aligns with what I argued in [Documenting Strategy](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/): clarity and structure turn alignment from an abstraction into a repeatable practice.
+
+This post pairs with [User Value Comes First](https://muness.com/posts/user-value-comes-first/), which zooms in on how alignment must include the user’s perspective. Without that, strategy becomes internal theater rather than compounding progress.
 
 <details class="worksheet" markdown="1" id="worksheets-and-playbook">
 <summary><strong>Worksheets and Playbook</strong> (click to expand)</summary>
