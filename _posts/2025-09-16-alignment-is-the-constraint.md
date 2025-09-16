@@ -22,16 +22,16 @@ History gives us a vivid example of what happens when alignment, not delivery, i
 
 ## Alignment as the Path to Speed: Lessons from the Arsenal of Democracy
 
-First, the pattern in a high-stakes setting.
-Here is how alignment in WWII mobilization—the Arsenal of Democracy—showed up as process, not just rhetoric.
+Here’s how alignment in WWII mobilization—the Arsenal of Democracy—showed up as process, not just rhetoric.
 
 > By the end of the war, an American assembly line was producing a B-24 bomber in less than an hour. But that success was far from inevitable. (See the [EconTalk episode](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter).)
 
-At first, misalignment made success nearly impossible. Factories built aircraft to outdated specifications, suppliers produced parts that didn’t fit, and workers optimized locally with no connection to the larger mission. Incentives and urgency weren’t enough. Without alignment on *what the aim was* and *how to get there*, early output was wasted motion.
+At first, misalignment made success nearly impossible. Factories built aircraft to outdated specifications, suppliers produced parts that didn’t fit, and workers optimized locally with no connection to the larger mission. Incentives and urgency weren’t enough. Without alignment on *what the Aim was* and *how to get there*, early output was wasted motion.
 
 ### What alignment looked like in practice
 
 Concretely, alignment in mobilization looked like coordinated authority, controlled change, fast feedback, enabled labor, and quality counted as output.
+
 - **Shared aim and command:** a single national aim (equip the Allies to win) with coordinating bodies that could resolve conflicts and set priorities across agencies and firms (e.g., War Production Board priority ratings, Office of Production Management, Army/Navy coordination) The WPB "allocated scarce materials, established priorities ... and prohibited nonessential production" [source](https://en.wikipedia.org/wiki/War_Production_Board).
 - **Change control and standardization:** production‑control systems, change‑order pipelines, and interchangeability drives so factories and suppliers built the same version at the same time; modification centers as a buffer while factories caught up. The USAAF used **Modification Centers** so that updates "avoided disruption to the production lines" while factories caught up to the newest design [source](https://en.wikipedia.org/wiki/List_of_United_States_Army_Air_Force_modification_centers).
 - **Feedback from the field:** combat and maintenance reports driving design fixes that were pushed back through the change pipeline and, later, incorporated directly on factory lines.
@@ -78,7 +78,7 @@ Once these alignment mechanisms were in place and working together, output did n
 
 > At Willow Run, peak throughput was famously reported as a **bomber about every hour**, a pace only achieved after alignment and production control were in place ([The Henry Ford Museum](https://www.thehenryford.org/collections-and-research/digital-collections/artifact/180560/)).
 
-That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
+That surplus capacity meant supply was never the limiting factor again. Once the loop of Aim, Mechanism, and Feedback was firmly in place, productivity became not just adequate but overwhelming.
 
 When alignment is in place, speed compounds. But when it is missing, speed seduces, and wrecks.
 
@@ -90,7 +90,7 @@ This is the same trap I described in [User Value Comes First](https://muness.com
 
 ### Common misfires
 
-Speed and exection that outruns alignment creates expensive noise, not outcomes. The patterns below show up everywhere.
+Speed and execution that outrun alignment create expensive noise, not outcomes. The patterns below show up everywhere.
 
 - **More, faster:** assumes delivery is the constraint. Result: more of the wrong work.
 - **Metrics without a mechanism:** numbers move, outcome does not.
@@ -105,7 +105,7 @@ Many product teams I've observed experience the **feature factory** syndrome: ra
 
 Teams end up working on things that do not matter, and effort is wasted because the right hand and left hand are not coordinated. Another common pitfall is when leadership declares an urgent deadline (“We must ship by Q4!”) and teams crunch to hit it, but in the rush they skip the due diligence of cross-functional alignment. The product might ship on time, yet sales, marketing, or support were not prepared and the launch flops. These failures reinforce that speed is not a virtue in isolation—it must be channeled toward a clear, shared aim. See also: [John Cutler on Feature Factories](https://www.mindtheproduct.com/break-free-feature-factory-john-cutler/) and [Amplitude’s follow-up](https://www.amplitude.com/blog/12-signs-youre-working-in-a-feature-factory-3-years-later).
 
-Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with **$1.75 to $2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under two years. In the rush, the offering was misaligned with actual user behavior and needs—expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
+Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with **$1.75 to $2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under two years. In the rush, the offering was misaligned with actual user behavior and needs—expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. **Result: a highly optimized delivery of the wrong strategy.**
 
 If this looks familiar, it is because most orgs optimize the wrong constraint. Critical Chain gives a language for choosing the one place where speed actually helps.
 
@@ -151,7 +151,7 @@ Example:
 
 If they cannot name the Aim, teams end up staring at the next ticket instead of knowing where they are headed. If the team cannot name the Mechanism, the team cannot steer; they might pull levers that conflict or do not connect to the outcome. If the team cannot name the Feedback, the team cannot learn; they will repeat work without getting closer to the Aim. And if teams only watch metrics without a mechanism, it is just scoreboard watching with no playbook behind it. See the [one‑page alignment worksheet](#worksheets-and-playbook) at the end of this post for teams to fill out together.
 
-Naming the aim, mechanism, and feedback gives a team strategy in miniature. But to make it real, teams need mechanisms that institutionalize those choices.
+Naming the Aim, Mechanism, and Feedback gives a team strategy in miniature. But to make it real, teams need mechanisms that institutionalize those choices.
 
 ### Mechanisms that connect strategy to action
 
@@ -189,9 +189,9 @@ They are multipliers, not a substitute for Aim and mechanism.
 
 If you are excited about LLMs as I am, rejoice: LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
 
-Codifying the mechanism:
+- Codifying the mechanism:
 
-- Teams can use an LLM to draft the One page Alignment Sheet from meeting notes and docs. Have it normalize team jargon and map terms to the metric tree and definitions.
+- Teams can use an LLM to draft the One-page Alignment Sheet from meeting notes and docs. Have it normalize team jargon and map terms to the metric tree and definitions.
 - Connect to shared data sources through a semantic layer so queries reference the same facts and names. As I noted in [Operational Data Primer](https://muness.com/posts/operational-data-primer/), consistent vocab and event models are what keep mechanisms and metrics in sync across teams.
 
 Close the loop faster:
@@ -216,7 +216,7 @@ Alignment is scarce; acceleration is everywhere. Choose the constraint on purpos
 
 ## Related posts
 
-This piece sits inside a larger, growing field guide: start by defining an Aim as a change in user behavior, not a list of features or near term revenue targets, as in [User Value Comes First](https://muness.com/posts/user-value-comes-first/) and [Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/). [Write down](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/) the Mechanism and connect tactics so teams share the same why, what, and how; use [Strategy and Tactics Trees](https://muness.com/posts/on-s-and-t-trees/) to keep tactics necessary, viable, sufficient, and connected. Instrument Feedback with flow signals and shared definitions so teams learn fast and adjust together, as in [Operational Data Primer](https://muness.com/posts/operational-data-primer/). To see the loop running in practice, see [Real-World Application of Strategic Clarity](https://muness.com/posts/real-world-application-of-strategic-clarity-in-platform-leadership/).
+This piece sits inside a larger, growing field guide: start by defining an Aim as a change in user behavior, not a list of features or near term revenue targets, as in [User Value Comes First](https://muness.com/posts/user-value-comes-first/) and [Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/). [Write down](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/) the Mechanism and connect tactics so teams share the same why, what, and how; use [Strategy and Tactics Trees](https://muness.com/posts/on-s-and-t-trees/) to keep tactics necessary, viable, sufficient, and connected. Instrument Feedback with flow signals and shared definitions so teams learn fast and adjust together, as in [Operational Data Primer](https://muness.com/posts/operational-data-primer/). To see the loop running in practice, see [Real-World Application of Strategic Clarity](https://muness.com/posts/real-world-application-of-strategic-clarity-in-platform-leadership/). For a personal and team‑friendly antidote to speed‑first optimization, use [Open Horizons: Aim. Do. Reflect.](https://muness.com/posts/open-horizons/).
 
 <details class="worksheet" markdown="1" id="worksheets-and-playbook">
 <summary><strong>Worksheets and Playbook</strong> (click to expand)</summary>
