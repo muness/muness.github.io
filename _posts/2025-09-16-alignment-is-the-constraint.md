@@ -16,20 +16,7 @@ I listened to the EconTalk episode **[How Did America Build the Arsenal of Democ
 
 **Thesis:** treat **alignment** as the system constraint. Until shared aims, a clear mechanism of action, and fast feedback are in place, more speed produces more rework.
 
-**What this post gives you**
-
-- Definitions you can reuse
-- A Critical Chain lens
-- A simple alignment playbook
-- Short historical anchors
-
-> Pocket phrases
->
-> - Alignment is the constraint.
-> - If you cannot name the mechanism, you cannot steer.
-> - Add speed after you have signal.
-
----
+So the first step is to demystify strategy itself. If alignment is the constraint, then we need a shared, minimal definition of what strategy really is.
 
 ## Strategy, made small
 
@@ -39,26 +26,41 @@ Strategy does not need mystique. Use a minimal loop:
 - **Mechanism of action:** the causal lever you believe will move that outcome
 - **Feedback:** the signal that will validate or disprove the mechanism
 
+Feedback acts as a real-world sufficiency test: are our tactics actually enough to move the Aim?
+
 Example:
 
 - Aim: increase retention
 - Mechanism: personalized onboarding builds early confidence, which reduces early churn
 - Feedback: 30-day activation rate, plus time to first value
 
-If you cannot name the mechanism, you cannot steer. Metrics without a mechanism become scoreboard watching.
+### Quick Reference
+
+| Element   | Question to Ask                        | First Artifact                         |
+|-----------|----------------------------------------|----------------------------------------|
+| Aim       | What outcome are we trying to create?  | One sentence with a definition of done  |
+| Mechanism | Why do we think this will work?        | A causal “because” statement            |
+| Feedback  | How will we know fast if we are wrong? | A proxy metric + stage gate             |
+
+If they cannot name the Aim, teams end up staring at the next ticket instead of knowing where they are headed. If the team cannot name the Mechanism, the team cannot steer; they might pull levers that conflict or do not connect to the outcome. If the team cannot name the Feedback, the team cannot learn; they will repeat work without getting closer to the Aim. And if teams only watch metrics without a mechanism, it is just scoreboard watching with no playbook behind it. See the [one‑page alignment worksheet](#worksheets-and-playbook) at the end of this post for teams to fill out together.
+
+Naming the aim, mechanism, and feedback gives a team strategy in miniature. But to make it real, teams need mechanisms that institutionalize those choices.
 
 ## Mechanisms that connect strategy to action
 
 A brilliant strategy on paper means little without a concrete path to implement it. Pragmatic leaders define **mechanisms** that link goals to daily execution. As Jeff Bezos puts it, "Good intentions don't work, mechanisms do" ([AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-eight-maturity/theme-8.html)). In practice, a mechanism is a **repeatable process or tool** that is adopted by the team and **regularly inspected for effectiveness** ([AWS ORR mechanism](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/building-mechanisms.html)).
 
-Two useful examples to borrow:
+Two useful examples teams can borrow:
 
 - **Working Backwards (PR/FAQ):** write the press release and FAQ before building to force clarity on customer value and assumptions ([Working Backwards](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)).
 - **Weekly Business Review:** review controllable input metrics weekly to course-correct early ([Commoncog on Amazon's WBR](https://commoncog.com/the-amazon-weekly-business-review/)).
 
 Without such mechanisms, even well-intentioned teams drift. Studies and reviews estimate **about two thirds of strategic efforts fail in execution**, not because the strategy is bad but because the "how" breaks down ([HBR](https://hbr.org/2017/11/executives-fail-to-execute-strategy-because-theyre-too-internally-focused); [Fortune summary](https://www.forbes.com/sites/kenmakovsky/2012/03/22/the-reason-ceos-fail-an-update/)). Good strategy names the **how**, and great organizations deliberately build mechanisms (frameworks, processes, incentives) to carry that how into effect.
 
----
+A compact [alignment template and playbook](#worksheets-and-playbook) are included at the end of this essay to help teams translate these mechanisms into practice.
+
+But even the best mechanisms will not help if they are aimed at the wrong bottleneck. Goldratt’s Critical Chain lens gives us a way to ask: what is the real constraint?
+
 
 ## A Critical Chain lens
 
@@ -78,32 +80,40 @@ When alignment is the constraint, adding speed multiplies misaligned work. Faste
 
 The cost of misalignment is not theoretical; it shows up in real dollars and morale. One global survey estimated around **$1 million wasted every 20 seconds**, roughly **$2 trillion a year**, due to ineffective implementation of strategy ([PMI 2018 Pulse](https://www.pmi.org/-/media/pmi/documents/public/pdf/about/press-media/press-release/pulse-of-the-profession-2018-media-release.pdf)).
 
----
+History gives us a vivid example of what happens when alignment, not delivery, is treated as the real constraint.
 
-## What good looks like
+## Alignment As the Path to Speed: Lessons from the Arsenal of Democracy
 
-**Alignment, on one page**
+> By the end of the war, an American assembly line was producing a B-24 bomber in less than an hour. But that success was far from inevitable.
 
-- One crisp **Aim** with a definition of done
-- One plausible **Mechanism** that names the causal lever
-- Two or three **Feedback** signals, including at least one proxy metric you expect to move first
-- A small stage gate: what we will learn in the next two weeks, and a decision rule for continuing or changing course
+At first, misalignment made success nearly impossible. Factories built aircraft to outdated specifications, suppliers produced parts that didn’t fit, and workers optimized locally with no connection to the larger mission. Incentives and urgency weren’t enough — without alignment on *what the aim was* and *how to get there*, early output was wasted motion.
 
-**Guardrails**
+### Alignment enabled adaptation to design change
+Aircraft designs changed constantly. The P-47 had five major redesigns; the B-29 saw 900 design changes before production stabilized; Chrysler’s tank engine required more than 6,000 modifications. Without alignment, those changes would have fractured the system — one plant building variant A, another stuck on variant B. But because the aim was clear (“combat-ready aircraft that win the war”), the entire production ecosystem adapted in lockstep. Alignment turned design churn into coordinated improvement instead of chaos.
 
-- Protect the user with a simple SLI or SLO while you experiment
-- Favor short cycles over big pushes. Planning matters, the plan changes
+### Alignment enabled operational optimization
+Factories didn’t just build faster with existing tools; they redesigned the production system itself. Jigs and fixtures were rebuilt so an untrained workforce — half a million women, many new to industry — could assemble precision aircraft. Rivet guns were counterweighted so smaller operators could use them. Tasks were simplified and redistributed so unskilled workers could contribute without breaking tolerances. Alignment on the aim made it obvious: the constraint wasn’t just labor supply, it was how to make *this workforce* effective. That clarity drove the retooling.
 
-### One-page Alignment Sheet
+### Alignment enabled quality at scale
+High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors — 20% of the workforce. That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects.
 
-- **Aim:** …
-- **Mechanism:** We believe ___ will move ___ because ___.
-- **Feedback signals:** Proxy 1, Proxy 2, Outcome metric.
-- **Stage gate (2 weeks):** We will continue if ___.
-- **Guardrail:** One SLI/SLO to protect users while we test.
-- **Owner and cadence:** Name • Weekly 15-min review on ___.
+### Alignment enabled persistence through ramp-up failure
+Even with all of this, Willow Run “for the first two years … produced virtually nothing.” A misaligned system would have abandoned the effort or doubled down on brute force. Instead, alignment allowed persistence: redesign the equipment, retrain the workforce, re-sequence the flow until the mechanism worked. Once alignment was locked in, speed finally compounded — bombers every hour by war’s end.
 
----
+### Alignment enabled massive productivity
+Alignment didn’t just enable success — it overshot it. By the later years of the war, U.S. factories were producing aircraft, tanks, and munitions in numbers that dwarfed what was actually needed at the front. Alignment at scale created a system so effective that output exceeded demand. That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
+
+When alignment is in place, speed compounds. But when it is missing, speed seduces — and wrecks.
+
+## The Siren Call of Acceleration
+
+Acceleration is seductive. It tempts us with speed, but without alignment it wrecks us on the rocks.
+
+The instinct to “do more, faster” is powerful because output is visible and measurable. A new feature shipped or a backlog cleared feels like momentum. But this is the siren call: speed creates the illusion of progress even when direction is missing.
+
+This section sets up the cautionary tales that follow. Misfires like feature factories and high‑profile flameouts often share the same root cause — teams listened to the siren song of acceleration and lost sight of alignment.
+
+If teams are wondering how to escape the siren call, the [mini playbook](#worksheets-and-playbook) at the end gives a 30‑minute starting ritual.
 
 ## Common misfires
 
@@ -122,11 +132,73 @@ Many failures in tech can be traced to teams focusing on delivery velocity while
 
 ### Limits and tells
 
-This post assumes alignment is the constraint. You can tell alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slidedeck and is alive in the day-to-day rhythm of the team**.
+This post assumes alignment is the constraint. Alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slidedeck and is alive in the day-to-day rhythm of the team**.
 
-If you are already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time.
+If a team is already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time.
+
+Teams can use the [one‑page sheet and mini playbook](#worksheets-and-playbook) in the appendix to check alignment before chasing speed.
+
+The WWII story we opened with makes the same point: massive output only came once the true constraints were solved.
+
+## A short note on the podcast
+
+The EconTalk conversation includes vivid examples of how massive output depended on solving the real constraints first: production control, inspection at scale, and redesigning processes and tools for the workforce that actually existed. Speed came after alignment of aim, method, and feedback. That pattern still holds.
+
+The same lesson applies today: tools amplify alignment when used well, and amplify noise when used blindly. LLMs are a case in point.
+
+## LLMs as alignment amplifiers
+
+If teams are excited about LLMs, do not read this as anti speed. LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
+
+Codify the mechanism:
+
+- Teams can use an LLM to draft the One page Alignment Sheet from meeting notes and docs. Have it normalize team jargon and map terms to the metric tree and definitions.
+- Connect to shared data sources through a semantic layer so queries reference the same facts and names. This keeps the mechanism and the metrics in sync across teams.
+
+Close the loop faster:
+
+- Let an agent fetch the latest proxy signals each week and propose a short review note: what moved, what did not, and why. Treat it as a first draft, then decide as a team.
+- Replace dashboard sprawl with task specific agents that answer the on the spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
+- Be careful with junk signals. Tickets and ad hoc tags rarely form an objective rubric on their own. You still need clear definitions of done and trusted data.
+
+Communicate context:
+
+- Generate decision logs, briefs, and user ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
+- For complex orgs, consider role specific agents that arrive with the organization’s vocabulary and patterns. They carry context so people can focus on the judgment calls.
+
+LLMs multiply value once the alignment loop exists. Aim and mechanism first, feedback second, then add speed.
 
 ---
+
+## Closing
+
+Speed is not the point. Alignment is the constraint. Aim more, plan less, communicate better, learn faster. When the mechanism is explicit and the feedback is fast, speed becomes a multiplier, not a mirage.
+
+<details class="worksheet" markdown="1" id="worksheets-and-playbook">
+<summary><strong>Worksheets and Playbook</strong> (click to expand)</summary>
+
+## Alignment, on one page
+
+- One crisp **Aim** with a definition of done
+- One plausible **Mechanism** that names the causal lever
+- Two or three **Feedback** signals, including at least one proxy metric you expect to move first
+- A small stage gate: what we will learn in the next two weeks, and a decision rule for continuing or changing course
+
+**Guardrails**
+
+- Protect the user with a simple SLI or SLO while you experiment
+- Favor short cycles over big pushes. Planning matters, the plan changes
+
+### One-page Alignment Sheet
+
+| Field               | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| **Aim**             | A clear statement of the outcome you want to create.                        |
+| **Mechanism**       | “We believe ___ will move ___ because ___.”                                 |
+| **Feedback signals**| Two to three metrics — one proxy, one outcome, and one leading indicator.   |
+| **Stage gate (2 wks)** | “We will continue if ___.”                                               |
+| **Guardrail**       | One SLI or SLO to protect users while testing.                              |
+| **Owner & cadence** | Person responsible • Weekly 15-minute review on ___.                        |
 
 ## Mini playbook
 
@@ -172,38 +244,23 @@ Use this to upgrade alignment before you add speed.
 - Create a 3-line decision log entry: Date • Aim • Mechanism • Gate.
 - Schedule a 15-minute weekly check to review the proxy and decide: continue, change, or stop.
 
----
+</details>
 
-## A short note on the podcast
-
-The EconTalk conversation includes vivid examples of how massive output depended on solving the real constraints first: production control, inspection at scale, and redesigning processes and tools for the workforce that actually existed. Speed came after alignment of aim, method, and feedback. That pattern still holds.
-
----
-
-## LLMs as alignment amplifiers
-
-If you are excited about LLMs, do not read this as anti speed. LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
-
-Codify the mechanism:
-
-- Use an LLM to draft your One page Alignment Sheet from meeting notes and docs. Ask it to normalize team jargon and map terms to your metric tree and definitions.
-- Connect to your data sources through a semantic layer so queries reference the same facts and names. This keeps the mechanism and the metrics in sync.
-
-Close the loop faster:
-
-- Let an agent fetch the latest proxy signals each week and propose a short review note: what moved, what did not, and why. Treat it as a first draft, then decide.
-- Replace dashboard sprawl with task specific agents that answer the on the spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
-- Be careful with junk signals. Tickets and ad hoc tags rarely form an objective rubric on their own. You still need clear definitions of done and trusted data.
-
-Communicate context:
-
-- Generate decision logs, briefs, and user ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
-- For complex teams, consider role specific agents that arrive with the organization’s vocabulary and patterns. They carry context so humans can focus on the judgment calls.
-
-LLMs multiply value once the alignment loop exists. Aim and mechanism first, feedback second, then add speed.
-
----
-
-## Closing
-
-Speed is not the point. Alignment is the constraint. Aim more, plan less, communicate better, learn faster. When the mechanism is explicit and the feedback is fast, speed becomes a multiplier, not a mirage.
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.location.hash === "#worksheets-and-playbook") {
+    const details = document.querySelector(window.location.hash);
+    if (details && details.tagName.toLowerCase() === "details") {
+      details.setAttribute("open", "open");
+    }
+  }
+});
+window.addEventListener("hashchange", function() {
+  if (window.location.hash === "#worksheets-and-playbook") {
+    const details = document.querySelector(window.location.hash);
+    if (details && details.tagName.toLowerCase() === "details") {
+      details.setAttribute("open", "open");
+    }
+  }
+});
+</script>
