@@ -112,6 +112,7 @@ Those lines are about national purpose, and they map neatly to organizational al
 ### Limits and tells
 
 This post assumes alignment is the constraint. If you see these tells, delivery may be the real constraint:
+
 - Clear Aim and Mechanism are already in use across teams.
 - Proxies move as expected, but cycle time is the bottleneck.
 - Backlog items are traceably tied to aims, yet lead time explodes.
@@ -165,7 +166,28 @@ Use this to upgrade alignment before you add speed.
 
 ## A short note on the podcast
 
-The EconTalk conversation includes vivid examples of how massive output depended on solving the real constraints first: production control, inspection at scale, and redesigning processes for the workforce that actually existed. Speed came after alignment of aim, method, and feedback. That pattern still holds.
+The EconTalk conversation includes vivid examples of how massive output depended on solving the real constraints first: production control, inspection at scale, and redesigning processes and tools for the workforce that actually existed. Speed came after alignment of aim, method, and feedback. That pattern still holds.
+
+---
+
+## LLMs as alignment amplifiers
+
+If you are excited about LLMs, do not read this as anti speed. LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
+
+**Codify the mechanism**
+- Use an LLM to draft your One page Alignment Sheet from meeting notes and docs. Ask it to normalize team jargon and map terms to your metric tree and definitions.
+- Connect to your data sources through a semantic layer so queries reference the same facts and names. This keeps the mechanism and the metrics in sync.
+
+**Close the loop faster**
+- Let an agent fetch the latest proxy signals each week and propose a short review note: what moved, what did not, and why. Treat it as a first draft, then decide.
+- Replace dashboard sprawl with task specific agents that answer the on the spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
+- Be careful with junk signals. Tickets and ad hoc tags rarely form an objective rubric on their own. You still need clear definitions of done and trusted data.
+
+**Communicate context**
+- Generate decision logs, briefs, and user ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
+- For complex teams, consider role specific agents that arrive with the organization’s vocabulary and patterns. They carry context so humans can focus on the judgment calls.
+
+LLMs multiply value once the alignment loop exists. Aim and mechanism first, feedback second, then add speed.
 
 ---
 
