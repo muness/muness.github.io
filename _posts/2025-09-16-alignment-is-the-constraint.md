@@ -83,25 +83,52 @@ History gives us a vivid example of what happens when alignment, not delivery, i
 
 At first, misalignment made success nearly impossible. Factories built aircraft to outdated specifications, suppliers produced parts that didn’t fit, and workers optimized locally with no connection to the larger mission. Incentives and urgency weren’t enough. Without alignment on *what the aim was* and *how to get there*, early output was wasted motion.
 
+### What alignment looked like in practice
+
+- **Shared aim and command:** a single national aim (equip the Allies to win) with coordinating bodies that could resolve conflicts and set priorities across agencies and firms (e.g., War Production Board priority ratings, Office of Production Management, Army/Navy coordination) (The WPB "allocated scarce materials, established priorities ... and prohibited nonessential production" [source](https://en.wikipedia.org/wiki/War_Production_Board).).
+- **Change control and standardization:** production‑control systems, change‑order pipelines, and interchangeability drives so factories and suppliers built the same version at the same time; modification centers as a buffer while factories caught up. The USAAF used **Modification Centers** so that updates "avoided disruption to the production lines" while factories caught up to the newest design [source](https://en.wikipedia.org/wiki/List_of_United_States_Army_Air_Force_modification_centers).
+- **Feedback from the field:** combat and maintenance reports driving design fixes that were pushed back through the change pipeline and, later, incorporated directly on factory lines.
+- **Aligned incentives:** cost‑plus contracts and priority access to materials so firms were rewarded for delivery and quality, not just bids; oversight (e.g., Truman Committee) to focus effort and surface bottlenecks. The **Truman Committee** conducted hundreds of hearings and field trips to uncover waste and bottlenecks, and is credited with saving the government **billions** through its oversight [source](https://www.senate.gov/about/powers-procedures/investigations/truman.htm).
+- **Workforce enablement:** process, tooling, and training redesigned so a rapidly expanded, often inexperienced workforce could do precision work at scale.
+- **Quality as part of output:** inspectors and test regimes staffed and funded as core work, not overhead, to ensure “usable, combat‑ready” output.
+
 ### Alignment enabled adaptation to design change
 
-Aircraft designs changed constantly. The P-47 had five major redesigns; the B-29 saw 900 design changes before production stabilized; Chrysler’s tank engine required more than 6,000 modifications. Without alignment, those changes would have fractured the system: one plant building variant A, another stuck on variant B. But because the aim was clear (“combat-ready aircraft that win the war”), the entire production ecosystem adapted in lockstep. Alignment turned design churn into coordinated improvement instead of chaos.
+Wartime designs changed constantly. Alignment made that survivable. Priority systems and centralized change‑order pipelines told factories and suppliers **which** revision to build and **when** to switch. Early on, modification centers retrofitted aircraft to the latest spec so assembly lines did not stall; as production control matured, major updates were incorporated directly on the line. The effect was that constant change produced synchronized improvement rather than fragmented variants.
+
+> "The majority of newly produced combat aircraft were channeled to the modification centers immediately after leaving the production facility ... The use of modification centers avoided disruption to the production lines to incorporate continuous improvements or other changes to the aircraft design." --([USAAF Modification Centers](https://en.wikipedia.org/wiki/List_of_United_States_Army_Air_Force_modification_centers))
+
+For example, aircraft designs changed constantly. The P-47 had five major redesigns; the B-29 saw 900 design changes before production stabilized; Chrysler’s tank engine required more than 6,000 modifications. Without alignment, those changes would have fractured the system: one plant building variant A, another stuck on variant B. But because the aim was clear ("combat-ready aircraft that win the war"), the production ecosystem adapted in lockstep. Alignment turned design churn into coordinated improvement instead of chaos.
 
 ### Alignment enabled operational optimization
 
 Factories didn’t just build faster with existing tools; they redesigned the production system itself. Jigs and fixtures were rebuilt so an untrained workforce (half a million women, many new to industry) could assemble precision aircraft. Rivet guns were counterweighted so smaller operators could use them. Tasks were simplified and redistributed so unskilled workers could contribute without breaking tolerances. Alignment on the aim made it obvious: the constraint wasn’t just labor supply, it was how to make *this workforce* effective. That clarity drove the retooling.
 
+> "Additional hydraulic lifts, smaller rivet guns, and other tools quickly put women on an equal footing with their male counterparts." --([Lockheed Martin history of Rosie the Riveter](https://www.lockheedmartin.com/en-us/news/features/history/rosie-the-riveter.html))
+
+These were not ad hoc shop‑floor tweaks; they were coordinated programs of training, tooling standards, and job redesign that flowed from a shared aim and were funded and inspected as such.
+
 ### Alignment enabled quality at scale
 
-High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors (20% of the workforce). That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects.
+**Alignment defined output to include reliability**. Leadership treated quality as part of the aim, so factories staffed inspection and test as primary work. High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors (20% of the workforce). That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects. Because quality was aligned to the aim, managers could devote scarce labor to inspection without being punished for lower throughput.
+
+Evidence of inspection-at-scale is abundant in wartime records; for example, contemporary accounts describe multi‑stage tear‑down inspections and stringent tolerances as standard practice in aircraft engine plants (see US wartime production overviews and plant archives; also discussed in [EconTalk: Arsenal of Democracy](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter)).
 
 ### Alignment enabled persistence through ramp-up failure
 
-Even with all of this, Willow Run “for the first two years … produced virtually nothing.” A misaligned system would have abandoned the effort or doubled down on brute force. Instead, alignment allowed persistence: redesign the equipment, retrain the workforce, re-sequence the flow until the mechanism worked. Once alignment was locked in, speed finally compounded and eventually produced bombers every hour by war’s end.
+Even with all of this, Willow Run "for the first two years ... produced virtually nothing." Governance and oversight kept the focus on fixing the mechanism rather than abandoning the mission. Leaders had the authority and political cover to retool layouts, retrain crews, and resequence work until the line flowed.
+
+> "Interwar planners expected mobilization to require just 18 months, [but] it took between **two and three years** to reach full production for many items." --([War on the Rocks](https://warontherocks.com/2025/06/how-the-arsenal-of-democracy-can-get-back-on-its-feet-with-some-help-from-the-past/))
+
+A misaligned system would have abandoned the effort or doubled down on brute force. Instead, alignment allowed persistence: redesign the equipment, retrain the workforce, re-sequence the flow until the mechanism worked. Once alignment was locked in, speed finally compounded and eventually produced bombers every hour by war’s end. The system persisted because leaders and factories were aligned on the end goal and empowered to act on it.
 
 ### Alignment enabled massive productivity
 
-Alignment didn’t just enable success—it overshot it. By the later years of the war, U.S. factories were producing aircraft, tanks, and munitions in numbers that dwarfed what was actually needed at the front. Alignment at scale created a system so effective that output exceeded demand. That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
+Once these alignment mechanisms were in place and working together, output did not just meet need: it overshot it. Central priority systems, common definitions of done, and closed feedback loops removed cross‑purpose work and created compounding throughput. By late 1944, aircraft, tanks, and munitions arrived faster than the front could consume them.
+
+> At Willow Run, peak throughput was famously reported as a **bomber about every hour**, a pace only achieved after alignment and production control were in place ([The Henry Ford Museum](https://www.thehenryford.org/collections-and-research/digital-collections/artifact/180560/)).
+
+That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
 
 When alignment is in place, speed compounds. But when it is missing, speed seduces, and wrecks.
 
