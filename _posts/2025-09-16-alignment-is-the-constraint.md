@@ -1,6 +1,6 @@
 ---
 title: "Alignment Is the Constraint"
-date: "2025-09-16 13:00:00 +0500"
+date: "2025-09-16 17:00:00 +0500"
 author: muness
 toc: true
 comments: true
