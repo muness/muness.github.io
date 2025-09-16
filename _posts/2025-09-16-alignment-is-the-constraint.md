@@ -26,7 +26,7 @@ Strategy does not need mystique. At its core, strategy is three things:
 
 Feedback acts as a real-world sufficiency test: are our tactics actually enough to move the Aim?
 
-An Aim is not just an internal target like “ship features” or “increase revenue.” It should anchor to real user outcomes. AsI argue in [User Value Comes First](https://muness.com/posts/user-value-comes-first/) growth comes from delivering genuine value, not from chasing profit-first outputs. As such, an Aim should be phrased as the *change in user behavior we seek*, not as internal outputs. As I argued in [Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/), outputs are deliverables; outcomes are the user behaviors and benefits that prove value.
+An Aim is not just an internal target like “ship features” or “increase revenue.” It should anchor to real user outcomes. As I argue in [User Value Comes First](https://muness.com/posts/user-value-comes-first/) growth comes from delivering genuine value, not from chasing profit-first outputs. As such, an Aim should be phrased as the *change in user behavior we seek*, not as internal outputs. As I argued in [Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/), outputs are deliverables; outcomes are the user behaviors and benefits that prove value.
 
 Example:
 
@@ -34,7 +34,7 @@ Example:
 - Mechanism: personalized onboarding builds early confidence, which reduces early churn
 - Feedback: 30-day activation rate, plus time to first value
 
-### Small-Strategy Reference
+### Quick Reference
 
 | Element   | Question to Ask                        | First Artifact                         |
 |-----------|----------------------------------------|----------------------------------------|
@@ -55,11 +55,11 @@ Two processes teams can borrow:
 - **Working Backwards (PR/FAQ):** write the press release and FAQ before building to force clarity on customer value and assumptions ([Working Backwards](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)).
 - **Weekly Business Review:** review controllable input metrics weekly to course-correct early ([Commoncog on Amazon's WBR](https://commoncog.com/the-amazon-weekly-business-review/)).
 
-Clear, structured strategy documents are also mechanisms. As I described in [Documenting Strategy](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/), tools like [S&T Trees](https://muness.com/posts/on-s-and-t-trees/) help ensure every tactic is necessary, viable, sufficient, and connected — the hallmarks of alignment.
+Clear, structured strategy documents are also mechanisms. As I described in [Documenting Strategy](https://muness.com/posts/documenting-strategy-lessons-from-leading-data-and-eng/), tools like [S&T Trees](https://muness.com/posts/on-s-and-t-trees/) help ensure every tactic is necessary, viable, sufficient, and connected, the hallmarks of alignment.
 
 Without such mechanisms, even well-intentioned teams drift. Studies and reviews estimate **about two thirds of strategic efforts fail in execution**, not because the strategy is bad but because the "how" breaks down ([HBR](https://hbr.org/2017/11/executives-fail-to-execute-strategy-because-theyre-too-internally-focused); [Fortune summary](https://www.forbes.com/sites/kenmakovsky/2012/03/22/the-reason-ceos-fail-an-update/#:~:text=poor%20communications%20skills,to%20deal%20with)). Good strategy names the **how**, and great organizations deliberately build mechanisms (frameworks, processes, incentives) to carry that how into effect.
 
-A compact [alignment template and playbook](#worksheets-and-playbook) are included at the end of this essay to help teams translate these mechanisms into practice. Treat each mechanism slice as an MVP in Seiden’s sense — the *smallest thing you can do to learn if the hypothesis is correct* ([Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/)).
+A compact [alignment template and playbook](#worksheets-and-playbook) are included at the end of this essay to help teams translate these mechanisms into practice. Treat each mechanism slice as an MVP in Seiden’s sense: the *smallest thing you can do to learn if the hypothesis is correct* ([Outcomes Over Output](https://muness.com/posts/outcomes-over-output-book-summary/)).
 
 But even the best mechanisms will not help if they are aimed at the wrong bottleneck. Goldratt’s Critical Chain lens gives us a way to ask: what is the real constraint?
 
@@ -75,12 +75,11 @@ In [Real-World Application of Strategic Clarity](https://muness.com/posts/real-w
 
 Indeed, misalignment is very expensive. One global survey estimated around **$1 million wasted every 20 seconds**, roughly **$2 trillion a year**, due to ineffective implementation of strategy ([PMI 2018 Pulse](https://www.pmi.org/-/media/pmi/documents/public/pdf/about/press-media/press-release/pulse-of-the-profession-2018-media-release.pdf)).
 
-H gives us a vivid example of what happens when alignment, not delivery, is treated as the real constraint.
+History gives us a vivid example of what happens when alignment, not delivery, is treated as the real constraint.
 
-## Alignment As the Path to Speed: Lessons from the Arsenal of Democracy
+## Alignment as the Path to Speed: Lessons from the Arsenal of Democracy
 
-> By the end of the war, an American assembly line was producing a B-24 bomber in less than an hour. But that success was far from inevitable.
-— [EconTalk episode](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter)
+> By the end of the war, an American assembly line was producing a B-24 bomber in less than an hour. But that success was far from inevitable. (See the [EconTalk episode](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter).)
 
 At first, misalignment made success nearly impossible. Factories built aircraft to outdated specifications, suppliers produced parts that didn’t fit, and workers optimized locally with no connection to the larger mission. Incentives and urgency weren’t enough. Without alignment on *what the aim was* and *how to get there*, early output was wasted motion.
 
@@ -90,27 +89,27 @@ Aircraft designs changed constantly. The P-47 had five major redesigns; the B-29
 
 ### Alignment enabled operational optimization
 
-Factories didn’t just build faster with existing tools; they redesigned the production system itself. Jigs and fixtures were rebuilt so an untrained workforce — half a million women, many new to industry — could assemble precision aircraft. Rivet guns were counterweighted so smaller operators could use them. Tasks were simplified and redistributed so unskilled workers could contribute without breaking tolerances. Alignment on the aim made it obvious: the constraint wasn’t just labor supply, it was how to make *this workforce* effective. That clarity drove the retooling.
+Factories didn’t just build faster with existing tools; they redesigned the production system itself. Jigs and fixtures were rebuilt so an untrained workforce (half a million women, many new to industry) could assemble precision aircraft. Rivet guns were counterweighted so smaller operators could use them. Tasks were simplified and redistributed so unskilled workers could contribute without breaking tolerances. Alignment on the aim made it obvious: the constraint wasn’t just labor supply, it was how to make *this workforce* effective. That clarity drove the retooling.
 
 ### Alignment enabled quality at scale
 
-High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors — 20% of the workforce. That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects.
+High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors (20% of the workforce). That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects.
 
 ### Alignment enabled persistence through ramp-up failure
 
-Even with all of this, Willow Run “for the first two years … produced virtually nothing.” A misaligned system would have abandoned the effort or doubled down on brute force. Instead, alignment allowed persistence: redesign the equipment, retrain the workforce, re-sequence the flow until the mechanism worked. Once alignment was locked in, speed finally compounded — bombers every hour by war’s end.
+Even with all of this, Willow Run “for the first two years … produced virtually nothing.” A misaligned system would have abandoned the effort or doubled down on brute force. Instead, alignment allowed persistence: redesign the equipment, retrain the workforce, re-sequence the flow until the mechanism worked. Once alignment was locked in, speed finally compounded and eventually produced bombers every hour by war’s end.
 
 ### Alignment enabled massive productivity
 
-Alignment didn’t just enable success — it overshot it. By the later years of the war, U.S. factories were producing aircraft, tanks, and munitions in numbers that dwarfed what was actually needed at the front. Alignment at scale created a system so effective that output exceeded demand. That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
+Alignment didn’t just enable success—it overshot it. By the later years of the war, U.S. factories were producing aircraft, tanks, and munitions in numbers that dwarfed what was actually needed at the front. Alignment at scale created a system so effective that output exceeded demand. That surplus capacity meant supply was never the limiting factor again. Once the loop of aim, mechanism, and feedback was firmly in place, productivity became not just adequate but overwhelming.
 
-When alignment is in place, speed compounds. But when it is missing, speed seduces — and wrecks.
+When alignment is in place, speed compounds. But when it is missing, speed seduces, and wrecks.
 
 ## The Siren Call of Acceleration
 
 Acceleration is seductive. It tempts us with speed, but without alignment it wrecks us on the rocks.
 
-The instinct to “do more, faster” is powerful because output is visible and measurable. A new feature shipped or a backlog cleared feels like momentum. But this is the siren call: speed creates the illusion of progress even when direction is missing. Misfires like feature factories and high‑profile flameouts often share the same root cause — teams listened to the siren song of acceleration and lost sight of alignment.
+The instinct to “do more, faster” is powerful because output is visible and measurable. A new feature shipped or a backlog cleared feels like momentum. But this is the siren call: speed creates the illusion of progress even when direction is missing. Misfires like feature factories and high‑profile flameouts often share the same root cause: teams listened to the siren song of acceleration and lost sight of alignment.
 
 This is the same trap I described in [User Value Comes First](https://muness.com/posts/user-value-comes-first/): teams can chase financial proxies or feature output, but when those are not aligned to user value, churn and wasted effort compound.
 
@@ -123,22 +122,22 @@ Speed that outruns alignment creates expensive noise, not outcomes. The patterns
 - **Snapshots without flow:** counts entries in each phase of a funnel, but ignores cycle time or path distribution.
 - **Business as usual:** new aims, old routines. As Roosevelt [warned](https://www.presidency.ucsb.edu/documents/fireside-chat-9#:~:text=And%20this%20can%20be%20accomplished%20onely%20if%20we%20discard%20the%20notion%20of%20%22business%20as%20usual.%22%20This%20job%20cannot%20be%20done%20merely%20by%20superimposing%20on%20the%20existing%20productive%20facilities%20the%20added%20requirements%20of%20the%20nation%20for%20defense.), "This can only be accomplished if we discard the notion of ‘business as usual.’"
 
-More output is not progress if it fails to change user behavior. [Outcomes](https://muness.com/posts/outcomes-over-output-book-summary/) — not feature counts — tell you whether the mechanism is working.
+More output is not progress if it fails to change user behavior. [Outcomes](https://muness.com/posts/outcomes-over-output-book-summary/)—not feature counts—tell you whether the mechanism is working.
 
 ### When speed outruns alignment
 
-On a smaller scale, many product teams have experienced the **feature factory** syndrome: rapidly releasing a flurry of features that seem impressive, only to find they do not make a dent in business outcomes. This often happens when teams operate with implicit goals or conflicting interpretations of strategy. Without a unifying north star, velocity turns into **Brownian motion** — lots of busyness, no progress.
+On a smaller scale, many product teams have experienced the **feature factory** syndrome: rapidly releasing a flurry of features that seem impressive, only to find they do not make a dent in business outcomes. This often happens when teams operate with implicit goals or conflicting interpretations of strategy. Without a unifying north star, velocity turns into **Brownian motion, lots of busyness and no progress.**
 
-I've seen teams working on things that don’t even matter, all their efforts wasted because the right hand and left hand were not coordinated. Another common pitfall is when leadership declares an urgent deadline (“We must ship by Q4!”) and teams crunch to hit it, but in the rush they skip the due diligence of cross-functional alignment. The product might ship on time, yet sales, marketing, or support were not prepared and the launch flops. These failures reinforce that speed is not a virtue in isolation — it must be channelled toward a clear, shared aim. See also: [John Cutler on Feature Factories](https://www.mindtheproduct.com/break-free-feature-factory-john-cutler/) and [Amplitude’s follow-up](https://www.amplitude.com/blog/12-signs-youre-working-in-a-feature-factory-3-years-later).
+I've seen teams working on things that don’t even matter, all their efforts wasted because the right hand and left hand were not coordinated. Another common pitfall is when leadership declares an urgent deadline (“We must ship by Q4!”) and teams crunch to hit it, but in the rush they skip the due diligence of cross-functional alignment. The product might ship on time, yet sales, marketing, or support were not prepared and the launch flops. These failures reinforce that speed is not a virtue in isolation—it must be channeled toward a clear, shared aim. See also: [John Cutler on Feature Factories](https://www.mindtheproduct.com/break-free-feature-factory-john-cutler/) and [Amplitude’s follow-up](https://www.amplitude.com/blog/12-signs-youre-working-in-a-feature-factory-3-years-later).
 
-Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with roughly **$1.75billion +** in funding, Quibi raced to deliver a splashy product launch in under a year. In the rush, the offering was misaligned with actual user behavior and needs — expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
+Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with roughly **$1.75 to $2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under two years. In the rush, the offering was misaligned with actual user behavior and needs—expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
 
 ### Limits and tells
 
 
-This post assumes alignment is the constraint. Alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slidedeck and is alive in the day-to-day rhythm of the team**.
+This post assumes alignment is the constraint. Alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slide deck and is alive in the day-to-day rhythm of the team**.
 
-If a team is already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time. The WWII story we opened with makes the same point: massive output only came once the true alignment constraints are solved.
+If a team is already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time. The WWII story we opened with makes the same point: massive output only came once the true alignment constraints were solved.
 
 ## A short note on the podcast
 
@@ -158,13 +157,13 @@ Codifying the mechanism:
 Close the loop faster:
 
 - Let an agent fetch the latest proxy signals each week and propose a short review note: what moved, what did not, and why. Treat it as a first draft, then decide as a team.
-- Replace dashboard sprawl with task specific agents that answer the on the spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
+- Replace dashboard sprawl with task-specific agents that answer the on-the-spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
 - Be careful with junk signals. Tickets and ad hoc tags rarely form an objective rubric on their own. You still need clear definitions of done and trusted data.
 
 Communicate context:
 
-- Generate decision logs, briefs, and user ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
-- For complex orgs, consider role specific agents that arrive with the organization’s vocabulary and patterns. They carry context so people can focus on the judgment calls.
+- Generate decision logs, briefs, and user-ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
+- For complex orgs, consider role-specific agents that arrive with the organization’s vocabulary and patterns. They carry context so people can focus on the judgment calls.
 
 LLMs multiply value once the alignment loop exists. Aim and mechanism first, feedback second, then add speed.
 
@@ -197,7 +196,7 @@ This piece sits inside a larger, growing field guide: start by defining an Aim a
 |---------------------|-----------------------------------------------------------------------------|
 | **Aim**             | A clear statement of the outcome you want to create.                        |
 | **Mechanism**       | “We believe ___ will move ___ because ___.”                                 |
-| **Feedback signals**| Two to three metrics — one proxy, one outcome, and one leading indicator.   |
+| **Feedback signals**| Two to three metrics: one proxy, one outcome, and one leading indicator.   |
 | **Stage gate (2 wks)** | “We will continue if ___.”                                               |
 | **Guardrail**       | One SLI or SLO to protect users while testing.                              |
 | **Owner & cadence** | Person responsible • Weekly 15-minute review on ___.                        |
