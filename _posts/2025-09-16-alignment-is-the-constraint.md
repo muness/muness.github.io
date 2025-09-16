@@ -5,7 +5,7 @@ author: muness
 toc: true
 comments: true
 pin: true
-excerpt: "Acceleration is easy. Alignment is the constraint. A Critical Chain lens for strategy, mechanisms of action, and feedback loops. Lessons from the Arsenal of Democracy episode on EconTalk."
+excerpt: "Acceleration is a siren call. Alignment is the constraint. A Critical Chain lens for strategy, mechanisms of action, and feedback loops. Lessons from the Arsenal of Democracy episode on EconTalk."
 ---
 
 > Acceleration is seductive. Alignment is scarce. The first multiplies motion. The second creates progress.
@@ -14,7 +14,7 @@ excerpt: "Acceleration is easy. Alignment is the constraint. A Critical Chain le
 
 I listened to the EconTalk episode **[How Did America Build the Arsenal of Democracy? (with Brian Potter)](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter)** and it sharpened something I keep seeing: most orgs try to fix delivery speed when the real bottleneck is alignment.
 
-**Thesis:** treat **alignment** as the system constraint. Until shared aims, a clear mechanism of action, and fast feedback are in place, more speed only produces more rework.
+**Thesis:** treat **alignment** as the system constraint. Until shared aims, a clear mechanism of action, and fast feedback are in place, more speed produces more rework.
 
 **What this post gives you**
 
@@ -47,6 +47,17 @@ Example:
 
 If you cannot name the mechanism, you cannot steer. Metrics without a mechanism become scoreboard watching.
 
+## Mechanisms that connect strategy to action
+
+A brilliant strategy on paper means little without a concrete path to implement it. Pragmatic leaders define **mechanisms** that link goals to daily execution. As Jeff Bezos puts it, "Good intentions don't work, mechanisms do" ([AWS Prescriptive Guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-eight-maturity/theme-8.html)). In practice, a mechanism is a **repeatable process or tool** that is adopted by the team and **regularly inspected for effectiveness** ([AWS ORR mechanism](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/building-mechanisms.html)).
+
+Two useful examples to borrow:
+
+- **Working Backwards (PR/FAQ):** write the press release and FAQ before building to force clarity on customer value and assumptions ([Working Backwards](https://workingbackwards.com/concepts/working-backwards-pr-faq-process/)).
+- **Weekly Business Review:** review controllable input metrics weekly to course-correct early ([Commoncog on Amazon's WBR](https://commoncog.com/the-amazon-weekly-business-review/)).
+
+Without such mechanisms, even well-intentioned teams drift. Studies and reviews estimate **about two thirds of strategic efforts fail in execution**, not because the strategy is bad but because the "how" breaks down ([HBR](https://hbr.org/2017/11/executives-fail-to-execute-strategy-because-theyre-too-internally-focused); [Fortune summary](https://www.forbes.com/sites/kenmakovsky/2012/03/22/the-reason-ceos-fail-an-update/)). Good strategy names the **how**, and great organizations deliberately build mechanisms (frameworks, processes, incentives) to carry that how into effect.
+
 ---
 
 ## A Critical Chain lens
@@ -65,15 +76,7 @@ When alignment is the constraint, adding speed multiplies misaligned work. Faste
 >
 > “This can only be accomplished if we discard the notion of ‘business as usual.’”
 
-Those lines are about national purpose, and they map neatly to organizational alignment. Shared aim, shared urgency, and a willingness to change routines are what make speed useful.
-
-**Five focusing moves, translated for strategy**
-
-1. **Identify the constraint:** is our alignment loop clear and trusted
-2. **Exploit the constraint:** make aims, mechanisms, and feedback explicit in the smallest viable scope
-3. **Subordinate to the constraint:** tune plans, staffing, and tooling to support that loop first
-4. **Elevate the constraint:** add capacity with better rituals, clearer decision logs, and shared metric trees
-5. **Repeat:** once alignment is healthy, look again. The constraint may shift to delivery
+The cost of misalignment is not theoretical; it shows up in real dollars and morale. One global survey estimated around **$1 million wasted every 20 seconds**, roughly **$2 trillion a year**, due to ineffective implementation of strategy ([PMI 2018 Pulse](https://www.pmi.org/-/media/pmi/documents/public/pdf/about/press-media/press-release/pulse-of-the-profession-2018-media-release.pdf)).
 
 ---
 
@@ -104,20 +107,24 @@ Those lines are about national purpose, and they map neatly to organizational al
 
 ## Common misfires
 
+Speed that outruns alignment creates expensive noise, not outcomes. The patterns below show up everywhere.
+
 - **More, faster:** assumes delivery is the constraint. Result: more of the wrong work
 - **Metrics without a mechanism:** numbers move, story does not
 - **Snapshots without flow:** counts today but no cycle time or path distribution
 - **Business as usual:** new aims, old routines. As Roosevelt put it, we must discard the notion of business as usual
 
+### When speed outruns alignment
+
+On a smaller scale, many product teams have experienced the **feature factory** syndrome: rapidly releasing a flurry of features that seem impressive, only to find they do not make a dent in business outcomes. This often happens when teams operate with implicit goals or conflicting interpretations of strategy. Without a unifying north star, velocity turns into **Brownian motion** — lots of busyness, no progress. One engineering leader described seeing teams “working on things that don’t even matter… all this ends up being wasted” because the right hand and left hand were not coordinated. Another common pitfall is when leadership declares an urgent deadline (“We must ship by Q4!”) and teams crunch to hit it, but in the rush they skip the due diligence of cross-functional alignment. The product might ship on time, yet sales, marketing, or support were not prepared and the launch flops. These failures reinforce that speed is not a virtue in isolation — it must be channelled toward a clear, shared aim. See also: [John Cutler on Feature Factories](https://www.mindtheproduct.com/break-free-feature-factory-john-cutler/) and [Amplitude’s follow-up](https://www.amplitude.com/blog/12-signs-youre-working-in-a-feature-factory-3-years-later).
+
+Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with roughly **$1.75–$2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under a year. In the rush, the offering was misaligned with actual user behavior and needs — expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
+
 ### Limits and tells
 
-This post assumes alignment is the constraint. If you see these tells, delivery may be the real constraint:
+This post assumes alignment is the constraint. You can tell alignment is healthy when the result is an organization where **everyone, from execs to individual contributors, can answer how their work links to the strategy**, where decisions happen in a clear strategic context, and where course-corrections are made in weeks, not after the quarter is lost. In short, **strategy isn't a slidedeck and is alive in the day-to-day rhythm of the team**.
 
-- Clear Aim and Mechanism are already in use across teams.
-- Proxies move as expected, but cycle time is the bottleneck.
-- Backlog items are traceably tied to aims, yet lead time explodes.
-
-In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it trims cycle time.
+If you are already there, delivery may be the real constraint. In that case, fix flow: smaller batch size, visible WIP limits, fewer handoffs, and automation where it truly trims cycle time.
 
 ---
 
@@ -151,14 +158,17 @@ Use this to upgrade alignment before you add speed.
 ### Run this in 30 minutes
 
 **Prep (10 min):** Write one Aim and one Mechanism sentence.
+
 - Aim: the outcome in plain words.
 - Mechanism: “We believe X will move Y because Z.”
 
 **Working session (15 min):**
+
 - Sketch a 3-node metric tree: Aim → 2 leading indicators → 1 proxy you expect to move first.
 - Define a **two-week stage gate**: “We will continue if proxy ≥ X by week 2.”
 
 **Commit (5 min):**
+
 - Create a 3-line decision log entry: Date • Aim • Mechanism • Gate.
 - Schedule a 15-minute weekly check to review the proxy and decide: continue, change, or stop.
 
@@ -174,16 +184,19 @@ The EconTalk conversation includes vivid examples of how massive output depended
 
 If you are excited about LLMs, do not read this as anti speed. LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
 
-**Codify the mechanism**
+Codify the mechanism:
+
 - Use an LLM to draft your One page Alignment Sheet from meeting notes and docs. Ask it to normalize team jargon and map terms to your metric tree and definitions.
 - Connect to your data sources through a semantic layer so queries reference the same facts and names. This keeps the mechanism and the metrics in sync.
 
-**Close the loop faster**
+Close the loop faster:
+
 - Let an agent fetch the latest proxy signals each week and propose a short review note: what moved, what did not, and why. Treat it as a first draft, then decide.
 - Replace dashboard sprawl with task specific agents that answer the on the spot questions people actually have. Use them to check whether the mechanism is working in the flow of work.
 - Be careful with junk signals. Tickets and ad hoc tags rarely form an objective rubric on their own. You still need clear definitions of done and trusted data.
 
-**Communicate context**
+Communicate context:
+
 - Generate decision logs, briefs, and user ready explanations that anchor to Aim, Mechanism, Feedback, and Guardrail.
 - For complex teams, consider role specific agents that arrive with the organization’s vocabulary and patterns. They carry context so humans can focus on the judgment calls.
 
