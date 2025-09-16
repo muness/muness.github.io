@@ -22,6 +22,7 @@ History gives us a vivid example of what happens when alignment, not delivery, i
 
 ## Alignment as the Path to Speed: Lessons from the Arsenal of Democracy
 
+First, the pattern in a high-stakes setting.
 Here is how alignment in WWII mobilization—the Arsenal of Democracy—showed up as process, not just rhetoric.
 
 > By the end of the war, an American assembly line was producing a B-24 bomber in less than an hour. But that success was far from inevitable. (See the [EconTalk episode](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter).)
@@ -30,6 +31,7 @@ At first, misalignment made success nearly impossible. Factories built aircraft 
 
 ### What alignment looked like in practice
 
+Concretely, alignment in mobilization looked like coordinated authority, controlled change, fast feedback, enabled labor, and quality counted as output.
 - **Shared aim and command:** a single national aim (equip the Allies to win) with coordinating bodies that could resolve conflicts and set priorities across agencies and firms (e.g., War Production Board priority ratings, Office of Production Management, Army/Navy coordination) The WPB "allocated scarce materials, established priorities ... and prohibited nonessential production" [source](https://en.wikipedia.org/wiki/War_Production_Board).
 - **Change control and standardization:** production‑control systems, change‑order pipelines, and interchangeability drives so factories and suppliers built the same version at the same time; modification centers as a buffer while factories caught up. The USAAF used **Modification Centers** so that updates "avoided disruption to the production lines" while factories caught up to the newest design [source](https://en.wikipedia.org/wiki/List_of_United_States_Army_Air_Force_modification_centers).
 - **Feedback from the field:** combat and maintenance reports driving design fixes that were pushed back through the change pipeline and, later, incorporated directly on factory lines.
@@ -47,6 +49,7 @@ For example, the P-47 had five major redesigns; the B-29 saw 900 design changes 
 
 ### Alignment enabled operational optimization
 
+Design changes were only half the battle; factories also had to make the work itself executable by a brand-new workforce.
 Factories didn’t just build faster with existing tools; they redesigned the production system itself. Jigs and fixtures were rebuilt so an untrained workforce (half a million women, many new to industry) could assemble precision aircraft. Rivet guns were counterweighted so smaller operators could use them. Tasks were simplified and redistributed so unskilled workers could contribute without breaking tolerances. Alignment on the aim made it obvious: the constraint wasn’t just labor supply, it was how to make *this workforce* effective. That clarity drove the retooling.
 
 > Additional hydraulic lifts, smaller rivet guns, and other tools quickly put women on an equal footing with their male counterparts. --([Lockheed Martin history of Rosie the Riveter](https://www.lockheedmartin.com/en-us/news/features/history/rosie-the-riveter.html))
@@ -58,6 +61,7 @@ These were not ad hoc shop‑floor tweaks; they were coordinated programs of tra
 **Alignment defined output to include reliability**. Leadership treated quality as part of the aim, so factories staffed inspection and test as primary work. High-speed production would have been worthless if engines failed in the field. At Ford’s Willow Run plant, 3,000 of 15,500 workers were inspectors (20% of the workforce). That allocation only makes sense if everyone is aligned on the mechanism: output without quality is not success. By aligning quality control with the overall aim, the system could scale without collapsing under its own defects. Because quality was aligned to the aim, managers could devote scarce labor to inspection without being penalized for lower throughput.
 
 Evidence of inspection-at-scale is abundant in wartime records; for example, contemporary accounts describe multi‑stage tear‑down inspections and stringent tolerances as standard practice in aircraft engine plants (see US wartime production overviews and plant archives; also discussed in [EconTalk: Arsenal of Democracy](https://www.econtalk.org/how-did-america-build-the-arsenal-of-democracy-with-brian-potter)).
+Even so, getting to this level of reliability took time and painful iteration.
 
 ### Alignment enabled persistence through ramp-up failure
 
@@ -69,6 +73,7 @@ A misaligned system would have abandoned the effort or doubled down on brute for
 
 ### Alignment enabled massive productivity
 
+Once those fixes stuck and the mechanisms ran together, output did not just recover; it compounded.
 Once these alignment mechanisms were in place and working together, output did not just meet need: it overshot it. Central priority systems, common definitions of done, and closed feedback loops removed cross‑purpose work and created compounding throughput. By late 1944, aircraft, tanks, and munitions arrived faster than the front could consume them.
 
 > At Willow Run, peak throughput was famously reported as a **bomber about every hour**, a pace only achieved after alignment and production control were in place ([The Henry Ford Museum](https://www.thehenryford.org/collections-and-research/digital-collections/artifact/180560/)).
@@ -79,11 +84,9 @@ When alignment is in place, speed compounds. But when it is missing, speed seduc
 
 ## When speed outruns alignment
 
-We've all seen it: Acceleration is seductive. It offers speed, but without alignment it wrecks teams on the rocks.
+Doing more feels good because it is visible and measurable. But speed without direction is theater. Feature factories and splashy flameouts share a cause: acceleration eclipsed alignment. Teams adopt "best practices" (sprints, OKRs, microservices, AI copilots) without saying how they move the Aim. No mechanism, no progress.
 
-Doing more feels good because it is visible and measurable. But speed without direction is theater. Feature factories and splashy flameouts share a cause: acceleration eclipsed alignment. Teams adopt “best practices” (sprints, OKRs, microservices, AI copilots) without saying how they move the Aim. No mechanism, no progress.
-
-This is the same trap I described in [User Value Comes First](https://muness.com/posts/user-value-comes-first/): teams can chase financial proxies or feature output, but when those are not aligned to user value, churn and wasted effort compound.
+This is the same trap I described in [User Value Comes First](https://muness.com/posts/user-value-comes-first/): teams chase financial proxies or feature output, but when those are not aligned to user value, churn and wasted effort compound. If this rings true, the constraint is not delivery; it is alignment.
 
 ### Common misfires
 
@@ -96,15 +99,15 @@ Speed and exection that outruns alignment creates expensive noise, not outcomes.
 
 More output is not progress if it fails to change user behavior. [Outcomes](https://muness.com/posts/outcomes-over-output-book-summary/) (not feature counts) tell you whether the mechanism is working.
 
-### What it looks like on teams
+### What it looks like on product teams
 
 Many product teams I've observed experience the **feature factory** syndrome: rapidly releasing a flurry of features that seem impressive, only to find they do not make a dent in business outcomes. This often happens when teams operate with implicit goals or conflicting interpretations of strategy. Without a unifying north star, velocity turns into **Brownian motion: lots of busyness, no progress.**
 
 Teams end up working on things that do not matter, and effort is wasted because the right hand and left hand are not coordinated. Another common pitfall is when leadership declares an urgent deadline (“We must ship by Q4!”) and teams crunch to hit it, but in the rush they skip the due diligence of cross-functional alignment. The product might ship on time, yet sales, marketing, or support were not prepared and the launch flops. These failures reinforce that speed is not a virtue in isolation—it must be channeled toward a clear, shared aim. See also: [John Cutler on Feature Factories](https://www.mindtheproduct.com/break-free-feature-factory-john-cutler/) and [Amplitude’s follow-up](https://www.amplitude.com/blog/12-signs-youre-working-in-a-feature-factory-3-years-later).
 
-Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with roughly **$1.75 to $2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under two years. In the rush, the offering was misaligned with actual user behavior and needs—expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
+Many failures in tech can be traced to teams focusing on delivery velocity while losing sight of strategic coherence. One stark example was the short-form video platform **Quibi**. Flush with **$1.75 to $2.0 billion** in funding, Quibi raced to deliver a splashy product launch in under two years. In the rush, the offering was misaligned with actual user behavior and needs—expensive, 10-minute exclusive shows built for mobile at a time when short-form, user-generated video dominated. Founders later wrote that Quibi failed “either because the idea itself wasn’t strong enough … or because of our timing” ([open letter coverage](https://africa.businessinsider.com/tech/quibi-reveals-why-it-failed-in-a-somber-letter-offering-a-profound-apology-to/x9eh866)). Post-mortems highlighted the demand mismatch and format rigidity ([WSJ](https://www.wsj.com/business/media/quibi-was-supposed-to-revolutionize-hollywood-heres-why-it-failed-11604343850); [The Guardian](https://www.theguardian.com/tv-and-radio/2020/oct/23/why-quibi-is-a-cautionary-tale-shortform-netflix)). In other words, Quibi moved fast on building **something**, but it was not aligned to a real market demand. The result was a highly optimized delivery of the wrong strategy.
 
-If this looks familiar, it is because most orgs optimize the wrong constraint.
+If this looks familiar, it is because most orgs optimize the wrong constraint. Critical Chain gives a language for choosing the one place where speed actually helps.
 
 ## A Critical Chain Lens
 
@@ -119,6 +122,8 @@ In [Real-World Application of Strategic Clarity](https://muness.com/posts/real-w
 Indeed, misalignment is very expensive. One global survey estimated around **$1 million wasted every 20 seconds**, roughly **$2 trillion a year**, due to ineffective implementation of strategy ([PMI 2018 Pulse](https://www.pmi.org/-/media/pmi/documents/public/pdf/about/press-media/press-release/pulse-of-the-profession-2018-media-release.pdf)).
 
 ## Strategy, made small
+
+Here’s the smallest working fix when alignment is the constraint.
 
 Strategy does not need mystique. At its core, strategy is three things:
 
@@ -148,7 +153,7 @@ If they cannot name the Aim, teams end up staring at the next ticket instead of 
 
 Naming the aim, mechanism, and feedback gives a team strategy in miniature. But to make it real, teams need mechanisms that institutionalize those choices.
 
-## Mechanisms that connect strategy to action
+### Mechanisms that connect strategy to action
 
 A brilliant strategy on paper means little without a concrete path to implement it. Pragmatic leaders define **mechanisms** that link goals to daily execution. As Amazon [puts](https://aws.amazon.com/blogs/enterprise-strategy/strategy-is-a-winding-road-mechanisms-keep-you-on-track/) it, "Good intentions don't work, mechanisms do". In practice, a mechanism is a **repeatable process or tool** that is adopted by the team and **regularly inspected for effectiveness** ([AWS Operational Readiness Review](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/the-orr-mechanism.html)).
 
@@ -180,6 +185,7 @@ Then, by all means, pour on the speed: fix flow using smaller batches, introduce
 ## A sidebar: LLMs as alignment amplifiers
 
 Once the loop runs, LLMs amplify alignment by codifying context, closing the loop faster, and clarifying decisions.
+They are multipliers, not a substitute for Aim and mechanism.
 
 If you are excited about LLMs as I am, rejoice: LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
 
@@ -206,6 +212,7 @@ LLMs multiply value once the alignment loop exists. Aim and mechanism first, fee
 ## Closing
 
 Aim more, plan less, communicate better, learn faster. When the mechanism is explicit and the feedback is fast, speed becomes a multiplier, not a mirage.
+Alignment is scarce; acceleration is everywhere. Choose the constraint on purpose.
 
 ## Related posts
 
