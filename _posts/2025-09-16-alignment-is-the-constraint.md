@@ -189,7 +189,7 @@ They are multipliers, not a substitute for Aim and mechanism.
 
 If you are excited about LLMs as I am, rejoice: LLMs can be excellent tools for alignment, feedback, and communication when pointed at the right problems.
 
-- Codifying the mechanism:
+Codifying the mechanism:
 
 - Teams can use an LLM to draft the One-page Alignment Sheet from meeting notes and docs. Have it normalize team jargon and map terms to the metric tree and definitions.
 - Connect to shared data sources through a semantic layer so queries reference the same facts and names. As I noted in [Operational Data Primer](https://muness.com/posts/operational-data-primer/), consistent vocab and event models are what keep mechanisms and metrics in sync across teams.
