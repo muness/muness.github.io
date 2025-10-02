@@ -415,6 +415,7 @@ Outreach is heavy and replies are flat — a **stagnant equilibrium**. We’ll a
 - Owner and timing — Recruiter • Prep 20m • Ship 2h • Review 15m.
 
 <div class="callout callout--note" markdown="1">
+
 **Recruiting outreach: what works (evidence)**
 - Highly personalized messages show **23–47% higher response rates** than non‑personalized outreach.
 - What “personalized” means here: a short reason‑first sentence that references the candidate’s repo/talk and “why now.” (Gem calls this the “reason” field.)
@@ -523,7 +524,6 @@ Customers are timing out; the first impulse is a rewrite — a **false equilibri
 - Owner and timing — SRE lead • Prep 20m • Ship 2h • Review 15m.
 
 
-
 **Takeaway** — p95 −25% in the pilot cohort; publish before/after in the weekly rollup.
 
 *System shifts: stronger safety net (error‑budget guardrails); faster nimble tests (cache change); better visibility (per‑segment dashboard).*
@@ -553,6 +553,7 @@ Pair every proxy with an outcome and a written **because** statement. If the pro
 Choose one **user-protecting** signal (e.g., error rate, latency on hot path, time-to-resolution) and one **blast-radius** rule (rollback path, feature flag, rollout limit).
 
 <div class="callout callout--note" markdown="1">
+
 **Guardrail picker: 3 rules**
 1) Small, observable, and attributable to the slice.
 2) Trips *before* harm compounds.
@@ -603,7 +604,7 @@ Leadership is **disequilibrium made safe**: just enough disruption to move forwa
 
 <a id="mental-models"></a>
 
-Short handles you can point to in reviews and docs. Each has a source or example.
+Mental models to keep in mind when you're creating intentional disequilibria.
 
 <a id="mm-goodhart"></a>
 **Goodhart’s Law** — When a measure becomes a target, it stops being a good measure. *Why it matters:* easy‑to‑measure numbers get optimized even if the underlying behavior doesn’t change. *Fix:* pair proxies with outcomes; set the rules before you start and write definitions.
@@ -645,6 +646,7 @@ Short handles you can point to in reviews and docs. Each has a source or example
 </details>
 <a id="appendix-b"></a>
 <details class="worksheet" markdown="1">
+
 <summary><strong>Appendix B: Novelty Quota Worksheet</strong> (click to expand)</summary>
 
 **Purpose** — Keep the floor safe while forcing exploration.
@@ -671,6 +673,7 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 <a id="appendix-c"></a>
 <details class="worksheet" markdown="1">
+
 <summary><strong>Appendix C: Anthropologist Hat — Case Template</strong> (click to expand)</summary>
 
 - **Context** — Where you’re seeing friction (team/vertical/domain).
@@ -715,7 +718,6 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 - **Visibility:** decision log + weekly 15‑minute review.
 
 </details>
-
 
 
 <a id="appendix-f"></a>
