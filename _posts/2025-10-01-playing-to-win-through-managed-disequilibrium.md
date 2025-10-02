@@ -199,60 +199,6 @@ Left alone, these loops reinforce each other. Breaking the equilibrium requires 
 
 *Translation: raise the bar on looks‑good metrics and deepen the habits that produce real results.*
 
-<a id="mental-models"></a>
-
-## Mental models & definitions
-
-Short handles you can point to in reviews and docs. Each has a source or example.
-
-<a id="mm-goodhart"></a>
-**Goodhart’s Law** — When a measure becomes a target, it stops being a good measure. *Why it matters:* easy‑to‑measure numbers get optimized even if the underlying behavior doesn’t change. *Fix:* pair proxies with outcomes; set the rules before you start and write definitions.
-**Source:** Goodhart (1975); Strathern’s phrasing (1997); Campbell’s Law (1979).
-
-<a id="mm-rewarding-a"></a>
-**Rewarding A while hoping for B** — Incentives pay for activity/looks while leaders want outcomes/learning. People optimize what’s paid. *Fix:* swap one activity metric per quarter for an **evidence metric**.
-**Source:** Kerr (1995).
-
-<a id="mm-bad-good"></a>
-**Bad is stronger than good** — Negatives weigh more than positives; under threat, variance shrinks. *Fix:* safe‑to‑fail scope, visible wins, praise evidence, not just postmortems.
-**Source:** Baumeister et al. (2001).
-
-<a id="mm-threat"></a>
-**Threat‑rigidity** — Under pressure, groups narrow attention, over‑rely on habit, avoid variance. *Fix:* smaller bets, fast feedback, explicit permission to update.
-**Source:** Staw, Sandelands & Dutton (1981).
-
-<a id="mm-psych"></a>
-**Psychological safety** — Shared belief that it’s safe to take interpersonal risks; predicts learning/performance in complex work. *Fix:* protect the safety net, normalize the 15‑minute review.
-**Source:** Edmondson (1999).
-
-<a id="mm-disequilibrium"></a>
-**Disequilibrium (managed)** — The purposeful disturbance leaders introduce to shake teams out of a false equilibrium (the “don’t‑lose” rut). It widens variance just enough to surface learning signals, but is bounded by a **safety net** (guardrails, clarity, short checkpoints) so the system doesn’t collapse. *Fix:* pair every disruption (Novelty Quota, nimble test) with explicit safety nets; the goal isn’t chaos — it’s a new, healthier equilibrium that produces outcomes. *Source:* Heifetz & Linsky (2002), Adaptive Leadership; applied here as the **behavioral barbell**.
-
-<a id="mm-attractors"></a>
-**Ruts: looks vs. results** — Left alone, orgs settle into a **looks‑first rut** (busy, safe, easy to show). **Barbell‑encouraging processes** (Safety‑net + Nimble‑test rituals) make the **results‑first rut** deeper. *Fix:* small weekly changes with a strong safety net.
-
-<a id="mm-stagegate"></a>
-**Checkpoint ≠ deadline** — Deadlines measure *when*; checkpoints measure *whether the mechanism worked*. *Fix:* define expected signal change and continue/change/stop rules up front.
-
-<a id="mm-mech-task"></a>
-**Mechanism ≠ task** — Tasks are motions; mechanisms are *because* statements. *Fix:* write the cause, then choose the smallest test.
-
-<a id="mm-proxy"></a>
-**Proxy vs. outcome ("Numbers move. Users don’t.")** — If proxies move without user behavior, you’re chasing looks. *Fix:* re‑attach a mechanism or kill. *Example & sources:* see callout in [Strategy, made small](#strategy-made-small).
-
-**‘Our Iceberg Is Melting’: 8-step change**
-
-1. Create urgency
-2. form a guiding team
-3. build vision and strategy
-4. communicate for buy-in
-5. empower action (remove barriers)
-6. produce short-term wins
-7. don’t let up; make it stick.
-8. Use it to ignite the Change loop: sense/name → tests/checkpoints → institutionalize.
-
-*(Source: John Kotter & Holger Rathgeber, 2006).*
-
 <a id="action-guide"></a>
 
 ## Action guide
@@ -665,6 +611,52 @@ Leadership is **disequilibrium made safe**: just enough disruption to move forwa
 
 ## Appendices (worksheets)
 
+<a id="appendix-e"></a>
+<details class="worksheet" markdown="1">
+<summary><strong>Appendix E: Mental models & definitions</strong> (click to expand)</summary>
+
+<a id="mental-models"></a>
+
+Short handles you can point to in reviews and docs. Each has a source or example.
+
+<a id="mm-goodhart"></a>
+**Goodhart’s Law** — When a measure becomes a target, it stops being a good measure. *Why it matters:* easy‑to‑measure numbers get optimized even if the underlying behavior doesn’t change. *Fix:* pair proxies with outcomes; set the rules before you start and write definitions.
+**Source:** Goodhart (1975); Strathern’s phrasing (1997); Campbell’s Law (1979).
+
+<a id="mm-rewarding-a"></a>
+**Rewarding A while hoping for B** — Incentives pay for activity/looks while leaders want outcomes/learning. People optimize what’s paid. *Fix:* swap one activity metric per quarter for an **evidence metric**.
+**Source:** Kerr (1995).
+
+<a id="mm-bad-good"></a>
+**Bad is stronger than good** — Negatives weigh more than positives; under threat, variance shrinks. *Fix:* safe‑to‑fail scope, visible wins, praise evidence, not just postmortems.
+**Source:** Baumeister et al. (2001).
+
+<a id="mm-threat"></a>
+**Threat‑rigidity** — Under pressure, groups narrow attention, over‑rely on habit, avoid variance. *Fix:* smaller bets, fast feedback, explicit permission to update.
+**Source:** Staw, Sandelands & Dutton (1981).
+
+<a id="mm-psych"></a>
+**Psychological safety** — Shared belief that it’s safe to take interpersonal risks; predicts learning/performance in complex work. *Fix:* protect the safety net, normalize the 15‑minute review.
+**Source:** Edmondson (1999).
+
+<a id="mm-disequilibrium"></a>
+**Disequilibrium (managed)** — The purposeful disturbance leaders introduce to shake teams out of a false equilibrium (the “don’t‑lose” rut). It widens variance just enough to surface learning signals, but is bounded by a **safety net** (guardrails, clarity, short checkpoints) so the system doesn’t collapse. *Fix:* pair every disruption (Novelty Quota, nimble test) with explicit safety nets; the goal isn’t chaos — it’s a new, healthier equilibrium that produces outcomes. *Source:* Heifetz & Linsky (2002), Adaptive Leadership; applied here as the **behavioral barbell**.
+
+<a id="mm-attractors"></a>
+**Ruts: looks vs. results** — Left alone, orgs settle into a **looks‑first rut** (busy, safe, easy to show). **Barbell‑encouraging processes** (Safety‑net + Nimble‑test rituals) make the **results‑first rut** deeper. *Fix:* small weekly changes with a strong safety net.
+
+<a id="mm-stagegate"></a>
+**Checkpoint ≠ deadline** — Deadlines measure *when*; checkpoints measure *whether the mechanism worked*. *Fix:* define expected signal change and continue/change/stop rules up front.
+
+<a id="mm-mech-task"></a>
+**Mechanism ≠ task** — Tasks are motions; mechanisms are *because* statements. *Fix:* write the cause, then choose the smallest test.
+
+<a id="mm-proxy"></a>
+**Proxy vs. outcome ("Numbers move. Users don’t.")** — If proxies move without user behavior, you’re chasing looks. *Fix:* re‑attach a mechanism or kill. *Example & sources:* see callout in [Strategy, made small](#strategy-made-small).
+
+**‘Our Iceberg Is Melting’ (intentional change management)** — A structured 8‑step process for leading change. See [Appendix F](#appendix-f) for the steps.
+
+</details>
 <a id="appendix-a"></a>
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix A: Novelty Quota Worksheet</strong> (click to expand)</summary>
@@ -739,34 +731,22 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 </details>
 
-<a id="appendix-e"></a>
-<details class="worksheet" markdown="1">
-<summary><strong>Appendix E: Shock memo template</strong> (click to expand)</summary>
-
-**Shock** — what changed, for whom, why now.
-**Aim** — the user behavior to change.
-**Mechanism** — "We believe X will move Y because Z."
-**Signals** — proxy and outcome.
-**Checkpoint (short)** — continue if …; else change/stop.
-**Guardrail** — SLI/SLO, rollout limit, rollback path.
-**First nimble test (1 wk)** — the smallest causal change.
-**Owner and review** — name and a 15‑minute review date.
-
-</details>
+ 
 
 <a id="appendix-f"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix F: Iceberg cues (use with the Shock memo)</strong></summary>
+<summary><strong>Appendix F: ‘Our Iceberg Is Melting’ — 8‑step change</strong> (click to expand)</summary>
 
-- Urgency stated in one paragraph (why now, for whom)?
-- Guiding team named (roles and authority)?
-- Short‑term win defined (visible, unambiguous)?
-- Barriers removed (who can say "stop"; what can ship this week)?
-- Broadcast plan (wins and where we need help)?
-- Don’t‑let‑up plan (what we raise or trim next cycle)?
-- Make‑it‑stick plan (default update, onboarding snippet, reward swap)?
+1. Create urgency.
+2. Form a guiding team.
+3. Build vision and strategy.
+4. Communicate for buy‑in.
+5. Empower action (remove barriers).
+6. Produce short‑term wins.
+7. Don’t let up; make it stick.
+8. Institutionalize: update defaults/rewards so the new equilibrium holds.
 
-*Ref: *Our Iceberg Is Melting* (Kotter & Rathgeber).*
+*(Source: John Kotter & Holger Rathgeber, 2006).* 
 
 </details>
 
