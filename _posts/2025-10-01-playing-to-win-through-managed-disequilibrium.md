@@ -263,9 +263,9 @@ Here are tools for your toolbelt:
   - [ ] Owner + date for 15-minute review set.
   - [ ] Decision log entry stubbed (Aim, Mechanism, Signals, Checkpoint).
 - **Run a Nimble Test**.
-   The smallest change likely to move the proxy. Ship weekly.
+   The smallest change likely to move the proxy. Ship quickly.
 - **Run a 15-minute Review, every 1-2 weeks**.
-   Ask: *What changed? What didn’t? Why?* Decide: continue, change, or stop. Capture a 3-line decision log.
+   Ask: *What changed? What didn’t? Why?* Decide: continue, change, or stop. Capture a 1-3-line decision log.
 
 <a id="practice-modules"></a>
 
@@ -277,22 +277,38 @@ Two techniques you’ll use in the fixes below. Each has a job; together they ma
 
 #### Novelty Quota
 
-- Why: prevent ruts by requiring one small deviation from the reflex (e.g., from "send more email" to an in‑product prompt, or from demo‑first to discovery‑first).
-- How: write the deviation on the one‑pager; bound it with a short checkpoint and guardrails; review in 15 minutes.
-- Worksheet: see [Appendix B](#appendix-b) (Novelty Quota Worksheet).
+- What it is — A simple policy that commits each team to **a few explicit deviations** from the standard way of working every cycle. It’s a lightweight exploration budget that creates safe, bounded **disequilibrium** so the system learns without chaos.
+- Why it matters — Left alone, orgs settle into false equilibria that feel busy but don’t learn. A Novelty Quota guarantees small, testable variance; paired with guardrails and checkpoints, it surfaces signals and prevents drift.
+- How to use it —
+  - Pick the reflex to deviate from (e.g., “send more email,” “demo‑first,” “rewrite”).
+  - Define one deviation that tests a mechanism this cycle (what changes, for whom, why now).
+  - Add guardrails and a short checkpoint to the one‑pager (SLI/SLO, rollout %, rollback; continue/change/stop rule).
+  - Name the owner and put a 15‑minute review on the calendar.
+  - Label the deviation in a “deviation log”; fold winners into defaults next cycle; retire the rest.
+- Tip — Keep the deviation small, reversible, and easy to review; one per team per cycle is the point.
+- Worksheet — See [Appendix B](#appendix-b) (Novelty Quota Worksheet).
 
 <a id="anthropologist-hat"></a>
 
 #### Anthropologist Hat
 
-- Why: replace vibe-based plans with explicit “because” statements; surface the reinforcing loops holding the rut in place.
-- How: write one paragraph: Aim • Mechanism (because…) • Signals • Checkpoint • Guardrail; log it before doing work.
-- Template: see [Appendix C](#appendix-c) (Anthropologist Hat — Case Template).
+- What it is — A **structured reflection tool**. You step back like an anthropologist observing a culture, writing down the traits, symptoms, and **loops** that shape how work actually happens. It surfaces hidden mechanisms—reward mismatches, silos, drift, silence—that keep teams stuck in ruts.
+- Why it matters — Teams normalize dysfunction because it feels “just the way things are.” Naming those loops makes them visible, so you can design **counter‑loops** (guardrails, checkpoints, small prototypes, retrospectives) that break the cycle. The goal isn’t critique; it’s turning tacit patterns into explicit mechanisms everyone can work on.
+- How to use it — Fill in one real case (a slice, not the whole org):
+  - Context — Where you’re seeing friction (team/vertical/domain).
+  - Cultural traits — e.g., Big goals, no guidance • Context vacuum • Siloed incentives • Conflict aversion.
+  - Symptoms — Faux alignment • Fragmented execution • Operational drift • No experimentation mindset.
+  - Reinforcing (vicious) loops — Appearance • Silo • Drift • Silence.
+  - Balancing loops — Context & “How?” Checkpoint • Cross‑Team 1:1s • Mini Prototype • Publish v0.0.1 + Retros.
+- Tip — Keep loops to a few lines; clarity and brevity help others see the loop, nod, and act.
+- Template — See [Appendix C](#appendix-c) (Anthropologist Hat — Case Template).
 
 
 **Why this works:** Safety → more honest signals. Mechanisms → less gaming. Short cycles → less thrash, more evidence.
 
 ### Thrash alarms
+
+When these show up, you’re slipping into a play-not-to-win equilibrium. Add one small, bounded dose of managed disequilibrium to fight back.
 
 - Two consecutive cycles with zero deviations or no kills.
 - Proxies moving without a written "because" or an outcome shift.
@@ -657,12 +673,11 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix C: Anthropologist Hat — Case Template</strong> (click to expand)</summary>
 
-**Context** — Where you’re seeing friction (team/vertical/domain).
-**Cultural Traits** — e.g., Big goals, no guidance • Context vacuum • Siloed incentives • Conflict aversion.
-**Symptoms** — Faux alignment • Fragmented execution • Operational drift • No experimentation mindset.
-**Reinforcing (Vicious) Loops** — Appearance • Silo • Drift • Silence.
-**Balancing Loops** — Context & “How?” Checkpoint • Cross‑Team 1:1s • Mini Prototype • Publish v0.0.1 + Retros.
-**Decision Log Snippet** — Date • Aim • Mechanism • Signals • Gate • Decision.
+- **Context** — Where you’re seeing friction (team/vertical/domain).
+- **Cultural Traits** — e.g., Big goals, no guidance • Context vacuum • Siloed incentives • Conflict aversion.
+- **Symptoms** — Faux alignment • Fragmented execution • Operational drift • No experimentation mindset.
+- **Reinforcing (Vicious) Loops** — Appearance • Silo • Drift • Silence.
+- **Balancing Loops** — Context & “How?” Checkpoint • Cross‑Team 1:1s • Mini Prototype • Publish v0.0.1 + Retros.
 
 </details>
 
