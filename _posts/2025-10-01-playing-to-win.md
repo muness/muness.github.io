@@ -85,6 +85,58 @@ One way to think about it: leadership is about creating a **managed disequilibri
 _Reference: *Our Iceberg Is Melting* (Kotter & Rathgeber)._
 </div>
 
+<a id="leadership-stance-the-behavioral-barbell"></a>
+### The behavioral barbell
+
+*The system fix: make the safety net real and the nimble tests ambitious.*
+
+If the system defaults to *don’t lose*, leaders must make it safe to **play to win**. The tool is a **barbell**:
+
+- **Safety net (don’t lose):** psychological safety, clear aims, guardrails, standard defaults.
+- **Nimble tests (play to win):** bold but bounded experiments that test a mechanism against real signals.
+
+Design both, explicitly. That balance converts fear into learning and effort into outcomes.
+
+Nimble tests every week; big moves when the evidence is strong.
+
+<div class="callout callout--note" markdown="1">
+
+**Terms you’ll see**
+
+- **Safety net** — Safety net + clarity: guardrails, defaults, Definition of Done.
+- **Nimble tests** — Small, bounded tests that validate a mechanism.
+- **Barbell processes** — The small rituals & artifacts that make the barbell real (Safety‑net processes + Nimble‑test processes).
+- **Nimble test (mechanism)** — Smallest change likely to move a signal this week.
+- **Checkpoint (short)** — Evidence check: continue / change / stop.
+- **Decision log** — 3 lines: Aim • Mechanism • Signals/Checkpoint.
+- **SLI/SLO** — Service‑level indicators/objectives: the metrics and targets that protect users (e.g., error rate, latency) and guide safe rollout.
+- **Guardrail** — User-protecting rule (SLI/SLO, rollout limit, rollback path).
+- **Safety‑net processes** — guardrails, defaults, Definition of Done, weekly review.
+- **Nimble‑test processes** — nimble tests, checkpoints, novelty quota, decision log.
+
+</div>
+
+*See mental model: [Psychological safety](#mm-psych).*
+
+**Before/After: default vs. barbell**
+
+| Habitual default (play not to lose) | Barbell stance (play to win, safely) |
+|---|---|
+| Announce a goal; assume teams will figure it out. | Co-author **Aim** (user behavior) and **Mechanism** in writing; publish the one-pager. |
+| Ship big changes; review at the end. | Run **nimble tests**; review weekly with a **short checkpoint**. |
+| Reward activity (tickets, dials, emails). | Reward **evidence** the mechanism moved the Aim. |
+| Add approvals late; blame deviations. | **Guardrails** up front (SLIs/SLOs, Definition of Done); deviations within quota. |
+| Treat metrics as targets. | Pair proxies with outcomes + a written **because** statement; kill if proxies don’t predict outcomes. |
+| Hide mistakes to avoid heat. | "Safe-to-fail" scope; decision log makes kills/pivots normal. |
+
+*See mental model: [Threat‑rigidity](#mm-threat).*
+
+<div class="callout callout--risk" markdown="1">
+
+**Trade-offs & limits**
+This approach needs (a) minimal instrumentation, (b) schedule discipline for the 15-minute review, and (c) leaders who protect the safety net. It will feel slower in week one, faster by week four. Not a fit for **irreversible, high-blast-radius** changes where safe-to-fail doesn’t exist—sequence those behind spikes/prototypes first. If guardrails are vague or owners can’t say **stop**, fix the safety net before running nimble tests.
+</div>
+
 Next: what the don’t-lose rut feels like day to day (and why it persists).
 
 ## The phoning-it-in equilibrium
@@ -148,59 +200,6 @@ Left alone, these loops reinforce each other. Breaking the equilibrium requires 
 *Not lazy, logical. When the system rewards looking busy, smart people optimize how things look. The fix is system design, not pep talks, not "holding people accountable".*
 
 *Translation: raise the bar on looks‑good metrics and deepen the habits that produce real results.*
-
-Now the fixes: make the safety net real and the nimble tests ambitious.
-
-## Leadership stance: the behavioral barbell
-
-*The system fix: make the safety net real and the nimble tests ambitious.*
-
-If the system defaults to *don’t lose*, leaders must make it safe to **play to win**. The tool is a **barbell**:
-
-- **Safety net (don’t lose):** psychological safety, clear aims, guardrails, standard defaults.
-- **Nimble tests (play to win):** bold but bounded experiments that test a mechanism against real signals.
-
-Design both, explicitly. That balance converts fear into learning and effort into outcomes.
-
-Nimble tests every week; big moves when the evidence is strong.
-
-<div class="callout callout--note" markdown="1">
-
-**Terms you’ll see**
-
-- **Safety net** — Safety net + clarity: guardrails, defaults, Definition of Done.
-- **Nimble tests** — Small, bounded tests that validate a mechanism.
-- **Barbell processes** — The small rituals & artifacts that make the barbell real (Safety‑net processes + Nimble‑test processes).
-- **Nimble test (mechanism)** — Smallest change likely to move a signal this week.
-- **Checkpoint (short)** — Evidence check: continue / change / stop.
-- **Decision log** — 3 lines: Aim • Mechanism • Signals/Checkpoint.
-- **SLI/SLO** — Service‑level indicators/objectives: the metrics and targets that protect users (e.g., error rate, latency) and guide safe rollout.
-- **Guardrail** — User-protecting rule (SLI/SLO, rollout limit, rollback path).
-- **Safety‑net processes** — guardrails, defaults, Definition of Done, weekly review.
-- **Nimble‑test processes** — nimble tests, checkpoints, novelty quota, decision log.
-
-</div>
-
-*See mental model: [Psychological safety](#mm-psych).*
-
-**Before/After: default vs. barbell**
-
-| Habitual default (play not to lose) | Barbell stance (play to win, safely) |
-|---|---|
-| Announce a goal; assume teams will figure it out. | Co-author **Aim** (user behavior) and **Mechanism** in writing; publish the one-pager. |
-| Ship big changes; review at the end. | Run **nimble tests**; review weekly with a **short checkpoint**. |
-| Reward activity (tickets, dials, emails). | Reward **evidence** the mechanism moved the Aim. |
-| Add approvals late; blame deviations. | **Guardrails** up front (SLIs/SLOs, Definition of Done); deviations within quota. |
-| Treat metrics as targets. | Pair proxies with outcomes + a written **because** statement; kill if proxies don’t predict outcomes. |
-| Hide mistakes to avoid heat. | "Safe-to-fail" scope; decision log makes kills/pivots normal. |
-
-*See mental model: [Threat‑rigidity](#mm-threat).*
-
-<div class="callout callout--risk" markdown="1">
-
-**Trade-offs & limits**
-This approach needs (a) minimal instrumentation, (b) schedule discipline for the 15-minute review, and (c) leaders who protect the safety net. It will feel slower in week one, faster by week four. Not a fit for **irreversible, high-blast-radius** changes where safe-to-fail doesn’t exist—sequence those behind spikes/prototypes first. If guardrails are vague or owners can’t say **stop**, fix the safety net before running nimble tests.
-</div>
 
 <a id="mental-models"></a>
 
