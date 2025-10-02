@@ -284,9 +284,9 @@ Borrow the smallest workable definition from my playbook:
 
 | Element | Weak (sounds busy) | Strong (names cause & check) |
 |---|---|---|
-| **Aim** | "Improve engagement" | "Increase **activation** from 27% → 35% for Segment S in 14 days." |
-| **Mechanism** | "Send more lifecycle emails" | "Make **Action X** unmissable *in-product* and nudge only stalled users **because** we remove confusion at Step N and reduce time-to-value." |
-| **Feedback** | "Track sessions and opens" | "Proxy: % doing Action X in 24h; Outcome: 14-day activation; Leading: median time-to-first-action." |
+| **Aim** | Improve engagement | Increase **activation** from 27% → 35% for Segment S in 14 days. |
+| **Mechanism** | Send more lifecycle emails | Make **Action X** unmissable *in-product* and<br/> nudge only stalled users **because** we remove confusion<br/> at Step N and reduce time-to-value. |
+| **Feedback** | Track sessions and opens | Proxy: % doing Action X in 24h;<br/> Outcome: 14-day activation;<br/> Leading: median time-to-first-action. |
 
 Pair this with a **short checkpoint**: what we expect to learn, and the decision rule to continue, change, or stop. Once that loop runs, pour on speed.
 
@@ -305,8 +305,14 @@ Pair this with a **short checkpoint**: what we expect to learn, and the decision
 <div class="callout callout--metric" markdown="1">
 
 **Numbers move. Users don’t.** If a KPI is moving while user behavior isn’t, you’re watching a proxy without a mechanism. Re-attach the number to a *because* statement and a user outcome, or kill it.
+
 **Example:** More lifecycle emails → higher **open rates/sessions**, but **activation** is flat. That’s proxy-chasing.
-**Sources:** Eric Ries, "Vanity Metrics vs. Actionable Metrics" (2009) — avoid intermediate metrics like click-through rate in favor of customer behaviors that drive value ([link](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)). • Mixpanel, "What are vanity metrics?" — vanity metrics aren’t tied to user value ([link](https://mixpanel.com/blog/vanity-metrics/)). • "Open rate" — tracking is unreliable and often misleading ([link](https://en.wikipedia.org/wiki/Open_rate)).
+
+**Sources:**
+- Eric Ries, "Vanity Metrics vs. Actionable Metrics" (2009) — avoid intermediate metrics like click-through rate in favor of customer behaviors that drive value ([link](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)).
+- Mixpanel, "What are vanity metrics?" — vanity metrics aren’t tied to user value ([link](https://mixpanel.com/blog/vanity-metrics/)).
+- "Open rate" — tracking is unreliable and often misleading ([link](https://en.wikipedia.org/wiki/Open_rate)).
+
 </div>
 
 ## Leader’s playbook
@@ -329,19 +335,12 @@ Run these six moves as a weekly ritual. Keep them literal, written, and short.
    One proxy (should move first) and one outcome metric. Add a short decision rule.
 
 4. **Install Guardrails (the safety net)**
-   One SLI/SLO to protect users; a simple Definition of Done checklist.
-
-<div class="callout callout--metric" markdown="1">
-
-**Definition of Done (checklist)**
-
-- [ ] User behavior to verify is stated.
-- [ ] Guardrail SLI/SLO attached
-- [ ] Rollback/kill path written
-- [ ] Owner + date for 15-minute review set
-- [ ] Decision log entry stubbed (Aim, Mechanism, Signals, Checkpoint)
-
-</div>
+   One SLI/SLO to protect users; a simple Definition of Done checklist:
+    - [ ] User behavior to verify is stated.
+    - [ ] Guardrail SLI/SLO attached
+    - [ ] Rollback/kill path written
+    - [ ] Owner + date for 15-minute review set
+    - [ ] Decision log entry stubbed (Aim, Mechanism, Signals, Checkpoint)
 
 5. **Run a Nimble Test**
    The smallest change likely to move the proxy. Ship weekly.
@@ -358,18 +357,11 @@ Run these six moves as a weekly ritual. Keep them literal, written, and short.
 - Weekly review turns into status only (no continue/change/stop decisions).
 - Guardrails exist on paper but no one can say "stop".
 
-## Scenes & Fixes (field notes)
+## Scenes & Fixes
 
 Situational examples of dysfunction and how we addressed them.
 
 *Real snapshots of the equilibrium, paired with barbell rewrites you can copy. Each uses Aim • Mechanism • Feedback • Checkpoint • Guardrail.*
-
-#### Role lenses (quick guide)
-
-- PM and Design: write the "because," run one in‑product nimble test per week, with a short checkpoint on behavior.
-- Recruiting: replace template‑first with reason‑first; use a short checkpoint on qualified screens per 100.
-- Sales: no fit, no demo; short checkpoint on discovery completion and opportunity conversion.
-- Platform/SRE: test‑and‑measure; short checkpoint on p95/p99 and error budget.
 
 <a id="scenes-fixes-qbr"></a>
 
@@ -377,38 +369,44 @@ Situational examples of dysfunction and how we addressed them.
 
 If this sounds like you: your deck glows green but you can’t name one behavior that changed.
 
-**Context** — End of Q2. Pricing lifted signups, but **activation** in Segment S is stuck at **27%** and 14‑day retention is flat. The brief for the review: show how we’ll move activation next quarter and what we’ll watch.
+**Context**
 
-**What happened** — We ran a QBR with fourteen people on Zoom. The deck looked great: vision, pillars, and green KPI arrows (sessions +18%, emails +42%). Activation and retention were missing. I asked, "Which user behavior will change next quarter, and why?" The answer was "engagement is up" and a finger on a dashboard. We left with "send two more lifecycle emails" and "ship the dashboard." Six weeks later the KPIs kept climbing—because we sent more emails. Activation and retention didn’t move. Numbers moved; users didn’t.
+- End of Q2. Pricing lifted signups, but **activation** in Segment S is stuck at **27%** and 14‑day retention is flat.
+- The brief for the review: show how we’ll move activation next quarter and what we’ll watch.
 
-**Fix — apply the pattern**
+**What happened**
 
-Owner: Product lead • Prep: 20m • Ship: 2h • Review: 15m
-Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guardrails
+- We ran a QBR with fourteen people on Zoom. The deck looked great: vision, pillars, and green KPI arrows (sessions +18%, emails +42%). Activation and retention were missing.
+- A peer PM asked, "Which user behavior will change next quarter, and why?" The answer was "engagement is up" and a finger on a dashboard.
+- We left with "send two more lifecycle emails" and "ship the dashboard."
+- Six weeks later the KPIs kept climbing—because we sent more emails.
+- Activation and retention didn’t move. Numbers moved; users didn’t.
 
-**Context** — New signups stall before first value; team proposed "send more lifecycle emails."
-**Aim** — Increase **activation** from 27% → 35% for new signups in Segment S within 14 days.
-**Mechanism** — We believe that making **Action X** (the key first win) unmissable *in‑product* and sending **one targeted nudge** only to users who stall will raise activation **because** we remove confusion at Step N and reduce time‑to‑value.
-**Feedback** — Proxy: % of new signups completing Action X in 24h; Leading: median time‑to‑first‑action; Outcome: 14‑day activation.
-**Checkpoint (short)** — Continue if proxy +10% **and** activation +3 pts; else change the mechanism or kill the experiment.
-**Guardrails (Safety net)** — Error rate ≤ 0.1% (SLI); do not send >1 email per user in 7 days; rollback plan documented.
+**Fix — techniques and steps**
 
-**Nimble test we run** — Add an in‑product checklist with a single contextual prompt for Action X; ship only to Segment S. Back it with one triggered nudge to users who stall >24h at Step N.
+New signups stall before first value. Instead of more email, we’ll make the first win unmissable in‑product and send one targeted nudge only to users who stall. We’ll judge success by an early proxy and activation, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques, each with a clear job and concrete steps.
 
-**Artifact** — In‑product prompt copy: “Start with Action X to get [first value] in under 2 minutes.”
+- Aim — Increase activation 27% → 35% (Segment S, 14d)
 
-**15‑minute review** — What moved, what didn’t, why. Promote if the outcome budged; otherwise, kill and log what we learned.
+- Techniques (why + specifics)
+  - Anthropologist Hat
+    - Why: name the KPI‑theater mechanism and loop; write the causal “because” before tactics.
+    - Mechanism — Make Action X unmissable in‑product + one targeted nudge to stalled users (removes confusion at Step N; reduces time‑to‑value)
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
+  - Novelty Quota — Why: force one safe deviation from “send more email” to a real, testable change.
+    - Nimble test we run — Add an in‑product checklist prompt; ship Segment S only; one triggered nudge >24h stall
+    - Artifact — “Start with Action X to get [first value] in under 2 minutes.”
+  - Short checkpoint — Why: turn signals into a decision and prevent thrash.
+    - Signals — Proxy: % complete Action X in 24h; Leading: time‑to‑first‑action; Outcome: 14‑day activation
+    - Checkpoint rule — Continue if proxy +10% AND activation +3 pts; else change/stop (15‑minute review)
+  - Guardrails — Why: protect users and timebox risk.
+    - SLI — Error ≤0.1%
+    - Outreach cap — ≤1 email per user/7 days
+    - Rollback — Documented plan before launch
 
-**Decision Log example** — Aim: activation 27% → 35% (Segment S, 14d) • Mechanism: Action X unmissable + targeted nudge • Signals/Checkpoint: proxy +10% AND activation +3 pts; else change/stop.
+- Owner and timing — Product lead • Prep 20m • Ship 2h • Review 15m
 
-<div class="callout callout--metric" markdown="1">
-**Why this works (and stays safe)**
-- **Novelty Quota** — Forces a deviation from the reflex ("send more email") to a bounded nimble test, inside guardrails.
-- **Anthropologist Hat** — Names the **KPI theater** loop (appearance over mechanism) and adds a **balancing loop** (checkpoint + decision log).
-- **Leader’s playbook steps** — 1 Aim • 2 Mechanism • 3 Signals + Checkpoint • 4 Guardrail • 5 Nimble test • 6 15‑min review.
-</div>
-
-**What to share** — Activation moves in Segment S this fortnight; celebrate the mechanism, not the email count.
+**Takeaway** — Activation moves in Segment S this fortnight; celebrate the mechanism, not the email count.
 
 *System shifts: more weight on results (activation evidence); higher bar on looks‑good metrics (pair proxies with outcomes); faster nimble tests (weekly).*
 
@@ -420,47 +418,55 @@ Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guar
 
 If this sounds like you: reply rates are flat despite heavy outreach.
 
-**Context** — We need three **Staff Data Engineers** in 30 days to unblock a streaming pipeline. Baseline last cycle: **6%** qualified screens per 100 messages. Outreach is generic; the CRM has no field for "why you/why now."
+**Context**
 
-**What happened** — A great candidate was already in the ATS. Their portfolio showed the exact pipeline we’re building. They got the standard opener ("Hi {FirstName}…"), no mention of their repo or the role’s fit. They ghosted. The recruiter still hit "outreach sent" and "time‑to‑first‑touch." We lost the candidate we needed.
+- We need three **Staff Data Engineers** in 30 days to unblock a streaming pipeline.
+- Baseline last cycle: **6%** qualified screens per 100 messages.
+- Outreach is generic; the CRM has no field for "why you/why now."
 
-**Fix — apply the pattern**
+**What happened**
 
-Owner: Recruiter • Prep: 20m • Ship: 2h • Review: 15m
-Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guardrails
+- A great candidate was already in the ATS. Their portfolio showed the exact pipeline we’re building.
+- They got the standard opener ("Hi {FirstName}…"), no mention of their repo or the role’s fit. They ghosted.
+- The recruiter still hit "outreach sent" and "time‑to‑first‑touch." We lost the candidate we needed.
 
-**Context** — Outreach is high, but qualified screens per 100 messages are flat; a perfect candidate was missed with a template opener.
-**Aim** — Raise **qualified screen rate** from 6% → **12%** for the Staff Data Engineer role within 4 weeks.
-**Mechanism** — We believe that **high‑intent personalization** (referencing the candidate’s repo/talk + why this role now) with a **4‑touch sequence** will increase replies **because** it signals we did our homework and makes the *why‑you/why‑now* clear.
-**Feedback** — Proxy: **personalized outreach rate** (messages with repo/talk + role context noted in CRM); Leading: **reply rate** to stage‑1 and cumulative across 4 touches; Outcome: **qualified screens per 100 messages**.
-**Checkpoint (short)** — Continue if **personalized rate ≥80%** and **reply rate +25%**; else adjust template and the "why‑now" language, or kill.
-**Guardrails (Safety net)** — Respect do‑not‑contact; max **4 touches** in 14 days; keep outreach under **150 words**; no bait‑and‑switch on scope/level.
+**Fix — techniques and steps**
 
-**Nimble test we run** — Add a **{{reason}} paragraph** template that pulls in the candidate’s repo/talk and maps it to the role’s concrete outcome ("you’d own the streaming pipeline we’re standing up next quarter"); add a **4‑stage** sequence with pre‑scheduled follow‑ups; instrument CRM to require **repo/talk link** for the message to send.
+Outreach is heavy and replies are flat. We’ll switch to reason‑first personalization that references the candidate’s work and maps it to the role’s outcome. We’ll judge by personalization rate and replies, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-**Artifact** — Reason‑first opener: “[FirstName], your [repo/talk] on [topic] maps to our [outcome]. We’re shipping [X] next quarter and your [skill] would own [specific piece]. Up for a 12‑min screen?”
+- Aim — Raise qualified screen rate 6% → 12% (Staff Data Engineer, 4 weeks)
 
-**15‑minute review** — In the weekly review, sample 5 messages: does the opener prove we read their work? Does the role mapping feel credible? Track qualified screens and adjust the template.
+- Techniques (why + specifics)
+  - Anthropologist Hat — Why: name the spray‑and‑pray reflex; write the “why‑you/why‑now” before tactics.
+    - Mechanism — High‑intent personalization (reference repo/talk + why this role now) with a 4‑touch sequence
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
+  - Novelty Quota — Why: force one safe deviation from template‑first to reason‑first.
+    - Nimble test we run — Add a reason‑first paragraph (one line that proves we read their work and why now); 4‑stage sequence; require repo/talk link in CRM to send
+    - Artifact — “FirstName, your [repo/talk] on [topic] maps to our [outcome]… Up for a 12‑min screen?”
+  - Short checkpoint — Why: turn signals into a decision and prevent thrash.
+    - Signals — Personalized outreach rate; reply rate to stage‑1 and cumulative across 4 touches; Outcome: qualified screens per 100
+    - Checkpoint rule — Continue if personalization ≥80% AND reply rate +25%; else change/stop (weekly review)
+  - Guardrails — Why: respect candidates and timebox risk.
+    - Do‑not‑contact honored; max 4 touches/14 days
+    - Keep outreach under 150 words; no bait‑and‑switch on scope/level
 
-**Decision Log example** — Aim: screens per 100 → 12% • Mechanism: reason‑first opener + 4‑touch sequence • Signals/Checkpoint: personalization ≥80% AND reply +25%; else change/stop.
+- Owner and timing — Recruiter • Prep 20m • Ship 2h • Review 15m
 
 <div class="callout callout--note" markdown="1">
 **Recruiting outreach: what works (evidence)**
-- Highly personalized messages (e.g., Gem’s **{{reason}}** token) show **23–47% higher response rates** than non‑personalized outreach.
+- Highly personalized messages show **23–47% higher response rates** than non‑personalized outreach.
+- What “personalized” means here: a short reason‑first sentence that references the candidate’s repo/talk and “why now.” (Gem calls this the “reason” field.)
 - Greenhouse reports teams expect **30–50%** response on well‑targeted initial sourcing emails, and emphasize personalization to earn replies.
 - Multi‑touch sequences matter: Lever’s analyses show **most responses come after the first outreach**, with meaningful gains by the 3rd touch.
-**Sources:** Gem personalization study and 2023 benchmarks; Greenhouse guidance; Lever study.
-Links: [Gem — personalization best practices](https://support.gem.com/hc/en-us/articles/5352576224407-Personalization-Best-Practices) • [Gem — 2023 benchmarks](https://www.gem.com/blog/top-5-game-changing-statistics-from-gems-2023-recruiting-benchmarks-report) • [Greenhouse — sourcing metrics & response rates](https://www.greenhouse.com/blog/whats-data-got-to-do-with-it-sourcing-prospective-candidates) • [Lever — three touchpoints study](https://www.globenewswire.com/news-release/2018/04/10/1467895/0/en/New-Research-Shows-Three-Touchpoints-Is-Magic-Number-When-Proactively-Sourcing-Potential-Job-candidate%27s.html)
+**Sources:**
+  - [Gem — personalization best practices](https://support.gem.com/hc/en-us/articles/5352576224407-Personalization-Best-Practices)
+  - [Gem — 2023 benchmarks](https://www.gem.com/blog/top-5-game-changing-statistics-from-gems-2023-recruiting-benchmarks-report) • [Greenhouse — sourcing metrics & response rates](https://www.greenhouse.com/blog/whats-data-got-to-do-with-it-sourcing-prospective-candidates)
+  - [Lever — three touchpoints study](https://www.globenewswire.com/news-release/2018/04/10/1467895/0/en/New-Research-Shows-Three-Touchpoints-Is-Magic-Number-When-Proactively-Sourcing-Potential-Job-candidate%27s.html)
 </div>
 
-<div class="callout callout--metric" markdown="1">
-**Why this works (and stays safe)**
-- **Novelty Quota** — Changes outreach from template‑first to **reason‑first**; one explicit deviation per cycle becomes the new default if it wins.
-- **Anthropologist Hat** — Names the **Silence Loop** (no problem statements in notes) and adds a balancing loop (discovery fields required).
-- **Leader’s playbook steps** — 1 Aim • 2 Mechanism • 3 Signals + Checkpoint • 4 Guardrail • 5 Nimble test • 6 15‑min review.
-</div>
 
-**What to share** — Qualified screens per 100 doubled via reason‑first opener; share examples org‑wide.
+
+**Takeaway** — Qualified screens per 100 doubled via reason‑first opener; share examples org‑wide.
 
 *System shifts: faster nimble tests (reason‑first deviation); better visibility (CRM fields enforce "because"); more weight on results (screens per 100).*
 
@@ -472,37 +478,45 @@ Links: [Gem — personalization best practices](https://support.gem.com/hc/en-us
 
 If this sounds like you: demos are high and qualified opps are stuck at ~9%.
 
-**Context** — Outbound to **ICP Segment S** with an activity‑heavy motion. Targets: **80 dials/day**, **12 demos/week**. Baseline: **9%** conversion from first call to qualified opportunity. Discovery notes rarely capture a job‑to‑be‑done.
+**Context**
 
-**What happened** — Minute one of the call: "Do you have 30 minutes?" Minute two: a screenshare. No problem statement, no "why now." The team hit its activity targets; conversion stayed at 9%. I asked for one example where the rep wrote the customer’s job to be done in the notes. We had none. We were pitching a product, not solving a problem.
+- Outbound to **ICP Segment S** with an activity‑heavy motion.
+- Targets: **80 dials/day**, **12 demos/week**.
+- Baseline: **9%** conversion from first call to qualified opportunity.
+- Discovery notes rarely capture a job‑to‑be‑done.
 
-**Fix — apply the pattern**
+**What happened**
 
-Owner: Sales manager • Prep: 20m • Ship: 2h • Review: 15m
-Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guardrails
+- Minute one of the call: "Do you have 30 minutes?" Minute two: a screenshare.
+- No problem statement, no "why now." The team hit its activity targets; conversion stayed at 9%.
+- I asked for one example where the rep wrote the customer’s job to be done in the notes. We had none.
+- We were pitching a product, not solving a problem.
 
-**Context** — Demo‑first calls convert to qualified opportunities at **9%** despite high activity (80 dials/day, 12 demos/week). No problem statements captured in notes.
-**Aim** — Raise **qualified opportunity rate** from 9% → **15%** for ICP Segment S within 4 weeks.
-**Mechanism** — We believe **8 minutes of structured discovery** (three discovery questions — job‑to‑be‑done, impact, urgency) **before any demo**, with a **"no‑fit, no‑demo" rule**, will increase conversion **because** reps will (a) tailor value to the stated job and (b) quickly disqualify non‑fit leads, conserving time for strong fits.
-**Feedback** — Proxy: % of calls with the **discovery checklist** completed in CRM; Leading: % of demos ≤10 minutes **when** problem‑fit is confirmed; Outcome: **opportunity conversion rate** for Segment S.
-**Checkpoint (short)** — Continue if **discovery completion ≥80%** *and* conversion +3 pts; else adjust questions or kill the mechanism.
-**Guardrails (Safety net)** — Respect **do‑not‑pitch** if no fit is found; **no more than two** follow‑ups without a written problem statement; adhere to do‑not‑contact and compliance rules.
-**Nimble test we run** — Add a **discovery script** to the dialer/recording tool; template the CRM notes with fields for **JTBD, Problem‑Fit (Y/N), Next Step**; auto‑flag calls missing the checklist in the weekly review. Pilot on **ICP Segment S** only.
+**Fix — techniques and steps**
 
-**Artifact** — Discovery questions: 1) What job are you trying to get done? 2) What’s the impact if it works? 3) Why now?
+Demo‑first activity is high; qualified opps are stuck. We’ll require 8 minutes of structured discovery before any demo and adopt a “no‑fit, no‑demo” rule. We’ll judge by discovery completion and conversion, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-**15‑minute review** — Sample two calls per rep: was the job stated? Did the "why now" show up? Did the demo match the job? Coach or iterate; promote if the outcome moves.
+- Aim — Raise qualified opportunity rate 9% → 15% (ICP Segment S, 4 weeks)
 
-**Decision Log example** — Aim: opp conversion 9% → 15% (Segment S) • Mechanism: discovery‑first + no‑fit, no‑demo • Signals/Checkpoint: discovery ≥80% AND conversion +3 pts; else change/stop.
+- Techniques (why + specifics)
+  - Anthropologist Hat — Why: name the appearance loop; write the problem before the pitch.
+    - Mechanism — 8 minutes of structured discovery (JTBD, impact, urgency) before any demo; “no‑fit, no‑demo” rule
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
+  - Novelty Quota — Why: one safe deviation from demo‑first to discovery‑first.
+    - Nimble test we run — Add a discovery script to the dialer; template CRM notes (JTBD, Problem‑Fit Y/N, Next Step); auto‑flag missing checklists; pilot on Segment S only
+    - Artifact — Discovery questions: 1) What job are you trying to get done? 2) What’s the impact if it works? 3) Why now?
+  - Short checkpoint — Why: turn signals into a decision and prevent thrash.
+    - Signals — % of calls with discovery checklist completed; % of demos ≤10 minutes when problem‑fit is confirmed; Outcome: opportunity conversion rate
+    - Checkpoint rule — Continue if discovery ≥80% AND conversion +3 pts; else change/stop (15‑minute review)
+  - Guardrails — Why: protect trust and compliance.
+    - Do‑not‑pitch if no fit; ≤2 follow‑ups without a written problem statement
+    - Adhere to do‑not‑contact and compliance rules
 
-<div class="callout callout--metric" markdown="1">
-**Why this works (and stays safe)**
-- **Novelty Quota** — Gives permission to try **discovery‑first** as the one deviation (vs. demo‑first) without blowing up the process.
-- **Anthropologist Hat** — Names the **Appearance Loop** (activity that looks good) and adds a balancing loop (evidence over activity in the review).
-- **Leader’s playbook steps** — 1 Aim • 2 Mechanism • 3 Signals + Checkpoint • 4 Guardrail • 5 Nimble test • 6 15‑min review.
-</div>
+- Owner and timing — Sales manager • Prep 20m • Ship 2h • Review 15m
 
-**What to share** — Discovery completion ≥80% and opportunity rate +3 pts; coach with call snippets.
+
+
+**Takeaway** — Discovery completion ≥80% and opportunity rate +3 pts; coach with call snippets.
 
 *System shifts: higher bar on looks‑good metrics (no demo without problem); faster nimble tests (discovery‑first); more weight on results (opportunity conversion).*
 
@@ -514,36 +528,42 @@ Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guar
 
 If this sounds like you: rewrite ideas show up before a single measurement.
 
-**Context** — Checkout complaints spike at peak. Support tickets are up **+22%**. p95 on **/price/quote** is **450ms** with spikes above **700ms**. The error budget is burning; SLAs are at risk ahead of seasonal traffic.
+**Context**
 
-**What happened** — In triage, the first idea was a full rewrite. That would push the fix out by months while customers keep timing out on checkout.
+- Checkout complaints spike at peak; support tickets are up **+22%**.
+- p95 on **/price/quote** is **450ms** with spikes above **700ms**.
+- The error budget is burning; SLAs are at risk ahead of seasonal traffic.
 
-**Fix — apply the pattern**
+**What happened**
 
-Owner: SRE lead • Prep: 20m • Ship: 2h • Review: 15m
-Copy‑paste checklist — Aim • Mechanism • Signals • Checkpoint • Guardrails
+- In triage, the first idea was a full rewrite.
+- That would push the fix out by months while customers keep timing out on checkout.
 
-**Context** — Users report intermittent timeouts on the checkout flow; support tickets up **+22%**. Team proposes a service rewrite. p95 latency on the **/price/quote** endpoint sits at **450ms**, spiking past **700ms** under load.
-**Aim** — Reduce **p95 latency** on **/price/quote** for Segment S from **450ms → 250ms** and cut **checkout timeouts** from **1.8% → 0.6%** within 4 weeks.
-**Mechanism** — We believe **precomputing hot inputs** and adding a **read‑through cache** (fetches from source on miss) for the heavy quote calculation will improve p95 **because** we eliminate repeated I/O and long tails from cold starts and N+1 queries.
-**Feedback** — Proxy: **p95/p99** latency on **/price/quote** (Segment S only); Leading: **queue depth** and **cache hit rate**; Outcome: **task success rate** for checkout + **support tickets per 1k sessions**.
-**Checkpoint (short)** — Continue if **p95 −25%** and **timeouts −50%** on the flagged cohort; else change the mechanism (e.g., pool sizing, query plan) or kill.
-**Guardrails (Safety net)** — Error rate ≤ **0.1%**; do **not** exceed error budget; rollout limited to **10%** of Segment S behind a feature flag; rollback plan documented.
-**Nimble test we run** — Add a **read‑through cache** (TTL 5m) for the quote function; precompute inputs nightly; instrument a **per‑segment dashboard** (latency, hit rate, queue depth, timeouts); release behind a flag to **10%** of Segment S.
-**Artifact** — Dashboard focus: p95 latency, cache hit rate, timeout %.
+**Fix — techniques and steps**
 
-**15‑minute review** — Check latency distribution (p95/p99), cache hit rate, timeout rate, and tickets. Promote, iterate, or roll back based on the gate.
+Customers are timing out; the first impulse is a rewrite. Instead, we’ll precompute hot inputs and add a read‑through cache to relieve p95 quickly. We’ll judge by p95 and timeouts on a flagged cohort, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-**Decision Log example** — Aim: p95 450ms → 250ms; timeouts 1.8% → 0.6% (Segment S) • Mechanism: precompute hot inputs + read‑through cache • Signals/Checkpoint: p95 −25% AND timeouts −50%; else change/stop.
+- Aim — Reduce p95 on /price/quote 450ms → 250ms and timeouts 1.8% → 0.6% (Segment S, 4 weeks)
 
-<div class="callout callout--metric" markdown="1">
-**Why this works (and stays safe)**
-- **Novelty Quota** — Encourages one **infra deviation** (cache + precompute) within strict guardrails, rather than a risky rewrite.
- - **Anthropologist Hat** — Names the **Thrash Loop** (rewrite impulse → months of thrash) and adds a balancing loop (test‑and‑measure with error‑budget guardrails).
-- **Leader’s playbook steps** — 1 Aim • 2 Mechanism • 3 Signals + Checkpoint • 4 Guardrail • 5 Nimble test • 6 15‑min review.
-</div>
+- Techniques (why + specifics)
+  - Anthropologist Hat — Why: name the thrash loop (rewrite impulse) and write the causal change.
+    - Mechanism — Precompute hot inputs + add a read‑through cache (fetch from source on miss) to cut tail latency
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
+  - Novelty Quota — Why: one safe deviation from rewrite to a bounded, testable change.
+    - Nimble test we run — Add a read‑through cache (TTL 5m); precompute inputs nightly; instrument a per‑segment dashboard (latency, hit rate, queue depth, timeouts); release to 10% of Segment S behind a flag
+    - Artifact — Dashboard focus: p95 latency, cache hit rate, timeout %
+  - Short checkpoint — Why: turn signals into a decision and prevent thrash.
+    - Signals — p95/p99 on /price/quote (Segment S only); queue depth; cache hit rate; Outcome: task success rate + support tickets per 1k sessions
+    - Checkpoint rule — Continue if p95 −25% AND timeouts −50%; else change/stop (15‑minute review)
+  - Guardrails — Why: protect users and error budget.
+    - Error rate ≤0.1%; do not exceed error budget
+    - Rollout ≤10% behind a feature flag; documented rollback plan
 
-**What to share** — p95 −25% in the pilot cohort; publish before/after in the weekly rollup.
+- Owner and timing — SRE lead • Prep 20m • Ship 2h • Review 15m
+
+
+
+**Takeaway** — p95 −25% in the pilot cohort; publish before/after in the weekly rollup.
 
 *System shifts: stronger safety net (error‑budget guardrails); faster nimble tests (cache change); better visibility (per‑segment dashboard).*
 
