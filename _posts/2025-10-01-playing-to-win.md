@@ -16,10 +16,12 @@ excerpt: "Shift from looks to results: guardrails + short checkpoints + nimble t
 If your week feels busy but thin on outcomes, you’re not alone. Treat this as a field guide: we’ll name the rut, show a close‑up, and add a few small moves that make results the default.
 
 Who this is for
+
 - Leaders who want outcomes without heroics.
 - Teams tired of KPI theater who want a safer way to try better work.
 
 What you’ll get
+
 - A simple language for the rut and why it persists.
 - Four small techniques (safety net + nimble tests) you can install.
 - Four real scenes with copy‑and‑run fixes.
@@ -47,15 +49,13 @@ If your org feels busy but underachieving, the problem isn’t the people. It’
 
 <div class="callout callout--note" markdown="1">
 **How to use this piece**
-- **Problem** — What the *phoning-it-in equilibrium* looks like → [The equilibrium](#the-phoning-it-in-equilibrium)
-- **System fix** — The **behavioral barbell** (Safety net + Nimble tests) → [Leadership stance](#leadership-stance-the-behavioral-barbell)
-- **Leadership as equilibrium work** — Shift the default with barbell processes → [Leadership as equilibrium work](#leadership-as-equilibrium-work)
-- **Mental models** — Definitions with sources → [Mental models](#mental-models)
-- **Tiny strategy** — **Aim • Mechanism • Feedback** + **short checkpoint** → [Strategy, made small](#strategy-made-small)
-- **Weekly ritual** — The 6-step loop → [Leader’s playbook](#leaders-playbook)
-- **Examples** — Real scenes + barbell rewrites → [Scenes & Fixes](#scenes--fixes-field-notes)
-- **Techniques** — Novelty Quota, Anthropologist Hat → [Practice modules](#practice-modules)
-- **FAQ + Worksheets** — Objections + templates → [FAQ](#faq-skeptic’s-corner) • [Appendices](#appendices-worksheets)
+- **Problem** — What the *phoning-it-in equilibrium* looks like → [The equilibrium](#the-phoning-it-in-equilibrium).
+- **The behavioral barbell (system fix)** — Safety net + Nimble tests → [Leadership stance](#leadership-stance-the-behavioral-barbell).
+- **Leadership as equilibrium work** — Shift the default with barbell processes → [Leadership as equilibrium work](#leadership-as-equilibrium-work).
+- **Mental models** — Definitions with sources → [Mental models](#mental-models).
+- **Action guide** — Strategy • Ritual • Techniques → [Action guide](#action-guide).
+- **Examples** — Real scenes + barbell rewrites → [Scenes & Fixes](#scenes--fixes-field-notes).
+- **FAQ + Worksheets** — Objections + templates → [FAQ](#faq-skeptic’s-corner) • [Appendices](#appendices-worksheets).
 </div>
 
 <a id="leadership-as-equilibrium-work"></a>
@@ -74,18 +74,15 @@ If your org feels busy but underachieving, the problem isn’t the people. It’
 4. **Re‑stabilize** by updating **Safety‑net processes** (defaults, guardrails, Definition of Done).
 5. **Make it stick** with a **reward swap** (activity → evidence) so the new basin holds.
 
-One way to think about it: leadership is about creating a **managed disequilibrium** with enough variance to learn fast but enough safety net to survive the learning.
+### Management ≠ Leadership ≠ Management
 
-<div class="callout callout--note" markdown="1">
-**Use ‘Our Iceberg Is Melting’ to kick off the Change loop**
-- Start with urgency: one clear "why now" for a specific segment.
-- Form a small guiding team (4–7) with credibility and authority.
-- Design short-term wins (nimble tests that create visible, unambiguous success).
-- Don’t let up; make it stick (promote winners to defaults; raise the bar next cycle).
-_Reference: *Our Iceberg Is Melting* (Kotter & Rathgeber)._
-</div>
+One of the easiest traps is collapsing leadership and management into the same thing. They overlap, but they’re not synonyms:
+
+- Management → Service: Management is about helping people do the job well: clearing distractions, building structures, enabling mastery, and connecting them to the resources they need. Done right, it’s a service posture: “How do I help you succeed and make sure the org sees it?” ￼ ￼.
+- Leadership → Disequilibrium: Leadership is about awareness and direction. It’s sensing shocks, naming the Aim, and creating intentional disequilibrium: just enough variance to break inertia, paired with guardrails to make learning survivable ￼. Leadership channels energy that would otherwise scatter — setting tone, example, and Aim.
 
 <a id="leadership-stance-the-behavioral-barbell"></a>
+
 ### The behavioral barbell
 
 *The system fix: make the safety net real and the nimble tests ambitious.*
@@ -139,6 +136,7 @@ This approach needs (a) minimal instrumentation, (b) schedule discipline for the
 
 Next: what the don’t-lose rut feels like day to day (and why it persists).
 
+<a id="the-phoning-it-in-equilibrium"></a>
 ## The phoning-it-in equilibrium
 
 *What it feels like when the system rewards looking busy. Signs and loops to name it.*
@@ -252,7 +250,14 @@ Short handles you can point to in reviews and docs. Each has a source or example
 
 *(Source: John Kotter & Holger Rathgeber, 2006).*
 
+<a id="action-guide"></a>
+
+## Action guide
+
+Three parts you can run together this week: a tiny strategy, a weekly ritual, and two techniques that make trying better work safe.
+
 <a id="strategy-made-small"></a>
+
 ### Strategy, made small
 
 *Three sentences that replace a strategy deck.*
@@ -294,6 +299,7 @@ Pair this with a **short checkpoint**: what we expect to learn, and the decision
 **Example:** More lifecycle emails → higher **open rates/sessions**, but **activation** is flat. That’s proxy-chasing.
 
 **Sources:**
+
 - Eric Ries, "Vanity Metrics vs. Actionable Metrics" (2009) — avoid intermediate metrics like click-through rate in favor of customer behaviors that drive value ([link](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)).
 - Mixpanel, "What are vanity metrics?" — vanity metrics aren’t tied to user value ([link](https://mixpanel.com/blog/vanity-metrics/)).
 - "Open rate" — tracking is unreliable and often misleading ([link](https://en.wikipedia.org/wiki/Open_rate)).
@@ -301,48 +307,58 @@ Pair this with a **short checkpoint**: what we expect to learn, and the decision
 </div>
 
 <a id="leaders-playbook"></a>
-## Leader’s playbook
+
+### Leader’s playbook
 
 *A weekly ritual you can run tomorrow.*
 
 *This is the Change loop: sense → name → test (small change) → stabilize (Safety‑net update) → institutionalize (reward swap).*
 
+Run this loop weekly to keep momentum and prevent thrash.
+
 Here are tools for your toolbelt:
 
-- **Co-author the Aim**
+- **Co-author the Aim**.
    *Prompt:* "What user behavior change would prove we created value?"
    *Artifact:* one-sentence Aim + definition of done.
-- **Name the Mechanism**
+- **Name the Mechanism**.
    *Template:* "We believe **X** will move **Y** because **Z**."
    *Artifact:* the mechanism sentence right under the Aim.
-- **Pick two Feedback signals + a Checkpoint**
+- **Pick two Feedback signals + a Checkpoint**.
    One proxy (should move first) and one outcome metric. Add a short decision rule.
-- **Install Guardrails (the safety net)**
+- **Install Guardrails (the safety net)**.
    One SLI/SLO to protect users; a simple Definition of Done checklist:
   - [ ] User behavior to verify is stated.
-  - [ ] Guardrail SLI/SLO attached
-  - [ ] Rollback/kill path written
-  - [ ] Owner + date for 15-minute review set
-  - [ ] Decision log entry stubbed (Aim, Mechanism, Signals, Checkpoint)
-- **Run a Nimble Test**
+  - [ ] Guardrail SLI/SLO attached.
+  - [ ] Rollback/kill path written.
+  - [ ] Owner + date for 15-minute review set.
+  - [ ] Decision log entry stubbed (Aim, Mechanism, Signals, Checkpoint).
+- **Run a Nimble Test**.
    The smallest change likely to move the proxy. Ship weekly.
-- **Run a 15-minute Review, every 1-2 weeks**
+- **Run a 15-minute Review, every 1-2 weeks**.
    Ask: *What changed? What didn’t? Why?* Decide: continue, change, or stop. Capture a 3-line decision log.
 
 <a id="practice-modules"></a>
-## Practice modules
+
+### Techniques (practices)
 
 Two techniques you’ll use in the fixes below. Each has a job; together they make trying better work safe.
 
-- Novelty Quota (one safe deviation per cycle)
-  - Why: prevent ruts by requiring one small deviation from the reflex (e.g., from "send more email" to an in‑product prompt, or from demo‑first to discovery‑first).
-  - How: write the deviation on the one‑pager; bound it with a short checkpoint and guardrails; review in 15 minutes.
-  - Worksheet: see Appendix A (Novelty Quota Worksheet).
+<a id="novelty-quota"></a>
 
-- Anthropologist Hat (name the mechanism + loop)
-  - Why: replace vibe-based plans with explicit “because” statements; surface the reinforcing loops holding the rut in place.
-  - How: write one paragraph: Aim • Mechanism (because…) • Signals • Checkpoint • Guardrail; log it before doing work.
-  - Template: see Appendix B (Anthropologist Hat — Case Template).
+#### Novelty Quota
+
+- Why: prevent ruts by requiring one small deviation from the reflex (e.g., from "send more email" to an in‑product prompt, or from demo‑first to discovery‑first).
+- How: write the deviation on the one‑pager; bound it with a short checkpoint and guardrails; review in 15 minutes.
+- Worksheet: see [Appendix A](#appendix-a) (Novelty Quota Worksheet).
+
+<a id="anthropologist-hat"></a>
+
+#### Anthropologist Hat
+
+- Why: replace vibe-based plans with explicit “because” statements; surface the reinforcing loops holding the rut in place.
+- How: write one paragraph: Aim • Mechanism (because…) • Signals • Checkpoint • Guardrail; log it before doing work.
+- Template: see [Appendix B](#appendix-b) (Anthropologist Hat — Case Template).
 
 
 **Why this works:** Safety → more honest signals. Mechanisms → less gaming. Short cycles → less thrash, more evidence.
@@ -354,7 +370,10 @@ Two techniques you’ll use in the fixes below. Each has a job; together they ma
 - Weekly review turns into status only (no continue/change/stop decisions).
 - Guardrails exist on paper but no one can say "stop".
 
+Next: see the Action guide applied in four real examples.
+
 <a id="scenes--fixes-field-notes"></a>
+
 ## Scenes & Fixes
 
 Situational examples of dysfunction and how we addressed them.
@@ -384,25 +403,25 @@ If this sounds like you: your deck glows green but you can’t name one behavior
 
 New signups stall before first value. Instead of more email, we’ll make the first win unmissable in‑product and send one targeted nudge only to users who stall. We’ll judge success by an early proxy and activation, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques, each with a clear job and concrete steps.
 
-- Aim — Increase activation 27% → 35% (Segment S, 14d)
+- Aim — Increase activation 27% → 35% (Segment S, 14d).
 
-- Techniques (why + specifics)
-  - Anthropologist Hat
+- Techniques (why + specifics).
+  - [Anthropologist Hat](#anthropologist-hat).
     - Why: name the KPI‑theater mechanism and loop; write the causal “because” before tactics.
-    - Mechanism — Make Action X unmissable in‑product + one targeted nudge to stalled users (removes confusion at Step N; reduces time‑to‑value)
-    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
-  - Novelty Quota — Why: force one safe deviation from “send more email” to a real, testable change.
-    - Nimble test we run — Add an in‑product checklist prompt; ship Segment S only; one triggered nudge >24h stall
+    - Mechanism — Make Action X unmissable in‑product + one targeted nudge to stalled users (removes confusion at Step N; reduces time‑to‑value).
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts.
+  - [Novelty Quota](#novelty-quota) — Why: force one safe deviation from “send more email” to a real, testable change.
+    - Nimble test we run — Add an in‑product checklist prompt; ship Segment S only; one triggered nudge >24h stall.
     - Artifact — “Start with Action X to get [first value] in under 2 minutes.”
   - Short checkpoint — Why: turn signals into a decision and prevent thrash.
-    - Signals — Proxy: % complete Action X in 24h; Leading: time‑to‑first‑action; Outcome: 14‑day activation
-    - Checkpoint rule — Continue if proxy +10% AND activation +3 pts; else change/stop (15‑minute review)
+    - Signals — Proxy: % complete Action X in 24h; Leading: time‑to‑first‑action; Outcome: 14‑day activation.
+    - Checkpoint rule — Continue if proxy +10% AND activation +3 pts; else change/stop (15‑minute review).
   - Guardrails — Why: protect users and timebox risk.
-    - SLI — Error ≤0.1%
-    - Outreach cap — ≤1 email per user/7 days
-    - Rollback — Documented plan before launch
+    - SLI — Error ≤0.1%.
+    - Outreach cap — ≤1 email per user/7 days.
+    - Rollback — Documented plan before launch.
 
-- Owner and timing — Product lead • Prep 20m • Ship 2h • Review 15m
+- Owner and timing — Product lead • Prep 20m • Ship 2h • Review 15m.
 
 **Takeaway** — Activation moves in Segment S this fortnight; celebrate the mechanism, not the email count.
 
@@ -420,7 +439,7 @@ If this sounds like you: reply rates are flat despite heavy outreach.
 
 - We need three **Staff Data Engineers** in 30 days to unblock a streaming pipeline.
 - Baseline last cycle: **6%** qualified screens per 100 messages.
-- Outreach is generic; the CRM has no field for "why you/why now."
+- Outreach is generic; the CRM has no field for "why you/why now.".
 
 **What happened**
 
@@ -432,23 +451,23 @@ If this sounds like you: reply rates are flat despite heavy outreach.
 
 Outreach is heavy and replies are flat. We’ll switch to reason‑first personalization that references the candidate’s work and maps it to the role’s outcome. We’ll judge by personalization rate and replies, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-- Aim — Raise qualified screen rate 6% → 12% (Staff Data Engineer, 4 weeks)
+- Aim — Raise qualified screen rate 6% → 12% (Staff Data Engineer, 4 weeks).
 
-- Techniques (why + specifics)
-  - Anthropologist Hat — Why: name the spray‑and‑pray reflex; write the “why‑you/why‑now” before tactics.
-    - Mechanism — High‑intent personalization (reference repo/talk + why this role now) with a 4‑touch sequence
-    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
-  - Novelty Quota — Why: force one safe deviation from template‑first to reason‑first.
-    - Nimble test we run — Add a reason‑first paragraph (one line that proves we read their work and why now); 4‑stage sequence; require repo/talk link in CRM to send
+- Techniques (why + specifics).
+  - [Anthropologist Hat](#anthropologist-hat) — Why: name the spray‑and‑pray reflex; write the “why‑you/why‑now” before tactics.
+    - Mechanism — High‑intent personalization (reference repo/talk + why this role now) with a 4‑touch sequence.
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts.
+  - [Novelty Quota](#novelty-quota) — Why: force one safe deviation from template‑first to reason‑first.
+    - Nimble test we run — Add a reason‑first paragraph (one line that proves we read their work and why now); 4‑stage sequence; require repo/talk link in CRM to send.
     - Artifact — “FirstName, your [repo/talk] on [topic] maps to our [outcome]… Up for a 12‑min screen?”
   - Short checkpoint — Why: turn signals into a decision and prevent thrash.
-    - Signals — Personalized outreach rate; reply rate to stage‑1 and cumulative across 4 touches; Outcome: qualified screens per 100
-    - Checkpoint rule — Continue if personalization ≥80% AND reply rate +25%; else change/stop (weekly review)
+    - Signals — Personalized outreach rate; reply rate to stage‑1 and cumulative across 4 touches; Outcome: qualified screens per 100.
+    - Checkpoint rule — Continue if personalization ≥80% AND reply rate +25%; else change/stop (weekly review).
   - Guardrails — Why: respect candidates and timebox risk.
-    - Do‑not‑contact honored; max 4 touches/14 days
-    - Keep outreach under 150 words; no bait‑and‑switch on scope/level
+    - Do‑not‑contact honored; max 4 touches/14 days.
+    - Keep outreach under 150 words; no bait‑and‑switch on scope/level.
 
-- Owner and timing — Recruiter • Prep 20m • Ship 2h • Review 15m
+- Owner and timing — Recruiter • Prep 20m • Ship 2h • Review 15m.
 
 <div class="callout callout--note" markdown="1">
 **Recruiting outreach: what works (evidence)**
@@ -493,23 +512,23 @@ If this sounds like you: demos are high and qualified opps are stuck at ~9%.
 
 Demo‑first activity is high; qualified opps are stuck. We’ll require 8 minutes of structured discovery before any demo and adopt a “no‑fit, no‑demo” rule. We’ll judge by discovery completion and conversion, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-- Aim — Raise qualified opportunity rate 9% → 15% (ICP Segment S, 4 weeks)
+- Aim — Raise qualified opportunity rate 9% → 15% (ICP Segment S, 4 weeks).
 
-- Techniques (why + specifics)
-  - Anthropologist Hat — Why: name the appearance loop; write the problem before the pitch.
-    - Mechanism — 8 minutes of structured discovery (JTBD, impact, urgency) before any demo; “no‑fit, no‑demo” rule
-    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
-  - Novelty Quota — Why: one safe deviation from demo‑first to discovery‑first.
-    - Nimble test we run — Add a discovery script to the dialer; template CRM notes (JTBD, Problem‑Fit Y/N, Next Step); auto‑flag missing checklists; pilot on Segment S only
+- Techniques (why + specifics).
+  - [Anthropologist Hat](#anthropologist-hat) — Why: name the appearance loop; write the problem before the pitch.
+    - Mechanism — 8 minutes of structured discovery (JTBD, impact, urgency) before any demo; “no‑fit, no‑demo” rule.
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts.
+  - [Novelty Quota](#novelty-quota) — Why: one safe deviation from demo‑first to discovery‑first.
+    - Nimble test we run — Add a discovery script to the dialer; template CRM notes (JTBD, Problem‑Fit Y/N, Next Step); auto‑flag missing checklists; pilot on Segment S only.
     - Artifact — Discovery questions: 1) What job are you trying to get done? 2) What’s the impact if it works? 3) Why now?
   - Short checkpoint — Why: turn signals into a decision and prevent thrash.
-    - Signals — % of calls with discovery checklist completed; % of demos ≤10 minutes when problem‑fit is confirmed; Outcome: opportunity conversion rate
-    - Checkpoint rule — Continue if discovery ≥80% AND conversion +3 pts; else change/stop (15‑minute review)
+    - Signals — % of calls with discovery checklist completed; % of demos ≤10 minutes when problem‑fit is confirmed; Outcome: opportunity conversion rate.
+    - Checkpoint rule — Continue if discovery ≥80% AND conversion +3 pts; else change/stop (15‑minute review).
   - Guardrails — Why: protect trust and compliance.
-    - Do‑not‑pitch if no fit; ≤2 follow‑ups without a written problem statement
-    - Adhere to do‑not‑contact and compliance rules
+    - Do‑not‑pitch if no fit; ≤2 follow‑ups without a written problem statement.
+    - Adhere to do‑not‑contact and compliance rules.
 
-- Owner and timing — Sales manager • Prep 20m • Ship 2h • Review 15m
+- Owner and timing — Sales manager • Prep 20m • Ship 2h • Review 15m.
 
 
 
@@ -540,23 +559,23 @@ If this sounds like you: rewrite ideas show up before a single measurement.
 
 Customers are timing out; the first impulse is a rewrite. Instead, we’ll precompute hot inputs and add a read‑through cache to relieve p95 quickly. We’ll judge by p95 and timeouts on a flagged cohort, inside guardrails, then decide in a 15‑minute review to continue, change, or stop. We apply four techniques with clear jobs and steps.
 
-- Aim — Reduce p95 on /price/quote 450ms → 250ms and timeouts 1.8% → 0.6% (Segment S, 4 weeks)
+- Aim — Reduce p95 on /price/quote 450ms → 250ms and timeouts 1.8% → 0.6% (Segment S, 4 weeks).
 
-- Techniques (why + specifics)
-  - Anthropologist Hat — Why: name the thrash loop (rewrite impulse) and write the causal change.
-    - Mechanism — Precompute hot inputs + add a read‑through cache (fetch from source on miss) to cut tail latency
-    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts
-  - Novelty Quota — Why: one safe deviation from rewrite to a bounded, testable change.
-    - Nimble test we run — Add a read‑through cache (TTL 5m); precompute inputs nightly; instrument a per‑segment dashboard (latency, hit rate, queue depth, timeouts); release to 10% of Segment S behind a flag
-    - Artifact — Dashboard focus: p95 latency, cache hit rate, timeout %
+- Techniques (why + specifics).
+  - [Anthropologist Hat](#anthropologist-hat) — Why: name the thrash loop (rewrite impulse) and write the causal change.
+    - Mechanism — Precompute hot inputs + add a read‑through cache (fetch from source on miss) to cut tail latency.
+    - Decision log — Aim, Mechanism, Signals/Checkpoint captured before work starts.
+  - [Novelty Quota](#novelty-quota) — Why: one safe deviation from rewrite to a bounded, testable change.
+    - Nimble test we run — Add a read‑through cache (TTL 5m); precompute inputs nightly; instrument a per‑segment dashboard (latency, hit rate, queue depth, timeouts); release to 10% of Segment S behind a flag.
+    - Artifact — Dashboard focus: p95 latency, cache hit rate, timeout%.
   - Short checkpoint — Why: turn signals into a decision and prevent thrash.
-    - Signals — p95/p99 on /price/quote (Segment S only); queue depth; cache hit rate; Outcome: task success rate + support tickets per 1k sessions
-    - Checkpoint rule — Continue if p95 −25% AND timeouts −50%; else change/stop (15‑minute review)
+    - Signals — p95/p99 on /price/quote (Segment S only); queue depth; cache hit rate; Outcome: task success rate + support tickets per 1k sessions.
+    - Checkpoint rule — Continue if p95 −25% AND timeouts −50%; else change/stop (15‑minute review).
   - Guardrails — Why: protect users and error budget.
-    - Error rate ≤0.1%; do not exceed error budget
-    - Rollout ≤10% behind a feature flag; documented rollback plan
+    - Error rate ≤0.1%; do not exceed error budget.
+    - Rollout ≤10% behind a feature flag; documented rollback plan.
 
-- Owner and timing — SRE lead • Prep 20m • Ship 2h • Review 15m
+- Owner and timing — SRE lead • Prep 20m • Ship 2h • Review 15m.
 
 
 
@@ -565,6 +584,7 @@ Customers are timing out; the first impulse is a rewrite. Instead, we’ll preco
 *System shifts: stronger safety net (error‑budget guardrails); faster nimble tests (cache change); better visibility (per‑segment dashboard).*
 
 <a id="faq-skeptic’s-corner"></a>
+
 ## FAQ (skeptic’s corner)
 
 **Isn’t this slower?**
@@ -617,9 +637,9 @@ You still control **recognition**. Praise and promotions are strong signals. Pub
 Start with **directionally reliable** signals you can observe this week. Use segments and event counts you *trust*, even if imperfect. Log assumptions in the decision log. Improve instrumentation as a follow-on slice. Imperfect + fast beats perfect + late.
 
 **Cross-team dependencies make weekly slices impossible.**
-Shrink the slice to what your team can ship without external help (content, copy, default toggles, UI affordance, docs, sampling, cohort selection). Use the **Anthropologist Hat** to map the dependency loop and add a **balancing loop** (e.g., a cross-team 30-minute weekly unblocker with a rotating chair and a 3-line decision log).
+Shrink the slice to what your team can ship without external help (content, copy, default toggles, UI affordance, docs, sampling, cohort selection). Use the [Anthropologist Hat](#anthropologist-hat) to map the dependency loop and add a **balancing loop** (e.g., a cross-team 30-minute weekly unblocker with a rotating chair and a 3-line decision log).
 
-**Won’t a Novelty Quota create chaos?**
+**Won’t a [Novelty Quota](#novelty-quota) create chaos?**
 Not if the **Floor** is real: clear defaults, guardrails, and a quota limited to **one explicit deviation** per cycle. Label deviations, review them, and fold winners into defaults. That’s exploration without entropy.
 
 **How do we scale this beyond one team?**
@@ -637,6 +657,7 @@ Take one scene you recognize (QBR, Sales, Recruiting). Write the **one-pager** (
 ---
 
 <a id="appendices-worksheets"></a>
+
 ## Appendices (worksheets)
 
 <a id="appendix-a"></a>
@@ -700,11 +721,13 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 **Purpose** — Make the **Floor** explicit (defaults, guardrails) and the **Ceiling** deliberate (three mechanism slices with gates).
 
 **Floor (don’t lose)**
+
 - **Defaults:** frameworks/process/infra we start from.
 - **Guardrails:** 1 SLI/SLO + rollback path + flag/rollout limits.
 - **Non‑negotiables:** security, privacy, compliance tasks baked in.
 
 **Ceiling (play to win)**
+
 - **Slices:** three bounded mechanism tests with signals and 2‑week gates.
 - **Novelty Quota:** ≥1 deviation per cycle.
 - **Visibility:** decision log + weekly 15‑minute review.
@@ -737,30 +760,10 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 - Broadcast plan (wins and where we need help)?
 - Don’t‑let‑up plan (what we raise or trim next cycle)?
 - Make‑it‑stick plan (default update, onboarding snippet, reward swap)?
+
 *Ref: *Our Iceberg Is Melting* (Kotter & Rathgeber).*
 
 </details>
-**Reinforcing (Vicious) Loops**
-
-- *Appearance Loop* — Cause → Effect → Reinforcement.
-- *Silo Loop* — Cause → Effect → Reinforcement.
-- *Drift Loop* — Cause → Effect → Reinforcement.
-- *Silence Loop* — Cause → Effect → Reinforcement.
-
-**Balancing Loops** (shock absorbers)
-
-- **Context & “How?” Checkpoint** — one-page outline (Aim, levers, guardrails, milestones, next feedback checkpoint).
-- **Cross-Team 1:1s** — early misalignment detection.
-- **Mini Prototype** — stage-gate sanity check (make progress visible).
-- **Publish v0.0.1 + Retros** — fast feedback rhythm.
-
-**Roll-Out & Templateization** — apply to two more use-cases; capture steps into a reusable playbook.
-
-**Decision Log Snippet**
-Date • Aim • Mechanism • Signals • Gate • Decision.
-
-</details>
-
 
 
 <style>
