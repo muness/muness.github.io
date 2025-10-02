@@ -28,13 +28,17 @@ What you’ll get
 
 Left alone, companies settle into a **false equilibrium**—the **don’t‑lose** rut. It looks safe but traps energy; people do work that looks good instead of work that helps users. Leadership isn’t heroics; it’s changing the setup so real results win by default.
 
+Before we jump into definitions and fixes, here’s a quick snapshot from the field to make the problem concrete.
+
+Recently, someone I coach described their week: dashboards up, Slack hot, pilots spinning, and review decks growing—yet the outcome that mattered stayed flat. It felt like momentum because it was busy and safe; it wasn’t progress because no mechanism was written down. We agreed to name what was actually happening, not what we wished was true.
+
 **A quick close‑up**
 
 I put on an anthropologist hat and wrote down what I was seeing: cultural habits, symptoms, and the loops that reinforced them. Faux alignment got rewarded. Thrash hid in “pilot” land. Silence felt safer than surfacing a bad assumption. I couldn’t circulate it widely; folks read it as “rocking the boat.” That was the sign: **naming the mechanism felt unsafe**. That’s what a play-not-to-lose culture does to smart people.
 
 **Why this happens**
 
-I don’t blame anyone. When **bad hits harder than good** and the reward system pays for A while hoping for B, teams optimize for what looks safe. You get "phoning it in": work that is legible and safe, but not causal.
+I don’t blame anyone — this is a predictable systems outcome. **Bad is stronger than good** and the incentives reward for A while hoping for B, teams rationally optimize for safety. You should expect to see this unless leadership steps up. You get "phoning it in": work that is obvious and safe, but not impactful.
 
 **The plan**
 
@@ -96,23 +100,6 @@ Design both, explicitly. The barbell works because the **disequilibrium is balan
 
 Nimble tests every week; big moves when the evidence is strong.
 
-<div class="callout callout--note" markdown="1">
-
-**Terms you’ll see**
-
-- **Safety net** — Safety net + clarity: guardrails, defaults, Definition of Done.
-- **Nimble tests** — Small, bounded tests that validate a mechanism.
-- **Barbell processes** — The small rituals & artifacts that make the barbell real (Safety‑net processes + Nimble‑test processes).
-- **Nimble test (mechanism)** — Smallest change likely to move a signal this week.
-- **Checkpoint (short)** — Evidence check: continue / change / stop.
-- **Decision log** — 3 lines: Aim • Mechanism • Signals/Checkpoint.
-- **SLI/SLO** — Service‑level indicators/objectives: the metrics and targets that protect users (e.g., error rate, latency) and guide safe rollout.
-- **Guardrail** — User-protecting rule (SLI/SLO, rollout limit, rollback path).
-- **Safety‑net processes** — guardrails, defaults, Definition of Done, weekly review.
-- **Nimble‑test processes** — nimble tests, checkpoints, novelty quota, decision log.
-
-</div>
-
 *See mental model: [Psychological safety](#mm-psych).*
 
 **Before/After: default vs. barbell**
@@ -128,15 +115,8 @@ Nimble tests every week; big moves when the evidence is strong.
 
 *See mental model: [Threat‑rigidity](#mm-threat).*
 
-<div class="callout callout--risk" markdown="1">
-
-**Trade-offs & limits**
-This approach needs (a) minimal instrumentation, (b) schedule discipline for the 15-minute review, and (c) leaders who protect the safety net. It will feel slower in week one, faster by week four. Not a fit for **irreversible, high-blast-radius** changes where safe-to-fail doesn’t exist—sequence those behind spikes/prototypes first. If guardrails are vague or owners can’t say **stop**, fix the safety net before running nimble tests.
-</div>
-
-Next: what the don’t-lose rut feels like day to day (and why it persists).
-
 <a id="the-phoning-it-in-equilibrium"></a>
+
 ## The phoning-it-in equilibrium
 
 *What it feels like when the system rewards looking busy. Signs and loops to name it.*
@@ -299,7 +279,7 @@ Two techniques you’ll use in the fixes below. Each has a job; together they ma
 
 - Why: prevent ruts by requiring one small deviation from the reflex (e.g., from "send more email" to an in‑product prompt, or from demo‑first to discovery‑first).
 - How: write the deviation on the one‑pager; bound it with a short checkpoint and guardrails; review in 15 minutes.
-- Worksheet: see [Appendix A](#appendix-a) (Novelty Quota Worksheet).
+- Worksheet: see [Appendix B](#appendix-b) (Novelty Quota Worksheet).
 
 <a id="anthropologist-hat"></a>
 
@@ -307,7 +287,7 @@ Two techniques you’ll use in the fixes below. Each has a job; together they ma
 
 - Why: replace vibe-based plans with explicit “because” statements; surface the reinforcing loops holding the rut in place.
 - How: write one paragraph: Aim • Mechanism (because…) • Signals • Checkpoint • Guardrail; log it before doing work.
-- Template: see [Appendix B](#appendix-b) (Anthropologist Hat — Case Template).
+- Template: see [Appendix C](#appendix-c) (Anthropologist Hat — Case Template).
 
 
 **Why this works:** Safety → more honest signals. Mechanisms → less gaming. Short cycles → less thrash, more evidence.
@@ -569,16 +549,6 @@ Yes. Put non-negotiables in the **Floor** (security, privacy, regulatory steps).
 **What if my execs only want big bets?**
 Offer a **barbell one-pager**: Aim → Mechanism → two signals → 2-week gate → guardrail → cost of the slice. Ask for permission to run **three slices** before the next big review. Big bets are fine—*after* we’ve found a working mechanism.
 
-<div class="callout callout--law" markdown="1">
-**The upward ask (one-pager template)**
-**Aim:** …
-**Mechanism:** “We believe X will move Y because Z.”
-**Signals:** Proxy + Outcome.
-**Gate (2 wks):** Continue if …
-**Guardrail:** …
-**Slice:** What ships in 1 week and who owns it.
-</div>
-
 **I don’t control comp/bonuses. How do I fix “rewarding A while hoping for B”?**
 You still control **recognition**. Praise and promotions are strong signals. Publicly celebrate **evidence of mechanisms working** (even small wins), and kills that saved cycles. Propose one compensation tweak per quarter: swap one activity metric for an evidence metric.
 
@@ -611,9 +581,9 @@ Leadership is **disequilibrium made safe**: just enough disruption to move forwa
 
 ## Appendices (worksheets)
 
-<a id="appendix-e"></a>
+<a id="appendix-a"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix E: Mental models & definitions</strong> (click to expand)</summary>
+<summary><strong>Appendix A: Mental models & definitions</strong> (click to expand)</summary>
 
 <a id="mental-models"></a>
 
@@ -657,9 +627,9 @@ Short handles you can point to in reviews and docs. Each has a source or example
 **‘Our Iceberg Is Melting’ (intentional change management)** — A structured 8‑step process for leading change. See [Appendix F](#appendix-f) for the steps.
 
 </details>
-<a id="appendix-a"></a>
+<a id="appendix-b"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix A: Novelty Quota Worksheet</strong> (click to expand)</summary>
+<summary><strong>Appendix B: Novelty Quota Worksheet</strong> (click to expand)</summary>
 
 **Purpose** — Keep the floor safe while forcing exploration.
 
@@ -683,9 +653,9 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 </details>
 
-<a id="appendix-b"></a>
+<a id="appendix-c"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix B: Anthropologist Hat — Case Template</strong> (click to expand)</summary>
+<summary><strong>Appendix C: Anthropologist Hat — Case Template</strong> (click to expand)</summary>
 
 **Context** — Where you’re seeing friction (team/vertical/domain).
 **Cultural Traits** — e.g., Big goals, no guidance • Context vacuum • Siloed incentives • Conflict aversion.
@@ -696,9 +666,9 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 </details>
 
-<a id="appendix-c"></a>
+<a id="appendix-d"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix C: One‑Page Alignment Sheet</strong> (click to expand)</summary>
+<summary><strong>Appendix D: One‑Page Alignment Sheet</strong> (click to expand)</summary>
 
 | Field | Description |
 |---|---|
@@ -711,9 +681,9 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 </details>
 
-<a id="appendix-d"></a>
+<a id="appendix-e"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix D: Barbell Plan (Floor + Ceiling)</strong> (click to expand)</summary>
+<summary><strong>Appendix E: Barbell Plan (Floor + Ceiling)</strong> (click to expand)</summary>
 
 **Purpose** — Make the **Floor** explicit (defaults, guardrails) and the **Ceiling** deliberate (three mechanism slices with gates).
 
@@ -731,7 +701,7 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 
 </details>
 
- 
+
 
 <a id="appendix-f"></a>
 <details class="worksheet" markdown="1">
@@ -746,7 +716,7 @@ At cycle end, promote winners to defaults; retire the rest; capture one lesson.
 7. Don’t let up; make it stick.
 8. Institutionalize: update defaults/rewards so the new equilibrium holds.
 
-*(Source: John Kotter & Holger Rathgeber, 2006).* 
+*(Source: John Kotter & Holger Rathgeber, 2006).*
 
 </details>
 
