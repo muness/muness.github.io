@@ -9,11 +9,13 @@ excerpt: "Alignment through safe disequilibrium: stop ticket-factory motion, aim
 
 ## Alignment Through Disequilibrium
 
-The current moment makes the problem painfully clear. We are not going to increment our way to the hundred-fold power that the next decade will demand—whether that’s computational capacity for AI models or the rare metals needed to build them. Iteration is safe and comforting, but it is also a kind of slow death. It preserves motion without momentum, a pattern of competent repetition that looks like progress until you compare it to what the world actually requires. The rare-earth story is proof of what happens when systems optimize for stability instead of evolution.
+The current moment makes the problem painfully clear. We are not going to increment our way to the hundred-fold power that the next decade will demand—whether that’s computational capacity for AI models or the rare metals needed to build them. Iteration is safe and comforting, but without a unifying intent it becomes a slow death. It preserves motion without momentum, a pattern of competent repetition that looks like progress until you compare it to what the world actually requires. The rare-earth story is proof of what happens when systems optimize for stability instead of evolution.
 
 In the 1990s the West congratulated itself for “protecting the environment” by shuttering mines and offshoring processing. The pollution didn’t disappear; it migrated to China, where the environmental impact grew worse but the industrial capability deepened. We optimized for virtue signals—clean hands and local optics—while China optimized for capability, aligning its industrial policy, foreign investment, and scientific research around control of critical materials. What looked like environmental responsibility was, in systemic terms, a transfer of learning. The result was dependence, not progress. Misalignment on intent—confusing looking good for doing good—always compounds into fragility.
 
 That macro failure mirrors what happens inside most organizations. Platform and data teams often behave like miniature versions of the West’s rare-earth policy: outsourcing discomfort, polishing the surface, and measuring the wrong things. The language changes—tickets instead of mines, refactors instead of environmental protections—but the pattern is the same. Work becomes about equilibrium, about staying busy and stable rather than learning. True leverage comes from the opposite: from alignment sustained through deliberate, managed instability.
+
+By alignment I mean three things held at once: a shared intent people can name, incentives that don’t punish acting on it, and feedback that’s visible enough to correct course.
 
 ---
 
@@ -50,7 +52,7 @@ Alignment failures come in several recognizable forms:
 - Cognitive Local Maxima — Experimentation without theory. Endless A/B tests tune the hill you’re already on. Hypothesis-driven loops, grounded in causal reasoning, are how teams leap to new terrain.
 - Moral Optics Alignment — Optimizing for appearances instead of outcomes. We close the mine to look responsible, or rewrite the platform to look modern. Keeping feedback inside the system—where we must face it—is the only cure.
 
-These are not separate problems but facets of the same constraint. Each form of misalignment is a local equilibrium the organization defends because it feels safe. The leader’s work is to identify which constraint dominates right now and introduce just enough disequilibrium to loosen it. Alignment, in this sense, is not harmony—it’s the ongoing act of reducing the friction that keeps us from learning together.
+These are not separate problems but facets of the same constraint. Each form of misalignment is a local equilibrium the organization defends because it feels safe. The leader’s work is to identify which constraint dominates right now and introduce just enough disequilibrium to loosen it. Alignment, in this sense, is not harmony—it’s the ongoing act of reducing the friction that keeps us from learning together. In each case, the remedy is the same pattern: introduce safe disequilibrium, elevate feedback that we're on the wrong track, and re-align based on that signal.
 
 ### Barbell Strategy for Alignment
 
@@ -61,6 +63,8 @@ If alignment is the constraint, portfolio shape matters as much as individual be
 Inside organizations, the obsession with predictability often masquerades as professionalism. Teams measure throughput—tickets closed, sprints completed, uptime maintained—and congratulate themselves on discipline. It feels responsible; it’s actually evasive. John Cutler described this perfectly in his “feature factory” critique: companies that ship more and learn less. DORA’s longitudinal research adds data to the intuition. The best engineering organizations outperform peers not because they produce more artifacts but because they shorten the feedback loop between intent and result. They align measurement with learning.
 
 Ticket thinking survives because it is emotionally safe. You can’t be wrong for closing a ticket. But you can be wrong for naming a hypothesis and discovering it false. Impact work exposes judgment; ticket work hides behind process. It’s the same instinct that led us to close our mines—we didn’t solve the problem; we just moved it somewhere invisible. Predictability without purpose is the corporate version of environmental outsourcing.
+
+Tickets are how we coordinate; outcomes are how we decide. Keep both, but stop confusing one for the other.
 
 ## Ignoring Tech Debt, Intentionally
 
@@ -82,11 +86,7 @@ In the mid-1800s, Ignaz Semmelweis observed that women treated by doctors died o
 
 #### Why it’s a coordination problem (not ignorance)
 
-- Cognitive: accepting the data threatened identity as healers.
-- Social: no one wanted to be the first to scrub “like a tradesman.”
-- Institutional: there were no shared measures or enforcement.
-
-It wasn’t lack of information; it was a systemic alignment failure. People knew enough to act, but not enough to act alone.
+Peers resisted not for lack of information but because the costs were social and institutional: accepting the data threatened their identity as healers, no one wanted to be first to violate norms, and there were no shared measures or enforcement. It wasn’t ignorance; it was a coordination failure.
 
 #### How disequilibrium broke the trap
 
@@ -111,7 +111,7 @@ Ron Heifetz calls this the “productive zone of disequilibrium,” the narrow r
 
 ## Experimentation Without Learning
 
-It’s easy to mistake endless experimentation for progress. Many teams run A/B tests in a perpetual loop, swapping variables and collecting metrics without ever forming a hypothesis about why a change might matter. This is motion masquerading as learning: a search for local maxima, blind to the possibility of new configurations. Without causal reasoning, experimentation becomes a ritual—an exercise in comfort, not discovery. The real work of learning comes from reasoned disequilibrium: forming causal hypotheses, testing them with intention, and realigning based on what’s revealed.
+It’s easy to mistake endless experimentation for progress. Many teams run A/B tests in a perpetual loop, swapping variables and collecting metrics without ever forming a hypothesis about why a change might matter. This is motion masquerading as learning: a search for local maxima, blind to the possibility of new configurations. Without causal reasoning, experimentation becomes a ritual—an exercise in comfort, not discovery. The real work of learning comes from reasoned disequilibrium: forming causal hypotheses, testing them with intention, and realigning based on what’s revealed. I’m not anti-experiment; I’m anti experimentation without hypotheses. Run more tests with better causal claims.
 
 The parallel to medicine before germ theory is instructive. For decades, hospitals ran experiments—changing treatments, varying dosages—without any understanding of underlying causes. Semmelweis’s insistence on handwashing produced dramatic results, but his evidence was ignored, dismissed as discomforting to the status quo. Only when the system absorbed enough pain—enough deaths—did it finally realign. Evidence alone is not enough; the willingness to endure disequilibrium is what turns data into learning. See the hand-washing case under “The Courage to Stop the Line.”
 
@@ -119,11 +119,11 @@ The parallel to medicine before germ theory is instructive. For decades, hospita
 
 Biology teaches us that evolution rarely proceeds by smooth, incremental change. Instead, species endure long periods of stasis, punctuated by sudden bursts of adaptation—what Stephen Jay Gould called punctuated equilibrium. Organizations must design for these cycles deliberately, building in mechanisms that create safe disequilibrium and allow for rapid, coordinated leaps. Netflix’s chaos experiments, Amazon’s proliferation of small autonomous teams, and Toyota’s andon cord are all engineered punctuation marks—intentional disruptions that force the system to stretch, learn, and realign.
 
-These interventions don’t just allow for change; they demand it, on terms that preserve coherence. Alignment is the DNA that holds the species together; disequilibrium is the mutation pressure that lets it evolve. Alignment through disequilibrium is how we practice evolution before it’s mandatory.
+These interventions don’t just allow for change; they demand it, on terms that preserve coherence. Alignment is the DNA that holds the species together; disequilibrium is the mutation pressure that lets it evolve. Alignment through disequilibrium is how we practice evolution before it’s mandatory. These moves presume observability, progressive delivery, and practiced rollback. Without those, you’re shaking a system that can’t catch itself.
 
 ## Governance as Trust Infrastructure
 
-Pulumi’s 2025 State of Policy-as-Code report found that organizations adopting automated guardrails released 35 percent faster with 20 percent fewer rollbacks. Capital One’s DevOps case study reported a twentyfold increase in deployment frequency with no rise in incidents. Governance done well isn’t bureaucracy—it’s how trust scales. By embedding policy and safety checks into the delivery pipeline, leaders create the structural confidence that makes disequilibrium survivable. Netflix calls this “guardrails, not gates”: the system enforces quality automatically so people can move boldly without fear.
+Pulumi’s 2025 State of Policy-as-Code report found that organizations adopting automated guardrails released 35 percent faster with 20 percent fewer rollbacks. Capital One’s DevOps case study reported a twentyfold increase in deployment frequency with no rise in incidents. Governance done well isn’t bureaucracy—it’s how trust scales. By embedding policy and safety checks into the delivery pipeline, leaders create the structural confidence that makes disequilibrium survivable. Netflix calls this “guardrails, not gates”: the system enforces quality automatically so people can move boldly without fear. The precise numbers vary by context, but the direction is durable: when rules live in code and rollback is routine, speed and safety rise together.
 
 ## Fighting Feel-Good Motion
 
@@ -131,7 +131,7 @@ The rare-earth example also exposes how virtue can mask avoidance. We told ourse
 
 Platform teams fall into the same trap when they chase elegance over efficacy—rewriting systems to feel modern while business outcomes stagnate. Feel-good motion is misalignment disguised as progress. Real alignment keeps the mess inside the system, where the feedback is visible. If you hide the pain, you also hide the learning.
 
-Itamar Gilad’s Total Impact Matrix quantifies how pervasive this drift can be. Across hundreds of product experiments, fewer than ten percent show positive outcomes, and a nontrivial share produce negative impact—extra complexity, user friction, or reputational harm. The default state of large systems isn’t neutral; it’s subtractive. Progress begins when leaders treat pruning as a core discipline, not a failure mode.
+Itamar Gilad’s Total Impact Matrix quantifies how pervasive this drift can be. Across large public experimentation programs (e.g., Booking.com, Microsoft), fewer than ten percent of ideas consistently show positive impact, and a nontrivial share produce negative impact—extra complexity, user friction, or reputational harm. The default state of large systems isn’t neutral; it’s subtractive. Progress begins when leaders stop trying to prescribe truth and start designing systems that surface it—where pruning, dissent, and signal amplification are built in, not punished.
 
 ## Safe-to-Fail as a Way of Life
 
@@ -145,11 +145,13 @@ Leadership in the age of AI and accelerating automation is less about control an
 
 That means making alignment tangible: a one-page articulation of aim, mechanism, and feedback for every major initiative. It means replacing status updates with evidence reviews. And it means admitting that we rarely have proof—only credibility earned through pattern recognition and intellectual honesty. The leaders who can keep their organizations slightly off balance, but pointed toward the same goal, will outlast the ones who chase comfort and certainty.
 
+The work of leadership isn’t to know better; it’s to build systems that make it obvious when we’re wrong sooner. Alignment isn’t consensus—it’s coherence earned through continuous contradiction.
+
 ## What Impact Really Means
 
 Impact is not busyness or even certainty; it’s the compounding of many small realignments toward a purpose large enough to scare you. It’s the willingness to bear local pain for systemic progress. The rare-earth crisis, the feature-factory treadmill, the rewrite that solves nothing—these are all forms of the same disease: equilibrium mistaken for health. Healthy systems breathe. They stretch, wobble, and recover stronger.
 
-Iteration without alignment is a treadmill. Alignment without disequilibrium is stagnation. The work of leadership is to hold both: a clear direction and a steady supply of productive tension. Alignment without tension is bureaucracy; tension without alignment is chaos. Held together, they form the learning loop every adaptive system depends on. Impact does not come from doing ten times more work; it comes from staying aligned while the ground keeps moving.
+Iteration without alignment is a treadmill. Alignment without disequilibrium is stagnation. The work of leadership is to hold both: a clear direction and a steady supply of productive tension. Alignment without tension is bureaucracy; tension without alignment is chaos. Held together, they form the learning loop every adaptive system depends on. The operating system is simple: articulate intent, apply safe tension, and make sure the feedback can contradict you. Systems that survive don’t enforce alignment from above—they mine for misalignment and learn from it faster than it festers. Impact does not come from doing ten times more work; it comes from staying aligned while the ground keeps moving.
 
 ---
 
