@@ -181,9 +181,9 @@ These interventions don’t just allow for change; they demand it, on terms that
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix A — Impact & Optics Diagnostic</strong> (click to expand)</summary>
 
-Use this to spot value detractors and optics-over-outcomes drift.
+Use these worksheets to expose value detractors — work that feels virtuous but erodes real progress.
 
-Negative Impact Audit (portfolio scan)
+### Negative Impact Audit (portfolio scan)
 
 1. List all active/planned initiatives (include “maintenance” work).
 2. Rate Expected Benefit (None/Low/Med/High) and Potential Harm (Complexity/Cost/User friction/Trust). Add a quick “why.”
@@ -195,9 +195,9 @@ Default actions
 - Re‑scope “unsustainable” items to preserve long‑term health.
 - Publish the cuts.
 
-Optics vs Outcomes Diagnostic (where feedback lands)
+### Optics vs Outcomes Diagnostic (where feedback lands)
 
-Map where the feedback lives. If it’s outside your system, you’re optimizing for optics.
+Map where the feedback lives. If it’s outside your system, consider whether you're optimizing for optics and vanity metrics.
 
 | Goal (stated) | Mechanism (current) | Where Feedback Lands | Real Outcome | Adjustment |
 |---|---|---|---|---|
@@ -214,21 +214,21 @@ Run this table for your top five initiatives. If you can’t point to where the 
 
 <a id="barbell-cadence"></a>
 
-Design a portfolio that learns fast and builds durability.
+### Design a portfolio that learns fast and builds durability.
 
-Left side (70–90% capacity): Safe-to-Fail
+**Left side (70–90% capacity)**: Safe-to-Fail
 
 - List 5–10 probes for this sprint (1–2 week horizon).
 - Each includes: hypothesis, owner, guardrail, rollback, next decision.
 - Default action: prune aggressively; promote only with evidence.
 
-Right side (10–30% capacity): High-Conviction Bets
+**Right side (10–30% capacity)**: High-Conviction Bets
 
 - 1–3 initiatives tied directly to the north-star mechanism.
 - Each includes: mechanism of action, leading indicators, stop criteria, revisit date (≤ 90 days).
 - Fund continuity, not heroics; pause if the mechanism is falsified.
 
-Anti-Middle Rule
+**Anti-Middle Rule**
 
 Mid-bar work is the enemy: if it’s 4–10 weeks and causally fuzzy, kill it, shrink it, or make it real.
 
@@ -240,7 +240,7 @@ Mid-bar work is the enemy: if it’s 4–10 weeks and causally fuzzy, kill it, s
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix C — Stop‑the‑Line & Dissent Protocol</strong> (click to expand)</summary>
 
-Make contradiction and pauses cheap and visible.
+Some ways to make contradiction and pauses cheap and visible.
 
 **Stop‑the‑Line Triggers (any one is enough)**
 
@@ -272,9 +272,9 @@ Make contradiction and pauses cheap and visible.
 2) Select two items for rapid falsification.
 3) Log outcomes and update decision register (include a dissent memo if disagreement remains).
 
-**Templates**
+**Practices**
 
-- **Dissent Memo (≤ 1 page):** Claim being challenged, alternative mechanism of action, evidence, proposed probe.
+- **Dissent Memo (≤ 1 page):** Specifies the claim being challenged, alternative mechanism of action, evidence, proposed probe.
 - **Assumption Andon:** Who/what/why, affected mechanism, proposed stop‑the‑line scope, owner for next step.
 
 Success = surfaced contradictions resolved or re‑tested within one cadence; no outstanding items without an owner or revisit date.
