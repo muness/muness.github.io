@@ -43,6 +43,7 @@ Saying alignment is the constraint is not an abstraction; it’s a diagnosis. Ev
 
 Alignment failures come in several recognizable forms:
 
+- Epistemic Centralization (_Anointed Perspective_) — Decisions rely on a small, self‑confident center that believes it can see the truth from above; weak signals and dissent at the edges are filtered out. The remedy is distributed sensing: red‑team reviews, minority reports attached to decisions, rotating ownership of mechanisms, and dashboards where field evidence can contradict leadership narratives in public.
 - Incentive Drift — When rewards favor local throughput over shared outcomes. The “feature factory” is the classic case: teams measured by how much they ship, not whether it mattered. Disequilibrium starts by changing what’s measured, tying success to feedback instead of motion.
 - Context and Information Debt — Decisions made with stale or siloed context. Teams refactor in parallel, solving yesterday’s problems beautifully. Visible, shared feedback loops—decision registers, outcome dashboards—are the antidote.
 - Coordination Friction — When the transaction cost of collaboration is too high. Multi-team releases stall, approvals bottleneck, and no one dares to stop the line. Guardrails, not gates, lower the cost of synchronized change.
@@ -52,7 +53,12 @@ Alignment failures come in several recognizable forms:
 - Cognitive Local Maxima — Experimentation without theory. Endless A/B tests tune the hill you’re already on. Hypothesis-driven loops, grounded in causal reasoning, are how teams leap to new terrain.
 - Moral Optics Alignment — Optimizing for appearances instead of outcomes. We close the mine to look responsible, or rewrite the platform to look modern. Keeping feedback inside the system—where we must face it—is the only cure.
 
+
 These are not separate problems but facets of the same constraint. Each form of misalignment is a local equilibrium the organization defends because it feels safe. The leader’s work is to identify which constraint dominates right now and introduce just enough disequilibrium to loosen it. Alignment, in this sense, is not harmony—it’s the ongoing act of reducing the friction that keeps us from learning together. In each case, the remedy is the same pattern: introduce safe disequilibrium, elevate feedback that we're on the wrong track, and re-align based on that signal.
+
+### Designing for Epistemic Humility
+
+Hayek and Sowell were right about one thing organizational life forgets: there is no privileged perch from which the full truth is visible. Alignment collapses when leaders mistake intent for insight and suppress the signals that don’t fit. The fix is architectural, not rhetorical. Build systems that **mine for incongruence** and amplify it safely: require hypotheses before work begins and minority reports when it ends; log decisions with revisit dates and publish the disconfirming evidence; rotate stewards so no team can overfit to its own story; and give anyone an “andon‑for‑assumptions” cord to pull when the mechanism of action drifts. In healthy organizations, feedback can contradict leadership in daylight—and the system thanks it for the correction.
 
 ### Barbell Strategy for Alignment
 
@@ -123,7 +129,40 @@ These interventions don’t just allow for change; they demand it, on terms that
 
 ## Governance as Trust Infrastructure
 
+
 Pulumi’s 2025 State of Policy-as-Code report found that organizations adopting automated guardrails released 35 percent faster with 20 percent fewer rollbacks. Capital One’s DevOps case study reported a twentyfold increase in deployment frequency with no rise in incidents. Governance done well isn’t bureaucracy—it’s how trust scales. By embedding policy and safety checks into the delivery pipeline, leaders create the structural confidence that makes disequilibrium survivable. Netflix calls this “guardrails, not gates”: the system enforces quality automatically so people can move boldly without fear. The precise numbers vary by context, but the direction is durable: when rules live in code and rollback is routine, speed and safety rise together.
+
+## Systems That Surface Incongruence
+
+If the anointed perspective is the disease, contradiction is the cure. Treat dissent and anomaly as a first‑class signal, not a social problem to be managed. Encode it:
+
+- **Contradiction Budgets:** Allocate time each cycle to hunt for evidence that we are wrong (backtests, counter‑metrics, user narratives that don’t match dashboards).
+- **Minority Reports:** Every major decision includes an attached short brief from the strongest opposing view; it travels with the decision in the log.
+- **Red‑Team Rotations:** Assign a rotating pair to challenge assumptions on high‑leverage work; reward the best falsifications.
+- **Shadow Metrics:** Track at least one counter‑indicator (e.g., reliability vs. speed; trust vs. conversion) to catch negative‑impact work early.
+- **Anonymous Andon:** A light‑weight path for anyone to flag assumption drift without career risk; review weekly and close the loop publicly.
+
+These practices don’t slow organizations; they keep them honest. The point is not to admire disagreement—it’s to operationalize it so systems can change course before reality forces them to.
+
+## Beyond Founder Mode
+
+Founder‑led companies often get one thing right by accident: a strong voice that can dissent in public and make the system flinch. That permission to contradict—backed by narrative authority—keeps learning alive even when the organization is tempted to play it safe. As they grow, the founder tries to institutionalize that tension with a barbell—fast, reversible experiments on one side and bold, long‑horizon bets on the other. Then the hires arrive: experienced operators who understandably reach for the right side of the bar—big, long‑horizon bets. But without shared intent, those plans collide with founder control and org muscle memory; the reins tighten. The barbell collapses into the middle—initiatives too large to learn fast and too diluted to change the game.
+
+I’ve seen the anti‑pattern at many successful founder‑led companies that outgrew their early disequilibrium. The founders built momentum through bold bets and improvisation; they stumbled into a niche where their instincts fit the market. Scaling demanded new muscles—planning, process, delegation—so they brought in seasoned operators they admired. Then the same constraint that haunts every large system took over: misalignment between intent and mechanism. Boards and executives start signaling, “make it big, but don’t risk headlines.” The result is mid‑bar everything.
+
+New leaders aim for the right side of the bar—strategic, high‑stakes bets—but founder control and organizational antibodies shove them back toward the middle. Nobody gets what they want. Operators can’t play out their long game; founders don’t get boldness; and the company drifts into the most expensive place possible—mid‑bar mediocrity, where work is too polished to kill and too small to matter.
+
+### Structural moves
+
+The goal isn’t “founder‑led forever.” It’s dissent privilege for everyone: institutionalized dissent that doesn’t depend on a personality. Dissent is a capability, not a trait. Make contradiction cheap, socially safe, and operationally routine so teams can name what the founder would have named—without needing the founder in the room.
+
+- **Dissent Permits:** Every team has explicit license (and airtime) to challenge the mechanism of action on its highest‑leverage work once per sprint.
+- **Disagree‑and‑Show:** An objection must ship a probe; disagreement comes with the smallest safe test attached.
+- **Narrative Checks:** Quarterly, rewrite the “founder story” of why this initiative exists; if the story can’t be told crisply, stop the line.
+- **Two‑Key Overrides:** Major reversals require two independent leaders to co‑sign—it prevents both heroics and deference.
+- **Skip‑Level “Ask Me Where I’m Wrong”:** Leaders host a recurring forum where field evidence can contradict the plan in daylight; unresolved contradictions enter the decision log with a minority report.
+
+You can call this posture **Calibration Mode**. The point isn’t the label; it’s the rhythm. Privilege the behavior we liked about “founder mode” by making it a system property rather than a personality perk.
 
 ## Fighting Feel-Good Motion
 
@@ -445,6 +484,29 @@ Right side (10–30% capacity): High-Conviction Bets
 Anti-Middle Rule
 
 - Flag medium-sized work (4–10 weeks) without clear causal leverage; either shrink to a probe or elevate to a real bet.
+
+### Appendix P — Incongruence & Dissent Protocol
+
+Make contradiction cheap and visible.
+
+**Signals to watch**
+
+- Outcome moves opposite to leading indicator.
+- Qualitative user/operator stories diverge from dashboards.
+- Repeated exceptions to guardrails; “temporary” overrides become defaults.
+
+**Cadence (bi‑weekly)**
+
+1) Review the contradiction queue (5–10 minutes).
+2) Select two items for rapid falsification.
+3) Log outcomes and update decision register (include a minority report if disagreement remains).
+
+**Templates**
+
+- **Minority Report (≤ 1 page):** Claim being challenged, alternative mechanism of action, evidence, proposed probe.
+- **Assumption Andon:** Who/what/why, affected mechanism, proposed stop‑the‑line scope, owner for next step.
+
+Success = surfaced contradictions resolved or re‑tested within one cadence; no outstanding items without an owner or revisit date.
 
 ### Appendix N — Sources & Further Reading
 
