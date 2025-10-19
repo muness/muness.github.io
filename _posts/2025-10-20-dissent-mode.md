@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2025-10-19 09:00:00 -0400
+date: 2025-10-20 09:00:00 -0400
 author: muness
 title: "Dissent Mode: Eliminate Mid-Bar Work"
 toc: true
