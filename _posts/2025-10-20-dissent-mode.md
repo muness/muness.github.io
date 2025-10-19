@@ -333,3 +333,32 @@ Hand‑washing (Semmelweis) mapped to organizational practice.
 | Germ theory reframed intent | Business‑outcome framing reframes platform work |
 
 </details>
+
+<style>
+.callout{border-left:4px solid #d1d5db;padding:.85rem 1rem;margin:1.25rem 0;background:#f9fafb;border-radius:6px}
+.callout h4{margin:0 0 .25rem;font-size:.95rem}
+.callout--law{border-color:#6b5cff}
+.callout--warning{border-color:#f59e0b}
+.callout--note{border-color:#0ea5e9}
+.callout--metric{border-color:#10b981}
+.callout--risk{border-color:#ef4444}
+.callout a{ text-decoration: underline; }
+@media (prefers-color-scheme: dark){.callout{background:rgba(255,255,255,.04)}}
+</style>
+
+<script>
+function openDetailsFromHash() {
+  const hash = window.location.hash;
+  if (!hash) return;
+  const target = document.querySelector(hash);
+  if (!target) return;
+  const details = target.tagName && target.tagName.toLowerCase() === "details"
+    ? target
+    : target.closest("details");
+  if (details) {
+    details.setAttribute("open", "open");
+  }
+}
+document.addEventListener("DOMContentLoaded", openDetailsFromHash);
+window.addEventListener("hashchange", openDetailsFromHash);
+</script>
