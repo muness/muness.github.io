@@ -2,14 +2,14 @@
 comments: true
 date: 2025-10-20 09:00:00 -0400
 author: muness
-title: "Swing for the Fences"
+title: "Dissent Mode: Eliminate Mid-Bar Work"
 toc: true
-excerpt: "Alignment through safe disequilibrium: stop ticket-factory motion, aim bigger with coherent intent, and learn fast inside guardrails."
+excerpt: "Eliminate mid-bar work with barbell strategy, guardrails, and continuous re-alignment."
 ---
 
 ## Alignment Through Disequilibrium
 
-The current moment makes the problem painfully clear. We are not going to increment our way to the hundred-fold power that the next decade will demand—whether that’s computational capacity for AI models or the rare metals needed to build them. Iteration is safe and comforting, but without a unifying intent it becomes a slow death. It preserves motion without momentum, a pattern of competent repetition that looks like progress until you compare it to what the world actually requires. The rare-earth story is proof of what happens when systems optimize for stability instead of evolution.
+We are not going to increment our way to the hundred-fold power that the next decade will demand—whether that’s computational capacity for AI models or the rare metals needed to build them. Iteration is safe and comforting, but without a unifying intent it becomes a slow death. It preserves motion without momentum, a pattern of competent repetition that looks like progress until you compare it to what the world actually requires. The rare-earth story is proof of what happens when systems optimize for stability instead of evolution.
 
 In the 1990s the West congratulated itself for “protecting the environment” by shuttering mines and offshoring processing. The pollution didn’t disappear; it migrated to China, where the environmental impact grew worse but the industrial capability deepened. We optimized for virtue signals—clean hands and local optics—while China optimized for capability, aligning its industrial policy, foreign investment, and scientific research around control of critical materials. What looked like environmental responsibility was, in systemic terms, a transfer of learning. The result was dependence, not progress. Misalignment on intent—confusing looking good for doing good—always compounds into fragility.
 
@@ -162,7 +162,7 @@ The goal isn’t “founder‑led forever.” It’s dissent privilege for every
 - **Two‑Key Overrides:** Major reversals require two independent leaders to co‑sign—it prevents both heroics and deference.
 - **Skip‑Level “Ask Me Where I’m Wrong”:** Leaders host a recurring forum where field evidence can contradict the plan in daylight; unresolved contradictions enter the decision log with a minority report.
 
-You can call this posture **Calibration Mode**. The point isn’t the label; it’s the rhythm. Privilege the behavior we liked about “founder mode” by making it a system property rather than a personality perk.
+You can call this posture **Dissent Mode**. The point isn’t the label; it’s the rhythm. Privilege the behavior we liked about “founder mode” by making it a system property rather than a personality perk.
 
 ## Fighting Feel-Good Motion
 
