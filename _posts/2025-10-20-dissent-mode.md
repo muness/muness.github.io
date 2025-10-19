@@ -42,17 +42,19 @@ These are three sides of the same constraint: alignment, coordination, and humil
 
 Saying alignment is the constraint is not an abstraction; it’s a diagnosis. Every chronic drag inside a system—technical, social, or strategic—traces back to some form of misalignment. Coordination failures wear many masks, but they share the same physics: when the cost of moving together is higher than the cost of staying still, equilibrium wins. The symptoms differ; the constraint is the same.
 
+Nine recurring constraints (scan or diagnose):
+
 Alignment failures come in several recognizable forms:
 
-- Epistemic Centralization (_The Anointed perspective_) — Decisions rely on a small, self‑confident center that believes it can see the truth from above; weak signals and dissent at the edges are filtered out. The remedy is distributed sensing: red‑team reviews, minority reports attached to decisions, rotating ownership of mechanisms, and dashboards where field evidence can contradict leadership narratives in public.
-- Incentive Drift — When rewards favor local throughput over shared outcomes. The “feature factory” is the classic case: teams measured by how much they ship, not whether it mattered. Disequilibrium starts by changing what’s measured, tying success to feedback instead of motion.
-- Context and Information Debt — Decisions made with stale or siloed context. Teams refactor in parallel, solving yesterday’s problems beautifully. Visible, shared feedback loops—decision registers, outcome dashboards—are the antidote.
-- Coordination Friction — When the transaction cost of collaboration is too high. Multi-team releases stall, approvals bottleneck, and no one dares to stop the line. Guardrails, not gates, lower the cost of synchronized change.
-- Social Stasis — Fear and habit masquerading as professionalism. Everyone agrees but no one moves first; the equilibrium holds because risk is social, not technical. Safe disequilibrium—bounded tension held by trust—breaks the freeze.
-- Temporal Myopia — When incentives shrink to the next sprint or quarter. “Tech debt weeks” and “stability sprints” feel virtuous but change nothing. Long-horizon feedback—revisit dates, rolling decision logs—keeps direction alive.
-- Structural Equilibrium — The architecture or org chart enforces its own inertia. Platforms become fortresses; silos fossilize behavior. Small, autonomous units with clear interfaces (Amazon’s model) reintroduce flexibility.
-- Cognitive Local Maxima — Experimentation without theory. Endless A/B tests tune the hill you’re already on. Hypothesis-driven loops, grounded in causal reasoning, are how teams leap to new terrain.
-- Moral Optics Alignment — Optimizing for appearances instead of outcomes. We close the mine to look responsible, or rewrite the platform to look modern. Keeping feedback inside the system—where we must face it—is the only cure.
+- **Epistemic Centralization** (_The Anointed perspective_) — Decisions rely on a small, self‑confident center that believes it can see the truth from above; weak signals and dissent at the edges are filtered out. The remedy is distributed sensing: red‑team reviews, minority reports attached to decisions, rotating ownership of mechanisms, and dashboards where field evidence can contradict leadership narratives in public.
+- **Incentive Drift** — When rewards favor local throughput over shared outcomes. The “feature factory” is the classic case: teams measured by how much they ship, not whether it mattered. Disequilibrium starts by changing what’s measured, tying success to feedback instead of motion.
+- **Context and Information Debt** — Decisions made with stale or siloed context. Teams refactor in parallel, solving yesterday’s problems beautifully. Visible, shared feedback loops—decision registers, outcome dashboards—are the antidote.
+- **Coordination Friction** — When the transaction cost of collaboration is too high. Multi-team releases stall, approvals bottleneck, and no one dares to stop the line. Guardrails, not gates, lower the cost of synchronized change.
+- **Social Stasis** — Fear and habit masquerading as professionalism. Everyone agrees but no one moves first; the equilibrium holds because risk is social, not technical. Safe disequilibrium—bounded tension held by trust—breaks the freeze.
+- **Temporal Myopia** — When incentives shrink to the next sprint or quarter. “Tech debt weeks” and “stability sprints” feel virtuous but change nothing. Long-horizon feedback—revisit dates, rolling decision logs—keeps direction alive.
+- **Structural Equilibrium** — The architecture or org chart enforces its own inertia. Platforms become fortresses; silos fossilize behavior. Small, autonomous units with clear interfaces (Amazon’s model) reintroduce flexibility.
+- **Cognitive Local Maxima** — Experimentation without theory. Endless A/B tests tune the hill you’re already on. Hypothesis-driven loops, grounded in causal reasoning, are how teams leap to new terrain.
+- **Moral Optics Alignment** — Optimizing for appearances instead of outcomes. We close the mine to look responsible, or rewrite the platform to look modern. Keeping feedback inside the system—where we must face it—is the only cure.
 
 These are not separate problems but facets of the same constraint. Each form of misalignment is a local equilibrium the organization defends because it feels safe. The leader’s work is to identify which constraint dominates right now and introduce just enough disequilibrium to loosen it. Alignment, in this sense, is not harmony—it’s the ongoing act of reducing the friction that keeps us from learning together. In each case, the remedy is the same pattern: introduce safe disequilibrium, elevate feedback that we're on the wrong track, and re-align based on that signal.
 
@@ -102,6 +104,8 @@ If alignment is the constraint, portfolio shape matters as much as individual be
 The founder’s dilemma is the purest form of this constraint. Let’s look at how misalignment scales when tension is person-dependent rather than systemic.
 
 ## Beyond Founder Mode
+
+How this tension scales.
 
 Founder‑led companies often get something important right: a strong voice that can dissent in public and make the system react. That permission to contradict keeps learning alive even when the organization is tempted to play it safe. As they grow, the founder tries to institutionalize that tension with a barbell — fast, reversible experiments on one side and bold, long‑horizon bets on the other. Then they bring on hires to scale out: experienced operators who understandably reach for the right side of the bar—big, long‑horizon bets. Without shared intent, those plans collide with founder control and org muscle memory; the reins tighten. The barbell collapses into the middle: initiatives too large to learn fast and too diluted to change the game.
 
@@ -186,22 +190,34 @@ These interventions don’t just allow for change; they demand it, on terms that
 
 
 <a id="appendix-a"></a>
+<a id="appendix-c"></a>
 <details class="worksheet" markdown="1">
-<summary><strong>Appendix A: Negative Impact Audit</strong> (click to expand)</summary>
+<summary><strong>Appendix A: Impact & Optics Diagnostic</strong> (click to expand)</summary>
 
-Most portfolios contain work that subtracts value. Adapt Itamar Gilad’s matrix to your pipeline.
+Use this to spot value detractors and optics-over-outcomes drift.
 
-**Steps**
+Negative Impact Audit (portfolio scan)
 
 1. List all active/planned initiatives (include “maintenance” work).
-2. Rate **Expected Benefit** (None/Low/Med/High) and **Potential Harm** (Complexity/Cost/User friction/Trust). Add a quick “why.”
-3. Tag **Value Detractors** (low benefit, high harm) and **Unsustainable** items (short‑term wins that erode the system).
+2. Rate Expected Benefit (None/Low/Med/High) and Potential Harm (Complexity/Cost/User friction/Trust). Add a quick “why.”
+3. Tag Value Detractors (low benefit, high harm) and Unsustainable items (short‑term wins that erode the system).
 
-**Default actions**
+Default actions
 
 - Cut or pause detractors; salvage lessons.
 - Re‑scope “unsustainable” items to preserve long‑term health.
 - Publish the cuts.
+
+Optics vs Outcomes Diagnostic (where feedback lands)
+
+Map where the feedback lives. If it’s outside your system, you’re optimizing for optics.
+
+| Goal (stated) | Mechanism (current) | Where Feedback Lands | Real Outcome | Adjustment |
+|---|---|---|---|---|
+| Environmental protection | Outsource extraction | Offshore | Global harm ↑; capability ↓ | Bring feedback inside; invest in cleaner local process |
+| Platform quality | Rewrite for elegance | Code review | Customer outcomes unchanged | Tie to Impact Chain checkpoints |
+
+Run this table for your top five initiatives. If you can’t point to where the pain is felt, you can’t steer.
 
 </details>
 
@@ -231,20 +247,7 @@ Mid-bar work is the enemy: if it’s 4–10 weeks and causally fuzzy, kill it, s
 
 </details>
 
-<a id="appendix-c"></a>
-<details class="worksheet" markdown="1">
-<summary><strong>Appendix C: Optics vs Outcomes Diagnostic</strong> (click to expand)</summary>
 
-Map where the feedback lives. If it’s outside your system, you’re optimizing for optics.
-
-| Goal (stated) | Mechanism (current) | Where Feedback Lands | Real Outcome | Adjustment |
-|---|---|---|---|---|
-| Environmental protection | Outsource extraction | Offshore | Global harm ↑; capability ↓ | Bring feedback inside; invest in cleaner local process |
-| Platform quality | Rewrite for elegance | Code review | Customer outcomes unchanged | Tie to Impact Chain checkpoints |
-
-Run this table for your top five initiatives. If you can’t point to where the pain is felt, you can’t steer.
-
-</details>
 
 <a id="appendix-f"></a>
 <details class="worksheet" markdown="1">
@@ -291,6 +294,25 @@ Success = surfaced contradictions resolved or re‑tested within one cadence; no
 
 </details>
 
+
+
+<a id="appendix-h"></a>
+<details class="worksheet" markdown="1">
+<summary><strong>Appendix H: Coordination Trap Case</strong> (click to expand)</summary>
+
+<a id="coordination-trap-case"></a>
+
+Hand‑washing (Semmelweis) mapped to organizational practice.
+
+| Medical case | Organizational analogue |
+| --- | --- |
+| Doctors “knew” but didn’t act | Engineers know the friction but don’t stop the line |
+| Evidence ignored for comfort | Metrics ignored for optics |
+| New hygiene protocols | Guardrails and stop‑the‑line rules |
+| Germ theory reframed intent | Business‑outcome framing reframes platform work |
+
+</details>
+
 <a id="appendix-g"></a>
 <details class="worksheet" markdown="1">
 <summary><strong>Appendix G: Sources & Further Reading</strong> (click to expand)</summary>
@@ -309,24 +331,7 @@ These works underpin the claims about alignment, disequilibrium, feedback, and g
 - **AWS Executive Insights** — *Single‑Threaded Leadership / Two‑Pizza Teams* (2021). Supports small autonomous teams and STL pattern.
 - **Vaclav Smil** — *Energy and Civilization: A History* (MIT Press, 2017). Supports energy throughput ↔ human welfare argument.
 - **Taleb, Nassim Nicholas** — *Antifragile* (Random House, 2012). Introduces the barbell strategy; supports portfolio shape for learning under uncertainty.
--- **Semmelweis / Handwashing** — summaries and historical analyses (mid‑1800s onward). Supports coordination trap, evidence vs adoption.
-
-</details>
-
-<a id="appendix-h"></a>
-<details class="worksheet" markdown="1">
-<summary><strong>Appendix H: Coordination Trap Case</strong> (click to expand)</summary>
-
-<a id="coordination-trap-case"></a>
-
-Hand‑washing (Semmelweis) mapped to organizational practice.
-
-| Medical case | Organizational analogue |
-| --- | --- |
-| Doctors “knew” but didn’t act | Engineers know the friction but don’t stop the line |
-| Evidence ignored for comfort | Metrics ignored for optics |
-| New hygiene protocols | Guardrails and stop‑the‑line rules |
-| Germ theory reframed intent | Business‑outcome framing reframes platform work |
+- **Semmelweis / Handwashing** — summaries and historical analyses (mid‑1800s onward). Supports coordination trap, evidence vs adoption.
 
 </details>
 
