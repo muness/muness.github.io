@@ -214,7 +214,7 @@ Run this table for your top five initiatives. If you can’t point to where the 
 
 <a id="barbell-cadence"></a>
 
-### Design a portfolio that learns fast and builds durability.
+Design a portfolio that learns fast and builds durability.
 
 **Left side (70–90% capacity)**: Safe-to-Fail
 
