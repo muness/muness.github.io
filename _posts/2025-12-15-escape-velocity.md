@@ -1,150 +1,104 @@
----
-comments: true
-date: 2025-12-15 19:24:00 -0400
-author: muness
-title: "Escape Velocity"
-toc: true
-excerpt: "Breaking the Gravity of Local Maxima with Low-Cost Exploration"
----
+# Escape Velocity
 
-*(Follow-up to: “Design in Practice: A Writeup”)*
+**Breaking the Gravity of Local Maxima**
 
-Design is still the same work Rich Hickey described: increase understanding and make decisions that move us forward. His six phases—Describe, Diagnose, Delimit, Direction, Design, Develop—remain the backbone of that work because they mirror how humans reason through complexity.
+The hardest part of design isn't having ideas. It is abandoning the "good enough" ideas to keep finding better ones.
 
-LLMs do not change the purpose of these phases. They change the *cost* of exploring within them. They help us surface blind spots, test alternatives, generate artifacts, and iterate on direction at much lower cost. They do not replace judgment or depth; they let us apply judgment more often and deepen where it matters.
+Historically, we didn't do this. We stayed on local maxima—hills that were high enough to survive but too low to excel—because the cost of climbing down was simply too high. Scrapping code, rewriting specs, and rethinking architecture cost weeks of political and temporal capital. We were trapped by the gravity of sunk costs.
 
-Our responsibilities as designers have not changed. Our leverage has. The gravity of local maxima used to hold us in place; low-cost exploration gives us escape velocity if we choose to use it. Design is still steering. We now have a catalyst that expands what we can sense, attempt, and learn as we steer.
+Rich Hickey’s six phases of design (Describe, Diagnose, Delimit, Direction, Design, Develop) remain the correct map of the territory. But LLMs have changed the vehicle we use to cross it. They lower the cost of exploration so drastically that "sunk cost" loses its grip.
 
----
+Design is still the work of steering, but we finally have the escape velocity to leave the first hill we find.
 
-## 1. Design as Movement Through a Solution Space
+### The Landscape of Expensive Mistakes
 
-Every design problem creates a solution landscape that is multi-dimensional, full of peaks that feel good enough and valleys that represent failed bets. Historically, exploration on that landscape was expensive:
+Every design problem creates a landscape. It is multi-dimensional, full of peaks that represent working solutions and valleys that represent broken builds or failed bets.
 
-- Switching approaches cost weeks.
-- Prototypes were slow.
-- Revisiting earlier decisions was costly.
-- Cross-domain synthesis required rare expertise.
+In the pre-LLM era, moving across this landscape was punishingly expensive. Switching approaches meant throwing away days of work. Prototypes were slow to build and painful to discard. Because we couldn't afford to explore the valleys, we rationally optimized for safety. We picked the nearest promising hill and defended it, even if a Mount Everest of a solution was just across the ridge.
 
-Teams rationally stayed on the nearest hill, even if it was not the best one. The goal of design was still steering—but with limited visibility and high switching costs. Exploration historically lost because it was too expensive; cheap exploration reduces that gravity. The work now is to reach escape velocity before inertia reasserts itself.
+To escape a local maximum in that world, you needed "skill stacking." You needed a rare individual who possessed deep domain breadth, knew obscure analogies from other fields, and had the metis—the tacit, situational competence—to guess which dark valley was worth crossing. This was the "hero model" of design: reliance on the intuition of the few because the empirical testing of the many was too slow.
 
----
+### The Shift: From Climbing to Tunneling
 
-## 2. Skill Stacking: The Old Escape Route
+LLMs do not replace that intuition, nor do they replace the need for deep skill. What they change is the physics of movement.
 
-Before LLMs, escaping a local maximum required skill stacking:
+Formally, they collapse the cost structure of exploration. In the past, testing a radically different architecture required building it. Now, you can sample five divergent strategies in an afternoon. This allows for a kind of "tunneling" effect: you can visualize a solution on a distant peak without having to painstakingly hike through the budget and org-debt valley in between.
 
-- Domain breadth
-- Analogies from other fields
-- New heuristics
-- Prototypes to test unfamiliar directions
+This changes the texture of the work. Higher-level abstraction becomes a working medium; you iterate on intent and constraints rather than syntax. The loop of *propose → implement → critique → revise*—which used to take days—now happens in minutes. Architectural alternatives emerge early, while the cost of change is low, rather than late, when the concrete has set.
 
-These gave teams additional degrees of freedom, but they were expensive to build, slow to acquire, and unevenly distributed. Metis—deep, tacit, situational competence—comes from consequence-laden practice. LLMs can join the distributed cognition around that work, but they do not replace the human integrator.
+Crucially, none of this uncovers a single "right" answer. There is no final, perfect plan hiding in the landscape—only better and worse bets, discovered through faster, cheaper learning.
 
----
+But this speed comes with a caveat that many teams miss.
 
-## 3. What LLMs Actually Change
+### The Virtue of Shallow Breadth
 
-LLMs do not make us better designers. They make the terrain easier to move through.
-Formally, they shift the cost structure of exploration:
+The mistake most teams make is assuming the AI provides depth. It does not. LLMs provide **shallow breadth**. They offer typical patterns, first approximations, cross-domain hints, and quick critiques. They are not masters; they are infinite interns.
 
-1. **Cheap sampling of many directions** — shallow footholds across domains reveal promising directions quickly.
-2. **Parallel exploration** — you can generate and compare multiple strategies in minutes.
-3. **Higher-level abstraction becomes a working medium** — you can iterate on intent, constraints, and structure, not syntax.
-4. **Collapsed iteration loops** — propose → implement → critique → revise happens rapidly.
-5. **Composable cross-domain reasoning** — models pull heuristics from fields you only partly know.
-6. **Visibility of nonlinear options** — architectural alternatives emerge early, not only after deep investment.
-7. **Low cost of switching** — you can abandon a ridge and try another without weeks of rework.
+But this shallowness is actually the point. It is exploratory fuel.
 
-LLMs widen the search, but they do not supply metis or meaning. Catalyst, not replacement.
+The new productive loop is to use that shallow breadth to generate options, and then apply human judgment to select which one deserves depth. You prompt for ten approaches, scan them for viability, and discard nine. This is the **"Shallow → Score → Select → Deepen"** protocol.
 
----
+Depth still emerges, but it emerges through guided iteration and human taste. The model accelerates the work of discovering *what* is worth deepening.
 
-## 4. LLMs Are Shallow — And That’s the Point
+### When the Cost Collapses, the Target Changes
 
-LLMs do **not** provide deep skill or metis.
-What they provide is **shallow breadth**:
+When you accept that exploration is cheap, you must accept that your old behaviors are now irrational.
 
-- Typical patterns
-- First approximations
-- Cross-domain hints
-- Explainers
-- Rewrites
-- Critiques
+Most executives are currently using LLMs to run the old maze faster—treating AI as a typing accelerator for their teams inside a linear "waterfall" process. This is a category error. The shift isn't about speed; it's about **reach**.
 
-This is not mastery; it is exploratory fuel.
+First, **clinging to early decisions becomes professional negligence.** We used to defend our first strategic draft because changing direction was a nightmare. Now that artifacts are cheap, rewriting is cheap. Defending a mediocre solution is no longer prudence; it is vanity. If your organization can test five architectures or approaches in an afternoon, settling for the first one is a failure of rigor—especially when the goal is not to find *the* answer, but to learn which bets survive contact with reality.
 
-The productive loop is:
+Second, **cycle time becomes the definition of capability.** In a world of cheap exploration, the leadership team that tests five divergent paths before lunch has a qualitative advantage over the team that spends the day overfitting to one. Slow exploration is not cautious; it is risky.
 
-**shallow → score → select → deepen → evaluate → continue or stop**
+Finally, the **"safety" of the local maximum disappears.** Exploitation—improving what you already have—used to be safer than exploration. But when the cost of trying new paths is near zero, staying on a local peak "to be safe" is actually the dangerous path. The only expensive mistake left is refusing to try.
 
-Depth emerges through guided iteration, tests, and taste.
-Humans still supply judgment. The model accelerates the work of discovering what is worth deepening.
+### Acting as Editors, Not Crafters
 
----
+This shift demands a fundamental change in identity. We must stop acting like crafters and start acting like editors.
 
-## 5. Not Just *How* We Design — But *What* We Design
+The "crafter" mindset honors the labor of placing every brick. The "editor" mindset honors the judgment of choosing which walls are worth building at all. Real leverage at the executive level requires redesigning your leadership workflow around **search management**:
 
-When the cost of exploration collapses, the target of design changes. Most teams are using LLMs to run the old maze faster—AI as a typing accelerator inside a linear process. That is a category error. The shift is not about speed; it is about **reach**.
+* **Shift from hero to orchestrator.** Your job is not to champion a single solution. Your job is to insist on multiple variations, score them against constraints, and ruthlessly prune the failures. You are not the genius at the whiteboard; you are the filter for the organization’s attention.
+* **Define the scoring function.** Breadth without judgment is noise. To explore cheaply, you must evaluate quickly. Is the constraint runway? Regulatory risk? Strategic positioning? Exploration without a clear scoring function is just drift.
+* **Prune aggressively.** Cheap output creates a new form of debt: the cognitive load of options and initiatives. The primary skill of the AI-augmented leader is not adding more documents, decks, or projects, but shutting down dead ends before they consume headcount and political capital.
 
-1. **Clinging to early decisions becomes irrational.** We defended architectural choices because reversals were expensive; sunk costs were real. Now code is cheap; rewriting is cheap. Defending a mediocre solution is no longer prudence; it is vanity. If you can test five architectures in an afternoon, settling for the first one is a failure of rigor.
-2. **Cycle time becomes the definition of capability.** In a world of cheap exploration, the team that tests five divergent paths before lunch has a qualitative advantage over the team that spends the day perfecting one. Slow exploration is not cautious; it is risky.
-3. **The “safety” of the local maximum disappears.** Exploitation used to feel safer than exploration. When the cost of trying new paths is near zero, staying on a local peak “to be safe” is now the dangerous path.
+## What Good Looks Like
 
-When trying becomes cheap, the only expensive mistake is refusing to try.
+How do you actually do this as an executive? You replace the Slot Machine Workflow with the Tree Search Workflow.
 
----
+**The Anti-Pattern: The Slot Machine (Bad)**
+Most executives treat the LLM like a slot machine. They toss in a prompt ("Write a strategy for entering the SMB market"), pull the lever, and accept whatever comes out. If it feels off, they tweak language around the edges instead of questioning the direction. This is high-friction and low-leverage. You are still walking the landscape linearly, just slightly faster.
 
-## 6. Hickey’s Phases With a Catalyst
+**The Pattern: The Tree Search (Good)**
+The editorial workflow for leaders looks like this:
 
-LLMs do not replace any design phase.
-They give each one more room to work.
+**The Fan-Out (Minutes 0–10).** Do not ask for a finished plan. Ask for options.
+"Propose five distinct strategies for entering the SMB market: partnerships, self-serve product-led, inside sales, ecosystem integrations, and a hybrid. For each, outline benefits, risks, time-to-impact, and required org changes."
 
-- **Describe (increase visibility).**
-  LLMs make it cheaper to generate more representations and compare them.
+**The Audit (Minutes 10–20).** Read the critique. Apply your constraints.
+Kill the options that don’t fit your runway, risk appetite, or brand.
 
-- **Diagnose (find causes).**
-  Faster iterations make that conversation richer.
+**The Scaffold (Minutes 20–30).** Now, deepen only the survivors.
+Ask the model to draft just the scaffolds—high-level roadmaps, org charts, and investment theses—for the one or two options that remain.
 
-- **Delimit (set boundaries).**
-  More iterations expose misfits sooner.
+**The Deepen (Hours 1–4).** This is where you take over.
+You have skipped the "valley" of weak strategies without burning cycles on them. Now you use human leadership—your metis—to pressure-test with your team, model the P&L, surface execution risks, and negotiate trade-offs the model cannot see.
 
-- **Direction (choose a path).**
-  Exploration becomes more practical when it is cheap; parallel strategies can be tested early.
+**The Difference.**
+The Slot Machine leader spends weeks selling and polishing **the wrong strategy**. The Tree Search leader spends that time exploring viable paths, learning and iterating through cheap experiments and simulations.
 
-- **Design (shape the form).**
-  Humans still supply conceptual integrity; the model drafts alternatives quickly.
+### Do Less, Judge More
 
-- **Develop (make it real).**
-  Cheap rewrites make it easier to honor quality and repay debt.
+J.C.R. Licklider foresaw this partnership decades ago: humans supplying the judgment, machines supplying the options. We have finally arrived at that moment, but arriving there requires a violent adaptation in how we value leadership work.
 
-The shape of the work stays the same.
-The *cost* of moving between phases drops, so you can loop more often and retire bad bets earlier.
+This shifts the seat of our competence. The era of the solitary genius crafting the perfect strategy in one go is over. The era of the curator—scanning a dozen possible futures to choose the next experiment—has begun.
+
+To survive this, we must adapt. We must invert the ratio of our effort: Do less. Judge more.
+
+Stop measuring your value by the volume of activity. Measure it by the learning you unlock and the paths you reject. The machines build. We choose.
 
 ---
 
-## 7. What This Demands
-
-This shift does not demand believing LLMs are geniuses. It demands we stop acting like crafters and start acting like editors. The common failure mode is using AI to accelerate the “Describe → Develop” straight line. Real leverage requires redesigning the workflow around **search management**:
-
-- **Shift from builder to orchestrator.** Your job is not just to grind out the artifact. Your job is to generate multiple variations, score them against constraints, and ruthlessly prune the failures. You are not the typist; you are the filter.
-- **Define the scoring function.** Breadth without judgment is noise. To explore cheaply, you must evaluate quickly. Is the constraint cycle time? Correctness? User value? Exploration without a scoring function is just drift.
-- **Aggressive pruning.** Cheap code creates a new debt: the cognitive load of options. The primary skill of the AI-augmented designer is not adding lines, but deleting dead ends before they consume attention.
-- **Deepen only where necessary.** Use the model for shallow breadth. Use your judgment to select the one path worth the expensive investment of human depth.
-
-We stay the driver. But we are driving a different vehicle now, and driving it like a wagon is a waste.
-
----
-
-## Closing
-
-Licklider foresaw this partnership: humans supplying the judgment, machines supplying the options. When the cost of curiosity approaches zero, the remaining constraint is our own willingness to abandon the paths that aren't working. We do not need to code faster. We need the courage to throw away code faster.
-
-This shifts the seat of our competence. The era of the solitary genius crafting the perfect solution in one go is over. The era of the curator—scanning a dozen possible futures to select the one that works—has begun.
-
-The machines build. We choose.
-
----
 ## Appendices
 
 <style>
@@ -175,10 +129,11 @@ The machines build. We choose.
 
 In Stuart Kauffman’s **NK Model**, a "rugged" fitness landscape traps agents on local maxima. To find a higher peak, an agent usually has to step "downhill" (worse performance) to cross a valley.
 
-* **Pre-LLM:** Crossing the valley required expensive refactoring. The cost of the "downhill" move often exceeded the team's political or temporal capital, trapping them on mediocre hills.
-* **Post-LLM:** LLMs allow for **"tunneling."** Because we can generate a fully formed alternative architecture in parallel, we can assess the potential of a distant peak without painstakingly traversing the valley of broken code in between.
+- **Pre-LLM:** Crossing the valley required expensive refactoring. The cost of the "downhill" move often exceeded the team's political or temporal capital, trapping them on mediocre hills.
+- **Post-LLM:** LLMs allow for **"tunneling."** Because we can generate a fully formed alternative architecture in parallel, we can assess the potential of a distant peak without painstakingly traversing the valley of broken code in between.
 
 **The Shift:** We no longer walk the landscape linearly; we sample it discontinuously.
+
 </details>
 
 <details class="appendix" markdown="1">
@@ -192,6 +147,7 @@ How to integrate "form-manipulating" machines (Bender) with "meaning-making" hum
 4. **Verification:** Run it. If it fails, do not debug linearly; loop back to step 1 with new constraints.
 
 **Key Insight:** Do not spend "Deepening" effort until "Selection" has occurred.
+
 </details>
 
 <details class="appendix" markdown="1">
@@ -203,4 +159,5 @@ The economic shift is simple: the cost of **generation collapses**, the cost of 
 - New rationality: productivity is **bad paths rejected** because judgment is scarce.
 
 David Deutsch’s lens applies: progress is the rate at which we correct errors. Faster generation only helps if we raise our rejection and correction rate to match.
+
 </details>
