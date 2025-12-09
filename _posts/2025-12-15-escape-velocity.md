@@ -2,13 +2,11 @@
 
 **Breaking the Gravity of Local Maxima**
 
-The hardest part of design isn't having ideas. It is abandoning the "good enough" ideas to keep finding better ones.
+LLMs collapse the cost of exploring alternatives, so leadership quality now hinges on how well we search, not how well we craft. Search becomes the spine of design and strategy work.
 
-Historically, we didn't do this. We stayed on local maxima—hills that were high enough to survive but too low to excel—because the cost of climbing down was simply too high. Scrapping code, rewriting specs, and rethinking architecture cost weeks of political and temporal capital. We were trapped by the gravity of sunk costs.
+The hardest part of design has never been coming up with ideas. It is letting go of the first workable idea to look for better ones. Historically, we stayed on local maxima—peaks that were fine for survival but too low for excellence—because moving off them was expensive. Rewrites, refactors, and architectural shifts burned real political and temporal capital.
 
-Rich Hickey’s six phases of design (Describe, Diagnose, Delimit, Direction, Design, Develop) remain the correct map of the territory. But LLMs have changed the vehicle we use to cross it. They lower the cost of exploration so drastically that "sunk cost" loses its grip.
-
-Design is still the work of steering, but we finally have the escape velocity to leave the first hill we find.
+LLMs change that cost structure. We can now explore multiple paths within minutes. Sunk cost loses its grip. The work of leadership becomes steering the search rather than defending early choices.
 
 ### The Landscape of Expensive Mistakes
 
@@ -95,7 +93,28 @@ This shifts the seat of our competence. The era of the solitary genius crafting 
 
 To survive this, we must adapt. We must invert the ratio of our effort: Do less. Judge more.
 
-Stop measuring your value by the volume of activity. Measure it by the learning you unlock and the paths you reject. The machines build. We choose.
+Stop measuring your value by the volume of activity. Measure it by the learning you unlock and the paths you reject.
+
+### What “Judge More” Looks Like in Practice
+
+Good judgment is not heroic intuition. It is a steady discipline built on three commitments that fit the new economics of exploration:
+
+**Do not settle on the first workable option.**
+A workable idea only shows that one path exists, not that it is the best one. Generate contrasting alternatives before choosing. Treat the earliest idea as a reference point, not a winner.
+
+**Score options before deepening them.**
+Depth is costly. Before investing, compare options against the same constraints: runway, risk, time-to-impact, differentiation, and feasibility. Let the scoring filter the field so depth lands where it matters.
+
+**Keep cycle time visible and short.**
+Exploration speed is now a competitive advantage. Track how long it takes to move from question to options, from options to selection, and from selection to a testable draft. Short cycles prevent overcommitment to weak paths and create continual learning.
+
+These practices give "judge more" a concrete shape. They keep attention on what leadership now optimizes for: quality of search, strength of pruning, and clarity of decision.
+
+### A Portfolio Lens on Search
+
+Another way to see this discipline is through portfolio theory. Options are your deal flow. Scoring is diligence. Deepening is capital allocation. Pruning is cutting losses early before they compound. The aim is not to back the first workable idea, but to maintain a healthy pipeline of alternatives and invest only in the ones that survive the filter. This framing reinforces the shift: leadership becomes the management of search quality and portfolio health, not the defense of early drafts.
+
+ The machines build. We choose.
 
 ---
 
@@ -139,7 +158,7 @@ In Stuart Kauffman’s **NK Model**, a "rugged" fitness landscape traps agents o
 <details class="appendix" markdown="1">
 <summary><strong>Appendix B: The "Shallow-to-Deep" Protocol (Cognition)</strong></summary>
 
-How to integrate "form-manipulating" machines (Bender) with "meaning-making" humans (Polanyi):
+The Shallow-to-Deep protocol is the cognitive version of tree search. It widens the branch factor early, applies a simple evaluation function, and prunes most of the space before committing depth to the remaining branches.
 
 1. **Explosion (shallow):** Prompt for N divergent approaches; maximize variance, ignore syntax errors.
 2. **Selection (the filter):** Apply the scoring function (cycle time, modularity, correctness); reject N−1 options immediately.
