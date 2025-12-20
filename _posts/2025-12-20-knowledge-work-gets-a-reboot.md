@@ -4,12 +4,12 @@ date: "2025-12-20 14:19:00 -0400"
 author: muness
 toc: true
 comments: true
-excerpt: "LLMs make exploration cheap, not verification. The reboot is using them to widen options early—without locking into the wrong path."
+excerpt: "LLMs make exploration cheap, not verification. The reboot is using them to widen options early—without locking into irreversible paths."
 ---
 
-*Using LLMs without locking in the wrong path*
+*Using LLMs without locking into irreversible paths*
 
-The reboot is a workflow change: use LLMs to widen the search space, and use phase gates and verification loops to avoid locking into the wrong path.
+The reboot is a workflow change: use LLMs to widen the search space, and use phase gates and verification loops to avoid locking into irreversible paths.
 
 A useful description of frontier LLMs came from [Steve Hsu](https://www.manifold1.com/episodes/theoretical-physics-with-generative-ai-101): they feel like a “brilliant but unreliable” colleague. You can ask a question and get a long, confident response that mixes real insight with subtle errors. In research, that can mean a wild goose chase. In a lot of real work, it can mean something worse than wasted time.
 
@@ -23,7 +23,7 @@ In an ergodic world, it is reasonable to lean on averages. Mistakes wash out. If
 
 A lot of human work is not like that. Many systems have absorbing states and one‑way doors. A bad decision can end the game or force you onto a path that stays costly for years. The average outcome across lots of hypothetical parallel lives is not the same as the outcome of your one life.
 
-This is why the “1 in 1000” Russian roulette example is so clarifying. The odds look tiny in a single round. Over enough rounds, the question stops being “what is the probability” and becomes “am I willing to put a non‑zero chance of ruin into my loop.”
+This is why the “1 in 1,000” Russian roulette example is so clarifying. The odds look tiny in a single round. Over enough rounds, the question stops being “what is the probability” and becomes “am I willing to put a non‑zero chance of ruin into my loop.”
 
 Non‑ergodicity means path matters. Sequence matters. Timing matters. Reversibility matters.
 
@@ -218,6 +218,18 @@ So the point is not to reject LLMs. It is to use them in a way that respects the
 Explore broadly. Score early. Commit late. Act intentionally. And when doing nothing is better, let the system make that choice easy too.
 
 That is what it means to reboot knowledge work: cheaper exploration, stricter gates, and fewer irreversible mistakes.
+
+## Tools to Try
+
+### Superego
+
+An open-source Claude Code + OpenCode plugin for metacognitive feedback, encouraging exploration, dissent, and constraint alignment. Check it out: [cloud-atlas-ai/superego](https://github.com/cloud-atlas-ai/superego)
+
+### Coming in 2026: Open Horizons
+
+A collaborative journal for teams and AI agents to curate aims, patterns, and constraints, identifying incongruences. Automated reviewers detect misalignments, flag emerging problems, encourage dissent, and propose strategy evolutions for continuous alignment.
+
+If you want to be an alpha adopter for Open Horizons, message me on [LinkedIn](https://linkedin.com/in/muness).
 
 ## Appendices
 
