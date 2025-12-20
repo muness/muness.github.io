@@ -1,13 +1,15 @@
 ---
-title: "Navigation over Execution in a Non‑Ergodic World"
+title: "Knowledge Work Gets a Reboot"
 date: "2025-12-20 14:19:00 -0400"
 author: muness
 toc: true
 comments: true
-excerpt: "LLMs make exploration cheap, not verification. In a non‑ergodic world, that means the job is navigation: widen options early, and commit only when you’ve earned the right to deepen."
+excerpt: "LLMs make exploration cheap, not verification. The reboot is using them to widen options early—without locking into the wrong path."
 ---
 
-*Why LLMs should expand exploration, not accelerate commitment*
+*Using LLMs without locking in the wrong path*
+
+The reboot is a workflow change: use LLMs to widen the search space, and use phase gates and verification loops to avoid locking into the wrong path.
 
 A useful description of frontier LLMs came from [Steve Hsu](https://www.manifold1.com/episodes/theoretical-physics-with-generative-ai-101): they feel like a “brilliant but unreliable” colleague. You can ask a question and get a long, confident response that mixes real insight with subtle errors. In research, that can mean a wild goose chase. In a lot of real work, it can mean something worse than wasted time.
 
@@ -75,7 +77,7 @@ Do less. Judge more. Earlier. With intention.
 
 ## The Right Use of LLMs: Exploration First, Optimization Later
 
-This is the core shift.
+This is the reboot.
 
 LLMs are most valuable as exploration engines, not as optimization engines. Use them to widen the search space early, while decisions are still reversible. Then apply human judgment to decide what deserves depth.
 
@@ -144,7 +146,7 @@ This is the antidote to action bias, halo effect, and sunk costs: it forces lear
 
 ## A Workflow That Matches the Environment: Tree Search With Phase Gates
 
-You can translate the above into a simple operating rhythm. The shape is a tree search, but the key is that each deepening step is earned.
+You can translate the above into a simple operating rhythm. The shape is a tree search, but the key is that each deepening step is earned. This is the practical “reboot”: exploration is cheap, commitment is gated.
 
 ### 1) Fan out
 
@@ -198,7 +200,7 @@ That shifts what “good leadership” looks like:
 
 This is editorial leadership. The machines generate. Humans choose. Sometimes the best choice is to wait, to run a smaller probe, or to keep the decision reversible for longer.
 
-## Start Here: One Week Experiment
+## Start Here: One Week Reboot
 
 1. Pick one live decision and write the decision surface (intent, constraints, scoring function, ruin check, and a real null option).
 2. Run a fan‑out prompt: 5 distinct approaches, each with assumptions, failure modes, the fastest disconfirming test, and the biggest one‑way door.
@@ -214,6 +216,8 @@ Non‑ergodicity is the backdrop that makes this real. If the downside were alwa
 So the point is not to reject LLMs. It is to use them in a way that respects the shape of the world.
 
 Explore broadly. Score early. Commit late. Act intentionally. And when doing nothing is better, let the system make that choice easy too.
+
+That is what it means to reboot knowledge work: cheaper exploration, stricter gates, and fewer irreversible mistakes.
 
 ## Appendices
 
