@@ -5,6 +5,21 @@ author: muness
 title: 'Design in Practice: A Writeup'
 ---
 
+## 2025-12 note (LLMs + non‑ergodic risk)
+
+This post is a 2023 writeup of Rich Hickey’s *Design in Practice* talk. Since then, LLMs have changed the cost structure: generating options is cheap; verification is not. And in many real settings, mistakes are non‑ergodic (path-dependent and sometimes irreversible).
+
+If I were updating the process today, I’d add:
+
+- **Treat phase shifts as commitment decisions.** Moving from exploration → execution should be explicit, not momentum-driven.
+- **Add a readiness gate.** Before “Direction / Design / Dev”, answer in plain language why you believe you’re ready to deepen, what could invalidate the work, and what would trigger a stop/pivot.
+- **Use a generator → verifier loop.** Use LLMs to widen the search space, then apply independent verification and small reversible tests before accumulating artifacts.
+- **Log decisions with disconfirming evidence.** Track “what would make this wrong” and “what would cause us to stop” alongside the decision itself.
+
+Rationale: non‑ergodicity turns polished wrong paths into compounding damage, and LLMs make it easier to accumulate credible-looking sunk cost before the work is tested.
+
+Related: [Navigation over Execution in a Non‑Ergodic World]({% post_url 2025-12-20-new-post %}), [Playing to Win through Managed Disequilibrium]({% post_url 2025-10-01-playing-to-win-through-managed-disequilibrium %}), [Dissent Mode]({% post_url 2025-10-19-dissent-mode %})
+
 In his talk, [Design in Practice](https://www.youtube.com/watch?v=c5QF2HjHLSE&list=PLZdCLR02grLpIQQkyGLgIyt0eHE56aJqd&index=1), Rich Hickey explores design. He defines design as the process of making a plan for how we're going to do something. The progress of design is measured by our increased understanding and the decisions we make along the way. 
 
 Hickey outlines six phases of design:
@@ -90,6 +105,6 @@ For instance, you would now start coding your mobile app, testing it for bugs an
 
 Design is a thoughtful and deliberate process. It's not about rushing to solutions or getting caught up in the minutiae of features. It's about understanding the problem, setting a clear direction, and making informed decisions that lead to effective solutions.
 
-Design is measured by our understanding and the subsquent decisions we make based on the understanding. These are key artifacts. These learnings and decisions don't have to be pretty or comprehensive, but they are the best way to capture the work we've done. Don't restrict them to thoughts in your head where others (and future you) can't get to them.
+Design is measured by our understanding and the subsequent decisions we make based on the understanding. These are key artifacts. These learnings and decisions don't have to be pretty or comprehensive, but they are the best way to capture the work we've done. Don't restrict them to thoughts in your head where others (and future you) can't get to them.
 
 Thank you, Rich for this great talk! It's a reminder that design isn't about "waiting to code" but rather about setting us up for success when it comes time to code.
