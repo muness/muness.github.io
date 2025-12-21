@@ -13,19 +13,9 @@ The reboot is a workflow change: use LLMs to widen the search space, and use pha
 
 A useful description of frontier LLMs came from [Steve Hsu](https://www.manifold1.com/episodes/theoretical-physics-with-generative-ai-101): they feel like a “brilliant but unreliable” colleague. You can ask a question and get a long, confident response that mixes real insight with subtle errors. In research, that can mean a wild goose chase. In a lot of real work, it can mean something worse than wasted time.
 
-The danger is thinking the cost is merely “hours.” In a non‑ergodic world (in plain terms: in an ergodic world mistakes average out over many tries; in a non‑ergodic one, a single bad mistake can permanently alter your trajectory), the cost of being confidently wrong can compound into reputation loss, missed windows, regulatory blowback, financial loss, or an irreversible technical or organizational lock‑in. You do not get infinite retries. You get one path through time.
+The danger is thinking the cost is merely "hours." In a [non‑ergodic world](#appendix-a)—where a single bad mistake can permanently alter your trajectory—the cost of being confidently wrong can compound into reputation loss, missed windows, regulatory blowback, or irreversible lock‑in. You do not get infinite retries. You get one path through time.
 
 That is the frame this essay uses. Non‑ergodic threat is not a reason to avoid LLMs. It is a reason to use them differently.
-
-## Non‑Ergodic, in Plain Language
-
-In an ergodic world, it is reasonable to lean on averages. Mistakes wash out. If you keep playing, results converge.
-
-A lot of human work is not like that. Many systems have absorbing states and one‑way doors. A bad decision can end the game or force you onto a path that stays costly for years. The average outcome across lots of hypothetical parallel lives is not the same as the outcome of your one life.
-
-This is why the “1 in 1,000” Russian roulette example is so clarifying. The odds look tiny in a single round. Over enough rounds, the question stops being “what is the probability” and becomes “am I willing to put a non‑zero chance of ruin into my loop.”
-
-Non‑ergodicity means path matters. Sequence matters. Timing matters. Reversibility matters.
 
 ## What LLMs Change, and What They Do Not
 
@@ -41,7 +31,7 @@ When uncertainty rises, people feel pressure to act. Politicians get punished fo
 
 LLMs slot neatly into this failure mode because they are optimized to produce something. They do not naturally offer restraint. They default to the posture of helpful action.
 
-So you get a tight loop:
+So you get a vicious cycle:
 
 1. A problem appears.
 2. The model produces a plausible plan quickly.
@@ -55,21 +45,25 @@ In a non‑ergodic environment, this is not just inefficiency. It is how small e
 
 In an ergodic world, these are annoying but survivable. In a non‑ergodic world, they become dangerous because they convert early uncertainty into premature commitment, and then make that commitment hard to unwind.
 
-### Halo effect: polish becomes credibility
+<details class="gate-question" markdown="1">
+<summary><strong>Halo effect: polish becomes credibility</strong></summary>
 
-LLMs are excellent at form. Confident tone, clean structure, familiar patterns, persuasive phrasing. Humans then transfer credibility from form to substance. “This looks smart” becomes “this is right.”
+LLMs are excellent at form. Confident tone, clean structure, familiar patterns, persuasive phrasing. Humans then transfer credibility from form to substance. "This looks smart" becomes "this is right."
 
 In high‑stakes settings, that is dangerous. A polished wrong direction can be more harmful than a messy one because it gets funded, socialized, and defended.
 
-In a non‑ergodic setting, the mistake isn’t cosmetic. You don’t get partial credit for an elegant failure. A wrong but impressive plan can still walk you through one‑way doors. This is why judgment must happen before polish, not after.
+In a non‑ergodic setting, the mistake isn't cosmetic. You don't get partial credit for an elegant failure. A wrong but impressive plan can still walk you through one‑way doors. This is why judgment must happen before polish, not after.
+</details>
 
-### Sunk cost fallacy: commitment becomes identity
+<details class="gate-question" markdown="1">
+<summary><strong>Sunk cost fallacy: commitment becomes identity</strong></summary>
 
 Once artifacts exist, people protect them. Decks, code, roadmaps, drafts, internal alignment, executive buy‑in. LLMs make it easy to generate a lot of convincing artifact quickly, which means you can accumulate sunk cost faster than you realize.
 
-That accelerates lock‑in. It makes course correction feel like failure. It turns “we learned” into “we must justify.”
+That accelerates lock‑in. It makes course correction feel like failure. It turns "we learned" into "we must justify."
 
-Non‑ergodicity turns sunk cost from a cognitive quirk into a systemic hazard. When paths are irreversible, every additional unit of commitment raises the price of admitting error. LLMs accelerate this dynamic by making it easy to generate artifacts that feel substantial long before they’ve been tested. This is why “search before commitment” isn’t just about better ideas — it is designed to keep mistakes cheap enough to abandon.
+Non‑ergodicity turns sunk cost from a cognitive quirk into a systemic hazard. When paths are irreversible, every additional unit of commitment raises the price of admitting error. LLMs accelerate this dynamic by making it easy to generate artifacts that feel substantial long before they've been tested. This is why "search before commitment" isn't just about better ideas — it is designed to keep mistakes cheap enough to abandon.
+</details>
 
 Put together, action bias pushes us to do something, halo effect convinces us the thing is good, sunk costs trap us once we’ve started, and path dependence ensures the damage compounds.
 
@@ -85,9 +79,7 @@ That sounds obvious, but many teams—often without realizing—are still using 
 
 The question is not “can the model do this faster.” The question is “does this increase the chance we commit to the right thing.”
 
-## The Missing Layer: Earning the Right to Move Phases
-
-### Readiness Is a Judgment, Not a Feeling
+## Readiness Is a Judgment, Not a Feeling
 
 The real question is not “what should we do next?” It is:
 
@@ -99,56 +91,65 @@ In a non‑ergodic world, moving phases is a commitment decision, not a task tra
 
 Before moving from exploration → execution, the team should be able to answer, in plain language:
 
-1. Do we understand the problem well enough?
+<details class="gate-question" markdown="1">
+<summary><strong>1. Do we understand the problem well enough?</strong></summary>
 
-   - What are the failure modes?
-   - What would make this problem irrelevant or misframed?
-   - What assumptions would break the whole effort if wrong?
+- What are the failure modes?
+- What would make this problem irrelevant or misframed?
+- What assumptions would break the whole effort if wrong?
 
-   If you can’t name how this goes wrong, you’re not ready to act.
+If you can't name how this goes wrong, you're not ready to act.
+</details>
 
-2. Have we explored the problem space?
+<details class="gate-question" markdown="1">
+<summary><strong>2. Have we explored the problem space?</strong></summary>
 
-   This is where LLMs shine when used correctly. It is boundary discovery, not solution ideation yet.
+This is where LLMs shine when used correctly. It is boundary discovery, not solution ideation yet.
 
-   - What adjacent problems look similar but aren’t?
-   - What constraints dominate outcomes here?
-   - How do different stakeholders experience this problem differently?
+- What adjacent problems look similar but aren't?
+- What constraints dominate outcomes here?
+- How do different stakeholders experience this problem differently?
+</details>
 
-3. Have we explored existing solutions and substitutes?
+<details class="gate-question" markdown="1">
+<summary><strong>3. Have we explored existing solutions and substitutes?</strong></summary>
 
-   This is the most skipped step, and when it’s skipped it’s usually pure action bias.
+This is the most skipped step, and when it's skipped it's usually pure action bias.
 
-   - What already exists that partially solves this?
-   - What could we reuse, adapt, or live with?
-   - What would “good enough for now” look like?
+- What already exists that partially solves this?
+- What could we reuse, adapt, or live with?
+- What would "good enough for now" look like?
+</details>
 
-4. Have we explored the solution space broadly?
+<details class="gate-question" markdown="1">
+<summary><strong>4. Have we explored the solution space broadly?</strong></summary>
 
-   Only now does ideation matter. The goal is not finding the best solution. It is mapping plausible approaches, understanding the trade‑offs, and identifying irreversible vs reversible paths.
+Only now does ideation matter. The goal is not finding the best solution. It is mapping plausible approaches, understanding the trade‑offs, and identifying irreversible vs reversible paths.
 
-   - What are 3 to 5 meaningfully different approaches (not variants of the same one)?
-   - What trade‑offs dominate between them?
-   - Which paths are reversible, and which are one‑way doors?
+- What are 3 to 5 meaningfully different approaches (not variants of the same one)?
+- What trade‑offs dominate between them?
+- Which paths are reversible, and which are one‑way doors?
+</details>
 
-5. What have we learned that makes action less dangerous now than before?
+<details class="gate-question" markdown="1">
+<summary><strong>5. What have we learned that makes action less dangerous now than before?</strong></summary>
 
-   This is the key non‑ergodic test. If the answer is “none,” then action is just motion.
+This is the key non‑ergodic test. If the answer is "none," then action is just motion.
 
-   - What risks have we retired?
-   - What uncertainties have we narrowed?
-   - What mistakes are now cheap instead of catastrophic?
-   - What would cause us to stop, pivot, or de‑scope?
-
-This is not about perfection. It is about building a working model of the system as you solve the problem. Real learning changes the next decision. Blind action just accumulates artifacts to defend.
+- What risks have we retired?
+- What uncertainties have we narrowed?
+- What mistakes are now cheap instead of catastrophic?
+- What would cause us to stop, pivot, or de‑scope?
+</details>
 
 This is the antidote to action bias, halo effect, and sunk costs: it forces learning to show up before commitment.
 
-## A Workflow That Matches the Environment: Tree Search With Phase Gates
+## The Reboot in Practice
 
-You can translate the above into a simple operating rhythm. The shape is a tree search, but the key is that each deepening step is earned. This is the practical “reboot”: exploration is cheap, commitment is gated.
+You can translate the above into a simple operating rhythm. The shape is a tree search, but the key is that each deepening step is earned. Exploration is cheap, commitment is gated.
 
-### 1) Fan out
+<details class="gate-question" markdown="1">
+<summary><strong>1) Fan out</strong></summary>
 
 Ask for options, not a finished plan. Use the model to generate a set of distinct approaches. Force variance.
 
@@ -163,29 +164,36 @@ Bad prompts ask for:
 
 - one polished answer
 - a complete plan
-- a single “best” recommendation
+- a single "best" recommendation
+</details>
 
-### 2) Score and prune
+<details class="gate-question" markdown="1">
+<summary><strong>2) Score and prune</strong></summary>
 
 Apply the same scoring criteria across options. This is where leadership shows up. The scoring function should reflect the real constraints: runway, brand, safety, regulatory exposure, reversibility, time‑to‑impact.
 
-Prune aggressively. You are not trying to keep everyone’s favorite idea alive. You are trying to prevent the team from sinking costs into weak paths.
+Prune aggressively. You are not trying to keep everyone's favorite idea alive. You are trying to prevent the team from sinking costs into weak paths.
 
 This phase only works if your system makes it safe to surface disconfirming evidence and cheap to stop. In practice that means guardrails + short checkpoints (managed disequilibrium) and institutionalized dissent (so minority views can contradict the plan in daylight). See [Managed disequilibrium]({% post_url 2025-10-01-playing-to-win-through-managed-disequilibrium %}) and [Dissent Mode]({% post_url 2025-10-19-dissent-mode %}).
+</details>
 
-### 3) Scaffold
+<details class="gate-question" markdown="1">
+<summary><strong>3) Scaffold</strong></summary>
 
 Now deepen lightly. Ask for rough roadmaps, minimal architectures, test plans, or prototypes. This stage exists to surface hidden costs before commitment.
 
 Use the readiness gate here. If you cannot answer the questions above in plain language, stay in exploration.
+</details>
 
-### 4) Commit and execute
+<details class="gate-question" markdown="1">
+<summary><strong>4) Commit and execute</strong></summary>
 
 Only after pruning and scaffolding do you invest real depth. This is where you build, test, and ship.
 
 The goal is not speed for its own sake. The goal is intentional action that was made safer by exploration.
+</details>
 
-## What Leadership Optimizes for Now
+## Reoptimizing Leadership
 
 In a path‑dependent environment, leaders do not create advantage by being faster at execution. They create advantage by reducing the chance of irreversible mistakes.
 
@@ -207,7 +215,7 @@ This is editorial leadership. The machines generate. Humans choose. Sometimes th
 3. Score and prune in a short review; make stopping and de‑scoping an explicit option, not a political failure.
 4. Scaffold one survivor with a smallest reversible probe + verifier pass; then decide to deepen or return to exploration with updated constraints.
 
-## Close
+## The Upshot
 
 LLMs make it easy to do something. That is exactly why we need stronger discipline around when to act.
 
@@ -219,15 +227,14 @@ Explore broadly. Score early. Commit late. Act intentionally. And when doing not
 
 That is what it means to reboot knowledge work: cheaper exploration, stricter gates, and fewer irreversible mistakes.
 
-## Tools to Try
+## Go Deeper
 
-### Superego
+For the theoretical foundation behind verification and convergence testing, see Steve Hsu's [podcast on Generative AI in research](https://www.manifold1.com/episodes/theoretical-physics-with-generative-ai-101) and [paper on LLMs as research assistants](https://drive.google.com/file/d/16sxJuwsHoi-fvTFbri9Bu8B9bqA6lr1H/view).
 
-An open-source Claude Code + OpenCode plugin for metacognitive feedback, encouraging exploration, dissent, and constraint alignment. Check it out: [cloud-atlas-ai/superego](https://github.com/cloud-atlas-ai/superego)
+Two tools that support this workflow:
 
-### Coming in 2026: Open Horizons
-
-A collaborative journal for teams and AI agents to curate aims, patterns, and constraints, identifying incongruences. Automated reviewers detect misalignments, flag emerging problems, encourage dissent, and propose strategy evolutions for continuous alignment.
+- **[Superego](https://github.com/cloud-atlas-ai/superego)** — An open-source Claude Code + OpenCode plugin for metacognitive feedback, encouraging exploration, dissent, and constraint alignment.
+- **Open Horizons** (coming 2026) — A collaborative journal for teams and AI agents to curate aims, patterns, and constraints, with automated reviewers that detect misalignments, flag emerging problems, and encourage dissent.
 
 If you want to be an alpha adopter for Open Horizons, message me on [LinkedIn](https://linkedin.com/in/muness).
 
@@ -484,7 +491,7 @@ This is how you get the upside of speed without importing the downside of premat
 </details>
 
 <style>
-.appendix {
+.appendix, .gate-question {
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin: 0.75rem 0;
@@ -492,21 +499,21 @@ This is how you get the upside of speed without importing the downside of premat
   background: #f9fafb;
   transition: box-shadow 0.2s ease, background 0.2s ease;
 }
-.appendix summary {
+.appendix summary, .gate-question summary {
   font-weight: 600;
   cursor: pointer;
   list-style: none;
 }
-.appendix summary::-webkit-details-marker {
+.appendix summary::-webkit-details-marker, .gate-question summary::-webkit-details-marker {
   display: none;
 }
-.appendix[open] {
+.appendix[open], .gate-question[open] {
   background: #fff;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
 }
 @media (prefers-color-scheme: dark){
-  .appendix { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); }
-  .appendix[open] { background: rgba(255,255,255,.06); }
+  .appendix, .gate-question { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.14); }
+  .appendix[open], .gate-question[open] { background: rgba(255,255,255,.06); }
 }
 </style>
 
