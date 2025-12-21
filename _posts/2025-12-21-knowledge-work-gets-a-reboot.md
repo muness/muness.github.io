@@ -1,6 +1,6 @@
 ---
 title: "Knowledge Work Gets a Reboot"
-date: "2025-12-20 14:19:00 -0400"
+date: "2025-12-21 11:20:00 -0500"
 author: muness
 toc: true
 comments: true
