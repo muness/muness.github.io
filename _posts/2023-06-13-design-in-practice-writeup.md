@@ -1,6 +1,7 @@
 ---
 comments: true
 date: 2023-06-13 16:40:00 +0500
+updated: 2025-12-21
 author: muness
 title: 'Design in Practice: A Writeup'
 ---
@@ -18,7 +19,7 @@ If I were updating the process today, I’d add:
 
 Rationale: non‑ergodicity turns polished wrong paths into compounding damage, and LLMs make it easier to accumulate credible-looking sunk cost before the work is tested.
 
-Related: [Knowledge Work Gets a Reboot]({% post_url 2025-12-20-knowledge-work-gets-a-reboot %}), [Playing to Win through Managed Disequilibrium]({% post_url 2025-10-01-playing-to-win-through-managed-disequilibrium %}), [Dissent Mode]({% post_url 2025-10-19-dissent-mode %})
+Related: [Knowledge Work Gets a Reboot]({% post_url 2025-12-21-knowledge-work-gets-a-reboot %}), [Playing to Win through Managed Disequilibrium]({% post_url 2025-10-01-playing-to-win-through-managed-disequilibrium %}), [Dissent Mode]({% post_url 2025-10-19-dissent-mode %})
 
 In his talk, [Design in Practice](https://www.youtube.com/watch?v=c5QF2HjHLSE&list=PLZdCLR02grLpIQQkyGLgIyt0eHE56aJqd&index=1), Rich Hickey explores design. He defines design as the process of making a plan for how we're going to do something. The progress of design is measured by our increased understanding and the decisions we make along the way. 
 
