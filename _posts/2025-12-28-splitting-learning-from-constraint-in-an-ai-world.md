@@ -15,15 +15,13 @@ Yet somehow confidence isn’t rising. The same kinds of mistakes repeat. Old �
 
 This isn’t because people aren’t smart or trying hard enough. It’s a systems problem—one Agile solved brilliantly for its era, and one we now need to solve differently in ours.
 
-Agile worked because it forced teams to learn and change behavior at the same time—an elegant solution when feedback was expensive and memory fragile.
-
 Agile and Extreme Programming solved this once, for a different era. They worked because their practices forced learning and behavior change to happen at the same time. Tests, pairing, short iterations, standups. Each practice did double duty. You did not just notice a problem. You were constrained to work differently immediately.
 
 That coupling made sense when feedback was hard to get, enforcement was social, and memory lived in people's heads.
 
 Today, that same coupling breaks down.
 
-Exploration is cheap. Artifacts multiply instantly. Some mistakes are non-ergodic and hard to unwind. Rules can be enforced automatically. Knowledge can be stored, searched, and replayed.
+Exploration is cheap. Artifacts multiply instantly. Some mistakes can't be undone—the path closes behind you. Rules can be enforced automatically. Knowledge can be stored, searched, and replayed.
 
 When learning and constraint stay glued together in this environment, teams hit two predictable failure modes.
 
@@ -57,8 +55,7 @@ They are weak at judgment, but strong as recorders, provokers, and enforcers.
 
 Agile collapsed learning, constraint, enforcement, and memory into single practices because it had to. We no longer do.
 
-Instead of giving the model general intelligence, give it four narrow, asymmetric jobs that keep human judgment firmly in the center:
-These responsibilities shape the system around human judgment rather than replacing it.
+Instead of giving the model general intelligence, give it four narrow, asymmetric jobs that keep human judgment firmly in the center.
 
 ![LLMs operate at the edges: capturing, provoking, enforcing, and remembering. Human judgment decides under uncertainty.](/assets/img/splitting-learning-from-constraint.png)
 
@@ -169,6 +166,3 @@ The question now is not how to go faster.
 It is whether we are willing to design systems where learning can keep moving, without freezing into rules too early.
 
 That is the real evolution Agile needs in an AI world.
-
-The real evolution isn’t going faster.
-It’s designing systems where learning can keep moving—without freezing into premature rules.
