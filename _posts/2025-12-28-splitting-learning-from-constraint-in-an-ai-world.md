@@ -41,7 +41,7 @@ The way out is not "smarter AI" or "better prompts." It is splitting roles that 
 
 Think of traditional Agile practices as wet cement: you had to shape learning into a permanent mold immediately or it would be lost.
 In an AI world, the cement sets too fast—old molds become rigid walls that block new paths.
-The shift is to keep learning fluid longer while still building strong, explicit guardrails where they’re truly needed.
+The shift is to keep learning fluid longer while still building strong, explicit constraints where they’re truly needed.
 
 The split only becomes clear when LLMs are given distinct jobs, not general intelligence.
 
@@ -51,11 +51,16 @@ That is not a flaw. It is a constraint you can design around.
 
 ## The Key Move: Give LLMs Asymmetric Roles
 
-They are weak at judgment, but strong as recorders, provokers, and enforcers.
+They are weak at judgment, but strong as recorders, provokers, enforcers, and librarians.
 
 Agile collapsed learning, constraint, enforcement, and memory into single practices because it had to. We no longer do.
 
-Instead of giving the model general intelligence, give it four narrow, asymmetric jobs that keep human judgment firmly in the center.
+Instead of giving the model general intelligence, give it four narrow, asymmetric jobs that keep human judgment firmly in the center:
+
+- Recorder: captures learning without authority
+- Enforcer: checks explicit constraints and requests justification for overrides
+- Provoker: asks the uncomfortable, Socratic questions that surface risk and assumptions
+- Librarian: preserves durable memory so learning compounds
 
 ![LLMs operate at the edges: capturing, provoking, enforcing, and remembering. Human judgment decides under uncertainty.](/assets/img/splitting-learning-from-constraint.png)
 
@@ -77,13 +82,42 @@ Critically:
 
 This is how learning stays plastic. It can accumulate without freezing into policy.
 
+## The Promotion Gate: When Does Learning Become a Rule?
+
+The split only works if there is a deliberate "promotion gate" between what you learn and what you enforce.
+
+Captured learning should live as low-authority memory: incident summaries, decision rationales, "here’s what surprised us" notes—informative but not binding, and not enforceable without promotion. It is searchable, revisitable, and allowed to be messy.
+
+Constraints are different. They are explicit, scoped, and enforced on purpose.
+
+A useful default: a rule only becomes enforceable when a human can write down:
+
+1. the boundary (what’s in vs. out)
+2. why it exists (the failure mode or risk it prevents)
+3. when it should be revisited (a sunset date, a signal, or an owner)
+
+If you can’t state those three, keep it as learning, not policy.
+
+That third criterion matters more than it looks. Most organizations are good at adding rules and terrible at retiring them. Without a revisit mechanism, constraints turn into stale scar tissue.
+
+Common promotion triggers:
+
+- repetition: the same failure mode appears a second or third time (a first recurrence should trigger a question, not a new constraint)
+- irreversibility: a mistake is hard to unwind (data loss, lock-in, regulatory risk)
+- high leverage: a small constraint prevents a large class of harm
+- onboarding: new teammates keep rediscovering the same edge case
+
+Corollary: if a mistake is cheap to unwind, keep it as learning longer. Capture it, let the Provoker surface it next time, and only promote it if it keeps repeating or becomes irreversible.
+
+Crucially, promotion is an intentional team act, not an automatic side effect of an incident. The model can draft a candidate rule, but humans decide whether it becomes an enforceable constraint.
+
 ## 2. Enforce Rules Without Pretending They Are Wisdom
 
-Separately, LLMs can enforce explicit constraints.
+Separately, LLMs can enforce explicit constraints that have been deliberately promoted from learning into policy.
 
 They can:
 
-- check whether stated rules were followed
+- check whether stated constraints were followed
 - ask for justification when they were not
 - block obvious violations
 
@@ -91,15 +125,13 @@ This is enforcement, not judgment.
 
 The model does not say "this is wrong." It says "this violates an agreed boundary, explain why."
 
-Overrides are allowed, but they require explanation. That explanation becomes new learning input. Enforcement creates pressure. It does not claim insight.
+Overrides are allowed, but they require explanation. That explanation becomes new learning input (and sometimes the seed of a future constraint). Enforcement creates pressure. It does not claim insight.
 
 This breaks from Agile's reliance on social enforcement without drifting into rigid bureaucracy.
 
 ## 3. Bias Questions, Not Answers
 
-This is where most people get confused.
-
-The model should not recommend actions. It should surface pressure points based on past experience.
+This is the Provoker role: a model whose job is to ask better questions, not to decide. The model should not recommend actions. It should surface pressure points based on past experience.
 
 Questions like:
 
@@ -113,7 +145,9 @@ This preserves learning pressure without prescribing behavior. It makes teams pa
 
 Agile assumed teams would remember. Context would carry forward. Learning would survive turnover.
 
-That assumption is broken.
+This is the Librarian role: a model-plus-storage system whose job is to preserve context over time so teams don’t keep relearning the same lessons.
+
+That assumption breaks under modern conditions: teams scale, people rotate, context-switching increases, and rationale disappears into tickets, PRs, and chat.
 
 LLMs plus storage let you:
 
@@ -139,11 +173,15 @@ The system simply makes learning cheaper to capture, constraints clearer to enfo
 
 A team makes a decision. Something unexpected happens. An LLM captures what broke expectations and why the decision changed. No rule is created.
 
-Example: A team deploys a new caching strategy suggested by an LLM. It causes unexpected latency spikes in production. The post-incident LLM summary captures: "Assumption about traffic patterns was wrong; invalidation logic didn’t account for X." No new rule is created. Six weeks later, when a similar pattern appears in a PR, the enforcement LLM flags: "This matches a prior invalidation failure—justify or adjust." The team explains why it’s different this time. That justification feeds back into memory.
+Example: A team deploys a new caching strategy suggested by an LLM. It causes unexpected latency spikes in production. The post-incident LLM summary captures: "Assumption about traffic patterns was wrong; invalidation logic didn’t account for X." No new rule is created. Six weeks later, when a similar pattern appears in a PR, the Provoker model asks: "This matches a prior invalidation failure. What’s different this time?" The team explains why it’s different this time. That justification feeds back into memory.
 
-Later, a similar change is proposed. A constraint check fires. The rule applies, or it is overridden with explanation.
+If the pattern keeps repeating—or the risk is high enough to justify hardening it into a constraint—the team promotes an explicit constraint using the promotion gate.
+
+From then on, the Enforcer runs a constraint check. The constraint applies, or it is overridden with explanation.
 
 The next time, the system asks sharper questions earlier.
+
+That is the loop: capture → accumulate → (sometimes) promote → enforce → override → feed back.
 
 Learning stays separate from constraint. Constraint stays explicit. Enforcement stays proportional. Memory stays alive.
 
