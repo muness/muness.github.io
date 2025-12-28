@@ -1,0 +1,109 @@
+direction: down
+
+# Neutral color palette - grays and muted blues
+vars: {
+  center-color: "#64748B"      # Slate gray
+  accent-color: "#94A3B8"      # Muted blue-gray
+  text-color: "#1E293B"        # Dark slate
+  subtitle-color: "#64748B"    # Medium slate
+}
+
+# Center text - visually dominant
+center: {
+  label: "Human judgment\ndecides under uncertainty"
+  shape: text
+  style: {
+    font-color: ${text-color}
+    font-size: 28
+    bold: true
+  }
+}
+
+# Top-left quadrant: Capture
+capture: {
+  label: "CAPTURE\n\n• Unexpected outcomes\n• Broken assumptions\n• Decision reversals\n\nRecords what reality revealed"
+  shape: text
+  style: {
+    font-size: 16
+    font-color: ${text-color}
+    bold: true
+  }
+  near: top-left
+}
+
+# Top-right quadrant: Provoke
+provoke: {
+  label: "PROVOKE\n\n• Tension points\n• Counterfactuals\n• Disconfirming questions\n\nSurfaces pressure without prescribing answers"
+  shape: text
+  style: {
+    font-size: 16
+    font-color: ${text-color}
+    bold: true
+  }
+  near: top-right
+}
+
+# Bottom-left quadrant: Enforce
+enforce: {
+  label: "ENFORCE\n\n• Explicit guardrails\n• Boundary checks\n• Override requests\n\nApplies constraints without claiming wisdom"
+  shape: text
+  style: {
+    font-size: 16
+    font-color: ${text-color}
+    bold: true
+  }
+  near: bottom-left
+}
+
+# Bottom-right quadrant: Remember
+remember: {
+  label: "REMEMBER\n\n• Prior decisions\n• Rationale and context\n• Outcomes over time\n\nPreserves learning without turning it into folklore"
+  shape: text
+  style: {
+    font-size: 16
+    font-color: ${text-color}
+    bold: true
+  }
+  near: bottom-right
+}
+
+# Thin connecting lines from quadrants to center
+capture -> center: {
+  style: {
+    stroke: ${accent-color}
+    stroke-width: 2
+  }
+}
+
+provoke -> center: {
+  style: {
+    stroke: ${accent-color}
+    stroke-width: 2
+  }
+}
+
+enforce -> center: {
+  style: {
+    stroke: ${accent-color}
+    stroke-width: 2
+  }
+}
+
+remember -> center: {
+  style: {
+    stroke: ${accent-color}
+    stroke-width: 2
+  }
+}
+
+# Footer caption
+caption: {
+  label: "LLMs operate at the edges:\ncapturing, provoking, enforcing, and remembering.\nJudgment stays human."
+  shape: text
+  style: {
+    font-size: 14
+    font-color: ${subtitle-color}
+    italic: true
+  }
+  near: bottom-center
+}
