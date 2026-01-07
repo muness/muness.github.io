@@ -1,6 +1,6 @@
 ---
 title: "Ditch the Draft: How to Salvage AI Dev Wins from Context Collapse Hell"
-date: 2026-01-07 11:00:00 -0500
+date: 2026-01-07 09:00:00 -0500
 author: muness
 toc: true
 comments: true
