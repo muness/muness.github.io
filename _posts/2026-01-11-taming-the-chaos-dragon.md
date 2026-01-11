@@ -25,6 +25,8 @@ So I did something new (for me): I used the Open Horizons stack Drazen (my co-fo
 In doing that, I ran straight into the problem the stack is built to solve.
 The thing agents make worse isn’t effort. It’s drift at speed — the chaos dragon.
 
+When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
+
 <div class="callout callout--note" markdown="1">
 **Don’t start a run without a Dive Pack** — a one-page brief: what you’re doing, why it matters, and what you must not do. ([Jump to template](#dive-pack-template))
 </div>
@@ -54,6 +56,7 @@ This isn’t a conceptual framework. It’s a stack we’re shipping with.
 
 - **What “fast, grounded shipping” looks like:** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
 - **What shipped (to date):** 51 tagged releases across the two core repos — `roon-knob` (35) + `unified-hifi-control` (16). See releases: [roon-knob](https://github.com/muness/roon-knob/releases) and [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
+- **What that means in practice:** power management (deep sleep), test harness improvements (per-PR firmware flash pages), and real performance work (JPEG decode offloaded to the bridge).
 - **Why it’s safe:** the absolute-volume bug above became a “stop the line” moment; we added **12 regression tests** specifically to prevent that class of failure from recurring.
 - **How it’s reproducible:** the loop is lightweight (a Dive Pack + logs + guardrails). Bottle makes the setup repeatable across tools (so the same workflow works in Claude Code, Codex, and beyond): https://github.com/open-horizon-labs/bottle
 - **More surfaces:** iOS + Apple Watch: [hifi-control-ios](https://github.com/open-horizon-labs/hifi-control-ios).
@@ -110,6 +113,8 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
+![Grounded execution loop: Dive Pack → Execute → Detect drift → Salvage + update memory → Restart clean](../assets/img/taming-chaos-dragon-loop.svg)
+
 ```text
 Dive Pack (aim/constraints/learnings)
         ↓
@@ -130,7 +135,7 @@ Constraints / guardrails (3–7 bullets):
 
 Known landmines (what drift looks like here):
 
-What we learned last time (metis):
+What we learned last time (what changed):
 
 One question that, if unanswered, makes action premature:
 ```
@@ -144,8 +149,8 @@ It forces the one move most teams skip: **decide what direction you’re going w
 The fastest way to stop “Brownian execution” isn’t to fight your way back from the wrong direction.
 It’s to **extract the learning and restart clean**.
 
-That pattern is the salvage loop: {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
-It’s also the “learning vs constraint” split: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %}.
+That pattern is the salvage loop (“protect the learning, drop the code”): {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
+It’s also the “learning vs constraint” split: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %} (separate “what we learned” from “what we must enforce next time”).
 
 The core rule is simple:
 
@@ -190,7 +195,7 @@ The win is asymptotic: carry forward better local context (aims, constraints, gu
 
 ## Drift Detection: The Missing Superpower
 
-The most important capability in an agentic world is not “write the code.”
+The most important capability in an AI-assisted world is not “write the code.”
 It’s “tell me when we’re off the rails.”
 
 Another line from that same conversation hit the point:
@@ -204,11 +209,7 @@ Not a bigger model.
 
 A system that keeps you oriented when the execution engine is spinning faster than your working memory.
 
-You can think of it as building an “upbringing system for AI”:
-
-My co-founder Drazen put it bluntly:
-
-> “AI has some consciousness, some guardrails… it’s reminded me so much of upbringing children…”
+You can think of it as runtime air-traffic control: surface constraints, detect drift early, and stop the line when you’re about to do something dumb at speed.
 
 The point isn’t that the model becomes wise. It’s that guardrails and recall become *ambient*: the system surfaces what matters and intervenes when you’re about to do something dumb at speed.
 
@@ -245,6 +246,7 @@ If you’re leading a team and watching agents amplify delivery *and* amplify dr
 1. Pick one active initiative and write a Dive Pack for it (10–30 minutes; one page max; use the template above).
 2. Require that any agentic work session (where an AI agent is generating plans or code) starts by pasting that Dive Pack in before generating.
 3. Add one guardrail based on a real failure mode you’ve seen (“we must not do X because it caused Y”—e.g., “don’t ship absolute volume without verifying the zone’s real min/max range”), and require an override note when it’s violated.
+4. Keep score: track reversals (work you undo), “dead-end weeks,” and safety incidents. The goal is fewer of those while keeping shipping pace.
 
 ## Close
 
@@ -252,7 +254,22 @@ The chaos dragon has always been here; agents just made it bigger and faster.
 The response isn’t more acceleration—it’s grounded execution: preserve local judgment, then apply it before you act.
 That’s what we’re building.
 
-P.S. We’re taking design partners while the product hardens. If you want help installing this loop, reach out.
+<div class="callout callout--note" markdown="1">
+**Design partners wanted:** If you want to implement Open Horizons + Bottle in your team (open-source pilot or enterprise rollout), reach out: [cal.com/muness/c](https://cal.com/muness/c) or [muness@217castle.com](mailto:muness@217castle.com).
+</div>
+
+If you’re interested, I’m looking for a small number of design partners who:
+
+- are using agents in real workflows (engineering, research, operations)
+- are feeling the pain of “execution going nowhere” (agent-accelerated rework, polished output in the wrong direction, reversals, unsafe changes)
+- want a lightweight loop that keeps the work pointed at the right thing, then harden it with real feedback
+
+Two ways to engage:
+
+- **Open-source design partner (fastest):** I’ll help you install Bottle and run the loop (Dive Packs, logs, guardrails) on one real initiative for 2–4 weeks; you share structured feedback on what breaks.
+- **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
+
+When you reach out, include: your team size, where you use agents, one drift failure mode you’ve seen, what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
 <details class="appendix" markdown="1">
 <summary><strong>Appendix — Delivery receipts (releases + logs)</strong></summary>
