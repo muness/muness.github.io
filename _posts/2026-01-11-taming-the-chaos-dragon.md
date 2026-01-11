@@ -22,6 +22,16 @@ And it snapped cleanly into a larger priority: **Open Horizons**.
 
 So I did something new (for me): I used the Open Horizons stack Drazen (my co-founder) and I are building to build the thing that validated the stack.
 
+In doing that, I ran straight into the problem the stack is built to solve.
+The thing agents make worse isn’t effort. It’s drift at speed — the chaos dragon.
+
+<div class="callout callout--note" markdown="1">
+**Don’t start a run without a Dive Pack** — a one-page brief: what you’re doing, why it matters, and what you must not do. ([Jump to template](#dive-pack-template))
+</div>
+
+If the chaos dragon is drift at speed, the Dive Pack is the leash you grab before you hit enter.
+The rest of this post is why it matters, and how we productized it.
+
 The result has been… obscene productivity.
 Not because we got “smarter models.”
 Because we stopped letting execution free-run.
@@ -71,6 +81,10 @@ The “chaos dragon” is what drift looks like when execution is fast enough to
 
 Execution is fast enough that ungrounded drift becomes catastrophic: you can build the wrong thing at 10× speed, and you can also lock into it at 10× speed.
 
+No amount of IQ fixes this.
+There is no god’s-eye view to reach, for humans or for models.
+Local wisdom is the scarce input, and the whole game is carrying it forward and applying it *before* you act.
+
 This is why the point of Open Horizons isn’t acceleration.
 It’s **alignment**.
 
@@ -84,17 +98,13 @@ Here’s the operating model in one pass:
 
 ## The Concrete Move: Grounding Before You Act
 
-Here’s the simplest operational shift I’ve found:
-
-<div class="callout callout--note" markdown="1">
-**Don’t start a run without a Dive Pack** — a one-page brief: what you’re doing, why it matters, and what you must not do.
-</div>
-
 In a recent conversation with Drazen, we described it plainly:
 
 > “When we start a session we put together a dive prep pack… it includes the principles… the learnings and guardrails… we don’t start without that.”
 
 That’s the whole thing.
+
+In Open Horizons, we treat the Dive Pack as a first-class artifact: a short, reusable note tied to an endeavor, sitting alongside logs and guardrails so it’s easy to apply (and hard to forget) next time.
 
 The model doesn’t need more tokens. It needs the *right* tokens.
 
@@ -107,6 +117,8 @@ Agentic execution (build + test + ship)
         ↓
 Drift? → Salvage (extract learning) → Update memory (logs/guardrails) → Restart clean
 ```
+
+<a id="dive-pack-template"></a>
 
 ### A Minimal Dive Pack (Copy/Paste)
 
@@ -239,6 +251,8 @@ If you’re leading a team and watching agents amplify delivery *and* amplify dr
 The chaos dragon has always been here; agents just made it bigger and faster.
 The response isn’t more acceleration—it’s grounded execution: preserve local judgment, then apply it before you act.
 That’s what we’re building.
+
+P.S. We’re taking design partners while the product hardens. If you want help installing this loop, reach out.
 
 <details class="appendix" markdown="1">
 <summary><strong>Appendix — Delivery receipts (releases + logs)</strong></summary>
