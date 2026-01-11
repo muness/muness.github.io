@@ -11,7 +11,8 @@ Over the last few weeks I built a scrappy personal project.
 It escaped the lab.
 Now it has real users.
 
-Concretely: it’s an ESP32-S3 hardware knob for controlling networked audio playback (Roon today, others alongside it).
+Concretely: it’s an ESP32-S3 hardware knob for controlling networked audio playback.
+It has dozens of users across a few serious audiophile communities.
 
 This post isn’t about audio or embedded. It’s about what happened next.
 
