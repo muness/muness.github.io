@@ -188,7 +188,7 @@ A system that keeps you oriented when the execution engine is spinning faster th
 
 You can think of it as building an “upbringing system for AI”:
 
-My collaborator Drazen put it bluntly:
+My co-founder Drazen put it bluntly:
 
 > “AI has some consciousness, some guardrails… it’s reminded me so much of upbringing children…”
 
