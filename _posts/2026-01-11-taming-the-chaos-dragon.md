@@ -113,7 +113,7 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
-![Grounded execution loop: Dive Pack → Execute → Detect drift → Salvage + update memory → Restart clean](../assets/img/taming-chaos-dragon-loop.svg)
+![Grounded execution loop: Dive Pack → Execute → Detect drift → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
 
 ```text
 Dive Pack (aim/constraints/learnings)
