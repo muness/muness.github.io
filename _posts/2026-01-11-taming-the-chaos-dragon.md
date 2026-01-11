@@ -7,11 +7,11 @@ comments: true
 excerpt: "Agents multiply execution. Without grounding, they multiply drift. Open Horizons is the missing yin: a local, intentful memory that keeps each run aligned."
 ---
 
-Over the last few weeks I built a scrappy personal project: an ESP32S3-based controller for Roon.
-Then it escaped the lab.
-Now it has dozens of users across the LMS, Roon, and HQPlayer communities.
+Over the last few weeks I built a scrappy personal project.
+It escaped the lab.
+Now it has real users.
 
-If none of those proper nouns mean anything to you, translate it as: a little hardware controller for networked audio playback.
+Concretely: it’s an ESP32-S3 hardware knob for controlling networked audio playback (Roon today, others alongside it).
 
 This post isn’t about audio or embedded. It’s about what happened next.
 
@@ -28,6 +28,10 @@ Because we stopped letting execution free-run.
 One concrete anchor: I went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable.
 
 I’d also never done embedded development, never built an iOS app, and never built an Apple Watch app. I haven’t been paid to write code in ten years; I’ve mostly been doing management. In my pre-agent world, this would have been a multi-quarter effort or it wouldn’t have happened at all.
+
+One vivid example of why grounding matters: at one point I tried to improve volume UX by switching to an “absolute volume” command. A naïve implementation would have treated a dB-based zone (e.g. `-12 dB`) as if it were `0–100%` and clamped it to `0` — i.e., *maximum volume* — risking equipment damage.
+
+Grounding forced a pause: what’s the real constraint here? Safety. So we fixed the handler to respect each zone’s actual min/max volume range, and we backed it with regression tests.
 
 LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
@@ -51,6 +55,8 @@ In the pre-agent world, misalignment was like dog sleds pulling in different dir
 You still moved, but you didn’t go fast enough for the chaos to kill you quickly.
 
 Now we have dragons.
+
+The “chaos dragon” is what drift looks like when execution is fast enough to compound mistakes.
 
 Execution is fast enough that ungrounded drift becomes catastrophic: you can build the wrong thing at 10× speed, and you can also lock into it at 10× speed.
 
@@ -127,26 +133,19 @@ It includes plugins for **Claude Code** and **Codex**, so you can get started wi
 That matters because alignment only works when it’s cheap enough to do *every time*.
 
 <details class="appendix" markdown="1">
-<summary><strong>Why this matters (optional): the Hayek problem + “smarter models”</strong></summary>
+<summary><strong>Why this matters (optional): why “smarter models” won’t fix alignment</strong></summary>
 
 Open Horizons is a bet on a constraint most systems pretend doesn’t exist.
 
-Hayek’s core insight applies cleanly here: useful knowledge is local. You don’t get a god’s-eye view.
-There is no global view. You never cross the same river twice. Some mistakes are one-way doors: one bad commitment can close doors permanently.
+No one can centralize reality. There is no god’s-eye view.
+(Hayek’s core insight applies cleanly here: useful knowledge is local.)
 
-The key is not that agents can’t infer your context. It’s that **no one can**.
-You can’t centralize reality. If you want work to stay aligned, you have to keep re-grounding each execution in the local aims, constraints, and learnings that are true *right now*.
+This is why “smarter models” won’t fix alignment on their own. Even a hypothetical “computer that can simulate the whole world” doesn’t solve the core issue: reality is contingent, time-varying, and partially tacit.
 
-This is also why “smarter models” won’t solve the problem on their own.
-Dwarkesh Patel has a great essay, [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025), that circles a real constraint: the long tail of context and micro-judgments that make human labor valuable.
-
-His stance (in my words): labs can scale training and benchmarks, but usefulness will lag because most real work depends on local context, and “schleppy” custom training loops don’t scale.
-
-He’s right about the problem, but (to borrow the expression) **completely correct and exactly wrong** about the escape hatch.
-The Hayekian lesson is that there is nothing to power through. Even a hypothetical “computer that can simulate the whole world” doesn’t solve the core issue: reality is local, contingent, time-varying, and partially tacit.
+Dwarkesh Patel’s [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025) circles the right constraint (the long tail of context and micro-judgments), but the escape hatch can’t be “power through with IQ.” There is nothing to power through.
 
 Open Horizons won’t “solve” this completely either. Humans don’t have perfect local knowledge.
-The win is asymptotic: carry forward the best available local context (aims, constraints, guardrails, decision logs) so each execution starts closer to truth than the last one.
+The win is asymptotic: carry forward better local context (aims, constraints, guardrails, decision logs) so each execution starts closer to truth than the last one.
 
 </details>
 
@@ -171,6 +170,8 @@ You can think of it as building an “upbringing system for AI”:
 My co-founder Drazen put it bluntly:
 
 > “AI has some consciousness, some guardrails… it’s reminded me so much of upbringing children…”
+
+The point isn’t that the model becomes wise. It’s that guardrails and recall become *ambient*: the system surfaces what matters and intervenes when you’re about to do something dumb at speed.
 
 ## Why This Is Real (Not Conceptual)
 
