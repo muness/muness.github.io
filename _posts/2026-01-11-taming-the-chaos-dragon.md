@@ -25,13 +25,15 @@ The result has been… obscene productivity.
 Not because we got “smarter models.”
 Because we stopped letting execution free-run.
 
-One concrete anchor: I went from “haven’t written firmware in a decade” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable. In my pre-agent world, this would have been a multi-quarter effort or it wouldn’t have happened at all.
+One concrete anchor: I went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable.
+
+I’d also never done embedded development, never built an iOS app, and never built an Apple Watch app. I haven’t been paid to write code in ten years; I’ve mostly been doing management. In my pre-agent world, this would have been a multi-quarter effort or it wouldn’t have happened at all.
 
 LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
 You need both.
 
-If you want receipts, look at the release cadence across the two repos this work spawned: https://github.com/muness/roon-knob/releases and https://github.com/open-horizon-labs/unified-hifi-control/releases (a few concrete highlights are in the appendix).
+If you want receipts, look at the release cadence across the repos this work spawned: https://github.com/muness/roon-knob/releases, https://github.com/open-horizon-labs/unified-hifi-control/releases, and the iOS/watch surface at https://github.com/open-horizon-labs/hifi-control-ios (a few concrete highlights are in the appendix).
 
 ## The New Problem: The Chaos Dragon
 
@@ -238,6 +240,7 @@ If this still feels like a philosophy post, here’s what “grounded execution�
   - Representative shipped changes: deep sleep support (battery life), per-PR firmware flash pages (testing), JPEG decode offload to bridge (performance)
 - `unified-hifi-control`: 16 tagged releases so far — https://github.com/open-horizon-labs/unified-hifi-control/releases
   - Recent examples: `v2.7.0`, `v2.6.1`, `v2.6.0`, `v2.4.2`
+- `hifi-control-ios`: iOS + Apple Watch control surface — https://github.com/open-horizon-labs/hifi-control-ios
 
 ### Logs (private, but this is how we steer)
 
