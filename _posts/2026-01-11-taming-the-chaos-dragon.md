@@ -31,6 +31,8 @@ LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
 You need both.
 
+If you want receipts, look at the release cadence across the two repos this work spawned: https://github.com/muness/roon-knob/releases and https://github.com/open-horizon-labs/unified-hifi-control/releases (a few concrete highlights are in the appendix).
+
 ## The New Problem: The Chaos Dragon
 
 The core failure mode we’re targeting is not new.
@@ -223,3 +225,29 @@ And it’s the missing layer for agentic execution: the thing that keeps the dra
 The chaos dragon has always been here; agents just made it bigger and faster.
 The response isn’t more acceleration—it’s grounded execution: preserve local judgment, then apply it before you act.
 That’s what we’re building.
+
+<details class="appendix" markdown="1">
+<summary><strong>Appendix — Delivery receipts (releases + logs)</strong></summary>
+
+If this still feels like a philosophy post, here’s what “grounded execution” looked like in practice over a short window.
+
+### Releases (public, inspectable)
+
+- `roon-knob`: 35 tagged releases so far — https://github.com/muness/roon-knob/releases
+  - Recent examples: `v2.4.0`, `v2.3.0`, `v2.2.3`
+  - Representative shipped changes: deep sleep support (battery life), per-PR firmware flash pages (testing), JPEG decode offload to bridge (performance)
+- `unified-hifi-control`: 16 tagged releases so far — https://github.com/open-horizon-labs/unified-hifi-control/releases
+  - Recent examples: `v2.7.0`, `v2.6.1`, `v2.6.0`, `v2.4.2`
+
+### Logs (private, but this is how we steer)
+
+In the Cloud Atlas AI - Hi-Fi context, Open Horizons logs capture “what we shipped” and “why we chose that shape” alongside the work:
+
+- Planned the repo and architecture before coding (medium integration, no premature abstractions).
+- Shipped Roon integration (Phase 2) and HQPlayer integration (Phase 3) as explicit milestones.
+- Caught and fixed a **volume safety bug** that risked equipment damage, and backed it with regression tests.
+- Implemented firmware auto-update opt-out and made configuration ergonomic (minutes-based intervals, safe defaults).
+
+The point of showing this is not “look how much shipped.” It’s that the system makes shipping *safer*: it keeps the direction coherent, surfaces drift early, and preserves judgment so you don’t have to rediscover it every session.
+
+</details>
