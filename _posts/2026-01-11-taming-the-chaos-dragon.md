@@ -59,71 +59,11 @@ It’s **alignment**.
 
 If you haven’t read it, start with the claim: {% post_url 2025-09-16-alignment-is-the-constraint %}.
 
-## What We’re Not Doing
+Here’s the operating model in one pass:
 
-We are not trying to build smarter models.
-
-We’re doing something more practical and (I think) more inevitable:
-
-**We make each execution grounded in local context.**
-
-That means:
-
-- the agent shouldn’t “try hard” in a vacuum
-- it should start with *your aims, constraints, and prior hard-won learnings*
-- and it should be able to tell you when it’s drifting
-
-In other words: the work needs a *memory* that isn’t a model’s context window.
-
-## Embracing the Hayek Problem
-
-Open Horizons is a bet on a constraint most systems pretend doesn’t exist.
-
-Hayek’s core insight applies cleanly here: useful knowledge is local. You don’t get a god’s-eye view.
-
-There is no global view.
-You never cross the same river twice.
-Some mistakes are one-way doors: one bad commitment can close doors permanently.
-
-The key is not that agents can’t infer your context. It’s that **no one can**. You can’t centralize reality. If you want work to stay aligned, you have to keep re-grounding each execution in the local aims, constraints, and learnings that are true *right now*.
-
-### A Useful Contrast: Dwarkesh (Correct and Exactly Wrong)
-
-Dwarkesh Patel has a great essay, [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025), that circles a real constraint: the long tail of context and micro-judgments that make human labor valuable.
-
-His stance (in my words): labs can scale training and benchmarks, but usefulness will lag because most real work depends on local context, and “schleppy” custom training loops don’t scale.
-
-He’s right that “just bake in more skills” doesn’t scale, and he’s right to be suspicious of training pipelines that look like a reboot of expert systems: an industrial supply chain trying to pre-load the world into a model.
-
-But here’s the inversion: he’s **completely correct and exactly wrong**.
-
-Correct about the problem.
-Wrong about the escape hatch.
-
-The temptation is to believe that “higher IQ” (smarter LLMs, better continual learning) will eventually power through.
-But the Hayekian lesson is that there is nothing to power through. There is no omniscient vantage point to reach.
-
-Even a hypothetical “computer that can simulate the whole world” (Laplace’s Demon with GPUs) doesn’t solve the core issue: *reality is local, contingent, time-varying, and partially tacit*. The missing ingredient isn’t more intelligence. It’s **better grounding**.
-
-So the job isn’t to write the One True Plan.
-The job is to **preserve and apply judgment** as reality changes.
-
-Open Horizons won’t “solve” this completely either. Humans don’t have perfect local knowledge. The win is asymptotic: make the system better at carrying forward the best available local context (aims, constraints, guardrails, decision logs) so each execution starts closer to truth than the last one.
-
-This is why “working memory” matters.
-And it’s why the *salvage loop* matters: {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
-If you want the companion concept, see: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %}.
-
-For the same challenge, we might run the attempt three times.
-We pluck out:
-
-- “I hate this”
-- “I like this”
-- “this broke an expectation”
-
-Then we restart clean—fast—because the learning survived even when the code didn’t.
-
-That is how you tame the chaos dragon: **protect the learning, not the artifact.**
+- Don’t “try hard” in a vacuum.
+- Start from aims, constraints, and prior hard-won learnings.
+- Detect drift early and restart clean when needed.
 
 ## The Concrete Move: Grounding Before You Act
 
@@ -160,6 +100,18 @@ If you do nothing else, do this.
 
 It forces the one move most teams skip: **decide what direction you’re going while you’re accelerating.**
 
+### When You Drift: Salvage, Then Restart
+
+The fastest way to stop “Brownian execution” isn’t to fight your way back from the wrong direction.
+It’s to **extract the learning and restart clean**.
+
+That pattern is the salvage loop: {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
+It’s also the “learning vs constraint” split: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %}.
+
+The core rule is simple:
+
+**Protect the learning, not the artifact.**
+
 ### Make It Low Friction (Or It Won’t Spread)
 
 The Dive Pack is the discipline.
@@ -173,6 +125,30 @@ So we’re packaging the stack into something you can just install and start wit
 It includes plugins for **Claude Code** and **Codex**, so you can get started without hand-wiring a whole toolchain.
 
 That matters because alignment only works when it’s cheap enough to do *every time*.
+
+<details class="appendix" markdown="1">
+<summary><strong>Why this matters (optional): the Hayek problem + “smarter models”</strong></summary>
+
+Open Horizons is a bet on a constraint most systems pretend doesn’t exist.
+
+Hayek’s core insight applies cleanly here: useful knowledge is local. You don’t get a god’s-eye view.
+There is no global view. You never cross the same river twice. Some mistakes are one-way doors: one bad commitment can close doors permanently.
+
+The key is not that agents can’t infer your context. It’s that **no one can**.
+You can’t centralize reality. If you want work to stay aligned, you have to keep re-grounding each execution in the local aims, constraints, and learnings that are true *right now*.
+
+This is also why “smarter models” won’t solve the problem on their own.
+Dwarkesh Patel has a great essay, [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025), that circles a real constraint: the long tail of context and micro-judgments that make human labor valuable.
+
+His stance (in my words): labs can scale training and benchmarks, but usefulness will lag because most real work depends on local context, and “schleppy” custom training loops don’t scale.
+
+He’s right about the problem, but (to borrow the expression) **completely correct and exactly wrong** about the escape hatch.
+The Hayekian lesson is that there is nothing to power through. Even a hypothetical “computer that can simulate the whole world” doesn’t solve the core issue: reality is local, contingent, time-varying, and partially tacit.
+
+Open Horizons won’t “solve” this completely either. Humans don’t have perfect local knowledge.
+The win is asymptotic: carry forward the best available local context (aims, constraints, guardrails, decision logs) so each execution starts closer to truth than the last one.
+
+</details>
 
 ## Drift Detection: The Missing Superpower
 
