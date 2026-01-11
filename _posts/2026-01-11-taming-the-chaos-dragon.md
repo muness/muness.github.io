@@ -25,7 +25,7 @@ The result has been… obscene productivity.
 Not because we got “smarter models.”
 Because we stopped letting execution free-run.
 
-One concrete anchor: I went from “haven’t written firmware in a decade” to shipping a real device with real users in under two months, while simultaneously building the stack that made that pace survivable.
+One concrete anchor: I went from “haven’t written firmware in a decade” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable. In my pre-agent world, this would have been a multi-quarter effort or it wouldn’t have happened at all.
 
 LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
@@ -39,7 +39,7 @@ It’s just more dangerous now.
 Every enterprise, small team, and individual has always struggled with misalignment.
 Not just “Team A is wrong” and “Team B is right,” but something worse:
 
-**Brownian execution** (random-walk drift) — pulling one way in the morning, the opposite way in the afternoon, and calling it progress because lots of work happened.
+**Brownian execution** — aimless drift: pulling one way in the morning, the opposite way in the afternoon, and calling it progress because lots of work happened.
 
 Agents pour gasoline on that.
 
@@ -86,6 +86,8 @@ The key is not that agents can’t infer your context. It’s that **no one can*
 ### A Useful Contrast: Dwarkesh (Correct and Exactly Wrong)
 
 Dwarkesh Patel has a great essay, [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025), that circles a real constraint: the long tail of context and micro-judgments that make human labor valuable.
+
+His stance (in my words): labs can scale training and benchmarks, but usefulness will lag because most real work depends on local context, and “schleppy” custom training loops don’t scale.
 
 He’s right that “just bake in more skills” doesn’t scale, and he’s right to be suspicious of training pipelines that look like a reboot of expert systems: an industrial supply chain trying to pre-load the world into a model.
 
@@ -186,6 +188,8 @@ A system that keeps you oriented when the execution engine is spinning faster th
 
 You can think of it as building an “upbringing system for AI”:
 
+My collaborator Drazen put it bluntly:
+
 > “AI has some consciousness, some guardrails… it’s reminded me so much of upbringing children…”
 
 ## Why This Is Real (Not Conceptual)
@@ -199,7 +203,7 @@ Then I built a device, shipped it, supported users, and started extending it int
 - a multi-source bridge (Roon/LMS/OpenHome as peers, not forks)
 - seamless HQPlayer DSP control with transport control agnostic of source system
 
-This happened because the system kept my direction coherent while my execution loop got absurdly fast.
+This happened because the system kept the direction coherent while the execution loop got absurdly fast.
 
 ## If You Want to Try This
 
