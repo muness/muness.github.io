@@ -20,7 +20,7 @@ Once I saw traction, I did the adult move: I paused and asked, *do I want to do 
 The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening**.
 And it snapped cleanly into a larger priority: **Open Horizons**.
 
-So I did something new (for me): I used the Open Horizons stack Drazen and I are building to build the thing that validated the stack.
+So I did something new (for me): I used the Open Horizons stack Drazen (my co-founder) and I are building to build the thing that validated the stack.
 
 The result has been… obscene productivity.
 Not because we got “smarter models.”
@@ -38,7 +38,7 @@ LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
 You need both.
 
-If you want receipts, look at the release cadence across the repos this work spawned: https://github.com/muness/roon-knob/releases, https://github.com/open-horizon-labs/unified-hifi-control/releases, and the iOS/watch surface at https://github.com/open-horizon-labs/hifi-control-ios (a few concrete highlights are in the appendix).
+If you want receipts, look at the release cadence across the repos this work spawned: https://github.com/muness/roon-knob/releases, https://github.com/open-horizon-labs/unified-hifi-control/releases, and the iOS/watch surface at https://github.com/open-horizon-labs/hifi-control-ios (the appendix calls out a few concrete milestones and a safety bug fix).
 
 ## The New Problem: The Chaos Dragon
 
@@ -55,7 +55,7 @@ Agents pour gasoline on that.
 In the pre-agent world, misalignment was like dog sleds pulling in different directions.
 You still moved, but you didn’t go fast enough for the chaos to kill you quickly.
 
-Now we have dragons.
+Now the chaos dragon is awake.
 
 The “chaos dragon” is what drift looks like when execution is fast enough to compound mistakes.
 
@@ -77,7 +77,7 @@ Here’s the operating model in one pass:
 Here’s the simplest operational shift I’ve found:
 
 <div class="callout callout--note" markdown="1">
-**Don’t start a run without a Dive Pack.**
+**Don’t start a run without a Dive Pack** — a one-page brief: what you’re doing, why it matters, and what you must not do.
 </div>
 
 In a recent conversation with Drazen, we described it plainly:
@@ -178,7 +178,7 @@ The point isn’t that the model becomes wise. It’s that guardrails and recall
 
 I am not writing this as a futurist.
 
-I hadn’t written firmware in a decade.
+I had never written firmware.
 Then I built a device, shipped it, supported users, and started extending it into:
 
 - a knob firmware that keeps improving
@@ -198,7 +198,7 @@ If you want a minimal experiment:
 
 This is the “Aim. Do. Reflect.” loop in practice: {% post_url 2025-09-08-open-horizons %}.
 
-And it’s the missing layer for agentic execution: the thing that keeps the dragons pulling the same direction.
+And it’s the missing layer for agentic execution: the thing that keeps the chaos dragon leashed.
 
 ## Close
 
