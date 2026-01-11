@@ -38,7 +38,17 @@ LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
 You need both.
 
-If you want receipts, look at the release cadence across the repos this work spawned: https://github.com/muness/roon-knob/releases, https://github.com/open-horizon-labs/unified-hifi-control/releases, and the iOS/watch surface at https://github.com/open-horizon-labs/hifi-control-ios (the appendix calls out a few concrete milestones and a safety bug fix).
+## Existence Proof: What This Ships
+
+This isn’t a conceptual framework. It’s a stack we’re shipping with.
+
+- **What “fast, grounded shipping” looks like:** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
+- **What shipped (to date):** 51 tagged releases across the two core repos — `roon-knob` (35) + `unified-hifi-control` (16). See releases: [roon-knob](https://github.com/muness/roon-knob/releases) and [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
+- **Why it’s safe:** the absolute-volume bug above became a “stop the line” moment; we added **12 regression tests** specifically to prevent that class of failure from recurring.
+- **How it’s reproducible:** the loop is lightweight (a Dive Pack + logs + guardrails). Bottle makes the setup repeatable across tools (so the same workflow works in Claude Code, Codex, and beyond): https://github.com/open-horizon-labs/bottle
+- **More surfaces:** iOS + Apple Watch: [hifi-control-ios](https://github.com/open-horizon-labs/hifi-control-ios).
+
+You can start without any of that tooling: a Dive Pack in a plain doc is enough. The stack just makes it harder to skip and easier to reuse.
 
 ## The New Problem: The Chaos Dragon
 
@@ -88,6 +98,16 @@ That’s the whole thing.
 
 The model doesn’t need more tokens. It needs the *right* tokens.
 
+### The Loop (Picture, Not Poetry)
+
+```text
+Dive Pack (aim/constraints/learnings)
+        ↓
+Agentic execution (build + test + ship)
+        ↓
+Drift? → Salvage (extract learning) → Update memory (logs/guardrails) → Restart clean
+```
+
 ### A Minimal Dive Pack (Copy/Paste)
 
 ```text
@@ -118,6 +138,12 @@ It’s also the “learning vs constraint” split: {% post_url 2025-12-28-split
 The core rule is simple:
 
 **Protect the learning, not the artifact.**
+
+#### Overrides vs. Violations
+
+If you *intentionally* violate a guardrail, log an override and keep moving.
+If you violate one accidentally, log it too — then either salvage and restart, or promote a new guardrail so it’s harder to repeat.
+If you’re lost, salvage the learning and restart clean.
 
 ### Make It Low Friction (Or It Won’t Spread)
 
@@ -199,6 +225,14 @@ If you want a minimal experiment:
 This is the “Aim. Do. Reflect.” loop in practice: {% post_url 2025-09-08-open-horizons %}.
 
 And it’s the missing layer for agentic execution: the thing that keeps the chaos dragon leashed.
+
+### If You Lead A Team (Start This Week)
+
+If you’re leading a team and watching agents amplify delivery *and* amplify drift, don’t buy “more velocity.” Install a loop that keeps work aligned at runtime:
+
+1. Pick one active initiative and write a Dive Pack for it (10–30 minutes; one page max; use the template above).
+2. Require that any agentic work session (where an AI agent is generating plans or code) starts by pasting that Dive Pack in before generating.
+3. Add one guardrail based on a real failure mode you’ve seen (“we must not do X because it caused Y”—e.g., “don’t ship absolute volume without verifying the zone’s real min/max range”), and require an override note when it’s violated.
 
 ## Close
 
