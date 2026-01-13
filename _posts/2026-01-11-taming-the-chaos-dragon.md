@@ -14,7 +14,11 @@ Who this is for:
 - Teams using agents daily
 - Leaders tired of polished-but-wrong output
 
-Over the last few weeks I built a scrappy personal project: an ESP32-S3 hardware knob for controlling networked audio playback.
+When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
+
+The failure mode is simple: agents accelerate the wrong things. You get thrash at speed.
+
+I ran into this while shipping a scrappy personal project: an ESP32-S3 hardware knob for controlling networked audio playback.
 It escaped the lab. Now it has real users — dozens of people across a few serious audiophile communities.
 
 Once I saw traction, I did the adult move: I paused and asked, *do I want to do this — and why?* The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening** — and it snapped cleanly into a larger priority: **Open Horizons**.
@@ -22,8 +26,6 @@ Once I saw traction, I did the adult move: I paused and asked, *do I want to do 
 So I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
 
 In doing that, I ran straight into the problem the stack is built to solve: the chaos dragon — agents accelerating the wrong things.
-
-When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
 
 And yeah: it’s been kind of absurd.
 
@@ -41,23 +43,23 @@ I also went from “I have never written firmware, and I haven’t written C in 
 
 ## Receipts (Inspectable Today)
 
-Before we talk about the system, here’s what it actually delivered in the real world (inspectable today).
+If you’re thinking “is this even impressive in the age of agents?” — fair. The point isn’t “look how many commits.” The point is **shipping fast without getting eaten alive by thrash**, and shipping something real enough that other people show up.
 
-And if you’re thinking “is this even impressive in the age of agents?” — fair. The point isn’t “look how many commits.” The point is **shipping fast without getting eaten alive by thrash**, plus real humans showing up for the thing you shipped.
-
-- **Shipping pace (public):** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
-- **Portfolio (public):** 51 tagged releases across `roon-knob` (35) + `unified-hifi-control` (16). Releases: [roon-knob](https://github.com/muness/roon-knob/releases), [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
-- **Safety (real):** we almost shipped an “absolute volume” change that could have pinned volume to max on dB-based zones. We fixed it and added **12 regression tests** to stop that class of failure from recurring.
-- **The “this should not work” rewrite worked:** `unified-hifi-control` PR #45 is a full Rust rewrite (pure Rust, no Node.js runtime), and it survived multiple review cycles. https://github.com/open-horizon-labs/unified-hifi-control/pull/45
-- **Distribution (public):** Bottle makes the practice repeatable across tools. https://github.com/open-horizon-labs/bottle
-
-But here’s the signal that actually matters to me: a dumb little personal `$50` ESP32-S3 knob stopped being “my project” and turned into a small community.
+Here’s the signal that matters to me: a dumb little personal `$50` ESP32-S3 knob stopped being “my project” and turned into a small community.
 
 People are building, flashing, troubleshooting, and sharing setups.
 Threads are buzzing — 260+ posts in the main Roon forum thread (active as of hours ago), 15+ engaged builders in the Lyrion/LMS cross-post, and community PRs landing to add support.
 
 The repeated ask is not “make it smarter.”
 It’s: **make it easier to install and share with friends** (simpler flashing, better deployment, NAS-friendly packaging, non-Docker options).
+
+If you want to inspect artifacts:
+
+- **Shipping pace (public):** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
+- **Portfolio (public):** 51 tagged releases across `roon-knob` (35) + `unified-hifi-control` (16). Releases: [roon-knob](https://github.com/muness/roon-knob/releases), [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
+- **Safety (real):** we almost shipped an “absolute volume” change that could have pinned volume to max on dB-based zones. We fixed it and added **12 regression tests** to stop that class of failure from recurring.
+- **The “this should not work” rewrite worked:** `unified-hifi-control` PR #45 is a full Rust rewrite (pure Rust, no Node.js runtime), and it survived multiple review cycles. https://github.com/open-horizon-labs/unified-hifi-control/pull/45
+- **Distribution (public):** Bottle makes the practice repeatable across tools. https://github.com/open-horizon-labs/bottle
 
 ## Start Here: Copy/Paste Dive Pack Template
 
@@ -66,6 +68,8 @@ In a recent conversation with Drazen, we described it plainly:
 > “When we start a session we put together a dive prep pack… it includes the principles… the learnings and guardrails… we don’t start without that.”
 
 That’s basically it.
+
+No dive is too small for a Dive Pack.
 
 In Open Horizons, we treat the Dive Pack as a first-class artifact: a short, reusable note tied to an endeavor, sitting alongside logs and guardrails so it’s easy to apply (and hard to forget) next time.
 
@@ -174,15 +178,9 @@ Because if it’s even mildly annoying, people skip it — and then you’re bac
 
 Open Horizons is a bet on a constraint most systems pretend doesn’t exist.
 
-No one can centralize reality. There is no god’s-eye view.
-(Hayek’s core insight applies cleanly here: useful knowledge is local.)
+No one can centralize reality. There is no god’s-eye view (Hayek: useful knowledge is local).
 
-This is why “smarter models” won’t fix alignment on their own. Even a hypothetical “computer that can simulate the whole world” doesn’t solve the core issue: reality is contingent, time-varying, and partially tacit.
-
-Dwarkesh Patel’s [Thoughts on AI progress (Dec 2025)](https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025) circles the right constraint (the long tail of context and micro-judgments), but the escape hatch can’t be “power through with IQ.” There is nothing to power through.
-
-Open Horizons won’t “solve” this completely either. Humans don’t have perfect local knowledge.
-The win is asymptotic: carry forward better local context (aims, constraints, guardrails, decision logs) so each execution starts closer to truth than the last one.
+So “smarter models” won’t fix alignment on their own. Reality is contingent, time-varying, and partially tacit — you need a system that carries forward local context (aims, constraints, guardrails, decision logs) so each run starts closer to truth than the last one.
 
 </details>
 
