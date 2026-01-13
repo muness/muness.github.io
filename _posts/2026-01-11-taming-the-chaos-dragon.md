@@ -4,7 +4,7 @@ date: 2026-01-11 12:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "Agents multiply execution. Without grounding, they multiply drift. Open Horizons is the missing yin: a local, intentful memory that keeps each run aligned."
+excerpt: "Agents multiply execution. Without grounding, they accelerate the wrong things. Open Horizons is the missing yin: a local, intentful memory that keeps each run aligned."
 ---
 
 Over the last few weeks I built a scrappy personal project.
@@ -61,24 +61,24 @@ This isn’t a conceptual framework. It’s a stack we’re shipping with.
 - **How it’s reproducible:** the loop is lightweight (a Dive Pack + logs + guardrails). Bottle makes the setup repeatable across tools (so the same workflow works in Claude Code, Codex, and beyond): https://github.com/open-horizon-labs/bottle
 - **More surfaces:** iOS + Apple Watch: [hifi-control-ios](https://github.com/open-horizon-labs/hifi-control-ios).
 
+### Portfolio (Inspectable Evidence)
+
+If you’re wondering “is this just impressive slop that collapses later?”, here are artifacts you can inspect:
+
+- **The “big rewrite that shouldn’t work” actually works:** `unified-hifi-control` PR #45 — a complete Rust rewrite (pure Rust, no Node.js runtime), including adapters and a web UI. https://github.com/open-horizon-labs/unified-hifi-control/pull/45
+- **It’s not just codegen — it’s constrained:** the rewrite includes explicit protocol checking and safety tests (e.g., a dedicated `volume_safety` regression test suite).
+- **It survived review pressure:** the PR went through review feedback cycles (“audit findings” / “review findings”), not just a one-shot dump.
+
 You can start without any of that tooling: a Dive Pack in a plain doc is enough. The stack just makes it harder to skip and easier to reuse.
 
 ## The New Problem: The Chaos Dragon
-
-The core failure mode we’re targeting is not new.
-It’s just more dangerous now.
-
-Every enterprise, small team, and individual has always struggled with misalignment.
-Not just “Team A is wrong” and “Team B is right,” but something worse:
 
 **Brownian execution** — aimless drift: pulling one way in the morning, the opposite way in the afternoon, and calling it progress because lots of work happened.
 
 Agents pour gasoline on that.
 
-In the pre-agent world, misalignment was like dog sleds pulling in different directions.
-You still moved, but you didn’t go fast enough for the chaos to kill you quickly.
-
-Now the chaos dragon is awake.
+Skepticism is valid: you’ve seen AI build impressive things in hours that fall apart when you try to grow them. The chaos dragon doesn’t go away.
+The bet is that this system learns from success and failure — not always and not perfectly, but enough that within days the workflow and the architecture are unrecognizable.
 
 The “chaos dragon” is what drift looks like when execution is fast enough to compound mistakes.
 
@@ -122,6 +122,19 @@ Agentic execution (build + test + ship)
         ↓
 Drift? → Salvage (extract learning) → Update memory (logs/guardrails) → Restart clean
 ```
+
+<details class="appendix" markdown="1">
+<summary><strong>System view (optional): generic + rewrite example</strong></summary>
+
+Generic view (turn intent into shipped change without accelerating the wrong thing):
+
+![Grounded execution system: intent → dive pack → execute → drift check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
+
+Rewrite view (use the existing system as spec + enforce equivalence/safety as you move fast):
+
+![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → drift check → ship](../../assets/img/rewrite-with-safety-harness.svg)
+
+</details>
 
 <a id="dive-pack-template"></a>
 

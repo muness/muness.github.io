@@ -1,0 +1,111 @@
+direction: down
+
+vars: {
+  center-color: "#64748B" # Slate gray
+  accent-color: "#94A3B8" # Muted blue-gray
+  text-color: "#1E293B" # Dark slate
+  subtitle-color: "#64748B" # Medium slate
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${text-color}
+      stroke-width: 2
+      fill: "#FFFFFF"
+      font-color: ${text-color}
+      font-size: 18
+      bold: true
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 2
+      font-color: ${subtitle-color}
+      font-size: 14
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${subtitle-color}
+      font-size: 14
+      italic: true
+    }
+  }
+}
+
+exec: {
+  class: box
+  label: "Exec intent\n(initiative + stakes)"
+}
+
+dive: {
+  class: box
+  label: "Dive Pack\n(aim • constraints • landmines • what changed)"
+}
+
+run: {
+  class: box
+  label: "Agentic execution\n(code • tests • docs • rollout)"
+}
+
+drift: {
+  class: box
+  label: "Drift check\n(“is this going nowhere?”)"
+}
+
+ship: {
+  class: box
+  label: "Ship\n(inspectable artifacts)"
+}
+
+salvage: {
+  class: box
+  label: "Salvage + update memory\n(decisions • guardrails • learnings)"
+}
+
+exec -> dive: {class: edge}
+dive -> run: {class: edge}
+run -> drift: {class: edge}
+
+drift -> ship: {
+  class: edge
+  label: "no drift"
+}
+
+drift -> salvage: {
+  class: edge
+  label: "drift"
+}
+
+salvage -> dive: {
+  class: edge
+  label: "restart clean"
+}
+
+oh: {
+  class: box
+  label: "Open Horizons\n(local, durable memory)"
+}
+
+gates: {
+  class: box
+  label: "Gates\n(Superego • reviews • tests)"
+}
+
+bottle: {
+  class: box
+  label: "Bottle\n(distribution + setup)"
+}
+
+oh -> dive: {class: edge}
+gates -> ship: {class: edge}
+bottle -> dive: {class: edge}
+
+caption: {
+  class: note
+  label: "Point: turn intent into shipped change without accelerating the wrong thing."
+  near: bottom-center
+}

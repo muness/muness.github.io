@@ -1,0 +1,104 @@
+direction: down
+
+vars: {
+  center-color: "#64748B"
+  accent-color: "#94A3B8"
+  text-color: "#1E293B"
+  subtitle-color: "#64748B"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${text-color}
+      stroke-width: 2
+      fill: "#FFFFFF"
+      font-color: ${text-color}
+      font-size: 18
+      bold: true
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 2
+      font-color: ${subtitle-color}
+      font-size: 14
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${subtitle-color}
+      font-size: 14
+      italic: true
+    }
+  }
+}
+
+mandate: {
+  class: box
+  label: "Exec mandate\n“rewrite while staying stable”"
+}
+
+spec: {
+  class: box
+  label: "Existing system as spec\n(invariants • edge cases • failure modes)"
+}
+
+dive: {
+  class: box
+  label: "Dive Pack\n(target behavior + constraints)"
+}
+
+run: {
+  class: box
+  label: "Rewrite execution\n(agents generate code + migration steps)"
+}
+
+gates: {
+  class: box
+  label: "Equivalence + safety harness\n(protocol checks • regression tests • rollout/rollback)"
+}
+
+drift: {
+  class: box
+  label: "Drift check\n(“are we rebuilding a different product?”)"
+}
+
+ship: {
+  class: box
+  label: "Ship increment\n(inspectable diff + tests)"
+}
+
+salvage: {
+  class: box
+  label: "Salvage + update memory\n(what changed • new guardrails)"
+}
+
+mandate -> spec: {class: edge}
+spec -> dive: {class: edge}
+dive -> run: {class: edge}
+run -> gates: {class: edge}
+gates -> drift: {class: edge}
+
+drift -> ship: {
+  class: edge
+  label: "no drift"
+}
+
+drift -> salvage: {
+  class: edge
+  label: "drift"
+}
+
+salvage -> dive: {
+  class: edge
+  label: "restart clean"
+}
+
+caption: {
+  class: note
+  label: "Point: speed is fine if you carry forward what the system already learned."
+  near: bottom-center
+}

@@ -10,4 +10,6 @@ Diagrams live in `viz/` as `.d2` sources and render to `assets/img/` as **sketch
 - Render (sketch SVG): `d2 --sketch --pad 24 --omit-version viz/<name>.d2 assets/img/<name>.svg`
 - Check/format: `d2 validate viz/<name>.d2` and `d2 fmt viz/<name>.d2`
 
-Embed in posts with: `![](/assets/img/<name>.svg)`
+Embed in posts:
+- For the live site: `![](/assets/img/<name>.svg)`
+- For GitHub PR preview from `_posts/`: `![](../../assets/img/<name>.svg)`
