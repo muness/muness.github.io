@@ -334,7 +334,21 @@ The stack exists today in partial form. Some layers are mature. Others are still
 
 ---
 
-*For one concrete implementation of this stack, see [Cloud Atlas AI](https://github.com/cloud-atlas-ai).*
+## Cloud Atlas AI: The Implementation
+
+For one concrete implementation of this stack, see [Cloud Atlas AI](https://github.com/cloud-atlas-ai). Here's how the conceptual layers map to tools:
+
+| Layer | Tool | What it does |
+|-------|------|--------------|
+| Strategic context | [Open Horizons](https://openhorizons.app) | Queryable hierarchy of intent: missions → aims → initiatives → tasks |
+| Metacognitive oversight | `superego` | Evaluates work against constraints; can block on concerns |
+| Working memory | `wm` | Distills guardrails and patterns; injects them per-turn |
+| Long-term recall | *(emerging)* | Cross-context search with provenance |
+| Task thread | `ba` | Gives work an address; tracks lifecycle events |
+
+**Bottle** (`bottle`) is the installer that sets up these tools together and keeps them current.
+
+The "Dive Pack" (a minimal context artifact: aim, constraints, known landmines, learnings, blocking question) is the entry ritual that seeds the loop before each session.
 
 That is the promise. That is the stack.
 
