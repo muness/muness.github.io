@@ -1,9 +1,10 @@
 ---
 title: "The Context Stack"
-date: 2026-01-08 09:00:00 -0500
+date: 2026-01-13 09:00:00 -0500
 author: durch
 toc: true
 comments: true
+hide: true
 excerpt: "How a constellation of tools creates the appearance of infinite memory"
 ---
 
@@ -334,9 +335,9 @@ The stack exists today in partial form. Some layers are mature. Others are still
 
 ---
 
-## Cloud Atlas AI: The Implementation
+## Open Horizon Labs: The Implementation
 
-For one concrete implementation of this stack, see [Cloud Atlas AI](https://github.com/cloud-atlas-ai). Here's how the conceptual layers map to tools:
+For one concrete implementation of this stack, see [Open Horizon Labs](https://github.com/open-horizon-labs). Here's how the conceptual layers map to tools:
 
 | Layer | Tool | What it does |
 |-------|------|--------------|
@@ -348,7 +349,7 @@ For one concrete implementation of this stack, see [Cloud Atlas AI](https://gith
 
 **Bottle** (`bottle`) is the installer that sets up these tools together and keeps them current.
 
-The "Dive Pack" (a minimal context artifact: aim, constraints, known landmines, learnings, blocking question) is the entry ritual that seeds the loop before each session.
+The "Dive Pack" (a minimal context artifact: aim, constraints, known landmines, learnings, blocking question) is the entry ritual that seeds the loop before each session. For a practical example of this stack in action, see {% post_url 2026-01-12-taming-the-chaos-dragon %}.
 
 That is the promise. That is the stack.
 
