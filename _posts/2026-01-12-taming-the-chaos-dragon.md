@@ -1,13 +1,14 @@
 ---
-title: "Taming the Chaos Dragon: Ground Every Execution"
-date: 2026-01-11 12:00:00 -0500
+title: "Grounded Execution: Taming the Chaos Dragon"
+date: 2026-01-12 21:30:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "Agents multiply execution. Without grounding, they accelerate thrash. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
+hide: true
+excerpt: "Agents accelerate everything—including mistakes. Without grounding, they accelerate thrash. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
 ---
 
-TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early (before it turns into thrash), and makes the learning stick so you ship without burning weeks on reversals.
+TL;DR: Agents accelerate everything—including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early (before it turns into thrash), and makes the learning stick so you ship without burning weeks on reversals.
 
 Who this is for:
 - Solo builders shipping with agents
@@ -41,25 +42,17 @@ I texted back the only sane question:
 
 I also went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack itself.
 
-## Receipts (Inspectable Today)
+## Receipts
 
-If you’re thinking “is this even impressive in the age of agents?” — fair. The point isn’t “look how many commits.” The point is **shipping fast without getting eaten alive by thrash**, and shipping something real enough that other people show up.
+The point isn't "look how many commits." It's **shipping fast without thrash**, and shipping something real enough that other people show up.
 
-Here’s the signal that matters to me: a dumb little personal `$50` ESP32-S3 knob stopped being “my project” and turned into a small community.
+A dumb little `$50` ESP32-S3 knob stopped being "my project" and turned into a small community: 260+ posts in the main Roon forum thread, 15+ engaged builders in the Lyrion/LMS cross-post, and community PRs landing to add support.
 
-People are building, flashing, troubleshooting, and sharing setups.
-Threads are buzzing — 260+ posts in the main Roon forum thread (active as of hours ago), 15+ engaged builders in the Lyrion/LMS cross-post, and community PRs landing to add support.
+The repeated ask is not "make it smarter." It's: **make it easier to install and share with friends**.
 
-The repeated ask is not “make it smarter.”
-It’s: **make it easier to install and share with friends** (simpler flashing, better deployment, NAS-friendly packaging, non-Docker options).
+The safety story matters more than the shipping pace: we almost shipped a volume change that could have pinned volume to max on certain zones. We caught it, fixed it, and added regression tests. Grounded execution caught the chaos dragon before it reached users.
 
-If you want to inspect artifacts:
-
-- **Shipping pace (public):** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
-- **Portfolio (public):** 51 tagged releases across `roon-knob` (35) + `unified-hifi-control` (16). Releases: [roon-knob](https://github.com/muness/roon-knob/releases), [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
-- **Safety (real):** we almost shipped an “absolute volume” change that could have pinned volume to max on dB-based zones. We fixed it and added **12 regression tests** to stop that class of failure from recurring.
-- **The “this should not work” rewrite worked:** `unified-hifi-control` PR #45 is a full Rust rewrite (pure Rust, no Node.js runtime), and it survived multiple review cycles. https://github.com/open-horizon-labs/unified-hifi-control/pull/45
-- **Distribution (public):** Bottle makes the practice repeatable across tools. https://github.com/open-horizon-labs/bottle
+*(Detailed release counts and links in the appendix.)*
 
 ## Start Here: Copy/Paste Dive Pack Template
 
@@ -124,11 +117,9 @@ It forces the one move most teams skip: **decide what direction you’re going w
 
 ## Thrash At Speed
 
-Here’s what the chaos dragon looks like in practice: **thrash at speed**.
+Here's what the chaos dragon looks like in practice: **thrash at speed**.
 
-**Brownian execution** is what it looks like in practice: you pull one way in the morning, the opposite way in the afternoon, and call it progress because a lot of work happened.
-
-If you prefer a less poetic word: **thrash**. Same idea, just uglier: reversals, rework, and “busy” weeks where you end up farther from done.
+You pull one way in the morning, the opposite way in the afternoon, and call it progress because a lot of work happened. That's thrash: reversals, rework, and "busy" weeks where you end up farther from done.
 
 Agents pour gasoline on that. They don’t just make you faster — they make you faster at thrash if you don’t start from intent + constraints.
 
@@ -146,7 +137,7 @@ It’s to **extract the learning and restart clean**.
 
 At this point it’s irresponsible *not* to throw away code.
 
-That pattern is the salvage loop (“protect the learning, drop the code”): {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
+That's the **salvage loop**: when you realize you're heading the wrong direction, stop, extract what you learned, and restart with a fresh slate rather than trying to fix your way back. More here: {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
 It’s also the “learning vs constraint” split: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %} (separate “what we learned” from “what we must enforce next time”).
 
 The core rule is simple:
@@ -279,12 +270,17 @@ If this still feels like a philosophy post, here’s what “grounded execution�
 
 ### Releases (public, inspectable)
 
-- `roon-knob`: 35 tagged releases so far — https://github.com/muness/roon-knob/releases
-  - Recent examples: `v2.4.0`, `v2.3.0`, `v2.2.3`
+**Shipping pace:** Since `2026-01-01`, we've shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
+
+**Portfolio:** 51 tagged releases total:
+- `roon-knob`: 35 tagged releases — https://github.com/muness/roon-knob/releases
   - Representative shipped changes: deep sleep support (battery life), per-PR firmware flash pages (testing), JPEG decode offload to bridge (performance)
-- `unified-hifi-control`: 16 tagged releases so far — https://github.com/open-horizon-labs/unified-hifi-control/releases
-  - Recent examples: `v2.7.0`, `v2.6.1`, `v2.6.0`, `v2.4.2`
+- `unified-hifi-control`: 16 tagged releases — https://github.com/open-horizon-labs/unified-hifi-control/releases
 - `hifi-control-ios`: iOS + Apple Watch control surface — https://github.com/open-horizon-labs/hifi-control-ios
+
+**The Rust rewrite:** `unified-hifi-control` PR #45 is a full Rust rewrite (pure Rust, no Node.js runtime) that survived multiple review cycles: https://github.com/open-horizon-labs/unified-hifi-control/pull/45
+
+**Distribution:** Bottle makes the practice repeatable: https://github.com/open-horizon-labs/bottle
 
 ### Logs (private, but this is how we steer)
 

@@ -22,39 +22,70 @@ Diagrams live in `viz/` as `.d2` sources and render to `assets/img/` as **sketch
 
 ---
 
-## ba - Task Tracking
+# Cloud Atlas AI Stack
 
-**When to use:** Track discrete work items, especially for multi-step tasks or work that spans sessions.
+**No dive is too small for a dive prep.** Start every session with a dive:
+```
+$bottle dive fix       # Bug fix
+$bottle dive plan      # Design work
+$bottle dive explore   # Understanding code
+```
 
-**Protocol:**
-- Check for existing tasks: `ba list`
-- Claim a task before starting: `ba claim <id> --session $SESSION` (pick a stable session name like `SESSION=codex`)
-- Create tasks for new work: `ba create "description" -t task`
-- Complete when done: `ba finish <id>`
-
----
-
-## superego - Metacognitive Advisor
-
-**When to use:** Before commits, PRs, or when you want a second opinion on approach.
-
-**Protocol:**
-- Currently in **pull mode** (reviews on request, not automatically)
-- Request review: `/superego:review` or `sg review`
-- Switch modes: `sg mode push` (auto) or `sg mode pull` (manual)
-- Base prompt: `writing` (configured for blog/content work)
+This creates `.wm/dive_context.md` with your intent, relevant context, and suggested workflow. The 30 seconds of setup prevents 30 minutes of thrash.
 
 ---
 
-## wm - Working Memory
+## Task Tracking (ba)
 
-**When to use:** Captures learnings, decisions, and context automatically. Query when starting sessions or when you need project history.
+**When to use:** Track discrete work items, multi-step tasks, or work spanning sessions.
 
-**Protocol:**
-- Review state: `wm review`
-- Extract learnings: `wm extract`
-- Prepare dive context: `wm dive-prep`
-- Working memory accumulates automatically during work
+**Commands:**
+- `ba status` — see active tasks
+- `ba list` — list all tasks
+- `ba create "description" -t task` — create new work
+- `ba claim <id> --session $SESSION` — take ownership
+- `ba finish <id>` — mark complete
+
+**Protocol:** Always track non-trivial work. If it has multiple steps or takes >5 minutes, create a task.
+
+---
+
+## Working Memory (wm)
+
+**When to use:** Starting work, need context, after completing work.
+
+**Commands:**
+- `$bottle dive <intent>` — prep context before work
+- `wm compile` — get relevant knowledge
+- `wm distill` — extract learnings after work
+- `wm review` — review current state
+
+**Terminology:**
+- **dive-prep** = preparing context before work
+- **dive pack** = reusable bundle for a type of work
+- **dive context** = session manifest from dive-prep
+
+**Protocol:** Treat wm as external memory. Don't guess at past decisions—check wm first.
+
+---
+
+## Metacognition (superego)
+
+**Mode:** Pull mode—evaluates only when explicitly requested.
+
+**When to use:**
+- Before committing to a plan or approach
+- When choosing between alternatives
+- Before non-trivial implementations
+- Before claiming work is "done"
+
+**Commands:**
+- `/superego:review` or `sg review` — request review
+- `sg prompt show` — see current prompt (currently: `writing`)
+
+**Protocol:** Opt-in. Use for high-stakes decisions, architectural choices, or when you want a second opinion.
+
+**Results:** `has_concerns: true` = STOP and show user; `has_concerns: false` = continue.
 
 ---
 
@@ -65,63 +96,4 @@ These tools work together:
 - **superego** reviews how you're doing it
 - **wm** remembers what you learned
 
-Start sessions with context: check ba for tasks, wm for recent learnings, then work.
-
----
-
-# Cloud Atlas AI Stack
-
-## Quick Start: Dive First
-
-**No dive is too small for a dive prep.** The metaphor comes from scuba diving: you prep before you dive, you don't just splash in. Even a quick bug fix benefits from explicit intent.
-
-Start every session with a dive:
-```
-$bottle dive fix       # Bug fix
-$bottle dive plan      # Design work
-$bottle dive explore   # Understanding code
-```
-
-This creates `.wm/dive_context.md` with your intent, relevant context, and suggested workflow. The 30 seconds of setup prevents 30 minutes of thrash (rework, reversals, polished-but-wrong output).
-
----
-
-## Task Tracking ($ba)
-
-**When to use:**
-- At session start: `$ba status` to see active tasks
-- Before starting work: Check what's ready to claim
-- When creating tasks: `ba create` for each distinct piece of work
-- During work: `ba claim` to take ownership, `ba finish` when done
-
-**Protocol:** Always track non-trivial work. If a task has multiple steps or will take >5 minutes, create a task.
-
-## Working Memory ($wm)
-
-**When to use:**
-- Starting work: `$bottle dive <intent>` to prep context
-- Need context: `wm compile` for relevant knowledge
-- After completing work: `wm distill` to extract learnings
-- Questions about past work: Check `wm compile` first
-
-**Dive terminology:**
-- **dive-prep** = preparing context before work
-- **dive pack** = reusable bundle for a type of work
-- **dive context** = session manifest from dive-prep
-
-**Protocol:** Treat wm as your external memory. Don't guess at past decisions - check wm first.
-
-## Metacognition ($superego)
-
-**Mode:** Pull mode - evaluates only when explicitly requested.
-
-**When to use $superego:**
-- Before committing to a plan or approach
-- When choosing between alternatives
-- Before non-trivial implementations
-- When the task feels complex or uncertain
-- Before claiming work is "done"
-
-**Protocol:** Superego is opt-in. Use it for high-stakes decisions, architectural choices, or when you want a second opinion. It catches premature commitment, scope creep, and misalignment.
-
-**Results:** `has_concerns: true` = STOP and show user; `has_concerns: false` = continue.
+Start sessions with context: dive prep, check ba for tasks, then work.
