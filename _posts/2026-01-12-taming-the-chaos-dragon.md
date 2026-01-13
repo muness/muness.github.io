@@ -120,9 +120,9 @@ Agents pour gasoline on that. They don’t just make you faster — they make yo
 Skepticism is valid. You’ve seen AI build impressive things in hours that fall apart the moment you try to grow them.
 The bet here is not “trust the model.” The bet is the system learns from success and failure — not always and not perfectly, but enough that within days the workflow and architecture can be unrecognizable.
 
-Agents don’t need more intelligence. They need better context and constraints applied *before* generation starts.
+Agents don't need more intelligence. They need better context and constraints applied *before* generation starts.
 
-If you want the longer version of that claim, start here: {% post_url 2025-09-16-alignment-is-the-constraint %}.
+If you want the longer version of that claim, start here: {% post_url 2025-09-16-alignment-is-the-constraint %}. For the technical architecture behind this system, see {% post_url 2026-01-12-the-context-stack %}.
 
 ### When The Chaos Dragon Shows Up: Salvage, Then Restart
 
