@@ -16,14 +16,12 @@ It has dozens of users across a few serious audiophile communities.
 
 This post isn’t about audio or embedded. It’s about what happened next.
 
-Once I saw traction, I did the adult move: I paused and asked, *do I want to do this — and why?*
-The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening**.
+Once I saw traction, I did the adult move: I paused and asked, *do I want to do this — and why?* The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening**.
 And it snapped cleanly into a larger priority: **Open Horizons**.
 
-So I did something new (for me): I used the Open Horizons stack Drazen (my co-founder) and I are building to build the thing that validated the stack.
+So I used the Open Horizons stack Drazen (my co-founder) and I are building to build the thing that validated the stack.
 
-In doing that, I ran straight into the problem the stack is built to solve.
-The thing agents make worse isn’t effort. It’s drift at speed — the chaos dragon.
+In doing that, I ran straight into the problem the stack is built to solve. The thing agents make worse isn’t effort. It’s drift at speed — the chaos dragon.
 
 When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
 
@@ -38,7 +36,7 @@ The result has been… obscene productivity.
 Not because we got “smarter models.”
 Because we stopped letting execution free-run.
 
-One concrete anchor: I went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable.
+Concretely: I went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack that made that pace survivable.
 
 I’d also never done embedded development, never built an iOS app, and never built an Apple Watch app. I haven’t been paid to write code in ten years; I’ve mostly been doing management. In my pre-agent world, this would have been a multi-quarter effort or it wouldn’t have happened at all.
 
