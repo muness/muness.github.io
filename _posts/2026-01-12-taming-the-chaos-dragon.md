@@ -4,7 +4,7 @@ date: 2026-01-12 21:30:00 -0500
 author: muness
 toc: true
 comments: true
-hide: true
+hidden: true
 excerpt: "Agents accelerate everything—including mistakes. Without grounding, they accelerate thrash. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
 ---
 
