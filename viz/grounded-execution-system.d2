@@ -51,9 +51,9 @@ run: {
   label: "Agentic execution\n(code • tests • docs • rollout)"
 }
 
-drift: {
+check: {
   class: box
-  label: "Chaos dragon check\n(“is this going nowhere?”)"
+  label: "Chaos dragon check\n(“are we thrashing?”)"
 }
 
 ship: {
@@ -68,14 +68,14 @@ salvage: {
 
 exec -> dive: {class: edge}
 dive -> run: {class: edge}
-run -> drift: {class: edge}
+run -> check: {class: edge}
 
-drift -> ship: {
+check -> ship: {
   class: edge
   label: "keep going"
 }
 
-drift -> salvage: {
+check -> salvage: {
   class: edge
   label: "thrash"
 }

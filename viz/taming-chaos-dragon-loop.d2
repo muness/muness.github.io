@@ -38,7 +38,7 @@ execute: {
   label: "Execute\n(agents build • test • ship)"
 }
 
-drift_check: {
+dragon_check: {
   class: box
   label: "Chaos dragon check\n(“thrash?”)"
 }
@@ -54,13 +54,13 @@ continue: {
 }
 
 dive_pack -> execute: {class: edge}
-execute -> drift_check: {class: edge}
+execute -> dragon_check: {class: edge}
 
-drift_check -> continue: {
+dragon_check -> continue: {
   class: edge
 }
 
-drift_check -> salvage: {class: edge}
+dragon_check -> salvage: {class: edge}
 
 salvage -> dive_pack: {
   class: edge

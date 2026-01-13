@@ -21,12 +21,21 @@ Once I saw traction, I did the adult move: I paused and asked, *do I want to do 
 
 So I did something new (for me): I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
 
-In doing that, I ran straight into the problem the stack is built to solve: the chaos dragon — execution going nowhere at speed.
+In doing that, I ran straight into the problem the stack is built to solve: the chaos dragon — agents accelerating the wrong things.
 
 When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
 
 And yeah: it’s been kind of absurd.
-My co-founder texted me at one point: “I did a quarter’s worth of work in a day.”
+
+Drazen texted me:
+
+> “I did a quarter’s worth of work in a day.”
+>
+> “I’m building this at the speed of thought.”
+
+I texted back the only sane question:
+
+> “Skepticism is valid: how do we know this isn’t overly complicated slop that collapses later?”
 
 I also went from “I have never written firmware, and I haven’t written C in over 20 years” to shipping a real device with real users in under two months — while doing billable work — and while simultaneously building the stack itself.
 
@@ -101,7 +110,7 @@ It forces the one move most teams skip: **decide what direction you’re going w
 
 ## Thrash At Speed
 
-Here’s the problem the chaos dragon is pointing at: **execution going nowhere at speed**.
+Here’s what the chaos dragon looks like in practice: **thrash at speed**.
 
 **Brownian execution** is what it looks like in practice: you pull one way in the morning, the opposite way in the afternoon, and call it progress because a lot of work happened.
 
@@ -116,10 +125,12 @@ Agents don’t need more intelligence. They need better context and constraints 
 
 If you want the longer version of that claim, start here: {% post_url 2025-09-16-alignment-is-the-constraint %}.
 
-### When You Drift: Salvage, Then Restart
+### When The Chaos Dragon Shows Up: Salvage, Then Restart
 
 The fastest way to stop this isn’t to fight your way back from the wrong direction.
 It’s to **extract the learning and restart clean**.
+
+At this point it’s irresponsible *not* to throw away code.
 
 That pattern is the salvage loop (“protect the learning, drop the code”): {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
 It’s also the “learning vs constraint” split: {% post_url 2025-12-28-splitting-learning-from-constraint-in-an-ai-world %} (separate “what we learned” from “what we must enforce next time”).
@@ -165,7 +176,7 @@ The win is asymptotic: carry forward better local context (aims, constraints, gu
 
 </details>
 
-## Drift Detection: The Missing Superpower
+## Catch The Chaos Dragon Early: The Missing Superpower
 
 The most important capability in an AI-assisted world is not “write the code.”
 It’s “tell me when we’re off the rails.”
@@ -224,7 +235,7 @@ If you’re leading a team and watching agents amplify delivery *and* amplify th
 If you’re interested, I’m looking for a small number of design partners who:
 
 - are using agents in real workflows (engineering, research, operations)
-- are feeling the pain of thrash (“execution going nowhere”: agent-accelerated rework, polished output in the wrong direction, reversals, unsafe changes)
+- are feeling the pain of thrash (agent-accelerated rework, polished output in the wrong direction, reversals, unsafe changes)
 - want a lightweight loop that keeps the work pointed at the right thing, then harden it with real feedback
 
 Two ways to engage:
@@ -245,11 +256,11 @@ That’s what we’re building.
 
 Generic view (turn intent into shipped change without accelerating the wrong thing):
 
-![Grounded execution system: intent → dive pack → execute → nowhere check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
+![Grounded execution system: intent → dive pack → execute → chaos dragon check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
 
 Rewrite view (use the existing system as spec + enforce equivalence/safety as you move fast):
 
-![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → nowhere check → ship](../../assets/img/rewrite-with-safety-harness.svg)
+![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → chaos dragon check → ship](../../assets/img/rewrite-with-safety-harness.svg)
 
 </details>
 

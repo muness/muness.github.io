@@ -61,9 +61,9 @@ gates: {
   label: "Equivalence + safety harness\n(protocol checks • regression tests • rollout/rollback)"
 }
 
-drift: {
+check: {
   class: box
-  label: "Chaos dragon check\n(“are we rebuilding a different product?”)"
+  label: "Chaos dragon check\n(“are we rewriting the wrong thing?”)"
 }
 
 ship: {
@@ -80,14 +80,14 @@ mandate -> spec: {class: edge}
 spec -> dive: {class: edge}
 dive -> run: {class: edge}
 run -> gates: {class: edge}
-gates -> drift: {class: edge}
+gates -> check: {class: edge}
 
-drift -> ship: {
+check -> ship: {
   class: edge
   label: "keep going"
 }
 
-drift -> salvage: {
+check -> salvage: {
   class: edge
   label: "thrash"
 }
