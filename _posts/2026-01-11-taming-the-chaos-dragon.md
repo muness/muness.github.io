@@ -4,10 +4,10 @@ date: 2026-01-11 12:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "Agents multiply execution. Without grounding, they accelerate the wrong things. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
+excerpt: "Agents multiply execution. Without grounding, they accelerate thrash. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
 ---
 
-TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early, and makes the learning stick so you ship without burning weeks on reversals.
+TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early (before it turns into thrash), and makes the learning stick so you ship without burning weeks on reversals.
 
 Who this is for:
 - Solo builders shipping with agents
@@ -54,7 +54,7 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
-![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“are we building the wrong thing?”) → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
+![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“are we thrashing?”) → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
 
 *The 30-second ritual that keeps agent runs aligned.*
 
@@ -99,13 +99,15 @@ It forces the one move most teams skip: **decide what direction you’re going w
 **For teams:** make the Dive Pack a required field. Put it in the ticket + PR description. No Dive Pack, no agentic run.
 </div>
 
-## Drift At Speed
+## Thrash At Speed
 
 Here’s the problem the chaos dragon is pointing at: **execution going nowhere at speed**.
 
 **Brownian execution** is what it looks like in practice: you pull one way in the morning, the opposite way in the afternoon, and call it progress because a lot of work happened.
 
-Agents pour gasoline on that. They don’t just make you faster — they make you faster at the wrong thing if you don’t start from intent + constraints.
+If you prefer a less poetic word: **thrash**. Same idea, just uglier: reversals, rework, and “busy” weeks where you end up farther from done.
+
+Agents pour gasoline on that. They don’t just make you faster — they make you faster at thrash if you don’t start from intent + constraints.
 
 Skepticism is valid. You’ve seen AI build impressive things in hours that fall apart the moment you try to grow them.
 The bet here is not “trust the model.” The bet is the system learns from success and failure — not always and not perfectly, but enough that within days the workflow and architecture can be unrecognizable.
@@ -168,7 +170,7 @@ The win is asymptotic: carry forward better local context (aims, constraints, gu
 The most important capability in an AI-assisted world is not “write the code.”
 It’s “tell me when we’re off the rails.”
 
-Drazen said it best: the system has to be able to tell you when you’re building the wrong thing at high speed.
+Drazen said it best: the system has to be able to tell you when you’re thrashing at high speed.
 
 That’s it.
 Not a new UI.
@@ -197,7 +199,7 @@ If you want to try this without buying anything:
 1. Write one aim for your next week (one sentence, observable change).
 2. Write one guardrail (“this must not happen again because…”).
 3. Before each work session, write a Dive Pack (5 minutes).
-4. If the chaos dragon shows up (you’re building the wrong thing), salvage for 10 minutes, then restart clean.
+4. If the chaos dragon shows up (you’re thrashing / building the wrong thing), salvage for 10 minutes, then restart clean.
 
 This is the “Aim. Do. Reflect.” loop in practice: {% post_url 2025-09-08-open-horizons %}.
 
@@ -205,7 +207,7 @@ And it’s the missing layer for agentic execution: the thing that keeps runs al
 
 ### If You Lead A Team (Start This Week)
 
-If you’re leading a team and watching agents amplify delivery *and* amplify wrong-direction work, don’t go buy “more velocity.” Run a 2-week pilot that forces grounding:
+If you’re leading a team and watching agents amplify delivery *and* amplify thrash, don’t go buy “more velocity.” Run a 2-week pilot that forces grounding:
 
 1. Pick one **high-visibility** initiative with real stakes (customer impact, security, reliability, or real revenue).
 2. Write a Dive Pack (10–30 minutes) and paste it into the ticket + PR description (use the template above).
@@ -222,7 +224,7 @@ If you’re leading a team and watching agents amplify delivery *and* amplify wr
 If you’re interested, I’m looking for a small number of design partners who:
 
 - are using agents in real workflows (engineering, research, operations)
-- are feeling the pain of “execution going nowhere” (agent-accelerated rework, polished output in the wrong direction, reversals, unsafe changes)
+- are feeling the pain of thrash (“execution going nowhere”: agent-accelerated rework, polished output in the wrong direction, reversals, unsafe changes)
 - want a lightweight loop that keeps the work pointed at the right thing, then harden it with real feedback
 
 Two ways to engage:
@@ -230,7 +232,7 @@ Two ways to engage:
 - **Open-source design partner (fastest):** I’ll help you install Bottle and run the loop (Dive Packs, logs, guardrails) on one real initiative for 2–4 weeks; you share structured feedback on what breaks.
 - **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
 
-When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (how “building the wrong thing” shows up in your org), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
+When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (how thrash shows up in your org), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
 ## Close
 
