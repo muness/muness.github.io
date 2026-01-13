@@ -195,13 +195,7 @@ Then decisions (and their reasons) stop floating. They attach to the work that p
 
 These layers do not share databases or runtime state. They compose through the oldest interface: text over pipes (simple pieces, loosely coupled, and gracefully degrading).
 
-```
-Intent store     → assistant queries strategic context
-Oversight gate   → evaluates, can block on concerns
-Working memory   → injects guardrails + patterns per turn
-Long-term recall → answers queries about past work
-Task thread      → ties decisions and outcomes to work items
-```
+![Context stack layers: Intent store, Oversight gate, Working memory, Long-term recall, and Task thread all flow into the Assistant](/assets/img/context-stack-layers.png)
 
 If one layer fails, the others continue. Recall does not need distillation to work. Oversight can still run without strategic intent. Each layer does its job. Together, they create emergent capability.
 
@@ -213,47 +207,13 @@ This is the Unix philosophy applied to AI infrastructure: small tools, clear int
 
 What makes this a *system* rather than a collection of tools is the feedback loops.
 
-```
-Intent (strategic)
-    │
-    ▼
-Work claimed (task thread) ─────────────────┐
-    │                                       │
-    ▼                                       │
-Work happens (assistant + oversight)        │
-    │                                       │
-    ▼                                       │
-Outcomes produced                           │
-    │                                       │
-    ▼                                       │
-Learning captured (memory + recall)         │
-    │                                       │
-    ▼                                       │
-Work completed (task thread) ◄──────────────┘
-    │
-    ▼
-Future context richer → Next cycle stronger
-```
+![The flywheel: Intent → Work claimed → Work happens → Outcomes → Learning captured → Work completed → Future context richer, with feedback loop back to Work claimed](/assets/img/context-stack-flywheel.png)
 
 Each cycle sharpens understanding. Strategy informs evaluation. Evaluation generates learning. Learning improves future work. Task tracking links it all to concrete work items.
 
 There is also a *promotion pathway* for knowledge:
 
-```
-Raw session content
-    │ distill
-    ▼
-Local guardrails/patterns
-    │ propose candidates
-    ▼
-Candidate constraints (for human review)
-    │ human promotes with structure
-    ▼
-Enforced constraints in intent/standards
-    │ flows to all future sessions
-    ▼
-Behavior changes everywhere
-```
+![Promotion pathway: Raw session content → distill → Local guardrails/patterns → propose candidates → Candidate constraints → human promotes → Enforced constraints → flows to all future sessions → Behavior changes everywhere](/assets/img/context-stack-promotion.png)
 
 Learning becomes constraint only when it passes through human review. The AI surfaces candidates. Humans decide what becomes enforceable. Capture everything. Enforce selectively.
 

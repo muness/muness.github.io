@@ -1,0 +1,32 @@
+direction: right
+
+intent: Intent store {
+  shape: rectangle
+}
+
+oversight: Oversight gate {
+  shape: rectangle
+}
+
+memory: Working memory {
+  shape: rectangle
+}
+
+recall: Long-term recall {
+  shape: rectangle
+}
+
+task: Task thread {
+  shape: rectangle
+}
+
+assistant: Assistant {
+  shape: rectangle
+  style.fill: "#e8f4e8"
+}
+
+intent -> assistant: queries strategic context
+oversight -> assistant: evaluates, can block
+memory -> assistant: injects guardrails + patterns
+recall -> assistant: answers queries about past
+task -> assistant: ties decisions to work items

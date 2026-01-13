@@ -1,0 +1,27 @@
+direction: down
+
+raw: Raw session content {
+  shape: rectangle
+}
+
+local: Local guardrails/patterns {
+  shape: rectangle
+}
+
+candidates: Candidate constraints\n(for human review) {
+  shape: rectangle
+}
+
+enforced: Enforced constraints\nin intent/standards {
+  shape: rectangle
+}
+
+behavior: Behavior changes\neverywhere {
+  shape: rectangle
+  style.fill: "#e8f4e8"
+}
+
+raw -> local: distill
+local -> candidates: propose candidates
+candidates -> enforced: human promotes\nwith structure
+enforced -> behavior: flows to all\nfuture sessions

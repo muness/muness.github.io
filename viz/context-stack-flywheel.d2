@@ -1,0 +1,42 @@
+direction: down
+
+intent: Intent (strategic) {
+  shape: rectangle
+}
+
+claimed: Work claimed\n(task thread) {
+  shape: rectangle
+}
+
+work: Work happens\n(assistant + oversight) {
+  shape: rectangle
+}
+
+outcomes: Outcomes produced {
+  shape: rectangle
+}
+
+learning: Learning captured\n(memory + recall) {
+  shape: rectangle
+}
+
+completed: Work completed\n(task thread) {
+  shape: rectangle
+}
+
+future: Future context richer\n→ Next cycle stronger {
+  shape: rectangle
+  style.fill: "#e8f4e8"
+}
+
+intent -> claimed
+claimed -> work
+work -> outcomes
+outcomes -> learning
+learning -> completed
+completed -> future
+
+# Feedback loop
+completed -> claimed: {
+  style.stroke-dash: 3
+}
