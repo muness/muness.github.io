@@ -41,13 +41,23 @@ I also went from “I have never written firmware, and I haven’t written C in 
 
 ## Receipts (Inspectable Today)
 
-Before we talk about the system, here’s what it actually delivered in the real world (inspectable today):
+Before we talk about the system, here’s what it actually delivered in the real world (inspectable today).
+
+And if you’re thinking “is this even impressive in the age of agents?” — fair. The point isn’t “look how many commits.” The point is **shipping fast without getting eaten alive by thrash**, plus real humans showing up for the thing you shipped.
 
 - **Shipping pace (public):** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
 - **Portfolio (public):** 51 tagged releases across `roon-knob` (35) + `unified-hifi-control` (16). Releases: [roon-knob](https://github.com/muness/roon-knob/releases), [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
 - **Safety (real):** we almost shipped an “absolute volume” change that could have pinned volume to max on dB-based zones. We fixed it and added **12 regression tests** to stop that class of failure from recurring.
 - **The “this should not work” rewrite worked:** `unified-hifi-control` PR #45 is a full Rust rewrite (pure Rust, no Node.js runtime), and it survived multiple review cycles. https://github.com/open-horizon-labs/unified-hifi-control/pull/45
 - **Distribution (public):** Bottle makes the practice repeatable across tools. https://github.com/open-horizon-labs/bottle
+
+But here’s the signal that actually matters to me: a dumb little personal `$50` ESP32-S3 knob stopped being “my project” and turned into a small community.
+
+People are building, flashing, troubleshooting, and sharing setups.
+Threads are buzzing — 260+ posts in the main Roon forum thread (active as of hours ago), 15+ engaged builders in the Lyrion/LMS cross-post, and community PRs landing to add support.
+
+The repeated ask is not “make it smarter.”
+It’s: **make it easier to install and share with friends** (simpler flashing, better deployment, NAS-friendly packaging, non-Docker options).
 
 ## Start Here: Copy/Paste Dive Pack Template
 
@@ -241,7 +251,7 @@ If you’re interested, I’m looking for a small number of design partners who:
 Two ways to engage:
 
 - **Open-source design partner (fastest):** I’ll help you install Bottle and run the loop (Dive Packs, logs, guardrails) on one real initiative for 2–4 weeks; you share structured feedback on what breaks.
-- **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
+- **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” I’m not looking to start with SSO/RBAC/IT hoops — I’m looking for an exec who feels the pain of thrash and wants it to stop. If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
 
 When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (how thrash shows up in your org), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
