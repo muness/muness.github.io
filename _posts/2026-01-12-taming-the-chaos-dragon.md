@@ -70,7 +70,7 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
-![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“are we thrashing?”) → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
+![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“are we thrashing?”) → Salvage + update memory → Restart clean](/assets/img/taming-chaos-dragon-loop.svg)
 
 *The 30-second ritual that keeps agent runs aligned.*
 
@@ -255,11 +255,11 @@ That’s what we’re building.
 
 Generic view (turn intent into shipped change without accelerating the wrong thing):
 
-![Grounded execution system: intent → dive pack → execute → chaos dragon check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
+![Grounded execution system: intent → dive pack → execute → chaos dragon check → salvage/update memory → ship](/assets/img/grounded-execution-system.svg)
 
 Rewrite view (use the existing system as spec + enforce equivalence/safety as you move fast):
 
-![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → chaos dragon check → ship](../../assets/img/rewrite-with-safety-harness.svg)
+![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → chaos dragon check → ship](/assets/img/rewrite-with-safety-harness.svg)
 
 </details>
 
