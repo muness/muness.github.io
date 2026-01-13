@@ -40,7 +40,7 @@ execute: {
 
 drift_check: {
   class: box
-  label: "Drift check\n(“this is nowhere?”)"
+  label: "Nowhere check\n(“this is nowhere?”)"
 }
 
 salvage: {
@@ -50,7 +50,7 @@ salvage: {
 
 continue: {
   class: box
-  label: "Keep shipping\n(no drift)"
+  label: "Keep shipping\n(keep going)"
 }
 
 dive_pack -> execute: {class: edge}
@@ -60,9 +60,7 @@ drift_check -> continue: {
   class: edge
 }
 
-drift_check -> salvage: {
-  class: edge
-}
+drift_check -> salvage: {class: edge}
 
 salvage -> dive_pack: {
   class: edge

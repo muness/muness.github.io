@@ -7,7 +7,7 @@ comments: true
 excerpt: "Agents multiply execution. Without grounding, they accelerate the wrong things. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
 ---
 
-TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, detects drift early, and makes the learning stick so you ship without burning weeks on reversals.
+TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches “this is nowhere” early, and makes the learning stick so you ship without burning weeks on reversals.
 
 Who this is for:
 - Solo builders shipping with agents
@@ -21,7 +21,7 @@ Once I saw traction, I did the adult move: I paused and asked, *do I want to do 
 
 So I did something new (for me): I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
 
-In doing that, I ran straight into the problem the stack is built to solve: drift at speed (the chaos dragon).
+In doing that, I ran straight into the problem the stack is built to solve: execution going nowhere at speed (the chaos dragon).
 
 When I say “agents” (or “agentic execution”), I mean AI-assisted work sessions where the model plans and generates real artifacts (code, tests, docs, rollout steps) fast enough that humans can’t hold the whole decision trail in working memory.
 
@@ -54,7 +54,7 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
-![Grounded execution loop: Dive Pack → Execute → Detect drift → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
+![Grounded execution loop: Dive Pack → Execute → “this is nowhere?” → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
 
 *The 30-second ritual that keeps agent runs aligned.*
 
@@ -63,7 +63,7 @@ Dive Pack (aim/constraints/learnings)
         ↓
 Agentic execution (build + test + ship)
         ↓
-Drift? → Salvage (extract learning) → Update memory (logs/guardrails) → Restart clean
+“This is nowhere?” → Salvage (extract learning) → Update memory (logs/guardrails) → Restart clean
 ```
 
 <a id="dive-pack-template"></a>
@@ -83,7 +83,7 @@ What “done” looks like (observable):
 
 Constraints / guardrails (3–7 bullets):
 
-Known landmines (what drift looks like here):
+Known landmines (what “this is nowhere” looks like here):
 
 What we learned last time (what changed):
 
@@ -101,7 +101,7 @@ It forces the one move most teams skip: **decide what direction you’re going w
 
 ## Drift At Speed
 
-Here’s the problem the chaos dragon is pointing at: **drift at speed**.
+Here’s the problem the chaos dragon is pointing at: **execution going nowhere at speed**.
 
 **Brownian execution** is what it looks like in practice: you pull one way in the morning, the opposite way in the afternoon, and call it progress because a lot of work happened.
 
@@ -170,7 +170,7 @@ It’s “tell me when we’re off the rails.”
 
 Drazen said it best:
 
-> “The system has to be able to detect intense drift and tell me, ‘This is nowhere. Something’s happening here.’”
+> “The system has to be able to detect intense ‘this is nowhere’ and tell me, ‘This is nowhere. Something’s happening here.’”
 
 That’s it.
 Not a new UI.
@@ -178,7 +178,7 @@ Not a bigger model.
 
 A system that keeps you oriented when the execution engine is spinning faster than your working memory.
 
-It’s basically runtime air-traffic control: surface constraints, detect drift early, and stop the line when you’re about to do something dumb at speed.
+It’s basically runtime air-traffic control: surface constraints, detect “this is nowhere” early, and stop the line when you’re about to do something dumb at speed.
 
 The goal isn’t that the model becomes wise. It’s that guardrails and recall become *ambient*: the system surfaces what matters and intervenes when you’re about to do something dumb at speed.
 
@@ -199,7 +199,7 @@ If you want to try this without buying anything:
 1. Write one aim for your next week (one sentence, observable change).
 2. Write one guardrail (“this must not happen again because…”).
 3. Before each work session, write a Dive Pack (5 minutes).
-4. If you drift, salvage for 10 minutes, then restart clean.
+4. If you’re going nowhere, salvage for 10 minutes, then restart clean.
 
 This is the “Aim. Do. Reflect.” loop in practice: {% post_url 2025-09-08-open-horizons %}.
 
@@ -207,7 +207,7 @@ And it’s the missing layer for agentic execution: the thing that keeps runs al
 
 ### If You Lead A Team (Start This Week)
 
-If you’re leading a team and watching agents amplify delivery *and* amplify drift, don’t go buy “more velocity.” Run a 2-week pilot that forces grounding:
+If you’re leading a team and watching agents amplify delivery *and* amplify wrong-direction work, don’t go buy “more velocity.” Run a 2-week pilot that forces grounding:
 
 1. Pick one **high-visibility** initiative with real stakes (customer impact, security, reliability, or real revenue).
 2. Write a Dive Pack (10–30 minutes) and paste it into the ticket + PR description (use the template above).
@@ -232,7 +232,7 @@ Two ways to engage:
 - **Open-source design partner (fastest):** I’ll help you install Bottle and run the loop (Dive Packs, logs, guardrails) on one real initiative for 2–4 weeks; you share structured feedback on what breaks.
 - **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
 
-When you reach out, include: your team size, where you use agents, one drift failure mode you’ve seen, what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
+When you reach out, include: your team size, where you use agents, one “this is nowhere” failure mode you’ve seen, what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
 ## Close
 
@@ -245,11 +245,11 @@ That’s what we’re building.
 
 Generic view (turn intent into shipped change without accelerating the wrong thing):
 
-![Grounded execution system: intent → dive pack → execute → drift check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
+![Grounded execution system: intent → dive pack → execute → nowhere check → salvage/update memory → ship](../../assets/img/grounded-execution-system.svg)
 
 Rewrite view (use the existing system as spec + enforce equivalence/safety as you move fast):
 
-![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → drift check → ship](../../assets/img/rewrite-with-safety-harness.svg)
+![Rewrite with a safety harness: mandate → existing system as spec → dive pack → rewrite → safety harness → nowhere check → ship](../../assets/img/rewrite-with-safety-harness.svg)
 
 </details>
 
@@ -276,6 +276,6 @@ In the Cloud Atlas AI - Hi-Fi context, Open Horizons logs capture “what we shi
 - Caught and fixed a **volume safety bug** that risked equipment damage, and backed it with regression tests.
 - Implemented firmware auto-update opt-out and made configuration ergonomic (minutes-based intervals, safe defaults).
 
-The point of showing this is not “look how much shipped.” It’s that the system makes shipping *safer*: it keeps the direction coherent, surfaces drift early, and preserves judgment so you don’t have to rediscover it every session.
+The point of showing this is not “look how much shipped.” It’s that the system makes shipping *safer*: it keeps the direction coherent, surfaces “this is nowhere” early, and preserves judgment so you don’t have to rediscover it every session.
 
 </details>

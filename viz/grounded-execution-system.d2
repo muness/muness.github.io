@@ -53,7 +53,7 @@ run: {
 
 drift: {
   class: box
-  label: "Drift check\n(“is this going nowhere?”)"
+  label: "Nowhere check\n(“is this going nowhere?”)"
 }
 
 ship: {
@@ -72,12 +72,12 @@ run -> drift: {class: edge}
 
 drift -> ship: {
   class: edge
-  label: "no drift"
+  label: "keep going"
 }
 
 drift -> salvage: {
   class: edge
-  label: "drift"
+  label: "going nowhere"
 }
 
 salvage -> dive: {

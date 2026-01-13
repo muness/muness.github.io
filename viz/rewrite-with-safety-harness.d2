@@ -63,7 +63,7 @@ gates: {
 
 drift: {
   class: box
-  label: "Drift check\n(“are we rebuilding a different product?”)"
+  label: "Nowhere check\n(“are we rebuilding a different product?”)"
 }
 
 ship: {
@@ -84,12 +84,12 @@ gates -> drift: {class: edge}
 
 drift -> ship: {
   class: edge
-  label: "no drift"
+  label: "keep going"
 }
 
 drift -> salvage: {
   class: edge
-  label: "drift"
+  label: "going nowhere"
 }
 
 salvage -> dive: {
