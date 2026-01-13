@@ -14,12 +14,12 @@ Now it has real users.
 Concretely: it’s an ESP32-S3 hardware knob for controlling networked audio playback.
 It has dozens of users across a few serious audiophile communities.
 
-This post isn’t about audio or embedded. It’s about what happened next.
+This isn’t a post about audio or embedded. It’s about what happened next.
 
 Once I saw traction, I did the adult move: I paused and asked, *do I want to do this — and why?* The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening**.
 And it snapped cleanly into a larger priority: **Open Horizons**.
 
-So I used the Open Horizons stack Drazen (my co-founder) and I are building to build the thing that validated the stack.
+So I did something new (for me): I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
 
 In doing that, I ran straight into the problem the stack is built to solve. The thing agents make worse isn’t effort. It’s drift at speed — the chaos dragon.
 
@@ -30,9 +30,10 @@ When I say “agents” (or “agentic execution”), I mean AI-assisted work se
 </div>
 
 If the chaos dragon is drift at speed, the Dive Pack is the leash you grab before you hit enter.
-The rest of this post is why it matters, and how we productized it.
+The rest of this post is why it matters, and how we turned it into something you can actually use.
 
-The result has been… obscene productivity.
+And yeah: it’s been kind of absurd.
+My co-founder texted me at one point: “I did a quarter’s worth of work in a day.”
 Not because we got “smarter models.”
 Because we stopped letting execution free-run.
 
@@ -48,9 +49,9 @@ LLMs are the yang: generation, breadth, speed.
 Open Horizons is the yin: intent, constraint, memory.
 You need both.
 
-## Existence Proof: What This Ships
+## Receipts: This Ships
 
-This isn’t a conceptual framework. It’s a stack we’re shipping with.
+This isn’t a framework post. It’s working software.
 
 - **What “fast, grounded shipping” looks like:** since `2026-01-01`, we’ve shipped **19 tagged releases** across the firmware + bridge alone (more than one release per day).
 - **What shipped (to date):** 51 tagged releases across the two core repos — `roon-knob` (35) + `unified-hifi-control` (16). See releases: [roon-knob](https://github.com/muness/roon-knob/releases) and [unified-hifi-control](https://github.com/open-horizon-labs/unified-hifi-control/releases).
@@ -59,7 +60,7 @@ This isn’t a conceptual framework. It’s a stack we’re shipping with.
 - **How it’s reproducible:** the loop is lightweight (a Dive Pack + logs + guardrails). Bottle makes the setup repeatable across tools (so the same workflow works in Claude Code, Codex, and beyond): https://github.com/open-horizon-labs/bottle
 - **More surfaces:** iOS + Apple Watch: [hifi-control-ios](https://github.com/open-horizon-labs/hifi-control-ios).
 
-### Portfolio (Inspectable Evidence)
+### Portfolio (go look)
 
 If you’re wondering “is this just impressive slop that collapses later?”, here are artifacts you can inspect:
 
@@ -82,28 +83,28 @@ The “chaos dragon” is what drift looks like when execution is fast enough to
 
 Execution is fast enough that ungrounded drift becomes catastrophic: you can build the wrong thing at 10× speed, and you can also lock into it at 10× speed.
 
-No amount of IQ fixes this.
+No amount of “smarter model” fixes this.
 There is no god’s-eye view to reach, for humans or for models.
 Local wisdom is the scarce input, and the whole game is carrying it forward and applying it *before* you act.
 
 This is why the point of Open Horizons isn’t acceleration.
 It’s **alignment**.
 
-If you haven’t read it, start with the claim: {% post_url 2025-09-16-alignment-is-the-constraint %}.
+If you want the longer version of the claim, start here: {% post_url 2025-09-16-alignment-is-the-constraint %}.
 
-Here’s the operating model in one pass:
+Here’s basically what we do:
 
 - Don’t “try hard” in a vacuum.
 - Start from aims, constraints, and prior hard-won learnings.
 - Detect drift early and restart clean when needed.
 
-## The Concrete Move: Grounding Before You Act
+## The Move: Ground Before You Act
 
 In a recent conversation with Drazen, we described it plainly:
 
 > “When we start a session we put together a dive prep pack… it includes the principles… the learnings and guardrails… we don’t start without that.”
 
-That’s the whole thing.
+That’s basically it.
 
 In Open Horizons, we treat the Dive Pack as a first-class artifact: a short, reusable note tied to an endeavor, sitting alongside logs and guardrails so it’s easy to apply (and hard to forget) next time.
 
@@ -176,7 +177,7 @@ If you’re lost, salvage the learning and restart clean.
 ### Make It Low Friction (Or It Won’t Spread)
 
 The Dive Pack is the discipline.
-But discipline alone doesn’t scale if setup is painful.
+But discipline doesn’t scale if setup is painful.
 
 So we’re packaging the stack into something you can just install and start with:
 
@@ -185,7 +186,7 @@ So we’re packaging the stack into something you can just install and start wit
 **Bottle** is the installer/updater that makes our agentic workflow reproducible: https://github.com/open-horizon-labs/bottle
 It includes plugins for **Claude Code** and **Codex**, so you can get started without hand-wiring a whole toolchain.
 
-That matters because alignment only works when it’s cheap enough to do *every time*.
+Because if it’s even mildly annoying, people skip it — and then you’re back to vibes.
 
 <details class="appendix" markdown="1">
 <summary><strong>Why this matters (optional): why “smarter models” won’t fix alignment</strong></summary>
@@ -209,24 +210,23 @@ The win is asymptotic: carry forward better local context (aims, constraints, gu
 The most important capability in an AI-assisted world is not “write the code.”
 It’s “tell me when we’re off the rails.”
 
-Another line from that same conversation hit the point:
+Drazen said it best:
 
 > “The system has to be able to detect intense drift and tell me, ‘This is nowhere. Something’s happening here.’”
 
-That’s the product.
-
+That’s it.
 Not a new UI.
 Not a bigger model.
 
 A system that keeps you oriented when the execution engine is spinning faster than your working memory.
 
-You can think of it as runtime air-traffic control: surface constraints, detect drift early, and stop the line when you’re about to do something dumb at speed.
+It’s basically runtime air-traffic control: surface constraints, detect drift early, and stop the line when you’re about to do something dumb at speed.
 
-The point isn’t that the model becomes wise. It’s that guardrails and recall become *ambient*: the system surfaces what matters and intervenes when you’re about to do something dumb at speed.
+The goal isn’t that the model becomes wise. It’s that guardrails and recall become *ambient*: the system surfaces what matters and intervenes when you’re about to do something dumb at speed.
 
 ## Why This Is Real (Not Conceptual)
 
-I am not writing this as a futurist.
+I’m not trying to be a futurist here.
 
 I had never written firmware.
 Then I built a device, shipped it, supported users, and started extending it into:
@@ -235,11 +235,11 @@ Then I built a device, shipped it, supported users, and started extending it int
 - a multi-source bridge (Roon/LMS/OpenHome as peers, not forks)
 - seamless HQPlayer DSP control with transport control agnostic of source system
 
-This happened because the system kept the direction coherent while the execution loop got absurdly fast.
+This happened because I wasn’t losing the plot while the execution loop got absurdly fast.
 
 ## If You Want to Try This
 
-If you want a minimal experiment:
+If you want to try this without buying anything:
 
 1. Write one aim for your next week (one sentence, observable change).
 2. Write one guardrail (“this must not happen again because…”).
@@ -252,7 +252,7 @@ And it’s the missing layer for agentic execution: the thing that keeps the cha
 
 ### If You Lead A Team (Start This Week)
 
-If you’re leading a team and watching agents amplify delivery *and* amplify drift, don’t buy “more velocity.” Install a loop that keeps work aligned at runtime:
+If you’re leading a team and watching agents amplify delivery *and* amplify drift, don’t go buy “more velocity.” Install a loop that keeps work aligned at runtime:
 
 1. Pick one active initiative and write a Dive Pack for it (10–30 minutes; one page max; use the template above).
 2. Require that any agentic work session (where an AI agent is generating plans or code) starts by pasting that Dive Pack in before generating.
@@ -262,7 +262,7 @@ If you’re leading a team and watching agents amplify delivery *and* amplify dr
 ## Close
 
 The chaos dragon has always been here; agents just made it bigger and faster.
-The response isn’t more acceleration—it’s grounded execution: preserve local judgment, then apply it before you act.
+The answer isn’t more speed — it’s grounded execution: preserve local judgment, then apply it before you act.
 That’s what we’re building.
 
 <div class="callout callout--note" markdown="1">
