@@ -1,6 +1,6 @@
 ---
 title: "The Context Stack"
-date: 2026-01-13 09:00:00 -0500
+date: 2026-01-12 09:00:00 -0500
 author: durch
 toc: true
 comments: true
