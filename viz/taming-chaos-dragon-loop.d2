@@ -1,0 +1,67 @@
+direction: down
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 22
+      bold: true
+      fill: "#FFFFFF"
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 16
+      bold: false
+    }
+  }
+}
+
+dive_pack: {
+  class: box
+  label: "Dive Pack\n(aim • constraints • landmines)"
+}
+
+execute: {
+  class: box
+  label: "Execute\n(agents build • test • ship)"
+}
+
+dragon_check: {
+  class: box
+  label: "Chaos dragon check\n(“thrash?”)"
+}
+
+salvage: {
+  class: box
+  label: "Salvage + update memory\n(logs • guardrails • what changed)"
+}
+
+continue: {
+  class: box
+  label: "Keep shipping\n(keep going)"
+}
+
+dive_pack -> execute: {class: edge}
+execute -> dragon_check: {class: edge}
+
+dragon_check -> continue: {
+  class: edge
+}
+
+dragon_check -> salvage: {class: edge}
+
+salvage -> dive_pack: {
+  class: edge
+}
