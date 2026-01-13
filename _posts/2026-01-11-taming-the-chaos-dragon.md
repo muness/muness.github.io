@@ -7,7 +7,7 @@ comments: true
 excerpt: "Agents multiply execution. Without grounding, they accelerate the wrong things. Open Horizons + Bottle keeps runs aligned by forcing intent + constraints before generation."
 ---
 
-TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early (“this is nowhere”), and makes the learning stick so you ship without burning weeks on reversals.
+TL;DR: Agents accelerate everything — including mistakes. Open Horizons + Bottle forces intent + constraints *before* you generate, catches the chaos dragon early, and makes the learning stick so you ship without burning weeks on reversals.
 
 Who this is for:
 - Solo builders shipping with agents
@@ -54,7 +54,7 @@ The model doesn’t need more tokens. It needs the *right* tokens.
 
 ### The Loop (Picture, Not Poetry)
 
-![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“this is nowhere?”) → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
+![Grounded execution loop: Dive Pack → Execute → chaos dragon check (“are we building the wrong thing?”) → Salvage + update memory → Restart clean](../../assets/img/taming-chaos-dragon-loop.svg)
 
 *The 30-second ritual that keeps agent runs aligned.*
 
@@ -168,9 +168,7 @@ The win is asymptotic: carry forward better local context (aims, constraints, gu
 The most important capability in an AI-assisted world is not “write the code.”
 It’s “tell me when we’re off the rails.”
 
-Drazen said it best:
-
-> “The system has to be able to detect intense drift and tell me, ‘This is nowhere. Something’s happening here.’”
+Drazen said it best: the system has to be able to tell you when you’re building the wrong thing at high speed.
 
 That’s it.
 Not a new UI.
@@ -199,7 +197,7 @@ If you want to try this without buying anything:
 1. Write one aim for your next week (one sentence, observable change).
 2. Write one guardrail (“this must not happen again because…”).
 3. Before each work session, write a Dive Pack (5 minutes).
-4. If the chaos dragon shows up (“this is nowhere”), salvage for 10 minutes, then restart clean.
+4. If the chaos dragon shows up (you’re building the wrong thing), salvage for 10 minutes, then restart clean.
 
 This is the “Aim. Do. Reflect.” loop in practice: {% post_url 2025-09-08-open-horizons %}.
 
@@ -232,7 +230,7 @@ Two ways to engage:
 - **Open-source design partner (fastest):** I’ll help you install Bottle and run the loop (Dive Packs, logs, guardrails) on one real initiative for 2–4 weeks; you share structured feedback on what breaks.
 - **Enterprise design partner (exec-led):** same pilot, but the goal is org-level adoption without turning this into an “IT transformation.” If your teams are using AI to accelerate the wrong things, we’ll install the loop on one initiative and optimize for outcomes like fewer reversals, fewer dead-end weeks, and safer changes at speed.
 
-When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (“this is nowhere” in your world), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
+When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (how “building the wrong thing” shows up in your org), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
 ## Close
 
