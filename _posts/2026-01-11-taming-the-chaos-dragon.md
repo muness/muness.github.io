@@ -19,7 +19,7 @@ It escaped the lab. Now it has real users — dozens of people across a few seri
 
 Once I saw traction, I did the adult move: I paused and asked, *do I want to do this — and why?* The answer surprised me. The “why” wasn’t the gadget. It was the feeling: **intentful, low-friction listening** — and it snapped cleanly into a larger priority: **Open Horizons**.
 
-So I did something new (for me): I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
+So I used the stack my co-founder Drazen and I are building to ship the thing that proved it works.
 
 In doing that, I ran straight into the problem the stack is built to solve: the chaos dragon — agents accelerating the wrong things.
 
