@@ -88,14 +88,8 @@ Chaos dragon? → Salvage (extract learning) → Update memory (logs/guardrails)
 
 <div class="callout callout--note" markdown="1">
 ```text
-┌────────────────────────────────────────────────────┐
-│ COPY-PASTE DIVE PACK TEMPLATE — START HERE         │
-└────────────────────────────────────────────────────┘
-```
-
-```text
 Aim (1 sentence):
-What “done” looks like (observable):
+What "done" looks like (observable):
 
 Constraints / guardrails (3–7 bullets):
 
