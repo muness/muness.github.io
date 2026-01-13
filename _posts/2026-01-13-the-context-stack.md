@@ -4,7 +4,7 @@ date: 2026-01-13 09:00:00 -0500
 author: durch
 toc: true
 comments: true
-hide: true
+hidden: true
 excerpt: "How a constellation of tools creates the appearance of infinite memory"
 ---
 
