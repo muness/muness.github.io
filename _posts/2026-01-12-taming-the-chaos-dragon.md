@@ -238,7 +238,7 @@ Two ways to engage:
 
 When you reach out, include: your team size, where you use agents, one chaos dragon failure mode you’ve seen (how thrash shows up in your org), what you’re accountable for, and whether you’re thinking “open source” or “enterprise.”
 
-## Close
+---
 
 The chaos dragon has always been here; agents just made it bigger and faster.
 The answer isn’t more speed — it’s grounded execution: preserve judgment, then apply it before you act.
