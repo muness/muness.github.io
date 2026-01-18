@@ -4,16 +4,16 @@ date: 2026-01-18 09:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "OSS adoption speeds up, and the first request is not features. It is easy installs. Fixing release parallelism and caching dropped our build from ~40 minutes to ~7."
+excerpt: "OSS adoption speeds up, and the first request is not features. It is easy installs. Fixing release parallelism and caching dropped our build from ~40 minutes to ~7 so distribution iteration could keep up."
 ---
 
 *How open source growth turns release pipelines into the real product surface*
 
 When unified-hifi-control and roon-knob started taking off, the first wave of requests was not new features. It was "make it easy to install." That is the moment distribution becomes the product.
 
-In practice, it meant wrestling with a release pipeline that had to build across multiple platforms, ship web assets, publish Docker images, and generate platform-specific packages. The build was about 40 minutes. Users were impatient (and fair). The longer the wait, the more "one click install" became the missing feature.
+In practice, it meant wrestling with a release pipeline that had to build across multiple platforms, ship web assets, publish Docker images, and generate platform-specific packages. The build was about 40 minutes. Users were not waiting on the build. They were hitting Docker-only installs and asking for alternatives. A 40-minute loop just made every packaging tweak expensive, which slowed my response to those requests.
 
-After a focused pass on caching, parallelism, and artifact reuse, the build dropped to about 7 minutes. The remaining long pole is Synology packaging, which I have not optimized yet. That single change shifted the project from "cool demo" to "credible tool people can actually adopt."
+After a focused pass on caching, parallelism, and artifact reuse, the build dropped to about 7 minutes. The remaining long pole is Synology packaging, which I have not optimized yet. This did not create adoption by itself. It shortened the maintainer loop so I could ship alternative distribution paths (like the Roon Extension Manager repo) and start on LMS plugin packaging without burning hours per iteration.
 
 This is the OSS distribution trap: as usage grows, the bottleneck moves out of the codebase and into the release surface. The work is not glamorous, but it is what users feel.
 
@@ -45,6 +45,6 @@ Once your OSS project has real users, distribution is no longer a footnote. It i
 
 The real constraint is no longer "can we build it," it is "can users get it." That is a governance, tooling, and release problem, not a coding problem. That is where effort should move.
 
-If your build takes 40 minutes, you are not just slow. You are signaling to every user that adoption will be painful. Fixing distribution is not a side quest. It is the work.
+If your build takes 40 minutes, your distribution iteration loop is slow. Users feel the install friction. You feel the lag that makes it harder to respond. Fixing distribution is not a side quest. It is the work.
 
 If you are in the same spot, use the linked workflow doc as a reference and adapt it to your release surface. The details will differ, but the constraint shift is universal.
