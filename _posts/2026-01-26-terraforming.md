@@ -105,11 +105,30 @@ Observable “abort” signals:
 - The work is getting bigger while “done” gets fuzzier.
 - You’re accumulating “we’ll clean it up later” debt *before* you have a working core.
 
-When you abort, don’t rage-delete—salvage:
+When you abort, don't rage-delete—salvage:
 
 - What did we learn?
 - What guardrail should exist next time?
 - What context was missing at the start?
+
+## Levels of Response: From Tarp to Terraform
+
+Not all "fixes" are equal. There's a progression:
+
+- **Tarp over the problem.** Action without premise. You don't understand why it's broken, but you cover it up. This is what almost everyone does by default.
+- **Nearest peak.** Local optimization within the current framing. Better, but you're still trapped by assumptions you haven't examined.
+- **Beyond the nearest peak.** You step back, explore the solution space, and find a fundamentally better approach before committing. (See {% post_url 2025-12-10-beyond-the-nearest-peak %}.)
+- **Terraforming.** You reshape the environment so the problem doesn't recur—and similar problems become easier to solve.
+
+Here's a micro example that drives me up the wall. A user reported CPU spikes on a Raspberry Pi 3B running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
+
+The nearest peak would be optimizing the polling interval. Still polling. Still O(n) CPU per interval.
+
+The actual fix was switching to an event subscriber model ([PR #107](https://github.com/open-horizon-labs/unified-hifi-control/pull/107)). Adapters publish state changes; consumers subscribe. O(1) per actual change instead of O(n) per interval. The mechanism of action is obvious. The rollback is trivial.
+
+Did I load-test it with 100+ simulated clients? No. I shipped it. The result: ["now using negligible CPU with the new mechanism."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
+
+**When to ship on theory:** If the mechanism of action is clear, the change is reversible, and the verification burden of "proving it first" exceeds the cost of being wrong—bias toward action. You can simulate processes, reason through mechanism-of-action chains, and act on defensible premises. That's not recklessness; that's basic science: understand, hypothesize, test. Once you've done that, the burden of proof shifts.
 
 ## Terraform Yourself: Make Direction Cheap
 
