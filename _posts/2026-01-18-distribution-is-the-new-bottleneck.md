@@ -67,20 +67,9 @@ If you want the technical trail:
 
 Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedback that the path from code to use is broken. People are not complaining for fun. They are pointing to where the system needs attention, and they feel it in the friction and unpredictability.
 
-I laid out the full GitHub Actions setup here:
-[GitHub Release Workflow Caching Strategy](https://github.com/open-horizon-labs/unified-hifi-control/blob/main/docs/gh-release.md)
-
-- **Parallelize the work:** run platform builds in parallel so long builds do not serialize the whole pipeline. The win is throughput; the pitfall is shared resources that turn parallel jobs into hidden queues.
-- **Reuse artifacts:** build shared assets once and reuse them across jobs to avoid costly duplication. The win is consistency; the pitfall is forgetting to invalidate artifacts when inputs change.
-- **Cache with intent:** keep object and dependency caches warm across PRs and releases so iteration stays tight. The win is faster cycles; the pitfall is stale caches if you do not pin or bust them on toolchain changes.
-- **Treat tools as first-class:** cache or containerize toolchains that waste minutes each run. The win is cutting dead time; the pitfall is version drift if you do not lock versions.
-- **Add quick edge checks:** use lightweight smoke tests to catch cross-arch or packaging errors early. The win is earlier signal; the pitfall is letting the tests become the next bottleneck.
-
 One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible because they did not show up in feature metrics. Pulling distribution into its own track made the work visible and actually resourced.
 
 ![](/assets/img/distribution-tax-flow.svg)
-
-In OSS, this flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
 
 ## The Core Thesis: Distribution Is Your Product
 
