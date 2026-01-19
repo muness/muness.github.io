@@ -15,23 +15,27 @@ With AI agents accelerating code production, the friction has moved. The bottlen
 
 I saw the same in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
 
+This is not just regulated enterprise pain. For startups and non-regulated teams, the delivery path is onboarding, provisioning, upgrades, and “does it work in my environment.” That path is where velocity now stalls.
+
 ## The Enterprise Grind: Governance as the Silent Velocity Killer
 
 In regulated environments like hospitals, compliance is non-negotiable. But how it is implemented often turns necessary checks into major roadblocks.
 
 The dev teams I am helping operate with zero dedicated IT support, so engineers end up handling the full deployment pipeline themselves. Pushing one update through dev, staging, and prod takes 15+ minutes of close attention, multiple times a day. Each step hits manual approvals at CI and delivery gates, with devs clicking through lists one by one. Skip something and you start over.
 
-The worst part is flaky SBOM scans that fail unpredictably over weekends, often from temporary glitches like network hiccups or false alarms on dependencies. Monday rolls around, and the pair on shift finds a blocked deploy, then spends hours figuring it out: real issue, scanner error, or bad luck. Time slips away on fixes, throwing off plans and holding up important changes.
+The worst part is flaky security scans that fail unpredictably over weekends, often from temporary glitches like network hiccups or false alarms on dependencies. Monday rolls around, and the pair on shift finds a blocked deploy, then spends hours figuring it out: real issue, scanner error, or bad luck. Time slips away on fixes, throwing off plans and holding up important changes.
 
 The fix is not to remove governance. It is to make it less brittle and less manual. The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. If you are on Kubernetes, automate gates with GitOps-style tooling (automated deploys from Git, for example, ArgoCD) and use scanners that can be made reliable in your stack (for example, Trivy, a container/dependency scanner). That is not glamorous work, but it is where a large part of velocity lives.
 
 The same trap shows up in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
-![](/assets/img/distribution-friction-map.svg)
+![OSS and enterprise friction converging into a delivery-path tax.](/assets/img/distribution-friction-map.svg)
+
+*Figure: different sources of friction, same delivery-path tax.*
 
 ## Mirroring the Trap in Open Source: When "Easy Install" Matters More Than Features
 
-This enterprise friction lines up with what I have seen in my open source projects, unified-hifi-control and roon-knob. It is the same arc you see when OSS projects move beyond Docker-only and add official packages or installers. As these picked up users, the early feedback was not about new features. It was "make it easy to install."
+This enterprise friction lines up with what I have seen in my open source projects, unified-hifi-control (a multi-protocol audio bridge) and roon-knob (a physical volume knob for Roon). It is the same arc you see when OSS projects move beyond Docker-only and add official packages or installers. As these picked up users, the early feedback was not about new features. It was "make it easy to install."
 
 I started with Docker-only, which felt straightforward as a solo maintainer. Users were not having it. Some were on NAS devices like Synology or QNAP, where Docker felt tacked on and unreliable. Others wanted tighter integration with systems like Roon or Logitech Media Server (LMS), preferring built-in plugins to container workarounds. The project supports a physical dev board that takes days to ship, but people would drop off rather than deal with a quick Docker setup.
 
@@ -55,7 +59,9 @@ This change also enabled a shared component library and Tailwind-based UI across
 
 Flexible systems keep delivery paths open under pressure: composable parts, inspectable handoffs, and changes that do not collapse under new constraints.
 
-![](/assets/img/architecture-flexibility-map.svg)
+![Architecture choices that keep delivery paths open.](/assets/img/architecture-flexibility-map.svg)
+
+*Figure: flexibility in enterprise and OSS keeps delivery paths open.*
 
 If you want the technical trail:
 
@@ -69,7 +75,9 @@ Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedbac
 
 One approach that did not work well: burying delivery-path fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible because they did not show up in feature metrics. Pulling delivery-path work into its own track made the work visible and actually resourced.
 
-![](/assets/img/distribution-tax-flow.svg)
+![The delivery-path tax zone between code and users.](/assets/img/distribution-tax-flow.svg)
+
+*Figure: most friction lives between code and usable value.*
 
 ## The Core Thesis: The Delivery Path Is Your Product Surface
 
