@@ -1,5 +1,5 @@
 ---
-title: "Code Rush to Deploy Drag: Mastering the Delivery Path Bottleneck in OSS and Enterprise"
+title: "Velocity Is Limited by the Path to the User"
 date: 2026-01-20 09:00:00 -0500
 author: muness
 toc: true

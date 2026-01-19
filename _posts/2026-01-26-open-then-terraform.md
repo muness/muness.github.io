@@ -196,7 +196,7 @@ There's also a subtler trap: **over-structuring**. Too many guardrails, approval
 
 This is also where "distribution" sneaks in:
 the ability to install, share, and reuse your environment matters as much as the environment itself.
-For a concrete case of what happens when distribution becomes the binding constraint, see {% post_url 2026-01-20-code-rush-to-deploy-drag %}.
+For a concrete case of what happens when distribution becomes the binding constraint, see {% post_url 2026-01-20-velocity-is-limited-by-the-path-to-the-user %}.
 
 ## Terraforming Is A 7-Day Experiment
 
