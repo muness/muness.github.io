@@ -25,16 +25,18 @@ By "distribution" I mean the path from merged code to a working install in a rea
 
 The bottleneck is no longer creation. It is the delivery path: governance, packaging, and installs. This is not just regulated enterprise pain. For startups and non-regulated teams, the delivery path is onboarding, provisioning, upgrades, and "does it work in my environment." That path is where velocity now stalls.
 
+That SBOM failure is distribution drag in its pure form: nothing about the code changed, but progress stopped anyway.
+
 I saw the same in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
 
 ## Architecture as a Distribution Multiplier
 
 The good news: architecture choices can make the delivery path dramatically simpler. This is the lever—the hopeful part.
 
-This is not about Rust versus Node. It is about choosing an architecture that makes the delivery path simpler.
+This is not about Rust versus Node. The rule: **pick architectures that reduce the number of delivery surfaces, make handoffs inspectable, and let you ship partial capability without shipping a new platform.**
 
-- **Enterprise shift:** monolithic agent → decomposed multi-agent workflow with vector search (embedding-based retrieval) and inspectable handoffs. Failure rate went from ~30% to zero so far, latency dropped from 40–100 seconds to 10–20 seconds, and tool calls per flow fell from a dozen to three. This mirrors decomposing monoliths into smaller services to isolate gated deploys and reduce blast radius.
-- **OSS shift:** Node.js with hand-rolled HTML/CSS was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift). The new approach: Rust core with an event bus, explicit adapter lifecycle, and SSE. Result: a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
+- **Enterprise:** monolithic agent → decomposed multi-agent workflow. Failure rate from ~30% to zero, latency from 40–100s to 10–20s, tool calls from a dozen to three. Smaller services isolate gated deploys and reduce blast radius.
+- **OSS:** Node.js with hand-rolled UI → Rust core with event bus and adapters. Result: single binary for most environments, optional adapters when needed, far less packaging glue.
 
 Flexible systems keep delivery paths open under pressure: composable parts, inspectable handoffs, and changes that do not collapse under new constraints.
 
@@ -54,7 +56,7 @@ The worst part is flaky security scans that fail unpredictably over weekends, of
 
 Governance is physics—you cannot wish it away in regulated environments. But brittle, manual governance is self-inflicted drag. The goal is reliable, low-touch governance.
 
-The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. Prefer gates that are deterministic, retryable, and explainable. If you are on Kubernetes, GitOps-style tooling (automated deploys from Git, for example ArgoCD) and reliable scanners (for example Trivy) can help—but the principle matters more than the specific tools. That is not glamorous work, but it is where a large part of velocity lives.
+The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. Prefer gates that are deterministic, retryable, and explainable. GitOps-style deploys and scanners you can make deterministic in your environment help—but the principle matters more than the specific tools. That is not glamorous work, but it is where a large part of velocity lives.
 
 The same trap shows up in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
@@ -82,6 +84,10 @@ Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedbac
 
 The common failure mode is unclear ownership. When the delivery path belongs to "everyone," it belongs to no one, and the drag compounds quietly.
 
+Quick test: who wakes up when installs break or scans flake, and do they have the mandate to fix the path instead of patching around it?
+
+Ungoverned search creates thrash. Thrash hardens into bloat. Bloat turns the delivery path into a tax.
+
 One approach that did not work well: burying delivery-path fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible because they did not show up in feature metrics. Pulling delivery-path work into its own track made the work visible and actually resourced.
 
 ![The delivery-path tax zone between code and users.](/assets/img/distribution-tax-flow.png)
@@ -93,6 +99,8 @@ One approach that did not work well: burying delivery-path fixes inside feature 
 Whether you are solo on OSS or advising healthcare teams, it boils down to this: with real users, the delivery path is the entry point. A rough one means drop-offs, lost momentum, and wasted chances.
 
 The key bottleneck is not making it. It is rolling it out steadily, broadly, and safely. That is a mix of tooling, governance, and release discipline. If you want velocity without thrash, invest where the constraint actually moved.
+
+When execution is cheap, delivery is the work.
 
 If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your delivery-path tax. A simple template:
 
@@ -115,7 +123,7 @@ Then measure cycle time, cache the obvious, and parallelize the easy wins.
 <details id="appendix-build-workflow" class="appendix" markdown="1">
 <summary><strong>Appendix: How the Build Workflow Actually Works</strong></summary>
 
-This is the technical detail behind the "40 minutes → 7 minutes" claim and the label-triggered packaging.
+This is the technical detail behind the "40 minutes → 6 minutes" claim and the label-triggered packaging.
 
 ### Philosophy: Single Source of Truth
 
