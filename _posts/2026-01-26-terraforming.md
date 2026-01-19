@@ -128,7 +128,9 @@ The actual fix was switching to an event subscriber model ([PR #107](https://git
 
 Did I load-test it with 100+ simulated clients? No. I shipped it. The result: ["now using negligible CPU with the new mechanism."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
 
-**When to ship on theory:** If the mechanism of action is clear, the change is reversible, and the verification burden of "proving it first" exceeds the cost of being wrong—bias toward action. You can simulate processes, reason through mechanism-of-action chains, and act on defensible premises. That's not recklessness; that's basic science: understand, hypothesize, test. Once you've done that, the burden of proof shifts.
+This is the opposite of "just do something" action bias—the tarp mentality that dominates most corporate environments. Tarps are action *without* premise: you don't understand why it's broken, but you do something anyway. What I'm describing is action *with* premise: the mechanism of action is clear, the change is reversible, and the verification burden of "proving it first" exceeds the cost of being wrong.
+
+You can simulate processes, reason through mechanism-of-action chains, and act on defensible premises. That's not recklessness; that's basic science: understand, hypothesize, test. Once you've done that, the burden of proof shifts to the naysayers.
 
 ## Terraform Yourself: Make Direction Cheap
 
