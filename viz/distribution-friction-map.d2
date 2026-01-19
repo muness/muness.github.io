@@ -43,9 +43,20 @@ oss: {
   label: "OSS"
   near: top-left
 
-  oss_need: {class: box label: "Users want\n\"easy install\""}
-  oss_friction: {class: box label: "Docker-only\nsetup friction"}
-  oss_signal: {class: box label: "Drop-offs +\nalt distro asks"}
+  oss_need: {
+    class: box
+    label: "Users want\neasy install"
+  }
+
+  oss_friction: {
+    class: box
+    label: "Docker-only\nsetup friction"
+  }
+
+  oss_signal: {
+    class: box
+    label: "Drop-offs +\nalt distro asks"
+  }
 
   oss_need -> oss_friction: {class: edge}
   oss_friction -> oss_signal: {class: edge}
@@ -56,9 +67,20 @@ enterprise: {
   label: "Enterprise"
   near: bottom-left
 
-  ent_need: {class: box label: "Teams ship\nfeatures fast"}
-  ent_friction: {class: box label: "Manual gates +\nscan flakes"}
-  ent_signal: {class: box label: "Deploy delays +\ntriage burn"}
+  ent_need: {
+    class: box
+    label: "Teams ship\nfeatures fast"
+  }
+
+  ent_friction: {
+    class: box
+    label: "Manual gates +\nscan flakes"
+  }
+
+  ent_signal: {
+    class: box
+    label: "Deploy delays +\ntriage burn"
+  }
 
   ent_need -> ent_friction: {class: edge}
   ent_friction -> ent_signal: {class: edge}
