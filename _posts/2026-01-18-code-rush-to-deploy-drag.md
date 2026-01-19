@@ -4,7 +4,7 @@ date: 2026-01-18 09:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "In an AI-fueled era where code flies off the keyboard, the delivery path and governance become the real bottlenecks. From OSS install drop-offs to enterprise SBOM scan nightmares, learn how architecture shifts and smarter pipelines unlock velocity without burning out teams."
+excerpt: "Velocity is no longer about how fast you can type, but how efficiently you can navigate the path to the user. From OSS install drop-offs to enterprise SBOM scan nightmares, learn how architecture shifts and smarter pipelines unlock delivery without burning out teams."
 ---
 
 *Why the shift from code velocity to delivery-path hygiene is universal and how to navigate it without burning out teams or losing users.*
