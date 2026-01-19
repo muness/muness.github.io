@@ -27,6 +27,8 @@ The worst part is flaky SBOM scans that fail unpredictably over weekends, often 
 
 The fix is not to remove governance. It is to make it less brittle and less manual. The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. If it fits the environment, automate gates with GitOps-style tooling (for example, ArgoCD) and use scanners that can be made reliable in your stack (for example, Trivy). That is not glamorous work, but it is where a large part of velocity lives.
 
+One more shift mattered: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow with vector search and inspectable handoffs. That made the workflow more reliable, let us evaluate each component, and improved performance without turning every change into a black box.
+
 Sound familiar? It is the same trap in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
 ![](/assets/img/distribution-friction-map.svg)
