@@ -4,7 +4,7 @@ date: 2026-01-18 09:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "In a world where AI agents crank out code at lightning speed, the true chokepoint is not creation. It is distribution and governance. OSS install friction and enterprise scan flakes point to the same shift, and cutting release cycles from 40 to 7 minutes makes it possible to respond."
+excerpt: "In a world where AI agents crank out code at lightning speed, the true chokepoint is not creation. It is distribution and governance."
 ---
 
 *Why the shift from code velocity to distribution hygiene is universal and how to navigate it without burning out teams or losing users.*
@@ -39,11 +39,25 @@ My release pipeline made it worse. Compiling for different platforms (Linux targ
 
 A focused pass on caching, parallelism, and artifact reuse dropped builds to about 7 minutes. The remaining slow step is Synology DSM packaging, which I have not optimized yet. That change did not create adoption by itself. It shortened the maintainer loop so I could ship alternative distribution paths (Roon Extension Manager, QNAP and Synology packages, and early LMS plugin work) and keep up with user requests. The user benefit was simple: fewer hoops, faster installs, and fewer drop-offs.
 
+## Architecture as a Distribution Multiplier
+
+The packaging shift did not work until the architecture shifted. The old stack was Node.js with hand-rolled HTML/CSS. It was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
+
+The answer was a Rust core with an event bus and explicit adapter lifecycle. I moved to a bus architecture with an AdapterCoordinator, a ZoneAggregator as the single source of truth, and SSE for real-time updates. Adapters became publishers, not state owners. Disabled adapters do not start, do not emit events, and do not appear. That makes runtime flexibility real, not theoretical.
+
+This change also enabled a shared component library and Tailwind-based UI across distribution targets, instead of one-off UI hacks per package. The result is a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
+
+If you want the technical trail: the architecture plan is in issue #42, the Rust rewrite landed in PR #45, and the bus refactor in PR #84.
+
+- https://github.com/open-horizon-labs/unified-hifi-control/issues/42
+- https://github.com/open-horizon-labs/unified-hifi-control/pull/45
+- https://github.com/open-horizon-labs/unified-hifi-control/pull/84
+
 ## Patterns That Helped Across Both Contexts
 
 Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedback that the path from code to use is broken. People are not complaining for fun. They are pointing to where the system needs attention, and they feel it in the friction and unpredictability.
 
-I laid out the full GitHub Actions setup here:
+I laid out the GitHub Actions setup here:
 [GitHub Release Workflow Caching Strategy](https://github.com/open-horizon-labs/unified-hifi-control/blob/main/docs/gh-release.md)
 
 - **Parallelize the work:** run platform builds in parallel so long builds do not serialize the whole pipeline. The win is throughput; the pitfall is shared resources that turn parallel jobs into hidden queues.
@@ -54,7 +68,7 @@ I laid out the full GitHub Actions setup here:
 
 ![](/assets/img/distribution-tax-flow.svg)
 
-In OSS, this flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
+In OSS, this flipped a 40-minute drag to a 7-minute run, making it easier to get back to shipping. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
 
 Quick rundown of what helped above -- these patterns travel across GitHub Actions, GitLab CI, and enterprise pipelines like Jenkins or Azure DevOps.
 
