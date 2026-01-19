@@ -43,7 +43,7 @@ I started with Docker-only, which felt straightforward as a solo maintainer. Use
 
 My release pipeline made it worse. Compiling for different platforms (Linux targets, macOS universal, Windows), packing web assets, pushing Docker images, and building packages ran about 40 minutes each time. Users did not feel that delay directly, but it slowed my response. Adding a new option, like the Roon Extension Manager repo or sketching an LMS plugin, meant burning hours on reruns.
 
-A focused pass on caching, parallelism, and artifact reuse dropped builds to about 5 minutes. The remaining slow step is Synology DSM packaging, which I have not optimized yet. That change did not create adoption by itself. It shortened the maintainer loop so I could ship alternative install paths (Roon Extension Manager, QNAP and Synology packages, and early LMS plugin work) and keep up with user requests. The user benefit was simple: fewer hoops, faster installs, and fewer drop-offs.
+A focused pass on caching, parallelism, and artifact reuse dropped builds to about 6 minutes. The remaining slow step is Synology DSM packaging, which I have not optimized yet. That change did not create adoption by itself. It shortened the maintainer loop so I could ship alternative install paths (Roon Extension Manager, QNAP and Synology packages, and early LMS plugin work) and keep up with user requests. The user benefit was simple: fewer hoops, faster installs, and fewer drop-offs.
 
 ## Architecture as a Distribution Multiplier
 
