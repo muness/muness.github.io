@@ -45,10 +45,10 @@ user: {class: box label: "User\n(value delivered)"}
 
 tax_zone: {
   class: zone
-  label: "Distribution tax zone\n(time + morale)"
+  label: "Delivery path tax zone\n(time + morale)"
 
   gates: {class: box label: "Governance gates\n(approvals + scans)"}
-  packaging: {class: box label: "Packaging + distro\n(Docker/NAS/plugins)"}
+  packaging: {class: box label: "Packaging + installs\n(Docker/NAS/plugins)"}
 
   gates -> packaging: {class: edge}
 }
