@@ -1,0 +1,62 @@
+direction: right
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+  subtle: "#94A3B8"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 16
+      bold: true
+      fill: "#FFFFFF"
+    }
+  }
+  note: {
+    style: {
+      font-color: ${subtle}
+      font-size: 13
+      italic: true
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 14
+    }
+  }
+}
+
+code: {class: box label: "Code\n(fast now)"}
+
+gates: {class: box label: "Governance gates\n(approvals + scans)"}
+
+packaging: {class: box label: "Packaging + distro\n(Docker/NAS/plugins)"}
+
+user: {class: box label: "User\n(value delivered)"}
+
+code -> gates: {class: edge}
+
+gates -> packaging: {class: edge}
+
+packaging -> user: {class: edge}
+
+gate_pain: {
+  class: note
+  label: "Manual approvals\nScan flakes"
+  near: top-center
+}
+
+pack_pain: {
+  class: note
+  label: "Platform quirks\nInstall friction"
+  near: bottom-center
+}

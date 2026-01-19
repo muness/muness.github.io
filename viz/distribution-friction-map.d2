@@ -1,0 +1,82 @@
+direction: right
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+  lane: "#F8FAFC"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 16
+      bold: true
+      fill: "#FFFFFF"
+    }
+  }
+  lane: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 18
+      bold: true
+      fill: ${lane}
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 14
+    }
+  }
+}
+
+oss: {
+  class: lane
+  label: "OSS"
+  near: top-left
+
+  oss_need: {class: box label: "Users want\n\"easy install\""}
+  oss_friction: {class: box label: "Docker-only\nsetup friction"}
+  oss_signal: {class: box label: "Drop-offs +\nalt distro asks"}
+
+  oss_need -> oss_friction: {class: edge}
+  oss_friction -> oss_signal: {class: edge}
+}
+
+enterprise: {
+  class: lane
+  label: "Enterprise"
+  near: bottom-left
+
+  ent_need: {class: box label: "Teams ship\nfeatures fast"}
+  ent_friction: {class: box label: "Manual gates +\nscan flakes"}
+  ent_signal: {class: box label: "Deploy delays +\ntriage burn"}
+
+  ent_need -> ent_friction: {class: edge}
+  ent_friction -> ent_signal: {class: edge}
+}
+
+system_no: {
+  class: box
+  label: "System says \"no\"\n(arbitrary friction)"
+  near: center-right
+}
+
+tax: {
+  class: box
+  label: "Distribution tax\n(time + morale)"
+  near: bottom-right
+}
+
+oss.oss_signal -> system_no: {class: edge}
+enterprise.ent_signal -> system_no: {class: edge}
+
+system_no -> tax: {class: edge}
