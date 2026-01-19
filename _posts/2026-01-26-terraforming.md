@@ -4,46 +4,75 @@ date: 2026-01-26 09:00:00 -0500
 author: muness
 title: "Terraforming Is the Job"
 toc: true
-excerpt: "Your job isn't to use AI tools. Your job is to terraform: reshape the environment so the right work happens by default, and the wrong work gets caught early."
+excerpt: "When execution becomes nearly free, the rational response is to step all the way back to the problem space and reimagine what's possible. That's terraforming."
 ---
 
-<details class="appendix" markdown="1">
-<summary><strong>Outline</strong></summary>
+## The Job and the Friction
 
-- Define terraforming (and contrast with "using tools").
-- Show the terraform loop: pre-flight → execute → detect drift → salvage → update memory → repeat.
-- Explain steer vs. abort: when to course-correct, when to start over.
-- Name what changed: generation got cheap; the constraint moved.
-- Explain the leader's new job: steer search, define scoring, install guardrails.
-- Apply it across three layers: self, team, tooling (and distribution).
-</details>
+When I'm trying to ship something real, I'm not short on drafts.
+I'm short on truth.
 
-## Terraforming Is The Job
+The job is progress: turning messy reality into an outcome that holds up when users touch it, when systems integrate, when constraints bite.
 
-"You should be terraforming. That is your job as a leader."
+AI changed the economics of one part of that job. Here's the causal chain:
 
-That sentence sounds dramatic until you notice what AI did to the economics of work:
-it collapsed the cost of generating options, drafts, and prototypes.
+1. **Generation got cheap.** Options, prototypes, and rewrites are almost free.
+2. **The search space exploded.** You can explore in any direction.
+3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact.
+4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
-If you're still thinking "AI helps me write faster," you're optimizing the wrong thing.
-Raising the floor isn't where the gains come from. The shift is reach—blowing up the ceiling on what becomes possible. This applies whether you're a leader, a product manager, a CxO, or a staff/principal IC.
+That does not mean the job is "use AI tools."
+It means the bottleneck moved—and the job is now **governing search + installing terrain**.
 
-The question is not *what tools do we use?*
-It's: **what environment do we build so good work happens by default—and thrash is caught early?**
+The binding constraints are the ones that still cost what they always cost. Call all of that **physics**. It includes real physics and the extended phenotype you cannot wish away: incentives, org politics, legacy code, user behavior, time. This applies whether you're a leader, a product manager, a CxO, or a staff/principal IC.
 
-That's terraforming. In practice: checklists, defaults, guardrails, and feedback loops that steer work without heroics.
+So here's the real JTBD frame:
 
-The idea isn't new. Research on expert problem-solving shows that experts organize knowledge around deep principles, while novices fixate on surface features. Terraforming applies this to workflow design: organize your environment around constraints and mechanisms, not tools. (See [Appendix: How Experts Think](#appendix-experts) for the research.)
+- **Job:** make reliable progress under physics.
+- **Friction:** cheap execution explodes the space of possible work, so you can thrash forever and still feel productive.
+- **Desired outcome:** direction becomes the default, and wrong-way work gets caught early.
+
+Once you see it that way, there are four levels of response to friction.
+
+## Four Levels of Response
+
+- **Tarp over the problem.** Add a knob, tweak a setting, patch the symptom. You feel movement. The system stays the same.
+- **Nearest peak.** Optimize inside the current framing. Better, still trapped by assumptions.
+- **Beyond the nearest peak.** Step back to the *problem statement* and search for a different approach. (See {% post_url 2025-12-10-beyond-the-nearest-peak %}.)
+- **Terraform.** Step back again, to the *problem space*, and redesign the terrain so the search itself changes. You make good work the path of least resistance, and you make drift loud.
+
+Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **install the terrain** so the winning approach becomes the default.
+
+<div class="callout callout--warning" markdown="1">
+**Two ways this breaks**
+
+- **Ungoverned search** (problem-space failure): thrash, reversals, endless drafts, local peaks.
+- **Agentic bloat** (artifact-layer failure): baroque toolchains, ritual complexity, uninspectable black boxes, maintainer-in-the-loop forever.
+
+Same root cause: cheap generation without judgment.
+</div>
+
+Here's a micro example. A user reported CPU spikes on a Raspberry Pi 3B running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
+
+The nearest peak would be optimizing the polling interval. Still polling. Still O(n) CPU per interval.
+
+Beyond the nearest peak: switch to an event subscriber model ([PR #107](https://github.com/open-horizon-labs/unified-hifi-control/pull/107)). Adapters publish state changes; consumers subscribe. O(1) per actual change instead of O(n) per interval. The mechanism of action is obvious. The rollback is trivial. Result: ["now using negligible CPU with the new mechanism."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
+
+That's a solution-space move. Terraforming would be: redesign the *problem space* so future projects default to event-driven architectures, with templates, examples, and guardrails that make polling feel like the weird choice. The next person doesn't face this problem at all.
+
+Tarps are rational under time pressure. They become toxic when they're the default response to repeated friction. Terraforming is what you do after the third tarp—when you notice you're patching the same class of problem over and over.
+
+The bias toward tarps is strong. Even experts favor visible action over optimal inaction. (See [Appendix: How Experts Think](#appendix-experts) for the research on action bias and expert reasoning.)
 
 ## The Terraform Loop
 
-Terraforming is not a vibe. It's a loop you can run.
+Terraforming is not a vibe. It's a loop—and the loop is search governance.
 
-1. **Pre-flight (intent + constraints).**
-2. **Execute fast.**
-3. **Detect drift early** ("are we thrashing?").
-4. **Salvage the learning** (keep what changed your understanding).
-5. **Update memory + guardrails** so the next run starts closer to truth.
+1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
+2. **Execute fast:** cheap execution means you can probe the space quickly.
+3. **Detect drift:** notice when you're optimizing a proxy instead of the real thing.
+4. **Salvage:** keep what changed your model of the problem space, not just what "worked."
+5. **Update the terrain:** change defaults, guardrails, and exploration scaffolds so the next search starts closer to truth.
 
 If you've been reading along: this is the operational core behind {% post_url 2026-01-12-taming-the-chaos-dragon %}, and it composes directly with {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
 
@@ -70,22 +99,6 @@ When you abort, don't rage-delete—salvage:
 
 This is harder than it sounds. Decades of research on the "sunk cost fallacy" show that prior investment—time, money, reputation—creates an emotional weight that distorts judgment. In one classic experiment, participants were 5× more likely to fund a failing project when they had already invested heavily in it. NBA teams keep underperforming draft picks longer than their stats justify, because letting go feels like admitting the original decision was wrong. The antidote is simple but difficult: set kill criteria *before* you start, and evaluate future costs and benefits, not past investments. (See [Appendix: The Psychology of Quitting](#appendix-psychology-quitting) for the research.)
 
-## What Changed (And Why It Forces A Workflow Change)
-
-Most systems don't collapse cleanly under AI. They destabilize.
-Because one cost drops and another becomes binding.
-
-- **Generation is cheap.** Options explode.
-- **Verification is not.** Reality stays expensive: testing, integration, safety, user impact.
-- **Attention is scarce.** The org's cognitive load becomes a constraint.
-
-The practical implication: workflows should optimize for direction and fast falsification, not throughput.
-
-This is why "more output" often produces *less progress*—it's floor-raising dressed up as productivity.
-You can generate in any direction. Direction is the scarce thing. The ceiling moves when you control direction.
-
-If you want the deeper version of this, see {% post_url 2025-12-10-beyond-the-nearest-peak %}.
-
 ## The Leader's New Job: Steer Search
 
 In an AI-assisted world, the job is not "produce artifacts."
@@ -109,45 +122,13 @@ Here's a lightweight scoring function you can actually use:
 
 The reversibility question deserves special attention. Jeff Bezos famously distinguishes "one-way door" decisions (irreversible, require thorough validation) from "two-way door" decisions (easily reversed, can use a lightweight process). The insight: "many decisions are reversible, two-way doors... so what if you're wrong?" When the mechanism of action is clear and the change is reversible, swift action beats analysis paralysis. When it's irreversible, slow down. (See [Appendix: When to Act on Theory](#appendix-act-on-theory) for the research.)
 
-## Levels of Response: From Tarp to Terraform
+The research on first-principles reasoning backs this up. When Apollo 13's oxygen tank exploded, engineers on the ground jury-rigged a CO₂ scrubber adapter from plastic bags, tape, and cardboard—using first principles of chemistry and airflow to improvise a life-saving solution in hours. But the Challenger disaster shows the other edge: engineers warned that O-ring seals would fail in cold temperatures, a straightforward material science prediction, but management overrode them under schedule pressure. First-principles reasoning works when it's *heard* and *acted upon*. The terrain has to make that happen by default. (See [Appendix: High-Stakes Lessons](#appendix-high-stakes) for the cases.)
 
-Not all "fixes" are equal. There's a progression:
+## Three Layers of Terraforming
 
-- **Tarp over the problem.** Action without premise. You don't understand why it's broken, but you cover it up. This is what almost everyone does by default.
-- **Nearest peak.** Local optimization within the current framing. Better, but you're still trapped by assumptions you haven't examined.
-- **Beyond the nearest peak.** You step back, explore the solution space, and find a fundamentally better approach before committing. (See {% post_url 2025-12-10-beyond-the-nearest-peak %}.)
-- **Terraforming.** You reshape the environment so the problem doesn't recur—and similar problems become easier to solve.
+Problem-space design happens at three scales: yourself, your team, and your tooling.
 
-Here's a micro example that drives me up the wall. A user reported CPU spikes on a Raspberry Pi 3B running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
-
-The nearest peak would be optimizing the polling interval. Still polling. Still O(n) CPU per interval.
-
-The actual fix was switching to an event subscriber model ([PR #107](https://github.com/open-horizon-labs/unified-hifi-control/pull/107)). Adapters publish state changes; consumers subscribe. O(1) per actual change instead of O(n) per interval. The mechanism of action is obvious. The rollback is trivial.
-
-Did I load-test it with 100+ simulated clients? No. I shipped it. The result: ["now using negligible CPU with the new mechanism."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
-
-This is the opposite of "just do something" action bias—the tarp mentality. It's a common failure mode. Tarps are action *without* premise: you don't understand why it's broken, but you do something anyway.
-
-The action bias is remarkably strong. Bar-Eli et al. (2007) studied penalty kicks in professional soccer and found that goalkeepers dove left or right 94% of the time—even though staying in the center is statistically optimal (kicks are roughly uniformly distributed). Goalkeepers reported feeling worse about conceding a goal when they "did nothing" than when they dove and still missed. The need to feel like you're "trying something" overrides the rational strategy, even for experts in high-stakes situations. This same bias shows up in business: people prefer visible action over optimal "wait and observe," because inaction *feels* like failure even when it's the right call.
-
-What I'm describing is action *with* premise: the mechanism of action is clear, the change is reversible, and the verification burden of "proving it first" exceeds the cost of being wrong.
-
-You can simulate processes, reason through mechanism-of-action chains, and act on defensible premises. That's not recklessness; that's basic science: understand, hypothesize, test. Once you've done that, the burden of proof shifts to the naysayers.
-
-The research backs this up. When Apollo 13's oxygen tank exploded, engineers on the ground jury-rigged a CO₂ scrubber adapter from plastic bags, tape, and cardboard—using first principles of chemistry and airflow to improvise a life-saving solution in hours. But the Challenger disaster shows the other edge: engineers warned that O-ring seals would fail in cold temperatures, a straightforward material science prediction, but management overrode them under schedule pressure. First-principles reasoning works when it's *heard* and *acted upon*. The environment has to make that happen by default. (See [Appendix: High-Stakes Lessons](#appendix-high-stakes) for the cases.)
-
-## Terraforming Is Not Tool Worship
-
-Tools matter, but they don't define the work.
-
-If you want a clean mental model:
-
-- A craftsperson says: "I need better tools."
-- A terraformer says: "I'll use what I have, and I'll improve the tools as I go."
-
-Terraforming is an identity shift: your job becomes *environment design*, not artifact production.
-
-## Terraform Yourself: Make Direction Cheap
+### Self: Make Direction Cheap
 
 The first layer is personal practice. The point is to make "start right" low friction.
 
@@ -169,7 +150,7 @@ One question that, if unanswered, makes action premature:
 The point is not more planning.
 The point is **orientation**.
 
-## Terraform Teams: Make Guardrails Ambient
+### Teams: Make Guardrails Ambient
 
 The second layer is team practice. This is where most "AI adoption" fails—not because the tools are weak, but because the organization is unconstrained.
 
@@ -181,7 +162,7 @@ Three concrete moves:
 
 Terraforming is what makes speed safe.
 
-## Terraform Tooling: Make The Practice Stick
+### Tooling: Make The Practice Stick
 
 The third layer is tooling. Rituals don't spread when they're annoying.
 
@@ -196,6 +177,8 @@ Two traps to avoid:
 
 - **Silent injection.** If the system changes behavior without visibility and consent, you'll lose trust and drift into policy-by-accident.
 - **Menus instead of rails.** If users have to assemble the workflow from plugins and knobs, most will never get to the loop at all.
+
+Tool sprawl isn't the disease—it's a symptom. Agentic bloat is what ungoverned search looks like after it hardens into artifacts. When nobody governs direction, complexity accumulates because it feels like progress.
 
 There's also a subtler trap: **over-structuring**. Too many guardrails, approval layers, and rigid protocols can suppress the very learning and adaptation you're trying to enable. Donald Sull calls this "active inertia"—organizations respond to change by doing more of what used to work, accelerating their decline. Research on organizational design shows that mechanistic structures (high formalization, strict hierarchies) perform well in stable environments but fail in dynamic ones. The terraforming mindset requires continuous pruning: guardrails that no longer serve the work should be removed, not accumulated. (See [Appendix: The Risks of Over-Structure](#appendix-over-structure) for the research.)
 
@@ -218,9 +201,11 @@ If you want to make this real without turning it into a transformation program:
 AI didn't remove the need for leadership.
 It removed the scarcity of drafts.
 
-When drafts are cheap, the binding constraint becomes direction, judgment, verification, and the environment that carries those forward.
+When drafts are cheap, the binding constraint becomes direction, judgment, verification, and the terrain that carries those forward.
 
-Terraform that environment and the ceiling moves.
+Agentic bloat is what happens when people confuse building with progress. Terraforming is how you reassert judgment when execution stops being scarce.
+
+Terraform the terrain and the ceiling moves.
 Ignore it and you'll ship faster in the wrong direction.
 
 ---
@@ -248,8 +233,15 @@ This also reframes what "intuition" means. Expert intuition isn't the opposite o
 
 The implication: trusting expert intuition and demanding first-principles reasoning aren't opposed. Intuition *is* first-principles reasoning, just running faster because it's been practiced into automatic recognition.
 
+**The Action Bias**
+
+Even experts fall prey to action bias—the preference for visible action over optimal inaction. Bar-Eli et al. (2007) studied penalty kicks in professional soccer and found that goalkeepers dove left or right 94% of the time, even though staying in the center is statistically optimal (kicks are roughly uniformly distributed). Goalkeepers reported feeling worse about conceding a goal when they "did nothing" than when they dove and still missed.
+
+This same bias shows up in knowledge work: people prefer visible action over optimal "wait and observe," because inaction *feels* like failure. Tarps feel productive. Terraforming feels like overthinking—until the third tarp reveals the pattern.
+
 **References**
 
+- Bar-Eli, M., Azar, O. H., Ritov, I., Keidar-Levin, Y., & Schein, G. (2007). Action bias among elite soccer goalkeepers: The case of penalty kicks. *Journal of Economic Psychology, 28*(5), 606–621.
 - Chi, M. T. H., Feltovich, P. J., & Glaser, R. (1981). Categorization and representation of physics problems by experts and novices. *Cognitive Science, 5*(2), 121–152.
 - Klein, G. (1998). *Sources of power: How people make decisions*. MIT Press.
 
