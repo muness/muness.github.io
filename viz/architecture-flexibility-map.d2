@@ -1,4 +1,4 @@
-direction: right
+direction: down
 
 vars: {
   stroke: "#1E293B"
@@ -41,7 +41,7 @@ classes: {
 enterprise: {
   class: lane
   label: "Enterprise"
-  near: top-left
+  direction: right
 
   ent_before: {
     class: box
@@ -65,7 +65,7 @@ enterprise: {
 oss: {
   class: lane
   label: "OSS"
-  near: bottom-left
+  direction: right
 
   oss_before: {
     class: box
@@ -89,7 +89,6 @@ oss: {
 leaders: {
   class: box
   label: "Flexibility keeps\ndelivery paths open"
-  near: center-right
 }
 
 enterprise.ent_outcome -> leaders: {class: edge}

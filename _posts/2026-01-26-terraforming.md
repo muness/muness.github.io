@@ -24,9 +24,9 @@ AI changed the economics of one part of that job. Here's the causal chain:
 That does not mean the job is "use AI tools."
 It means the bottleneck moved—and the job is now **governing search + installing terrain**.
 
-The binding constraints are the ones that still cost what they always cost. Call all of that **physics**. It includes real physics and the extended phenotype you cannot wish away: incentives, org politics, legacy code, user behavior, time. This applies whether you're a leader, a product manager, a CxO, or a staff/principal IC.
+The binding constraints are the ones that still cost what they always cost. Call all of that **physics**. It includes real physics and the parts of your environment you cannot wish away: incentives, org politics, legacy code, user behavior, time. This applies whether you're a leader, a product manager, a CxO, or a staff/principal engineer.
 
-So here's the real JTBD frame:
+So here's the real Jobs-to-Be-Done frame:
 
 - **Job:** make reliable progress under physics.
 - **Friction:** cheap execution explodes the space of possible work, so you can thrash forever and still feel productive.
@@ -38,7 +38,7 @@ Once you see it that way, there are four levels of response to friction.
 
 - **Tarp over the problem.** Add a knob, tweak a setting, patch the symptom. You feel movement. The system stays the same.
 - **Nearest peak.** Optimize inside the current framing. Better, still trapped by assumptions.
-- **Beyond the nearest peak.** Step back to the *problem statement* and search for a different approach. (See {% post_url 2025-12-10-beyond-the-nearest-peak %}.)
+- **Beyond the nearest peak.** Step back to the *problem statement* and search for a different approach entirely.
 - **Terraform.** Step back again, to the *problem space*, and redesign the terrain so the search itself changes. You make good work the path of least resistance, and you make drift loud.
 
 Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **install the terrain** so the winning approach becomes the default.
@@ -52,11 +52,11 @@ Terraforming is what you do when execution is cheap and physics is not. It has t
 Same root cause: cheap generation without judgment.
 </div>
 
-Here's a micro example. A user reported CPU spikes on a Raspberry Pi 3B running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
+Here's a micro example. A user reported CPU spikes on a small computer running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
 
-The nearest peak would be optimizing the polling interval. Still polling. Still O(n) CPU per interval.
+The nearest peak would be optimizing the polling interval. Still polling—still checking every device repeatedly whether or not anything changed.
 
-Beyond the nearest peak: switch to an event subscriber model ([PR #107](https://github.com/open-horizon-labs/unified-hifi-control/pull/107)). Adapters publish state changes; consumers subscribe. O(1) per actual change instead of O(n) per interval. The mechanism of action is obvious. The rollback is trivial. Result: ["now using negligible CPU with the new mechanism."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
+Beyond the nearest peak: switch to an event-driven model. Instead of constantly asking "did anything change?", devices announce when something changes. CPU usage drops from "proportional to devices" to "proportional to actual changes." The mechanism is obvious. The rollback is trivial. Result: ["now using negligible CPU."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
 
 That's a solution-space move. Terraforming would be: redesign the *problem space* so future projects default to event-driven architectures, with templates, examples, and guardrails that make polling feel like the weird choice. The next person doesn't face this problem at all.
 
@@ -132,7 +132,7 @@ Problem-space design happens at three scales: yourself, your team, and your tool
 
 The first layer is personal practice. The point is to make "start right" low friction.
 
-Use a minimal pre-flight before any agentic session:
+Use a minimal pre-flight before any AI-assisted work session (what I call an "agentic session"—where you're working alongside AI tools that can take actions):
 
 <div class="callout callout--note" markdown="1">
 ```text
@@ -191,7 +191,7 @@ For a concrete case of what happens when distribution becomes the binding constr
 If you want to make this real without turning it into a transformation program:
 
 1. Pick one workstream with real stakes.
-2. Require a 5-minute pre-flight (aim + constraints) before any agentic run.
+2. Require a 5-minute pre-flight (aim + constraints) before any AI-assisted work session.
 3. Keep a single list of guardrails for the week.
 4. If you thrash, abort fast: salvage learning and restart clean.
 5. At the end of the week, review: what constraints were real, what guardrails stuck, what should become default tooling?
