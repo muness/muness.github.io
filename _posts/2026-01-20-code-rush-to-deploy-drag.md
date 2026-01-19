@@ -93,8 +93,6 @@ Whether you are solo on OSS or advising healthcare teams, it boils down to this:
 
 The key bottleneck is not making it. It is rolling it out steadily, broadly, and safely. That is a mix of tooling, governance, and release discipline. If you want velocity without thrash, invest where the constraint actually moved.
 
-For the broader framework behind this shift—how to reshape your environment so good work happens by default—see {% post_url 2026-01-26-terraforming %}.
-
 If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your delivery-path tax. A simple template:
 
 - Review-to-merge time
