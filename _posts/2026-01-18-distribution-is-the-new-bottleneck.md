@@ -27,8 +27,6 @@ The worst part is flaky SBOM scans that fail unpredictably over weekends, often 
 
 The fix is not to remove governance. It is to make it less brittle and less manual. The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. If it fits the environment, automate gates with GitOps-style tooling (for example, ArgoCD) and use scanners that can be made reliable in your stack (for example, Trivy). That is not glamorous work, but it is where a large part of velocity lives.
 
-One more shift mattered: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow with vector search and inspectable handoffs. That made the workflow more reliable, let us evaluate each component, and improved performance without turning every change into a black box.
-
 Sound familiar? It is the same trap in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
 ![](/assets/img/distribution-friction-map.svg)
@@ -46,6 +44,8 @@ A focused pass on caching, parallelism, and artifact reuse dropped builds to abo
 ## Architecture as a Distribution Multiplier
 
 This is not about Rust versus Node. It is about choosing an architecture that makes distribution simpler.
+
+The same pattern showed up in an enterprise system: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow backed by vector search and inspectable handoffs. That shift made the system faster and more reliable, and it let us evaluate each component instead of debugging a black box.
 
 The packaging shift did not work until the architecture shifted. The old stack was Node.js with hand-rolled HTML/CSS. It was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
 
