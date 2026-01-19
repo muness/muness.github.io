@@ -9,8 +9,6 @@ excerpt: "As teams accelerate code production, the real constraints emerge in di
 
 *Why the shift from code velocity to distribution hygiene is universal and how to navigate it without burning out teams or losing users.*
 
-*Audience: Enterprise tech/product leaders and OSS maintainers who want to reduce distribution and governance friction as velocity rises.*
-
 Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
 
 I see the same pattern in enterprise consulting. Developers can ship features fast, but they spend 15+ minutes per deploy clicking through manual gates, only to be blocked by flaky BOM scans that fail over the weekend. Monday becomes a triage ritual. The system is saying "no" for reasons that feel arbitrary to the people trying to ship.
@@ -41,11 +39,9 @@ A focused pass on caching, parallelism, and artifact reuse dropped builds to abo
 
 User pickup improved from those distribution fixes more than from any core refactor. Distribution turned into the part users noticed first.
 
-## The Universal Constraint Shift: From Code to Logistics
+## The Constraint Shift: From Code to Logistics
 
-Across both worlds, the pain is the same. As pace picks up, the pain points move out. Code is straightforward now. The logistics of distribution take over: platform differences, packaging standards, compliance gates, and release workflows. The maintainer or team gets mired in routine tasks while users hit walls at the entry point.
-
-Docker gripes in OSS are like BOM scan failures in enterprise. They are feedback that the path from code to use is broken. People are not complaining for fun. They are pointing to where the system needs attention.
+Docker gripes in OSS are like BOM scan failures in enterprise. They are feedback that the path from code to use is broken. People are not complaining for fun. They are pointing to where the system needs attention, and they feel it in the friction and unpredictability.
 
 To push past it, I used straightforward tweaks in OSS that map to enterprise too. I laid out the full GitHub Actions setup here:
 [GitHub Release Workflow Caching Strategy](https://github.com/open-horizon-labs/unified-hifi-control/blob/main/docs/gh-release.md)
@@ -58,7 +54,7 @@ To push past it, I used straightforward tweaks in OSS that map to enterprise too
 
 Quick rundown of what helped above -- these patterns travel across GitHub Actions, GitLab CI, and enterprise pipelines like Jenkins or Azure DevOps.
 
-Nothing groundbreaking, but it adds up. In OSS, it flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
+In OSS, it flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
 
 ## The Core Thesis: Distribution Is Your Product
 
@@ -68,4 +64,3 @@ The key bottleneck is not making it. It is rolling it out steadily, broadly, and
 
 If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your distribution tax. Then measure cycle time, cache the obvious, and parallelize the easy wins.
 
-What is your toughest distribution or pipeline snag?
