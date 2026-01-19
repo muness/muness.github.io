@@ -139,7 +139,7 @@ Add labels to your PR to enable optional builds:
 | `build:linux-packages` | deb/rpm packages |
 | `build:all` | Everything |
 
-**Default PR builds** (always run): Lint + tests, web assets (WASM), Linux x64 binary, QNAP x64 package, Docker x64 image.
+**PR builds**: Nothing runs by default—add labels for exactly what you need to test.
 
 ![Manual dispatch UI with checkboxes for each build target](/assets/img/workflow-dispatch-checkboxes.png)
 
@@ -166,20 +166,22 @@ Benefits:
 
 ### Build Matrix
 
-| Target | Caching | Build Tool | Default | Label |
-|--------|---------|------------|---------|-------|
-| Web Assets (WASM) | sccache + rust-cache | dx | Always | - |
-| Linux x86_64-musl | rust-cache | cargo-zigbuild | Always | - |
-| Linux aarch64-musl | rust-cache | cargo-zigbuild | Release | `build:linux-arm` |
-| Linux armv7-musl | rust-cache | cargo-zigbuild | Release | `build:linux-arm` |
-| macOS universal | sccache + rust-cache | cargo + lipo | Release | `build:macos` |
-| Windows x86_64 | sccache + rust-cache | cargo | Release | `build:windows` |
-| Docker x64 | N/A | pre-built binary | PR/push | - |
-| Synology SPK | N/A | tar | Release | `build:synology` |
-| QNAP x64 | N/A | qbuild (Docker) | Always | - |
-| QNAP arm64 | N/A | qbuild (Docker) | Release | `build:qnap-arm` |
-| Linux deb/rpm | N/A | fpm | Release | `build:linux-packages` |
-| LMS Plugin | N/A | zip | Release | `build:lms` |
+PRs: label what you need. Releases: everything runs automatically.
+
+| Target | Caching | Build Tool | Label |
+|--------|---------|------------|-------|
+| Web Assets (WASM) | sccache + rust-cache | dx | `build:web` |
+| Linux x86_64-musl | rust-cache | cargo-zigbuild | `build:linux` |
+| Linux aarch64-musl | rust-cache | cargo-zigbuild | `build:linux-arm` |
+| Linux armv7-musl | rust-cache | cargo-zigbuild | `build:linux-arm` |
+| macOS universal | sccache + rust-cache | cargo + lipo | `build:macos` |
+| Windows x86_64 | sccache + rust-cache | cargo | `build:windows` |
+| Docker x64 | N/A | pre-built binary | `build:docker` |
+| Synology SPK | N/A | tar | `build:synology` |
+| QNAP x64 | N/A | qbuild (Docker) | `build:qnap` |
+| QNAP arm64 | N/A | qbuild (Docker) | `build:qnap-arm` |
+| Linux deb/rpm | N/A | fpm | `build:linux-packages` |
+| LMS Plugin | N/A | zip | `build:lms` |
 
 ### Lessons Learned
 
