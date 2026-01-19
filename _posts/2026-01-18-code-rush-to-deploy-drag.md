@@ -82,7 +82,14 @@ Whether you are solo on OSS or advising healthcare teams, it boils down to this:
 
 The key bottleneck is not making it. It is rolling it out steadily, broadly, and safely. That is a mix of tooling, governance, and release discipline. If you want velocity without thrash, invest where the constraint actually moved.
 
-If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your delivery-path tax. Then measure cycle time, cache the obvious, and parallelize the easy wins.
+If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your delivery-path tax. A simple template:
+
+- Review-to-merge time
+- Merge-to-prod time
+- Gate/scan time (time spent blocked)
+- Manual approvals count (or clicks)
+
+Then measure cycle time, cache the obvious, and parallelize the easy wins.
 
 ### Quick Glossary
 
