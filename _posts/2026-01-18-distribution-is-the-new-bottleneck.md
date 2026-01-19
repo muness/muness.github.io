@@ -4,16 +4,18 @@ date: 2026-01-18 09:00:00 -0500
 author: muness
 toc: true
 comments: true
-excerpt: "In a world where AI agents crank out code at lightning speed, the true chokepoint is not creation. It is distribution and governance."
+excerpt: "In a world where AI agents crank out code at lightning speed, the true chokepoint is not creation. It is distribution and governance. OSS install friction and enterprise scan flakes point to the same shift, and cutting release cycles from 40 to 7 minutes makes it possible to respond."
 ---
 
 *Why the shift from code velocity to distribution hygiene is universal and how to navigate it without burning out teams or losing users.*
 
-Monday morning, two engineers on rotation open the pipeline and find a release blocked by a failed SBOM scan (software bill of materials). Was it a real vulnerability or just a scanner hiccup? Either way, the morning is gone before the deploy can move. That is the new bottleneck.
+With AI agents accelerating code production, the friction has moved. The bottleneck is no longer creation. It is distribution and governance.
 
-I saw the same friction in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
+Monday morning, two engineers on rotation open the pipeline and find a release blocked by a failed SBOM scan (software bill of materials). Was it a real vulnerability or just a scanner hiccup? Either way, the morning is gone before the deploy can move.
 
-With AI agents accelerating code production, the friction has moved. Teams can ship features fast, but the system says "no" for reasons that feel arbitrary to the people trying to ship. That grind burns people out and slows adoption. As things grow, the front door (how smoothly value gets to end users) becomes the critical piece.
+I saw the same in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
+
+Teams can ship features fast, but the system says "no" for reasons that feel arbitrary to the people trying to ship. That grind burns people out and slows adoption. As things grow, the front door (how smoothly value gets to end users) becomes the critical piece.
 
 ## The Enterprise Grind: Governance as the Silent Velocity Killer
 
@@ -41,6 +43,8 @@ A focused pass on caching, parallelism, and artifact reuse dropped builds to abo
 
 ## Architecture as a Distribution Multiplier
 
+This is not about Rust versus Node. It is about choosing an architecture that makes distribution simpler.
+
 The packaging shift did not work until the architecture shifted. The old stack was Node.js with hand-rolled HTML/CSS. It was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
 
 The answer was a Rust core with an event bus and explicit adapter lifecycle. I moved to a bus architecture with an AdapterCoordinator, a ZoneAggregator as the single source of truth, and SSE for real-time updates. Adapters became publishers, not state owners. Disabled adapters do not start, do not emit events, and do not appear. That makes runtime flexibility real, not theoretical.
@@ -57,7 +61,7 @@ If you want the technical trail: the architecture plan is in issue #42, the Rust
 
 Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedback that the path from code to use is broken. People are not complaining for fun. They are pointing to where the system needs attention, and they feel it in the friction and unpredictability.
 
-I laid out the GitHub Actions setup here:
+I laid out the full GitHub Actions setup here:
 [GitHub Release Workflow Caching Strategy](https://github.com/open-horizon-labs/unified-hifi-control/blob/main/docs/gh-release.md)
 
 - **Parallelize the work:** run platform builds in parallel so long builds do not serialize the whole pipeline. The win is throughput; the pitfall is shared resources that turn parallel jobs into hidden queues.
@@ -66,9 +70,11 @@ I laid out the GitHub Actions setup here:
 - **Treat tools as first-class:** cache or containerize toolchains that waste minutes each run. The win is cutting dead time; the pitfall is version drift if you do not lock versions.
 - **Add quick edge checks:** use lightweight smoke tests to catch cross-arch or packaging errors early. The win is earlier signal; the pitfall is letting the tests become the next bottleneck.
 
+One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized until I pulled them into their own track.
+
 ![](/assets/img/distribution-tax-flow.svg)
 
-In OSS, this flipped a 40-minute drag to a 7-minute run, making it easier to get back to shipping. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
+In OSS, this flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
 
 Quick rundown of what helped above -- these patterns travel across GitHub Actions, GitLab CI, and enterprise pipelines like Jenkins or Azure DevOps.
 
