@@ -2,7 +2,7 @@
 comments: true
 date: 2026-01-26 09:00:00 -0500
 author: muness
-title: "Terraforming Is the Job"
+title: "Open, Then Terraform"
 toc: true
 excerpt: "Open Horizons is the job. Terraforming is how you keep the horizon open."
 ---
@@ -22,22 +22,22 @@ AI changed the economics. Here's the causal chain:
 
 That does not mean the job is "use AI tools." It means the bottleneck moved.
 
-The binding constraints are the ones that still cost what they always cost. Call all of that **physics**: real physics plus the parts of your environment you cannot wish away—incentives, org politics, legacy code, user behavior, time.
+The binding constraints are the ones that still cost what they always cost. Call all of that **physics**: real physics plus the parts of your environment you cannot wish away. Incentives, org politics, legacy code, user behavior, time.
 
 So there are two moves:
 
 1. **Open the horizon (explore).** Run probes into the possibility space. Generate options cheaply. Find what changes reality, not what sounds good.
 2. **Terraform the horizon (stabilize).** Convert what you learned into rails: scoring, checks, defaults, distribution. Install nested feedback loops so drift gets caught at multiple scales.
 
-By "terraforming" I do not mean optimizing tools. I mean:
-
-> **Terraforming (in this context):** reshaping constraints and defaults so a newly discovered path stays reachable, repeatable, and safe.
+**Terraforming (here):** industrializing what exploration discovered. You reshape constraints and defaults so a newly found path stays reachable, repeatable, and safe.
 
 If exploration finds the path, terraforming builds the roads, maps, and guardrails that keep it open.
 
-This maps directly to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. And it includes the "don't drop a ritual without replacing the signal" principle—terraforming is how you make it stick.
+Open Horizons is the practice of expanding what's possible, then converting what you learn into durable advantage. This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make it stick, including the "don't drop a ritual without replacing the signal" principle.
 
 Once you see it that way, there are four levels of response to friction.
+
+I'm using *solution space* for candidate implementations, and *problem space* for what we choose to optimize and what constraints we treat as real.
 
 ## Four Levels of Response
 
@@ -51,27 +51,27 @@ Terraforming is what you do when execution is cheap and physics is not. It has t
 <div class="callout callout--warning" markdown="1">
 **Two ways this breaks**
 
-- **Ungoverned search** (problem-space failure): thrash, reversals, endless drafts, local peaks.
-- **Agentic bloat** (artifact-layer failure): baroque toolchains, ritual complexity, uninspectable black boxes, maintainer-in-the-loop forever.
+- **Ungoverned search** (problem-space failure): endless drafts, reversals, local peaks.
+- **Workflow bloat** (artifact-layer failure): ritual complexity, uninspectable systems, maintainer-in-the-loop forever.
 
 Same root cause: cheap generation without judgment.
 </div>
 
 Here's a micro example. A user reported CPU spikes on a small computer running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
 
-The nearest peak would be optimizing the polling interval. Still polling—still checking every device repeatedly whether or not anything changed.
+The nearest peak would be optimizing the polling interval. Still polling. Still checking every device repeatedly whether or not anything changed.
 
 Beyond the nearest peak: switch to an event-driven model. Instead of constantly asking "did anything change?", devices announce when something changes. CPU usage drops from "proportional to devices" to "proportional to actual changes." The mechanism is obvious. The rollback is trivial. Result: ["now using negligible CPU."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
 
 That's a solution-space move. Terraforming would be: redesign the *problem space* so future projects default to event-driven architectures, with templates, examples, and guardrails that make polling feel like the weird choice. The next person doesn't face this problem at all.
 
-Tarps are rational under time pressure. They become toxic when they're the default response to repeated friction. Terraforming is what you do after the third tarp—when you notice you're patching the same class of problem over and over.
+Tarps are rational under time pressure. They become toxic when they're the default response to repeated friction. Terraforming is what you do after the third tarp, when you notice you're patching the same class of problem over and over.
 
 The bias toward tarps is strong. Even experts favor visible action over optimal inaction. (See [Appendix: How Experts Think](#appendix-experts) for the research on action bias and expert reasoning.)
 
 ## The Terraform Loop
 
-The "stabilize" half of the model is not a vibe. It's a loop—and the loop is search governance.
+The "stabilize" half of the model is not a vibe. It's a loop, and the loop is search governance.
 
 1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
 2. **Execute fast:** cheap execution means you can probe the space quickly.
@@ -96,7 +96,7 @@ Observable "abort" signals:
 - The work is getting bigger while "done" gets fuzzier.
 - You're accumulating "we'll clean it up later" debt *before* you have a working core.
 
-When you abort, don't rage-delete—salvage:
+When you abort, don't rage-delete. Salvage:
 
 - What did we learn?
 - What guardrail should exist next time?
@@ -183,7 +183,7 @@ Two traps to avoid:
 - **Silent injection.** If the system changes behavior without visibility and consent, you'll lose trust and drift into policy-by-accident.
 - **Menus instead of rails.** If users have to assemble the workflow from plugins and knobs, most will never get to the loop at all.
 
-Tool sprawl isn't the disease—it's a symptom. Agentic bloat is what ungoverned search looks like after it hardens into artifacts. When nobody governs direction, complexity accumulates because it feels like progress.
+Tool sprawl isn't the disease. It's a symptom. Workflow bloat is what ungoverned search looks like after it hardens into artifacts. When nobody governs direction, complexity accumulates because it feels like progress.
 
 There's also a subtler trap: **over-structuring**. Too many guardrails, approval layers, and rigid protocols can suppress the very learning and adaptation you're trying to enable. Donald Sull calls this "active inertia"—organizations respond to change by doing more of what used to work, accelerating their decline. Research on organizational design shows that mechanistic structures (high formalization, strict hierarchies) perform well in stable environments but fail in dynamic ones. The terraforming mindset requires continuous pruning: guardrails that no longer serve the work should be removed, not accumulated. (See [Appendix: The Risks of Over-Structure](#appendix-over-structure) for the research.)
 
@@ -212,7 +212,7 @@ The two moves stay the same:
 1. **Open the horizon.** Explore cheaply. Find what changes reality.
 2. **Terraform the horizon.** Make the winning path cheap to repeat and hard to misuse.
 
-Agentic bloat is what happens when people confuse building with progress. Terraforming is how you reassert judgment when execution stops being scarce.
+Workflow bloat is what happens when people confuse building with progress. Terraforming is how you reassert judgment when execution stops being scarce.
 
 Open Horizons is the job. Terraforming is how you keep the horizon open.
 
