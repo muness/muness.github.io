@@ -35,7 +35,7 @@ Sound familiar? It is the same trap in open source. Just as OSS users balk at Do
 
 This enterprise friction lines up with what I have seen in my open source projects, unified-hifi-control and roon-knob. As these picked up users, the early feedback was not about new features. It was "make it easy to install."
 
-I started with Docker-only, which felt straightforward as a solo maintainer. Users were not having it. Some were on NAS devices like Synology or QNAP, where Docker felt tacked on and unreliable. Others wanted ties to systems like Roon or Logitech Media Server (LMS), preferring built-in plugins to container workarounds. The project supports a physical dev board that takes days to ship, but people would drop off rather than deal with a quick Docker setup.
+I started with Docker-only, which felt straightforward as a solo maintainer. Users were not having it. Some were on NAS devices like Synology or QNAP, where Docker felt tacked on and unreliable. Others wanted tighter integration with systems like Roon or Logitech Media Server (LMS), preferring built-in plugins to container workarounds. The project supports a physical dev board that takes days to ship, but people would drop off rather than deal with a quick Docker setup.
 
 My release pipeline made it worse. Compiling for different platforms (Linux targets, macOS universal, Windows), packing web assets, pushing Docker images, and building packages ran about 40 minutes each time. Users did not feel that delay directly, but it slowed my response. Adding a new option, like the Roon Extension Manager repo or sketching an LMS plugin, meant burning hours on reruns.
 
@@ -51,11 +51,11 @@ The answer was a Rust core with an event bus and explicit adapter lifecycle. I m
 
 This change also enabled a shared component library and Tailwind-based UI across distribution targets, instead of one-off UI hacks per package. The result is a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
 
-If you want the technical trail: the architecture plan is in issue #42, the Rust rewrite landed in PR #45, and the bus refactor in PR #84.
+If you want the technical trail:
 
-- https://github.com/open-horizon-labs/unified-hifi-control/issues/42
-- https://github.com/open-horizon-labs/unified-hifi-control/pull/45
-- https://github.com/open-horizon-labs/unified-hifi-control/pull/84
+- [Architecture plan (issue #42)](https://github.com/open-horizon-labs/unified-hifi-control/issues/42)
+- [Rust rewrite (PR #45)](https://github.com/open-horizon-labs/unified-hifi-control/pull/45)
+- [Bus refactor (PR #84)](https://github.com/open-horizon-labs/unified-hifi-control/pull/84)
 
 ## Patterns That Helped Across Both Contexts
 
@@ -70,7 +70,7 @@ I laid out the full GitHub Actions setup here:
 - **Treat tools as first-class:** cache or containerize toolchains that waste minutes each run. The win is cutting dead time; the pitfall is version drift if you do not lock versions.
 - **Add quick edge checks:** use lightweight smoke tests to catch cross-arch or packaging errors early. The win is earlier signal; the pitfall is letting the tests become the next bottleneck.
 
-One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized until I pulled them into their own track.
+One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized until I pulled them into their own track, which made the packaging work visible and actually resourced.
 
 ![](/assets/img/distribution-tax-flow.svg)
 
