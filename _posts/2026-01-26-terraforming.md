@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2026-01-19 09:00:00 -0500
+date: 2026-01-26 09:00:00 -0500
 author: muness
 title: "Terraforming Is the Job"
 toc: true
@@ -163,7 +163,7 @@ Two traps to avoid:
 
 This is also where "distribution" sneaks in:
 the ability to install, share, and reuse your environment matters as much as the environment itself.
-For a concrete case of what happens when distribution becomes the binding constraint, see {% post_url 2026-01-18-code-rush-to-deploy-drag %}.
+For a concrete case of what happens when distribution becomes the binding constraint, see {% post_url 2026-01-20-code-rush-to-deploy-drag %}.
 
 ## Terraforming Is A 7-Day Experiment
 
