@@ -31,7 +31,7 @@ The fix is not to remove governance. It is to make it less brittle and less manu
 
 The same trap shows up in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
-![OSS and enterprise friction converging into a delivery-path tax.](/assets/img/distribution-friction-map.svg)
+![OSS and enterprise friction converging into a delivery-path tax.](/assets/img/distribution-friction-map.png)
 
 *Figure: different sources of friction, same delivery-path tax.*
 
@@ -56,7 +56,7 @@ This is not about Rust versus Node. It is about choosing an architecture that ma
 
 Flexible systems keep delivery paths open under pressure: composable parts, inspectable handoffs, and changes that do not collapse under new constraints.
 
-![Architecture choices that keep delivery paths open.](/assets/img/architecture-flexibility-map.svg)
+![Architecture choices that keep delivery paths open.](/assets/img/architecture-flexibility-map.png)
 
 *Figure: flexibility in enterprise and OSS keeps delivery paths open.*
 
@@ -72,7 +72,7 @@ Docker gripes in OSS are like SBOM scan failures in enterprise. They are feedbac
 
 One approach that did not work well: burying delivery-path fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible because they did not show up in feature metrics. Pulling delivery-path work into its own track made the work visible and actually resourced.
 
-![The delivery-path tax zone between code and users.](/assets/img/distribution-tax-flow.svg)
+![The delivery-path tax zone between code and users.](/assets/img/distribution-tax-flow.png)
 
 *Figure: most friction lives between code and usable value.*
 
