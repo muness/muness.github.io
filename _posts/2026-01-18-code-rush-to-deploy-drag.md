@@ -13,11 +13,19 @@ Who this is for: engineers, maintainers, and teams shipping in AI-accelerated wo
 
 Monday morning, two engineers on rotation open the pipeline and find a release blocked by a failed SBOM scan (software bill of materials). Was it a real vulnerability or just a scanner hiccup? Either way, the morning is gone before the deploy can move.
 
-With AI agents accelerating code production, the friction has moved. The bottleneck is no longer creation. It is the delivery path: governance, packaging, and installs.
+## The Constraint Moved
+
+With AI agents accelerating code production, the economics of software work have shifted:
+
+- **Generation is cheap.** Drafts, prototypes, and options are abundant.
+- **Verification is expensive.** Testing, integration, and safety still cost real time.
+- **Distribution is binding.** If you cannot get work into the world, you cannot learn from it. And if you cannot learn, you cannot compound.
+
+The bottleneck is no longer creation. It is the delivery path: governance, packaging, and installs.
 
 I saw the same in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
 
-This is not just regulated enterprise pain. For startups and non-regulated teams, the delivery path is onboarding, provisioning, upgrades, and “does it work in my environment.” That path is where velocity now stalls.
+This is not just regulated enterprise pain. For startups and non-regulated teams, the delivery path is onboarding, provisioning, upgrades, and "does it work in my environment." That path is where velocity now stalls.
 
 ## The Enterprise Grind: Governance as the Silent Velocity Killer
 
@@ -45,6 +53,8 @@ My release pipeline made it worse. Compiling for different platforms (Linux targ
 
 A focused pass on caching, parallelism, and artifact reuse dropped builds to about 6 minutes. The remaining slow step is Synology DSM packaging, which I have not optimized yet. That change did not create adoption by itself. It shortened the maintainer loop so I could ship alternative install paths (Roon Extension Manager, QNAP and Synology packages, and early LMS plugin work) and keep up with user requests. The user benefit was simple: fewer hoops, faster installs, and fewer drop-offs.
 
+The next shift was treating packaging as product. I had separate workflows for PR builds and releases, which meant package issues only surfaced at release time. If I wanted to test a Synology SPK change, I had to merge and cut a release to find out if it worked. Unifying them into a single workflow with label-triggered builds means I can now add `build:synology` to a PR and test that specific package before merging. Packaging becomes iterable, not a release-day surprise.
+
 ## Architecture as a Distribution Multiplier
 
 This is not about Rust versus Node. It is about choosing an architecture that makes the delivery path simpler.
@@ -65,6 +75,7 @@ If you want the technical trail:
 - [Architecture plan (issue #42)](https://github.com/open-horizon-labs/unified-hifi-control/issues/42)
 - [Rust rewrite (PR #45)](https://github.com/open-horizon-labs/unified-hifi-control/pull/45)
 - [Bus refactor (PR #84)](https://github.com/open-horizon-labs/unified-hifi-control/pull/84)
+- [CI unification (PR #115)](https://github.com/open-horizon-labs/unified-hifi-control/pull/115)
 
 ## Patterns That Helped Across Both Contexts
 
@@ -82,6 +93,8 @@ Whether you are solo on OSS or advising healthcare teams, it boils down to this:
 
 The key bottleneck is not making it. It is rolling it out steadily, broadly, and safely. That is a mix of tooling, governance, and release discipline. If you want velocity without thrash, invest where the constraint actually moved.
 
+For the broader framework behind this shift—how to reshape your environment so good work happens by default—see {% post_url 2026-01-19-terraforming %}.
+
 If you are stuck in it, start with basics: map your last three releases and find where time actually went (code, review, or the gates after merge). That is your delivery-path tax. A simple template:
 
 - Review-to-merge time
@@ -97,3 +110,86 @@ Then measure cycle time, cache the obvious, and parallelize the easy wins.
 - **NAS**: Network-attached storage; often the home of Synology or QNAP installs.
 - **DSM**: Synology's operating system and packaging format.
 - **LMS**: Logitech Media Server.
+
+---
+
+<details id="appendix-build-workflow" class="appendix" markdown="1">
+<summary><strong>Appendix: How the Build Workflow Actually Works</strong></summary>
+
+This is the technical detail behind the "40 minutes → 7 minutes" claim and the label-triggered packaging.
+
+### Philosophy: Single Source of Truth
+
+One unified workflow (`build.yml`) instead of separate PR and release workflows. This prevents:
+
+- **Drift**: Separate workflows diverge over time (different cache keys, different build steps)
+- **Duplication**: Same job definitions copied between files
+- **Testing gaps**: PR builds don't match release builds
+
+### Configurable Builds via Labels
+
+Add labels to your PR to enable optional builds:
+
+| Label | Builds |
+|-------|--------|
+| `build:lms` | LMS plugin ZIP |
+| `build:synology` | Synology SPK (x64 + arm64) |
+| `build:qnap-arm` | QNAP arm64 package |
+| `build:linux-arm` | Linux arm64 + armv7 binaries |
+| `build:macos` | macOS universal binary |
+| `build:windows` | Windows exe |
+| `build:linux-packages` | deb/rpm packages |
+| `build:all` | Everything |
+
+**Default PR builds** (always run): Lint + tests, web assets (WASM), Linux x64 binary, QNAP x64 package, Docker x64 image.
+
+![Manual dispatch UI with checkboxes for each build target](/assets/img/workflow-dispatch-checkboxes.png)
+
+*Manual dispatch lets you test any combination of targets without cutting a release.*
+
+### The Plan Job: Centralized Decision Logic
+
+Instead of scattering build conditions across every job, a **plan job** runs first (~5 seconds) and computes what needs to be built. All downstream jobs simply check the plan outputs.
+
+Benefits:
+- **Single source of truth**: "What triggers ARM build?" is defined in ONE place
+- **Implicit dependency triggering**: `build:synology` label automatically enables ARM build
+- **Easier debugging**: The plan job summary shows exactly what will build
+
+### Caching Strategies
+
+**rust-cache + sccache together**: They cache different things. sccache caches individual `.o` files keyed by source hash. rust-cache caches the `target/` directory including proc-macro `.dylib` files that sccache cannot cache.
+
+**cargo-zigbuild for Linux cross-compilation**: The `cross` tool runs cargo inside Docker containers, which breaks caching (container paths don't match host paths). zigbuild uses Zig as a cross-linker without containers—rust-cache works normally.
+
+**Tool binary caching**: Tools like dioxus-cli take 2-3 minutes to compile. Caching the binary (`key: dx-cli-0.7.3`) saves this on every run.
+
+**GHCR base images**: GitHub Actions runners are co-located with GHCR (~10x faster pulls than Docker Hub, plus no rate limits).
+
+### Build Matrix
+
+| Target | Caching | Build Tool | Default | Label |
+|--------|---------|------------|---------|-------|
+| Web Assets (WASM) | sccache + rust-cache | dx | Always | - |
+| Linux x86_64-musl | rust-cache | cargo-zigbuild | Always | - |
+| Linux aarch64-musl | rust-cache | cargo-zigbuild | Release | `build:linux-arm` |
+| Linux armv7-musl | rust-cache | cargo-zigbuild | Release | `build:linux-arm` |
+| macOS universal | sccache + rust-cache | cargo + lipo | Release | `build:macos` |
+| Windows x86_64 | sccache + rust-cache | cargo | Release | `build:windows` |
+| Docker x64 | N/A | pre-built binary | PR/push | - |
+| Synology SPK | N/A | tar | Release | `build:synology` |
+| QNAP x64 | N/A | qbuild (Docker) | Always | - |
+| QNAP arm64 | N/A | qbuild (Docker) | Release | `build:qnap-arm` |
+| Linux deb/rpm | N/A | fpm | Release | `build:linux-packages` |
+| LMS Plugin | N/A | zip | Release | `build:lms` |
+
+### Lessons Learned
+
+1. **Single workflow, conditional jobs**: One `build.yml` prevents drift. Use `if:` conditions to control what runs.
+2. **Labels for PR customization**: Use labels like `build:synology` to enable extra builds when testing specific platforms.
+3. **Avoid containerized cross-compilation**: `cross` breaks caching. `cargo-zigbuild` cross-compiles without containers.
+4. **Universal macOS via lipo**: Build each arch with native cargo, combine with `lipo`. zigbuild can't find macOS system frameworks.
+5. **QEMU for cross-arch testing**: Smoke test armv7 binaries on x86_64 runners. Catches ABI issues before release.
+6. **Build NAS packages directly**: Synology's toolkit downloads 1GB+ and creates unwanted debug packages. Build SPKs directly with `tar`.
+
+</details>
