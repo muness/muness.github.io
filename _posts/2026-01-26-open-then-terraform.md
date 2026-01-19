@@ -56,14 +56,12 @@ I'm using *solution space* for candidate implementations, and *problem space* fo
 
 Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **install the terrain** so the winning approach becomes the default.
 
-<div class="callout callout--warning" markdown="1">
-**Two ways this breaks**
-
-- **Ungoverned search** (problem-space failure): endless drafts, reversals, local peaks.
-- **Workflow bloat** (artifact-layer failure): ritual complexity, uninspectable systems, maintainer-in-the-loop forever.
-
-Same root cause: cheap generation without judgment.
-</div>
+> **Two ways this breaks**
+>
+> - **Ungoverned search** (problem-space failure): endless drafts, reversals, local peaks.
+> - **Workflow bloat** (artifact-layer failure): ritual complexity, uninspectable systems, maintainer-in-the-loop forever.
+>
+> Same root cause: cheap generation without judgment.
 
 Here's a micro example. A user reported CPU spikes on a small computer running my audio bridge. The request: "make polling configurable." That's a tarp. It doesn't fix the problem; it lets you tune how badly the problem manifests.
 
@@ -151,7 +149,6 @@ The first layer is personal practice. The point is to make "start right" low fri
 
 Use a minimal pre-flight before any AI-assisted work session (what I call an "agentic session"—where you're working alongside AI tools that can take actions):
 
-<div class="callout callout--note" markdown="1">
 ```text
 Aim (1 sentence):
 What "done" looks like (observable):
@@ -162,10 +159,8 @@ Known landmines (what drift looks like here):
 
 One question that, if unanswered, makes action premature:
 ```
-</div>
 
-The point is not more planning.
-The point is **orientation**.
+The point is not more planning. The point is **orientation**.
 
 ### Teams: Make Guardrails Ambient
 
@@ -230,7 +225,7 @@ Open Horizons is the job. Terraforming is how you keep the horizon open.
 
 ---
 
-<details id="appendix-experts" class="appendix" markdown="1">
+<details id="appendix-experts" class="appendix">
 <summary><strong>Appendix: How Experts Think</strong></summary>
 
 Research on expert problem-solving reveals a consistent pattern: what separates experts from novices isn't raw knowledge—it's how that knowledge is organized.
@@ -267,7 +262,7 @@ This same bias shows up in knowledge work: people prefer visible action over opt
 
 </details>
 
-<details id="appendix-act-on-theory" class="appendix" markdown="1">
+<details id="appendix-act-on-theory" class="appendix">
 <summary><strong>Appendix: When to Act on Theory</strong></summary>
 
 A core tension in decision-making is when to act immediately based on theoretical understanding versus when to demand exhaustive validation. The research suggests the key variables are **reversibility**, **stakes**, and **mechanism certainty**.
@@ -301,7 +296,7 @@ The successful organizations (like Amazon) are those that correctly classify whi
 
 </details>
 
-<details id="appendix-psychology-quitting" class="appendix" markdown="1">
+<details id="appendix-psychology-quitting" class="appendix">
 <summary><strong>Appendix: The Psychology of Quitting (and Salvage)</strong></summary>
 
 One of the toughest decisions is whether to continue investing in a course of action or cut losses. Research shows humans are systematically bad at this—we persevere when we should quit, and the bias has a name: **escalation of commitment**.
@@ -356,7 +351,7 @@ Annie Duke (2022) argues that knowing *when* to quit is as important as knowing 
 
 </details>
 
-<details id="appendix-over-structure" class="appendix" markdown="1">
+<details id="appendix-over-structure" class="appendix">
 <summary><strong>Appendix: The Risks of Over-Structure</strong></summary>
 
 While some structure reduces error, **excessive structuring—too many rules, guardrails, and approval layers—often hinders learning, innovation, and adaptability**.
@@ -389,7 +384,7 @@ The literature agrees that excessive bureaucracy is detrimental when it prevents
 
 </details>
 
-<details id="appendix-high-stakes" class="appendix" markdown="1">
+<details id="appendix-high-stakes" class="appendix">
 <summary><strong>Appendix: High-Stakes Lessons</strong></summary>
 
 High-stakes environments illuminate both the power and the limits of first-principles reasoning.
