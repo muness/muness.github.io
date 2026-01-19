@@ -1,0 +1,96 @@
+direction: right
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+  lane: "#F8FAFC"
+  warn: "#FEF3C7"
+  good: "#D1FAE5"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 14
+      fill: "#FFFFFF"
+    }
+  }
+  decision: {
+    shape: diamond
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 14
+      fill: ${lane}
+    }
+  }
+  outcome-bad: {
+    style: {
+      stroke: "#DC2626"
+      stroke-width: 1
+      stroke-dash: 4
+      font-color: "#DC2626"
+      font-size: 11
+      fill: "transparent"
+    }
+  }
+  outcome-good: {
+    style: {
+      stroke: "#059669"
+      stroke-width: 1
+      stroke-dash: 4
+      font-color: "#059669"
+      font-size: 11
+      fill: "transparent"
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 12
+    }
+  }
+}
+
+pre: {class: box; label: "Pre-flight\n(intent + constraints)"}
+exec: {class: box; label: "Execute fast"}
+drift: {class: box; label: "Detect drift\n(thrash signals)"}
+decision: {class: decision; label: "Steer\nor abort?"}
+salvage: {class: box; label: "Salvage learning\n(model update)"}
+update: {class: box; label: "Update terrain\n(defaults + rails)"}
+repeat: {class: box; label: "Next run starts\ncloser to truth"}
+
+pre -> exec: {class: edge}
+exec -> drift: {class: edge}
+drift -> decision: {class: edge}
+decision -> exec: "Steer" {class: edge}
+decision -> salvage: "Abort" {class: edge}
+salvage -> update: {class: edge}
+update -> repeat: {class: edge}
+repeat -> pre: {class: edge}
+
+bad: {
+  class: outcome-bad
+  label: "Ungoverned search\n= endless drafts"
+}
+
+good: {
+  class: outcome-good
+  label: "Governed search\n= compounding"
+}
+
+drift -> bad: "" {
+  style.stroke: "#DC2626"
+  style.stroke-dash: 4
+}
+update -> good: "" {
+  style.stroke: "#059669"
+  style.stroke-dash: 4
+}

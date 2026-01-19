@@ -35,6 +35,10 @@ If exploration finds the path, terraforming builds the roads, maps, and guardrai
 
 Open Horizons is the practice of expanding what's possible, then converting what you learn into durable advantage. This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make it stick, including the "don't drop a ritual without replacing the signal" principle.
 
+![The two-move model: open then terraform.](/assets/img/open-then-terraform.png)
+
+*Figure: Cheap generation expands reach. Terraforming makes reach usable.*
+
 Once you see it that way, there are four levels of response to friction.
 
 I'm using *solution space* for candidate implementations, and *problem space* for what we choose to optimize and what constraints we treat as real.
@@ -45,6 +49,10 @@ I'm using *solution space* for candidate implementations, and *problem space* fo
 - **Nearest peak.** Optimize inside the current framing. Better, still trapped by assumptions.
 - **Beyond the nearest peak.** Step back to the *problem statement* and search for a different approach entirely.
 - **Terraform.** Step back again, to the *problem space*, and redesign the terrain so the search itself changes. You make good work the path of least resistance, and you make drift loud.
+
+![Four levels of response to friction.](/assets/img/four-levels-terrain.png)
+
+*Figure: Each step moves from artifact tweaks to framing to environment design.*
 
 Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **install the terrain** so the winning approach becomes the default.
 
@@ -78,6 +86,10 @@ The "stabilize" half of the model is not a vibe. It's a loop, and the loop is se
 3. **Detect drift:** notice when you're optimizing a proxy instead of the real thing.
 4. **Salvage:** keep what changed your model of the problem space, not just what "worked."
 5. **Update the terrain:** change defaults, guardrails, and exploration scaffolds so the next search starts closer to truth.
+
+![The terraform loop with drift detection and salvage.](/assets/img/terraform-loop.png)
+
+*Figure: Governed search compounds. Ungoverned search creates endless drafts.*
 
 If you've been reading along: this is the operational core behind {% post_url 2026-01-12-taming-the-chaos-dragon %}, and it composes directly with {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
 
