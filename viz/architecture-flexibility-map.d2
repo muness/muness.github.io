@@ -43,9 +43,20 @@ enterprise: {
   label: "Enterprise"
   near: top-left
 
-  ent_before: {class: box label: "Monolith /\nmono-agent"}
-  ent_after: {class: box label: "Decomposed\nservices + agents"}
-  ent_outcome: {class: box label: "Inspectable\nhand-offs +\nreliable gates"}
+  ent_before: {
+    class: box
+    label: "Monolith /\nmono-agent"
+  }
+
+  ent_after: {
+    class: box
+    label: "Decomposed\nservices + agents"
+  }
+
+  ent_outcome: {
+    class: box
+    label: "Inspectable\nhand-offs +\nreliable gates"
+  }
 
   ent_before -> ent_after: {class: edge}
   ent_after -> ent_outcome: {class: edge}
@@ -56,9 +67,20 @@ oss: {
   label: "OSS"
   near: bottom-left
 
-  oss_before: {class: box label: "Node + bespoke\nUI"}
-  oss_after: {class: box label: "Rust core +\nbus + adapters"}
-  oss_outcome: {class: box label: "Single binary +\nmore distro paths"}
+  oss_before: {
+    class: box
+    label: "Node + bespoke\nUI"
+  }
+
+  oss_after: {
+    class: box
+    label: "Rust core +\nbus + adapters"
+  }
+
+  oss_outcome: {
+    class: box
+    label: "Single binary +\nmore distro paths"
+  }
 
   oss_before -> oss_after: {class: edge}
   oss_after -> oss_outcome: {class: edge}
