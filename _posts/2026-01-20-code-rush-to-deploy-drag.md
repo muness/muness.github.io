@@ -53,7 +53,7 @@ My release pipeline made it worse. Compiling for different platforms (Linux targ
 
 A focused pass on caching, parallelism, and artifact reuse dropped builds to about 6 minutes. The remaining slow step is Synology DSM packaging, which I have not optimized yet. That change did not create adoption by itself. It shortened the maintainer loop so I could ship alternative install paths (Roon Extension Manager, QNAP and Synology packages, and early LMS plugin work) and keep up with user requests. The user benefit was simple: fewer hoops, faster installs, and fewer drop-offs.
 
-The next shift was treating packaging as product. I had separate workflows for PR builds and releases, which meant package issues only surfaced at release time. If I wanted to test a Synology SPK change, I had to merge and cut a release to find out if it worked. Unifying them into a single workflow with label-triggered builds means I can now add `build:synology` to a PR and test that specific package before merging. Packaging becomes iterable, not a release-day surprise.
+The next shift was treating packaging as product. I had separate workflows for PR builds and releases, which meant package issues only surfaced at release time. If I wanted to test a Synology SPK change, I had to merge and cut a release to find out if it worked. Unifying them into a single workflow with label-triggered builds means I can now add `build:synology` to a PR and test that specific package before merging. Packaging becomes iterable, not a release-day surprise. (See the [appendix](#appendix-build-workflow) for the technical details.)
 
 ## Architecture as a Distribution Multiplier
 
