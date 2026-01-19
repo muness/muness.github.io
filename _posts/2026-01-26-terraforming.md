@@ -4,33 +4,38 @@ date: 2026-01-26 09:00:00 -0500
 author: muness
 title: "Terraforming Is the Job"
 toc: true
-excerpt: "When execution becomes nearly free, the rational response is to step all the way back to the problem space and reimagine what's possible. That's terraforming."
+excerpt: "Open Horizons is the job. Terraforming is how you keep the horizon open."
 ---
 
-## The Job and the Friction
+## The Job
 
-When I'm trying to ship something real, I'm not short on drafts.
-I'm short on truth.
+**Open Horizons is the job. Terraforming is how you keep the horizon open.**
 
-The job is progress: turning messy reality into an outcome that holds up when users touch it, when systems integrate, when constraints bite.
+When I'm trying to ship something real, I'm not short on drafts. I'm short on truth. The job is progress: turning messy reality into an outcome that holds up when users touch it, when systems integrate, when constraints bite.
 
-AI changed the economics of one part of that job. Here's the causal chain:
+AI changed the economics. Here's the causal chain:
 
 1. **Generation got cheap.** Options, prototypes, and rewrites are almost free.
 2. **The search space exploded.** You can explore in any direction.
 3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact.
 4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
-That does not mean the job is "use AI tools."
-It means the bottleneck moved—and the job is now **governing search + installing terrain**.
+That does not mean the job is "use AI tools." It means the bottleneck moved.
 
-The binding constraints are the ones that still cost what they always cost. Call all of that **physics**. It includes real physics and the parts of your environment you cannot wish away: incentives, org politics, legacy code, user behavior, time. This applies whether you're a leader, a product manager, a CxO, or a staff/principal engineer.
+The binding constraints are the ones that still cost what they always cost. Call all of that **physics**: real physics plus the parts of your environment you cannot wish away—incentives, org politics, legacy code, user behavior, time.
 
-So here's the real Jobs-to-Be-Done frame:
+So there are two moves:
 
-- **Job:** make reliable progress under physics.
-- **Friction:** cheap execution explodes the space of possible work, so you can thrash forever and still feel productive.
-- **Desired outcome:** direction becomes the default, and wrong-way work gets caught early.
+1. **Open the horizon (explore).** Run probes into the possibility space. Generate options cheaply. Find what changes reality, not what sounds good.
+2. **Terraform the horizon (stabilize).** Convert what you learned into rails: scoring, checks, defaults, distribution. Install nested feedback loops so drift gets caught at multiple scales.
+
+By "terraforming" I do not mean optimizing tools. I mean:
+
+> **Terraforming (in this context):** reshaping constraints and defaults so a newly discovered path stays reachable, repeatable, and safe.
+
+If exploration finds the path, terraforming builds the roads, maps, and guardrails that keep it open.
+
+This maps directly to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. And it includes the "don't drop a ritual without replacing the signal" principle—terraforming is how you make it stick.
 
 Once you see it that way, there are four levels of response to friction.
 
@@ -66,7 +71,7 @@ The bias toward tarps is strong. Even experts favor visible action over optimal 
 
 ## The Terraform Loop
 
-Terraforming is not a vibe. It's a loop—and the loop is search governance.
+The "stabilize" half of the model is not a vibe. It's a loop—and the loop is search governance.
 
 1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
 2. **Execute fast:** cheap execution means you can probe the space quickly.
@@ -198,15 +203,18 @@ If you want to make this real without turning it into a transformation program:
 
 ## The Point
 
-AI didn't remove the need for leadership.
-It removed the scarcity of drafts.
+AI didn't remove the need for leadership. It removed the scarcity of drafts.
 
 When drafts are cheap, the binding constraint becomes direction, judgment, verification, and the terrain that carries those forward.
 
+The two moves stay the same:
+
+1. **Open the horizon.** Explore cheaply. Find what changes reality.
+2. **Terraform the horizon.** Make the winning path cheap to repeat and hard to misuse.
+
 Agentic bloat is what happens when people confuse building with progress. Terraforming is how you reassert judgment when execution stops being scarce.
 
-Terraform the terrain and the ceiling moves.
-Ignore it and you'll ship faster in the wrong direction.
+Open Horizons is the job. Terraforming is how you keep the horizon open.
 
 ---
 
