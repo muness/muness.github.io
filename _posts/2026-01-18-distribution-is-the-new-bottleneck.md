@@ -15,8 +15,6 @@ With AI agents accelerating code production, the friction has moved. The bottlen
 
 I saw the same in open source. Users would wait days for a physical Waveshare dev board to ship, but drop off rather than run a quick Docker setup. That was the moment I realized my bottleneck was not the code. It was the path into the product.
 
-Teams can ship features fast, but the system says "no" for reasons that feel arbitrary to the people trying to ship. That grind burns people out and slows adoption. As things grow, the front door (how smoothly value gets to end users) becomes the critical piece.
-
 ## The Enterprise Grind: Governance as the Silent Velocity Killer
 
 In regulated environments like hospitals, compliance is non-negotiable. But how it is implemented often turns necessary checks into major roadblocks.
@@ -25,15 +23,15 @@ The dev teams I am helping operate with zero dedicated IT support, so engineers 
 
 The worst part is flaky SBOM scans that fail unpredictably over weekends, often from temporary glitches like network hiccups or false alarms on dependencies. Monday rolls around, and the pair on shift finds a blocked deploy, then spends hours figuring it out: real issue, scanner error, or bad luck. Time slips away on fixes, throwing off plans and holding up important changes.
 
-The fix is not to remove governance. It is to make it less brittle and less manual. The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. If you are on Kubernetes, automate gates with GitOps-style tooling (for example, ArgoCD) and use scanners that can be made reliable in your stack (for example, Trivy). That is not glamorous work, but it is where a large part of velocity lives.
+The fix is not to remove governance. It is to make it less brittle and less manual. The first moves I look for are always the same: reduce the number of clicks per deploy, add retries and clearer failure modes on scans, and make approvals explicit and consistent instead of tribal. If you are on Kubernetes, automate gates with GitOps-style tooling (automated deploys from Git, for example, ArgoCD) and use scanners that can be made reliable in your stack (for example, Trivy, a container/dependency scanner). That is not glamorous work, but it is where a large part of velocity lives.
 
-Sound familiar? It is the same trap in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
+The same trap shows up in open source. Just as OSS users balk at Docker setup, enterprise devs rage at scan flakes. Both are the system saying "no" in ways that feel arbitrary.
 
 ![](/assets/img/distribution-friction-map.svg)
 
 ## Mirroring the Trap in Open Source: When "Easy Install" Matters More Than Features
 
-This enterprise friction lines up with what I have seen in my open source projects, unified-hifi-control and roon-knob. As these picked up users, the early feedback was not about new features. It was "make it easy to install."
+This enterprise friction lines up with what I have seen in my open source projects, unified-hifi-control and roon-knob. It is the same arc you see when OSS projects move beyond Docker-only and add official packages or installers. As these picked up users, the early feedback was not about new features. It was "make it easy to install."
 
 I started with Docker-only, which felt straightforward as a solo maintainer. Users were not having it. Some were on NAS devices like Synology or QNAP, where Docker felt tacked on and unreliable. Others wanted tighter integration with systems like Roon or Logitech Media Server (LMS), preferring built-in plugins to container workarounds. The project supports a physical dev board that takes days to ship, but people would drop off rather than deal with a quick Docker setup.
 
@@ -45,11 +43,11 @@ A focused pass on caching, parallelism, and artifact reuse dropped builds to abo
 
 This is not about Rust versus Node. It is about choosing an architecture that makes distribution simpler.
 
-The same pattern showed up in an enterprise system: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow backed by vector search and inspectable handoffs. That shift made the system faster and more reliable, and it let us evaluate each component instead of debugging a black box.
+The same pattern showed up in an enterprise system: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow backed by vector search (embedding-based retrieval) and inspectable handoffs. The failure rate went from ~30% to zero so far, latency dropped from 40–100 seconds to 10–20 seconds, and tool calls per flow fell from a dozen to three. It also let us evaluate each component instead of debugging a black box.
 
 The packaging shift did not work until the architecture shifted. The old stack was Node.js with hand-rolled HTML/CSS. It was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
 
-The answer was a Rust core with an event bus and explicit adapter lifecycle. I moved to a bus architecture with an AdapterCoordinator, a ZoneAggregator as the single source of truth, and SSE (Server-Sent Events) for real-time updates. Adapters became publishers, not state owners. Disabled adapters do not start, do not emit events, and do not appear. That makes runtime flexibility real, not theoretical.
+The answer was a Rust core with an event bus and explicit adapter lifecycle. I moved to a bus architecture with a single source of truth for zones and SSE (Server-Sent Events) for real-time updates. Adapters became publishers, not state owners. Disabled adapters do not start, do not emit events, and do not appear. That makes runtime flexibility real, not theoretical.
 
 In enterprise systems, this mirrors decomposing monoliths into smaller services to isolate gated deploys and reduce blast radius when governance kicks in.
 
@@ -78,13 +76,11 @@ I laid out the full GitHub Actions setup here:
 - **Treat tools as first-class:** cache or containerize toolchains that waste minutes each run. The win is cutting dead time; the pitfall is version drift if you do not lock versions.
 - **Add quick edge checks:** use lightweight smoke tests to catch cross-arch or packaging errors early. The win is earlier signal; the pitfall is letting the tests become the next bottleneck.
 
-One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible to stakeholders. Pulling distribution into its own track made the work visible and actually resourced.
+One approach that did not work well: burying distribution fixes inside feature work. Those changes kept getting deprioritized, ownership stayed fuzzy, and the wins were invisible because they did not show up in feature metrics. Pulling distribution into its own track made the work visible and actually resourced.
 
 ![](/assets/img/distribution-tax-flow.svg)
 
 In OSS, this flipped a 40-minute drag to a 7-minute run, giving me room to handle user asks. In enterprise, the equivalent is policy-as-code, smarter scans, and shared artifacts between gates. The aim is the same: make governance a helper, not a hurdle.
-
-Quick rundown of what helped above -- these patterns travel across GitHub Actions, GitLab CI, and enterprise pipelines like Jenkins or Azure DevOps.
 
 ## The Core Thesis: Distribution Is Your Product
 
