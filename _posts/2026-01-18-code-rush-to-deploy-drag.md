@@ -9,6 +9,8 @@ excerpt: "In an AI-fueled era where code flies off the keyboard, the delivery pa
 
 *Why the shift from code velocity to delivery-path hygiene is universal and how to navigate it without burning out teams or losing users.*
 
+Who this is for: engineers, maintainers, and teams shipping in AI-accelerated workflows who feel delivery friction more than coding friction.
+
 Monday morning, two engineers on rotation open the pipeline and find a release blocked by a failed SBOM scan (software bill of materials). Was it a real vulnerability or just a scanner hiccup? Either way, the morning is gone before the deploy can move.
 
 With AI agents accelerating code production, the friction has moved. The bottleneck is no longer creation. It is the delivery path: governance, packaging, and installs.
@@ -47,15 +49,10 @@ A focused pass on caching, parallelism, and artifact reuse dropped builds to abo
 
 This is not about Rust versus Node. It is about choosing an architecture that makes the delivery path simpler.
 
-The same pattern showed up in an enterprise system: we moved from a single, monolithic agent (slow and unreliable) to a decomposed multi-agent workflow backed by vector search (embedding-based retrieval) and inspectable handoffs. The failure rate went from ~30% to zero so far, latency dropped from 40–100 seconds to 10–20 seconds, and tool calls per flow fell from a dozen to three. It also let us evaluate each component instead of debugging a black box.
-
-The packaging shift did not work until the architecture shifted. The old stack was Node.js with hand-rolled HTML/CSS. It was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
-
-The answer was a Rust core with an event bus and explicit adapter lifecycle. I moved to a bus architecture with a single source of truth for zones and SSE (Server-Sent Events) for real-time updates. Adapters became publishers, not state owners. Disabled adapters do not start, do not emit events, and do not appear. That makes runtime flexibility real, not theoretical.
-
-In enterprise systems, this mirrors decomposing monoliths into smaller services to isolate gated deploys and reduce blast radius when governance kicks in.
-
-This change also enabled a shared component library and Tailwind-based UI across delivery targets, instead of one-off UI hacks per package. The result is a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
+- **Enterprise shift:** monolithic agent → decomposed multi-agent workflow with vector search (embedding-based retrieval) and inspectable handoffs. Failure rate went from ~30% to zero so far, latency dropped from 40–100 seconds to 10–20 seconds, and tool calls per flow fell from a dozen to three. This mirrors decomposing monoliths into smaller services to isolate gated deploys and reduce blast radius.
+- **Old stack pain:** Node.js with hand-rolled HTML/CSS was fast to prototype, but painful to ship as an LMS plugin or NAS package (bundling quirks, native modules, signing, and runtime drift).
+- **New approach:** Rust core with an event bus, explicit adapter lifecycle, a single source of truth for zones, and SSE (Server-Sent Events, a way to push real-time updates from server to client). Adapters became publishers, not state owners.
+- **Outcome:** shared component library + Tailwind UI across delivery targets, a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
 
 Flexible systems keep delivery paths open under pressure: composable parts, inspectable handoffs, and changes that do not collapse under new constraints.
 
