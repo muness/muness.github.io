@@ -53,7 +53,7 @@ In enterprise systems, this mirrors decomposing monoliths into smaller services 
 
 This change also enabled a shared component library and Tailwind-based UI across delivery targets, instead of one-off UI hacks per package. The result is a single binary for most environments, optional adapters when needed, and far less packaging-specific glue.
 
-Leaders should demand systems that stay flexible under pressure: composable parts, inspectable handoffs, and delivery paths that do not collapse under new constraints.
+Flexible systems keep delivery paths open under pressure: composable parts, inspectable handoffs, and changes that do not collapse under new constraints.
 
 ![](/assets/img/architecture-flexibility-map.svg)
 
