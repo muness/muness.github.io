@@ -1,0 +1,57 @@
+direction: right
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+  zone: "#F8FAFC"
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 16
+      bold: true
+      fill: "#FFFFFF"
+    }
+  }
+  zone: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      stroke-dash: 6
+      font-color: ${text}
+      font-size: 14
+      bold: true
+      fill: ${zone}
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 14
+    }
+  }
+}
+
+code: {class: box label: "Code\n(fast now)"}
+
+user: {class: box label: "User\n(value delivered)"}
+
+tax_zone: {
+  class: zone
+  label: "Delivery path tax zone\n(time + morale)"
+
+  gates: {class: box label: "Governance gates\n(approvals + scans)"}
+  packaging: {class: box label: "Packaging + installs\n(Docker/NAS/plugins)"}
+
+  gates -> packaging: {class: edge}
+}
+
+code -> tax_zone: {class: edge}
+tax_zone -> user: {class: edge}
