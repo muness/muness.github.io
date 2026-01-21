@@ -27,13 +27,25 @@ The binding constraints are the ones that still cost what they always cost. Call
 So there are two moves:
 
 1. **Open the horizon (explore).** Run probes into the possibility space. Generate options cheaply. Find what changes reality, not what sounds good.
-2. **Terraform the horizon (stabilize).** Convert what you learned into rails: scoring, checks, defaults, distribution. Install nested feedback loops so drift gets caught at multiple scales.
+2. **Terraform the horizon (stabilize).** Reshape the constraints so the winning path is the only path. Make bad choices impossible, not just discouraged.
 
-**Terraforming (here):** industrializing what exploration discovered. You reshape constraints and defaults so a newly found path stays reachable, repeatable, and safe.
+**Terraforming (here):** changing the terrain so a problem class ceases to exist. Not "better error handling" but "architecture where that error is impossible." Not finding a better path up the mountain—asking why there's a mountain at all.
 
-If exploration finds the path, terraforming builds the roads, maps, and guardrails that keep it open.
+If exploration finds the path, terraforming reshapes the landscape so the old obstacles aren't there anymore.
 
 Open Horizons is the practice of expanding what's possible, then converting what you learn into durable advantage. This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make it stick, including the "don't drop a ritual without replacing the signal" principle.
+
+> **Terraform vs Tools**
+>
+> Tools operate on terrain. Terraforming changes the terrain itself.
+>
+> - **Tool:** Better linting catches this bug class earlier.
+> - **Terraform:** Type system makes this bug class impossible.
+>
+> - **Tool:** Pre-flight checklist catches drift early.
+> - **Terraform:** System won't execute without declared constraints.
+>
+> If you can still choose wrong, it's a tool. If wrong is no longer an option, it's terraform.
 
 ![The two-move model: open then terraform.](/assets/img/open-then-terraform.png)
 
@@ -69,7 +81,11 @@ The nearest peak would be optimizing the polling interval. Still polling. Still 
 
 Beyond the nearest peak: switch to an event-driven model. Instead of constantly asking "did anything change?", devices announce when something changes. CPU usage drops from "proportional to devices" to "proportional to actual changes." The mechanism is obvious. The rollback is trivial. Result: ["now using negligible CPU."](https://forums.lyrion.org/forum/user-forums/3rd-party-hardware/1804977-roon-knob-includes-lms-support?p=1807360#post1807360)
 
-That's a solution-space move. Terraforming would be: redesign the *problem space* so future projects default to event-driven architectures, with templates, examples, and guardrails that make polling feel like the weird choice. The next person doesn't face this problem at all.
+That's a solution-space move—a better path up the same mountain.
+
+Terraforming asks: why is polling even possible? What if the platform only exposed event subscriptions? What if the SDK had no polling API to reach for? The problem class disappears. The next person can't make this mistake because the mistake isn't an option.
+
+"Templates and guardrails that make polling feel weird" is tool-building—useful, but still operating on the old terrain. True terraform removes the mountain.
 
 Tarps are rational under time pressure. They become toxic when they're the default response to repeated friction. Terraforming is what you do after the third tarp, when you notice you're patching the same class of problem over and over.
 
@@ -139,15 +155,13 @@ The reversibility question deserves special attention. Jeff Bezos famously disti
 
 The research on first-principles reasoning backs this up. When Apollo 13's oxygen tank exploded, engineers on the ground jury-rigged a CO₂ scrubber adapter from plastic bags, tape, and cardboard—using first principles of chemistry and airflow to improvise a life-saving solution in hours. But the Challenger disaster shows the other edge: engineers warned that O-ring seals would fail in cold temperatures, a straightforward material science prediction, but management overrode them under schedule pressure. First-principles reasoning works when it's *heard* and *acted upon*. The terrain has to make that happen by default. (See [Appendix: High-Stakes Lessons](#appendix-high-stakes) for the cases.)
 
-## Three Layers of Terraforming
+## Three Scales of Change
 
-Problem-space design happens at three scales: yourself, your team, and your tooling.
+Changing the terrain happens at three scales: yourself, your team, and your systems. At each scale, there's a spectrum from tool-building (making the right path easier) to true terraforming (making the wrong path impossible).
 
-### Self: Make Direction Cheap
+### Self: From Checklists to Constraints
 
-The first layer is personal practice. The point is to make "start right" low friction.
-
-Use a minimal pre-flight before any AI-assisted work session (what I call an "agentic session"—where you're working alongside AI tools that can take actions):
+**Tool version:** Use a pre-flight checklist before any AI-assisted work session:
 
 ```text
 Aim (1 sentence):
@@ -160,30 +174,34 @@ Known landmines (what drift looks like here):
 One question that, if unanswered, makes action premature:
 ```
 
-The point is not more planning. The point is **orientation**.
+**Terraform version:** What if the system refused to start without declared intent? Not "remember to fill this out" but "execution blocked until constraints are defined."
 
-### Teams: Make Guardrails Ambient
+The tool version is practical today. The terraform version is the direction.
 
-The second layer is team practice. This is where most "AI adoption" fails—not because the tools are weak, but because the organization is unconstrained.
+### Teams: From Practices to Physics
 
-Three concrete moves:
+**Tool version:** Team practices that reduce drift:
 
 1. **Require pre-flight.** No dive pack, no run.
 2. **Standardize overrides.** If you break a guardrail intentionally, log it and keep moving.
 3. **Measure reversals.** Track work you undo, not work you produce.
 
-Terraforming is what makes speed safe.
+**Terraform version:** What if ungrounded work couldn't merge? What if the CI rejected commits without linked intent? What if reversal rate automatically triggered review?
 
-### Tooling: Make The Practice Stick
+The tool version relies on discipline. The terraform version makes discipline unnecessary.
 
-The third layer is tooling. Rituals don't spread when they're annoying.
+### Systems: From Defaults to Impossibility
 
-Terraforming tooling means:
+**Tool version:** Make good practices convenient:
 
 - Defaults are opinionated.
 - Context is easy to inject at the start of a run.
 - Guardrails are easy to create when you learn something the hard way.
 - Logs are lightweight, so learning compounds.
+
+**Terraform version:** What if the dangerous option didn't exist in the API? What if the system literally couldn't express the bad pattern?
+
+The tool version makes right easy. The terraform version makes wrong impossible.
 
 Two traps to avoid:
 
@@ -198,7 +216,9 @@ This is also where "distribution" sneaks in:
 the ability to install, share, and reuse your environment matters as much as the environment itself.
 For a concrete case of what happens when distribution becomes the binding constraint, see {% post_url 2026-01-20-velocity-is-limited-by-the-path-to-the-user %}.
 
-## Terraforming Is A 7-Day Experiment
+## Start With Tools, Aim for Terrain
+
+Most of us can't terraform overnight. We start with tools and practices, then look for what should become impossible.
 
 If you want to make this real without turning it into a transformation program:
 
@@ -206,7 +226,8 @@ If you want to make this real without turning it into a transformation program:
 2. Require a 5-minute pre-flight (aim + constraints) before any AI-assisted work session.
 3. Keep a single list of guardrails for the week.
 4. If you thrash, abort fast: salvage learning and restart clean.
-5. At the end of the week, review: what constraints were real, what guardrails stuck, what should become default tooling?
+5. At the end of the week, review: what constraints were real, what guardrails stuck, what should become default?
+6. Ask the terraform question: which of these problems should be *impossible* next time, not just caught?
 
 ## The Point
 
@@ -217,9 +238,9 @@ When drafts are cheap, the binding constraint becomes direction, judgment, verif
 The two moves stay the same:
 
 1. **Open the horizon.** Explore cheaply. Find what changes reality.
-2. **Terraform the horizon.** Make the winning path cheap to repeat and hard to misuse.
+2. **Terraform the horizon.** Reshape the terrain so the problem class disappears.
 
-Workflow bloat is what happens when people confuse building with progress. Terraforming is how you reassert judgment when execution stops being scarce.
+Workflow bloat is what happens when people confuse building tools with changing terrain. Terraforming is how you reassert judgment when execution stops being scarce.
 
 Open Horizons is the job. Terraforming is how you keep the horizon open.
 
