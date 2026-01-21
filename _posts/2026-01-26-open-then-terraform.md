@@ -18,7 +18,7 @@ When I'm trying to ship something real, I'm not short on drafts. I'm short on tr
 AI changed the economics. Here's the causal chain:
 
 1. **Generation got cheap.** Options, prototypes, and rewrites are almost free.
-2. **The search space exploded.** You can explore in any direction.
+2. **The search space exploded.** The range of possible approaches you can explore widened dramatically.
 3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact. (A recent METR study found that AI tools actually *slowed* experienced programmers by ~19%—the gains in generation were eaten by verification overhead.)
 4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
@@ -64,7 +64,7 @@ I'm using *solution space* for "how we might build it" and *problem space* for "
 - **Tarp over the problem.** Add a knob, tweak a setting, patch the symptom. You feel movement. The system stays the same.
 - **Nearest peak.** Optimize inside the current framing. Better, still trapped by assumptions.
 - **Beyond the nearest peak.** Step back to the *problem statement* and search for a different approach entirely.
-- **Terraform.** Step back again, to the *problem space*, and redesign the terrain so the search itself changes. You make good work the path of least resistance, and you make drift loud.
+- **Terraform.** Step back again, to the *problem space*, and redesign the terrain so the search itself changes. You make good work the path of least resistance, and you make *drift*—the slow slide from intent to something else—loud and obvious.
 
 ![Four levels of response to friction.](/assets/img/four-levels-terrain.png)
 
@@ -99,7 +99,7 @@ The bias toward tarps is strong. Even experts favor visible action over optimal 
 
 The stabilize half isn't abstract. It's a loop—and the loop is search governance. James March (1991) called this the exploration/exploitation tradeoff: organizations must balance discovering new possibilities against refining current capabilities. Ungoverned exploration never converges; ungoverned exploitation never adapts.
 
-1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
+1. **Pre-flight:** before you start, choose the search space and constraints. What are we exploring? What real-world limits apply?
 2. **Execute fast:** cheap execution means you can probe the space quickly.
 3. **Detect drift:** notice when you're optimizing a proxy instead of the real thing.
 4. **Salvage:** keep what changed your model of the problem space, not just what "worked."
@@ -140,7 +140,7 @@ In an AI-assisted world, the job is not "produce artifacts."
 The job is:
 
 - **Widen** the space of options early (cheap).
-- **Score** options against constraints (not vibes).
+- **Score** options against constraints (not gut feeling alone).
 - **Prune** hard (attention is scarce).
 - **Deepen** only what survives.
 
