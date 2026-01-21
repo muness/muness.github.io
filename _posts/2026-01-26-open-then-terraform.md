@@ -19,7 +19,7 @@ AI changed the economics. Here's the causal chain:
 
 1. **Generation got cheap.** Options, prototypes, and rewrites are almost free.
 2. **The search space exploded.** You can explore in any direction.
-3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact.
+3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact. (A recent METR study found that AI tools actually *slowed* experienced programmers by ~19%—the gains in generation were eaten by verification overhead.)
 4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
 That does not mean the job is "use AI tools." It means the bottleneck moved.
@@ -48,6 +48,8 @@ This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons
 > - **Terraform:** System won't execute without declared constraints.
 >
 > If you can still choose wrong, it's a tool. If wrong is no longer an option, it's terraform.
+>
+> Industry terms for this idea: *poka-yoke* (mistake-proofing—designing so errors are impossible) and *golden paths* or *paved roads* (opinionated workflows where the path of least resistance is also the safe path).
 
 ![The two-move model: open then terraform.](/assets/img/open-then-terraform.png)
 
@@ -95,7 +97,7 @@ The bias toward tarps is strong. Even experts favor visible action over optimal 
 
 ## The Terraform Loop
 
-The stabilize half isn't abstract. It's a loop—and the loop is search governance.
+The stabilize half isn't abstract. It's a loop—and the loop is search governance. James March (1991) called this the exploration/exploitation tradeoff: organizations must balance discovering new possibilities against refining current capabilities. Ungoverned exploration never converges; ungoverned exploitation never adapts.
 
 1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
 2. **Execute fast:** cheap execution means you can probe the space quickly.
@@ -387,7 +389,7 @@ Firestone Tire in the 1970s met the radial tire innovation with its old bias-ply
 
 **Mechanistic vs. Organic Structures**
 
-Burns and Stalker's foundational research (1961) found that companies in rapidly changing markets performed better with organic structures (low formalization, decentralized decisions, fluid roles) than mechanistic ones (strict hierarchies, many rules). A 2023 Deloitte survey found that 84% of executives believe organizational agility is critical for success in today's environment.
+Burns and Stalker's foundational research (1961) found that companies in rapidly changing markets performed better with organic structures (low formalization, decentralized decisions, fluid roles) than mechanistic ones (strict hierarchies, many rules). A 2023 Deloitte survey found that 94% of executives believe organizational agility is critical for success in today's environment.
 
 The implication: structure should fit the context. In dynamic environments, excessive guardrails become liabilities.
 
