@@ -11,6 +11,8 @@ excerpt: "Open Horizons is the job. Terraforming is how you keep the horizon ope
 
 **Open Horizons is the job. Terraforming is how you keep the horizon open.**
 
+Open Horizons is a practice for expanding what's possible and converting learning into durable advantage. Terraforming is the second half: making the gains stick.
+
 When I'm trying to ship something real, I'm not short on drafts. I'm short on truth. The job is progress: turning messy reality into an outcome that holds up when users touch it, when systems integrate, when constraints bite.
 
 AI changed the economics. Here's the causal chain:
@@ -22,7 +24,7 @@ AI changed the economics. Here's the causal chain:
 
 That does not mean the job is "use AI tools." It means the bottleneck moved.
 
-The binding constraints are the ones that still cost what they always cost. Call all of that **physics**: real physics plus the parts of your environment you cannot wish away. Incentives, org politics, legacy code, user behavior, time.
+The binding constraints are the ones that still cost what they always cost. Call all of that **"physics"**—the constraints you cannot wish away: real physics, but also incentives, org politics, legacy code, user behavior, time.
 
 So there are two moves:
 
@@ -33,7 +35,7 @@ So there are two moves:
 
 If exploration finds the path, terraforming reshapes the landscape so the old obstacles aren't there anymore.
 
-Open Horizons is the practice of expanding what's possible, then converting what you learn into durable advantage. This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make it stick, including the "don't drop a ritual without replacing the signal" principle.
+This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make the gains permanent.
 
 > **Terraform vs Tools**
 >
@@ -53,7 +55,7 @@ Open Horizons is the practice of expanding what's possible, then converting what
 
 Once you see it that way, there are four levels of response to friction.
 
-I'm using *solution space* for candidate implementations, and *problem space* for what we choose to optimize and what constraints we treat as real.
+I'm using *solution space* for "how we might build it" and *problem space* for "what we're actually trying to solve and what constraints are real."
 
 ## Four Levels of Response
 
@@ -66,7 +68,7 @@ I'm using *solution space* for candidate implementations, and *problem space* fo
 
 *Figure: Each step moves from artifact tweaks to framing to environment design.*
 
-Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **install the terrain** so the winning approach becomes the default.
+Terraforming is what you do when execution is cheap and physics is not. It has two moves: **widen and govern the search** in the problem space, then **shape the terrain** so the winning approach becomes the default.
 
 > **Two ways this breaks**
 >
@@ -93,7 +95,7 @@ The bias toward tarps is strong. Even experts favor visible action over optimal 
 
 ## The Terraform Loop
 
-The "stabilize" half of the model is not a vibe. It's a loop, and the loop is search governance.
+The stabilize half isn't abstract. It's a loop—and the loop is search governance.
 
 1. **Pre-flight:** choose the search space and constraints. What are we exploring? What physics applies?
 2. **Execute fast:** cheap execution means you can probe the space quickly.
@@ -182,7 +184,7 @@ The tool version is practical today. The terraform version is the direction.
 
 **Tool version:** Team practices that reduce drift:
 
-1. **Require pre-flight.** No dive pack, no run.
+1. **Require pre-flight.** No declared intent, no run.
 2. **Standardize overrides.** If you break a guardrail intentionally, log it and keep moving.
 3. **Measure reversals.** Track work you undo, not work you produce.
 
