@@ -237,6 +237,12 @@ Rina smiled. That was the moment. Not compliance. Comprehension.
 
 ---
 
+*The loop that prevents drift and captures learning:*
+
+![The /execute Loop: Pre-flight → Build → Drift? → Salvage/Ship](viz/execute-loop.png)
+
+---
+
 ## End-of-Episode Memo (Northstar)
 
 **What shifted**

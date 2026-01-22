@@ -237,6 +237,12 @@ These metrics tell you whether the loop is working.
 
 ---
 
+*The diagnostic matrix—scan for the breakdown, apply the corrective command:*
+
+![The Five Breakdowns: No Shared Problem Space, Statement Never Changes, No Aim, Ungoverned Execution, No Terraforming](viz/five-breakdowns.png)
+
+---
+
 ## End-of-Episode Memo (Northstar)
 
 **What shifted**

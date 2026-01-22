@@ -238,7 +238,13 @@ Kieran nodded. "It's not that I'm doing less. It's that the system is doing more
 
 Myles watched the release complete. "Belief isn't a pep talk," he said. "It's a constraint you can prove."
 
-----
+---
+
+*The anatomy of an enforceable constraint:*
+
+![Guardrail Structure: Boundary, Why, Revisit Trigger, Sunset](viz/guardrail-structure.png)
+
+---
 
 ## End-of-Episode Memo (Northstar)
 

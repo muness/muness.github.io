@@ -27,6 +27,7 @@ CSS := $(BUILD_DIR)/epub.css
 
 # Pandoc options
 PANDOC_COMMON := --metadata-file=$(METADATA) \
+                 --resource-path=$(SRC_DIR):$(SRC_DIR)/viz \
                  --toc \
                  --toc-depth=2 \
                  --standalone
@@ -56,6 +57,7 @@ $(EPUB): $(ALL_SOURCES) $(METADATA) $(CSS)
 	@echo "Building EPUB..."
 	pandoc $(ALL_SOURCES) \
 		--metadata-file=$(METADATA) \
+		--resource-path=$(SRC_DIR) \
 		--css=$(CSS) \
 		--toc \
 		--toc-depth=2 \

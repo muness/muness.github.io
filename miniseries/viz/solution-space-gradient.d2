@@ -1,0 +1,84 @@
+direction: down
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#64748B"
+  text: "#0F172A"
+}
+
+classes: {
+  level: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 14
+      fill: "#FFFFFF"
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 2
+      font-color: ${accent}
+      font-size: 12
+    }
+  }
+  note: {
+    style: {
+      stroke: ${accent}
+      stroke-width: 1
+      stroke-dash: 4
+      font-color: ${accent}
+      font-size: 11
+      fill: "transparent"
+    }
+  }
+}
+
+tarp: {
+  class: level
+  label: |md
+    **Tarp** - Patch the symptom
+
+    _"Runbook: retry 3x, then ping Security"_
+  |
+}
+
+peak: {
+  class: level
+  label: |md
+    **Nearest Peak** - Optimize current framing
+
+    _"Tune scanner settings, update ignore lists"_
+  |
+}
+
+beyond: {
+  class: level
+  label: |md
+    **Beyond Nearest Peak** - Reframe the problem
+
+    _"Separate tool failure from policy failure"_
+  |
+}
+
+terraform: {
+  class: level
+  label: |md
+    **Terraform** - Reshape the environment
+
+    _"Delivery path where red can't block without diagnosis"_
+  |
+  style.fill: "#F8FAFC"
+  style.stroke-width: 3
+}
+
+tarp -> peak: {class: edge}
+peak -> beyond: {class: edge}
+beyond -> terraform: {class: edge}
+
+legend: {
+  class: note
+  label: "Leverage increases: artifact tweaks -> environment design"
+}

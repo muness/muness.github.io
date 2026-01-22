@@ -235,6 +235,16 @@ No one said it was impossible. That was the first crack.
 
 ---
 
+*The taxonomy that made failures diagnosable:*
+
+![Scanner Failure Taxonomy: Tool Down vs Misconfigured vs Policy Fail](viz/scanner-taxonomy.png)
+
+*The four levels of response—from patch to reshape:*
+
+![Solution Space: Tarp → Nearest Peak → Beyond → Terraform](viz/solution-space-gradient.png)
+
+---
+
 ## End-of-Episode Memo (Northstar)
 
 **What shifted**

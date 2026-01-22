@@ -214,6 +214,12 @@ By the end of week two, three teams had posted new distills without being asked,
 
 ---
 
+*The learning capsule that persists across sessions:*
+
+![Distill Output Format: Aim, Mechanism, Feedback, Failure Mode, Guardrail Candidate, Revisit Trigger, Tags](viz/distill-format.png)
+
+---
+
 ## End-of-Episode Memo (Northstar)
 
 **What shifted**
