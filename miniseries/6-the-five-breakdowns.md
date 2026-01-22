@@ -216,6 +216,8 @@ Learning is captured as prose, not as environment changes (guardrails, defaults,
 **Evidence**
 At CinderCloud, the team threw away a month of "best practice" docs and replaced them with a smaller system: distills, guardrails, a manifest template, and retrieval-at-need. A propagation pass then surfaced two sibling pipelines that should share the scanner-down guardrail, turning a local fix into a shared default. That was the first time learning stopped leaking across teams.
 
+The tell that it would stick was leadership championing, not compliance. Elena Park, the Platform Director, took it to engineering all-hands as a ten-minute live demo: one real distill, no slides, and a simple refrain that fit inside attention budgets: "retrieve first, distill always."
+
 **Leader move**
 Terraform one thing after every incident or major win. If nothing in the environment changes, the org will forget by default.
 
@@ -226,6 +228,8 @@ This is the smallest reusable sequence we want leaders to run.
 1) Start with /problem-space + /aim (write it down).
 2) Treat /review + /dissent as a safety system, not bureaucracy.
 3) When drift appears, /salvage immediately and terraform one thing before you restart.
+
+If you need a model for what "terraform one thing" looks like in practice, use Elena Park's move at CinderCloud: a ten-minute all-hands, one live distill, no slides, and a refrain anyone can repeat - "retrieve first, distill always."
 
 ## If You Only Measure Three Things
 

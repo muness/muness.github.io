@@ -24,7 +24,7 @@ The first scene of the engagement wasn’t a kickoff. It was a failure review.
 
 On a Monday, just after nine, three teams crowded into a glass room labeled “War.” A pipeline incident filled the screen: staging deploys blocked for six hours because the scanner went down and the approval bot flagged it as policy failure.
 
-“It’s the third time this quarter,” the Platform Director said, tapping the timeline. “Different team every time.”
+“It’s the third time this quarter,” Elena Park, the Platform Director, said, tapping the timeline. “Different team every time.”
 
 A senior engineer shrugged. “We’re not a factory. We’re supposed to innovate.”
 
@@ -62,7 +62,7 @@ Silence.
 
 Jonah leaned forward. “Retros are not retrieval. If it can’t show up when you need it, it’s not learning. It’s trivia.”
 
-The Platform Director frowned. “So what are you proposing? A wiki? Another tool?”
+Elena frowned. “So what are you proposing? A wiki? Another tool?”
 
 “No,” Jonah said. “A promotion gate. Learning is cheap now. Rules are expensive forever.”
 
@@ -96,7 +96,7 @@ He pulled up the manifest for the staging pipeline project. It had a single page
 
 Jonah added a new line to the pre-flight checklist: “Retrieve relevant learning.”
 
-“How do we do that without making it another scavenger hunt?” the Platform Director asked.
+“How do we do that without making it another scavenger hunt?” Elena asked.
 
 Jonah clicked into the manifest and ran a search by tags: staging, scanner, approvals, `/ship`. He dragged the results into the pre-flight section.
 
@@ -110,7 +110,7 @@ The room watched the pre-flight list populate with three short entries. The newe
 
 Myles nodded once. “Now you see the point.”
 
-The Platform Director crossed her arms. “Be honest. How long does this take on a good day?”
+Elena crossed her arms. “Be honest. How long does this take on a good day?”
 
 “Five minutes,” Jonah said. “Ten if the tags are a mess. The cost is a coffee. The payoff is not rebuilding a fix three times.”
 
@@ -130,9 +130,9 @@ A release engineer read from the pre-flight distill. “Last time, the scanner o
 
 Jonah snapped his fingers. “That’s not in the pipeline today. That’s why we’re stuck.”
 
-Kieran looked at the Platform Director. “We didn’t ignore this. We didn’t know it existed.”
+Kieran looked at Elena. “We didn’t ignore this. We didn’t know it existed.”
 
-The Director nodded slowly. “That’s the difference,” she said. “We’re not trying to remember. We’re trying to retrieve.”
+Elena nodded slowly. “That’s the difference,” she said. “We’re not trying to remember. We’re trying to retrieve.”
 
 ## /salvage (the primary artifact)
 
@@ -159,7 +159,7 @@ Kieran stared at the screen. “We used to argue in retros about writing this do
 Myles pointed at the guardrail candidate line. “Learning captured. Rule not promoted yet. That’s the split.”
 The propagation check pinged two other teams whose manifests carried the same scanner tags and asked if the candidate should apply there too. They left it as a suggestion until review.
 
-The Platform Director leaned back. “So this is the thing we keep. The code is disposable.”
+Elena leaned back. “So this is the thing we keep. The code is disposable.”
 
 Rina smiled. “Burn code, keep learning.”
 
@@ -167,7 +167,7 @@ The phrase stuck. Someone wrote it on the whiteboard and no one erased it.
 
 ## /ship (learning throttle)
 
-The next conflict was predictable. The Platform Director wanted outcomes yesterday. Myles wanted the delivery path to stop strangling feedback.
+The next conflict was predictable. Elena wanted outcomes yesterday. Myles wanted the delivery path to stop strangling feedback.
 
 He wrote `/ship` on the board and circled it. “If the delivery path is painful, learning stalls. If learning stalls, the next team repeats the same mistake. We don’t need a new pipeline. We need one chokepoint to stop choking.”
 
@@ -177,7 +177,7 @@ Jonah and Kieran paired with a CinderCloud release engineer and rewired the bot.
 
 The next deploy hit the same outage. This time, the approval bot displayed a warning, linked to the distill, and let the deploy proceed with a logged follow-up scan.
 
-The Platform Director looked at the timer. “Seven minutes,” she said. “We usually lose half a day.”
+Elena looked at the timer. “Seven minutes,” she said. “We usually lose half a day.”
 
 Myles said, “That’s the learning throttle. `/ship` isn’t about speed. It’s about feedback reaching the teams before the next team starts over.”
 
@@ -211,6 +211,27 @@ Later that afternoon, the lead walked past the War room and saw the whiteboard p
 
 It became one.
 
+The next morning Elena showed up in the War room with a coffee and no slides. She wrote the phrase on the whiteboard again, larger this time, and turned to the leads who had been drifting in.
+
+“We’ve tried ‘please read the docs,’” she said. “We’ve tried ‘remember what we learned.’ None of it scales. This does.”
+
+She pointed at the top of the pre-flight checklist. “From now on: every new project starts with retrieval. Every incident ends with a distill. If it’s not in the manifest, it doesn’t exist.”
+
+Someone started to object—*mandates*, *overhead*—and she cut it off before it could become a debate. “I’m not telling you which tools to use. I’m telling you what we keep. Five minutes up front is cheaper than six hours in this room.”
+
+The EmberGate lead raised a hand. “Can I steal that pre-flight step for my team’s kickoff today?”
+
+“Please,” Elena said, and smiled like it was the first good question she’d heard in months. She looked around the room. “Better: teach it. If you can show another team how to do it in ten minutes, we’ll make it the default.”
+
+She capped the marker and wrote two more lines under the phrase:
+
+RETRIEVE FIRST.
+DISTILL ALWAYS.
+
+“I want this in tomorrow’s engineering all-hands,” Elena said. “Ten minutes. No slides. One real distill, live. If it saves one team half a day, it pays for itself.”
+
+Kieran watched the shift happen in real time: not compliance, not politeness—relief. The method had moved out of Northstar’s hands and into the client’s reflex.
+
 By the end of week two, three teams had posted new distills without being asked, and the War room whiteboard carried the latest retrieval tags.
 
 ---
@@ -227,6 +248,7 @@ By the end of week two, three teams had posted new distills without being asked,
 - Advancement: CinderCloud moved from “individual wisdom” to “team-of-teams compounding.”
 - Retrieval replaced documentation; `/salvage` became the default artifact, not the retro doc.
 - `/ship` was treated as a learning throttle so feedback reached teams before mistakes repeated.
+- Elena Park started championing the method as a default reflex: “retrieve first, distill always.”
 
 **Commands used**
 - `/execute` as a shared habit, not a one-off
