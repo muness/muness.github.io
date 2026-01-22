@@ -157,6 +157,7 @@ Stored in: `manifest/learning/2026-01-21-staging-scanner-drift.md`
 Kieran stared at the screen. “We used to argue in retros about writing this down,” he said. “Now it’s the thing that saves us next week.”
 
 Myles pointed at the guardrail candidate line. “Learning captured. Rule not promoted yet. That’s the split.”
+The propagation check pinged two other teams whose manifests carried the same scanner tags and asked if the candidate should apply there too. They left it as a suggestion until review.
 
 The Platform Director leaned back. “So this is the thing we keep. The code is disposable.”
 

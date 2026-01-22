@@ -24,6 +24,7 @@ By the time he had a local branch, he had already spent half his energy on conte
 Later that afternoon he sat through a release sync and watched the same tax repeat in public. A teammate asked which service owned the partner webhook. Another asked if the new rule engine lived behind a feature flag. The answers came from two different people in two different threads, and neither answer included a link. Kieran copied both into a scratch file called `notes-kieran.txt` with a plan to clean it up later. He never did. The scratch file grew anyway, a private map of the system that only he could navigate.
 
 The next morning, he opened yet another agent session. He pasted in the ticket again, read the response again, and still felt the instinct to check with a human before he trusted it. The default path still ran through him.
+Each session was an orphan: no context carryover, no remembered aim, no guardrails carried forward. He reintroduced them by hand, every time.
 
 Myles saw the pattern first. He had asked Jonah to scrape Kieran's last three sessions into a single diff. He didn't bring it up in front of anyone. He waited until Kieran was in the Northstar room with his second coffee.
 
@@ -160,6 +161,7 @@ Kieran skimmed it and felt the shape of his own habits. "This is what I do in my
 "Exactly," Myles said. "Primitive doesn't mean wrong. It means you're paying the cost repeatedly."
 
 Rina slid her notebook across. "We should anchor the injections around a short dive pack," she said. "Aim, constraints, landmines, and a pointer to this manifest. That's enough to stop the chaos dragon without scaring people."
+She added, "And make it carryover by default, not copy‑paste. The session should start where the last one ended."
 
 Jonah looked up. "And we need to name a rule about guardrails expiring. Otherwise this thing becomes a museum."
 
@@ -180,6 +182,7 @@ Kieran leaned forward. "If we do that, won't we slow them down?"
 "We speed them up," Rina said. "We reduce search and negotiation. If you don't know which doc is real, you have to find a person. That's the tax."
 
 Myles opened a second page and started to list the actual sources. The repo map. The service ownership register. The deployment runbook. The policy exceptions log. The decision register. He kept it tight.
+Next to each entry he added the short ID and a note: jump‑to only works if the IDs are real. One jump to the authoritative doc, no hunt.
 
 Kieran felt it click again. "You're collapsing the search cost. That's the point."
 

@@ -214,7 +214,7 @@ Learning is captured as prose, not as environment changes (guardrails, defaults,
 - Use /review to prevent guardrails from ossifying; apply sunset clauses.
 
 **Evidence**
-At CinderCloud, the team threw away a month of "best practice" docs and replaced them with a smaller system: distills, guardrails, a manifest template, and retrieval-at-need. That was the first time learning stopped leaking across teams.
+At CinderCloud, the team threw away a month of "best practice" docs and replaced them with a smaller system: distills, guardrails, a manifest template, and retrieval-at-need. A propagation pass then surfaced two sibling pipelines that should share the scanner-down guardrail, turning a local fix into a shared default. That was the first time learning stopped leaking across teams.
 
 **Leader move**
 Terraform one thing after every incident or major win. If nothing in the environment changes, the org will forget by default.

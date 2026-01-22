@@ -184,6 +184,16 @@ Checks:
 
 Rina held the checklist up. “Let’s use it right now. We don’t need a ceremony; we need the move.”
 
+She waved to the doorway and pulled in Mara from Customer Success, who had been waiting for a ride. “You don’t write code, right?” Rina asked.
+
+Mara shook her head. “I read contracts and renewal notes.”
+
+“Perfect,” Rina said, handing her the checklist and the draft aim. “Tell us if this would keep your customers.”
+
+Mara scanned the aim line and the constraints list. “It never says on-time delivery,” she said. “If that isn’t explicit, the agent will optimize margin and we’ll break trust.” She tapped the missing contract clause. “And this clause is invisible. That’s a fail before the code starts.”
+
+The room shifted. No one had to explain a data pipeline. The system had already done its job.
+
 She drew a new header and spoke the command aloud.
 
 ## /review
