@@ -1,0 +1,47 @@
+---
+title: Open Horizons
+subtitle: A Business Novel
+author: Muness Castle
+lang: en-US
+date: 2026
+
+# EPUB settings
+epub-cover-image: cover.png
+css: epub.css
+
+# TOC settings
+toc: true
+toc-depth: 2
+toc-title: Contents
+
+# Typography
+mainfont: Georgia
+sansfont: Helvetica
+monofont: "JetBrains Mono"
+
+# Metadata
+publisher: Open Horizons Press
+rights: "Copyright 2026 Muness Castle. All rights reserved."
+description: |
+  A lightly fictionalized "agency novel" in the tradition of Goldratt's
+  The Goal and Lencioni's fables. Each episode is a client engagement
+  that forces the team to make one Open Horizons move real.
+
+# EPUB-specific
+epub-chapter-level: 1
+epub-metadata: null
+
+# PDF settings (for LaTeX)
+documentclass: book
+papersize: a5
+fontsize: 11pt
+geometry:
+  - margin=0.75in
+  - top=1in
+  - bottom=1in
+header-includes:
+  - \usepackage{xcolor}
+  - \definecolor{commandbg}{RGB}{245,245,250}
+  - \definecolor{commandborder}{RGB}{100,100,120}
+  - \usepackage{mdframed}
+---
