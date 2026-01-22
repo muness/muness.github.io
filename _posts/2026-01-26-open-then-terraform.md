@@ -22,6 +22,9 @@ AI changed the economics. Here's the causal chain:
 3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact. (A recent METR study found that AI tools actually *slowed* experienced programmers by ~19%—the gains in generation were eaten by verification overhead.)
 4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
+This is not a call to make agents move faster. They already move fast enough.
+The bottleneck is us: our ability to steer the search, verify what matters, and then make the winning path durable so the next person gets the benefit by default.
+
 That does not mean the job is "use AI tools." It means the bottleneck moved.
 
 The binding constraints are the ones that still cost what they always cost. Call all of that **"physics"**—the constraints you cannot wish away: real physics, but also incentives, org politics, legacy code, user behavior, time.
@@ -111,6 +114,32 @@ The stabilize half isn't abstract. It's a loop—and the loop is search governan
 
 If you've been reading along: this is the operational core behind {% post_url 2026-01-12-taming-the-chaos-dragon %}, and it composes directly with {% post_url 2026-01-07-the-salvage-loop-keep-learning-drop-the-code %}.
 
+## Agile Was Learning → Structure (and We Need the Next Version)
+
+Agile was never “go fast.” At its best, it was a learning system:
+
+- shorten the feedback loop
+- learn what’s true
+- turn that learning into a shared structure (backlogs, tests, definitions of done, working agreements)
+
+That is exactly the instinct I’m describing here: **harvest learning into constraints**.
+
+The problem is that a lot of agile practice hardened into *ritual structure* rather than *terrain structure*.
+It optimized for a world where code was expensive, change was risky, and “keeping the team aligned” required frequent ceremony.
+
+Now drafts are cheap, and the failure mode has shifted:
+
+- We don’t lose because we can’t produce artifacts.
+- We lose because we can’t reliably converge on truth, and then make that truth durable.
+
+The “next agile” is less about sprints and more about a pipeline for making the team collectively right:
+
+- **Gather learning** (probes, demos, user contact, failures, drift signals)
+- **Harvest learning** (decisions, guardrails, paved roads, default workflows)
+- **Prune structure** (remove guardrails that don’t pay rent; keep the minimum viable rails)
+
+Terraforming is agile’s original spirit—learning into structure—pushed one layer down, into the environment that makes good work the default.
+
 ## Steer vs. Abort: The Fastest Way To Stop Thrash
 
 One of the weird new freedoms is that "start over" stops being tragic and starts being rational.
@@ -193,6 +222,12 @@ The tool version is practical today. The terraform version is the direction.
 **Terraform version:** What if ungrounded work couldn't merge? What if the CI rejected commits without linked intent? What if reversal rate automatically triggered review?
 
 The tool version relies on discipline. The terraform version makes discipline unnecessary.
+
+There's a prerequisite that gets missed: shared comprehension.
+
+In practice, teams don't resist better tools because they're irrational. They resist because the move is outside their current solution space, so it doesn't feel *real*. Before you can terraform a workflow, you often have to make one “lightbulb moment” visible: a small, concrete win that expands what the team believes is possible.
+
+That dynamic is the same thing I see in one-on-one persuasion: if the gap is comprehension, not interest, you need a ladder, not a leap. I unpack that more in {% post_url 2026-01-22-the-gap-is-comprehension %}.
 
 ### Systems: From Defaults to Impossibility
 
