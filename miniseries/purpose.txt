@@ -1,0 +1,11 @@
+Purpose
+
+Ideal reader:
+- Engineering leaders, staff/principal engineers, and product/ops leads who feel AI increased output but not coherence.
+- Teams stuck in “pilot purgatory,” tool debates, or delivery-path drag who want a repeatable system, not a new tool.
+- Readers who like the Phoenix Project / Lencioni style: story-driven lessons with concrete moves.
+
+Core takeaway:
+- Speed isn’t the constraint; alignment, verification, and durable learning are.
+- Open Horizons is a system for making teams collectively right: Aim → Do → Reflect, then terraform the environment so good work becomes the default.
+- Use agents to widen options, but use guardrails, review, dissent, and salvage to keep the search governed and the learning compounding.
