@@ -4,7 +4,7 @@ KiteRail Logistics had the opposite problem from Harborview.
 
 Harborview was slow and resigned. KiteRail was fast and scattered.
 
-They had pilots everywhere: agents drafting specs, agents summarizing meetings, agents writing ETL scripts, agents “helping” with incidents. Each team had its own workspace, its own plugin list, its own way of asking. Every demo looked great. Nothing compounded. The pattern was polite chaos — impressive outputs, no shared yardstick, no reuse.
+They had pilots everywhere: agents drafting specs, agents summarizing meetings, agents writing ETL scripts, agents “helping” with incidents. Each team had its own workspace, its own plugin list, its own way of asking. Every demo looked great. Nothing compounded. The pattern was polite chaos — impressive outputs, no shared yardstick, no reuse. In logistics, small errors compound into real money: missed delivery SLAs triggered rebates, and a pricing mistake could erase a quarter’s margin on a lane.
 
 One team claimed it saved 40% of its time. Another said it had slowed them down. No one could explain the difference. Success depended on the person in the room, not the system around them. Incidents still escalated to the same on-call thread, and the path from merged code to working install was just as brittle as last quarter.
 
@@ -18,7 +18,7 @@ Talia, a senior engineer from Pricing, shared her screen. An agent was generatin
 
 It optimized a discount metric that no longer existed. It normalized for a demand signal KiteRail didn’t measure. It violated a customer contract clause that lived in a Confluence page nobody updated.
 
-Talia stopped it, corrected it, and restarted. The agent drifted again, now optimizing for margin at the expense of on-time delivery — a KPI the COO had personally tied to renewal.
+Talia stopped it, corrected it, and restarted. The agent drifted again, now optimizing for margin at the expense of on-time delivery — a KPI the COO had personally tied to renewal. Last week a pilot team had shipped without a /review pass and violated a carrier clause; the rebates hit before anyone noticed the dashboard.
 
 A product manager shrugged. “It’s almost there,” she said.
 
@@ -160,6 +160,8 @@ Rina added a line below the bullets. “Two consecutive /review passes where the
 Kieran scratched his chin. “So the criteria isn’t a demo. It’s a repeatable move.”
 
 Myles nodded. “Exactly.”
+
+Dax didn’t look up. “And if it doesn’t hit the criteria, we shut the pilot down,” he said. “No zombie pilots. We either fix the loop or we stop calling it a pilot.”
 
 Kieran frowned, then nodded. “Okay. That’s at least falsifiable.”
 

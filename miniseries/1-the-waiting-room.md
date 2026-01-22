@@ -35,7 +35,7 @@ There was a pause. Dana read the bullets twice.
 
 “I mean, yes,” she said. “But… that’s just how it is.”
 
-She scrolled on her own sheet. “We also have dual attestation for anything touching patient billing. It’s policy. That adds a day. Then Security needs a clean scan before change control will sign. If the scan goes red, the approvals expire. So we start over.”
+She scrolled on her own sheet. “We also have dual attestation for anything touching patient billing. It’s policy. That adds a day. Then Security needs a clean scan before change control will sign. If the scan goes red, the approvals expire. So we start over.” She added, almost casually, “A red scan starts a remediation clock. Compliance gets notified, and the window is public inside the hospital. Nobody wants to be the name on that.”
 
 “That’s a delivery‑path tax,” Jonah said. “You’re paying it in attention, not just time.”
 

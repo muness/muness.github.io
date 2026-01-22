@@ -1,6 +1,6 @@
 # Episode 5 — Distill (Team of Teams)
 
-CinderCloud was a platform organization with a familiar smell: good people, fast motion, and institutional amnesia.
+CinderCloud was a platform organization with a familiar smell: good people, fast motion, and institutional amnesia. Their enterprise customers had penalty clauses for prolonged outages, so “repeat the same failure” wasn’t just embarrassing—it was billable.
 
 Every new team repeated the same arc:
 

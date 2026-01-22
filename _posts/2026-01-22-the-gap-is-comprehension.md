@@ -33,6 +33,8 @@ When I say “comprehension gap”, I don’t mean intelligence. I mean *frames*
 
 If what you say lands far outside the listener’s current solution space, they can’t evaluate it. Sometimes they can’t even *parse* it. So it doesn’t register as “wrong.” It registers as “noise.”
 
+Example: if a leader’s solution space for “AI” is “chatbot,” a proposal about agentic workflows sounds like gibberish. The words parse. The move doesn’t.
+
 Persuasion is not mainly “having better arguments.”
 It’s *bringing someone across a representational gap*.
 
@@ -60,6 +62,8 @@ If the gap is comprehension, the move is sequencing: build a ladder.
 3. **Explain the mechanism only after the evidence.** Don’t lead with the spaceship.
 4. **Repeat until the new idea becomes *thinkable*.** Not “believable.” Thinkable.
 
+The moment it becomes thinkable, people start objecting. Objections are progress: it means they can finally evaluate the move.
+
 This is why “cheat sheets” work. They don’t just explain. They narrow the gap enough for people to try the thing once and feel it.
 
 ## Terraforming the Comprehension Gap
@@ -67,6 +71,8 @@ This is why “cheat sheets” work. They don’t just explain. They narrow the 
 This is one reason I care so much about “terraforming” work: changing the environment so the right move becomes normal.
 
 In a team or org, comprehension is part of that environment. You can’t terraform what people can’t yet *see*.
+
+The same dynamic I feel one‑on‑one shows up at scale: teams don’t resist new tools because they’re irrational; they resist because the move is outside their current solution space.
 
 So the sequencing matters:
 
@@ -79,6 +85,8 @@ This ties directly to {% post_url 2026-01-26-open-then-terraform %}: terraformin
 
 Another way to say it: the best version of agile was always “turn learning into shared structure.”
 What we need now is a version that turns learning into *terrain*—guardrails, defaults, and practices that make harnessing agents feel normal instead of heroic.
+
+I’ve been on the other side of the gap too. A friend once explained a compiler trick to me—perfectly clear, in hindsight. In the moment it was just words. It took one tiny demo for it to become thinkable, and only then did I have a real opinion.
 
 ## A Practical Script
 

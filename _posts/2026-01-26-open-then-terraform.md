@@ -15,11 +15,11 @@ Open Horizons is a practice for expanding what's possible and converting learnin
 
 When I'm trying to ship something real, I'm not short on drafts. I'm short on truth. The job is progress: turning messy reality into an outcome that holds up when users touch it, when systems integrate, when constraints bite.
 
-AI changed the economics. Here's the causal chain:
+AI changed the economics. Drafts are cheap; truth is not. Here's the causal chain:
 
 1. **Generation got cheap.** Options, prototypes, and rewrites are almost free.
 2. **The search space exploded.** The range of possible approaches you can explore widened dramatically.
-3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact. (A recent METR study found that AI tools actually *slowed* experienced programmers by ~19%—the gains in generation were eaten by verification overhead.)
+3. **Verification stayed expensive.** Reality still costs: testing, integration, safety, user impact. (Some early evaluations, e.g. [METR](https://metr.org), report slowdowns for experienced developers when verification overhead dominates.)
 4. **Attention stayed scarce.** Cognitive load is a hard constraint.
 
 This is not a call to make agents move faster. They already move fast enough.
@@ -27,7 +27,7 @@ The bottleneck is us: our ability to steer the search, verify what matters, and 
 
 That does not mean the job is "use AI tools." It means the bottleneck moved.
 
-The binding constraints are the ones that still cost what they always cost. Call all of that **"physics"**—the constraints you cannot wish away: real physics, but also incentives, org politics, legacy code, user behavior, time.
+The binding constraints are the ones that still cost what they always cost. Call all of that **"physics"**—constraints that don’t care what you want: incentives, org politics, legacy code, user behavior, time.
 
 So there are two moves:
 
@@ -38,7 +38,7 @@ So there are two moves:
 
 If exploration finds the path, terraforming reshapes the landscape so the old obstacles aren't there anymore.
 
-This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make the gains permanent.
+This maps to the Aim. Do. Reflect loop from {% post_url 2025-09-08-open-horizons %}. Terraforming is how you make the gains permanent. It’s also why the “next agile” is about turning learning into terrain, not just repeating rituals.
 
 > **Terraform vs Tools**
 >

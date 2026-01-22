@@ -3,6 +3,7 @@
 SablePay was the client you hired Northstar for when you wanted to ship fast and clean.
 
 They had strong engineers and a good product. They also had a quiet leak: every project relied on a few people remembering how things worked. The rest of the team spent their time reloading context.
+In fintech, that tax is expensive: a wrong webhook can freeze money movement, and an audit finding turns into months of paperwork.
 
 Kieran liked SablePay immediately. "This is my kind of place," he said on day two. "Minimal ceremony. Smart people. They move."
 
