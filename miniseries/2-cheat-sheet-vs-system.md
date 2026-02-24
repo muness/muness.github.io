@@ -93,14 +93,14 @@ Myles drew four boxes on the whiteboard and titled the next section.
 
 ## /solution-space
 
-**Tarp:** write a cheat sheet; tell teams “try harder.”  
-**Nearest Peak:** standardize a toolchain; hope uniformity creates quality.  
-**Beyond the Nearest Peak:** standardize a learning loop (pre-flight, review, salvage), not the exact tools.  
-**Terraform:** build defaults + guardrails so “drift” becomes loud, and “wrong” becomes difficult.
+**Band-aid:** write a cheat sheet; tell teams "try harder."
+**Local optimum:** standardize a toolchain; hope uniformity creates quality.
+**Reframe:** standardize a learning loop (pre-flight, review, salvage), not the exact tools.
+**Redesign:** build defaults + guardrails so "drift" becomes loud, and "wrong" becomes difficult.
 
-Myles circled the first box. “A tarp is what you throw over a leak when you need to ship. It works for a storm. If you leave it there, you’re living under tarps.”
+Myles circled the first box. "A band-aid is what you slap on a problem when you need to ship. It works for a day. If you leave it there, you're living under band-aids."
 
-He underlined “Terraform.” “Terraforming is when the environment stops producing the same failure. It’s harder work, but it sticks.”
+He underlined "Redesign." "Redesigning is when the environment stops producing the same failure. It's harder work, but it sticks."
 
 Talia glanced at the demo. “I just want the thing to stop drifting,” she said.
 

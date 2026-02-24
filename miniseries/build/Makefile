@@ -13,7 +13,8 @@ CHAPTERS := $(SRC_DIR)/1-the-waiting-room.md \
             $(SRC_DIR)/3-the-manifest.md \
             $(SRC_DIR)/4-guardrails-make-opinions-real.md \
             $(SRC_DIR)/5-distill-team-of-teams.md \
-            $(SRC_DIR)/6-the-five-breakdowns.md
+            $(SRC_DIR)/6-the-five-breakdowns.md \
+            $(SRC_DIR)/cheat-sheet.md
 
 ALL_SOURCES := $(FRONT_MATTER) $(CHAPTERS)
 
@@ -57,7 +58,7 @@ $(EPUB): $(ALL_SOURCES) $(METADATA) $(CSS)
 	@echo "Building EPUB..."
 	pandoc $(ALL_SOURCES) \
 		--metadata-file=$(METADATA) \
-		--resource-path=$(SRC_DIR) \
+		--resource-path=$(SRC_DIR):$(SRC_DIR)/viz \
 		--css=$(CSS) \
 		--toc \
 		--toc-depth=2 \
@@ -73,6 +74,7 @@ $(PDF): $(ALL_SOURCES) $(METADATA)
 	@echo "Building PDF..."
 	pandoc $(ALL_SOURCES) \
 		--metadata-file=$(METADATA) \
+		--resource-path=$(SRC_DIR):$(SRC_DIR)/viz \
 		--toc \
 		--toc-depth=2 \
 		--pdf-engine=xelatex \

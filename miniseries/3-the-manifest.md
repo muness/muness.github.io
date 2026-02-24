@@ -128,7 +128,7 @@ New statement: "How do we package local wisdom so the next session starts closer
 
 Kieran stared at the line. "That's... different."
 
-"That's the point," Myles said. "If your statement doesn't change, you keep building tarps."
+"That's the point," Myles said. "If your statement doesn't change, you keep building band-aids."
 
 Jonah added a note under it.
 
@@ -161,7 +161,7 @@ Kieran skimmed it and felt the shape of his own habits. "This is what I do in my
 "Exactly," Myles said. "Primitive doesn't mean wrong. It means you're paying the cost repeatedly."
 
 Rina slid her notebook across. "We should anchor the injections around a short dive pack," she said. "Aim, constraints, landmines, and a pointer to this manifest. That's enough to stop the chaos dragon without scaring people."
-She added, "And make it carryover by default, not copy‑paste. The session should start where the last one ended."
+She added, "And make it carryover by default, not copy-paste. The session should start where the last one ended."
 
 Jonah looked up. "And we need to name a rule about guardrails expiring. Otherwise this thing becomes a museum."
 
@@ -182,7 +182,7 @@ Kieran leaned forward. "If we do that, won't we slow them down?"
 "We speed them up," Rina said. "We reduce search and negotiation. If you don't know which doc is real, you have to find a person. That's the tax."
 
 Myles opened a second page and started to list the actual sources. The repo map. The service ownership register. The deployment runbook. The policy exceptions log. The decision register. He kept it tight.
-Next to each entry he added the short ID and a note: jump‑to only works if the IDs are real. One jump to the authoritative doc, no hunt.
+Next to each entry he added the short ID and a note: jump-to only works if the IDs are real. One jump to the authoritative doc, no hunt.
 
 Kieran felt it click again. "You're collapsing the search cost. That's the point."
 
@@ -242,7 +242,7 @@ Rina smiled. That was the moment. Not compliance. Comprehension.
 
 *The loop that prevents drift and captures learning:*
 
-![The /execute Loop: Pre-flight → Build → Drift? → Salvage/Ship](viz/execute-loop.png)
+![The /execute Loop: Pre-flight -> Build -> Drift? -> Salvage/Ship](viz/execute-loop.png)
 
 ---
 

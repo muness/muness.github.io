@@ -67,25 +67,25 @@ Myles pushed the marker back to Jonah. "Run /solution-space. Make it real."
 
 Jonah wrote quickly.
 
-**Tarp:** add a checklist. "Did you think about safety?"
+**Band-aid:** add a checklist. "Did you think about safety?"
 
-**Nearest Peak:** add more review steps. Slow everything down.
+**Local optimum:** add more review steps. Slow everything down.
 
-**Beyond the Nearest Peak:** make verification cheap. Better tests, better simulators, better fixtures.
+**Reframe:** make verification cheap. Better tests, better simulators, better fixtures.
 
-**Terraform:** make unsafe moves hard or impossible. Linters, gates, typed boundaries, policy-as-code.
+**Redesign:** make unsafe moves hard or impossible. Linters, gates, typed boundaries, policy-as-code.
 
 The director stared at the list. "What's the trade?"
 
-"Nearest Peak makes us feel safe without making us safe," Rina said. "Beyond is expensive. Terraform is enforceable."
+"Local optimum makes us feel safe without making us safe," Rina said. "Reframe is expensive. Redesign is enforceable."
 
 "Phase gates keep the irreversible moves honest," Jonah said. "If a change is one-way, we make it pass a gate that proves reversibility or forces rollback readiness."
 
-Myles tapped Terraform. "This is how we turn opinions into constraints."
+Myles tapped Redesign. "This is how we turn opinions into constraints."
 
 Kieran said, "I keep stopping the agent when it does something wrong. I don't encode the rule."
 
-Jonah pointed at the word Terraform. "We encode it or we repeat it."
+Jonah pointed at the word Redesign. "We encode it or we repeat it."
 
 The director hesitated. "You're talking about more rules."
 
@@ -253,7 +253,7 @@ Myles watched the release complete. "Belief isn't a pep talk," he said. "It's a 
 
 **Commands used**
 - `/aim` to define safety as an outcome, not a feeling
-- `/solution-space` to choose terraform over bureaucracy
+- `/solution-space` to choose redesign over bureaucracy
 - `/dissent` to keep guardrails small, intentional, and deletable
 - `/execute` to run a narrow slice and surface drift early
 - `/review` to force second opinions before merge

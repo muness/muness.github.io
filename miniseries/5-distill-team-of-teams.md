@@ -84,7 +84,7 @@ Myles capped the marker and drew a box around the new problem statement. “We�
 
 Myles drew the loop on the whiteboard.
 
-Pre-flight → build → detect drift → salvage → restart clean.
+Pre-flight -> build -> detect drift -> salvage -> restart clean.
 
 He wrote `/execute` above it and turned to the room. “This is the easy part,” he said. “Anyone can run a loop. The hard part is what you do with the learning so the next team starts in a better place.”
 

@@ -47,12 +47,12 @@ Jonah drew four boxes on the whiteboard and labeled them without looking up.
 
 ## /solution-space
 
-**Tarp:** list commands with definitions.  
-**Nearest Peak:** list breakdowns without evidence.  
-**Beyond:** tie each breakdown to a scene and a corrective command.  
-**Terraform:** end with reusable artifacts leaders can lift.
+**Band-aid:** list commands with definitions.
+**Local optimum:** list breakdowns without evidence.
+**Reframe:** tie each breakdown to a scene and a corrective command.
+**Redesign:** end with reusable artifacts leaders can lift.
 
-"Beyond plus Terraform," Dax said. "We show the scenes and ship the artifacts."
+"Reframe plus Redesign," Dax said. "We show the scenes and ship the artifacts."
 
 "Then we /execute the memo like we do everything else," Myles said. "Three passes."
 
@@ -141,16 +141,16 @@ Require a written /problem-space before work starts. Treat it like a safety chec
 ### Breakdown 2: The Problem Statement Never Changes (So the Solution Space Stays Small)
 
 **Symptoms**
-- Teams keep applying tarps to the same leak.
+- Teams keep applying band-aids to the same leak.
 - Tool debates substitute for outcome debates.
 - "We're waiting for X tool" becomes the plan.
 
 **Root constraint**
-Framing is treated as fixed, so the solution space stays trapped in the nearest peak.
+Framing is treated as fixed, so the solution space stays trapped in the local optimum.
 
 **Corrective commands**
 - Force a /problem-statement rewrite before deep execution.
-- Run /solution-space explicitly: Tarp -> Nearest Peak -> Beyond -> Terraform.
+- Run /solution-space explicitly: Band-aid -> Local optimum -> Reframe -> Redesign.
 
 **Evidence**
 At KiteRail, the room was drifting toward a vendor fight until the /problem-statement changed from "make agents code faster" to "become collectively right." That opened the search for a shared loop instead of a shared tool.
@@ -198,7 +198,7 @@ At Aurum, an agent produced a clean-looking diff that failed in the lab. The tea
 **Leader move**
 Define drift signals and kill criteria before the work begins. If the team can't say when to stop, they won't.
 
-### Breakdown 5: No Terraforming (Learning Doesn't Compound)
+### Breakdown 5: No Redesigning (Learning Doesn't Compound)
 
 **Symptoms**
 - The same failures recur across teams and quarters.
@@ -219,7 +219,7 @@ At CinderCloud, the team threw away a month of "best practice" docs and replaced
 The tell that it would stick was leadership championing, not compliance. Elena Park, the Platform Director, took it to engineering all-hands as a ten-minute live demo: one real distill, no slides, and a simple refrain that fit inside attention budgets: "retrieve first, distill always."
 
 **Leader move**
-Terraform one thing after every incident or major win. If nothing in the environment changes, the org will forget by default.
+Redesign one thing after every incident or major win. If nothing in the environment changes, the org will forget by default.
 
 ## The Minimal Playbook (Three Moves)
 
@@ -227,9 +227,9 @@ This is the smallest reusable sequence we want leaders to run.
 
 1) Start with /problem-space + /aim (write it down).
 2) Treat /review + /dissent as a safety system, not bureaucracy.
-3) When drift appears, /salvage immediately and terraform one thing before you restart.
+3) When drift appears, /salvage immediately and redesign one thing before you restart.
 
-If you need a model for what "terraform one thing" looks like in practice, use Elena Park's move at CinderCloud: a ten-minute all-hands, one live distill, no slides, and a refrain anyone can repeat - "retrieve first, distill always."
+If you need a model for what "redesign one thing" looks like in practice, use Elena Park's move at CinderCloud: a ten-minute all-hands, one live distill, no slides, and a refrain anyone can repeat - "retrieve first, distill always."
 
 ## If You Only Measure Three Things
 
@@ -243,7 +243,7 @@ These metrics tell you whether the loop is working.
 
 *The diagnostic matrix—scan for the breakdown, apply the corrective command:*
 
-![The Five Breakdowns: No Shared Problem Space, Statement Never Changes, No Aim, Ungoverned Execution, No Terraforming](viz/five-breakdowns.png)
+![The Five Breakdowns: No Shared Problem Space, Statement Never Changes, No Aim, Ungoverned Execution, No Redesigning](viz/five-breakdowns.png)
 
 ---
 

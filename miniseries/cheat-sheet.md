@@ -1,49 +1,84 @@
-# Open Horizons — Quick Start (1 Page)
+# Quick Start — One Page to Rule Them All
+
+> *Tear this out. Tape it to your monitor. Let it judge you.*
 
 If you only have time for one page, use this to ground a session and keep agents from drifting.
 
-## 30‑Minute First Session
+---
 
-- **0–5 min: /aim** — Define the outcome as a behavior change, not a feature.
-- **5–10 min: /problem-space** — Name the optimization target and the constraints you treat as real.
-- **10–15 min: /problem-statement** — Rewrite until the solution space changes.
-- **15–25 min: /solution-space** — List Tarp, Nearest Peak, Beyond, Terraform; pick the smallest test that can teach you something.
-- **25–30 min: /execute + /review** — Build the smallest slice, review for drift, salvage if needed.
+## Your First 30 Minutes
 
-## The 9 Commands (Ground → Execute → Reflect)
+| Time | Command | What You're Doing |
+|------|---------|-------------------|
+| 0–5 min | `/aim` | Define the outcome as a behavior change, not a feature |
+| 5–10 min | `/problem-space` | Name the optimization target and real constraints |
+| 10–15 min | `/problem-statement` | Rewrite until the solution space changes |
+| 15–25 min | `/solution-space` | List options; pick the smallest test that teaches |
+| 25–30 min | `/execute` + `/review` | Build the slice, check for drift, salvage if needed |
 
-**Grounding**
-- `/problem-space` — What we optimize + real constraints  
-- `/problem-statement` — The frame that shapes solutions  
-- `/aim` — Outcome we want (behavior change)  
+---
 
-**Execution**
-- `/solution-space` — Tarp, Nearest Peak, Beyond, Terraform  
-- `/execute` — Pre‑flight, build, detect drift, salvage if needed  
-- `/ship` — Reduce friction from code to working install  
+## The 9 Commands
 
-**Reflection**
-- `/review` — Second opinion before committing  
-- `/dissent` — What would make this wrong?  
-- `/salvage` — Extract learning before restart  
+### Ground First
 
-## Red Flags (Stop and Reframe)
+| Command | Purpose |
+|---------|---------|
+| `/problem-space` | What we optimize + constraints we treat as real |
+| `/problem-statement` | The frame that shapes what solutions we can see |
+| `/aim` | The outcome we want (always a behavior change) |
 
-- **Outputs rise, outcomes don’t** → KPI theater  
-- **Pilots never graduate** → Pilot purgatory  
-- **Drafts multiply, truth doesn’t** → Ungoverned search  
-- **Third tarp on the same leak** → Tarp culture  
-- **Too big to learn, too small to matter** → Mid‑bar work  
-- **Big goals, no method** → Mandate without method  
+### Then Execute
 
-## Salvage Loop (When You’re Stuck)
+| Command | Purpose |
+|---------|---------|
+| `/solution-space` | Band-aid -> Local optimum -> Reframe -> Redesign |
+| `/execute` | Pre-flight, build, detect drift, salvage if needed |
+| `/ship` | Reduce friction from code to working install |
 
-1. **Name the drift** in one sentence (what went wrong + why).  
-2. **Extract learning**: one guardrail + one metis.  
-3. **Reset the aim** or constraints, then restart clean.  
+### Always Reflect
 
-## If You Remember Only Three Things
+| Command | Purpose |
+|---------|---------|
+| `/review` | Second opinion before committing |
+| `/dissent` | What would make this wrong? |
+| `/salvage` | Extract learning before restart |
 
-1. **Align before you accelerate.**  
-2. **Learning is the asset; code is a draft.**  
-3. **Terraform beats tarps.**  
+---
+
+## Red Flags
+
+*When you see these, stop and reframe.*
+
+| Signal | Name | Translation |
+|--------|------|-------------|
+| Outputs rise, outcomes don't | **KPI Theater** | You're optimizing the scoreboard |
+| Pilots never graduate | **Pilot Purgatory** | Fear of commitment masked as prudence |
+| Drafts multiply, truth doesn't | **Ungoverned Search** | Motion without convergence |
+| Third band-aid on the same leak | **Band-aid addiction** | Workarounds have become the system |
+| Too big to learn, too small to matter | **Mid-Bar Work** | Safe mediocrity |
+| Big goals, no method | **Mandate Without Method** | Ambition without a path |
+
+---
+
+## The Salvage Loop
+
+*When you're stuck, run this in order:*
+
+1. **Name the drift** — One sentence: what went wrong + why
+2. **Extract learning** — One guardrail + one metis
+3. **Reset** — Adjust the aim or constraints, then restart clean
+
+---
+
+## Three Things Worth Remembering
+
+> **Align before you accelerate.**
+
+> **Learning is the asset; code is a draft.**
+
+> **Redesign beats band-aids.**
+
+---
+
+*Now close this book and build something.*

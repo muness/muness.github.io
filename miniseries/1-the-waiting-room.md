@@ -2,7 +2,7 @@
 
 Rina kept her camera off. She said it was “bandwidth,” but Myles had learned to hear the other meaning: *containment*. If she was off-camera, she could keep her face neutral. She could absorb tension without reflecting it back.
 
-Ten minutes before the call, Myles had asked if Harborview still released twice a week. Rina had given him a look that said *it doesn’t matter*. Twice a week, twice a month, the delivery path was the same: long, brittle, and filled with stop‑signs nobody believed in but everyone obeyed.
+Ten minutes before the call, Myles had asked if Harborview still released twice a week. Rina had given him a look that said *it doesn’t matter*. Twice a week, twice a month, the delivery path was the same: long, brittle, and filled with stop-signs nobody believed in but everyone obeyed.
 
 “Today isn’t about fixes,” Rina had said as she clicked into the meeting. “We’re here to make their apathy visible. If we can show it, we can move it.”
 On the call, Harborview Health’s release manager, Dana Patel, read from a spreadsheet like a prayer.
@@ -23,13 +23,13 @@ Dana kept reading. “Also: build 1472 sat in approval for six hours because Sec
 
 Rina came on audio. “Thanks, Dana. We’re here to help. Let’s start by mapping the constraints we treat as real. That’s the only way we stop pretending.”
 
-She waited until Dana nodded, then gave Myles the go‑ahead. He opened a shared doc and typed in full view of the room.
+She waited until Dana nodded, then gave Myles the go-ahead. He opened a shared doc and typed in full view of the room.
 
 ## /problem-space
 
 **What we’re optimizing:** safe deployments that happen reliably during business hours.  
 **Constraints we treat as real:** compliance gates, audit trails, limited IT support, weekend staffing.  
-**Constraints we should question:** manual approvals, non‑deterministic scanners, “retry until green.”
+**Constraints we should question:** manual approvals, non-deterministic scanners, “retry until green.”
 
 There was a pause. Dana read the bullets twice.
 
@@ -37,7 +37,7 @@ There was a pause. Dana read the bullets twice.
 
 She scrolled on her own sheet. “We also have dual attestation for anything touching patient billing. It’s policy. That adds a day. Then Security needs a clean scan before change control will sign. If the scan goes red, the approvals expire. So we start over.” She added, almost casually, “A red scan starts a remediation clock. Compliance gets notified, and the window is public inside the hospital. Nobody wants to be the name on that.”
 
-“That’s a delivery‑path tax,” Jonah said. “You’re paying it in attention, not just time.”
+“That’s a delivery-path tax,” Jonah said. “You’re paying it in attention, not just time.”
 
 “Attention is finite,” Rina added. “Meetings are serial. The tax compounds.”
 
@@ -85,10 +85,10 @@ Myles drew a line down the page and labeled a new section.
 
 ## /solution-space
 
-**Tarp:** add a runbook. “If scan fails, retry three times, then ping Security.”  
-**Nearest Peak:** tune scanner settings, update ignore lists, hope the flakes stop.  
-**Beyond the Nearest Peak:** isolate scanning to smaller artifacts; cache results; add retries with evidence; separate “scanner down” from “real vuln.”  
-**Terraform:** change the delivery path so “random red” can’t block progress without a diagnosis.
+**Band-aid:** add a runbook. "If scan fails, retry three times, then ping Security."
+**Local optimum:** tune scanner settings, update ignore lists, hope the flakes stop.
+**Reframe:** isolate scanning to smaller artifacts; cache results; add retries with evidence; separate "scanner down" from "real vuln."
+**Redesign:** change the delivery path so "random red" can't block progress without a diagnosis.
 
 The room was quiet. Not engaged quiet. The other quiet. The one where people wait for the meeting to end so they can go back to the system they don’t believe can change.
 
@@ -102,7 +102,7 @@ The doc cursor blinked like a dare. Myles exhaled. A door.
 
 What would make this wrong?
 - If scan failures are always real vulnerabilities (they aren’t).
-- If compliance requires manual re‑approval on retry (it doesn’t).
+- If compliance requires manual re-approval on retry (it doesn’t).
 - If we can’t separate tool failure from policy failure (we can).
 
 The security lead, Martin, spoke up for the first time. “Half our failures are network. It’s not that the code is unsafe. It’s that the scanner times out. We get paged because the tool hiccups.”
@@ -119,9 +119,9 @@ Myles felt a small click: the first piece of truth from inside the client. Not a
 
 Jonah typed a note beneath the dissent list. **tool failure masquerading as governance.**
 
-Rina, still off‑camera, said, “Thank you. That changes what we test tomorrow.”
+Rina, still off-camera, said, “Thank you. That changes what we test tomorrow.”
 
-The call ended the way most calls ended. Polite thanks. Follow‑ups. A ticket to investigate the scanner. Nothing changed yet.
+The call ended the way most calls ended. Polite thanks. Follow-ups. A ticket to investigate the scanner. Nothing changed yet.
 
 Rina kept the line open. “Dana, two minutes?”
 
@@ -167,22 +167,22 @@ Jonah opened a new page and titled it in the same shared doc. He read each line 
 **Purpose:** Separate tool failures from policy failures so `/execute` can target diagnostics, not debate.
 
 - **Tool down:** scanner service unavailable, timeout, network path unstable. Evidence: system logs, timeouts, status page.
-- **Tool misconfigured:** credentials expired, wrong endpoint, out‑of‑date signature DB. Evidence: auth errors, config diffs.
+- **Tool misconfigured:** credentials expired, wrong endpoint, out-of-date signature DB. Evidence: auth errors, config diffs.
 - **Policy fail:** real vulnerability exceeds threshold. Evidence: reproducible scan with package IDs.
 
 Rina said, “This is the first reusable thing Harborview can keep.”
 
-Myles circled the words *tool down* and *policy fail* with his cursor. “Those two categories are the difference between retrying and escalating. They’re the difference between an on‑call night and a normal night.”
+Myles circled the words *tool down* and *policy fail* with his cursor. “Those two categories are the difference between retrying and escalating. They’re the difference between an on-call night and a normal night.”
 
 Kieran stared at the taxonomy longer than he wanted to. “Fine. That’s useful.”
 
 “Now we execute,” Myles said.
 
-He wrote the smallest slice that could test the mechanism and reduce heroics without asking for a re‑org.
+He wrote the smallest slice that could test the mechanism and reduce heroics without asking for a re-org.
 
 ## /execute
 
-Pre‑flight:
+Pre-flight:
 - agree on the taxonomy categories and the evidence required for each
 - pick one service in staging and one scan window
 
@@ -217,13 +217,13 @@ Rina smiled, barely. “A checklist that removes two meetings. That’s a win.�
 
 ---
 
-They booked a fifteen‑minute follow‑up with Harborview for the next morning. Dana joined from her kitchen, hair wet, coffee in hand.
+They booked a fifteen-minute follow-up with Harborview for the next morning. Dana joined from her kitchen, hair wet, coffee in hand.
 
 Myles didn’t waste the time. “We have a slice. It doesn’t ask you to change policy. It asks you to stop guessing.”
 
 He shared the taxonomy. Dana read it twice.
 
-“Tool down versus policy fail,” she said slowly. “That would cut our back‑and‑forth in half.”
+“Tool down versus policy fail,” she said slowly. “That would cut our back-and-forth in half.”
 
 “And it keeps the gate intact,” Rina added. “It just makes the gate honest.”
 
@@ -241,7 +241,7 @@ No one said it was impossible. That was the first crack.
 
 *The four levels of response—from patch to reshape:*
 
-![Solution Space: Tarp → Nearest Peak → Beyond → Terraform](viz/solution-space-gradient.png)
+![Solution Space: Band-aid -> Local optimum -> Reframe -> Redesign](viz/solution-space-gradient.png)
 
 ---
 
@@ -252,16 +252,16 @@ No one said it was impossible. That was the first crack.
 - Apathy cracked when Harborview saw a slice that reduced heroics without touching policy.
 
 **Commands used**
-- `/problem-space` to separate physics from self‑inflicted pain
+- `/problem-space` to separate physics from self-inflicted pain
 - `/aim` to define “no heroics” as the outcome
-- `/solution-space` to make “tarp vs terraform” explicit
+- `/solution-space` to make "band-aid vs redesign" explicit
 - `/dissent` to pull truth out of the room
 - `/problem-statement` to shift from “stop failures” to “diagnose and recover”
 - `/execute` to turn the new statement into a falsifiable slice
 
 **Artifacts produced**
-- **Scanner Failure Taxonomy v0:** tool down vs misconfig vs policy fail, with evidence for each; used to route next‑day diagnostics.
+- **Scanner Failure Taxonomy v0:** tool down vs misconfig vs policy fail, with evidence for each; used to route next-day diagnostics.
 - **Harborview Dive Pack — Scanner Slice:** aim, constraints, landmines, mechanism, feedback for tomorrow’s `/execute`.
 
 **Constraint discovered**
-- Apathy: the org normalized the delivery‑path tax and stopped believing change was possible.
+- Apathy: the org normalized the delivery-path tax and stopped believing change was possible.
