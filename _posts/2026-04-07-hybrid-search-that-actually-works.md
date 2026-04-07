@@ -61,20 +61,24 @@ This distinction matters more than anything else in the query understanding laye
 
 ### Phase 1: Reciprocal Rank Fusion (RRF)
 
-Two independent ranked lists are built and fused:
+In a hybrid system, you run multiple independent retrieval streams—often called "legs"—and combine their results. Here, we build and fuse two lists:
 
-**Vector leg:** Embed the optimized query, find each expert's best-matching embedding chunk by cosine distance, deduplicate per expert, rank by similarity.
+**The Vector Leg:** Embed the optimized query, find each expert's best-matching embedding chunk by cosine distance, deduplicate per expert, and rank by semantic similarity.
 
-**Full-text search leg:** Build a phrase-aware `tsquery` from the parsed concepts and domain terms. Words within each concept are AND'd; concepts are OR'd. Prefix matching (`term:*`) handles inflectional variants. Rank by `ts_rank_cd`.
+**The Full-Text Search (FTS) Leg:** Build a phrase-aware `tsquery` from the parsed concepts and domain terms. Words within each concept are AND'd; concepts are OR'd. Prefix matching (`term:*`) handles inflectional variants. Rank by `ts_rank_cd` (a standard keyword density metric).
 
 **Fusion:**
+Combining these is tricky because vector similarity scores (e.g., 0.85) and keyword density scores (e.g., 2.4) aren't mathematically comparable. Enter Reciprocal Rank Fusion (RRF). Instead of looking at the raw scores, RRF only looks at the *rank* a candidate achieved in each list:
+
 ```
 RRF_score = 1/(K + vec_rank) + 1/(K + fts_rank)
 ```
 
-K=60 is the standard damping constant. Experts absent from one leg receive a soft penalty rank (not exclusion) — this is important because an expert who matches semantically but not lexically should still appear, just ranked lower.
+K=60 is the standard damping constant. If an expert is rank 1 in the vector leg, they get 1/61 points. If they are rank 2 in FTS, they get an additional 1/62 points. 
 
-**Why RRF over learned fusion?** RRF is parameter-free (just K), doesn't require training data, and is remarkably robust. For expert matching where you don't have click-through data to train a fusion model, RRF is the right default.
+Experts absent from one leg receive a soft penalty rank (not exclusion) — this is important because an expert who matches semantically but not lexically should still appear, just with a lower combined score.
+
+**Why RRF over learned fusion?** RRF is parameter-free (just K), doesn't require training data, and is remarkably robust. It prevents one retrieval method from wildly overpowering the other. For expert matching where you don't have historical click-through data to train a fusion model, RRF is the right default.
 
 ### Phase 2: Structured Field Boosting + Penalties
 
@@ -96,7 +100,11 @@ This matters because an expert whose *research areas* include "bone mineral dens
 
 ### Phase 3: Cross-Encoder Reranking
 
-The top candidates are reranked using a cross-encoder (I use Google's Vertex AI Ranking API). Cross-encoders are more expensive but more accurate than bi-encoder similarity because they see the query and document together.
+The top candidates are reranked using a cross-encoder (I use Google's Vertex AI Ranking API). 
+
+To understand why this helps, you have to understand the difference between bi-encoders and cross-encoders. In Phase 1, we used a **bi-encoder**: the query and the document were embedded completely independently, and we just measured the geometric distance between their vectors. It's incredibly fast, but semantically coarse.
+
+A **cross-encoder** feeds the query and the document *together* into a transformer network. The model gets to see how the words in the query relate to the words in the document via attention mechanisms. It's much more computationally expensive (you can only run it on dozens of documents, not thousands), but deeply accurate contextually.
 
 Three things I learned the hard way about reranking:
 
@@ -108,15 +116,21 @@ Three things I learned the hard way about reranking:
 
 ### Phase 4: MMR Diversification
 
-The final selection uses Maximal Marginal Relevance (MMR) to balance relevance against redundancy:
+If your top five results are all identical clones of each other, your user didn't get five choices; they got one choice, repeated. The final selection uses Maximal Marginal Relevance (MMR) to balance relevance against redundancy. 
+
+MMR greedily builds the final list by scoring the remaining candidates like this:
 
 ```
 MMR_score = λ × relevance − (1−λ) × max_similarity_to_already_selected
 ```
 
+* `relevance`: How good is this candidate for the query?
+* `max_similarity`: How similar is this candidate to the experts we've *already* put in the final list?
+* `λ` (lambda): A tuning knob (0 to 1) that controls how much you care about relevance vs. diversity.
+
 **The key insight:** I compute composite relevance by blending scores from all prior phases — not just the reranker output. This preserves information from the RRF and structured boost phases into the diversification step, rather than treating the reranker as the sole arbiter of relevance.
 
-With λ=0.8 (relevance-weighted), MMR ensures the top results span different subspecialties rather than clustering in one corner of the expert space.
+With λ=0.8 (heavily relevance-weighted, but intolerant of exact duplicates), MMR ensures the top results span different subspecialties rather than clustering in one corner of the expert space.
 
 ## Embedding Strategy: Not All Chunks Are Equal
 
@@ -163,7 +177,7 @@ Serial embedding of 200k profiles took 15+ hours. Adding bounded concurrent disp
 
 ### Don't retry deterministic errors
 
-This one cost us days of debugging. Our platform retry layer was configured to retry all provider errors, including `INVALID_ARGUMENT` (input too long). That's a deterministic error — the same request will fail the same way every time. Retrying it 5 times with exponential backoff before surfacing it to caller-level recovery logic meant every single oversized chunk wasted 5 provider round trips. For a corpus with hundreds of oversized chunks, this compounded into catastrophic throughput collapse.
+This one cost us hours of debugging. Our platform retry layer was configured to retry all provider errors, including `INVALID_ARGUMENT` (input too long). That's a deterministic error — the same request will fail the same way every time. Retrying it 5 times with exponential backoff before surfacing it to caller-level recovery logic meant every single oversized chunk wasted 5 provider round trips. For a corpus with hundreds of oversized chunks, this compounded into catastrophic throughput collapse.
 
 The fix: only retry transient server-side errors (5xx, rate limits, timeouts). Surface client errors immediately so the application can handle them.
 
