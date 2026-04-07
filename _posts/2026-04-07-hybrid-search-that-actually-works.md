@@ -59,6 +59,12 @@ This distinction matters more than anything else in the query understanding laye
 
 **Graceful degradation:** If the LLM call fails, the system falls back to embedding the raw query directly. No hard dependency on the query analyzer.
 
+### Sidebar: Guardrails vs Penalties
+
+When a user says "I don't want X," the instinct is to build a hard filter. Don't. Hard filters in search are brittle. If you filter out all experts who mention "DXA" (the standard bone density scan), you might filter out the exact expert who just published a paper on *alternatives* to DXA.
+
+Instead, treat these constraints as soft penalties. The expert still enters the candidate pool, but their score is reduced. This is a recurring pattern in robust search systems: prefer soft signals (boosts and penalties) over hard gates (filters) unless the constraint is absolute (like location or availability).
+
 ### Phase 1: Reciprocal Rank Fusion (RRF)
 
 In a hybrid system, you run multiple independent retrieval streams—often called "legs"—and combine their results. Here, we build and fuse two lists:
@@ -82,7 +88,7 @@ Experts absent from one leg receive a soft penalty rank (not exclusion) — this
 
 ### Phase 2: Structured Field Boosting + Penalties
 
-After fusion, domain-specific signals adjust scores:
+Vectors and keywords capture *what* someone talks about. They don't capture the *nature* of the expertise. After fusion, domain-specific signals adjust scores to account for where and how the expertise appears.
 
 **Structured field boost:** Expert metadata fields (research areas, departments, procedures, credentials) are checked against parsed query concepts. Matches are weighted by specificity:
 
@@ -94,9 +100,9 @@ After fusion, domain-specific signals adjust scores:
 
 This matters because an expert whose *research areas* include "bone mineral density" is a stronger match than one who merely mentions it in a long bio.
 
-**Discouraged modality penalty:** Experts primarily associated with approaches the user wants to avoid receive a soft score reduction. This is demotion, not exclusion — the user said "without ionizing radiation," not "exclude all radiologists."
+**Discouraged modality penalty:** As mentioned in the sidebar above, experts primarily associated with approaches the user wants to avoid receive a soft score reduction. This is demotion, not exclusion.
 
-**Evidence quality penalty:** Sparse profiles — those with just a name and title, no bio, no research areas — are penalized. An expert you know nothing about is not a confident recommendation.
+**Evidence quality penalty:** Sparse profiles — those with just a name and title, no bio, no research areas — are penalized. An expert you know nothing about is not a confident recommendation. If a profile is *too* sparse (e.g., just a name and title), the system can even gate them from the expensive reranking phase to save compute.
 
 ### Phase 3: Cross-Encoder Reranking
 
@@ -105,6 +111,12 @@ The top candidates are reranked using a cross-encoder (I use Google's Vertex AI 
 To understand why this helps, you have to understand the difference between bi-encoders and cross-encoders. In Phase 1, we used a **bi-encoder**: the query and the document were embedded completely independently, and we just measured the geometric distance between their vectors. It's incredibly fast, but semantically coarse.
 
 A **cross-encoder** feeds the query and the document *together* into a transformer network. The model gets to see how the words in the query relate to the words in the document via attention mechanisms. It's much more computationally expensive (you can only run it on dozens of documents, not thousands), but deeply accurate contextually.
+
+### Sidebar: The Reranking Trade-off
+
+If cross-encoders are so much better, why not use them for everything? Because they don't scale. You can't pre-compute a cross-encoder score the way you can pre-compute a bi-encoder vector, because the cross-encoder score depends on the specific query. You have to run the neural network at query time for every candidate. 
+
+This is why search pipelines are funnels: Phase 1 (bi-encoder + FTS) is the cheap, wide net that finds the top 100. Phase 3 (cross-encoder) is the expensive microscope that perfectly sorts the top 10.
 
 Three things I learned the hard way about reranking:
 
@@ -116,9 +128,13 @@ Three things I learned the hard way about reranking:
 
 ### Phase 4: MMR Diversification
 
+### Phase 4: MMR Diversification
+
 If your top five results are all identical clones of each other, your user didn't get five choices; they got one choice, repeated. The final selection uses Maximal Marginal Relevance (MMR) to balance relevance against redundancy. 
 
-MMR greedily builds the final list by scoring the remaining candidates like this:
+MMR is a greedy algorithm. It picks the most relevant result first. Then it looks at the remaining candidates and picks the one that offers the best mix of high relevance *and* high dissimilarity to what's already been picked.
+
+MMR scores the remaining candidates like this:
 
 ```
 MMR_score = λ × relevance − (1−λ) × max_similarity_to_already_selected
@@ -138,7 +154,15 @@ The embedding layer deserves its own section because most tutorials treat it as 
 
 ### Separate structured metadata from narrative
 
+### Separate structured metadata from narrative
+
 Each expert has two kinds of content: structured fields (research areas, credentials, departments) and a narrative bio. I embed them as separate chunks. This prevents a long bio from diluting the precise structured signal, and it means vector search can match on either the structured or narrative dimension independently.
+
+### Sidebar: Why Chunking Matters
+
+Embedding models compress text into a fixed-size vector (usually 768 or 1536 numbers). If you embed a 10-word sentence, the model captures that specific idea perfectly. If you embed a 10-page document, the model has to smash 10 pages of distinct ideas into the same 1536 numbers. The resulting vector becomes a blurry, generic average of everything.
+
+To get precise search results, you have to break long documents into smaller "chunks" before embedding them. But *how* you break them up is the hard part.
 
 ### Structure-aware bio chunking
 
@@ -159,9 +183,11 @@ This is materially better than a single conservative budget, which would fragmen
 
 ### Symmetric vs. asymmetric embedding
 
+### Symmetric vs. asymmetric embedding
+
 For expert matching, I use symmetric `SEMANTIC_SIMILARITY` task type — the same profile for both indexing and querying. Both sides are "descriptions of expertise": one from the expert's perspective, one from the searcher's perspective.
 
-This is different from document search, where one side genuinely is a document and the other is a short query. For that use case, asymmetric task types (`RETRIEVAL_DOCUMENT` / `RETRIEVAL_QUERY`) are correct.
+**Why symmetric, not asymmetric?** Google's embedding API supports asymmetric task type pairs (`RETRIEVAL_DOCUMENT` / `RETRIEVAL_QUERY`) designed for cases where one side is a long document and the other is a short factual query. Expert search is different: both sides are descriptions of expertise — one from the innovator's perspective ("I need someone who knows about bone density") and one from the expert's profile (research areas, bio, credentials). `SEMANTIC_SIMILARITY` is the correct task type for matching two descriptions against each other. The file content search pipeline uses the asymmetric pair because that relationship genuinely is document-vs-query.
 
 Getting this wrong degrades retrieval quality silently — the vectors are in subtly different spaces and similarity scores become less meaningful.
 
