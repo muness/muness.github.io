@@ -77,7 +77,8 @@ Here's the architecture that emerged. It can be read as a technical stack, but i
   <img src="../assets/img/hybrid-search-pipeline-overview.png" alt="Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations." width="900" />
 </a>
 
-<p><em>Click the diagram to view it full size.</em></p>
+*Click the diagram to view it full size.*
+
 ### Phase 0: LLM Query Analysis
 
 Before any retrieval happens, the raw query goes through a lightweight LLM call (using a small, fast model at temperature 0) to produce a structured search plan:
