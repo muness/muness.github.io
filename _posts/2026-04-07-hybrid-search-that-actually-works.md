@@ -26,17 +26,21 @@ Before choosing techniques, it helps to be explicit about the problem you're sol
 
 The point is not to force a formal handoff between "business" and "engineering." The point is to make sure the ranking system is answering the right questions. A good hybrid system is usually the result of translating these domain questions into explicit retrieval and ranking signals.
 
-## A Decision Tree for Choosing Techniques
+## Choosing Techniques by Failure Mode
 
-Once the failure modes are clear, the next question is which techniques actually address them. Different search pathologies call for different interventions. If the query and the right answer use different language, add a semantic retrieval leg. If exact procedures, credentials, or acronyms matter, add a lexical leg. If the top results are all individually relevant but too similar to each other, add diversification. If users need to understand why a result appeared, add diagnostics before adding more ranking cleverness.
+Once the failure modes are clear, the next question is which techniques actually address them. The cleanest way to think about this is not as a tree but as a mapping from ranking pathology to intervention:
 
-<a href="../assets/img/hybrid-search-technique-decision-tree.png">
-  <img src="../assets/img/hybrid-search-technique-decision-tree.png" alt="Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics." width="900" />
-</a>
+| If the search fails because... | Add this technique | Why it helps |
+|---|---|---|
+| The query and the right answer use different language | Semantic retrieval (vector search) | Captures conceptual similarity beyond exact wording |
+| Exact credentials, acronyms, or procedures matter | Lexical retrieval (FTS) | Preserves precision on terms that should not be semantically blurred |
+| The raw query is vague, underspecified, or constraint-heavy | Query analysis | Extracts intent, concepts, and discouraged modalities before retrieval |
+| Some signals should count more than others | Structured boosts and penalties | Encodes domain judgment directly into ranking |
+| The top candidates are plausible but poorly ordered | Cross-encoder reranking | Adds expensive precision after cheap retrieval narrows the field |
+| The top results are individually relevant but too similar to each other | MMR diversification | Trades a little rank optimality for variety across the final set |
+| People do not trust the output | Diagnostics and explanation surfaces | Exposes why a result ranked highly and which signals mattered |
 
-<p><em>Click the diagram to view it full size.</em></p>
-
-The point of the decision tree is not that every system needs every technique. The point is that each technique solves a different class of failure. A useful hybrid system is not just "semantic + keyword." It is a deliberate composition of ranking stages that each answer a specific design question.
+This is the core design principle: a useful hybrid system is not just "semantic + keyword." It is a deliberate composition of stages, where each technique is introduced to correct a specific class of failure.
 
 ## The Problem With Naive Vector Search
 
