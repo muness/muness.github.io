@@ -235,9 +235,9 @@ Serial embedding of 200k profiles took 15+ hours. Adding bounded concurrent disp
 
 ### Don't retry deterministic errors
 
-This one cost us hours of debugging. Our platform retry layer was configured to retry all provider errors, including `INVALID_ARGUMENT` (input too long). That's a deterministic error — the same request will fail the same way every time. Retrying it 5 times with exponential backoff before surfacing it to caller-level recovery logic meant every single oversized chunk wasted 5 provider round trips. For a corpus with hundreds of oversized chunks, this compounded into catastrophic throughput collapse.
+`INVALID_ARGUMENT` is deterministic. If the request is too large, the same request will fail the same way every time. Retrying it 5 times with exponential backoff just burns time before the caller-level recovery logic can do something useful.
 
-The fix: only retry transient server-side errors (5xx, rate limits, timeouts). Surface client errors immediately so the application can handle them.
+The fix is simple: retry transient server-side failures (5xx, rate limits, timeouts), and surface client errors immediately so the application can handle them.
 
 ## Tuning Parameters: Store Them in the Database
 
