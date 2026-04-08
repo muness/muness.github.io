@@ -6,9 +6,9 @@ title: 'Building Hybrid Search That Actually Works: A Five-Phase Pipeline for Ex
 pin: true
 ---
 
-Most search implementations I've seen in production fall into one of two camps: pure vector similarity that returns plausible but wrong results, or keyword search that misses anything not phrased exactly right. Neither is good enough when the stakes are real — when a bad match means a wasted introduction, a missed collaboration, or a researcher paired with the wrong domain expert.
+Most search implementations in production fall into one of two camps: pure vector similarity that returns plausible but wrong results, or keyword search that misses anything not phrased exactly right. Neither is good enough when the stakes are real — when a bad match means a wasted introduction, a missed collaboration, or a researcher paired with the wrong domain expert.
 
-I recently built a hybrid search system for matching people to domain experts across a corpus of ~200,000 profiles. This post is meant to function as both a tutorial and a design primer: if you're the subject-matter expert, it should help you articulate what "good" actually means for your search problem; if you're the engineer, it should help you choose the techniques that fit those needs rather than cargo-culting a vector database into the stack.
+This post uses a hybrid expert-matching system over a corpus of ~200,000 profiles as a concrete case study. The goal is not to tell a personal build story; it is to walk through the problem itself and show how a subject-matter expert and an engineer can jointly shape a search system that is both technically strong and operationally trustworthy.
 
 
 ## How an SME and an Engineer Should Traverse the Problem
@@ -24,7 +24,7 @@ Before getting into algorithms, it's useful to separate the questions the subjec
 | What would make a user trust the result? | Diagnostics, traceability, and result explanations |
 
 A good hybrid search system is not just "semantic + keyword." It is a negotiated interface between domain judgment and ranking mechanics. The rest of this post walks through the mechanics, but keep that division of labor in mind: the domain expert defines the shape of relevance; the engineer decides how to represent and compose it.
-The frame I recommend is simple: a subject-matter expert should define the kinds of relevance, misalignment, and tradeoffs that matter; an engineer should turn those into retrievable signals, ranking stages, and diagnostics. Hybrid search gets interesting precisely because neither side can do the whole job alone.
+The useful frame is simple: a subject-matter expert should define the kinds of relevance, misalignment, and tradeoffs that matter; an engineer should turn those into retrievable signals, ranking stages, and diagnostics. Hybrid search gets interesting precisely because neither side can do the whole job alone.
 
 A useful mental model is this: the obvious buzzword match is often what the user expects to see first, but not always the most helpful recommendation. A good system should be able to say, in effect, "Yes, here is the straightforward person you probably had in mind — and here are the two or three people who can actually get you further." The SME is the one who knows whether those "more interesting" recommendations are genuinely valuable or just semantically nearby nonsense. The engineer's job is to make that distinction visible in the ranking and explainable in the UI.
 ## The Problem With Naive Vector Search
@@ -54,11 +54,11 @@ Neither approach alone is sufficient. The question is how to combine them withou
 
 ## A Five-Phase Ranking Pipeline
 
-Here's the architecture I landed on. You can read it as a technical stack, but I think it's more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
+Here's the architecture that emerged. It can be read as a technical stack, but it is more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
 
 ### Phase 0: LLM Query Analysis
 
-Before any retrieval happens, the raw query goes through a lightweight LLM call (I use a small, fast model at temperature 0) to produce a structured search plan:
+Before any retrieval happens, the raw query goes through a lightweight LLM call (using a small, fast model at temperature 0) to produce a structured search plan:
 
 ```
 User query: "bone density assessment without ionizing radiation"
@@ -72,7 +72,7 @@ Parsed output:
 
 **The critical design decision here:** The query analyzer preserves *expert intent*, not *solution intent*. It does not rewrite "bone density without radiation" into "ultrasound expert" — that would be the system guessing the solution. Instead, it searches for bone density experts and applies soft penalties to those primarily associated with the discouraged modalities.
 
-This distinction matters more than anything else in the query understanding layer. I've seen systems where the query rewriter pivots on constraints and returns completely wrong results — searching for the alternative technology instead of the domain expert.
+This distinction matters more than anything else in the query understanding layer. Systems that pivot on constraints instead of expert intent often return completely wrong results — searching for the alternative technology instead of the domain expert.
 
 **Graceful degradation:** If the LLM call fails, the system falls back to embedding the raw query directly. No hard dependency on the query analyzer.
 
@@ -123,7 +123,7 @@ This matters because an expert whose *research areas* include "bone mineral dens
 
 ### Phase 3: Cross-Encoder Reranking
 
-The top candidates are reranked using a cross-encoder (I use Google's Vertex AI Ranking API). 
+The top candidates are reranked using a cross-encoder (in this case, Google's Vertex AI Ranking API).
 
 To understand why this helps, you have to understand the difference between bi-encoders and cross-encoders. In Phase 1, we used a **bi-encoder**: the query and the document were embedded completely independently, and we just measured the geometric distance between their vectors. It's incredibly fast, but semantically coarse.
 
@@ -135,13 +135,13 @@ If cross-encoders are so much better, why not use them for everything? Because t
 
 This is why search pipelines are funnels: Phase 1 (bi-encoder + FTS) is the cheap, wide net that finds the top 100. Phase 3 (cross-encoder) is the expensive microscope that perfectly sorts the top 10.
 
-Three things I learned the hard way about reranking:
+Three practical rules make reranking usable rather than magical:
 
-1. **Build query-aware payloads.** Don't just send the full profile. For each candidate, I select the best-matching bio excerpt (by term overlap with the query) and combine it with structured metadata. This gives the reranker focused signal.
+1. **Build query-aware payloads.** Don't just send the full profile. For each candidate, the system selects the best-matching bio excerpt (by term overlap with the query) and combines it with structured metadata. This gives the reranker focused signal.
 
-2. **Gate noise candidates.** Profiles with thin content or vector-only matches (no lexical signal) produce poor reranker inputs. I gate them out before reranking to prevent noise from diluting the reranker's attention.
+2. **Gate noise candidates.** Profiles with thin content or vector-only matches (no lexical signal) produce poor reranker inputs. The system gates them out before reranking to prevent noise from diluting the reranker's attention.
 
-3. **Detect low-variance reranker output.** Sometimes the reranker returns nearly identical scores for all candidates — meaning it couldn't differentiate them. When I detect this (≤2 distinct scores in the top 10), I fall back to the pre-rerank order rather than letting the reranker randomly shuffle.
+3. **Detect low-variance reranker output.** Sometimes the reranker returns nearly identical scores for all candidates — meaning it couldn't differentiate them. When that happens (≤2 distinct scores in the top 10), the pipeline falls back to the pre-rerank order rather than letting the reranker randomly shuffle.
 
 ### Phase 4: MMR Diversification
 
@@ -159,7 +159,7 @@ MMR_score = λ × relevance − (1−λ) × max_similarity_to_already_selected
 * `max_similarity`: How similar is this candidate to the experts we've *already* put in the final list?
 * `λ` (lambda): A tuning knob (0 to 1) that controls how much you care about relevance vs. diversity.
 
-**The key insight:** I compute composite relevance by blending scores from all prior phases — not just the reranker output. This preserves information from the RRF and structured boost phases into the diversification step, rather than treating the reranker as the sole arbiter of relevance.
+**The key insight:** composite relevance is computed by blending scores from all prior phases — not just the reranker output. This preserves information from the RRF and structured boost phases into the diversification step, rather than treating the reranker as the sole arbiter of relevance.
 
 With λ=0.8 (heavily relevance-weighted, but intolerant of exact duplicates), MMR ensures the top results span different subspecialties rather than clustering in one corner of the expert space.
 
@@ -169,7 +169,7 @@ The embedding layer deserves its own section because most tutorials treat it as 
 
 ### Separate structured metadata from narrative
 
-Each expert has two kinds of content: structured fields (research areas, credentials, departments) and a narrative bio. I embed them as separate chunks. This prevents a long bio from diluting the precise structured signal, and it means vector search can match on either the structured or narrative dimension independently.
+Each expert has two kinds of content: structured fields (research areas, credentials, departments) and a narrative bio. The system embeds them as separate chunks. This prevents a long bio from diluting the precise structured signal, and it means vector search can match on either the structured or narrative dimension independently.
 
 ### Sidebar: Why Chunking Matters
 
@@ -196,7 +196,7 @@ This is materially better than a single conservative budget, which would fragmen
 
 ### Symmetric vs. asymmetric embedding
 
-For expert matching, I use symmetric `SEMANTIC_SIMILARITY` task type — the same profile for both indexing and querying. Both sides are "descriptions of expertise": one from the expert's perspective, one from the searcher's perspective.
+For expert matching, the system uses symmetric `SEMANTIC_SIMILARITY` task type — the same profile for both indexing and querying. Both sides are "descriptions of expertise": one from the expert's perspective, one from the searcher's perspective.
 
 **Why symmetric, not asymmetric?** Google's embedding API supports asymmetric task type pairs (`RETRIEVAL_DOCUMENT` / `RETRIEVAL_QUERY`) designed for cases where one side is a long document and the other is a short factual query. Expert search is different: both sides are descriptions of expertise — one from the innovator's perspective ("I need someone who knows about bone density") and one from the expert's profile (research areas, bio, credentials). `SEMANTIC_SIMILARITY` is the correct task type for matching two descriptions against each other. The file content search pipeline uses the asymmetric pair because that relationship genuinely is document-vs-query.
 
@@ -234,7 +234,7 @@ Being able to tune these in production without a deploy is essential. Search qua
 
 ## Build a Diagnostic Surface
 
-This is the single most valuable investment in the entire system. I built a diagnostic endpoint that exposes the full pipeline trace for any query:
+This is the single most valuable investment in the entire system. A diagnostic endpoint exposes the full pipeline trace for any query:
 
 * Query analysis output and timing
 * Full RRF candidate list with per-candidate vector rank, FTS rank, and fused score
@@ -242,11 +242,11 @@ This is the single most valuable investment in the entire system. I built a diag
 * Reranker input payloads, output scores, and gating reasons
 * MMR selection trace with relevance scores and diversity decisions
 
-When a user reports "the search returned the wrong expert," I can trace exactly why in seconds — which phase promoted or demoted that candidate, what the reranker saw, why MMR selected or rejected them. Without this surface, search quality debugging is guesswork.
+When a user reports "the search returned the wrong expert," operators can trace exactly why in seconds — which phase promoted or demoted that candidate, what the reranker saw, and why MMR selected or rejected them. Without this surface, search quality debugging is guesswork.
 
 ## What's Still Missing
 
-No system is complete. Here's what I'd add next:
+No system is complete. Three next steps stand out:
 
 * **Offline evaluation framework:** Labeled query/expert pairs with automated nDCG/recall@k measurement. Right now quality assessment is manual via the diagnostic surface.
 * **FTS concept weighting:** The full-text leg treats all parsed terms equally. Primary expert concepts should be weighted more heavily than supporting domain terms.
