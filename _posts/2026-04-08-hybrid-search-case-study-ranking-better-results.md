@@ -73,9 +73,7 @@ Neither approach alone is sufficient. The question is how to combine them withou
 
 Here's the architecture that emerged. It can be read as a technical stack, but it is more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
 
-<a href="../assets/img/hybrid-search-pipeline-overview.png">
-  <img src="../assets/img/hybrid-search-pipeline-overview.png" alt="Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations." width="900" />
-</a>
+[![Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations.](/assets/img/hybrid-search-pipeline-overview.png)](/assets/img/hybrid-search-pipeline-overview.png)
 
 *Click the diagram to view it full size.*
 
