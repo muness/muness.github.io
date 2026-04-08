@@ -1,0 +1,31 @@
+direction: down
+
+defaults: {
+  shape: rectangle
+  style: {
+    font-size: 22
+    stroke-width: 2
+    fill: "#ffffff"
+    stroke: "#0f172a"
+  }
+}
+
+query: "1. Query analysis\nRewrite intent\nExtract concepts"
+retrieval: "2. Cheap retrieval\nVector leg + FTS leg"
+fusion: "3. Hybrid fusion\nRRF"
+scoring: "4. Domain scoring\nBoosts + penalties"
+rerank: "5. Expensive refinement\nCross-encoder reranking"
+diversify: "6. Final selection\nMMR diversification"
+explain: "7. Explanation surface\nWhy this result?"
+
+caption: {
+  shape: text
+  style: {
+    font-size: 18
+    italic: true
+    font-color: "#475569"
+  }
+  label: "Design rule: do broad, cheap retrieval first; apply expensive intelligence only after the candidate set is small."
+}
+
+query -> retrieval -> fusion -> scoring -> rerank -> diversify -> explain -> caption
