@@ -1,134 +1,63 @@
 direction: down
 
-classes: {
-  question: {
-    shape: diamond
-    style: {
-      stroke: "#334155"
-      fill: "#ffffff"
-      stroke-width: 2
-      font-size: 18
-      bold: true
-    }
-  }
-  technique: {
-    shape: rectangle
-    style: {
-      stroke: "#1e293b"
-      fill: "#f8fafc"
-      stroke-width: 2
-      font-size: 16
-    }
-  }
-  note: {
-    shape: text
-    style: {
-      font-size: 14
-      italic: true
-      font-color: "#475569"
-    }
+grid-columns: 2
+
+defaults: {
+  shape: rectangle
+  style: {
+    font-size: 22
+    stroke-width: 2
+    fill: "#ffffff"
+    stroke: "#1e293b"
   }
 }
 
-start: {
-  class: question
-  label: "What is failing in your current search?"
+start: "What kind of ranking failure are you seeing?"
+
+semantic: "Query words differ from the right answer"
+exact: "Exact terms matter\n(credentials, acronyms, procedures)"
+diverse: "Top results feel too similar"
+ambiguous: "The query is vague or constraint-heavy"
+trust: "People need to understand\nwhy this result appeared"
+
+vector: "Use semantic retrieval\n(vector search)"
+fts: "Use lexical retrieval\n(full-text search)"
+mmr: "Use diversification\n(MMR)"
+analysis: "Use query analysis\n(rewrite intent, extract concepts)"
+diagnostics: "Expose diagnostics\n(ranks, boosts, penalties, rerank)"
+
+fusion: "Combine signals with RRF"
+rerank: "Use reranking after cheap retrieval narrows the field"
+structured: "Add structured boosts / penalties\nfor domain-specific signals"
+
+note: {
+  shape: text
+  style: {
+    font-size: 18
+    italic: true
+    font-color: "#475569"
+  }
+  label: "Typical pattern: semantic + lexical → fuse → rerank → diversify"
 }
 
-q1: {
-  class: question
-  label: "The query is phrased one way,\nbut the right result uses different language"
-}
+start -> semantic
+start -> exact
+start -> diverse
+start -> ambiguous
+start -> trust
 
-q2: {
-  class: question
-  label: "Exact credentials, procedures,\nor acronyms matter"
-}
+semantic -> vector
+exact -> fts
+ambiguous -> analysis
+trust -> diagnostics
+diverse -> mmr
 
-q3: {
-  class: question
-  label: "The top results are individually relevant,\nbut too similar to each other"
-}
-
-q4: {
-  class: question
-  label: "The raw query is underspecified,\nambiguous, or includes constraints"
-}
-
-q5: {
-  class: question
-  label: "Some signals should count more than others\n(research area > bio mention)"
-}
-
-q6: {
-  class: question
-  label: "You need to explain\nwhy the system ranked someone highly"
-}
-
-vec: {
-  class: technique
-  label: "Add a vector retrieval leg\n(semantic similarity over embeddings)"
-}
-
-fts: {
-  class: technique
-  label: "Add a lexical / full-text leg\nfor exact terminology"
-}
-
-rrf: {
-  class: technique
-  label: "Fuse independent retrieval legs\nwith Reciprocal Rank Fusion (RRF)"
-}
-
-mmr: {
-  class: technique
-  label: "Add Maximal Marginal Relevance (MMR)\nfor diversity"
-}
-
-query: {
-  class: technique
-  label: "Add lightweight query analysis\n(rewrite intent, extract concepts, keep constraints)"
-}
-
-structured: {
-  class: technique
-  label: "Add structured boosts / penalties\nfor high-value domain fields"
-}
-
-rerank: {
-  class: technique
-  label: "Add cross-encoder reranking\nafter cheap retrieval narrows the field"
-}
-
-diagnostics: {
-  class: technique
-  label: "Add a diagnostic surface\nthat exposes ranks, boosts, penalties, and rerank scores"
-}
-
-note1: {
-  class: note
-  label: "Most production systems need more than one box.\nThe typical path is vector + lexical → fuse → rerank → diversify."
-}
-
-start -> q1
-start -> q2
-start -> q3
-start -> q4
-start -> q5
-start -> q6
-
-q1 -> vec: yes
-q2 -> fts: yes
-vec -> rrf
-fts -> rrf
-q3 -> mmr: yes
-q4 -> query: yes
-q5 -> structured: yes
-q5 -> rerank: sometimes
-q6 -> diagnostics: yes
-
-rrf -> rerank
+vector -> fusion
+fts -> fusion
+analysis -> fusion
+fusion -> structured
+structured -> rerank
 rerank -> mmr
 mmr -> diagnostics
 
-diagnostics -> note1
+diagnostics -> note

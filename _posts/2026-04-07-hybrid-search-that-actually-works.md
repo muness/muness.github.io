@@ -31,7 +31,7 @@ The point is not to force a formal handoff between "business" and "engineering."
 Once the failure modes are clear, the next question is which techniques actually address them. Different search pathologies call for different interventions. If the query and the right answer use different language, add a semantic retrieval leg. If exact procedures, credentials, or acronyms matter, add a lexical leg. If the top results are all individually relevant but too similar to each other, add diversification. If users need to understand why a result appeared, add diagnostics before adding more ranking cleverness.
 
 <a href="../assets/img/hybrid-search-technique-decision-tree.png">
-  <img src="../assets/img/hybrid-search-technique-decision-tree.png" alt="Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics." width="1200" />
+  <img src="../assets/img/hybrid-search-technique-decision-tree.png" alt="Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics." width="900" />
 </a>
 
 <p><em>Click the diagram to view it full size.</em></p>
@@ -69,7 +69,7 @@ Neither approach alone is sufficient. The question is how to combine them withou
 Here's the architecture that emerged. It can be read as a technical stack, but it is more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
 
 <a href="../assets/img/hybrid-search-pipeline-overview.png">
-  <img src="../assets/img/hybrid-search-pipeline-overview.png" alt="Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations." width="1200" />
+  <img src="../assets/img/hybrid-search-pipeline-overview.png" alt="Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations." width="900" />
 </a>
 
 <p><em>Click the diagram to view it full size.</em></p>
