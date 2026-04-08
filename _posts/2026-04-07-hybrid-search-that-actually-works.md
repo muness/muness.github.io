@@ -8,7 +8,7 @@ pin: true
 
 Most search implementations in production fall into one of two camps: pure vector similarity that returns plausible but wrong results, or keyword search that misses anything not phrased exactly right. Neither is good enough when the stakes are real — when a bad match means a wasted introduction, a missed collaboration, or a researcher paired with the wrong domain expert.
 
-This post uses a hybrid expert-matching system over a corpus of ~200,000 profiles as a concrete case study. The goal is not to tell a personal build story; it is to walk through the problem itself and show how to think about the design space. If you're trying to decide which search techniques you actually need, the useful question is not "should we add AI?" but rather "what kind of ranking mistake are we trying to fix?"
+This post uses a hybrid expert-matching system over a corpus of ~200,000 profiles as a concrete case study. If you're trying to decide which search techniques you actually need, the useful question is not "should we add AI?" but rather "what kind of ranking mistake are we trying to fix?"
 
 A useful mental model is this: the obvious buzzword match is often what a user expects to see first, but not always the most helpful recommendation. A good system should be able to say, in effect, "Yes, here is the straightforward person you probably had in mind — and here are the two or three people who can actually get you further." The hard part is choosing the techniques that produce that behavior intentionally rather than by accident.
 
