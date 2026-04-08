@@ -8,8 +8,25 @@ pin: true
 
 Most search implementations I've seen in production fall into one of two camps: pure vector similarity that returns plausible but wrong results, or keyword search that misses anything not phrased exactly right. Neither is good enough when the stakes are real — when a bad match means a wasted introduction, a missed collaboration, or a researcher paired with the wrong domain expert.
 
-I recently built a hybrid search system for matching innovators with domain experts across a corpus of ~200,000 profiles. This post walks through what I learned, what worked, what didn't, and the specific techniques that made the difference between "demo-quality" and "production-quality" search.
+I recently built a hybrid search system for matching people to domain experts across a corpus of ~200,000 profiles. This post is meant to function as both a tutorial and a design primer: if you're the subject-matter expert, it should help you articulate what "good" actually means for your search problem; if you're the engineer, it should help you choose the techniques that fit those needs rather than cargo-culting a vector database into the stack.
 
+
+## How an SME and an Engineer Should Traverse the Problem
+
+Before getting into algorithms, it's useful to separate the questions the subject-matter expert should answer from the questions the engineer should answer. Most disappointing search systems fail because these get blurred together.
+
+| If you're the SME, ask... | If you're the engineer, translate that into... |
+|---|---|
+| What does a *good* match look like? | Ranking objectives and evaluation examples |
+| What kinds of results are plausibly relevant but still feel misaligned? | Soft penalties, diversity, and explanation surfaces |
+| What terms are essential vs. adjacent? | FTS query construction, concept weighting, structured boosts |
+| What should be discouraged but not excluded? | Demotions rather than hard filters |
+| What would make a user trust the result? | Diagnostics, traceability, and result explanations |
+
+A good hybrid search system is not just "semantic + keyword." It is a negotiated interface between domain judgment and ranking mechanics. The rest of this post walks through the mechanics, but keep that division of labor in mind: the domain expert defines the shape of relevance; the engineer decides how to represent and compose it.
+The frame I recommend is simple: a subject-matter expert should define the kinds of relevance, misalignment, and tradeoffs that matter; an engineer should turn those into retrievable signals, ranking stages, and diagnostics. Hybrid search gets interesting precisely because neither side can do the whole job alone.
+
+A useful mental model is this: the obvious buzzword match is often what the user expects to see first, but not always the most helpful recommendation. A good system should be able to say, in effect, "Yes, here is the straightforward person you probably had in mind — and here are the two or three people who can actually get you further." The SME is the one who knows whether those "more interesting" recommendations are genuinely valuable or just semantically nearby nonsense. The engineer's job is to make that distinction visible in the ranking and explainable in the UI.
 ## The Problem With Naive Vector Search
 
 Vector search feels magical in demos. Embed your corpus, embed your query, find the nearest neighbors. Ship it.
@@ -37,7 +54,7 @@ Neither approach alone is sufficient. The question is how to combine them withou
 
 ## A Five-Phase Ranking Pipeline
 
-Here's the architecture I landed on. Each phase addresses a specific failure mode, and each has explicit fallback behavior so the system degrades gracefully rather than catastrophically.
+Here's the architecture I landed on. You can read it as a technical stack, but I think it's more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
 
 ### Phase 0: LLM Query Analysis
 
@@ -128,8 +145,6 @@ Three things I learned the hard way about reranking:
 
 ### Phase 4: MMR Diversification
 
-### Phase 4: MMR Diversification
-
 If your top five results are all identical clones of each other, your user didn't get five choices; they got one choice, repeated. The final selection uses Maximal Marginal Relevance (MMR) to balance relevance against redundancy. 
 
 MMR is a greedy algorithm. It picks the most relevant result first. Then it looks at the remaining candidates and picks the one that offers the best mix of high relevance *and* high dissimilarity to what's already been picked.
@@ -151,8 +166,6 @@ With λ=0.8 (heavily relevance-weighted, but intolerant of exact duplicates), MM
 ## Embedding Strategy: Not All Chunks Are Equal
 
 The embedding layer deserves its own section because most tutorials treat it as "just call the embedding API." In production, the decisions here cascade through everything downstream.
-
-### Separate structured metadata from narrative
 
 ### Separate structured metadata from narrative
 
@@ -180,8 +193,6 @@ This preserves semantic coherence within each chunk — a chunk boundary lands a
 Rather than a fixed chunk size, the system uses progressive budgets: start with a generous budget (4,000 characters), and only tighten for texts that fail at the embedding model's token limit. Most experts get fewer, larger, higher-quality chunks. Only the outliers (the experts with 10-page bios) get progressively smaller chunks.
 
 This is materially better than a single conservative budget, which would fragment most bios unnecessarily, or a single aggressive budget, which would fail on outliers.
-
-### Symmetric vs. asymmetric embedding
 
 ### Symmetric vs. asymmetric embedding
 
@@ -251,6 +262,3 @@ No system is complete. Here's what I'd add next:
 6. **Don't retry deterministic errors.** This sounds obvious, but getting it wrong can turn a 2-hour job into a 15-hour job.
 7. **Store tuning parameters in the database.** Search quality tuning is empirical; deploy cycles are the enemy.
 
----
-
-*The techniques described here are based on a production expert matching system serving ~200,000 profiles. The pipeline scores 3.7–4.0/5.0 on a hybrid retrieval rubric, with diagnostic observability rated 5/5 as the standout component.*
