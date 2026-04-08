@@ -8,14 +8,15 @@ pin: true
 
 Most search implementations in production fall into one of two camps: pure vector similarity that returns plausible but wrong results, or keyword search that misses anything not phrased exactly right. Neither is good enough when the stakes are real — when a bad match means a wasted introduction, a missed collaboration, or a researcher paired with the wrong domain expert.
 
-This post uses a hybrid expert-matching system over a corpus of ~200,000 profiles as a concrete case study. The goal is not to tell a personal build story; it is to walk through the problem itself and show how a subject-matter expert and an engineer can jointly shape a search system that is both technically strong and operationally trustworthy.
+This post uses a hybrid expert-matching system over a corpus of ~200,000 profiles as a concrete case study. The goal is not to tell a personal build story; it is to walk through the problem itself and show how to think about the design space. If you're trying to decide which search techniques you actually need, the useful question is not "should we add AI?" but rather "what kind of ranking mistake are we trying to fix?"
 
+A useful mental model is this: the obvious buzzword match is often what a user expects to see first, but not always the most helpful recommendation. A good system should be able to say, in effect, "Yes, here is the straightforward person you probably had in mind — and here are the two or three people who can actually get you further." The hard part is choosing the techniques that produce that behavior intentionally rather than by accident.
 
-## How an SME and an Engineer Should Traverse the Problem
+## Questions That Shape the Ranking System
 
-Before getting into algorithms, it's useful to separate the questions the subject-matter expert should answer from the questions the engineer should answer. Most disappointing search systems fail because these get blurred together.
+Before choosing techniques, it helps to be explicit about the problem you're solving. Different search systems fail for different reasons, and those failures should determine what gets built.
 
-| If you're the SME, ask... | If you're the engineer, translate that into... |
+| Question that shapes the system | Engineering implication |
 |---|---|
 | What does a *good* match look like? | Ranking objectives and evaluation examples |
 | What kinds of results are plausibly relevant but still feel misaligned? | Soft penalties, diversity, and explanation surfaces |
@@ -23,11 +24,18 @@ Before getting into algorithms, it's useful to separate the questions the subjec
 | What should be discouraged but not excluded? | Demotions rather than hard filters |
 | What would make a user trust the result? | Diagnostics, traceability, and result explanations |
 
-A good hybrid search system is not just "semantic + keyword." It is a negotiated interface between domain judgment and ranking mechanics. The rest of this post walks through the mechanics, but keep that division of labor in mind: the domain expert defines the shape of relevance; the engineer decides how to represent and compose it.
-The useful frame is simple: a subject-matter expert should define the kinds of relevance, misalignment, and tradeoffs that matter; an engineer should turn those into retrievable signals, ranking stages, and diagnostics. Hybrid search gets interesting precisely because neither side can do the whole job alone.
+The point is not to force a formal handoff between "business" and "engineering." The point is to make sure the ranking system is answering the right questions. A good hybrid system is usually the result of translating these domain questions into explicit retrieval and ranking signals.
 
-A useful mental model is this: the obvious buzzword match is often what the user expects to see first, but not always the most helpful recommendation. A good system should be able to say, in effect, "Yes, here is the straightforward person you probably had in mind — and here are the two or three people who can actually get you further." The SME is the one who knows whether those "more interesting" recommendations are genuinely valuable or just semantically nearby nonsense. The engineer's job is to make that distinction visible in the ranking and explainable in the UI.
+## A Decision Tree for Choosing Techniques
+
+Once the failure modes are clear, the next question is which techniques actually address them. Different search pathologies call for different interventions. If the query and the right answer use different language, add a semantic retrieval leg. If exact procedures, credentials, or acronyms matter, add a lexical leg. If the top results are all individually relevant but too similar to each other, add diversification. If users need to understand why a result appeared, add diagnostics before adding more ranking cleverness.
+
+![Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics.](/assets/img/hybrid-search-technique-decision-tree.png)
+
+The point of the decision tree is not that every system needs every technique. The point is that each technique solves a different class of failure. A useful hybrid system is not just "semantic + keyword." It is a deliberate composition of ranking stages that each answer a specific design question.
+
 ## The Problem With Naive Vector Search
+
 
 Vector search feels magical in demos. Embed your corpus, embed your query, find the nearest neighbors. Ship it.
 
