@@ -1,8 +1,9 @@
 ---
 comments: true
-date: 2026-04-07 21:00:00 +0500
+date: 2026-04-08 11:10:00 -0400
 author: muness
-title: 'Building Hybrid Search That Actually Works: A Five-Phase Pipeline for Expert Matching'
+title: 'A Hybrid Search Case Study: Widely Applicable Techniques for Ranking Better Results'
+excerpt: "A case study in building hybrid search over a large expert corpus, with practical lessons on query analysis, lexical + semantic fusion, reranking, diversification, chunking, retries, and diagnostics that apply far beyond expert matching."
 pin: true
 ---
 
