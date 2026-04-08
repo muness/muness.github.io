@@ -235,9 +235,9 @@ Serial embedding of 200k profiles took 15+ hours. Adding bounded concurrent disp
 
 ### Don't retry deterministic errors
 
-`INVALID_ARGUMENT` is deterministic. If the request is too large, the same request will fail the same way every time. Retrying it 5 times with exponential backoff just burns time before the caller-level recovery logic can do something useful.
+For Vertex specifically, `INVALID_ARGUMENT` is usually deterministic: if the request is invalid, retrying it just burns time.
 
-The fix is simple: retry transient server-side failures (5xx, rate limits, timeouts), and surface client errors immediately so the application can handle them.
+Retry transient failures. Surface client errors immediately.
 
 ## Tuning Parameters: Store Them in the Database
 
