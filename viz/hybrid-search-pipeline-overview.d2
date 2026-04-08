@@ -1,0 +1,114 @@
+direction: right
+
+classes: {
+  stage: {
+    shape: rectangle
+    style: {
+      stroke: "#0f172a"
+      fill: "#ffffff"
+      stroke-width: 2
+      font-size: 18
+      bold: true
+    }
+  }
+  detail: {
+    shape: rectangle
+    style: {
+      stroke: "#94a3b8"
+      fill: "#f8fafc"
+      stroke-width: 1
+      font-size: 14
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-size: 14
+      italic: true
+      font-color: "#475569"
+    }
+  }
+}
+
+query: {
+  class: stage
+  label: "1. Query analysis"
+}
+query_detail: {
+  class: detail
+  label: "Rewrite intent\nExtract concepts\nCapture discouraged modalities"
+}
+
+retrieval: {
+  class: stage
+  label: "2. Cheap retrieval"
+}
+vec: {
+  class: detail
+  label: "Vector leg\nBest chunk by cosine similarity"
+}
+fts: {
+  class: detail
+  label: "FTS leg\nPhrase-aware keyword retrieval"
+}
+
+fusion: {
+  class: stage
+  label: "3. Hybrid fusion"
+}
+fusion_detail: {
+  class: detail
+  label: "Reciprocal Rank Fusion\nCombine unlike signals safely"
+}
+
+scoring: {
+  class: stage
+  label: "4. Domain scoring"
+}
+scoring_detail: {
+  class: detail
+  label: "Structured boosts\nDiscouraged-modality penalties\nEvidence-quality penalties"
+}
+
+rerank: {
+  class: stage
+  label: "5. Expensive refinement"
+}
+rerank_detail: {
+  class: detail
+  label: "Cross-encoder reranking\nOnly on the top candidates"
+}
+
+diversify: {
+  class: stage
+  label: "6. Final selection"
+}
+diversify_detail: {
+  class: detail
+  label: "MMR diversification\nBalance relevance and variety"
+}
+
+explain: {
+  class: stage
+  label: "7. Explanations"
+}
+explain_detail: {
+  class: detail
+  label: "Why this result?\nWhich signals mattered?"
+}
+
+caption: {
+  class: note
+  label: "A useful design pattern: do broad, cheap retrieval first; apply expensive intelligence only after the candidate set is small."
+}
+
+query -> retrieval -> fusion -> scoring -> rerank -> diversify -> explain
+query -> query_detail
+retrieval -> vec
+retrieval -> fts
+fusion -> fusion_detail
+scoring -> scoring_detail
+rerank -> rerank_detail
+diversify -> diversify_detail
+explain -> explain_detail
+explain -> caption

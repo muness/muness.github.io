@@ -30,7 +30,7 @@ The point is not to force a formal handoff between "business" and "engineering."
 
 Once the failure modes are clear, the next question is which techniques actually address them. Different search pathologies call for different interventions. If the query and the right answer use different language, add a semantic retrieval leg. If exact procedures, credentials, or acronyms matter, add a lexical leg. If the top results are all individually relevant but too similar to each other, add diversification. If users need to understand why a result appeared, add diagnostics before adding more ranking cleverness.
 
-![Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics.](/assets/img/hybrid-search-technique-decision-tree.png)
+![Decision tree for hybrid search techniques: map ranking failures to retrieval, fusion, reranking, diversification, and diagnostics.](https://muness.github.io/assets/img/hybrid-search-technique-decision-tree.png)
 
 The point of the decision tree is not that every system needs every technique. The point is that each technique solves a different class of failure. A useful hybrid system is not just "semantic + keyword." It is a deliberate composition of ranking stages that each answer a specific design question.
 
@@ -64,6 +64,7 @@ Neither approach alone is sufficient. The question is how to combine them withou
 
 Here's the architecture that emerged. It can be read as a technical stack, but it is more useful to read it as a sequence of design questions: what is the user really asking, what evidence should count, how do you combine unlike signals, how do you avoid redundant results, and how do you explain what happened when someone challenges the output?
 
+![Overview of a hybrid search pipeline: query analysis, cheap retrieval, hybrid fusion, domain scoring, reranking, diversification, and explanations.](https://muness.github.io/assets/img/hybrid-search-pipeline-overview.png)
 ### Phase 0: LLM Query Analysis
 
 Before any retrieval happens, the raw query goes through a lightweight LLM call (using a small, fast model at temperature 0) to produce a structured search plan:
