@@ -184,6 +184,8 @@ Below I spell out a handful I reach for regularly in operational analytics. I in
 * **First Artifact:** Latency heatmap dashboard.  
 * **Decision Trigger:** Latency exceeds SLA by 20%.
 
+*See also: [When Your Trace Is Lying to You: A Performance Case Study]({% post_url 2026-04-16-when-your-trace-is-lying-to-you %}) — what happens when this instrumentation only covers half the request.*
+
 ### Survival (or Death) Analysis / Kaplan–Meier Curves
 
 * **What it serves:** Shows probability of conversion or churn over time.  
