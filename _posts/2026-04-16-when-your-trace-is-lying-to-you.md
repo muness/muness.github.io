@@ -1,6 +1,7 @@
 ---
 title: "When Your Trace Is Lying to You: A Performance Case Study"
 date: 2026-04-16 10:00:00 -0400
+last_updated_at: 2026-04-20 12:00:00 -0400
 author: muness
 toc: true
 comments: true
@@ -10,17 +11,17 @@ pin: true
 
 We ran into a performance issue recently. Requests were taking **2–4 seconds**, multiple attempts had already been made to improve them, and nothing really moved.
 
-More importantly, nobody could explain *why* the requests were slow. The system was not slow because it was doing too much work; it was slow because most of the important work was hidden.
+Notably, we couldn't explain *why* the requests were slow.
 
-Carlos Bueno's *The Mature Optimization Handbook* has been sitting in the back of my head through all of this. His core warning is simple: optimization is hard to do well, and it is frighteningly easy to turn it into ritualized guesswork. I have done exactly that more times than I would like to admit.
+Carlos Bueno's *The Mature Optimization Handbook* has been sitting in the back of my head through all of this. His core warning is simple: optimization is hard to do well, and it is easy to turn it into ritualized guesswork. I have done that more times than I would like to admit.
 
 ## The Actual Problem
 
-Most performance work starts the same way. You read code, form a mental model, optimize what seems expensive, and repeat until something appears to move. The assumption underneath that loop is that your mental model is a reasonable approximation of how the system behaves under real load, with real data, and real users. It rarely is. Your intuition is useful for generating hypotheses, but it is a terrible way to decide where the time is actually going.
+Most performance work starts this way: You read code, form a mental model, optimize what seems expensive, and repeat until something appears to move. The assumption underneath that loop is that your mental model is a reasonable approximation of how the system behaves under real load, with real data, and real users. It rarely is. Your intuition is useful for generating hypotheses, but it is a terrible way to decide where the time is actually going.
 
 ## Phase 1 — The Misleading Trace
 
-We had tracing, and at first glance it looked reasonable. It showed database calls, request flow, and auth. Nothing obviously broken jumped out, which is exactly what made it dangerous. Here is what the trace actually amounted to:
+We had tracing, and at first glance it looked reasonable. It showed database calls, request flow, and auth. Nothing obviously broken jumped out, which is exactly what made it dangerous. Here is what the trace amounted to:
 
 ```text
 GET /users/me — 4,722ms total
@@ -44,7 +45,7 @@ WHAT WE CAN'T SEE:
 TOTAL: 4,722ms
 ```
 
-Depending on how you count it, **~90–95% of the request time was unaccounted for**. At that point there are only two possibilities: either the system is doing ~4.7 seconds of invisible work, or the trace is lying to you by omission.
+In other words, the trace is lying to you by omission.
 
 That is strictly worse than having no trace at all. With no data, you know you are guessing. With incomplete data, you think you are reasoning, which is how teams end up spending days on entirely plausible explanations:
 
@@ -52,17 +53,17 @@ That is strictly worse than having no trace at all. With no data, you know you a
 * "Auth is a bit slow."
 * "Maybe N+1."
 
-All of those are reasonable hypotheses. None of them mattered here. Go optimize that. The only honest answer is: I can't.
+All of those are reasonable hypotheses. None of them mattered here. If I ask you to optimize this  the right answer is: I can't.
 
 ## What's Missing
 
-Before you can optimize anything, you need a problem you can prove or disprove. Bueno's formulation is still the right one: if the problem statement is not specific enough to suggest a fix and precise enough to tell you whether the fix worked, then you do not yet have a real optimization problem.
+Before you can optimize anything, you need a problem you can prove or disprove. Bueno's formulation is: if the problem statement is not specific enough to suggest a fix and precise enough to tell you whether the fix worked, then you do not yet have a real optimization problem.
 
-His shortest version of that idea is the one that matters most: **a problem definition must be falsifiable**. Until you have that, you are not solving a performance problem. You are exploring a codebase in the general direction of slowness and calling it progress.
+Until you have that, you are not solving a performance problem. You are exploring a codebase in the general direction of slowness and calling it progress.
 
 ## Phase 2 — A Richer Trace
 
-After instrumenting the missing spans, the picture changed almost immediately. The system itself had not changed, but our ability to see the request had. This is a representative slow request on the same endpoint after the missing spans were added. It is in the same 2–4 second regime, but it is not meant to be the exact same frozen request — and in real life you should not expect the numbers to line up perfectly.
+After instrumenting the missing spans, the picture changed immediately. The system itself had not changed, but our ability to see the request had. This is a representative slow request on the same endpoint after the missing spans were added.
 
 ```text
 GET /users/me — ~4.7s total
@@ -77,7 +78,7 @@ middleware.call_next        ~4,300ms   ← dominant
 DB queries (combined)        ~150–250ms
 ```
 
-The numbers do not perfectly sum, and they should not. What matters is that the dominant cost is now obvious, which means the optimization problem has become concrete.
+The dominant cost is now obvious, which means the optimization problem has become concrete.
 
 Nothing new was added to the request path. The system did not get faster because we instrumented it. We just stopped being blind to where the time was going.
 
@@ -87,9 +88,8 @@ Once the missing time was visible, the optimization problem got much smaller. Th
 
 * refactor or remove the offending middleware
 * respect caching
-* eliminate redundant work
 
-The result was immediate and boring in the best possible way. **2–4s became 100–300ms**, and the issue collapsed in hours rather than dragging on for days of speculative performance work.
+The result was immediate and boring in the best possible way. **2–4s became 100–300ms**, and took hours rather than dragging on for days of speculative performance work.
 
 ```text
 AFTER FIX: representative /users/me trace
@@ -121,7 +121,7 @@ WHAT DISAPPEARED:
 
 ## A Quick Sanity Check
 
-When something gets dramatically faster, you should become more skeptical, not less. There are many ways to produce a fake performance win, and senior engineers eventually develop a catalog of them. Some of the common ones are familiar:
+When an improvement is too good to be true, it problably is. There are many ways to produce a fake performance win. Some of the common ones are familiar:
 
 * work failing earlier, because crashing is cheap
 * less data flowing, because network egress per request quietly dropped
@@ -129,19 +129,19 @@ When something gets dramatically faster, you should become more skeptical, not l
 * traffic composition shifting, because health checks or other cheap requests started dominating the sample
 * infrastructure changing underneath you, because faster nodes replaced slower ones or capacity moved around
 
-In this case, we checked the boring things that keep you honest. Response size was unchanged, request volume was stable, error rates were unchanged, and the improvement showed up in the distribution rather than only in a flattering average.
+In this case, we checked these things: Response size was unchanged, request volume was stable, error rates were unchanged, and the improvement showed up in the distribution rather than only in a flattering average.
 
 ## What Usually Happens Instead
 
-In a scenario like this, teams usually spend their time on plausible local optimizations. They tune queries, refactor handlers, or adjust infrastructure because those are the things the visible data seems to implicate. I have seen this enough times that I no longer think of it as an individual mistake. It is usually a skills-and-context problem. Engineers who have not internalized an instrument-first habit, or who are working from partial traces, will do the obvious thing: read code, guess at hotspots, and ship performance PRs that feel intelligent and accomplish very little.
+In a scenario like this, teams often spend their time on plausible local optimizations. They tune queries, refactor handlers, or adjust infrastructure because those are the things the visible data seems to implicate. I have seen this enough times that I no longer think of it as an individual mistake. It is usually a skills-and-context problem. Engineers who have not internalized an instrument-first habit, or who are working from partial traces, will do the obvious thing: read code, guess at hotspots, and ship performance PRs that feel intelligent - and accomplish very little.
 
 Leaders can misread this too. In standups and status updates, speculation sounds a lot like progress: people have “leads,” they are “working through fixes,” and there are several plausible explanations at different layers of the stack. That sounds reassuring when the team is still operating from partial visibility.
 
-The AI analogy is uncomfortable but useful because this is eerily like an LLM hallucinating from partial context. The reasoning is fluent, the confidence is real, and the grounding is missing. If your team keeps doing this, the answer is not another slogan about being data-driven. The answer is to make the hidden time visible, walk people through the before and after traces, and help them feel why the first round of optimizations was doomed from the start.
+This is eerily like an LLM hallucinating from partial context. The reasoning is fluent, the confidence is real, and the grounding is missing. If you see this happening, the answer is to make the hidden time visible, walk people through the before and after traces, and help them feel why the first round of optimizations was doomed from the start.
 
 ## The Mental Model Shift
 
-Optimization is not mainly about making systems faster. It is about identifying and removing the dominant constraint, which is a different problem and a much more disciplined one. That requires measurement, but not measurement in the vague dashboard sense. It requires measurement that makes the hidden time visible enough for the real bottleneck to reveal itself.
+Optimization is is about identifying and removing the dominant constraint which is not the same as eliminating possible performance problems. That requires measurement that makes the hidden time visible enough for the real bottleneck to reveal itself.
 
 This is the same loop behind [SLO-driven systems]({% post_url 2023-07-12-implementing-slos-for-data-quality %}) and the broader [operational analytics]({% post_url 2025-06-27-operational-data-primer %}) posture. You define what “good” looks like, measure it, act when it deviates, and then verify that the intervention changed the thing you actually care about.
 
@@ -157,7 +157,7 @@ Before proper instrumentation, the system looks like a pile of small things that
 
 ## Closing
 
-Most performance problems are not hard in the way people usually mean hard. They stay hard only while the important part of the system is still hidden, because invisible constraints invite superstition and visible ones usually collapse under straightforward engineering work. Systems do not get faster because we try harder. They get faster because we can finally see what is happening, and once we can see it, the right fix usually gets a lot smaller.
+Most performance problems are not hard in the way people usually mean hard. They stay hard only while the important part of the system is still hidden, because invisible constraints invite superstition and visible ones can be addressed with straightforward engineering work. Systems do not get faster because we try harder. They get faster because we can finally see what is happening, and once we can see it, the fix gets a lot smaller.
 
 ## Appendix A — Exercise: Your Hunch Does Not Matter Yet
 
@@ -165,23 +165,21 @@ This is the exercise I would run with a team. The goal is not to reward the smar
 
 ### Step 1 — Show only the misleading trace
 
-Give people only the Phase 1 trace and say: **Go optimize that.** The only honest answer is: **I can't.** If most of the request is still invisible, there is nothing to optimize yet.
+Give people only the Phase 1 trace and say: **Go optimize that.** Ask what they think is slow or what they would change first. Write the answers down. Most of them will evaporate as soon as the richer trace shows up.
 
-Then, if you want, ask what they think is slow or what they would change first. Write the answers down. Most of them will evaporate as soon as the richer trace shows up.
-
-### Step 2 — Name the actual lesson
+### Step 2 — Name the lesson
 
 Before you show the richer trace, say it directly: your hunch does not matter yet. If the trace accounts for only a small fraction of the request, you do not know enough to optimize anything. You are projecting a story onto missing data.
 
 ### Step 3 — Show the richer trace
 
-Now show Phase 2 and ask a different set of questions:
+Now show Phase 2 and reflect on the original answers:
 
 * Which of your earlier ideas still matter?
 * What became obviously dominant?
 * What work would have been wasted if you had shipped the first fix?
 
-The first hunch was not morally wrong. It was operationally irrelevant. Once the hidden time becomes visible, the optimization problem changes shape.
+The first hunch was not morally wrong. It was irrelevant. Once the hidden time becomes visible, the optimization problem changes shape.
 
 ### Step 4 — Show the after state
 
@@ -202,7 +200,7 @@ Instrument until the dominant cost is visible.
 
 ## Appendix B — Guardrails
 
-These are the minimum rules I would want around any serious performance work. They are simple on purpose, because teams are very good at becoming sophisticated before they become disciplined.
+These are the rules I would want around any serious performance work:
 
 * No performance work without a trace.
 * No optimization without a baseline.
@@ -213,7 +211,7 @@ These are the minimum rules I would want around any serious performance work. Th
 
 Each item below rules out a different kind of self-deception. The goal is not a bigger dashboard. The goal is to make fake wins harder to mistake for real ones.
 
-* latency distribution (p50, p95, p99) — tells you whether the pain is universal or hiding in the tail; averages will lie to you, which is why [*Averages Masking Tails*]({% post_url 2025-06-27-operational-data-primer %}) matters
+* latency distribution (p50, p95, p99) — tells you whether the pain is universal or hiding in the tail; averages will lie to you: [*Averages Mask Tails*]({% post_url 2025-06-27-operational-data-primer %})
 * error rates — because a fast failure is still a failure
 * request volume — because traffic mix shifts can make a system look faster than it is
 * DB vs. application time — because “the app is slow” and “the database is slow” are different problems
@@ -222,17 +220,17 @@ Each item below rules out a different kind of self-deception. The goal is not a 
 * cache hit/miss rates — because caching is often assumed, praised, and discussed long before it is actually working
 * server utilization (CPU, memory, I/O) — because you need to know whether you are compute-bound, memory-bound, or mostly waiting somewhere else
 
-If something is not measured, it is implicitly not being optimized. More dangerously, it is also a likely place for a false explanation to hide, because the unmeasured part of the system is where people project whatever story feels plausible.
+If something is not measured, it is not being optimized. More dangerously, it is place for a false explanation to hide, because the unmeasured part of the system is where people project whatever story feels plausible.
 
 ## Appendix D — What Actually Fixed It
 
-What helped **here**, once the trace exposed the bottlenecks, was much less glamorous than the earlier speculation.
+What helped **here**, once the trace exposed the bottlenecks, was much less glamorous than we were about to do.
 
-First, the biggest gain came from the middleware path the new spans exposed. Reworking that layer so the request stopped going through the problematic base middleware machinery took out the largest chunk of hidden time. On ordinary requests, that was roughly a second by itself, and it was worse in some of the uglier cases.
+The biggest gain came from the middleware path the new spans exposed. Reworking that layer so the request stopped going through the problematic base middleware machinery took out the largest chunk of hidden time. On ordinary requests, that was roughly a second by itself, and it was worse in some of the uglier cases.
 
-Second, the Azure AD path turned out to be paying an avoidable tax on every request. The module already had built-in caching, but we were defeating it by creating a fresh client each time. Reusing a module-level instance brought that cache back into play and gave back roughly another 300ms per request.
+Second, the Azure AD path turned out to be paying an avoidable tax on every request. The module had built-in caching, but we were defeating it by creating a fresh client each time. Reusing a module-level instance brought that cache back into play and gave back roughly another 300ms per request.
 
-That is what actually moved the numbers here, based on measurement. Other cleanup may still be worth doing for robustness or higher-throughput scenarios, but those were not the changes that took this endpoint from multi-second latency down into the low hundreds of milliseconds.
+Other cleanup may still be worth doing for robustness or higher-throughput scenarios, but those were not the changes that took this endpoint from multi-second latency down into the low hundreds of milliseconds.
 
 ## Further Reading
 
