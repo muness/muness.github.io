@@ -1,7 +1,7 @@
 ---
 title: "When Your Trace Is Lying to You: A Performance Case Study"
 date: 2026-04-16 10:00:00 -0400
-last_updated_at: 2026-04-20 12:00:00 -0400
+last_updated_at: 2026-04-22 09:50:38 -0400
 author: muness
 toc: true
 comments: true
@@ -133,7 +133,11 @@ In this case, we checked these things: Response size was unchanged, request volu
 
 ## What Usually Happens Instead
 
-In a scenario like this, teams often spend their time on plausible local optimizations. They tune queries, refactor handlers, or adjust infrastructure because those are the things the visible data seems to implicate. I have seen this enough times that I no longer think of it as an individual mistake. It is usually a skills-and-context problem. Engineers who have not internalized an instrument-first habit, or who are working from partial traces, will do the obvious thing: read code, guess at hotspots, and ship performance PRs that feel intelligent - and accomplish very little.
+In a scenario like this, teams often spend their time on plausible local optimizations. They tune queries, refactor handlers, or adjust infrastructure because those are the things the visible data seems to implicate. I have seen this enough times that I no longer think of it as an individual mistake. It is usually a skills-and-context problem. 
+
+As Rob Staton pointed out when we discussed this, many engineers simply lack the foundational concepts and inclinations around data-driven decisions. Part of this is structural: for the last decade, web applications have been largely "solved." There are fewer opportunities for the kind of pain that forces you to learn these lessons the hard way. Without those battle scars, engineers who have not internalized an instrument-first habit will do the obvious thing: read code, guess at hotspots, and ship performance PRs that feel intelligent—and accomplish very little.
+
+There is also a sunk cost fallacy at play. You see a similar pattern when engineers try to wrangle an AI agent or LLM conversation that started out poorly, instead of just discarding the context and asking a better question. In performance work, once you have spent hours guessing at a fix based on partial traces, it is hard to throw that work away and just go instrument the missing spans.
 
 Leaders can misread this too. In standups and status updates, speculation sounds a lot like progress: people have “leads,” they are “working through fixes,” and there are several plausible explanations at different layers of the stack. That sounds reassuring when the team is still operating from partial visibility.
 
@@ -240,3 +244,7 @@ Other cleanup may still be worth doing for robustness or higher-throughput scena
 
 * [Why Most Operational Analytics Fall Short And What You Can Do About It]({% post_url 2025-06-27-operational-data-primer %}) — the same diagnostic posture applied to business operations rather than request latency
 * [Implementing SLOs for Data Quality]({% post_url 2023-07-12-implementing-slos-for-data-quality %}) — how the *Measure → Identify → Change → Verify* loop becomes a reliability practice once you formalize what “good” means
+
+---
+
+*Thanks to Rob Staton for the discussion and review that led to my writing this article, as well as for his review of earlier versions of the text. His insights on the changing nature of software engineering and the sunk cost fallacy provided crucial framing for this piece.*
