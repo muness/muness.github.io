@@ -1,0 +1,75 @@
+direction: down
+
+vars: {
+  stroke: "#1E293B"
+  accent: "#94A3B8"
+  text: "#0F172A"
+  muted: "#64748B"
+}
+
+classes: {
+  breakdown: {
+    style: {
+      stroke: ${stroke}
+      stroke-width: 2
+      font-color: ${text}
+      font-size: 14
+      fill: "#FFFFFF"
+    }
+  }
+  caption: {
+    shape: text
+    style: {
+      font-color: ${muted}
+      font-size: 13
+      italic: true
+    }
+  }
+}
+
+title: {
+  shape: text
+  label: "Five Breakdowns Diagnostic"
+  style: {
+    font-color: ${text}
+    font-size: 24
+    bold: true
+  }
+  near: top-center
+}
+
+b1: {
+  class: breakdown
+  label: "1. No Shared Problem Space\nEveryone optimizes something different\n\nFix: /problem-space, /dissent"
+}
+
+b2: {
+  class: breakdown
+  label: "2. Problem Statement Never Changes\nSolution space stays trapped\n\nFix: /problem-statement, /solution-space"
+}
+
+b3: {
+  class: breakdown
+  label: "3. No Aim\nActivity looks like progress\n\nFix: /aim, /review"
+}
+
+b4: {
+  class: breakdown
+  label: "4. Ungoverned Execution\nChaos dragon eats the sprint\n\nFix: /execute loop, /salvage"
+}
+
+b5: {
+  class: breakdown
+  label: "5. No Terraforming\nLearning doesn't compound\n\nFix: /ship, /review with sunset clauses"
+}
+
+b1 -> b2: "" {style.stroke: transparent}
+b2 -> b3: "" {style.stroke: transparent}
+b3 -> b4: "" {style.stroke: transparent}
+b4 -> b5: "" {style.stroke: transparent}
+
+caption: {
+  class: caption
+  label: "Scan for the breakdown. Apply the corrective command."
+  near: bottom-center
+}

@@ -1,0 +1,292 @@
+/* Open Horizons EPUB Stylesheet */
+/* Designed for business novel with command blocks and artifacts */
+
+/* ==========================================================================
+   Base Typography
+   ========================================================================== */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headers */
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  page-break-before: always;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-indent: 0;
+}
+
+p + p {
+  text-indent: 1.5em;
+}
+
+/* ==========================================================================
+   Command Blocks (styled distinctively)
+   ========================================================================== */
+
+/* Commands like /problem-space, /aim, /execute */
+h2[id^="problem"], h2[id^="aim"], h2[id^="execute"],
+h2[id^="solution"], h2[id^="review"], h2[id^="dissent"],
+h2[id^="salvage"], h2[id^="ship"] {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2d3748;
+  background-color: #f7fafc;
+  border-left: 4px solid #4a5568;
+  padding: 0.5em 0.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+/* Command names in text */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+  background-color: #f0f0f0;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   Artifacts (named deliverables within episodes)
+   ========================================================================== */
+
+/* Artifact headers - usually bold text like **Artifact: Name** */
+strong {
+  font-weight: 600;
+}
+
+/* Artifact blocks - typically follow a pattern */
+h3:has(+ ul), h3:has(+ p + ul) {
+  color: #2c5282;
+}
+
+/* ==========================================================================
+   End-of-Episode Memos
+   ========================================================================== */
+
+/* The memo sections at the end of each episode */
+h2:contains("End-of-Episode"),
+h2[id*="end-of-episode"] {
+  font-size: 1em;
+  font-style: italic;
+  color: #4a5568;
+  border-top: 1px solid #cbd5e0;
+  border-bottom: none;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+/* Memo content styling */
+h2:contains("End-of-Episode") ~ p,
+h2:contains("End-of-Episode") ~ ul {
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol {
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+/* Definition-style lists in artifacts */
+ul li strong:first-child {
+  color: #2d3748;
+}
+
+/* ==========================================================================
+   Blockquotes (for dialogue and emphasis)
+   ========================================================================== */
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #a0aec0;
+  font-style: italic;
+  color: #4a5568;
+  background-color: #f7fafc;
+}
+
+/* ==========================================================================
+   Horizontal Rules (scene breaks)
+   ========================================================================== */
+
+hr {
+  border: none;
+  border-top: 1px solid #cbd5e0;
+  margin: 2em 0;
+  text-align: center;
+}
+
+hr::after {
+  content: "* * *";
+  display: block;
+  position: relative;
+  top: -0.7em;
+  font-size: 0.8em;
+  color: #a0aec0;
+  background: white;
+  width: 3em;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Front Matter (Dramatis Personae, Vocabulary)
+   ========================================================================== */
+
+/* Character bios */
+.dramatis-personae h3 {
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+.dramatis-personae p {
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  text-indent: 0;
+}
+
+/* Vocabulary definitions */
+.vocabulary dt {
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 0.8em;
+}
+
+.vocabulary dd {
+  margin-left: 1em;
+  font-size: 0.95em;
+  color: #4a5568;
+}
+
+/* ==========================================================================
+   Tables (for structured artifacts)
+   ========================================================================== */
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #cbd5e0;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #f7fafc;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Emphasis and Special Text
+   ========================================================================== */
+
+em {
+  font-style: italic;
+}
+
+/* Private messages in story (like Slack) */
+p strong:first-child {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   Page Breaks
+   ========================================================================== */
+
+.page-break {
+  page-break-after: always;
+}
+
+/* Ensure episodes start on new pages */
+h1 {
+  page-break-before: always;
+}
+
+/* Keep headers with following content */
+h2, h3 {
+  page-break-after: avoid;
+}
+
+/* ==========================================================================
+   Special Sections
+   ========================================================================== */
+
+/* The Internal Readout in Episode 6 */
+h2:contains("Internal Readout") {
+  font-size: 1.2em;
+  border-bottom: 2px solid #4a5568;
+}
+
+/* Breakdown sections */
+h3:contains("Breakdown") {
+  color: #c53030;
+  border-left: 3px solid #c53030;
+  padding-left: 0.5em;
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}

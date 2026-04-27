@@ -1,0 +1,136 @@
+direction: down
+
+vars: {
+  center-color: "#64748B"      # Slate gray
+  accent-color: "#94A3B8"      # Muted blue-gray
+  text-color: "#1E293B"        # Dark slate
+  subtitle-color: "#64748B"    # Medium slate
+  tool-down-color: "#FEF3C7"   # Amber light
+  misconfig-color: "#DBEAFE"   # Blue light
+  policy-color: "#FEE2E2"      # Red light
+}
+
+classes: {
+  box: {
+    style: {
+      stroke: ${text-color}
+      stroke-width: 2
+      fill: "#FFFFFF"
+      font-color: ${text-color}
+      font-size: 16
+      bold: true
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 2
+      font-color: ${subtitle-color}
+      font-size: 12
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${subtitle-color}
+      font-size: 12
+      italic: true
+    }
+  }
+}
+
+# Entry point
+scan-fail: {
+  class: box
+  label: "Scan Fails"
+}
+
+# Classification step
+classify: {
+  class: box
+  label: "Classify"
+  shape: diamond
+}
+
+scan-fail -> classify: {class: edge}
+
+# Three failure category containers with evidence and response
+tool-down: {
+  label: "Tool Down"
+  style.fill: ${tool-down-color}
+  style.stroke: ${text-color}
+  style.stroke-width: 2
+  style.font-color: ${text-color}
+  style.bold: true
+
+  evidence: {
+    shape: text
+    label: "Evidence:\nSystem logs, timeouts, status page"
+    style.font-size: 12
+    style.font-color: ${text-color}
+  }
+
+  response: {
+    class: box
+    label: "Retry automatically"
+  }
+
+  evidence -> response: {class: edge}
+}
+
+misconfig: {
+  label: "Misconfigured"
+  style.fill: ${misconfig-color}
+  style.stroke: ${text-color}
+  style.stroke-width: 2
+  style.font-color: ${text-color}
+  style.bold: true
+
+  evidence: {
+    shape: text
+    label: "Evidence:\nAuth errors, config diffs, stale DB"
+    style.font-size: 12
+    style.font-color: ${text-color}
+  }
+
+  response: {
+    class: box
+    label: "Fix config, retry"
+  }
+
+  evidence -> response: {class: edge}
+}
+
+policy-fail: {
+  label: "Policy Fail"
+  style.fill: ${policy-color}
+  style.stroke: ${text-color}
+  style.stroke-width: 2
+  style.font-color: ${text-color}
+  style.bold: true
+
+  evidence: {
+    shape: text
+    label: "Evidence:\nReproducible scan with package IDs"
+    style.font-size: 12
+    style.font-color: ${text-color}
+  }
+
+  response: {
+    class: box
+    label: "Escalate to Security"
+  }
+
+  evidence -> response: {class: edge}
+}
+
+classify -> tool-down: {class: edge}
+classify -> misconfig: {class: edge}
+classify -> policy-fail: {class: edge}
+
+# Caption
+caption: {
+  class: note
+  label: "Scanner Failure Taxonomy v0\nSeparate tool failures from policy failures\nso /execute can target diagnostics, not debate."
+  near: bottom-center
+}

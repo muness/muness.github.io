@@ -1,0 +1,165 @@
+direction: down
+
+vars: {
+  card-color: "#F8FAFC"      # Light slate
+  border-color: "#1E293B"    # Dark slate
+  accent-color: "#64748B"    # Medium slate
+  text-color: "#1E293B"      # Dark slate
+  subtitle-color: "#64748B"  # Medium slate
+  highlight-color: "#E2E8F0" # Muted highlight
+}
+
+classes: {
+  card: {
+    style: {
+      stroke: ${border-color}
+      stroke-width: 2
+      fill: ${card-color}
+      font-color: ${text-color}
+      font-size: 16
+      bold: true
+      border-radius: 8
+    }
+  }
+  component: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 1
+      fill: "#FFFFFF"
+      font-color: ${text-color}
+      font-size: 14
+    }
+  }
+  lifecycle: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 1
+      fill: ${highlight-color}
+      font-color: ${text-color}
+      font-size: 14
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 2
+      font-color: ${subtitle-color}
+      font-size: 12
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${subtitle-color}
+      font-size: 14
+      italic: true
+    }
+  }
+}
+
+# Title
+title: {
+  shape: text
+  label: "Anatomy of an Enforceable Guardrail"
+  style: {
+    font-size: 24
+    font-color: ${text-color}
+    bold: true
+  }
+}
+
+# The four stacked components
+guardrail: {
+  class: card
+  label: "Guardrail"
+
+  boundary: {
+    class: component
+    label: "1. BOUNDARY\nWhat cannot / must happen"
+    style.bold: true
+  }
+
+  why: {
+    class: component
+    label: "2. WHY\nSafety or efficiency principle"
+    style.bold: true
+  }
+
+  revisit: {
+    class: component
+    label: "3. REVISIT TRIGGER\nEvidence that makes it obsolete"
+    style.bold: true
+  }
+
+  sunset: {
+    class: component
+    label: "4. SUNSET\nExpiration if not renewed"
+    style.bold: true
+  }
+
+  boundary -> why: {style.stroke-width: 0}
+  why -> revisit: {style.stroke-width: 0}
+  revisit -> sunset: {style.stroke-width: 0}
+}
+
+# Lifecycle flow
+lifecycle: {
+  label: "Lifecycle"
+  style: {
+    stroke: ${accent-color}
+    stroke-width: 1
+    fill: "transparent"
+  }
+
+  created: {
+    class: lifecycle
+    label: "Created"
+  }
+
+  active: {
+    class: lifecycle
+    label: "Active\n(enforced)"
+  }
+
+  revisit_date: {
+    class: lifecycle
+    label: "Revisit Date"
+  }
+
+  renewed: {
+    class: lifecycle
+    label: "Renewed"
+    style.fill: "#D1FAE5"
+  }
+
+  expired: {
+    class: lifecycle
+    label: "Expired\n(recommendation)"
+    style.fill: "#FEE2E2"
+  }
+
+  created -> active: {class: edge}
+  active -> revisit_date: {class: edge}
+  revisit_date -> renewed: {
+    class: edge
+    label: "still needed"
+  }
+  revisit_date -> expired: {
+    class: edge
+    label: "obsolete"
+  }
+  renewed -> active: {
+    class: edge
+    label: "continues"
+  }
+}
+
+title -> guardrail: {style.stroke-width: 0}
+guardrail -> lifecycle: {style.stroke-width: 0}
+
+# Caption
+caption: {
+  class: note
+  label: "A rule only becomes enforceable when you can write down\nthe boundary, the why, and when it should be revisited."
+  near: bottom-center
+}

@@ -1,0 +1,109 @@
+direction: down
+
+vars: {
+  card-color: "#F8FAFC"      # Light slate
+  border-color: "#1E293B"    # Dark slate
+  accent-color: "#64748B"    # Medium slate
+  text-color: "#1E293B"      # Dark slate
+  subtitle-color: "#64748B"  # Medium slate
+}
+
+classes: {
+  card: {
+    style: {
+      stroke: ${border-color}
+      stroke-width: 2
+      fill: ${card-color}
+      font-color: ${text-color}
+      font-size: 16
+      bold: true
+      border-radius: 8
+    }
+  }
+  component: {
+    style: {
+      stroke: ${accent-color}
+      stroke-width: 1
+      fill: "#FFFFFF"
+      font-color: ${text-color}
+      font-size: 14
+      bold: true
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${subtitle-color}
+      font-size: 14
+      italic: true
+    }
+  }
+}
+
+# Title
+title: {
+  shape: text
+  label: "Distill — Learning Capsule"
+  style: {
+    font-size: 24
+    font-color: ${text-color}
+    bold: true
+  }
+}
+
+# The capsule card with seven fields
+distill: {
+  class: card
+  label: "Distill Output"
+
+  aim: {
+    class: component
+    label: "1. AIM\nWhat we're protecting for"
+  }
+
+  mechanism: {
+    class: component
+    label: "2. MECHANISM\nHow we protect it"
+  }
+
+  feedback: {
+    class: component
+    label: "3. FEEDBACK\nHow we know it's working"
+  }
+
+  failure: {
+    class: component
+    label: "4. FAILURE MODE\nWhat we're preventing"
+  }
+
+  guardrail: {
+    class: component
+    label: "5. GUARDRAIL CANDIDATE\nThe rule that would stop it"
+  }
+
+  revisit: {
+    class: component
+    label: "6. REVISIT TRIGGER\nWhen to check if this still matters"
+  }
+
+  tags: {
+    class: component
+    label: "7. RETRIEVAL TAGS\nHow the next team finds this"
+  }
+
+  aim -> mechanism: {style.stroke-width: 0}
+  mechanism -> feedback: {style.stroke-width: 0}
+  feedback -> failure: {style.stroke-width: 0}
+  failure -> guardrail: {style.stroke-width: 0}
+  guardrail -> revisit: {style.stroke-width: 0}
+  revisit -> tags: {style.stroke-width: 0}
+}
+
+title -> distill: {style.stroke-width: 0}
+
+# Caption
+caption: {
+  class: note
+  label: "Persists across sessions. Retrieved at pre-flight.\nLearning captured, rule not yet promoted."
+  near: bottom-center
+}
