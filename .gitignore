@@ -14,6 +14,11 @@ _site
 node_modules
 package-lock.json
 
+pnpm-debug.log*
+
+# Slidev outputs
+dist
+.slidev
 # IDE configurations
 .idea
 .vscode

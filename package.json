@@ -1,0 +1,16 @@
+{
+  "name": "muness-github-io",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "slides:llm": "slidev _slidev/llm-triangulation-bs-filter.md",
+    "slides:llm:open": "slidev _slidev/llm-triangulation-bs-filter.md --open",
+    "slides:llm:build": "slidev build _slidev/llm-triangulation-bs-filter.md --out ../dist/llm-triangulation-bs-filter",
+    "slides:llm:format": "slidev format _slidev/llm-triangulation-bs-filter.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.15.0",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}
