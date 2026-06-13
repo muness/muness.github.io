@@ -57,7 +57,7 @@ That is the first important boundary: the LLM is not the domain. The production 
 
 When I think about this kind of system, I do not see one agent. I see several loops that feed each other.
 
-[![Domain learning ecosystem: runtime expert loop, in-app assistant loop, improvement loop, and knowledge graph loop exchanging local cases, reviewed scenarios, and promoted artifacts over different time scales.](../../assets/img/domain-learning-ecosystem.svg)](../../assets/img/domain-learning-ecosystem.svg)
+[![Domain learning ecosystem: runtime expert loop, in-app assistant loop, improvement loop, and knowledge graph loop exchanging local cases, reviewed scenarios, and promoted artifacts over different time scales.](/assets/img/domain-learning-ecosystem.svg)](/assets/img/domain-learning-ecosystem.svg)
 
 *Click the diagram to view it full size.*
 
