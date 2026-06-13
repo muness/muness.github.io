@@ -1,0 +1,125 @@
+direction: down
+
+vars: {
+  ink: "#1E293B"
+  muted: "#64748B"
+  blue: "#DBEAFE"
+  green: "#DCFCE7"
+  amber: "#FEF3C7"
+  violet: "#EDE9FE"
+  line: "#94A3B8"
+}
+
+classes: {
+  loop: {
+    style: {
+      stroke: ${ink}
+      stroke-width: 2
+      fill: "#FFFFFF"
+      font-color: ${ink}
+      font-size: 18
+      bold: true
+    }
+  }
+  artifact: {
+    style: {
+      stroke: ${muted}
+      stroke-width: 1
+      fill: "#F8FAFC"
+      font-color: ${ink}
+      font-size: 15
+    }
+  }
+  edge: {
+    style: {
+      stroke: ${line}
+      stroke-width: 2
+      font-color: ${muted}
+      font-size: 13
+    }
+  }
+  note: {
+    shape: text
+    style: {
+      font-color: ${muted}
+      font-size: 14
+      italic: true
+    }
+  }
+}
+
+runtime: {
+  class: loop
+  label: "1. Runtime expert loop\nlive / per case"
+  style.fill: ${blue}
+}
+
+assistant: {
+  class: loop
+  label: "2. In-app assistant loop\nduring work"
+  style.fill: ${green}
+}
+
+improvement: {
+  class: loop
+  label: "3. Improvement loop\nperiodic / PR-backed"
+  style.fill: ${amber}
+}
+
+graph: {
+  class: loop
+  label: "4. Knowledge graph loop\ndurable memory"
+  style.fill: ${violet}
+}
+
+case: {
+  class: artifact
+  label: "Local case\nrecords • trace • expected result"
+}
+
+promoted: {
+  class: artifact
+  label: "Promoted artifacts\nrules • pipeline steps • tests\nplaybooks • config • guardrails"
+}
+
+future: {
+  class: artifact
+  label: "Future runtime work\nmore deterministic • less improvisational"
+  style.fill: ${blue}
+}
+
+runtime -> case: {
+  class: edge
+  label: "produce evidence"
+}
+
+case -> assistant: {
+  class: edge
+  label: "capture correction"
+}
+
+assistant -> graph: {
+  class: edge
+  label: "reviewed scenario + provenance"
+}
+
+graph -> improvement: {
+  class: edge
+  label: "repeated failures or successes"
+}
+
+improvement -> promoted: {
+  class: edge
+  label: "encode at the right layer"
+}
+
+promoted -> future: {
+  class: edge
+  label: "changes the next run"
+}
+
+caption: {
+  class: note
+  label: "Local knowledge moves across time scales:\none case → reviewed scenario → durable change"
+  near: bottom-center
+}
