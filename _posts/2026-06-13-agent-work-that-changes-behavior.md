@@ -1,6 +1,6 @@
 ---
 title: "Agent Work That Changes Behavior"
-date: 2026-06-13 11:00:00 -0400
+date: 2026-06-13 16:25:00 -0400
 author: muness
 toc: true
 comments: true

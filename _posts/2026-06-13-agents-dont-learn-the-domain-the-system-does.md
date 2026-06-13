@@ -1,6 +1,6 @@
 ---
 title: "Agents Don’t Learn the Domain. The System Does."
-date: 2026-06-13 09:00:00 -0400
+date: 2026-06-13 16:15:00 -0400
 author: muness
 toc: true
 comments: true
@@ -33,11 +33,9 @@ You do not make that system smart by fine-tuning one instance into a larger brai
 
 This is also the loop that lets a newcomer become useful quickly in a consulting engagement. Learn just enough of the domain at the right granularity. Compress what you heard into a usable story, diagram, playbook, eval, or question. Act against that artifact. Verify against reality. Then use the correction to update the artifact and the next action. The human is not trying to become a complete copy of the organization. They are acting as a compression engine for local learning. Good agent systems should do the same thing, but with better memory, provenance, and review boundaries.
 
-## A concrete domain: casework systems
+## A concrete domain: tenant-specific data products
 
-Take a domain-specific operational system. Keep it generic. No client names. No proprietary schema. Just the shape of the problem.
-
-Records arrive from different sources. They carry identifiers, quantities, dates, classifications, status fields, and exceptions. A rules engine or expert-system-like pipeline tries to produce the right suggestion: match these records, create that adjustment, ignore this known pattern, flag that anomaly for review.
+Take a data product that turns tenant-specific source data into trusted operational records. Each tenant has its own ingest paths, normalization rules, cleanup routines, and custom pipeline steps. The business outcome is not a normalized table for its own sake; it is that downstream teams can act on the data: answer a client, resolve a discrepancy, produce a report, or approve a correction without redoing the whole investigation by hand. Records arrive from different source systems. The same case can involve conflicting records, customer-specific rules, known exceptions, and review decisions. The system is trying to produce the right suggestion: match these records, create that adjustment, ignore this known pattern, or flag that anomaly for review.
 
 Some cases are boring. They should stay boring. A deterministic routine normalizes the input. A rule catches a common condition. Customer or environment configuration says this workflow handles a field differently. A regression test proves the easy case stays easy.
 
