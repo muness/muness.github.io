@@ -7,41 +7,33 @@ comments: true
 excerpt: "Self-improving agent systems are less about models improving themselves and more about domain harnesses where people, code, tests, workflows, and knowledge bases improve each other."
 ---
 
-The false version of the story is easy to tell.
+A data product is already a kind of memory.
 
-You give an agent access to tools. It tries a task. It observes the result. It rewrites its prompt, updates its memory, maybe generates a new tool, and gets better. Repeat the loop enough times and the agent learns the domain.
+Not memory in the LLM sense. Memory in the operational sense: records arriving from several source systems, ingest paths, normalization routines, cleanup rules, custom pipeline steps, exception lists, review decisions, and the people who know why an apparently wrong adjustment is actually right.
 
-That story is attractive because it has a clean protagonist. The agent gets smarter. The product demo has a before and after. The architecture diagram has a model in the middle and arrows coming back into it labeled feedback.
+The business outcome is not the pipeline. It is a trusted operational record that downstream teams can use to answer a client, resolve a discrepancy, produce a report, or approve a correction without reconstructing the whole case by hand.
 
-I do not think that is the useful version.
+That means the agent is not walking into an empty domain. It is entering a system that already knows a lot, just not in one place.
 
-The useful version is less magical and more interesting: the *system* learns the domain. The model is one participant. So are the domain experts who know what should have happened, the deterministic code that already handles the common cases, the operational routines that move data into shape, the customer or environment configuration that changes the answer, the playbooks that encode judgment, the regression suite that catches drift, the workflow runner that records traces, and the knowledge base that remembers why a decision was made.
+The same pattern shows up well beyond data products. Compliance reviews, support escalations, underwriting, clinical operations, internal tooling, incident response, and expert casework all have the same shape: local judgment gets applied to messy work, and the question is whether the system preserves that judgment for the next similar case.
 
-That is a very different claim. It moves the unit of improvement from "the agent" to the harness around the work.
+That is where agents become interesting. A case fails. A recommendation is wrong. A generic fallback fires where a specific playbook should have applied. A domain expert explains what should have happened.
 
-A self-improving domain agent is not a model meditating in isolation. It is a closed loop:
+If that explanation stays in a chat transcript, ticket, or prompt tweak, nothing durable happened. The same class of case can fail again. If it becomes a scenario, test, rule, playbook entry, configuration change, pipeline step, or knowledge record, the system has learned something.
 
-> production case → domain explanation → scenario/test → prompt/playbook/code/proc fix → review → deployment → updated knowledge base → better future run
+That is the claim: agents do not learn the domain in any useful operational sense by themselves. The system learns when local correction becomes durable behavior.
 
 The hard part is not getting an LLM to make an edit. That is getting cheaper. The hard part is arranging the work so the right failure becomes a reusable domain artifact instead of another Slack thread, another ticket, another one-off explanation, or another prompt tweak nobody can audit later.
 
-This is what people miss in the self-improving-agent story. The improvement is not mainly a model becoming dramatically more capable by training itself, rewriting its own architecture, or discovering a new general intelligence loop. The improvement is adaptation to the work at hand. The system starts to behave more like the best people in the domain because it preserves the cases they would remember, the exceptions they would notice, the checks they would run, and the judgment they would carry into the next similar situation.
+## Where the domain actually lives
 
-This is why treating continual learning as primarily a model problem points in the wrong direction. The missing knowledge is not a static corpus waiting to be distilled into one smarter model. Hayek's old point about knowledge is still the constraint: useful knowledge is local, contextual, dispersed, and changing. In domain work it is also fractal. The same kind of judgment lives inside a single case, inside a repeated exception pattern, inside a team's workflow, and inside the business rules that slowly harden around all of it.
-
-You do not make that system smart by fine-tuning one instance into a larger brain. You make it smart by building a learning ecosystem: people close to the work capture local truth, workflows preserve it with provenance, tests and reviews decide what should become durable, and agents help move the learning to the layer where it belongs.
-
-This is also the loop that lets a newcomer become useful quickly in a consulting engagement. Learn just enough of the domain at the right granularity. Compress what you heard into a usable story, diagram, playbook, eval, or question. Act against that artifact. Verify against reality. Then use the correction to update the artifact and the next action. The human is not trying to become a complete copy of the organization. They are acting as a compression engine for local learning. Good agent systems should do the same thing, but with better memory, provenance, and review boundaries.
-
-## A concrete domain: tenant-specific data products
-
-Take a data product that turns tenant-specific source data into trusted operational records. Each tenant has its own ingest paths, normalization rules, cleanup routines, and custom pipeline steps. The business outcome is not a normalized table for its own sake; it is that downstream teams can act on the data: answer a client, resolve a discrepancy, produce a report, or approve a correction without redoing the whole investigation by hand. Records arrive from different source systems. The same case can involve conflicting records, customer-specific rules, known exceptions, and review decisions. The system is trying to produce the right suggestion: match these records, create that adjustment, ignore this known pattern, or flag that anomaly for review.
+The domain is not only in the records. It is in the paths those records take through the system: the ingest contract, normalization routine, cleanup rule, customer configuration, exception list, playbook, review decision, and test that proves the behavior should survive.
 
 Some cases are boring. They should stay boring. A deterministic routine normalizes the input. A rule catches a common condition. Customer or environment configuration says this workflow handles a field differently. A regression test proves the easy case stays easy.
 
 Then there are the hard cases. A domain expert sees a bad suggestion. The system recommended the wrong action for a concrete set of records. Or it chose a generic fallback where a specific playbook entry should have applied. Or the deterministic pre-check sent the case down the wrong path before the LLM ever saw it.
 
-This is where the naive agent story starts to break down.
+This is where the boundary becomes practical.
 
 If the answer is "ask the chatbot what happened," you have not built a domain learning system. You have built another place to paste context.
 
