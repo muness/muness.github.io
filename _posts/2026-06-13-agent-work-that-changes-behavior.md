@@ -7,7 +7,7 @@ comments: true
 excerpt: "The useful agent story is not smarter chatbots or generic runtimes. It is context-bearing workflows that let people, agents, tests, and domain systems change how work happens."
 ---
 
-A pattern keeps showing up in client work and internal projects.
+The three posts in this series are trying to name one operating model for agent work: preserve the parts of learning that should survive a run, then make the next run behave differently because of them.
 
 Drazen’s [The Context Stack](/posts/the-context-stack/) names the underlying bottleneck cleanly:
 
