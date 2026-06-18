@@ -4,20 +4,14 @@ date: 2026-06-17 20:15:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "The leverage in domain AI is not faster handoffs. It is removing the handoffs that keep expert correction from becoming testable system behavior."
+excerpt: "Domain AI matters when expert correction stops traveling through handoffs and becomes testable system behavior."
 ---
 
-The expensive part is not always the fix.
+A domain expert sees a concrete failure: the recommendation is wrong for an account, position, or transaction. The fallback answer is too generic. The playbook has an exception the system missed. The expert can usually say the important part plainly: for this case, with these records, this is what should have happened.
 
-A domain expert sees the wrong recommendation for a concrete case. The account, position, or transaction is out of balance. The fallback answer is too generic. The playbook has an exception the system missed. The expert can usually say the important part plainly: for this case, with these records, this is what should have happened.
+The old process turns that judgment into a long chain of indirect artifacts. A product manager turns it into priority. Jira turns it into a ticket. A BA turns it into requirements. A developer turns those requirements into code. The SDLC turns the code into a release. UAT turns the release back into a question: did we preserve the original judgment, or did the important part get compressed out of the chain?
 
-Then the organization turns that judgment into everything except the thing it needs.
-
-A product manager turns it into priority. Jira turns it into a ticket. A BA turns it into requirements. A developer turns those requirements into code. The SDLC turns the code into a release. UAT turns the release back into a question: did we preserve the original judgment, or did the important part get compressed out of the chain?
-
-That path exists for good reasons. It gives the work ownership, sequencing, review, deployment discipline, and accountability. I do not want an AI system bypassing those controls. I want to stop using those controls as a substitute for a better workpiece.
-
-The workpiece should be the case itself: the records, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
+That path exists for good reasons: ownership, sequencing, review, deployment discipline, and accountability. I do not want an AI system bypassing those controls. I want the controls attached to a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
 
 [![Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours.](/assets/img/handoff-notes-to-executable-expectations.svg)](/assets/img/handoff-notes-to-executable-expectations.svg)
 
@@ -41,7 +35,7 @@ That is the part that clicked for me. I do not need the exact percentage to be p
 
 In a domain-learning loop, the product is future behavior. If a correction has to become a meeting, a ticket, a requirement, an implementation guess, and a UAT failure before it becomes executable, most of the process is indirect. AI can make those indirect steps cheaper, but that is not the same as changing the production method.
 
-The leverage comes from removing the indirect transformations that exist only because expert judgment has nowhere better to go.
+The gain comes from removing the indirect transformations that exist only because expert judgment has nowhere better to go.
 
 ## The old loop manufactures handoff artifacts
 
