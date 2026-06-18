@@ -13,7 +13,7 @@ The domain expert could see the wrong answer, but the ability to change the syst
 
 LLMs change the cost curve. First-pass code, prompt edits, tests, summaries, and requirement drafts get cheaper. That tempts a sloppy conclusion: if experts know what should happen and LLMs can write code, let the expert drive the change directly.
 
-That skips the part that still matters. Domain work is variable because the domain is variable: different accounts, positions, customers, workflows, exceptions, and histories legitimately change the answer. The correction should enter the system directly. The production change should not become arbitrary variation. The useful target is a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
+The control problem does not go away. Domain work is variable because the domain is variable: different accounts, positions, customers, workflows, exceptions, and histories legitimately change the answer. The correction should enter the system directly. The production change should not become arbitrary variation. The useful target is a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
 
 <img src="https://raw.githubusercontent.com/muness/muness.github.io/de797baebe88b79d3212e4c68ab45e73ab02c5f9/assets/img/handoff-notes-to-executable-expectations.svg" alt="Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours." />
 
@@ -21,7 +21,7 @@ That skips the part that still matters. Domain work is variable because the doma
 
 ## Most of the process is not the product
 
-Brian Potter's [*The Origins of Efficiency*](https://press.stripe.com/origins-of-efficiency) has been useful for thinking about this because it treats efficiency as a property of production methods, not just tools. A production process, in his framing, is a chain of transformations. Input moves through steps. Each step changes it. The output of one step becomes the input to the next.
+Brian Potter's [*The Origins of Efficiency*](https://press.stripe.com/origins-of-efficiency) has been useful for thinking about this because it treats efficiency as a property of production methods rather than individual tools. A production process, in his framing, is a chain of transformations. Input moves through steps. Each step changes it. The output of one step becomes the input to the next.
 
 That lens maps uncomfortably well onto software change processes. The input is expert judgment about a messy case. The output is changed system behavior. Everything in between is a production process for turning one into the other.
 
@@ -51,9 +51,7 @@ LLMs can help at each step. That still leaves the design problem intact: too man
 
 In [Agents Don't Learn the Domain. The System Does.](/posts/agents-dont-learn-the-domain-the-system-does/), I described a domain harness as the place where a production failure becomes a scenario, a scenario becomes a regression case, and a reviewed fix becomes future behavior. This essay is the same mechanism viewed through the production-process lens.
 
-The old workpiece is a ticket about a failure.
-
-The new workpiece is the failure, preserved as an executable expectation.
+The old workpiece is a ticket about a failure. The new workpiece is the failure, preserved as an executable expectation.
 
 That sounds like a small wording change. It is not small operationally. A domain expert can pull in the case, preserve the records, and write expected behavior in domain language: for this case, with these records, this is what should have happened. The harness can run the current system against that scenario and show the mismatch. It can attach the trace, retrieved context, prompt version, playbook section, deterministic rule output, configuration, and prior similar cases.
 
@@ -94,7 +92,7 @@ The variable parts should be explicit: this edge condition matters, this custome
 
 Raw feedback still cannot become policy automatically. A thumbs-down, edited expectation, comment, or SME assertion is evidence. It needs source, case, scope, review, and sometimes disagreement. The harness should remember whether the assertion was accepted, rejected, narrowed, or superseded.
 
-The goal is not to remove judgment. The goal is to stop wasting judgment on reconstruction and give it a controlled path into future behavior.
+Judgment stops getting spent on reconstruction and gets a controlled path into future behavior.
 
 ## The runtime is where this either works or becomes theater
 
@@ -124,4 +122,4 @@ If yes, the domain loop learned something.
 
 If no, we may have produced motion. Better tickets. Faster summaries. Cleaner requirements. More convincing explanations. Maybe even code that shipped. But the process did not keep the correction.
 
-From handoff notes to executable expectations is a different production method for domain judgment. The promise is not that LLMs make every step smarter. The promise is that some of those steps stop being necessary.
+From handoff notes to executable expectations is a different production method for domain judgment. LLMs do not need to make every step smarter for this to matter. Some steps stop being necessary.
