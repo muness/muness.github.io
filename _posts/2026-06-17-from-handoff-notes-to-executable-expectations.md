@@ -7,27 +7,25 @@ comments: true
 excerpt: "LLM systems in domain work matter when expert correction stops traveling through handoffs and becomes testable system behavior."
 ---
 
-A domain expert sees a concrete failure: the recommendation is wrong for an account, position, or transaction. The fallback answer is too generic. The playbook has an exception the system missed. The expert can usually say the important part plainly: for this case, with these records, this is what should have happened.
+For most of software history, changing production behavior was expensive enough that organizations built a process around scarcity.
 
-The old process turns that judgment into a long chain of indirect artifacts. A product manager turns it into priority. Jira turns it into a ticket. A BA turns it into requirements. A developer turns those requirements into code. The SDLC turns the code into a release. UAT turns the release back into a question: did we preserve the original judgment, or did the important part get compressed out of the chain?
+The domain expert could see the wrong answer, but the ability to change the system lived somewhere else: in a developer's head, an IDE, a release train, and a review path. So the expert's judgment had to travel. It became priority, ticket, requirement, implementation, deployment, and UAT. That was not irrational. It was a way to ration scarce code-writing capacity and protect production from every local correction becoming uncontrolled variation.
 
-That path exists for good reasons: ownership, sequencing, review, deployment discipline, and accountability. I do not want an LLM system bypassing those controls. I want the controls attached to a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
+LLMs change the cost curve. First-pass code, prompt edits, tests, summaries, and requirement drafts get cheaper. That tempts a sloppy conclusion: if experts know what should happen and LLMs can write code, let the expert drive the change directly.
 
-[![Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours.](/assets/img/handoff-notes-to-executable-expectations.svg)](/assets/img/handoff-notes-to-executable-expectations.svg)
+That skips the part that still matters. Domain work is variable because the domain is variable: different accounts, positions, customers, workflows, exceptions, and histories legitimately change the answer. The correction should enter the system directly. The production change should not become arbitrary variation. The useful target is a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
 
-*Click the diagram to view it full size.*
+<img src="https://raw.githubusercontent.com/muness/muness.github.io/de797baebe88b79d3212e4c68ab45e73ab02c5f9/assets/img/handoff-notes-to-executable-expectations.svg" alt="Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours." />
+
+*Open the diagram in a new tab to view it full size.*
 
 ## Most of the process is not the product
 
 Brian Potter's [*The Origins of Efficiency*](https://press.stripe.com/origins-of-efficiency) has been useful for thinking about this because it treats efficiency as a property of production methods, not just tools. A production process, in his framing, is a chain of transformations. Input moves through steps. Each step changes it. The output of one step becomes the input to the next.
 
-That lens maps uncomfortably well onto software organizations.
+That lens maps uncomfortably well onto software change processes. The input is expert judgment about a messy case. The output is changed system behavior. Everything in between is a production process for turning one into the other.
 
-The input is expert judgment about a messy case. The output is changed system behavior. Everything in between is a production process for turning one into the other.
-
-Once you look at the loop that way, a lot of LLM work looks like optimizing the indirect parts of the process. Better meeting summaries. Better Jira drafts. Better requirements cleanup. Better code generation. Better UAT explanations. Those are not useless. They make the existing path cheaper.
-
-They also leave the path intact.
+Once you look at the loop that way, a lot of LLM work looks like optimizing the indirect parts of the process. Better meeting summaries. Better Jira drafts. Better requirements cleanup. Better code generation. Better UAT explanations. Those are not useless. They make the existing path cheaper while leaving the old production method intact.
 
 Potter uses the customer perspective to distinguish value-adding from non-value-adding steps. A step is value-adding if it contributes to the usefulness of the product in the customer's eyes. If it does not, it is non-value-adding. His summary is the useful part here: "From this perspective, there will typically be many more non-value-adding steps than value-adding steps in a process."
 
@@ -39,17 +37,15 @@ The gain comes from removing the indirect transformations that exist only becaus
 
 ## The old loop manufactures handoff artifacts
 
-The old loop is familiar enough that it can feel inevitable.
+The old loop is familiar enough that it can feel inevitable because it solved a real constraint. Code changes were expensive. Developers were scarce. Regression was slow. Production systems could not safely absorb every expert correction as an immediate change.
 
-A domain expert sees an exception. A product manager decides whether it matters enough to prioritize. Jira captures the work. A BA writes the notes. A developer interprets the notes. The change enters a sprint, release path, review path, and UAT window. Weeks later, the expert sees whether the behavior changed in the way they meant.
+Product and BA layers filtered demand so engineering was not randomized by every local assertion. Review and release gates protected the system from changes whose blast radius nobody understood. UAT gave the expert a chance to say whether the translated change still matched the original case.
 
-Each step has a defensible reason to exist. The problem is the conversion cost between steps.
-
-The expert's starting point is a concrete case. The process turns it into a description of a case. Then a description of desired behavior. Then a description of implementation intent. Then an implementation. Then a test of whether the implementation matched the remembered intent. By the time UAT finds the mismatch, the organization may have done a lot of competent work and still lost the example that made the rule obvious.
+The cost is the conversion between steps. The expert starts with a concrete case. The process turns it into a description of a case, then a description of desired behavior, then a description of implementation intent, then an implementation, then a test of whether the implementation matched the remembered intent. By the time UAT finds the mismatch, the organization may have done a lot of competent work and still lost the example that made the rule obvious.
 
 This is where LLM summaries can make things worse if we are not careful. A beautiful summary of a lossy handoff is still a lossy handoff. A generated ticket can be clearer than a human ticket and still be the wrong artifact. A generated prompt tweak can make the demo pass while leaving no regression trail.
 
-LLMs can help at each step. That still leaves the design problem intact: too many steps exist before the correction becomes something the system can run.
+LLMs can help at each step. That still leaves the design problem intact: too many steps exist before the correction becomes something the system can run, and removing the wrong steps turns scarce engineering capacity into uncontrolled production variation.
 
 ## Executable expectations change the workpiece
 
@@ -67,9 +63,7 @@ The important movement is not "the LLM wrote code." The important movement is th
 
 ## Cut handoffs, not discipline
 
-The easiest way to misunderstand this argument is to hear "remove indirect process" as "skip the governance."
-
-That would be dumb.
+The easiest way to misunderstand this argument is to hear "remove indirect process" as "skip the governance." That creates the failure mode the old process was trying to prevent: local variation entering production with no boundary.
 
 Potter quotes a work-simplification text with a rule that applies uncomfortably well to software process: "one must be absolutely positive that the job cannot be eliminated before attempting to work out a better way of doing it." The test is not whether a handoff can be improved by an LLM. The test is whether the handoff is necessary at all.
 
