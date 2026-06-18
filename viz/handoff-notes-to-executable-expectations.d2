@@ -1,0 +1,44 @@
+direction: down
+
+# LinkedIn visual: side-by-side OLD vs NEW sketch.
+# Render: d2 --sketch --theme=105 --pad=60 .oh/linkedin-domain-harness-old-new.d2 .oh/linkedin-domain-harness-old-new.png
+
+panels: {
+  direction: right
+  label: ""
+  style.opacity: 0
+
+  old: {
+    label: "OLD: Jira / SDLC translation chain"
+    style.fill: "#fff1e8"
+    style.stroke: "#b45b36"
+    style.stroke-width: 4
+    style.border-radius: 18
+
+    body: "PATH\nDomain expert explains exception\n→ product manager turns it into priority / Jira work\n→ BA writes requirements from a domain they partly understand\n→ developer turns requirements into code\n→ SDLC cycle: sprint, review, deploy\n→ UAT finds mismatch weeks later\n\nWHAT GETS LOST\n• the example that made the rule obvious\n• why this case should behave differently\n• assumptions from both domains\n• trace from domain judgment to code" {
+      shape: text
+      style.font-size: 24
+      style.font-color: "#4a2416"
+    }
+  }
+
+  new: {
+    label: "NEW: in-system expectation loop"
+    style.fill: "#eef7ef"
+    style.stroke: "#367a55"
+    style.stroke-width: 4
+    style.border-radius: 18
+
+    body: "PATH\nDomain expert writes expected behavior for one exception\n→ harness saves scenario + in-system audit log\n→ agent + developer loop changes rule, prompt, config, or code\n→ regression keeps the example\n→ future runs change in hours\n\nWHAT SURVIVES\n• the case and expected behavior\n• the reason for the change\n• review + regression evidence\n• in-system auditable logs" {
+      shape: text
+      style.font-size: 24
+      style.font-color: "#163d2b"
+    }
+  }
+
+  old -> new: "weeks → hours\ntranslation chain collapsed" {
+    style.stroke: "#24211c"
+    style.stroke-width: 4
+    style.font-color: "#24211c"
+  }
+}
