@@ -13,7 +13,7 @@ The old process turns that judgment into a long chain of indirect artifacts. A p
 
 That path exists for good reasons: ownership, sequencing, review, deployment discipline, and accountability. I do not want an LLM system bypassing those controls. I want the controls attached to a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
 
-[![Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours.](../../assets/img/handoff-notes-to-executable-expectations.svg)](../../assets/img/handoff-notes-to-executable-expectations.svg)
+[![Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours.](/assets/img/handoff-notes-to-executable-expectations.svg)](/assets/img/handoff-notes-to-executable-expectations.svg)
 
 *Click the diagram to view it full size.*
 
