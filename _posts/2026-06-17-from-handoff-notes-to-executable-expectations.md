@@ -17,8 +17,6 @@ The control problem does not go away. Domain work is variable because the domain
 
 <img src="https://raw.githubusercontent.com/muness/muness.github.io/de797baebe88b79d3212e4c68ab45e73ab02c5f9/assets/img/handoff-notes-to-executable-expectations.svg" alt="Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours." />
 
-*Open the diagram in a new tab to view it full size.*
-
 ## Most of the process is not the product
 
 Brian Potter's [*The Origins of Efficiency*](https://press.stripe.com/origins-of-efficiency) has been useful for thinking about this because it treats efficiency as a property of production methods rather than individual tools. A production process, in his framing, is a chain of transformations. Input moves through steps. Each step changes it. The output of one step becomes the input to the next.
