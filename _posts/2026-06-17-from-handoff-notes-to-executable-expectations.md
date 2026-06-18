@@ -11,9 +11,13 @@ For most of software history, changing production behavior was expensive enough 
 
 The domain expert could see the wrong answer, but the ability to change the system lived somewhere else: in a developer's head, an IDE, a release train, and a review path. So the expert's judgment had to travel. It became priority, ticket, requirement, implementation, deployment, and UAT. That was not irrational. It was a way to ration scarce code-writing capacity and protect production from every local correction becoming uncontrolled variation.
 
-LLMs change the cost curve. First-pass code, prompt edits, tests, summaries, and requirement drafts get cheaper. That tempts a sloppy conclusion: if experts know what should happen and LLMs can write code, let the expert drive the change directly.
+LLMs change one of the constraints underneath that process. First-pass code gets cheaper. So do prompt edits, test scaffolds, summaries, and requirement drafts. A change that once required scarce engineering time can now be proposed in minutes.
 
-The control problem does not go away. Domain work is variable because the domain is variable: different accounts, positions, customers, workflows, exceptions, and histories legitimately change the answer. The correction should enter the system directly. The production change should not become arbitrary variation. The useful target is a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
+That does not mean the old controls were only a workaround for expensive implementation. The expensive part was never just producing code. It was deciding whether a local correction should become general behavior, where that behavior belongs, and how to know it did not break neighboring cases.
+
+This is the tempting mistake: if the expert knows the desired behavior and the LLM can draft the implementation, why not let the expert push the change directly? In a demo, that looks like speed. In a production domain, it can turn legitimate domain variation into arbitrary system variation.
+
+The distinction matters. Domain work is variable for real reasons: different accounts, positions, customers, workflows, exceptions, and histories. The expert's correction should reach the system more directly than a handoff chain allows. The production change still needs shape and control. The useful target is not expert-to-code autopilot. It is a better workpiece: the case itself, the expected behavior, the trace, the proposed change, the regression evidence, and the reason this change should survive.
 
 <img src="https://raw.githubusercontent.com/muness/muness.github.io/de797baebe88b79d3212e4c68ab45e73ab02c5f9/assets/img/handoff-notes-to-executable-expectations.svg" alt="Side-by-side diagram contrasting an old Jira and SDLC translation chain, where domain judgment passes through product management, BA requirements, developer interpretation, UAT, and weeks of delay, with a new in-system expectation loop where expert expected behavior becomes a scenario, audit log, reviewable change, regression evidence, and future behavior within hours." />
 
@@ -82,11 +86,7 @@ Trying to eliminate all of that variation is usually the wrong goal. Some variat
 
 Potter's variability discussion is useful here because it separates knowledge from control. Knowing what affects a process is one side of the coin. Reducing variability requires control: remove the source of variation, shield the process from it, or compensate for it. In practice, that means some parts should become more standardized while other parts need better feedback paths.
 
-A domain harness gives variation a door.
-
-The standardized parts should be boring: who can submit a scenario, what provenance is captured, which data can leave a boundary, what trace fields are retained, what tests must pass, who reviews the change, how deployment happens, how the old behavior can be replayed.
-
-The variable parts should be explicit: this edge condition matters, this customer configuration changes the answer, this playbook entry should apply, this expected output is wrong, this prompt overgeneralized, this rule belongs in code because it keeps recurring.
+A domain harness gives variation a door. The standardized parts should be boring: who can submit a scenario, what provenance is captured, which data can leave a boundary, what trace fields are retained, what tests must pass, who reviews the change, how deployment happens, how the old behavior can be replayed. The variable parts should be explicit: this edge condition matters, this customer configuration changes the answer, this playbook entry should apply, this expected output is wrong, this prompt overgeneralized, this rule belongs in code because it keeps recurring.
 
 Raw feedback still cannot become policy automatically. A thumbs-down, edited expectation, comment, or SME assertion is evidence. It needs source, case, scope, review, and sometimes disagreement. The harness should remember whether the assertion was accepted, rejected, narrowed, or superseded.
 
