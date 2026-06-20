@@ -19,7 +19,7 @@ Source: sub-agent arc proposal reviewed and corrected by Muness/user constraints
 
 ## 1. Organizational Communication
 
-Working title: `Organizational Communication Is the Architecture of Organizational Reality`
+Working title: `Large Organizations Need a Memory Outside Their Heads`
 
 Job: Make communication visible as the medium that lets large organizations remember, coordinate, authorize, and control work before asking readers to understand how that medium can reverse.
 
@@ -42,7 +42,7 @@ Must not: become generic management theory, start with AI, or claim documents ar
 
 ## 2. Work-to-Strategy Feedback / Dissent Mechanisms
 
-Working title: `Dissent Is a State-Changing Interface`
+Working title: `Dissent Has to Change State`
 
 Job: Reframe dissent as a work-to-strategy feedback mechanism that lets evidence from the work alter assumptions, priorities, funding, scope, continuation, or authority.
 
@@ -65,7 +65,7 @@ Must not: be leadership/culture advice; must specify triggers, owners, review ca
 
 ## 3. Organizational Communication Reversal
 
-Working title: `When Organizational Communication Reverses`
+Working title: `When the Representation Outranks the Work`
 
 Job: Explain McLuhan/Mir reversal: communication created to make action coherent becomes abundant enough that representation, auditability, narration, and reform substitute for contact with operational reality.
 
@@ -119,7 +119,7 @@ Must not: flatten Potter into a quote, duplicate June 13 posts, or make archaeol
 
 ## 5. Recon Agent Harness / Executable Expectations
 
-Working title: `The Recon Agent Harness: Executable Expectations in the Work`
+Working title: `A Reconciliation Failure Should Become a Test`
 
 Job: Rewrite the June 17 article into a concrete unnamed-client walkthrough showing how a reconciliation failure becomes a schema'd expectation, agent-assisted fix, deterministic verification, regression case, and durable behavior.
 

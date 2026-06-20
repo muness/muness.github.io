@@ -1,5 +1,5 @@
 ---
-title: "When Organizational Communication Reverses"
+title: "When the Representation Outranks the Work"
 author: muness
 toc: true
 comments: true

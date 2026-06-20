@@ -1,5 +1,5 @@
 ---
-title: "The Recon Agent Harness: Executable Expectations in the Work"
+title: "A Reconciliation Failure Should Become a Test"
 date: 2026-06-17 20:15:00 -0400
 author: muness
 toc: true

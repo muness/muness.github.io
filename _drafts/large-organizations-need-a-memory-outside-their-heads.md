@@ -1,5 +1,5 @@
 ---
-title: "Organizational Communication Is the Architecture of Organizational Reality"
+title: "Large Organizations Need a Memory Outside Their Heads"
 author: muness
 toc: true
 comments: true

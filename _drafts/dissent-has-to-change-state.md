@@ -1,5 +1,5 @@
 ---
-title: "Dissent Is a State-Changing Interface"
+title: "Dissent Has to Change State"
 author: muness
 toc: true
 comments: true
@@ -101,7 +101,7 @@ This also changes how leaders should participate. A leader can still challenge t
 
 There is a lazy version of dissent that treats any objection as virtue. That is just another way to avoid responsibility. Useful dissent has to make the system more coherent, not less. It earns that coherence by showing which contradiction threatens the aim and what decision would resolve it.
 
-A team saying "this metric is wrong" has not finished the work. Which behavior is the metric rewarding? What damage is the shadow signal catching? What decision was made using the metric? Who owns the metric? What would change if the objection is accepted? A domain expert saying "the recommendation is wrong" has not finished the work either. Which account, position, transaction history, current output, expected output, and scope make the correction durable? That is the bridge to the June 13 agent-domain-runtime pieces: local correction matters when the system can preserve it as future behavior, not when it becomes another note in the archive.
+A team saying "this metric is wrong" has not finished the work. Which behavior is the metric rewarding? What damage is the shadow signal catching? What decision was made using the metric? Who owns the metric? What would change if the objection is accepted? A domain expert saying "the recommendation is wrong" has not finished the work either. Which account, position, transaction history, current output, expected output, and scope make the correction durable? That is the bridge to the June 13 agent-domain-runtime pieces: local correction changes the system only when it is preserved as future behavior, not when it becomes another note in the archive.
 
 The same standard applies to strategy. A contradiction should carry enough structure that the organization can act without turning every review into a trial of personalities. The evidence may still be ambiguous. The decision may still require judgment. The interface does not remove leadership; it makes leadership inspect the right object.
 

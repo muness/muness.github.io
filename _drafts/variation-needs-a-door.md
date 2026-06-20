@@ -76,7 +76,7 @@ A validated change episode can become a precedent. A precedent can become an exp
 
 In a reconciliation system, that might be as concrete as: under this account configuration, these transaction records and this position discrepancy should produce this recommended action. Replay the original case against every proposed workflow version. If a workflow version reproduces the known failure, it cannot follow the normal promotion path without a named override.
 
-The chain matters because each step adds a different kind of authority. A change episode says what happened and how the system changed. A precedent says this prior case should be considered relevant. An expectation says future behavior should conform under a stated scope. An evaluator makes the expectation runnable. A state-transition consequence changes what can happen next: block promotion, narrow an agent's authority, route to an expert, require justification, or trigger an outcome review.
+Each step adds a different kind of authority. A change episode says what happened and how the system changed. A precedent says this prior case should be considered relevant. An expectation says future behavior should conform under a stated scope. An evaluator makes the expectation runnable. A state-transition consequence changes what can happen next: block promotion, narrow an agent's authority, route to an expert, require justification, or trigger an outcome review.
 
 This is where reliability appears. It is not that the organization captured more knowledge. It is that selected learning changed the control surface of future work.
 
@@ -94,6 +94,6 @@ That is too loose for production. The SME correction is evidence and candidate s
 
 The controlled version preserves the case, current output, expected output, trace, provenance, and proposed scope. An LLM can help structure the correction into schema'd input and output plus a real example. An improvement agent can use that scenario to inspect code, prompt, deterministic checks, playbook, configuration, and data boundaries. The specific case can be verified. Neighboring cases can be replayed. A reviewer can decide whether the case becomes named regression coverage, a scoped rule, a config change, a data repair, or a rejected assertion.
 
-This is why the June domain-harness argument matters without needing to repeat it here. The domain does not become reliable because the model learned more words about the business. The system becomes more reliable when expert correction has a governed path into scenarios, tests, traces, reviewed artifacts, and future behavior.
+The June domain-harness argument can stay in the background because this essay uses the same boundary. The domain does not become reliable because the model learned more words about the business. The system becomes more reliable when expert correction has a governed path into scenarios, tests, traces, reviewed artifacts, and future behavior.
 
 Variable judgment is still necessary. Standardized process is what lets that judgment survive without becoming arbitrary mutation. Variation needs a door: easy enough for the person closest to the work to use, constrained enough that production can trust what enters, and explicit enough that future changes can see what prior learning they are about to disturb.
