@@ -18,6 +18,10 @@ If that argument crowds the Recon Agent article, split Potter into its own essay
 
 Do not force organizational communication, McLuhan/Mir reversal, Potter process optimization, June 13 runtime/domain-harness recap, and the Recon Agent harness into one article unless the piece has a deliberately serial structure and a concrete reader job.
 
+
+## No loss of the reversal corpus
+
+Treat `~/Downloads/reversal.txt` as source material for the essay set, not as a private scratchpad to mine for one or two quotes. The concepts should survive, but not necessarily in their current form. Translate, sequence, and spoon-feed them until a reader can follow the argument without having read McLuhan, Mir, or the source notes.
 ## No SME-to-production fantasy
 
 The Recon Agent story must preserve governance: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion.

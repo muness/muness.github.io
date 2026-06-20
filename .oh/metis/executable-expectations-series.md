@@ -34,12 +34,15 @@ Potter's variable/standardized process frame explains how an archaeological reco
 
 Consequence: if Potter crowds the Recon Agent article, pull it into a process reliability essay and let the concrete piece reference it lightly.
 
-## McLuhan/Mir may be more than one essay
+## The reversal notes are source corpus, not one section
 
-The reversal notes are meaty. They may require a sequence rather than one conceptual companion:
+The material in `~/Downloads/reversal.txt` is gold and should all make it into the essay set in some form. The mistake would be treating it as either a dense theory dump or a source to mine for a few clever references.
+
+The likely transformation is sequence and translation:
 
 1. communication as organizational control and memory;
 2. reversal into ceremony, digital orality, and AI-accelerated amnesia;
-3. counter-reversal through change episodes, archaeological record, prospective memory, and executable expectations.
+3. counter-reversal through change episodes, archaeological record, prospective memory, and executable expectations;
+4. enough conceptual spoon-feeding that readers can follow the mechanism without already knowing McLuhan, Mir, or the source notes.
 
-Consequence: do not force the full theory into the Recon Agent article.
+Consequence: do not force the full theory into the Recon Agent article, but also do not discard it because it is too big for that article. Assign every important concept to a place in the essay set.

@@ -36,6 +36,8 @@ The concrete example is not missing. It is the **Recon Agent harness**:
 
 Potter is also not incidental. Potter's process-optimization frame should remain central to the concrete essay because it explains how variable and standardized processes, components, and systems make the archaeological record specific and reliable rather than merely remembered.
 
+The material in `~/Downloads/reversal.txt` is not a disposable source note. It should all make it into the essay set in some form. The likely transformation is not copy/paste or one dense theory essay; it is translation, sequencing, and more explanation so readers can follow the concepts without already sharing the frame.
+
 ### Expanded series architecture
 
 > Working hypothesis: this is not one more essay. It is likely a mini-series adjacent to the June 13 agent-domain-runtime essays.
@@ -64,7 +66,7 @@ Potter is also not incidental. Potter's process-optimization frame should remain
 | The concrete article is based on the Recon Agent harness | Hard | User supplied the actual built system and workflow | No |
 | Potter remains central to the reliability story | Hard | It explains optimization using variable/standardized processes, components, and systems | No |
 | Organizational communication likely needs its own lead essay | Hard | Reversal is clearer after the original role of communication is established | No |
-| McLuhan/Mir reversal likely needs its own essay or sequence | Hard | `~/Downloads/reversal.txt` is too meaty for a compressed section | No |
+| `~/Downloads/reversal.txt` should all feed the essay set | Hard | The material is gold, but needs translation, sequencing, and spoon-feeding rather than compression | No |
 | Dave's `too abstract` feedback is real reader evidence | Hard | Concrete essay needs a vivid operating example, not just abstractions | No |
 | The current article should not be polished endlessly in its current shape | Soft | It likely mixes several essay jobs | Could choose a smaller revision if publishing urgency dominates |
 | Private/client details must stay safe | Hard | The Recon Agent mechanism can be concrete without naming the client | No |
@@ -77,14 +79,14 @@ Potter is also not incidental. Potter's process-optimization frame should remain
   - `Agent Work That Changes Behavior.` — synthesis around behavior change.
 - **Current June 17 article:** should become the concrete Recon Agent / executable-expectations example, not the whole theory.
 - **Organizational Communication lead:** likely needs a separate piece before the reversal essay to show communication's original function in scaled organizations.
-- **`~/Downloads/reversal.txt`:** should feed a McLuhan/Mir reversal essay or sequence, not a compressed section in the concrete article.
+- **`~/Downloads/reversal.txt`:** should all make it into the essay set in some form, with translation and spoon-feeding; it is not a section to summarize away.
 - **Potter:** may need its own piece if the variable/standardized process argument crowds the Recon Agent story. At minimum it remains central to the reliability mechanism.
 
 ### Assumptions made explicit
 
 1. The current article can be salvaged by turning it into the concrete Recon Agent article — if false, it may need to be rewritten from scratch.
 2. The Organizational Communication story should precede the reversal story — if false, the reversal essay must carry enough setup itself.
-3. The McLuhan/Mir reversal material is too dense for one subsection — if false, one conceptual companion may be enough.
+3. The McLuhan/Mir reversal material is too dense for one subsection and should all be represented across the essay set — if false, one conceptual companion may be enough, but the concepts still need explicit assignment.
 4. Potter and McLuhan/Mir do different jobs — if false, the series may feel over-theorized or split artificially.
 5. Potter may need its own essay to keep the Recon Agent article concrete — if false, the concrete article can include a concise Potter frame.
 
@@ -103,7 +105,7 @@ We are still in **problem-space** for the series boundary because the architectu
 1. the concrete example is already known and should anchor the concrete article;
 2. Potter should not be demoted because it explains the reliability mechanism;
 3. Organizational Communication may need to lead the reversal essay;
-4. McLuhan/Mir reversal may itself be too large for one essay;
+4. the reversal corpus should be translated and sequenced across the essay set, not compressed or discarded;
 5. Potter's variable/standard process frame may need its own essay so the Recon Agent story can stay concrete.
 
 We are ready for a provisional **problem-statement** for the series, but not final drafting.
@@ -143,7 +145,7 @@ The problem is not that the current article needs more polish. The problem is ro
 - **Hard:** The Recon Agent article can be concrete as long as the client is not named.
 - **Hard:** Potter remains part of the explanation of reliable process optimization and may need its own essay.
 - **Hard:** Organizational communication probably needs a lead essay before the reversal essay.
-- **Hard:** McLuhan/Mir reversal needs enough runway or it will stay implied and underdeveloped.
+- **Hard:** The `reversal.txt` concepts should not be dropped; they need enough runway, translation, and explanation or they will stay implied and underdeveloped.
 - **Hard:** The June 13 articles should remain adjacent infrastructure, not be duplicated.
 - **Soft:** The current PR article can be rewritten in place, split, or held until the conceptual companions exist.
 
@@ -164,4 +166,4 @@ The problem is not that the current article needs more polish. The problem is ro
 
 ### Next framing question
 
-What is the smallest coherent publication sequence: two conceptual essays plus the Recon Agent article, or a four-part mini-series with Organizational Communication, Reversal, Potter/process reliability, and Recon Agent?
+What is the smallest coherent publication sequence that lets the `reversal.txt` material all survive in readable form while keeping the Recon Agent article concrete?
