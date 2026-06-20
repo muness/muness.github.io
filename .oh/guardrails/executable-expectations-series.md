@@ -27,9 +27,9 @@ Do not treat dissent as leadership style, cultural permission, or executive crit
 
 Treat `~/Downloads/reversal.txt` as source material for the essay set, not as a private scratchpad to mine for one or two quotes. The concepts should survive, but not necessarily in their current form. Translate, sequence, and spoon-feed them until a reader can follow the argument without having read McLuhan, Mir, or the source notes.
 
-## Do not drop the strategy-report chart
+## Do not carry the wrong strategy-report chart
 
-The evidence-as-decoration versus evidence-as-trigger chart from `~/Downloads/strategy-report.md` should come over to the essay set. If it is too large in its current form, rewrite or split it; do not reduce it to a vague Toyota reference.
+The chart to bring over from `~/Downloads/strategy-report.md` is the reversal stack inside corporate strategy, plus each mechanism row that maps Mechanism, What the literature says, and How it shows up in strategy and execution. Do not replace it with the evidence-as-decoration/evidence-as-trigger case table or a generic Toyota reference.
 
 ## No SME-to-production fantasy
 

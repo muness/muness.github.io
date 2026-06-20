@@ -41,7 +41,7 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 
 `_posts/2025-10-19-dissent-mode.md` is a source for the missing feedback-mechanism story. It distinguishes dissent as a real operating capability from dissent as executive performance. The useful direction is not leaders dissenting downward at the work; it is evidence from the work dissenting upward into strategy through andon-like mechanisms, contradiction queues, decision logs, stop-the-line triggers, and explicit revisit/owner protocols.
 
-`~/Downloads/startegy-research.txt` was not present locally under that spelling; the closest located source is `~/Downloads/strategy-report.md`. That report reinforces the same point: the difference is evidence as decoration versus evidence as trigger, with Toyota andon/jidoka as the clean case where abnormality changes the state of the system instead of becoming another presentation artifact. Its charts should come over to the essay set, especially the evidence-as-decoration versus evidence-as-trigger case chart. Source excerpts are captured in `.oh/sources/strategy-report-charts.md`.
+`~/Downloads/startegy-research.txt` was not present locally under that spelling; the closest located source is `~/Downloads/strategy-report.md`. The chart to carry from that report is the **reversal stack inside corporate strategy**, along with the mechanism table cells for **Mechanism**, **What the literature says**, and **How it shows up in strategy and execution**. Source excerpts are captured in `.oh/sources/strategy-report-reversal-stack.md`.
 
 ### Expanded series architecture
 
@@ -76,7 +76,7 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 | Potter remains central to the reliability story | Hard | It explains optimization using variable/standardized processes, components, and systems | No |
 | Organizational communication likely needs its own lead essay | Hard | Reversal is clearer after the original role of communication is established | No |
 | Dissent must be framed as a communication mechanism, not an attitude | Hard | Useful dissent flows from work back into strategy and changes state; faux dissent flows downward and leaves work unchanged | No |
-| The `strategy-report.md` evidence-as-decoration/evidence-as-trigger chart should come over | Hard | It concretizes the work-to-strategy feedback mechanism through Wells/Boeing/VW versus Toyota/Booking/Capital One | No |
+| The `strategy-report.md` reversal-stack chart and mechanism table should come over | Hard | They map corporate strategy reversal from operational reality through coordination, analytics, governance, transformation, and saturated meta-communication, then connect each mechanism to literature and observed strategy/execution behavior | No |
 | `~/Downloads/reversal.txt` should all feed the essay set | Hard | The material is gold, but needs translation, sequencing, and spoon-feeding rather than compression | No |
 | Dave's `too abstract` feedback is real reader evidence | Hard | Concrete essay needs a vivid operating example, not just abstractions | No |
 | The current article should not be polished endlessly in its current shape | Soft | It likely mixes several essay jobs | Could choose a smaller revision if publishing urgency dominates |
@@ -91,7 +91,7 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 - **Current June 17 article:** should become the concrete Recon Agent / executable-expectations example, not the whole theory.
 - **Organizational Communication lead:** likely needs a separate piece before the reversal essay to show communication's original function in scaled organizations.
 - **Dissent Mode:** `_posts/2025-10-19-dissent-mode.md` supplies the work-to-strategy feedback mechanism: mine for incongruence, assumption andon, contradiction budgets, dissent memos, and stop-the-line protocols.
-- **Strategy report:** `~/Downloads/strategy-report.md` supplies the evidence-as-decoration versus evidence-as-trigger frame, including Toyota andon/jidoka as the clean binding-interface case. Its reversal-stack diagram and evidence-trigger case chart are captured in `.oh/sources/strategy-report-charts.md` and should be carried into the essay set.
+- **Strategy report:** `~/Downloads/strategy-report.md` supplies the reversal-stack diagram and mechanism table for corporate strategy: decoupling, organized hypocrisy, auditability, transparency paradox, reform as routine, and post-analytics. These are captured in `.oh/sources/strategy-report-reversal-stack.md` and should be carried into the essay set.
 - **`~/Downloads/reversal.txt`:** should all make it into the essay set in some form, with translation and spoon-feeding; it is not a section to summarize away.
 - **Potter:** may need its own piece if the variable/standardized process argument crowds the Recon Agent story. At minimum it remains central to the reliability mechanism.
 
@@ -163,7 +163,7 @@ The problem is not that the current article needs more polish. The problem is ro
 - **Hard:** Potter remains part of the explanation of reliable process optimization and may need its own essay.
 - **Hard:** Organizational communication probably needs a lead essay before the reversal essay.
 - **Hard:** Dissent should be treated as an operating interface. It needs triggers, owners, scope, review cadence, and closure; otherwise it becomes executive commentary or theater.
-- **Hard:** The `strategy-report.md` evidence-as-decoration versus evidence-as-trigger chart should be reused or rewritten in the essay set; do not leave the Toyota contrast implicit.
+- **Hard:** The `strategy-report.md` reversal-stack chart and mechanism table should be reused or rewritten in the essay set; do not substitute a vague Toyota reference or the wrong evidence-trigger chart.
 - **Hard:** The `reversal.txt` concepts should not be dropped; they need enough runway, translation, and explanation or they will stay implied and underdeveloped.
 - **Hard:** The June 13 articles should remain adjacent infrastructure, not be duplicated.
 - **Soft:** The current PR article can be rewritten in place, split, or held until the conceptual companions exist.
@@ -172,7 +172,7 @@ The problem is not that the current article needs more polish. The problem is ro
 
 - A lead essay that makes organizational communication itself visible before discussing reversal.
 - A feedback/dissent essay that connects Toyota-style stop-the-line mechanisms to strategy: evidence from the work should have a path to contradict the plan and alter the system.
-- A concrete chart/table that shows the difference between evidence as decoration and evidence as trigger, so the dissent mechanism does not remain abstract.
+- A concrete reversal-stack chart and mechanism table that move from literature to how each mechanism appears in strategy and execution, so the communication reversal does not remain abstract.
 - A reversal essay that can go deep without pretending to be a case study.
 - A Potter/process essay that explains specificity and reliability without crowding the Recon Agent walkthrough.
 - A concrete article that can satisfy Dave's `too abstract` critique by walking through the Recon Agent harness end to end.
@@ -182,11 +182,11 @@ The problem is not that the current article needs more polish. The problem is ro
 
 - One mega-essay that tries to teach organizational communication, media reversal, process optimization, runtime architecture, and the Recon Agent harness at once.
 - Treating dissent as leadership style, cultural permission, or executive critique rather than a communication mechanism with state-changing consequences.
-- Omitting the `strategy-report.md` chart and relying on a vague Toyota reference instead of the full contrast between failed/neutralized evidence and enforced/binding evidence.
+- Omitting the `strategy-report.md` reversal-stack chart and mechanism table, or replacing them with a vague Toyota reference / evidence-trigger case table.
 - A generic or unnamed data-product example that hides the actual mechanism.
 - Demoting Potter to a disposable citation.
 - Treating executable expectations as just better requirements, better tickets, or better summaries.
 
 ### Next framing question
 
-What is the smallest coherent publication sequence that lets the `reversal.txt` material all survive in readable form, preserves the work-to-strategy dissent mechanism, carries over the `strategy-report.md` evidence-trigger chart, and keeps the Recon Agent article concrete?
+What is the smallest coherent publication sequence that lets the `reversal.txt` material all survive in readable form, preserves the work-to-strategy dissent mechanism, carries over the `strategy-report.md` reversal-stack chart and mechanism table, and keeps the Recon Agent article concrete?

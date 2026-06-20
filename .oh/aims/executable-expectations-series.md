@@ -23,7 +23,7 @@ Place the executable-expectations work beside the 2026-06-13 agent-domain-runtim
 2. **Work-to-Strategy Feedback / Dissent Mechanisms**
    - Job: distinguish faux dissent from useful dissent.
    - Claim: dissent that flows downward from executives/managers toward the people closest to the work is often vague, dismissive, and operationally inert; useful dissent flows from the work back into strategy through mechanisms that can alter assumptions, priorities, funding, scope, or continuation.
-   - Source commitment: bring over the `strategy-report.md` evidence-as-decoration versus evidence-as-trigger chart, including Toyota andon/jidoka as the clean binding-interface case.
+   - Source commitment: bring over the `strategy-report.md` reversal-stack chart and the mechanism table cells for Mechanism, What the literature says, and How it shows up in strategy and execution.
    - Output: the reader understands dissent as a communication interface with state-changing consequences, not as a cultural vibe.
 
 3. **Organizational Communication Reversal**

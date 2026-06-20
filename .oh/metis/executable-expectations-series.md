@@ -18,7 +18,7 @@ Consequence: the lead essay may be `how organizations became communication syste
 
 Useful dissent flows the other way: from the work back into strategy. That requires communication mechanisms, not vibes: assumption andon, contradiction budgets, dissent memos, stop-the-line triggers, decision logs, owners, revisit dates, and visible closure.
 
-Toyota's andon/jidoka pattern is the clean analogy because abnormality is not merely reported. It changes the state of the system. The strategy-research source found locally as `~/Downloads/strategy-report.md` makes the same distinction as evidence as decoration versus evidence as trigger.
+Toyota's andon/jidoka pattern remains a useful analogy because abnormality is not merely reported; it changes the state of the system. But the strategy-report source found locally as `~/Downloads/strategy-report.md` is load-bearing for a different reason: its reversal stack and mechanism table show how corporate communication layers become self-referential and ceremonial.
 
 Consequence: the essay set should treat dissent as a state-changing interface between work and strategy. If dissent cannot alter assumptions, priorities, funding, scope, or continuation, it is ceremony.
 
@@ -57,8 +57,8 @@ The likely transformation is sequence and translation:
 
 Consequence: do not force the full theory into the Recon Agent article, but also do not discard it because it is too big for that article. Assign every important concept to a place in the essay set.
 
-## The strategy-report chart is load-bearing
+## The strategy-report reversal stack is load-bearing
 
-The `~/Downloads/strategy-report.md` case chart comparing Wells Fargo, Boeing, Volkswagen, Toyota, Booking.com, and Capital One should come over to the essay set. It gives the work-to-strategy feedback argument a concrete contrast: every organization can have evidence; the difference is whether evidence remains decorative or triggers a change in defaults, stops, gates, release decisions, or resource movement.
+The `~/Downloads/strategy-report.md` chart to carry is the reversal stack inside corporate strategy, plus the mechanism table cells for Mechanism, What the literature says, and How it shows up in strategy and execution. The important source material is decoupling, organized hypocrisy, audit explosion/auditability, transparency paradox, reform as routine, and post-analytics mapped to their observable forms in strategy work.
 
-Consequence: use the chart, or a rewritten version of it, in the Work-to-Strategy Feedback / Dissent Mechanisms essay. It is the bridge between organizational communication theory and the Recon Agent harness: the Recon Agent system is a domain-specific binding interface where expert evidence changes future behavior.
+Consequence: use the reversal-stack chart and the mechanism table, or a rewritten version of them, in the Organizational Communication / Communication Reversal part of the essay set. The evidence-as-trigger cases can remain supporting examples, but they are not the chart to carry.
