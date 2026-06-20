@@ -30,6 +30,7 @@ Place the executable-expectations work beside the 2026-06-13 agent-domain-runtim
    - Job: map McLuhan/Mir media reversal to organizational communication.
    - Claim: communication pushed to abundance reverses into ceremony, action-substitution, AI-accelerated mutation, and amnesia.
    - Source commitment: the material in `~/Downloads/reversal.txt` should all make it into the essay set in some form, likely through translation, sequencing, and more explanation rather than a single dense theory piece.
+   - Example commitment: use Volkswagen, Wells Fargo, and Boeing as referenced failed cases where the system staged compliance while missing the underlying objective.
    - Output: executable expectations become a counter-medium, not just better documentation.
 
 4. **Variable and Standardized Process Reliability**

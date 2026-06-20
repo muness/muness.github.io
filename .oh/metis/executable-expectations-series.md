@@ -62,3 +62,13 @@ Consequence: do not force the full theory into the Recon Agent article, but also
 The `~/Downloads/strategy-report.md` chart to carry is the reversal stack inside corporate strategy, plus the mechanism table cells for Mechanism, What the literature says, and How it shows up in strategy and execution. The important source material is decoupling, organized hypocrisy, audit explosion/auditability, transparency paradox, reform as routine, and post-analytics mapped to their observable forms in strategy work.
 
 Consequence: use the reversal-stack chart and the mechanism table, or a rewritten version of them, in the Organizational Communication / Communication Reversal part of the essay set. The evidence-as-trigger cases can remain supporting examples, but they are not the chart to carry.
+
+## Failed cases reveal reversal in recognizable form
+
+Volkswagen, Wells Fargo, and Boeing should make it into the essay set as referenced examples, not scandal name-drops. They show the reversal in its strongest relatable form: the system becomes better at staging compliance than at achieving the underlying objective.
+
+- Volkswagen optimized the emissions test rather than emissions reality.
+- Wells Fargo optimized cross-sell counts rather than customer value.
+- Boeing optimized schedule and program continuity while the formal safety system lost real veto power.
+
+Consequence: spell each case out with enough references and evidence that readers can recognize their own smaller versions: dashboards outranking reality, audit performance outranking purpose, schedule commitments outranking technical vetoes, and KPIs outranking the humans they were meant to serve.

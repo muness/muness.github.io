@@ -43,6 +43,8 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 
 `~/Downloads/startegy-research.txt` was not present locally under that spelling; the closest located source is `~/Downloads/strategy-report.md`. The chart to carry from that report is the **reversal stack inside corporate strategy**, along with the mechanism table cells for **Mechanism**, **What the literature says**, and **How it shows up in strategy and execution**. Source excerpts are captured in `.oh/sources/strategy-report-reversal-stack.md`.
 
+The failed cases in the strategy report should also make it through as supporting examples of reversal. They are not the chart to carry, but they are the reader-recognition material: Volkswagen optimized the emissions test rather than emissions reality; Wells Fargo optimized cross-sell counts rather than customer value; Boeing optimized schedule and program continuity while its formal safety system lost real veto power. These need references/evidence in the essays so readers can map the pattern to their own local versions of compliance staging. Source notes are captured in `.oh/sources/failed-case-reversal-examples.md`.
+
 ### Expanded series architecture
 
 > Working hypothesis: this is not one more essay. It is likely a mini-series adjacent to the June 13 agent-domain-runtime essays.
@@ -77,6 +79,7 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 | Organizational communication likely needs its own lead essay | Hard | Reversal is clearer after the original role of communication is established | No |
 | Dissent must be framed as a communication mechanism, not an attitude | Hard | Useful dissent flows from work back into strategy and changes state; faux dissent flows downward and leaves work unchanged | No |
 | The `strategy-report.md` reversal-stack chart and mechanism table should come over | Hard | They map corporate strategy reversal from operational reality through coordination, analytics, governance, transformation, and saturated meta-communication, then connect each mechanism to literature and observed strategy/execution behavior | No |
+| Failed cases should be spelled out as relatable reversal examples | Hard | Volkswagen, Wells Fargo, and Boeing show systems staging compliance while missing emissions reality, customer value, and safety veto power | No |
 | `~/Downloads/reversal.txt` should all feed the essay set | Hard | The material is gold, but needs translation, sequencing, and spoon-feeding rather than compression | No |
 | Dave's `too abstract` feedback is real reader evidence | Hard | Concrete essay needs a vivid operating example, not just abstractions | No |
 | The current article should not be polished endlessly in its current shape | Soft | It likely mixes several essay jobs | Could choose a smaller revision if publishing urgency dominates |
@@ -92,6 +95,7 @@ The material in `~/Downloads/reversal.txt` is not a disposable source note. It s
 - **Organizational Communication lead:** likely needs a separate piece before the reversal essay to show communication's original function in scaled organizations.
 - **Dissent Mode:** `_posts/2025-10-19-dissent-mode.md` supplies the work-to-strategy feedback mechanism: mine for incongruence, assumption andon, contradiction budgets, dissent memos, and stop-the-line protocols.
 - **Strategy report:** `~/Downloads/strategy-report.md` supplies the reversal-stack diagram and mechanism table for corporate strategy: decoupling, organized hypocrisy, auditability, transparency paradox, reform as routine, and post-analytics. These are captured in `.oh/sources/strategy-report-reversal-stack.md` and should be carried into the essay set.
+- **Failed case examples:** `.oh/sources/failed-case-reversal-examples.md` captures Volkswagen, Wells Fargo, and Boeing as referenced examples of reversal logic for readers to recognize in their own organizations.
 - **`~/Downloads/reversal.txt`:** should all make it into the essay set in some form, with translation and spoon-feeding; it is not a section to summarize away.
 - **Potter:** may need its own piece if the variable/standardized process argument crowds the Recon Agent story. At minimum it remains central to the reliability mechanism.
 
@@ -164,6 +168,7 @@ The problem is not that the current article needs more polish. The problem is ro
 - **Hard:** Organizational communication probably needs a lead essay before the reversal essay.
 - **Hard:** Dissent should be treated as an operating interface. It needs triggers, owners, scope, review cadence, and closure; otherwise it becomes executive commentary or theater.
 - **Hard:** The `strategy-report.md` reversal-stack chart and mechanism table should be reused or rewritten in the essay set; do not substitute a vague Toyota reference or the wrong evidence-trigger chart.
+- **Hard:** Volkswagen, Wells Fargo, and Boeing should appear as referenced failed-case examples of reversal, not just named scandals or an uncited aside.
 - **Hard:** The `reversal.txt` concepts should not be dropped; they need enough runway, translation, and explanation or they will stay implied and underdeveloped.
 - **Hard:** The June 13 articles should remain adjacent infrastructure, not be duplicated.
 - **Soft:** The current PR article can be rewritten in place, split, or held until the conceptual companions exist.
@@ -173,6 +178,7 @@ The problem is not that the current article needs more polish. The problem is ro
 - A lead essay that makes organizational communication itself visible before discussing reversal.
 - A feedback/dissent essay that connects Toyota-style stop-the-line mechanisms to strategy: evidence from the work should have a path to contradict the plan and alter the system.
 - A concrete reversal-stack chart and mechanism table that move from literature to how each mechanism appears in strategy and execution, so the communication reversal does not remain abstract.
+- Referenced failed-case examples that make the reversal recognizable: emissions-test optimization over emissions reality, cross-sell count optimization over customer value, and schedule/program-continuity optimization over safety veto power.
 - A reversal essay that can go deep without pretending to be a case study.
 - A Potter/process essay that explains specificity and reliability without crowding the Recon Agent walkthrough.
 - A concrete article that can satisfy Dave's `too abstract` critique by walking through the Recon Agent harness end to end.
@@ -183,6 +189,7 @@ The problem is not that the current article needs more polish. The problem is ro
 - One mega-essay that tries to teach organizational communication, media reversal, process optimization, runtime architecture, and the Recon Agent harness at once.
 - Treating dissent as leadership style, cultural permission, or executive critique rather than a communication mechanism with state-changing consequences.
 - Omitting the `strategy-report.md` reversal-stack chart and mechanism table, or replacing them with a vague Toyota reference / evidence-trigger case table.
+- Naming Volkswagen, Wells Fargo, or Boeing without evidence and without tying each case to the reversal mechanism.
 - A generic or unnamed data-product example that hides the actual mechanism.
 - Demoting Potter to a disposable citation.
 - Treating executable expectations as just better requirements, better tickets, or better summaries.

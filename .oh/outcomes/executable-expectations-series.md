@@ -6,6 +6,7 @@
 - A reader can explain McLuhan/Mir reversal in organizational terms without treating it as decorative theory.
 - A reader can follow the core `reversal.txt` concepts because they have been explained, sequenced, and grounded rather than compressed into theory shorthand.
 - A reader can distinguish downward faux dissent from work-to-strategy dissent that changes assumptions, priorities, funding, scope, or continuation.
+- A reader can recognize the reversal in failed cases: Volkswagen optimized the emissions test, Wells Fargo optimized cross-sell counts, and Boeing optimized schedule/program continuity while safety veto power weakened.
 - A reader can explain the difference between a handoff artifact and an executable expectation.
 - A reader can trace the Recon Agent harness from detected reconciliation failure to named regression case.
 - A reader can explain why raw SME feedback is evidence, not policy.
@@ -18,6 +19,7 @@
 - The `reversal.txt` material is assigned across the essay set instead of being trimmed away because it is too dense for one article.
 - The Dissent Mode material is used to explain communication mechanisms such as assumption andon, contradiction queues, dissent memos, stop-the-line triggers, and decision logs.
 - The `strategy-report.md` reversal-stack chart and mechanism table are carried into the essay set, not left in source notes.
+- Volkswagen, Wells Fargo, and Boeing appear with references/evidence as relatable failed-case examples of reversal logic.
 - The Potter/process piece, if written, explains variable judgment plus standardized reliability mechanisms without crowding the Recon Agent story.
 - The concrete Recon Agent article contains one end-to-end case with records, expected behavior, correction, formal spec, patch, deterministic check, regression check, and promotion decision.
 - The writing avoids stock AI thought-leadership prose and passes the `muness-voice` guardrails.
@@ -30,6 +32,7 @@
 - The Organizational Communication piece becomes generic management theory instead of preparing the reversal.
 - Dissent is framed as executive attitude or cultural performance instead of a communication interface that lets work alter strategy.
 - The `strategy-report.md` reversal-stack chart is omitted, or the mechanism table is flattened into a vague Toyota/evidence-trigger reference.
+- The failed cases are named without evidence, or treated as scandal shorthand instead of mechanisms readers can map to their own organizations.
 - The Potter frame gets demoted to a quote rather than explaining specificity and reliability.
 - The Recon Agent harness is described generically enough that it could be any data product.
 - The concrete article implies direct SME-to-production mutation instead of governed promotion.

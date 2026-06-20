@@ -31,6 +31,10 @@ Treat `~/Downloads/reversal.txt` as source material for the essay set, not as a 
 
 The chart to bring over from `~/Downloads/strategy-report.md` is the reversal stack inside corporate strategy, plus each mechanism row that maps Mechanism, What the literature says, and How it shows up in strategy and execution. Do not replace it with the evidence-as-decoration/evidence-as-trigger case table or a generic Toyota reference.
 
+## Do not name-drop failed cases
+
+Volkswagen, Wells Fargo, and Boeing should be used as evidenced examples of reversal, not as scandal shorthand. For each, state the underlying objective, the proxy the system optimized, the communication/control mechanism that made the proxy load-bearing, and the consequence.
+
 ## No SME-to-production fantasy
 
 The Recon Agent story must preserve governance: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion.
