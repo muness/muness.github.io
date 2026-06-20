@@ -18,10 +18,19 @@ If that argument crowds the Recon Agent article, split Potter into its own essay
 
 Do not force organizational communication, McLuhan/Mir reversal, Potter process optimization, June 13 runtime/domain-harness recap, and the Recon Agent harness into one article unless the piece has a deliberately serial structure and a concrete reader job.
 
+## No faux dissent
+
+Do not treat dissent as leadership style, cultural permission, or executive critique. The useful form is work-to-strategy feedback: evidence from people closest to the work must be able to contradict the plan and alter assumptions, priorities, funding, scope, or continuation. If dissent has no trigger, owner, review cadence, closure path, or state-changing consequence, call it ceremony.
+
 
 ## No loss of the reversal corpus
 
 Treat `~/Downloads/reversal.txt` as source material for the essay set, not as a private scratchpad to mine for one or two quotes. The concepts should survive, but not necessarily in their current form. Translate, sequence, and spoon-feed them until a reader can follow the argument without having read McLuhan, Mir, or the source notes.
+
+## Do not drop the strategy-report chart
+
+The evidence-as-decoration versus evidence-as-trigger chart from `~/Downloads/strategy-report.md` should come over to the essay set. If it is too large in its current form, rewrite or split it; do not reduce it to a vague Toyota reference.
+
 ## No SME-to-production fantasy
 
 The Recon Agent story must preserve governance: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion.

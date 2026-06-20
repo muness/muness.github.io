@@ -10,6 +10,7 @@ It is intentionally repo-native. Blog essays are not just posts; they are eviden
 - `outcomes/` — observable signals that an aim is working.
 - `metis/` — reusable lessons discovered while drafting, reviewing, or publishing.
 - `guardrails/` — constraints that should prevent repeated writing failures.
+- `sources/` — source excerpts and charts that should travel into future drafts.
 - `sessions/` — dated working notes and problem framings.
 
 ## Current focus
@@ -17,6 +18,7 @@ It is intentionally repo-native. Blog essays are not just posts; they are eviden
 The executable-expectations body of work sits next to the 2026-06-13 agent-domain-runtime essays. The likely shape is more than one additional essay:
 
 1. an Organizational Communication lead essay;
-2. a McLuhan/Mir organizational-communication reversal essay or sequence;
-3. a Potter / variable-standard process reliability essay if the process theory needs its own runway;
-4. a concrete Recon Agent harness article showing executable expectations end to end.
+2. a Work-to-Strategy Feedback / Dissent Mechanisms essay or load-bearing section;
+3. a McLuhan/Mir organizational-communication reversal essay or sequence;
+4. a Potter / variable-standard process reliability essay if the process theory needs its own runway;
+5. a concrete Recon Agent harness article showing executable expectations end to end.
