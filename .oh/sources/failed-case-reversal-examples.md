@@ -22,7 +22,7 @@ Use these with references and enough factual grounding that readers can map the 
 
 ## Reference URLs to use in drafts
 
-- Wells Fargo / CFPB: https://www.consumerfinance.gov/about-us/newsroom/consumer-financial-protection-bureau-fines-wells-fargo-100-million-widespread-illegal-practice-secretly-opening-unauthorized-accounts/
+- Wells Fargo / CFPB enforcement action: https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-2016/
 - Wells Fargo / OCC: https://www.occ.gov/news-issuances/news-releases/2016/nr-occ-2016-106.html
 - Wells Fargo / SEC order: https://www.sec.gov/files/litigation/admin/2020/34-88257.pdf
 - Volkswagen / EPA Notice of Violation: https://www.epa.gov/sites/default/files/2015-10/documents/vw-nov-caa-09-18-15.pdf
