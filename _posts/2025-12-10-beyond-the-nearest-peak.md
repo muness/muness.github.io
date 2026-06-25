@@ -1,14 +1,14 @@
 ---
 comments: true
 date: 2025-12-10 19:24:00 -0400
-last_modified_at: 2026-06-24 21:24:16 -0400
+last_modified_at: 2026-06-24 21:33:46 -0400
 author: muness
 title: "Beyond the Nearest Peak"
 toc: true
 excerpt: "LLMs make it cheaper to inspect more possible curves and accelerate correction on the one you choose. They do not replace contact with reality. The leadership job is deciding where learning should compound, what evidence earns depth, and when to look up again."
 ---
 
-## Breaking the Gravity of Local Maxima
+## Cheap Exploration Breaks Local-Maximum Lock-In
 
 LLMs collapse the cost of exploring alternatives. That changes the leadership problem. The scarce work is no longer producing one plausible plan. It is deciding where learning should compound, what evidence earns depth, and when to stop defending the nearest workable answer.
 
@@ -16,7 +16,7 @@ The hardest part of design has never been coming up with ideas. It is letting go
 
 LLMs change that cost structure. We can now explore multiple paths in minutes. The leadership task becomes steering the search, testing the alternatives, and moving depth only where the evidence earns it.
 
-### The Landscape of Expensive Mistakes
+### Why Teams Stayed on Nearby Peaks
 
 Every design problem creates a landscape. It is multi-dimensional, full of peaks that represent working solutions and valleys that represent broken builds or failed bets.
 
@@ -24,7 +24,7 @@ In the pre-LLM era, moving across this landscape was punishingly expensive. Swit
 
 To escape a local maximum in that world, you needed _skill stacking_. You needed a rare individual who possessed deep domain breadth, knew obscure analogies from other fields, and had the metis — the tacit, situational competence — to guess which dark valley was worth crossing. This was the _hero model_ of design: reliance on the intuition of the few because the empirical testing of the many was too slow.
 
-### The Shift: From Climbing to Tunneling
+### LLMs Make Distant Peaks Cheaper to Inspect
 
 LLMs do not replace that intuition, nor do they replace the need for deep skill. What they change is the physics of movement.
 
@@ -36,7 +36,7 @@ None of this uncovers a single "right" answer. There is no final, perfect plan h
 
 Speed creates a second problem that many teams miss.
 
-### The Virtue of Shallow Breadth
+### Shallow Breadth Comes Before Depth
 
 The mistake most teams make is assuming LLMs provide depth. **They do not**. LLMs provide **shallow breadth**. They offer typical patterns, first approximations, cross-domain hints, and quick critiques. They are not masters; they are infinite interns.
 
@@ -44,7 +44,7 @@ That shallowness is useful because it gives you more surfaces to inspect before 
 
 Depth still emerges, but it emerges after selection and feedback. The model accelerates the work of discovering _what_ is worth deepening; reality decides whether the deepening compounds.
 
-### The Curve Is Not the Landscape
+### Choose Where Learning Should Compound
 
 Shallow breadth only matters if it changes where depth lands. When you choose an option, you are choosing the curve your team will climb: the toolchain, operating habits, edge-case knowledge, customer promises, deployment muscle, and scars that repeated effort will accumulate around.
 
@@ -66,7 +66,7 @@ The leadership task is to alternate deliberately between the two: search broadly
 
 The Shallow → Score → Select → Deepen protocol is the front end of a learning curve. Shallow breadth expands the candidate set. Scoring chooses where to place the bet. Deepening begins the accumulation. Verification supplies the feedback that bends the curve. The landscape tells us where progress might be possible. The learning curve tells us how progress becomes durable.
 
-### When the Cost Collapses, the Target Changes
+### Cheap Search Raises the Bar
 
 When curve selection gets cheaper, the old behaviors get harder to defend.
 
@@ -78,7 +78,7 @@ Second, **cycle time is search capability.** In a world of cheap exploration, th
 
 The **"safety" of the local maximum is disappearing.** Exploitation—improving what you already have—used to be safer than exploration. Once the cost of inspecting new paths falls, staying on a local peak "to be safe" becomes dangerous in a different way. Trying and failing can still be expensive. Refusing to look up after the current curve has flattened is worse.
 
-### Acting as Editors, Not Crafters
+### Lead as an Editor, Not a Crafter
 
 This changes the work of leadership. We need less identity wrapped around crafting the perfect plan and more discipline around choosing which walls are worth building at all.
 
@@ -90,15 +90,15 @@ The _crafter_ mindset honors the labor of placing every brick. The _editor_ mind
 
 Use this as the strategy: search broadly enough that the first idea loses its monopoly, score fast enough that weak branches die before they become projects, and deepen few enough that contact with reality can still compound. The feedback signal is fewer late reversals, faster rejection of bad paths, and clearer reasons for the path that survives.
 
-## What Good Looks Like
+## Use Tree Search Instead of Slot Machines
 
 How do you do this as an executive? You replace the Slot Machine Workflow with the Tree Search Workflow.
 
-### The Anti-Pattern: The Slot Machine (Bad)
+### Anti-Pattern: The Slot Machine Workflow
 
 Too many treat the LLM like a slot machine. They toss in a prompt ("Write a strategy for entering the SMB market"), pull the lever, and accept whatever comes out. If it feels off, they tweak language around the edges instead of questioning the direction. This is high-friction and low-return. You are still walking the landscape linearly, just slightly faster.
 
-### The Pattern: The Tree Search (Good)
+### Pattern: The Tree Search Workflow
 
 The editorial workflow for leaders looks like this:
 
@@ -107,7 +107,7 @@ The editorial workflow for leaders looks like this:
 - **The Scaffold (Minutes 20–30).** Now, deepen only the survivors. Ask the model to draft just the scaffolds—high-level roadmaps, org charts, and investment theses—for the one or two options that remain.
 - **The Deepen (Hours 1–4).** This is where you take over. You have skipped the "valley" of weak strategies without burning cycles on them. Now you use human leadership—your metis—to pressure-test with your team, model the P&L, surface execution risks, and negotiate trade-offs the model cannot see.
 
-### The Difference
+### Tree Search Rejects Bad Paths Earlier
 
 The Slot Machine leader spends weeks selling and polishing **the wrong strategy**. The Tree Search leader spends that time exploring viable paths, choosing where learning should accumulate, and iterating through cheap experiments before depth becomes expensive.
 
@@ -129,7 +129,7 @@ Good judgment is not heroic intuition. It is a steady discipline built on three 
 
 These practices give "judge more" a concrete shape. They keep attention on what leadership now optimizes for: quality of search, strength of pruning, clarity of decision, and evidence that tells you when to stop.
 
-### A Portfolio Lens on Search
+### Treat Options Like a Portfolio
 
 Another way to see this discipline is through portfolio theory. Options are candidate investments. Scoring is diligence. Deepening is capital allocation. Pruning is cutting losses early before they compound. The aim is not to back the first workable idea, but to maintain a healthy pipeline of alternatives and invest only in the ones that survive the filter. Leadership becomes the management of search quality and portfolio health, not the defense of early drafts.
 
@@ -163,7 +163,7 @@ Search chooses the curve. Compounding climbs it. Judgment decides when to look u
 </style>
 
 <details class="appendix" markdown="1">
-<summary><strong>Appendix A: The Topology of "Tunneling" (Complexity)</strong></summary>
+<summary><strong>Appendix A: Tunneling Across Rugged Landscapes</strong></summary>
 
 In Stuart Kauffman’s **NK Model**, a "rugged" fitness landscape traps agents on local maxima. To find a higher peak, an agent usually has to step "downhill" (worse performance) to cross a valley.
 
@@ -189,7 +189,7 @@ The Shallow-to-Deep protocol is the cognitive version of tree search. It widens 
 </details>
 
 <details class="appendix" markdown="1">
-<summary><strong>Appendix C: The Inequality of Verification (Economics)</strong></summary>
+<summary><strong>Appendix C: Generation Gets Cheap; Verification Does Not</strong></summary>
 
 The economic shift is simple: the cost of **generation collapses**, the cost of **verification persists**. Writing variants is cheap; reading, testing, and rejecting them still takes human time. The bottleneck moves from producing to judging.
 
