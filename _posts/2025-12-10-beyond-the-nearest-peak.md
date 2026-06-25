@@ -56,7 +56,7 @@ The incumbent path feels safe because it has years of accumulated learning behin
 
 Before LLMs, even inspecting the valley was expensive. An organization had to build enough of an alternative to discover whether it had headroom. Staying on the current curve was not cowardice. It was often the rational response to exploration costs that were too high to pay casually.
 
-LLMs help on both sides of that alternation. While climbing, they can turn production failures into tests, compare explanations, sketch small refactors, and make repeated corrections cheaper to inspect. While looking up, they lower the cost of asking whether another curve is worth climbing: sketching competing architectures, exposing assumptions, comparing trade-offs, and attacking weaknesses before the full commitment.
+LLMs can accelerate both sides of that alternation. They are neither necessary nor sufficient, but ignoring them now makes the feedback loop slower than it needs to be. While climbing, they can turn production failures into tests, compare explanations, sketch small refactors, and make repeated corrections cheaper to inspect. While looking up, they lower the cost of asking whether another curve is worth climbing: sketching competing architectures, exposing assumptions, comparing trade-offs, and attacking weaknesses before the full commitment.
 
 They still do not supply the compounding. Production data, customer contact, failure analysis, process discipline, and thousands of small corrections come from contact with reality. The model can sketch a new operating model; it cannot pre-install the judgment that comes from operating it under stress. It can identify a hill. It cannot climb it for you.
 
@@ -220,7 +220,7 @@ Use the distinction as a diagnostic.
 - Customers are asking for something the current system resists.
 - A new branch can now be inspected cheaply enough to compare honestly.
 
-LLMs belong on both sides. While climbing, they can help turn observed failures into tests, summarize messy evidence, compare candidate fixes, and make small corrections easier to inspect. While looking up, they can sketch alternatives, expose assumptions, and test whether another curve has enough headroom to deserve depth. They still do not replace contact with reality. Production data, customer contact, failure analysis, and repeated correction decide whether a curve compounds.
+LLMs can accelerate both motions. They are neither necessary nor sufficient: a disciplined team can climb and look up without them, and a sloppy team can use them everywhere and learn nothing. But at current costs, refusing to use them for inspection, comparison, and correction is increasingly hard to defend. While climbing, they can help turn observed failures into tests, summarize messy evidence, compare candidate fixes, and make small corrections easier to inspect. While looking up, they can sketch alternatives, expose assumptions, and test whether another curve has enough headroom to deserve depth. They still do not replace contact with reality. Production data, customer contact, failure analysis, and repeated correction decide whether a curve compounds.
 
 The mistake is treating either motion as virtue by itself. Climbing without search becomes lock-in. Search without climbing becomes churn.
 
