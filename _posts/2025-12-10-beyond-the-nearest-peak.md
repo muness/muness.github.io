@@ -4,16 +4,16 @@ date: 2025-12-10 19:24:00 -0400
 author: muness
 title: "Beyond the Nearest Peak"
 toc: true
-excerpt: "We used to stack skills so we could navigate the landscape. Now we explore hypothetical mixes of skills, tools, and ideas inside the simulation to discover which combinations deserve depth. The work shifts from accumulating capability to evaluating configurations."
+excerpt: "LLMs make it cheaper to compare curves before committing. They do not replace the compounding work of climbing one. The leadership job is choosing where depth should accumulate, pruning shallow options early, and looking up again when the current curve runs out of headroom."
 ---
 
 ## Breaking the Gravity of Local Maxima
 
-LLMs collapse the cost of exploring alternatives, so leadership quality now hinges on how well we _search_, not how well we _craft_. Search is becoming the spine of design and strategy work.
+LLMs collapse the cost of exploring alternatives. That changes the leadership problem. The scarce work is no longer producing one plausible plan. It is searching the space well enough to avoid overcommitting to the nearest workable answer.
 
 The hardest part of design has never been coming up with ideas. It is letting go of the first workable idea to look for better ones. Historically, we stayed on local maxima—peaks that were fine for survival but too low for excellence—because moving off them was expensive. Rewrites, refactors, and architectural shifts burned real political and temporal capital.
 
-LLMs change that cost structure. We can now explore multiple paths in minutes. Sunk cost is thankfully losing its grip. The work of leadership becomes steering the search rather than defending early choices.
+LLMs change that cost structure. We can now explore multiple paths in minutes. The leadership task becomes steering the search, testing the alternatives, and refusing to defend early choices just because they arrived first.
 
 ### The Landscape of Expensive Mistakes
 
@@ -27,41 +27,59 @@ To escape a local maximum in that world, you needed _skill stacking_. You needed
 
 LLMs do not replace that intuition, nor do they replace the need for deep skill. What they change is the physics of movement.
 
-Formally: they collapse the cost structure of exploration. In the past, testing a radically different architecture required building it. Now, you can sample five divergent strategies in an afternoon. This allows for a kind of "tunneling" effect: you can visualize a solution on a distant peak without having to painstakingly hike through the budget and org-debt valley in between.
+They collapse the cost structure of exploration. In the past, testing a radically different architecture required building enough of it to feel the pain. Now, you can sample five divergent strategies in an afternoon. You can visualize a solution on a distant peak without painstakingly hiking through the budget and org-debt valley in between.
 
-This changes the texture of the work. Higher-level abstraction becomes a working medium; you iterate on intent and constraints rather than syntax. The loop of _propose → implement → critique → revise_ — which used to take days or weeks — now can happen in minutes or hours. Architectural alternatives emerge early, while the cost of change is low, rather than late, when the concrete has set.
+The work starts to happen one level up. Higher-level abstraction becomes a working medium; you iterate on intent and constraints rather than syntax. The loop of _propose → implement → critique → revise_ — which used to take days or weeks — now can happen in minutes or hours. Architectural alternatives emerge early, while the cost of change is low, rather than late, when the concrete has set.
 
-Crucially, none of this uncovers a single "right" answer. There is no final, perfect plan hiding in the landscape — only better and worse bets, discovered through faster, cheaper learning.
+None of this uncovers a single "right" answer. There is no final, perfect plan hiding in the landscape — only better and worse bets, discovered through faster, cheaper learning.
 
-But this speed comes with a caveat that many teams miss.
+Speed creates a second problem that many teams miss.
 
 ### The Virtue of Shallow Breadth
 
-The mistake most teams make is assuming LLMs provides depth. **They do not**. LLMs provide **shallow breadth**. They offer typical patterns, first approximations, cross-domain hints, and quick critiques. They are not masters; they are infinite interns.
+The mistake most teams make is assuming LLMs provide depth. **They do not**. LLMs provide **shallow breadth**. They offer typical patterns, first approximations, cross-domain hints, and quick critiques. They are not masters; they are infinite interns.
 
-But this shallowness is valuable: It is exploratory fuel.
+That shallowness is useful because it gives you more surfaces to inspect before you commit. You can prompt for ten approaches, scan them for viability, and discard nine. This is the **"Shallow → Score → Select → Deepen"** protocol.
 
-The new productive loop is to use that shallow breadth to generate options, and then apply human judgment to select which one deserves depth. You prompt for ten approaches, scan them for viability, and discard nine. This is the **"Shallow → Score → Select → Deepen"** protocol.
+Depth still emerges, but it emerges after selection. The model accelerates the work of discovering _what_ is worth deepening.
 
-Depth still emerges, but it emerges through guided iteration and human taste. The model accelerates the work of discovering _what_ is worth deepening.
+### The Curve Is Not the Landscape
+
+Shallow breadth only matters if it changes where depth lands. When you choose an option, you are choosing the curve your team will climb: the toolchain, operating habits, edge-case knowledge, customer promises, deployment muscle, and scars that repeated effort will accumulate around.
+
+A learning curve is what happens after that choice. Costs fall, quality rises, and hidden constraints become legible because people keep correcting errors in the same direction. An S-curve shows the return on that effort: slow while the system is being understood, steep while improvements reinforce one another, and flat when the architecture runs out of headroom. The landscape question is which curve deserves that accumulation.
+
+Solar PV makes this concrete. In the [module-price series compiled by Our World in Data from IRENA, Nemet, and Farmer/Lafond](https://ourworldindata.org/grapher/solar-pv-prices), photovoltaic modules fall from roughly $128 per watt in 1975 to about $0.26 per watt in 2024. That collapse was not one decisive invention. It was better silicon, better cells, better inverters, better manufacturing, better installation, better financing, and better coordination. None of those improvements alone looked like the revolution. The revolution emerged because many small improvements compounded along a curve with room left to climb.
+
+The incumbent path feels safe because it has years of accumulated learning behind it. A new path may have a higher ceiling and still look worse at first because it has not earned the tools, habits, supply chain, political agreements, and scar tissue that make the incumbent feel obvious. That initial inferiority is the valley.
+
+Before LLMs, even inspecting the valley was expensive. An organization had to build enough of an alternative to discover whether it had headroom. Staying on the current curve was not cowardice. It was often the rational response to exploration costs that were too high to pay casually.
+
+LLMs lower the cost of asking whether another curve is worth climbing. We can sketch several competing architectures, expose assumptions, compare trade-offs, and attack weaknesses before making the full commitment. They do not supply the compounding. Production data, customer contact, failure analysis, process discipline, and thousands of small corrections still come from contact with reality. The model can sketch a new operating model; it cannot pre-install the judgment that comes from operating it under stress. It can identify a hill. It cannot climb it for you.
+
+That creates two symmetric failure modes. Depth without renewed search becomes lock-in: the organization keeps improving a curve whose ceiling is already visible, treating every incremental gain as validation while the opportunity cost of staying grows. Search without sustained depth becomes churn: the organization keeps changing branches before any learning has time to compound, producing a portfolio of promising beginnings and no accumulated advantage.
+
+The leadership task is to alternate deliberately between the two: search broadly enough to choose a curve with real headroom, commit long enough for cumulative improvements to reinforce one another, and reopen the search when marginal gains flatten, constraints change, or a new branch becomes credible.
+
+The Shallow → Score → Select → Deepen protocol is the front end of a learning curve. Shallow breadth expands the candidate set. Scoring chooses where to place the bet. Deepening begins the accumulation. Verification supplies the feedback that bends the curve. The landscape tells us where progress might be possible. The learning curve tells us how progress becomes durable.
 
 ### When the Cost Collapses, the Target Changes
 
-When you accept that exploration is cheap, you must accept that your old behaviors are now irrational.
+When curve selection gets cheaper, the old behaviors get harder to defend.
 
-Most executives are using LLMs, if at all, to run the old maze faster—treating AI as a typing accelerator for their teams inside a linear "waterfall" process. This is a category error. The shift **isn't about speed**; it's about **reach**.
+Most executives are using LLMs, if at all, to run the old maze faster—treating AI as a typing accelerator inside a linear waterfall process. That misses the change in the work. The shift is about reach: the ability to inspect more possible curves before committing scarce depth to one of them.
 
-First, **clinging to early decisions is now professional negligence.** We used to defend our first strategic draft because changing direction was a nightmare. Now that artifacts are cheap, rewriting is cheap. Defending a mediocre solution is no longer prudence; it is vanity. If your organization can test five architectures or approaches in a couple of days, settling for the first one is a failure of rigor—especially when the goal is not to find **the** answer, but to learn which bets survive contact with reality.
+First, **clinging to early decisions is now a failure of rigor.** We used to defend our first strategic draft because changing direction was expensive. Now that artifacts are cheap, rewriting is cheap. Defending a mediocre solution is no longer prudence; it is vanity. If your organization can test five architectures or approaches in a couple of days, settling for the first one means you did not search hard enough.
 
-Second, **cycle time is the definition of capability.** In a world of cheap exploration, the leadership team that tests five divergent paths by lunch has a qualitative advantage over the team that spends the day overfitting to one. Slow exploration is not cautious; it is risky.
+Second, **cycle time is search capability.** In a world of cheap exploration, the leadership team that tests five divergent paths by lunch has a qualitative advantage over the team that spends the day overfitting to one. Slow exploration is not cautious. It delays the moment when better curves become visible.
 
-Finally, the **"safety" of the local maximum is disappearing.** Exploitation—improving what you already have—used to be safer than exploration. But when the cost of trying new paths is so low, staying on a local peak "to be safe" is actually the dangerous path. The only expensive mistake left is refusing to try.
+The **"safety" of the local maximum is disappearing.** Exploitation—improving what you already have—used to be safer than exploration. Once the cost of inspecting new paths falls, staying on a local peak "to be safe" becomes dangerous in a different way. Trying and failing can still be expensive. Refusing to look up after the current curve has flattened is worse.
 
 ### Acting as Editors, Not Crafters
 
-This shift demands a fundamental change in identity. We must stop acting like crafters and start acting like editors.
+This changes the work of leadership. We need less identity wrapped around crafting the perfect plan and more discipline around choosing which walls are worth building at all.
 
-The _crafter_ mindset honors the labor of placing every brick. The _editor_ mindset honors the judgment of choosing which walls are worth building at all. Leverage at the executive level requires redesigning your leadership workflow around **search management**:
+The _crafter_ mindset honors the labor of placing every brick. The _editor_ mindset honors the judgment of choosing which walls are worth building. At the executive level, the work becomes search management:
 
 - **Shift from hero to orchestrator.** Your job is not to champion a single solution. Your job is to insist on multiple variations, score them against constraints, and ruthlessly prune the failures. You are not the genius at the whiteboard; **you are the filter for the organization’s attention**.
 - **Define the scoring function.** Breadth without judgment is noise. To explore cheaply, you must evaluate quickly. Is the constraint runway? Regulatory risk? Strategic positioning? **Exploration without a clear scoring function is drift** you can't afford.
@@ -69,11 +87,11 @@ The _crafter_ mindset honors the labor of placing every brick. The _editor_ mind
 
 ## What Good Looks Like
 
-How do you actually do this as an executive? You replace the Slot Machine Workflow with the Tree Search Workflow.
+How do you do this as an executive? You replace the Slot Machine Workflow with the Tree Search Workflow.
 
 ### The Anti-Pattern: The Slot Machine (Bad)
 
-Too many treat the LLM like a slot machine. They toss in a prompt ("Write a strategy for entering the SMB market"), pull the lever, and accept whatever comes out. If it feels off, they tweak language around the edges instead of questioning the direction. This is high-friction and low-leverage. You are still walking the landscape linearly, just slightly faster.
+Too many treat the LLM like a slot machine. They toss in a prompt ("Write a strategy for entering the SMB market"), pull the lever, and accept whatever comes out. If it feels off, they tweak language around the edges instead of questioning the direction. This is high-friction and low-return. You are still walking the landscape linearly, just slightly faster.
 
 ### The Pattern: The Tree Search (Good)
 
@@ -86,15 +104,15 @@ The editorial workflow for leaders looks like this:
 
 ### The Difference
 
-The Slot Machine leader spends weeks selling and polishing **the wrong strategy**. The Tree Search leader spends that time exploring viable paths, learning and iterating through cheap experiments and simulations.
+The Slot Machine leader spends weeks selling and polishing **the wrong strategy**. The Tree Search leader spends that time exploring viable paths, choosing where learning should accumulate, and iterating through cheap experiments before depth becomes expensive.
 
 ## Do Less, Judge More
 
-Licklider foresaw this partnership decades ago: humans supplying the judgment, machines supplying the options. We have finally arrived at that moment, but arriving there requires a violent adaptation in how we value leadership work.
+Licklider foresaw this partnership decades ago: humans supplying the judgment, machines supplying the options. We have finally arrived at that moment, but it changes how leadership work should be valued.
 
-This shifts the seat of our competence. The era of the solitary genius crafting the perfect strategy in one go is over. The era of the curator—scanning a dozen possible futures to choose the next experiment—has begun.
+The era of the solitary genius crafting the perfect strategy in one go is over. The useful seat is the editor's seat: scanning a dozen possible futures, choosing the next experiment, and rejecting paths before they become expensive.
 
-To survive this, we must adapt. We must invert the ratio of our effort: Do less. Judge more. Stop measuring your value by the volume of activity. Measure it by the **learning you unlock and the paths you reject**.
+The practical adaptation is to invert the ratio of our effort: Do less. Judge more. Stop measuring your value by the volume of activity. Measure it by the learning you create and the paths you reject.
 
 ### What “Judge More” Looks Like in Practice
 
@@ -108,9 +126,9 @@ These practices give "judge more" a concrete shape. They keep attention on what 
 
 ### A Portfolio Lens on Search
 
-Another way to see this discipline is through portfolio theory. Options are your deal flow. Scoring is diligence. Deepening is capital allocation. Pruning is cutting losses early before they compound. The aim is not to back the first workable idea, but to maintain a healthy pipeline of alternatives and invest only in the ones that survive the filter. This framing reinforces the shift: leadership becomes the management of search quality and portfolio health, not the defense of early drafts.
+Another way to see this discipline is through portfolio theory. Options are candidate investments. Scoring is diligence. Deepening is capital allocation. Pruning is cutting losses early before they compound. The aim is not to back the first workable idea, but to maintain a healthy pipeline of alternatives and invest only in the ones that survive the filter. Leadership becomes the management of search quality and portfolio health, not the defense of early drafts.
 
-The machines build. We choose.
+Search chooses the curve. Compounding climbs it. Judgment decides when to look up again.
 
 ---
 
