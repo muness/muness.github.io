@@ -2,7 +2,7 @@
 
 ## No generic example
 
-The concrete article must use the Recon Agent harness. Generic `data product`, `operational system`, or `domain workflow` placeholders are only acceptable as confidentiality wrappers around the actual mechanism.
+The concrete article must use the Recon Agent harness with enough domain surface for a new reader: account, position, transaction history, reconciliation failure, recommended corrective action, SME correction, schema'd input/output, deterministic check, regression suite, named case. Generic `data product`, `operational system`, or `domain workflow` placeholders are only acceptable as confidentiality wrappers around the actual mechanism.
 
 ## No client naming
 
@@ -13,6 +13,10 @@ The client should not be named. The mechanism can be concrete: account, position
 Do not reduce Potter to a citation or remove him to make room for McLuhan/Mir. Potter explains the process-reliability layer: variable domain knowledge needs standardized processes, components, and systems to become durable without becoming arbitrary variation.
 
 If that argument crowds the flagship, preserve it as source scaffolding or a brief mechanism inside the essay instead of deleting it or spinning up a companion post.
+
+## No concept stubs
+
+Do not merely introduce McLuhan, Mir, medium, reversal, acceleration, change episode, prospective memory, or executable expectation as labels. Each concept needs enough mechanism that a reader can explain what work it does in the argument without already sharing the frame.
 
 ## No one-essay overload
 
@@ -35,9 +39,13 @@ The chart to bring over from `~/Downloads/strategy-report.md` is the reversal st
 
 Volkswagen, Wells Fargo, and Boeing should be used as evidenced examples of reversal, not as scandal shorthand. For each, state the underlying objective, the proxy the system optimized, the communication/control mechanism that made the proxy load-bearing, and the consequence.
 
+## Shared brain can become shared mouth
+
+When discussing company knowledge corpora or AI alignment tooling, preserve the stronger reversal: a corpus cannot resolve contradictory priorities, incentives, authority, information, resource allocation, or leadership behavior. It can make heterogeneous activity sound coherent in approved strategic language. The essay should distinguish common vocabulary from collective cognition.
+
 ## No SME-to-production fantasy
 
-The Recon Agent story must preserve governance: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion.
+The Recon Agent story must preserve governance and explain the handoff: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion. Do not mention the harness as if readers already know it.
 
 ## No stock voice transitions
 

@@ -58,6 +58,7 @@ A section that only names a topic is not an atom. A section that carries the ori
 | Representation of competent action becomes more consequential than competent action. | A mature representational apparatus plus legitimacy pressure. | Compliance, strategy, metrics, and governance can be staged for the representation. | Volkswagen, Wells Fargo, Boeing; decoupling; organized hypocrisy; auditability. | Explains why more evidence alone will be neutralized. |
 | The organization has more artifacts than ever and less reconstructable history. | Digital communication preserves artifacts without lineage, authority, epistemic type, or state change. | Searchable abundance becomes reconstructive failure. | Slack, Teams, live docs, decks, dashboards, AI summaries. | Forces the distinction between archive and archaeology. |
 | LLMs make organizational change conversational. | Digital present tense plus cheap code/prompt/config mutation. | The system can change before intention stabilizes. | Prompt/routing/config/code/evaluator changes from vague instructions. | Makes harvested lineage a safety mechanism, not just documentation hygiene. |
+| Shared-brain corpora can become shared mouths. | Digital present tense plus AI retrieval/generation. | Canonical strategy becomes an infinitely flexible justification engine when contradictions are not state-constrained. | Approved strategic language generated into local contradictory action. | Explains why more common vocabulary can worsen perceived alignment. |
 | Standard remedies remain inside the broken medium. | Documentation and governance are content-level interventions. | They become compliance artifacts, mythology, or new representational layers. | Decision logs, AI meeting summaries, culture programs, one-priority slogans. | Clears the ground for archaeology. |
 | The change episode is the missing unit. | Existing provenance/event-sourcing/OpenLineage primitives cover pieces, not organizational memory. | A snapshot becomes a projection of accumulated change. | Trigger → prior state → interpretation → direction → evidence → authority → execution → artifact delta → outcome → lineage. | Gives executable expectations legitimate source material. |
 | Prospective memory selects context when it matters. | Episodes preserve dependencies and contested assumptions. | Retrieval becomes impact-sensitive recollection. | Similar change attempted and reverted; assumption contested; override outcome never measured. | Moves memory from storage to action. |
@@ -80,6 +81,8 @@ Use these deliberately across the flagship essay. They are conceptual vocabulary
 - evidence as decoration versus evidence as trigger
 - archive versus archaeology
 - retrieval versus prospective memory
+- shared brain versus shared mouth
+- common vocabulary versus collective cognition
 
 ## Recurring concrete example
 
@@ -111,6 +114,7 @@ These may be edited for fit, but future rewrites must preserve the claim and pla
 - The useful unit is the change episode.
 - The purpose of memory is not to preserve what the organization said. It is to make accumulated experience capable of changing what happens next.
 - The organization can repeat the mistake, but it can no longer repeat it in the same silent way.
+- The shared brain risks becoming a shared mouth: common vocabulary without state-changing constraint.
 - The answer to ephemeral incoherence is not eternal rigidity. It is temporally explicit constraint.
 - That is not knowledge management. That is organizational memory becoming executable.
 
