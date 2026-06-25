@@ -4,7 +4,7 @@
 The atomized five-piece architecture is wrong for this material. The publication unit must preserve a completed reversal: original function -> enhancement -> saturation -> reversal -> new necessity.
 
 ## Cutover
-1. Replace the current June 17 public post with one canonical flagship essay that carries the full arc without resetting: durable communication, higher-order representation, reversal, digital present tense, LLM completion, second reversal. The frame is change lineage / executable memory, not the rejected media-category frame, and it applies to companies of any size once work outgrows proximity.
+1. Replace the current June 17 public post with one canonical flagship essay that carries the full arc without resetting: strategy operates through media; higher-order representation accumulates; media reversal makes representation outrank action; digital acceleration makes strategy present-tense; LLMs collapse communication and implementation; harvested lineage becomes the counter-reversal.
 2. Retire the companion/satellite architecture. Historical, diagnostic, and constructive treatments remain movements inside the flagship essay, not separate `_drafts` or posts.
 3. Delete generated satellite drafts from `_drafts`; if useful phrasing survives, mine it into the flagship or `.oh/sources`, not publication drafts.
 4. Delete the standalone dissent draft. Its useful mechanism becomes part of the canonical essay; a separate dissent post would recreate the fragmentation failure.
@@ -32,7 +32,7 @@ Review found two correctable drift risks: `.oh/outcomes/executable-expectations-
 
 Verification after correction: no `_drafts/*.md` files remain; no public Mir direct quote remains; Muness voice banned-pattern and paragraph-shape gates pass; `git diff --check` passes; `bundle exec jekyll build` passes with only existing Sass `@import` deprecation warnings.
 
-## Dissent correction
+## Dissent + salvage correction
 **Updated:** 2026-06-19
 
-The previous name and media-category frame were rejected. They over-indexed on medium labels and made the essay sound like it was about a narrow company type rather than any company whose work outgrows proximity. The canonical title is now `Companies Can Change Faster Than They Can Remember`, with the governing frame changed to change lineage / executable memory.
+The previous title/frame was rejected because it made the essay sound like it was about a narrow company type or a generic memory-speed mismatch. The canonical title is now `When the Medium of Strategy Reverses`. The reader-facing problem is apparent strategy dysfunction: strategy is supposed to guide operation, but the media that carry strategy can reverse under acceleration.

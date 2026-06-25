@@ -1,8 +1,8 @@
-# Aim: Change Lineage and Executable Memory
+# Aim: Strategy Reversal and Executable Memory
 
 ## Desired reader outcome
 
-Readers should understand why LLM-enabled companies need more than better documentation, summaries, governance, prompts, or code generation. They should see the full reversal: durable communication lets companies coordinate beyond individual memory; continuous digital communication and LLMs now let organizational change outrun the preservation of intent; the counter-move is harvested lineage that can become prospective memory and, where warranted, executable precedent.
+Readers should understand apparent strategy dysfunction as a media reversal, not just leadership failure or execution sloppiness. The essay should show that strategy operates through communicative media; under acceleration, those media can reverse so representation outranks action, digital abundance weakens sequence, and LLMs collapse strategy talk into system mutation. The counter-move is harvested lineage that can become prospective memory and, where warranted, executable precedent.
 
 ## Body-of-work intent
 
@@ -15,9 +15,9 @@ Place this work beside the 2026-06-13 agent-domain-runtime essays:
 
 ## Publication architecture
 
-1. **Canonical essay: Companies Can Change Faster Than They Can Remember.**
-   - Job: carry the complete reversal without resetting.
-   - Claim: durable communication lets companies of any size operate beyond proximity; representational abundance now weakens lineage; LLMs complete the reversal by making change conversational; executable memory is the second reversal.
+1. **Canonical essay: When the Medium of Strategy Reverses.**
+   - Job: explain apparent strategy dysfunction through McLuhan/Mir reversal and then earn the constructive counter-reversal.
+   - Claim: strategy operates through media; acceleration makes those media reverse through representation, digital presentism, and LLM-mediated mutation; executable memory is the counter-reversal.
    - Output: the reader sees why archaeology and executable expectations follow from the mechanism rather than appearing as governance features.
 
 ## Cutover constraint

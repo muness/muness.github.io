@@ -16,6 +16,14 @@ This ledger records source text used in the canonical essay. Public prose should
 
 **Verification:** fetched Harvard University Press page successfully. Quote appears in the publisher description.
 
+## McLuhan / reversal
+
+**Use:** media pushed toward their limits can reverse into contrary effects; public essay uses this as the interpretive frame for strategy's communicative media under acceleration.
+
+**Source:** Marshall McLuhan, *Understanding Media: The Extensions of Man*. Source notes in `~/Downloads/reversal.txt` summarize the reversal mechanism; no direct quotation is used in public prose.
+
+**Constraint:** Do not add direct McLuhan quotations until checked against an accessible edition.
+
 ## Mir / digital reversal and digital orality
 
 **Use:** continuous digital communication pushes durable reflection toward immediate reaction; preserved artifacts without lineage can still leave the organization unable to remember.

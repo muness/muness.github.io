@@ -1,4 +1,4 @@
-# SERIES_SPINE: Change Lineage and Executable Memory
+# SERIES_SPINE: Strategy Reversal and Executable Memory
 
 **Status:** Canonical editorial source for the single flagship organizational-memory / executable-expectations essay.
 
@@ -6,7 +6,7 @@
 
 ## Aim
 
-Readers should stop treating executable expectations as a workflow-governance feature and understand them as the counter-reversal to AI-accelerated organizational amnesia: harvested lineage from actual change becomes prospective memory, and selected precedent becomes a constraint on future change.
+Readers should understand apparent strategy dysfunction as media reversal: strategy operates through communicative forms; under acceleration those forms can reverse so representation outranks action; digital media weakens sequence; LLMs collapse strategy talk into system mutation; harvested lineage becomes the counter-reversal.
 
 ## Source inventory
 
@@ -14,12 +14,12 @@ Readers should stop treating executable expectations as a workflow-governance fe
 - `~/Downloads/strategy-report.md` contributes the strategy reversal stack and the mechanism table: decoupling, organized hypocrisy, auditability, transparency paradox, reform as routine, and post-analytics. The evidence-trigger case table is supporting context, not the main chart to carry.
 - `~/Downloads/strategy-report.md` also contributes the relatable failure cases: Volkswagen optimized emissions-test performance rather than emissions reality; Wells Fargo optimized cross-sell counts rather than customer value; Boeing optimized schedule and program continuity while formal safety review lost real veto power.
 - `.oh/domain-harness-blog-linkedin-salvage.md`, `.oh/linkedin-domain-harness-variability-salvage.md`, and `.oh/domain-agent-ecosystem.md` contribute the domain-harness / executable-expectation mechanism: expert correction becomes scenario, reviewable change, regression evidence, and future behavior.
-- `_posts/2026-06-17-companies-can-change-faster-than-they-can-remember.md` is the current flagship essay draft. Treat it as the canonical essay candidate, not as a fragment to be atomized.
+- `_posts/2026-06-17-when-the-medium-of-strategy-reverses.md` is the current flagship essay draft. Treat it as the canonical essay candidate, not as a fragment to be atomized.
 - `_posts/2026-06-13-agents-dont-learn-the-domain-the-system-does.md`, `_posts/2026-06-13-there-is-no-agent-workflow-runtime.md`, and `_posts/2026-06-13-agent-work-that-changes-behavior.md` are supporting architecture essays. They should be referenced when the constructive mechanism needs the harness/runtime boundary.
 
 ## Governing thesis
 
-A company becomes durable by making communication durable. It starts forgetting when the communication surface moves faster than the intent it is supposed to preserve. LLMs complete the reversal by making organizational change conversational while erasing its lineage. The way through is not more documentation inside the same medium. It is an archaeological record of consequential change that becomes prospective memory and, where warranted, executable precedent.
+Strategy operates through media: plans, budgets, metrics, dashboards, reviews, tickets, summaries, prompts, workflows, approvals, and agents. Under acceleration, those media can reverse: representation outranks action, digital abundance weakens sequence, and LLMs turn strategy talk into system mutation. The counter-reversal is harvested change lineage that can become prospective memory and, where warranted, executable precedent.
 
 ## Completed-reversal atom
 
@@ -37,7 +37,7 @@ A section that only names a topic is not an atom. A section that carries the ori
 
 | Movement | Function in the argument | Prerequisites | Reversal / payoff | Do-not-cut rule |
 |---|---|---|---|---|
-| 1. Durable communication made coordination beyond proximity possible | Establishes that communicative forms—ledgers, memos, budgets, procedures, approvals, reports, tickets, and authorization records—are machinery of organizational reality, not office decoration. | Limits of proximity/local coordination; need for action to survive distance, time, turnover, specialization, and authority boundaries. | Communication detached memory from particular people and let action become repeatable, inspectable, fundable, and accountable. | Do not open with organizational theater. The first move must make communication valuable before it becomes pathological. |
+| 1. Strategy operates through media | Establishes that communicative forms—plans, budgets, metrics, dashboards, reviews, tickets, prompts, workflows, approvals, and authorization records—are how strategy becomes action, constraint, review, and memory. | Strategy is not self-executing; intention must become forms other people can act on, inspect, contest, fund, sequence, and remember. | Communication detached intention from particular people and let action become repeatable, inspectable, fundable, and accountable. | Do not open with proximity or generic memory. The first move must explain apparent strategy dysfunction. |
 | 2. The representational apparatus expanded | Shows why planning, reporting, audit, governance, alignment, and transformation accumulated as responses to real failures. | The original coupling of representation, coordination, and memory. | Each corrective layer becomes an activity that must be staffed, governed, measured, and narrated. | Do not turn this into a chronology list. The point is recursive accumulation. |
 | 3. Representation outranked action | Names the reversal: the representation of competent action becomes more consequential than competent action. | The apparatus from movement 2; organization-theory mechanisms from the strategy report. | Evidence can be acknowledged, absorbed, and neutralized. Performative communication is often load-bearing, not merely stupid prose. | Do not make this a morality play about bad leaders. The mechanism matters more than blame. |
 | 4. The organization became present tense | Shows how continuous digital communication weakens sequence even while preserving more text than ever. | Reversal of representation into ceremony; Mir / digital orality frame. | Preserved artifacts without lineage can still leave the organization unable to remember. | Do not make this another complaint about Slack or meetings. The claim is about lineage, authority, epistemic type, and state change. |
@@ -52,7 +52,7 @@ A section that only names a topic is not an atom. A section that carries the ori
 
 | Claim | Depends on | Reverses into | Supporting example | Later payoff |
 |---|---|---|---|---|
-| Durable communication made companies able to operate beyond proximity. | Work stops fitting inside one person's memory. | Communication systems become autonomous managerial activity. | Railroad coordination; control revolution; memos, ledgers, budgets, reports, procedures. | Establishes why the later loss of lineage is a reversal, not nostalgia. |
+| Strategy operates through media. | Strategy cannot touch work directly; intention must become communicative forms. | Communication systems become autonomous managerial activity. | Plans, budgets, dashboards, reviews, metrics, tickets, governance forums, prompts, workflows. | Establishes why apparent strategy dysfunction is a media reversal, not just execution sloppiness. |
 | Communication represented reality, coordinated action, and preserved memory for later judgment. | Representations must be separable from speaker and moment. | Those functions decouple: representation survives without consequence. | Budgets, authorization records, reports, procedures. | Defines what a future computational memory must recover. |
 | Corrective layers accumulate for legitimate reasons. | Each layer solves a real control or coordination failure. | Layers become self-referential and generate more meta-layers. | Planning → reporting → audit → governance → alignment → transformation → communications. | Keeps the critique from sounding anti-process. |
 | Representation of competent action becomes more consequential than competent action. | A mature representational apparatus plus legitimacy pressure. | Compliance, strategy, metrics, and governance can be staged for the representation. | Volkswagen, Wells Fargo, Boeing; decoupling; organized hypocrisy; auditability. | Explains why more evidence alone will be neutralized. |
@@ -100,7 +100,7 @@ The reconciliation / Recon Agent harness is the concrete operational demonstrati
 
 These may be edited for fit, but future rewrites must preserve the claim and placement.
 
-- A company becomes durable by making communication durable. It starts forgetting when the communication surface moves faster than the intent it is supposed to preserve.
+- Strategy does not touch work directly. Strategy operates through media.
 - The dependencies are the argument.
 - The representation of competent action becomes more organizationally consequential than competent action itself.
 - Evidence becomes received. It does not become causal.
@@ -118,14 +118,14 @@ These may be edited for fit, but future rewrites must preserve the claim and pla
 
 Current canonical draft:
 
-- `_posts/2026-06-17-companies-can-change-faster-than-they-can-remember.md`
+- `_posts/2026-06-17-when-the-medium-of-strategy-reverses.md`
 
 The flagship essay must move through all six public-facing movements without resetting:
 
-1. Durable communication made coordination beyond proximity possible.
-2. Planning, reporting, governance, alignment, and transformation accumulated as responses to failures below them.
+1. Strategy operates through communicative media.
+2. Higher-order representation accumulated as responses to failures below it.
 3. Representation became more consequential than represented activity.
-4. Continuous digital communication made the organization reactive and present tense.
+4. Digital acceleration made the organization reactive and present tense.
 5. LLMs made consequential change conversational and nearly sediment-free.
 6. Harvested lineage becomes prospective memory and, selectively, executable precedent.
 
@@ -135,7 +135,7 @@ The counter-reversal must arrive late. Readers should feel that documentation, k
 
 There is one publication target for this material:
 
-- `_posts/2026-06-17-companies-can-change-faster-than-they-can-remember.md`
+- `_posts/2026-06-17-when-the-medium-of-strategy-reverses.md`
 
 The historical, diagnostic, and constructive treatments are movements inside that essay, not separate posts. They may be used as internal drafting lenses only. They are not an active satellite plan.
 

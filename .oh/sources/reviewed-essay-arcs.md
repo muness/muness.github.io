@@ -1,20 +1,20 @@
-# Reviewed Essay Arcs: Change Lineage and Executable Memory
+# Reviewed Essay Arcs: Strategy Reversal and Executable Memory
 
 Source: corrected architecture after Muness/user dissent on 2026-06-20. The previous five-topic decomposition was rejected because it split topic boundaries instead of argument boundaries.
 
 ## Controlling sentence
 
-A company becomes durable by making communication durable. It starts forgetting when the communication surface moves faster than the intent it is supposed to preserve. LLMs complete the reversal by making organizational change conversational while erasing its lineage. The way through is not more documentation, but harvested change lineage that can become prospective memory and, where warranted, executable precedent.
+Strategy operates through media: plans, budgets, metrics, dashboards, reviews, tickets, summaries, prompts, workflows, approvals, and agents. Under acceleration, those media can reverse: representation outranks action, digital abundance weakens sequence, and LLMs turn strategy talk into system mutation. The counter-reversal is harvested change lineage that can become prospective memory and, where warranted, executable precedent.
 
 ## Canonical essay
 
-Title: `Companies Can Change Faster Than They Can Remember`
+Title: `When the Medium of Strategy Reverses`
 
 Job: preserve the complete causal movement in one public flagship essay.
 
 Required sequence:
 
-1. Durable communication made coordination beyond proximity possible.
+1. Strategy operates through communicative media.
 2. Higher-order communication accumulated as companies tried to control failures in earlier layers.
 3. At saturation, representation became easier to satisfy than the underlying work.
 4. Continuous digital communication weakened sequence and produced a present-tense organization.
@@ -39,7 +39,7 @@ Arc:
 - ledgers, schedules, procedures, budgets, reports, and approvals couple representation, coordination, and memory;
 - every form filters;
 - higher-order communication accumulates;
-- the movement reaches reversal when the forms that enabled coordination beyond proximity begin outranking work.
+- the movement reaches reversal when the forms that enabled strategy to operate begin outranking work.
 
 ### Movement 2: representation becomes present-tense mutation
 

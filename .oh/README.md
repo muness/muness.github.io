@@ -15,9 +15,9 @@ It is intentionally repo-native. Blog essays are not just posts; they are eviden
 
 ## Current focus
 
-The change-lineage / executable-memory body of work sits next to the 2026-06-13 agent-domain-runtime essays. The current architecture is one canonical essay, not an atomized series and not a satellite set:
+The strategy-reversal / executable-memory body of work sits next to the 2026-06-13 agent-domain-runtime essays. The current architecture is one canonical essay, not an atomized series and not a satellite set:
 
-1. Canonical essay: `Companies Can Change Faster Than They Can Remember`
+1. Canonical essay: `When the Medium of Strategy Reverses`
 
 Historical origin, present-tense diagnosis, and executable-memory construction are movements inside that essay. Future edits should not recreate companion drafts in `_drafts/` unless a new split survives the cut-loss report in `.oh/sources/SERIES_SPINE.md`.
 The spine lives in `.oh/sources/SERIES_SPINE.md`. Future edits should preserve the complete reversal movement: original function → enhancement → saturation → reversal → new necessity.

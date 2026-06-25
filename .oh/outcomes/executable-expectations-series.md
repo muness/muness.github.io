@@ -1,12 +1,12 @@
-# Outcomes: Change Lineage and Executable Memory
+# Outcomes: Strategy Reversal and Executable Memory
 
 ## Reader signals
 
-- A reader can explain why companies first need durable communication when work outgrows proximity, and why that same machinery can become ceremony, absorption, and amnesia.
+- A reader can explain why apparent strategy dysfunction can come from media reversal rather than only leadership failure, culture failure, or execution sloppiness.
 - A reader can follow the complete reversal movement: original function → enhancement → saturation → reversal → new necessity.
 - A reader can distinguish a topic boundary from an argument boundary.
-- A reader can explain why continuous digital communication creates more artifacts while weakening reconstructable lineage.
-- A reader can explain why LLMs make organizational mutation conversational and therefore raise the cost of missing lineage.
+- A reader can explain why digital acceleration creates more artifacts while weakening reconstructable lineage.
+- A reader can explain why LLMs collapse strategy talk into system mutation and therefore raise the cost of missing lineage.
 - A reader can recognize failed-case reversal mechanisms: Volkswagen optimized the test condition, Wells Fargo optimized sales-count representation, and Boeing's formal safety apparatus lost practical veto power.
 - A reader can distinguish work-to-strategy dissent with state-changing power from cultural performance or leadership commentary.
 - A reader can explain why raw SME correction is evidence and candidate specification, not production policy.

@@ -51,7 +51,7 @@ The prior multi-piece hypothesis is retired. The publication unit is one flagshi
 
 Reader jobs that must survive inside the flagship:
 
-1. Explain organizational communication as the medium that lets companies preserve memory, coordination, authority, and control once work outgrows proximity.
+1. Explain organizational communication as the medium through which strategy becomes action, constraint, measurement, review, and memory.
 2. Show work-to-strategy feedback as a state-changing communication mechanism, not a leadership attitude.
 3. Make the McLuhan/Mir reversal explicit: communication abundance becomes ceremony, action-substitution, AI-accelerated mutation, and amnesia.
 4. Use Potter/process reliability only where it explains how variable domain judgment becomes reliable system learning through standardized doors, components, and review.
@@ -96,6 +96,6 @@ What is the smallest coherent single essay that lets the `reversal.txt` material
 
 The earlier split preserved topical readability while weakening the argument dependencies. `.oh/sources/SERIES_SPINE.md` and the 2026-06-20 repair plan now define one publication target:
 
-- `Companies Can Change Faster Than They Can Remember`
+- `When the Medium of Strategy Reverses`
 
 Future edits must not revive standalone historical, diagnostic, dissent, process, or harness drafts unless a cut-loss report proves a complete transformation is preserved and the flagship remains intact.
