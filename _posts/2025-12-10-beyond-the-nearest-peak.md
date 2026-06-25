@@ -1,20 +1,20 @@
 ---
 comments: true
 date: 2025-12-10 19:24:00 -0400
-last_modified_at: 2026-06-24 21:03:04 -0400
+last_modified_at: 2026-06-24 21:24:16 -0400
 author: muness
 title: "Beyond the Nearest Peak"
 toc: true
-excerpt: "LLMs make it cheaper to compare curves before committing. They do not replace the compounding work of climbing one. The leadership job is choosing where depth should accumulate, pruning shallow options early, and looking up again when the current curve runs out of headroom."
+excerpt: "LLMs make it cheaper to inspect more possible curves and accelerate correction on the one you choose. They do not replace contact with reality. The leadership job is deciding where learning should compound, what evidence earns depth, and when to look up again."
 ---
 
 ## Breaking the Gravity of Local Maxima
 
-LLMs collapse the cost of exploring alternatives. That changes the leadership problem. The scarce work is no longer producing one plausible plan. It is searching the space well enough to avoid overcommitting to the nearest workable answer.
+LLMs collapse the cost of exploring alternatives. That changes the leadership problem. The scarce work is no longer producing one plausible plan. It is deciding where learning should compound, what evidence earns depth, and when to stop defending the nearest workable answer.
 
 The hardest part of design has never been coming up with ideas. It is letting go of the first workable idea to look for better ones. Historically, we stayed on local maxima—peaks that were fine for survival but too low for excellence—because moving off them was expensive. Rewrites, refactors, and architectural shifts burned real political and temporal capital.
 
-LLMs change that cost structure. We can now explore multiple paths in minutes. The leadership task becomes steering the search, testing the alternatives, and refusing to defend early choices just because they arrived first.
+LLMs change that cost structure. We can now explore multiple paths in minutes. The leadership task becomes steering the search, testing the alternatives, and moving depth only where the evidence earns it.
 
 ### The Landscape of Expensive Mistakes
 
@@ -42,7 +42,7 @@ The mistake most teams make is assuming LLMs provide depth. **They do not**. LLM
 
 That shallowness is useful because it gives you more surfaces to inspect before you commit. You can prompt for ten approaches, scan them for viability, and discard nine. This is the **"Shallow → Score → Select → Deepen"** protocol.
 
-Depth still emerges, but it emerges after selection. The model accelerates the work of discovering _what_ is worth deepening.
+Depth still emerges, but it emerges after selection and feedback. The model accelerates the work of discovering _what_ is worth deepening; reality decides whether the deepening compounds.
 
 ### The Curve Is Not the Landscape
 
@@ -88,6 +88,8 @@ The _crafter_ mindset honors the labor of placing every brick. The _editor_ mind
 - **Define the scoring function.** Breadth without judgment is noise. To explore cheaply, you must evaluate quickly. Is the constraint runway? Regulatory risk? Strategic positioning? **Exploration without a clear scoring function is drift** you can't afford.
 - **Prune aggressively.** Cheap output creates a new form of debt: the cognitive load of options and initiatives. The primary skill of the AI-augmented leader is not adding more documents, decks, or projects, but **shutting down dead ends** before they consume headcount and political capital.
 
+Use this as the strategy: search broadly enough that the first idea loses its monopoly, score fast enough that weak branches die before they become projects, and deepen few enough that contact with reality can still compound. The feedback signal is fewer late reversals, faster rejection of bad paths, and clearer reasons for the path that survives.
+
 ## What Good Looks Like
 
 How do you do this as an executive? You replace the Slot Machine Workflow with the Tree Search Workflow.
@@ -125,7 +127,7 @@ Good judgment is not heroic intuition. It is a steady discipline built on three 
 - **Score options before deepening them.** Depth is costly. Before investing, compare options against the same constraints: runway, risk, time-to-impact, differentiation, and feasibility. Let the scoring filter the field so depth lands where it matters.
 - **Keep cycle time visible and short.** Exploration speed is now a competitive advantage. Track how long it takes to move from question to options, from options to selection, and from selection to a testable draft. Short cycles prevent overcommitment to weak paths and create continual learning.
 
-These practices give "judge more" a concrete shape. They keep attention on what leadership now optimizes for: quality of search, strength of pruning, and clarity of decision.
+These practices give "judge more" a concrete shape. They keep attention on what leadership now optimizes for: quality of search, strength of pruning, clarity of decision, and evidence that tells you when to stop.
 
 ### A Portfolio Lens on Search
 
