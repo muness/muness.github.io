@@ -1,6 +1,7 @@
 ---
 comments: true
 date: 2025-12-10 19:24:00 -0400
+last_modified_at: 2026-06-24 21:03:04 -0400
 author: muness
 title: "Beyond the Nearest Peak"
 toc: true
@@ -192,5 +193,33 @@ The economic shift is simple: the cost of **generation collapses**, the cost of 
 - New rationality: productivity is **bad paths rejected** because judgment is scarce.
 
 David Deutsch’s lens applies: progress is the rate at which we correct errors. Faster generation only helps if we raise our rejection and correction rate to match.
+
+</details>
+
+<details class="appendix" markdown="1">
+<summary><strong>Appendix D: Curve Selection vs. Curve Climbing</strong></summary>
+
+The body of the essay uses learning curves and landscapes together, but they answer different questions. The landscape asks where a better path might be. The curve asks what repeated correction can compound once you commit to a path.
+
+Use the distinction as a diagnostic.
+
+**Keep climbing when:**
+
+- Repeated effort is making the system easier to operate, explain, change, or sell.
+- The same class of failure is becoming rarer or cheaper to fix.
+- New improvements reinforce earlier improvements instead of fighting them.
+- The team can name the next bottleneck from production, customer contact, or repeated use.
+
+**Look up again when:**
+
+- Each gain requires more coordination for less return.
+- Workarounds are becoming the architecture.
+- Reviews keep catching the same class of problem.
+- Customers are asking for something the current system resists.
+- A new branch can now be inspected cheaply enough to compare honestly.
+
+LLMs are useful in the second list. They help sketch alternatives, expose assumptions, and test whether another curve has enough headroom to deserve depth. They do not do the climbing. Production data, customer contact, failure analysis, and repeated correction still decide whether a curve compounds.
+
+The mistake is treating either motion as virtue by itself. Climbing without search becomes lock-in. Search without climbing becomes churn.
 
 </details>
