@@ -1,12 +1,12 @@
 # Guardrails: Executable Expectations Series
 
-## No generic example
+## Do not overload the flagship close
 
-The concrete article must use the Recon Agent harness with enough domain surface for a new reader: account, position, transaction history, reconciliation failure, recommended corrective action, SME correction, schema'd input/output, deterministic check, regression suite, named case. Generic `data product`, `operational system`, or `domain workflow` placeholders are only acceptable as confidentiality wrappers around the actual mechanism.
+The flagship should close on the principle that memory becomes useful when it changes the next action. Do not cram the full Recon Agent / executable-expectations mechanism into the final movement. If change episodes, typed lineage, prospective memory, executable expectations, evaluators, overrides, or regression cases are named in the flagship, mark them as future machinery rather than pretending they have been fully explained.
 
 ## No client naming
 
-The client should not be named. The mechanism can be concrete: account, position, transaction history, reconciliation failure, recommended corrective action, SME correction, schema'd input/output, regression suite, named case.
+The client should not be named. If a future constructive essay uses the Recon Agent harness, the mechanism can be concrete: account, position, transaction history, reconciliation failure, recommended corrective action, SME correction, schema'd input/output, regression suite, named case.
 
 ## No demotion of Potter
 
@@ -16,7 +16,7 @@ If that argument crowds the flagship, preserve it as source scaffolding or a bri
 
 ## No concept stubs
 
-Do not merely introduce McLuhan, Mir, medium, reversal, acceleration, change episode, prospective memory, or executable expectation as labels. Each concept needs enough mechanism that a reader can explain what work it does in the argument without already sharing the frame.
+Do not merely introduce McLuhan, Mir, medium, reversal, or acceleration as labels. Each concept used in the flagship needs enough mechanism that a reader can explain what work it does in the argument without already sharing the frame. If a later constructive concept is only a teaser, explicitly route it to future treatment instead of compressing it into a fake explanation.
 
 ## No one-essay overload
 
@@ -45,7 +45,7 @@ When discussing company knowledge corpora or AI alignment tooling, preserve the 
 
 ## No SME-to-production fantasy
 
-The Recon Agent story must preserve governance and explain the handoff: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion. Do not mention the harness as if readers already know it.
+If the Recon Agent story is used in a future constructive piece, preserve governance and explain the handoff: SME correction becomes evidence/specification; accepted change requires trace, scope, review, deterministic checks, regression evidence, and promotion. Do not mention the harness as if readers already know it.
 
 ## No stock voice transitions
 

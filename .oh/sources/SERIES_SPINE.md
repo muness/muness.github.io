@@ -6,14 +6,14 @@
 
 ## Aim
 
-Readers should understand apparent strategy dysfunction as media reversal: strategy operates through communicative forms; under acceleration those forms can reverse so representation outranks action; digital media weakens sequence; LLMs collapse strategy talk into system mutation; harvested lineage becomes the counter-reversal.
+Readers should understand apparent strategy dysfunction as media reversal: strategy operates through communicative forms; under acceleration those forms can reverse so representation outranks action; digital media weakens sequence; LLMs collapse strategy talk into system mutation; and the counter-reversal begins when memory changes the next action rather than remaining inside the stream.
 
 ## Source inventory
 
 - `~/Downloads/reversal.txt` is the main theory source. It must survive inside the flagship essay in sequenced form, not as a compressed theory dump or a set of standalone fragments.
 - `~/Downloads/strategy-report.md` contributes the strategy reversal stack and the mechanism table: decoupling, organized hypocrisy, auditability, transparency paradox, reform as routine, and post-analytics. The evidence-trigger case table is supporting context, not the main chart to carry.
 - `~/Downloads/strategy-report.md` also contributes the relatable failure cases: Volkswagen optimized emissions-test performance rather than emissions reality; Wells Fargo optimized cross-sell counts rather than customer value; Boeing optimized schedule and program continuity while formal safety review lost real veto power.
-- `.oh/domain-harness-blog-linkedin-salvage.md`, `.oh/linkedin-domain-harness-variability-salvage.md`, and `.oh/domain-agent-ecosystem.md` contribute the domain-harness / executable-expectation mechanism: expert correction becomes scenario, reviewable change, regression evidence, and future behavior.
+- `.oh/domain-harness-blog-linkedin-salvage.md`, `.oh/linkedin-domain-harness-variability-salvage.md`, and `.oh/domain-agent-ecosystem.md` contribute the future constructive mechanism: expert correction becomes scenario, reviewable change, regression evidence, and future behavior. In the flagship, this mechanism should be teased only after the diagnosis lands.
 - `_posts/2026-06-17-when-the-medium-of-strategy-reverses.md` is the current flagship essay draft. Treat it as the canonical essay candidate, not as a fragment to be atomized.
 - `_posts/2026-06-13-agents-dont-learn-the-domain-the-system-does.md`, `_posts/2026-06-13-there-is-no-agent-workflow-runtime.md`, and `_posts/2026-06-13-agent-work-that-changes-behavior.md` are supporting architecture essays. They should be referenced when the constructive mechanism needs the harness/runtime boundary.
 
@@ -43,10 +43,7 @@ A section that only names a topic is not an atom. A section that carries the ori
 | 4. The organization became present tense | Shows how continuous digital communication weakens sequence even while preserving more text than ever. | Reversal of representation into ceremony; Mir / digital orality frame. | Preserved artifacts without lineage can still leave the organization unable to remember. | Do not make this another complaint about Slack or meetings. The claim is about lineage, authority, epistemic type, and state change. |
 | 5. LLMs complete the reversal | Shows why conversational mutation changes the operating condition. | Present-tense organization; prior friction of specs, tickets, commits, reviews, releases. | Action becomes cheap enough that mutation can outrun continuity of intent. | Do not introduce executable expectations before this point. The constructive answer must be forced by AI-accelerated amnesia. |
 | 6. Naive remedies fail | Eliminates documentation, decision logs, AI summaries, governance, culture change, and clearer priorities as sufficient remedies. | LLM-completed reversal; strategy-report mechanisms. | More communication inside the same medium is absorbed as more representation. | Do not skip this movement. Without it, archaeology sounds like knowledge management. |
-| 7. Archaeology harvests lineage | Reframes memory around change episodes rather than repositories. | Failure of naive remedies. | The useful unit is the change episode: trigger, prior state, interpretation, direction, evidence, alternatives, authority, execution, artifact delta, expected consequence, observed consequence, lineage. | Do not ask people to write a second story after the fact. Harvest traces first; validate targeted claims. |
-| 8. Archaeology becomes prospective memory | Shows that the record matters when new action crosses old commitments. | Change episodes with epistemic types: observed, asserted, inferred, contested, unknown. | Memory becomes impact-sensitive recollection, not search. | Do not let this become a museum. The record must affect context selection for future change. |
-| 9. Precedent becomes executable expectation | Converts validated episodes into replayable expectations and state-transition consequences. | Prospective memory; reviewed cases; scoped precedent. | A known failure can block promotion, narrow authority, route to an expert, require a named override, or trigger outcome review. | Do not introduce binding expectations as a standalone product feature. They are earned by the lineage. |
-| 10. The counter-reversal must anticipate its own reversal | Prevents the solution from becoming the final audit society. | Binding expectations; organization theory warning about auditability and bureaucracy. | Capture-everything becomes noise; bind-everything becomes paralysis; unified history becomes mythology; total observability becomes surveillance. | Always include scope, owner, confidence, expiration/reconsideration triggers, challenge path, and override path. |
+| 7. Memory changes the next action | Closes the flagship with the counter-reversal principle without unpacking the entire implementation. | Failure of naive remedies; Mir stream / Viral Inquisitor warning. | Memory leaves narration and becomes state transition: freeze, route, narrow, block, require justification, preserve override, or replay prior learning. | Do not compress the full archaeology mechanism into the flagship close. Name future machinery only as future machinery. |
 
 ## Argument graph
 
@@ -60,10 +57,7 @@ A section that only names a topic is not an atom. A section that carries the ori
 | LLMs make organizational change conversational. | Digital present tense plus cheap code/prompt/config mutation. | The system can change before intention stabilizes. | Prompt/routing/config/code/evaluator changes from vague instructions. | Makes harvested lineage a safety mechanism, not just documentation hygiene. |
 | Shared-brain corpora can become shared mouths. | Digital present tense plus AI retrieval/generation. | Canonical strategy becomes an infinitely flexible justification engine when contradictions are not state-constrained. | Approved strategic language generated into local contradictory action. | Explains why more common vocabulary can worsen perceived alignment. |
 | Standard remedies remain inside the broken medium. | Documentation and governance are content-level interventions. | They become compliance artifacts, mythology, or new representational layers. | Decision logs, AI meeting summaries, culture programs, one-priority slogans. | Clears the ground for archaeology. |
-| The change episode is the missing unit. | Existing provenance/event-sourcing/OpenLineage primitives cover pieces, not organizational memory. | A snapshot becomes a projection of accumulated change. | Trigger → prior state → interpretation → direction → evidence → authority → execution → artifact delta → outcome → lineage. | Gives executable expectations legitimate source material. |
-| Prospective memory selects context when it matters. | Episodes preserve dependencies and contested assumptions. | Retrieval becomes impact-sensitive recollection. | Similar change attempted and reverted; assumption contested; override outcome never measured. | Moves memory from storage to action. |
-| Validated episodes can become binding expectations. | Scoped precedent plus review. | Prior learning changes promotion, authority, routing, and override requirements. | Reconciliation failure becomes scenario/regression/evaluator; known duplicate-adjustment failure blocks normal promotion. | Delivers the constructive answer. |
-| The system must anticipate its own reversal. | Any medium pushed too far reverses. | Archaeology can become audit noise, mythology, surveillance, or dead doctrine. | Capture everything, explain everything, bind every lesson. | Keeps the answer constitutional rather than totalizing. |
+| Memory changes the next action. | Naive remedies stay inside the broken medium. | Organizational memory becomes state transition, not retrieval. | Jidoka; domain-runtime essays; stream/Viral Inquisitor warning. | Gives the flagship a constructive ending while preserving the detailed mechanism for future treatment. |
 
 ## Recurring conceptual pairs
 
@@ -84,20 +78,9 @@ Use these deliberately across the flagship essay. They are conceptual vocabulary
 - shared brain versus shared mouth
 - common vocabulary versus collective cognition
 
-## Recurring concrete example
+## Future constructive example
 
-Use one coherent chronology. Do not let the essay invent new case vocabulary section by section.
-
-1. A data team produces evidence that a preferred direction is not working.
-2. Decision owners receive the evidence, praise the rigor, and keep the direction intact.
-3. The analysis becomes evidence that the decision was informed rather than evidence that changed the decision.
-4. In an LLM-mediated organization, the preferred direction can immediately mutate prompts, workflow branches, configuration defaults, metric definitions, recommendation paths, or code.
-5. The original disagreement, rationale for override, implementation change, and later outcome fragment across chats, summaries, dashboards, commits, and memory.
-6. Archaeology preserves the divergence between recommendation, decision, implementation, and outcome.
-7. A validated lesson can later become an executable expectation.
-8. An override remains possible, but it becomes named, reasoned, and reviewable instead of silently masquerading as compliance.
-
-The reconciliation / Recon Agent harness is the concrete operational demonstration of steps 6–8: a position reconciliation failure leads to a wrong recommendation; the SME captures expected behavior with the real records; the correction becomes a scenario, reviewable change, regression case, and eventually an expectation that can affect future workflow promotion. Use it when the essay needs to show the mechanism running, but do not let it replace the larger throughline about evidence being neutralized.
+The reconciliation / Recon Agent harness is the concrete operational demonstration for a future constructive treatment: a position reconciliation failure leads to a wrong recommendation; the SME captures expected behavior with the real records; the correction becomes a scenario, reviewable change, regression case, and eventually an expectation that can affect future workflow promotion. The flagship should not unpack this whole chain unless it is rewritten as the central public example.
 
 ## Protected hinge sentences
 
@@ -111,12 +94,9 @@ These may be edited for fit, but future rewrites must preserve the claim and pla
 - AI is making organizations capable of changing themselves faster than they can know what they are changing.
 - The rate of mutation is exceeding the rate at which the organization can retain continuity of intent.
 - Not: what did the organization say? Instead: what changed, why, who knew, what evidence mattered, what was contested, what shipped, what happened afterward, and which future action should now be harder, easier, blocked, routed, replayed, or explained?
-- The useful unit is the change episode.
 - The purpose of memory is not to preserve what the organization said. It is to make accumulated experience capable of changing what happens next.
-- The organization can repeat the mistake, but it can no longer repeat it in the same silent way.
 - The shared brain risks becoming a shared mouth: common vocabulary without state-changing constraint.
-- The answer to ephemeral incoherence is not eternal rigidity. It is temporally explicit constraint.
-- That is not knowledge management. That is organizational memory becoming executable.
+- You cannot rely on the stream to remember its own reversal.
 
 ## Flagship essay
 
@@ -131,21 +111,19 @@ The flagship essay must move through all six public-facing movements without res
 3. Representation became more consequential than represented activity.
 4. Digital acceleration made the organization reactive and present tense.
 5. LLMs made consequential change conversational and nearly sediment-free.
-6. Harvested lineage becomes prospective memory and, selectively, executable precedent.
+6. Memory becomes useful when it changes the next action.
 
 The counter-reversal must arrive late. Readers should feel that documentation, knowledge bases, decision logs, and governance have already failed before archaeology appears.
 
 ## Publication architecture
 
-There is one publication target for this material:
+There is one publication target for the current flagship:
 
 - `_posts/2026-06-17-when-the-medium-of-strategy-reverses.md`
 
-The historical, diagnostic, and constructive treatments are movements inside that essay, not separate posts. They may be used as internal drafting lenses only. They are not an active satellite plan.
+The historical and diagnostic treatments are movements inside that essay, not separate posts. The detailed constructive machinery may become a future essay, but there is no active companion draft in `_drafts/` now. Source notes belong under `.oh/sources/` if they must be preserved.
 
-Do not keep companion drafts in `_drafts/`. Source notes belong under `.oh/sources/` if they must be preserved; publication drafts must not recreate the atomized architecture.
-
-If a future split is proposed, it starts from a presumption against publication. The split is allowed only if the extracted piece completes a full reversal atom and the flagship keeps the complete causal arc without duplicated setup, orphaned payoff, or softened hinge sentences.
+If a future split is proposed, it starts from a cut-loss report. The split is allowed only if the extracted piece completes a full reversal atom and the flagship keeps the complete causal arc without duplicated setup, orphaned payoff, or softened hinge sentences.
 
 ## Cut-loss report for any future split
 
