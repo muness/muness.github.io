@@ -10,15 +10,14 @@ It is intentionally repo-native. Blog essays are not just posts; they are eviden
 - `outcomes/` — observable signals that an aim is working.
 - `metis/` — reusable lessons discovered while drafting, reviewing, or publishing.
 - `guardrails/` — constraints that should prevent repeated writing failures.
-- `sources/` — source excerpts and charts that should travel into future drafts.
+- `sources/` — source excerpts, quote ledgers, argument spines, and charts that should travel into future drafts.
 - `sessions/` — dated working notes and problem framings.
 
 ## Current focus
 
-The executable-expectations body of work sits next to the 2026-06-13 agent-domain-runtime essays. The likely shape is more than one additional essay:
+The change-lineage / executable-memory body of work sits next to the 2026-06-13 agent-domain-runtime essays. The current architecture is one canonical essay, not an atomized series and not a satellite set:
 
-1. an Organizational Communication lead essay;
-2. a Work-to-Strategy Feedback / Dissent Mechanisms essay or load-bearing section;
-3. a McLuhan/Mir organizational-communication reversal essay or sequence;
-4. a Potter / variable-standard process reliability essay if the process theory needs its own runway;
-5. a concrete Recon Agent harness article showing executable expectations end to end.
+1. Canonical essay: `Companies Can Change Faster Than They Can Remember`
+
+Historical origin, present-tense diagnosis, and executable-memory construction are movements inside that essay. Future edits should not recreate companion drafts in `_drafts/` unless a new split survives the cut-loss report in `.oh/sources/SERIES_SPINE.md`.
+The spine lives in `.oh/sources/SERIES_SPINE.md`. Future edits should preserve the complete reversal movement: original function → enhancement → saturation → reversal → new necessity.

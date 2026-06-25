@@ -1,0 +1,127 @@
+---
+title: "Companies Can Change Faster Than They Can Remember"
+date: 2026-06-17 20:15:00 -0400
+author: muness
+toc: true
+comments: true
+excerpt: "LLMs make it cheap for any company to mutate prompts, workflows, code, metrics, and policy before intent has settled. The counter-move is harvested lineage that can become prospective memory and, where warranted, executable precedent."
+---
+
+A company can run on proximity for longer than anyone should probably admit. The founder remembers the customer promise. The analyst knows which metric is lying. The engineer remembers why the workaround exists. The operator knows that the dashboard looks green because the dangerous cases moved into a side channel. A manager can still ask what happened and make a call before the memory decays into a story.
+
+Complexity breaks that arrangement, and complexity arrives earlier than people expect. Once work stretches across customers, tools, legal obligations, revenue commitments, remote conversations, specialized roles, and layers of authority, memory has to leave the person who remembers. A local event has to become visible somewhere else. A commitment made last quarter has to constrain a decision made today. A company becomes durable by making communication durable. It starts forgetting when the communication surface moves faster than the intent it is supposed to preserve.
+
+LLMs complete the reversal by making organizational change conversational while erasing its lineage. The way through is not a larger archive of what everyone said. It is an archaeological record of consequential change that can become prospective memory and, where warranted, executable precedent. That whole sequence has to stay together. Binding expectations without archaeology sounds like workflow governance. Archaeology without AI-accelerated amnesia sounds like knowledge management. AI-accelerated amnesia without the history of organizational communication sounds like another complaint about undocumented software. Performativity without reversal sounds like leaders being stupid or dishonest. The dependencies are the argument.
+
+## Communication lets work survive the person who remembers
+
+I do not mean communications in the press-release sense. I mean ledgers, correspondence, memos, procedures, budgets, schedules, reports, org charts, authorization records, contracts, engineering specifications, tickets, reviews, approvals, forecasts, exception logs, and operating routines. These are not decoration around the work. For any company with handoffs, they are how work becomes something that can be remembered, coordinated, inspected, funded, sequenced, delegated, and judged.
+
+A ledger lets money, inventory, obligation, and settlement survive the person who saw the transaction happen. A schedule lets dispersed people and equipment meet the same future. A procedure lets one location repeat what another location learned. A budget authorizes some actions and prohibits others before the moment of desire arrives. An org chart says which decisions can be made where and which conflicts need a different path. An authorization record distinguishes a permitted action from an improvised one after everyone has an incentive to retell the story.
+
+James Beniger's *The Control Revolution* is useful here because it frames information as a response to a control problem, not a layer of paperwork added after the organization already worked. Harvard University Press summarizes the industrial version of that pressure this way:
+
+> In the United States, applications of steam power in the early 1800s brought a dramatic rise in the speed, volume, and complexity of industrial processes, making them difficult to control.
+
+That sentence names the extreme version, but the mechanism is ordinary. Speed, volume, and complexity create a control gap. The response is a machinery of information: collection, storage, processing, transmission, standardized forms, bureaucratic routines, schedules, reports, and later computational systems. Communication lets action survive distance and time.
+
+At its best, organizational communication did three jobs at once. It represented reality: the ledger said what was owed, the inspection record said what was found, the incident report said what failed. It coordinated action: the schedule told people when to move, the procedure named the next step, the budget authorized and constrained. It preserved memory for later judgment: the record let the organization ask whether the decision matched the evidence available at the time, whether the promised action happened, and whether the same failure had appeared before.
+
+Those three jobs belong together. Representation without coordination becomes analysis theater. Coordination without representation becomes command without visibility. Memory without later judgment becomes storage. The power came from the coupling: represent the situation, coordinate action against it, and leave a record that can discipline the next claim.
+
+## The representational apparatus learned to reproduce itself
+
+Every communicative form has an opinion about what counts. A ledger cares about balances and categories. A schedule cares about sequence and dependency. A procedure cares about repeatability. A budget cares about allocation and limits. A report cares about what can be summarized for an audience. An org chart cares about formal authority more than informal expertise. An authorization record cares about permission, which is not the same as wisdom.
+
+Those reductions are often useful. A form that tried to carry everything would carry nothing well. The cost is that each layer filters. Local knowledge gets compressed. Dissent becomes a comment field. Uncertainty becomes a confidence label. A trade-off becomes a green status if the reporting system cannot represent the losing side. A company gains capacity by accepting these reductions, then trying to correct for them with other forms.
+
+Higher-order communication accumulates through that cycle. Local work is inconsistent, so the organization creates procedures. Procedures are applied unevenly, so it creates management review. Managers disagree, so it creates planning. Plans drift, so it creates reporting. Reports are unreliable, so it creates audit. Metrics get gamed, so it creates broader scorecards. Governance fragments the work, so it creates alignment processes. Alignment does not produce change, so it creates transformation offices. Transformation meets resistance, so it creates change management and communications programs.
+
+Each layer begins with a legitimate problem. The procedure helps repeated work become less dependent on a single person. The report helps leaders see patterns they would otherwise miss. The audit helps people trust records they did not produce. The planning process helps scarce resources move toward chosen priorities. Then each layer becomes part of the organization it was meant to control. It creates roles, artifacts, meetings, vocabulary, incentives, and claims to authority. It has to be staffed, measured, reported, governed, explained, and improved.
+
+A report generates a review. The review generates an action register. The action register generates a dashboard. The dashboard generates a governance concern. The governance concern generates a transformation program. The transformation program generates stakeholder communications. The stakeholder communications generate engagement telemetry. Nothing in that chain is automatically fake. Each step can be defended. Somewhere in the chain, though, the organization becomes extraordinarily busy responding to evidence that it is responding.
+
+## The reversal arrives when representation outranks action
+
+The reversal arrives when communication created to coordinate action becomes more consequential than the action it was supposed to coordinate. The representation of competent action begins to outrank competent action. The failure does not require conspiracy. It can emerge from ordinary incentives, incompatible demands, and the need to appear controlled in public while preserving flexibility in private.
+
+A risk can be acknowledged without changing the launch date. A metric can be criticized without changing the incentive plan. A customer failure can be summarized without changing the product. An employee concern can be received without changing authority. A strategy review can note a contradiction while keeping the portfolio intact. Evidence becomes received. It does not become causal.
+
+The public failures make the mechanism visible because the stakes are high and the records are unusually available. Volkswagen is the auditability version. In the 2016 DOJ consent decree, Volkswagen admitted that software in the 2.0 liter subject vehicles enabled the engine control modules to detect when vehicles were being driven on the road rather than undergoing federal test procedures, and that the software rendered certain emission-control systems inoperative outside those procedures. The reversal was performance-for-the-test replacing emissions reality. The system recognized the audit condition and optimized the ceremony the audit could see.
+
+Wells Fargo is the metric version. The CFPB said employees were "spurred by sales targets and compensation incentives" and "boosted sales figures by covertly opening accounts" without consumers' knowledge or consent. Cross-sell counts had become load-bearing communication: a number that said the bank was deepening customer relationships. The organization optimized the count while violating the customer reality the count was supposed to represent.
+
+Boeing is the governance version. The House Transportation Committee's 737 MAX report said flawed design criteria, faulty assumptions about pilot response times, and production pressures created missed opportunities to turn the program toward a safer course. It also described a culture of concealment around MCAS. The DOT Inspector General later found that FAA certification and delegation processes had weaknesses that hindered oversight. Formal safety communication existed. Certification existed. Reviews existed. But schedule, cost, competitive pressure, and delegated review channels weakened the system's capacity to let safety evidence exercise veto power.
+
+These cases are not morality plays about bad companies over there. They are strong versions of a common organizational pattern: the system gets better at staging compliance than at achieving the underlying objective. The dashboard is green because the red cases were excluded as out of scope. The roadmap is on track because the milestone definition moved. The customer health score improves while escalations move into private channels. The risk register is current while the actual decision path runs through a different room. Communication still exists. It has become easier to satisfy than reality.
+
+## The present-tense company
+
+Digital communication intensifies the reversal because it weakens sequence. A company now produces more written artifacts than any company in history: Slack messages, Teams threads, live documents, comments, meeting transcripts, decks, AI chats, dashboards, and rapidly edited plans. The text is searchable, timestamped, and often retained. In practice it behaves like speech in a permanent crowd.
+
+Andrey Mir's *The Digital Reversal* gives the media vocabulary for this. Digital media pushes communication away from reflection and toward reflex: faster exchange rewards immediate response, audience awareness, and continuous supersession. The organizational version is not a claim that employees become irrational online. The medium rewards immediacy and reaction, and those rewards change the operating condition.
+
+The organization operates in a continuous present. Its effective state is not necessarily what the strategy says. It is the current balance among the last leadership conversation, the latest escalation, the newest dashboard, the loudest constituency, the freshest customer anecdote, the most recent model-generated recommendation, and the action someone with power has already put in motion. Organizations invoke a "source of truth" most often when no source is authoritative enough to bind the present.
+
+The result is strange. Organizations have more artifacts than ever and less reconstructable history. They can retrieve more material and still fail to reconstruct what mattered. What did we believe when we made the decision? Which evidence changed the plan? Which assumption was active? Who overrode whom? What did the work show afterward? When did the current rationale replace the original one? Preserved artifacts without lineage can still leave the organization unable to remember.
+
+Too much was saved without lineage, epistemic type, authority, consequence, or state change. Observed facts, expert assertions, model inferences, leadership preferences, compliance language, and unresolved disagreement collapse into the same working surface. Later, an AI summary can make the collapse look tidy: "The team aligned on the path forward." That sentence may be the exact opposite of what happened.
+
+## LLMs complete the reversal by making change conversational
+
+A direction used to move through expensive transformations: idea, discussion, specification, implementation, review, release. Those stages were slow, political, lossy, and often frustrating. They also left sediment. There were tickets, design arguments, commits, code reviews, approvals, release notes, and rollback discussions. Some of that sediment was bureaucratic waste. Some of it was the only evidence the organization later had for why the system behaved as it did.
+
+Now someone can type, "Change the workflow so these cases are handled differently," and an agent can modify a system prompt, routing rule, configuration file, application code, evaluator, and deployment artifact. The instruction may be vague. The implementation may be distributed across many files. The rationale may exist only in one transient conversation. The change can ship before the organization has formed a stable conception of what changed. Then the next person or agent issues another instruction. The current artifact remains. The chain of judgment vanishes.
+
+AI is making organizations capable of changing themselves faster than they can know what they are changing. The rate of mutation can exceed the rate at which the organization preserves continuity of intent. LLMs reduce the cost of action. They also reduce the friction that once forced some reasoning to become explicit. The AI-native organization can become pure present tense: immediately mutable, richly instrumented, endlessly explainable after the fact, and unable to reconstruct why it became what it is.
+
+The data-team example makes this concrete. A team produces evidence that a strategic bet is not working. Decision owners receive the analysis, discuss it, praise the rigor, and keep the decision intact. The analysis then becomes evidence that the decision was informed. The contradiction is acknowledged, absorbed, and neutralized.
+
+In an LLM-mediated organization, the preferred direction can also mutate the system immediately. A prompt changes. A workflow branch changes. A metric definition changes. A recommendation path changes. A configuration default changes. The dissenting evidence, the decision to proceed anyway, the implementation change, and the outcome can all fragment across chat, code, summaries, dashboards, and memory. Later, the system can generate a clean explanation for why the current behavior is coherent. The explanation may even be locally plausible. The organization has lost the ability to distinguish history from retrospective mythology.
+
+## The obvious remedies stay inside the broken medium
+
+The standard remedies are mostly content-level interventions: better documentation, decision logs, AI meeting summaries, knowledge bases, six-page memos, clearer priorities, governance, culture programs, and rules about having one priority. Some help locally. None changes the medium.
+
+Better documentation usually arrives after the work, competes with the next urgent task, and decays. When mandatory, it becomes a compliance artifact. Decision logs often capture the declared rationale, not the causal path. AI summaries can turn conflict, ambiguity, power, and unresolved contradiction into a clean paragraph. Governance creates another representational layer; the organization can perform compliance with the new process while leaving the actual decision channel untouched. The remedy fails when it adds more communication to a system whose dominant pathology is the separation of communication from consequence.
+
+The counter-move has to preserve lineage during change, not ask people to narrate it afterward. It has to capture the difference between observed facts, asserted judgments, inferred explanations, disputed claims, accepted decisions, overrides, and measured outcomes. It has to remember selected changes when they matter to future action, while avoiding the final form of the audit society: an omniscient archive that makes genuine thought and experimentation impossible.
+
+The second reversal uses the same digital medium that destroys memory through instantaneous mutation to harvest consequential mutation as it occurs. The same LLM that can generate changes without sediment has to help reconstruct sediment. The same conversational medium that dissolves authority has to become input to a durable, inspectable history. The same expert correction that now disappears into a thread has to be capable of changing future behavior.
+
+## Archaeology is harvested lineage, not a bigger knowledge base
+
+A change episode is the useful unit. What triggered the change? What was the system doing before? What did participants believe the trigger meant? What behavior was supposed to change? What evidence supported that direction? What alternatives were considered or ignored? Who proposed, approved, objected, or overrode? Which humans, agents, models, workflows, and tools acted? Which prompts, policies, configurations, code paths, datasets, tests, and deployment units changed? What consequence was expected? What happened afterward? Which prior cases did the change depend on, refine, contradict, narrow, generalize, or supersede?
+
+That sounds like a lot until you compare it with the cost of rediscovery. The purpose is prospective memory: when a new change touches an old commitment, the system should surface the prior history that can change the current action. This behavior was introduced after these customer failures. It depends on this assumption. The assumption was contested but never resolved. A similar change was attempted and reverted. These regression cases and downstream workflows depend on the current behavior. The production outcome of the override was never measured.
+
+That kind of memory differs from search. It does not ask the next agent or maintainer to browse the archive. It selects context because the present action is about to cross a boundary that prior experience already marked. The question changes from "what did the organization say?" to "what changed, why, who knew, what evidence mattered, what was contested, what shipped, what happened afterward, and which future action should now be harder, easier, blocked, routed, replayed, or explained?"
+
+In the reconciliation example, the chain is concrete. A data pipeline detects a position reconciliation failure. An agent recommends an account-level action using transaction history and the current workflow. The recommendation is plausible and wrong because the transaction history already contains the correcting event. The SME can see the correction immediately: do not recommend a duplicate adjustment; route the case to the account-level prior-correction treatment; cite the correcting transaction as evidence.
+
+The tempting shortcut is to patch the prompt, edit a rule, or ask the model to do better next time. That shortcut repeats the amnesia. The correction should instead become a candidate change episode: preserved case, failing output, expected output, source records, recommendation trace, provenance, proposed scope, review state, and affected workflow bundle. The SME correction is evidence and candidate specification. It is not direct production mutation.
+
+A validated episode can become a precedent. A precedent can become an expectation. An expectation can become an evaluator. An evaluator can have a state-transition consequence. In this case, the executable expectation might say: under this account configuration, when these transaction records show that a correcting transaction resolves the position break before recommendation time, the system should not create a duplicate adjustment recommendation. Replay the original case against every proposed workflow version. If a workflow version reproduces the known failure, it cannot follow the normal promotion path without a named override. The organization can repeat the mistake, but it can no longer repeat it in the same silent way.
+
+## Memory becomes useful when it changes the next action
+
+Toyota's jidoka language helps because the abnormality does not merely become information. Toyota describes jidoka as "automation with a human touch" and says that when an abnormality occurs, equipment can stop automatically or an operator can stop the line by pulling the stop cord. The mechanism is the state transition. The defect signal changes what the process is allowed to do next.
+
+Organizational memory needs that same shape. A contradiction from the work should be able to freeze an affected assumption, route review to an owner, narrow scope, block promotion, require justification, or preserve an override. A domain correction should be able to become scenario, expectation, regression case, rule, configuration decision, data repair, or reviewed rejection. A prior lesson should be able to constrain future mutation without becoming dead doctrine.
+
+The purpose of memory is not to preserve what the organization said. It is to make accumulated experience capable of changing what happens next. The June 13 domain-runtime essays supply the runtime boundary for that claim. [Agents Don't Learn the Domain. The System Does.](/posts/agents-dont-learn-the-domain-the-system-does/) argues that local corrections become learning only when the system preserves them as reviewed artifacts. [There Is No Agent Workflow Runtime.](/posts/there-is-no-agent-workflow-runtime/) argues that the LLM needs deterministic steps, typed contracts, state transitions, approvals, traces, artifact storage, replay, and environment-aware configuration around it. [Agent Work That Changes Behavior.](/posts/agent-work-that-changes-behavior/) names the outcome: agent work has not produced an outcome until behavior changes.
+
+The second reversal uses those boundaries against organizational amnesia. It does not ask for more polished representation. It asks what changed, why, who knew, what evidence mattered, what was contested, what shipped, what happened afterward, and which future action should now be harder, easier, blocked, routed, replayed, or explained.
+
+The test is operational. When the next similar reconciliation failure arrives, does the system recognize the prior correcting transaction, avoid the duplicate adjustment recommendation, route the case to the right treatment, and show the evidence? When the next agent tries to touch the same workflow, does it retrieve the prior episode because the change crosses a boundary that prior learning marked? When an owner overrides the expectation, is the override named, reasoned, and reviewable later? If yes, the organization has memory. If no, it has narration.
+
+## Sources used
+
+- James R. Beniger, [*The Control Revolution*](https://www.hup.harvard.edu/books/9780674169869), Harvard University Press summary.
+- Andrey Mir, [*The Digital Reversal. Thread-Saga of Media Evolution*](https://www.amazon.com/dp/B0FHK51WFB), used through locally checked Readwise highlights; public essay paraphrases the media mechanism rather than quoting locally verified text.
+- Toyota Motor Corporation, [Toyota Production System](https://global.toyota/en/company/vision-and-philosophy/production-system/).
+- United States v. Volkswagen consent decree, [2.0 Liter partial consent decree](https://www.justice.gov/sites/default/files/enrd/pages/attachments/2016/06/28/vw_partial_2l_cd_and_appendices_docketed.pdf).
+- Consumer Financial Protection Bureau, [Wells Fargo Bank, N.A. enforcement action](https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-2016/).
+- Office of the Comptroller of the Currency, [News Release 2016-106](https://www.occ.gov/news-issuances/news-releases/2016/nr-occ-2016-106.html).
+- U.S. House Committee on Transportation and Infrastructure, [Final Committee Report: The Design, Development & Certification of the Boeing 737 MAX](https://democrats-transportation.house.gov/imo/media/doc/2020.09.15%20FINAL%20737%20MAX%20Report%20for%20Public%20Release.pdf).
+- U.S. DOT Office of Inspector General, [Weaknesses in FAA's Certification and Delegation Processes Hindered Its Oversight of the 737 MAX 8](https://www.oig.dot.gov/sites/default/files/FAA%20Certification%20of%20737%20MAX%20Boeing%20II%20Final%20Report%5E2-23-2021.pdf).

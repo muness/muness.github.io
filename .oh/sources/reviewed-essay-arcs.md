@@ -1,153 +1,94 @@
-# Reviewed Essay Arcs: Executable Expectations Series
+# Reviewed Essay Arcs: Change Lineage and Executable Memory
 
-Source: sub-agent arc proposal reviewed and corrected by Muness/user constraints on 2026-06-19.
+Source: corrected architecture after Muness/user dissent on 2026-06-20. The previous five-topic decomposition was rejected because it split topic boundaries instead of argument boundaries.
 
-## Pre-flight
+## Controlling sentence
 
-- Aim: produce a coherent essay set next to the June 13 agent-domain-runtime pieces so readers can move from organizational communication, to reversal, to process reliability, to the concrete Recon Agent harness.
-- Scope: draft the five essays / major pieces below; use `_drafts/` for future conceptual pieces and rewrite the June 17 post as the concrete Recon Agent piece.
-- Do not watch CI for this blog work.
-- Success: each essay has one reader job, preserves its source obligations, cross-references the series without repeating it, and satisfies the session outcome goals.
+A company becomes durable by making communication durable. It starts forgetting when the communication surface moves faster than the intent it is supposed to preserve. LLMs complete the reversal by making organizational change conversational while erasing its lineage. The way through is not more documentation, but harvested change lineage that can become prospective memory and, where warranted, executable precedent.
 
-## Reviewed sequence
+## Canonical essay
 
-1. Organizational Communication
-2. Work-to-Strategy Feedback / Dissent Mechanisms
-3. Organizational Communication Reversal
-4. Variable and Standardized Process Reliability
-5. Recon Agent Harness / Executable Expectations
+Title: `Companies Can Change Faster Than They Can Remember`
 
-## 1. Organizational Communication
+Job: preserve the complete causal movement in one public flagship essay.
 
-Working title: `Large Organizations Need a Memory Outside Their Heads`
+Required sequence:
 
-Job: Make communication visible as the medium that lets large organizations remember, coordinate, authorize, and control work before asking readers to understand how that medium can reverse.
+1. Durable communication made coordination beyond proximity possible.
+2. Higher-order communication accumulated as companies tried to control failures in earlier layers.
+3. At saturation, representation became easier to satisfy than the underlying work.
+4. Continuous digital communication weakened sequence and produced a present-tense organization.
+5. LLMs completed the reversal by making system mutation conversational and low-sediment.
+6. Documentation, decision logs, governance, AI summaries, and knowledge bases fail when they remain inside the same representational medium.
+7. The second reversal harvests consequential mutation as it occurs.
+8. Selected change episodes become precedent, expectations, evaluators, and state-transition constraints.
 
-Thesis: Scaled organizations are assembled out of durable communicative forms: ledgers, memos, procedures, budgets, schedules, reports, org charts, authorization records, tickets, specs, and reviews. Those forms originally coupled representation, coordination, and memory.
+## Internal movements inside the canonical essay
 
-Opening: small organizations coordinate through proximity and memory; railroads and other dispersed operations need an external nervous system.
+These are not separate posts. They are drafting lenses for the single flagship essay.
 
-Arc:
+### Movement 1: organizational memory becomes representation
 
-- Small organizations can run on proximity; large ones cannot.
-- Communication becomes an external nervous system: ledgers, correspondence, procedures, budgets, schedules, reports, memoranda, org charts, records of authorization.
-- Use Beniger/Yates as translated mechanism, not literature dump.
-- Name literate powers: sequence, separation of claim from speaker, temporal distance, memory, binding commitment.
-- Show the original coupling: represent reality, coordinate action, preserve a record for later judgment.
-- End with higher-order communication layers as the seed of reversal.
-
-Carry forward: communication was originally a control-and-memory medium; reversal is the separation of representation from consequence.
-
-Must not: become generic management theory, start with AI, or claim documents are morally superior to conversation.
-
-## 2. Work-to-Strategy Feedback / Dissent Mechanisms
-
-Working title: `Dissent Has to Change State`
-
-Job: Reframe dissent as a work-to-strategy feedback mechanism that lets evidence from the work alter assumptions, priorities, funding, scope, continuation, or authority.
-
-Thesis: Useful dissent flows upward from work into strategy through explicit mechanisms. It is not executive commentary, cultural permission, or a leader's willingness to be contrarian.
-
-Opening: leadership or management dissenting downward at people closest to the work produces vague critique and inert friction. The useful direction is work dissenting back into strategy.
+Job: establish the origin story without severing it from reversal.
 
 Arc:
 
-- Define faux dissent: downward commentary, founder-style personality privilege, red-team theater, critique without state change.
-- Define useful dissent as a mechanism: signal from work challenges a premise and triggers review, scope change, stop-the-line, funding change, or retirement.
-- Translate Dissent Mode into interface: contradiction budgets, dissent memos, red-team rotations, shadow metrics, assumption andon, stop-the-line triggers, contradiction queue, owner and revisit dates.
-- Explain why facts do not move systems alone: evidence needs a path that changes coordination, authority, and incentives.
-- Show loop: aim -> mechanism -> feedback -> contradiction -> owner/review -> decision state change -> logged outcome/revisit.
-- Hand off to reversal: without binding upward feedback, communication layers absorb evidence as acknowledgment rituals.
+- companies can rely partly on proximity, reputation, and direct attention until work outgrows the people who remember;
+- complexity forces memory and authority into durable forms;
+- Beniger/control problem frames information as a response to speed, volume, and complexity;
+- ledgers, schedules, procedures, budgets, reports, and approvals couple representation, coordination, and memory;
+- every form filters;
+- higher-order communication accumulates;
+- the movement reaches reversal when the forms that enabled coordination beyond proximity begin outranking work.
 
-Carry forward: evidence without state-changing consequence becomes ritual acknowledgment.
+### Movement 2: representation becomes present-tense mutation
 
-Must not: be leadership/culture advice; must specify triggers, owners, review cadence, closure, and state transitions.
-
-## 3. Organizational Communication Reversal
-
-Working title: `When the Representation Outranks the Work`
-
-Job: Explain McLuhan/Mir reversal: communication created to make action coherent becomes abundant enough that representation, auditability, narration, and reform substitute for contact with operational reality.
-
-Thesis: Organizational communication reverses when the representation of competent action becomes more consequential than competent action itself. LLMs intensify the reversal by collapsing communication and implementation, increasing mutation while reducing sediment.
-
-Opening: a report generates a review; the review generates an action register; the action register generates a dashboard; the dashboard generates a governance concern; the governance concern generates a transformation program; the transformation program generates stakeholder communications; the stakeholder communications generate engagement telemetry.
+Job: diagnose the reversal in current organizational life.
 
 Arc:
 
-- Reintroduce communication baseline from essay 1.
-- Explain reversal plainly before naming McLuhan/Mir.
-- Include the `strategy-report.md` reversal-stack chart.
-- Include all mechanism table rows: decoupling, organized hypocrisy, audit explosion/auditability, transparency paradox, reform as routine, post-analytics.
-- Spell out failed cases with references/evidence: Volkswagen optimized emissions test over emissions reality; Wells Fargo optimized cross-sell counts over customer value; Boeing optimized schedule/program continuity while safety veto power weakened.
-- Explain corporate drivel as load-bearing communication.
-- Name organizational digital orality: written text behaving like speech in a permanent crowd.
-- Show LLM completion of reversal: conversational instruction can mutate prompts, routing, config, code, evals, and deployment artifacts before stable intent exists.
-- Explain why common remedies fail: better docs, decision logs, AI summaries, stronger governance, one-priority slogans, culture programs.
-- Close with the need for a second reversal, not with the solution.
+- representational controls feed on one another;
+- failed cases show auditability, metrics, and governance outranking their objectives;
+- digital media turns durable communication into present-tense behavior;
+- organizations have more artifacts and less reconstructable lineage;
+- AI summaries can generate false continuity;
+- dissent without state transition is absorbed;
+- LLMs turn present tense into mutation.
 
-Carry forward: the counter-medium must preserve consequential change, separate fact from inference, and make selected lessons executable without becoming audit society at machine speed.
+### Movement 3: harvested lineage becomes executable memory
 
-Must not: reduce reversal to meetings/jargon; substitute Toyota for the reversal stack; or name-drop failed cases without evidence and mechanism.
-
-## 4. Variable and Standardized Process Reliability
-
-Working title: `Variation Needs a Door`
-
-Job: Use Potter's variable/standardized process distinction to explain how messy domain judgment becomes reliable system learning without turning every local correction into uncontrolled production variation.
-
-Thesis: Reliability does not come from eliminating variation everywhere. It comes from deciding where variation may enter, what standardized process contains it, and how accepted variation becomes future behavior.
-
-Opening: an SME can be right about the case in front of them while the correction may belong in code, configuration, prompt, playbook, data repair, procedure, or a one-off exception.
+Job: construct the counter-medium.
 
 Arc:
 
-- Product of domain/software work is future behavior, not tickets or requirements.
-- Potter: process as transformations; value-added defined by customer; many steps only move/wait/inspect/translate/buffer/coordinate/recover.
-- Why old handoff loop existed: scarce code and production safety; cost was translation loss.
-- Some variation is noise; some variation is the domain.
-- Variation needs a door: scenario capture with provenance, expected behavior, actual behavior, trace, candidate scope, review, regression, promotion decision, challenge/override path.
-- Standardized parts: submitter, provenance, entitlement/data boundaries, trace fields, tests, reviewer authority, deploy path, replay.
-- Variable parts: edge condition, customer configuration, account/position exception, playbook rule, prompt overgeneralization, wrong deterministic pre-check, recurring case becoming code.
-- Change episode -> precedent -> expectation -> evaluator -> state-transition consequence.
-- Not everything should bind; expectations need scope, provenance, owner, review conditions, expiration/reconsideration, challenge mechanism, traceable override.
-- Prepare Recon Agent article.
+- memory is useful when it changes the next action;
+- change episode is the core unit;
+- epistemic type prevents mythology;
+- scope prevents local corrections from becoming accidental global policy;
+- episode -> precedent -> expectation -> evaluator -> state-transition consequence;
+- Toyota/jidoka supplies the state-transition analogy;
+- reconciliation failure demonstrates SME correction entering through a governed door;
+- overrides remain possible but become named and reviewable.
 
-Carry forward: the Recon harness is not direct SME-to-production mutation; it is a controlled door for domain variation.
+## Protected dependency edges
 
-Must not: flatten Potter into a quote, duplicate June 13 posts, or make archaeology a capture-everything archive.
+- Communication-as-origin must precede communication-as-ceremony.
+- Failed cases must remain mechanisms, not scandal references.
+- Present-tense digital communication must precede LLM mutation.
+- Failure of naive remedies must precede archaeology.
+- Archaeology must precede executable expectations.
+- Executable expectations must retain challenge and override, or they reverse into doctrine.
 
-## 5. Recon Agent Harness / Executable Expectations
+## Research carryover
 
-Working title: `A Reconciliation Failure Should Become a Test`
+Use `.oh/sources/research-quotes-ledger.md` for exact quotes and verification status. Public references currently rely on:
 
-Job: Rewrite the June 17 article into a concrete unnamed-client walkthrough showing how a reconciliation failure becomes a schema'd expectation, agent-assisted fix, deterministic verification, regression case, and durable behavior.
+- Beniger / Harvard University Press;
+- Mir / local Readwise highlights plus Amazon title page;
+- Toyota TPS official page;
+- DOJ Volkswagen consent decree;
+- CFPB and OCC Wells Fargo pages;
+- House 737 MAX report;
+- DOT OIG 737 MAX report.
 
-Thesis: Executable expectations become credible when the loop is visible: a position reconciliation failure is detected; the agent recommends an account-level action from transaction history; an SME corrects it; the system converts that correction into schema'd input/output and a real example; an agent fixes the right layer; deterministic checks and regression decide whether the case becomes named coverage.
-
-Opening: a data pipeline detects a position reconciliation failure. An account has transaction history that explains what action should be recommended, but the agent recommends the wrong fix. The SME can see the correction immediately. The question is whether that judgment dies as a note or becomes future behavior.
-
-Arc:
-
-- Live failure: position reconciliation failure, account, position, transaction history, prior recommendation wrong/incomplete.
-- Existing runtime: deterministic pipeline detects failure; agent runs on trigger; recommendation flow uses code, prompt escalation, deterministic checks, and loop.
-- SME correction surface: SME corrects recommended action and explains the expected treatment.
-- Executable expectation: LLM structures correction into schema'd input/output plus real example; preserve provenance, current output, expected output, trace, and scope.
-- Improvement route: agent identifies whether fix belongs in code, prompt, deterministic check, playbook, config, data, or expectation.
-- Verification: deterministic check verifies the specific fix; regression suite verifies neighbors.
-- Promotion: agent recommends adding the new case; user names/accepts; case enters regression coverage.
-- Light tie-back: communication becomes executable memory; dissent has state consequence; reversal is countered by lineage; Potter explains controlled variation; June 13 essays explain runtime/harness safety.
-- Close: when the next similar case arrives, does the system behave differently, and can we show why?
-
-Carry forward: this is the practical proof of the series and should satisfy the `too abstract` critique.
-
-Must not: name the client, become generic AI workflow prose, imply SME bypasses governance, or hide the layer-placement decision.
-
-## Global carryover checks
-
-- Preserve all major `reversal.txt` concepts by assigning them across the set.
-- Use the strategy-report reversal stack and mechanism table in the reversal essay.
-- Use failed cases as referenced examples, not the main chart.
-- Use Dissent Mode as work-to-strategy mechanism, not culture advice.
-- Use June 13 posts as infrastructure, not duplicated exposition.
-- Use Muness voice: mechanism first, concrete before abstract, no generic AI/corporate prose, no stock one-sentence laddering.
+Do not quote Potter directly until the primary source is accessible. Use the process frame through the existing April essay and avoid unsupported quotation.

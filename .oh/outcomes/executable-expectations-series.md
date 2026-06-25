@@ -1,38 +1,36 @@
-# Outcomes: Executable Expectations Series
+# Outcomes: Change Lineage and Executable Memory
 
 ## Reader signals
 
-- A reader can explain why organizational communication first enabled scale before it became a source of ceremony and amnesia.
-- A reader can explain McLuhan/Mir reversal in organizational terms without treating it as decorative theory.
-- A reader can follow the core `reversal.txt` concepts because they have been explained, sequenced, and grounded rather than compressed into theory shorthand.
-- A reader can distinguish downward faux dissent from work-to-strategy dissent that changes assumptions, priorities, funding, scope, or continuation.
-- A reader can recognize the reversal in failed cases: Volkswagen optimized the emissions test, Wells Fargo optimized cross-sell counts, and Boeing optimized schedule/program continuity while safety veto power weakened.
-- A reader can explain the difference between a handoff artifact and an executable expectation.
-- A reader can trace the Recon Agent harness from detected reconciliation failure to named regression case.
-- A reader can explain why raw SME feedback is evidence, not policy.
-- A reader can explain why Potter's variable/standard process frame matters for reliable domain learning.
+- A reader can explain why companies first need durable communication when work outgrows proximity, and why that same machinery can become ceremony, absorption, and amnesia.
+- A reader can follow the complete reversal movement: original function → enhancement → saturation → reversal → new necessity.
+- A reader can distinguish a topic boundary from an argument boundary.
+- A reader can explain why continuous digital communication creates more artifacts while weakening reconstructable lineage.
+- A reader can explain why LLMs make organizational mutation conversational and therefore raise the cost of missing lineage.
+- A reader can recognize failed-case reversal mechanisms: Volkswagen optimized the test condition, Wells Fargo optimized sales-count representation, and Boeing's formal safety apparatus lost practical veto power.
+- A reader can distinguish work-to-strategy dissent with state-changing power from cultural performance or leadership commentary.
+- A reader can explain why raw SME correction is evidence and candidate specification, not production policy.
+- A reader can trace the path from change episode to precedent to expectation to evaluator to state-transition consequence.
+- A reader can explain why memory that cannot change future action is narration.
 
 ## Publication signals
 
-- The Organizational Communication piece gives the reversal essay a stable lead-in.
-- The reversal piece does not need to compress the whole origin story and counter-medium argument into one overloaded section.
-- The `reversal.txt` material is assigned across the essay set instead of being trimmed away because it is too dense for one article.
-- The Dissent Mode material is used to explain communication mechanisms such as assumption andon, contradiction queues, dissent memos, stop-the-line triggers, and decision logs.
-- The `strategy-report.md` reversal-stack chart and mechanism table are carried into the essay set, not left in source notes.
-- Volkswagen, Wells Fargo, and Boeing appear with references/evidence as relatable failed-case examples of reversal logic.
-- The Potter/process piece, if written, explains variable judgment plus standardized reliability mechanisms without crowding the Recon Agent story.
-- The concrete Recon Agent article contains one end-to-end case with records, expected behavior, correction, formal spec, patch, deterministic check, regression check, and promotion decision.
+- The canonical essay exists as one public flagship rather than being split into topic fragments.
+- Historical, diagnostic, dissent, process, and harness material remain movements inside the canonical essay rather than becoming satellites.
+- `.oh/sources/SERIES_SPINE.md` preserves the governing thesis, dependency edges, protected hinge sentences, recurring example, and editorial expectations.
+- `.oh/sources/research-quotes-ledger.md` records exact quotes and verification status for every added public reference.
+- The old handoff-note framing and assets are removed unless a future piece explicitly reintroduces them from the spine.
 - The writing avoids stock AI thought-leadership prose and passes the `muness-voice` guardrails.
 
 ## Failure signals
 
-- Dave or another reader still says the concrete piece is too abstract.
-- The conceptual piece name-drops McLuhan/Mir without explaining the organizational mechanism.
-- Dense ideas from `~/Downloads/reversal.txt` are discarded rather than translated into readable essay form.
-- The Organizational Communication piece becomes generic management theory instead of preparing the reversal.
-- Dissent is framed as executive attitude or cultural performance instead of a communication interface that lets work alter strategy.
-- The `strategy-report.md` reversal-stack chart is omitted, or the mechanism table is flattened into a vague Toyota/evidence-trigger reference.
-- The failed cases are named without evidence, or treated as scandal shorthand instead of mechanisms readers can map to their own organizations.
-- The Potter frame gets demoted to a quote rather than explaining specificity and reliability.
-- The Recon Agent harness is described generically enough that it could be any data product.
-- The concrete article implies direct SME-to-production mutation instead of governed promotion.
+- A future edit splits where the subject changes instead of where the argument has completed a transformation.
+- The canonical essay loses the sequence from original communication function to LLM-completed reversal.
+- Archaeology appears before documentation, decision logs, governance, and AI summaries have been shown to fail as remedies.
+- Binding expectations appear as a standalone product feature rather than as the result of harvested lineage and precedent.
+- Dissent becomes culture advice instead of state-changing work-to-strategy feedback.
+- Failed cases are named without source-backed mechanism.
+- Potter is quoted without primary-source verification.
+- A rewrite silently removes a claim's later payoff.
+- The concrete reconciliation example becomes generic enough that it could be any data product.
+- The canonical essay can no longer answer: what changed, why, who knew, what evidence mattered, what was contested, what happened afterward, and what should change next time?
