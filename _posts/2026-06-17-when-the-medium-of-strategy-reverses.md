@@ -19,7 +19,7 @@ Reversal is not simply misuse. Cars extend individual mobility; at saturation, c
 
 Andrey Mir's *The Digital Reversal* adds the pressure of temporal compression: as the interval between expression, reaction, revision, and implementation contracts, communication becomes less capable of marking settled stages of judgment.
 
-The core claim is narrower than "communication shapes everything." Beniger explains why organizations build control media. McLuhan explains how those media can invert. Mir explains why digital temporality makes the inversion faster and harder to see. AI systems that connect language models to tools and permissions raise the stakes because representational, authorizing, and executable media can now sit much closer together. A sentence of strategy talk can become a prompt change, workflow change, configuration change, evaluator change, or code change before the evidence and intent behind it have stabilized.
+The core claim is narrower than "communication shapes everything." Beniger explains why organizations build control media. McLuhan explains how those media can invert. Mir explains why digital temporality makes the inversion faster and harder to see. AI systems that connect language models to tools and permissions raise the stakes because representational, authorizing, and executable media can now sit much closer together. A sentence of strategy talk can become a prompt change, workflow change, configuration change, evaluator change, or code change before the evidence and intent behind it have stabilized. The unit of analysis is the organizational medium: the dashboard, launch gate, risk register, corpus, prompt workflow, or review process whose representation carries consequence.
 
 ## Declared strategy becomes operative through media
 
@@ -105,13 +105,11 @@ A system can document contradictory evidence without allowing that evidence to a
 
 An adequate response would therefore have to do more than improve what the organization records. It would have to change the relationship among evidence, authority, consequence, and action. How to do that without creating another compliance apparatus is a separate design problem. It deserves treatment in operational detail: who establishes thresholds, what gains the power to interrupt work, how disagreement remains visible, when overrides are legitimate, and how the mechanism itself remains open to correction.
 
-For now, the diagnostic test is simpler.
-
-Can the representation improve while the underlying objective stagnates, deteriorates, or becomes less visible? Do funding, permission, or status continue to follow that representation after the divergence becomes visible? Can decision-relevant evidence be excluded from the authoritative channel or formally received without changing what the organization is expected or allowed to do next?
+This essay stops at a diagnostic criterion because that is the part it has earned. Use it on a specific medium: a dashboard, corpus, review, launch gate, risk register, AI workflow, or strategy process. Can the representation improve while the underlying objective stagnates, deteriorates, or becomes less visible? Do funding, permission, or status continue to follow that representation after the divergence becomes visible? Can decision-relevant evidence be excluded from the authoritative channel or formally received without changing what the organization is expected or allowed to do next?
 
 When the answer is yes, the medium has reversed.
 
-Before adding another dashboard, corpus, review, or agent, ask not only what it communicates. Ask what it can make easier, what it can prevent, and what evidence has the authority to interrupt it. An organization that records contradiction without allowing contradiction to alter action has not learned from the evidence. It has documented its refusal to learn.
+Before adding another dashboard, corpus, review, or agent, ask not only what it communicates. Ask what it can make easier, what it can prevent, and what evidence has the authority to interrupt it. The guardrail is not to stop every decision that meets resistance. It is to notice when contradiction can be recorded, praised, summarized, and then made powerless. An organization that records contradiction without allowing contradiction to alter action has not learned from the evidence. It has documented its refusal to learn.
 
 ## Sources used
 
