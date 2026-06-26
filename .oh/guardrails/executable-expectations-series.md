@@ -1,5 +1,9 @@
 # Guardrails: Executable Expectations Series
 
+## Stabilize the core vocabulary
+
+Use `declared strategy` for what the organization says it intends and `operative strategy` for the pattern of choices, constraints, resource allocations, incentives, and exceptions that actually governs work. Define an organizational medium as a recurring artifact plus the workflow, authority, and incentives attached to it. Do not let `strategy`, `medium`, or `communication` expand into synonyms for everything an organization does.
+
 ## Do not overload the flagship close
 
 The flagship should close on the principle that memory becomes useful when it changes the next action. Do not cram the full Recon Agent / executable-expectations mechanism into the final movement. If change episodes, typed lineage, prospective memory, executable expectations, evaluators, overrides, or regression cases are named in the flagship, mark them as future machinery rather than pretending they have been fully explained.
@@ -14,9 +18,17 @@ Do not reduce Potter to a citation or remove him to make room for McLuhan/Mir. P
 
 If that argument crowds the flagship, preserve it as source scaffolding or a brief mechanism inside the essay instead of deleting it or spinning up a companion post.
 
+## Reversal must be testable
+
+Use the three-part reversal test: the representation can be satisfied while the underlying objective worsens; rewards, permissions, status, or funding still follow the representation; and decision-relevant contradictory evidence crosses an agreed threshold without triggering reconsideration, constraint, state change, or named override.
+
 ## No concept stubs
 
 Do not merely introduce McLuhan, Mir, medium, reversal, or acceleration as labels. Each concept used in the flagship needs enough mechanism that a reader can explain what work it does in the argument without already sharing the frame. If a later constructive concept is only a teaser, explicitly route it to future treatment instead of compressing it into a fake explanation.
+
+## Remedy distinction
+
+Do not frame the remedy as documentation versus lineage. The stronger distinction is content-only artifacts versus consequence-bearing artifacts: records that merely preserve what people said versus records that alter authority, timing, state transitions, overrides, or future retrieval conditions.
 
 ## No one-essay overload
 

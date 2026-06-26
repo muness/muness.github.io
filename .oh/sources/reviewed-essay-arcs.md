@@ -4,7 +4,7 @@ Source: corrected architecture after Muness/user dissent on 2026-06-20. The prev
 
 ## Controlling sentence
 
-Strategy operates through media: plans, budgets, metrics, dashboards, reviews, tickets, summaries, prompts, workflows, approvals, and agents. Under acceleration, those media can reverse: representation outranks action, digital abundance weakens sequence, and LLMs turn strategy talk into system mutation. The counter-reversal is harvested change lineage that can become prospective memory and, where warranted, executable precedent.
+Declared strategy becomes operative through organizational media: recurring artifacts plus workflow, authority, and incentives. Under acceleration, those media reverse when representations can be satisfied while underlying objectives worsen, rewards and permissions keep following the representation, and decision-relevant contradictory evidence produces no required state change. The counter-reversal is consequence-bearing memory that changes the next comparable action.
 
 ## Canonical essay
 
@@ -14,14 +14,14 @@ Job: preserve the complete causal movement in one public flagship essay.
 
 Required sequence:
 
-1. Strategy operates through communicative media.
+1. Declared strategy becomes operative through organizational media.
 2. Higher-order communication accumulated as companies tried to control failures in earlier layers.
-3. At saturation, representation became easier to satisfy than the underlying work.
-4. Continuous digital communication weakened sequence and produced a present-tense organization.
-5. LLMs completed the reversal by making system mutation conversational and low-sediment.
-6. Documentation, decision logs, governance, AI summaries, and knowledge bases fail when they remain inside the same representational medium.
-7. The second reversal harvests consequential mutation as it occurs.
-8. Selected change episodes become precedent, expectations, evaluators, and state-transition constraints.
+3. At saturation, representations became easier to satisfy than represented reality.
+4. Continuous digital communication weakened authoritative decision sequence and reconstructable history.
+5. LLMs completed the reversal by making representational, authorizing, and executable media sit closer together.
+6. Documentation, decision logs, governance, AI summaries, and knowledge bases fail when they remain content-only artifacts.
+7. Memory becomes useful when it changes the next action.
+8. Detailed change-episode / executable-expectation machinery is deferred to future constructive treatment.
 
 ## Internal movements inside the canonical essay
 
@@ -33,13 +33,12 @@ Job: establish the origin story without severing it from reversal.
 
 Arc:
 
-- companies can rely partly on proximity, reputation, and direct attention until work outgrows the people who remember;
-- complexity forces memory and authority into durable forms;
+- declared strategy becomes operative only through recurring artifacts with attached workflow, authority, and incentives;
 - Beniger/control problem frames information as a response to speed, volume, and complexity;
 - ledgers, schedules, procedures, budgets, reports, and approvals couple representation, coordination, and memory;
 - every form filters;
 - higher-order communication accumulates;
-- the movement reaches reversal when the forms that enabled strategy to operate begin outranking work.
+- the movement reaches reversal when representations can be satisfied while the represented objective worsens.
 
 ### Movement 2: representation becomes present-tense mutation
 
@@ -49,11 +48,11 @@ Arc:
 
 - representational controls feed on one another;
 - failed cases show auditability, metrics, and governance outranking their objectives;
-- digital media turns durable communication into present-tense behavior;
-- organizations have more artifacts and less reconstructable lineage;
+- digital media can multiply chronology while weakening authoritative decision sequence;
+- organizations can retain more artifacts while losing reconstructable lineage;
 - AI summaries can generate false continuity;
 - dissent without state transition is absorbed;
-- LLMs turn present tense into mutation.
+- LLMs turn that digital present into low-sediment system mutation when connected to tools and permissions.
 
 ### Movement 3: harvested lineage becomes executable memory
 
@@ -62,12 +61,11 @@ Job: construct the counter-medium.
 Arc:
 
 - memory is useful when it changes the next action;
-- change episode is the core unit;
-- epistemic type prevents mythology;
-- scope prevents local corrections from becoming accidental global policy;
-- episode -> precedent -> expectation -> evaluator -> state-transition consequence;
-- Toyota/jidoka supplies the state-transition analogy;
-- reconciliation failure demonstrates SME correction entering through a governed door;
+- content-only artifacts are not enough; consequence-bearing artifacts change authority, timing, or state transitions;
+- state changes need thresholds, owners, overrides, and reviewability;
+- Toyota/jidoka supplies a narrow state-transition analogy;
+- detailed change episodes, typed lineage, prospective memory, executable expectations, and evaluators belong in future constructive treatment;
+- reconciliation failure can demonstrate SME correction entering through a governed door in that future treatment;
 - overrides remain possible but become named and reviewable.
 
 ## Protected dependency edges

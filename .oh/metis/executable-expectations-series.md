@@ -16,7 +16,7 @@ Consequence: `.oh/sources/SERIES_SPINE.md` is load-bearing. It records the gover
 
 Archaeology and executable expectations sound like knowledge management or workflow governance if they appear before the failure of documentation, decision logs, governance, and AI summaries has been established.
 
-Consequence: the canonical essay must make the reader feel that content-level remedies remain inside the broken medium before presenting harvested lineage and executable precedent.
+Consequence: the canonical essay must make the reader feel that content-only remedies remain inside the broken medium before presenting consequence-bearing memory and any future executable-expectation machinery.
 
 ## Dissent is a state-changing interface, not a separate content lane
 
@@ -32,6 +32,6 @@ Consequence: `.oh/sources/research-quotes-ledger.md` records exact quotes, sourc
 
 ## The concrete example is the continuity mechanism
 
-The reconciliation failure is not merely an example for the constructive piece. It is the recurring case that carries the abstract argument through the arc: evidence, ceremonial receipt, unchanged decision, LLM-mediated mutation, lost lineage, archaeological reconstruction, executable expectation, and named override.
+The reconciliation failure is not merely an example for the constructive piece. It is the recurring case that can carry the abstract argument through the future constructive arc: evidence, ceremonial receipt, unchanged decision, LLM-mediated mutation, lost lineage, archaeological reconstruction, executable expectation, and named override. The flagship now uses a smaller regulated-rollout example to avoid overloading the close.
 
 Consequence: future edits should keep the chronology and actors stable. Changing the example requires updating the spine and every payoff that depends on it.
