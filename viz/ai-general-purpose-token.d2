@@ -1,0 +1,53 @@
+direction: down
+
+real_ai: "Real AI capability" {
+  shape: rectangle
+  style.fill: "#f7f7f7"
+  style.stroke: "#444444"
+}
+
+paths: {
+  direction: right
+  label: ""
+  style.stroke: "#ffffff"
+
+  tech_path: {
+    label: "GPT-tech path: slow metabolism"
+    direction: down
+    style.fill: "#eef7ff"
+    style.stroke: "#4c78a8"
+
+    complements: "Complements\n(data, workflow, skill)"
+    redesign: "Workflow redesign"
+    trust: "Trust, review,\ngovernance"
+    value: "Durable capability"
+
+    complements -> redesign -> trust -> value
+  }
+
+  token_path: {
+    label: "AI-token path: fast circulation"
+    direction: down
+    style.fill: "#fff4e6"
+    style.stroke: "#f58518"
+
+    artifact: "Visible artifact\n(demo, benchmark,\nscreenshot)"
+    sign: "\"AI\""
+    institution: "Deck / OKR /\ndashboard"
+    capture: "Proxy becomes value"
+
+    artifact -> sign -> institution -> capture
+  }
+}
+
+real_ai -> paths.tech_path.complements: "metabolized through"
+real_ai -> paths.token_path.artifact: "compressed into"
+
+decompress: "Decompress the token:\nWhat work changes?\nWho owns the result?\nWhat metric could fool us?" {
+  shape: rectangle
+  style.fill: "#ffffff"
+  style.stroke: "#666666"
+}
+
+paths.token_path.sign -> decompress: "click it"
+decompress -> paths.tech_path.redesign: "recover the mechanism"
