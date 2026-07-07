@@ -94,31 +94,36 @@ A general purpose technology has to be absorbed. A general purpose token only ha
 
 ## The channel changes what gets repeated
 
-The same AI claim changes as it moves through LinkedIn, Twitter/X, dashboards, board decks, and layoff memos. LinkedIn keeps the career signal. Twitter/X keeps the fight. A dashboard keeps the metric. A layoff memo keeps the justification. The mechanism gets squeezed out.
+The same AI claim changes as it moves through LinkedIn, Twitter/X, dashboards, board decks, investor calls, procurement categories, layoff memos, and LLM outputs. Each channel keeps the part it can use. LinkedIn keeps the career signal. Twitter/X keeps the fight. A dashboard keeps the number. A board deck keeps the category. A layoff memo keeps the justification. An LLM repeats common wording.
 
-Different traditions catch different parts of the same motion. Memetics notices the copyable unit. Media theory notices the channel. Strategy notices when repeated language turns into budgets, roadmaps, hiring rules, and layoff stories. Goodhart notices when the metric starts steering the system. Flatland notices the projection error: the visible artifact gets mistaken for the work.
+The workflow gets dropped because it is expensive to carry. A mechanism-oriented AI claim needs the model, the data, the user, the failure mode, the review path, the integration burden, the operational metric, and the behavior change. `AI-first` needs two words.
 
-A sign does not replicate by itself. People, platforms, firms, and models copy it. LinkedIn rewards career-safe positioning. Twitter/X rewards compressed conflict. Dashboards reward measurable nouns. Board decks reward coherent labels. LLMs reward phrases that already appear everywhere.
+That is the media-theory premise in operational terms: channels do not merely carry an AI claim; they select which version survives. People, platforms, firms, and models copy signs that fit available media. `AI` fits the slide title, dashboard, OKR, investor call, LinkedIn post, Twitter/X dunk, vendor category, all-hands theme, layoff memo, and LLM-generated press release. The workflow-specific mechanism does not.[^dawkins]
 
-`AI` fits the slide title. It fits the dashboard. It fits the OKR. It fits the investor call. It fits the LinkedIn post. It fits the Twitter/X dunk. It fits the vendor category. It fits the all-hands theme. It fits the layoff memo. It fits the LLM-generated press release.
+The channel also changes what organizations accept as proof.[^mcluhan] A demo can pass for transformation, a benchmark can pass for intelligence, an adoption dashboard can pass for value, a generated artifact can pass for work replacement, and a CEO's `AI-first` language can pass for strategy.[^postman]
 
-The workflow does not. A mechanism-oriented AI claim needs the model, the data, the user, the failure mode, the review path, the integration burden, the operational metric, and the behavior change. That is too much for most channels where strategy language spreads.
+Adoption has two clocks.[^innis] One clock is slow: memory, apprenticeship, standards, local judgment, governance, trust, and workflow. The other clock is fast: administration, command, markets, dashboards, feeds, board decks, and procurement categories. AI as GPT-tech needs slow absorption. The AI-token rides fast circulation. That is how firms build AI dashboards, governance offices, savings targets, and workforce plans before the work itself has changed.
 
-Dawkins's meme language names the copyable unit: the thing people can repeat without carrying the whole mechanism with it.[^dawkins] The live question is what people and systems are more likely to copy: decks, posts, benchmarks, pilots, dashboards, rituals, rebuttals, or the workflow-specific mechanism the sign was supposed to name.
+Some AI talk is participation, not information transfer.[^carey] `We are AI-first` marks modernity. `AI will replace you` marks inevitability. `AI is slop` marks resistance. The claims disagree, but each keeps `AI` at the center. On LinkedIn and Twitter/X, this becomes call-and-response: `AI-first`, `AI-native`, `agents are coming`, `learn AI or be replaced`, `AI slop`, `do more with less`, `the future of work`.[^mir]
 
-The channel changes which parts of an AI claim survive.[^mcluhan] A slide title can carry `AI-first`; it cannot carry data-access constraints, review burden, exception handling, trust formation, customer behavior, or downstream maintenance. A demo is immediate. A benchmark is legible. A screenshot is portable. A generated answer is visible. A layoff headline is narratively complete. The version that survives the media chain is rarely `this model, with this data, in this workflow, under this review regime, changes this behavior`. The surviving sign is `AI`.
+The same structure appears outside corporate management. Policy, regulation, academia, and critical AI communities also produce strategy-tokens: `AI safety`, `alignment`, `responsible AI`, `frontier models`, `open weights`, `human-centered AI`. Some name real work. Some become category badges. The point is not that managers are uniquely confused. Contemporary media environments select for portable signs before they select for mechanisms.
 
-Adoption has two clocks.[^innis] A time-biased medium preserves knowledge across time: memory, apprenticeship, standards, local judgment, and institutional continuity. It is slow because people have to learn, trust, and maintain the practice. A space-biased medium spreads a message across distance: administration, command, markets, dashboards, feeds, board decks, and procurement categories. It is fast because people can copy the form before they understand the work. AI as GPT-tech needs time-biased work: teams have to absorb the technology into data access, review habits, exception handling, governance, trust, and workflow. The AI-token rides space-biased media: people can copy it across departments, industries, decks, feeds, and markets before the organization has absorbed the technology.
+After circulation succeeds, people and systems use the sign to sort firms and workers into future-ready or obsolete, `AI-native` or legacy, efficient or bloated.[^debord] The representation can precede the territory: dashboards, governance offices, savings targets, and workforce plans appear before the work changes.[^baudrillard] Infrastructure makes repetition cheap: LLM interfaces, Slack, PowerPoint, OKR tools, benchmark sites, procurement categories, and LinkedIn.[^kittler] Speed compounds the error: the demo outruns the implementation plan, the benchmark outruns the evaluation culture, and the layoff headline outruns careful attribution.[^virilio]
 
-Media also change what counts as proof.[^postman] A demo can pass for transformation, a benchmark can pass for intelligence, an adoption dashboard can pass for value, a generated artifact can pass for work replacement, and a CEO's `AI-first` language can pass for strategy.
+<div class="callout callout--metric" markdown="1">
+**How channels compress AI claims**[^channel-matrix]
 
-Some AI talk functions as participation rather than information transfer.[^carey] `We are AI-first` marks modernity. `AI will replace you` marks inevitability. `AI is slop` marks resistance. The claims disagree semantically, but the repeated social act keeps `AI` at the center.
-
-On LinkedIn and Twitter/X, that ritual becomes call-and-response.[^mir] People repeat the AI-token less like a print-era concept and more like a chant: `AI-first`, `AI-native`, `agents are coming`, `learn AI or be replaced`, `AI slop`, `do more with less`, `the future of work`. They function as repeatable social moves more than arguments. People use them for recognition, repetition, affiliation, and immediate response.
-
-The same structure appears outside corporate management. Policy, regulation, academia, and critical AI communities also produce strategy-tokens: `AI safety`, `alignment`, `responsible AI`, `frontier models`, `open weights`, `human-centered AI`. Some name real work. Some become category badges. The point is not that managers are uniquely confused. The point is that contemporary media environments select for portable signs before they select for mechanisms.
-
-After circulation succeeds, three further shifts appear. First, `AI` becomes a social sorting label: future-ready or obsolete, `AI-native` or legacy, efficient or bloated.[^debord] Second, the representation can precede the territory: firms build AI dashboards, governance offices, savings targets, and workforce plans before the work itself has changed.[^baudrillard] Third, the infrastructure changes the cost of repetition: LLM interfaces, Slack, PowerPoint, OKR tools, benchmark sites, procurement categories, and LinkedIn make a short claim easy to store, transmit, process, and repeat.[^kittler] Speed compounds all of it: the demo outruns the implementation plan, the benchmark outruns the evaluation culture, and the layoff headline outruns careful attribution.[^virilio]
+| Channel | What survives | What gets stripped |
+|---|---|---|
+| Slide title | Category | Workflow |
+| Dashboard | Number | Judgment and review burden |
+| Board deck | Strategic narrative | Implementation detail |
+| Investor call | Future-facing signal | Causal uncertainty |
+| Layoff memo | Justification | Task-level evidence |
+| LinkedIn | Career signal | Mechanism |
+| Twitter/X | Conflict and affiliation | Nuance |
+| LLM output | Familiar phrase | Local context |
+</div>
 
 The medium is part of the mechanism. People, firms, and LLMs preserve the short word and discard the workflow. `AI` survives the media chain. The mechanism is what the media chain strips away.
 
@@ -199,7 +204,7 @@ The AI-token does not have to be causally precise. It has to be useful to repeat
 
 ## Visible artifacts and hidden work
 
-In Abbott's story, a sphere passing through a two-dimensional world appears to the Flatlanders as a changing circle: point, widening circle, narrowing circle, point. The observations are not wrong. The instruments are not broken. The error is dimensional. They mistake a cross-section for the object.[^flatland]
+An AI output is evidence that something happened, not proof that the underlying work has been replaced. Abbott's *Flatland* gives a useful image: a sphere passing through a two-dimensional world appears to the Flatlanders as a changing circle: point, widening circle, narrowing circle, point. The observations are not wrong. The instruments are not broken. The error is dimensional. They mistake the visible trace for the object.[^flatland]
 
 Modern organizations do this constantly.
 
@@ -215,17 +220,17 @@ prompt -> analysis
 
 Then they infer that they have seen the work.
 
-But the visible artifact is often only the cross-section.
+But the visible artifact is often only the output.
 
 A legal brief is not lawyering. A diagnosis is not medicine. A strategy deck is not strategy. A line of code is not engineering. A support response is not customer success. A generated summary is not institutional understanding.
 
 The generator is the work behind the artifact: judgment, context, accountability, tacit knowledge, timing, trust, integration, review, maintenance, customer reality, and consequence.
 
-AI tools and AI rhetoric make the cross-section spectacular. Code appears. Text appears. Slides appear. Images appear. Answers appear.
+AI tools and AI rhetoric make the output spectacular. Code appears. Text appears. Slides appear. Images appear. Answers appear.
 
 The artifact appears, so the work seems replaced.
 
-That is the Flatland move: a real cross-section gets mistaken for the object.
+That is the mistake the Flatland analogy names: a visible trace gets mistaken for the system that produced it.
 
 The better question is:
 
@@ -437,7 +442,7 @@ That is how the claim changes as it travels.
 
 Once `AI` becomes a dashboard category, the problem deepens.
 
-Goodhart's Law is usually summarized as: when a measure becomes a target, it ceases to be a good measure.[^goodhart]
+A dashboard measure can stop describing work and start steering it. Goodhart's Law is usually summarized as: when a measure becomes a target, it ceases to be a good measure.[^goodhart]
 
 AI strategy can create Goodhart traps at each translation step.
 
@@ -451,9 +456,9 @@ If `lines of code generated` becomes the target, code volume rises while maintai
 
 If `AI-driven savings` becomes the target, teams can relabel ordinary cost cuts as AI even when the operating model has not changed.
 
-Goodhart names the corruption of a measure. Value capture names the next shift: the corruption of desire.
+A measure can corrupt behavior. A score can also train people and institutions to care about the score instead of the goal.
 
-C. Thi Nguyen's concept of value capture names the process by which simplified scores, rankings, or metrics can overtake the richer values they were supposed to serve.[^nguyen] The score can train people and institutions to care about the score instead of the goal.
+C. Thi Nguyen calls this value capture: simplified scores, rankings, or metrics overtake the richer values they were supposed to serve.[^nguyen]
 
 That is what happens when managers turn `AI` into a dashboard category.
 
@@ -520,7 +525,7 @@ Those measures can improve the diagnosis. They still do not answer the dimension
 
 More resolution inside the proxy is not the same as understanding the work behind it.
 
-This is the reverse of Gell-Mann amnesia.[^gellmann] In the original, you notice media errors in a domain you know, then forget that lesson when reading about domains you do not know. Here, expertise creates a different blind spot. A formal model, credentialed committee, or high-resolution dashboard can reduce the work to a proxy, such as code accepted, tickets deflected, adoption rate, or cycle time, and make that reduction look rigorous.
+Expertise can create its own blind spot. In Gell-Mann amnesia, you notice media errors in a domain you know, then forget that lesson when reading about domains you do not know.[^gellmann] Here, the pattern reverses: a formal model, credentialed committee, or high-resolution dashboard can reduce the work to a proxy, such as code accepted, tickets deflected, adoption rate, or cycle time, and make that reduction look rigorous.
 
 Naive simplification is easy to challenge. Sophisticated simplification arrives with controls, cohorts, taxonomies, and confidence.
 
@@ -553,7 +558,7 @@ People can use the AI-token to recognize the future before they understand the w
 
 AI may genuinely become a GPT-tech, and that possibility gives the AI-token plausibility.
 
-General purpose technologies do not deliver their full value through surface adoption. They require complements. Brynjolfsson, Rock, and Syverson's work on AI and the modern productivity paradox argues that impressive AI capabilities can coexist with weak measured productivity because GPT-techs require complementary innovations, organizational change, new skills, and intangible capital before their full effects appear.[^paradox]
+General purpose technologies do not deliver their full value through surface adoption. They require complements: new workflows, skills, governance, infrastructure, and intangible capital. That is the mechanism behind the AI productivity paradox described by Brynjolfsson, Rock, and Syverson: impressive AI capabilities can coexist with weak measured productivity because GPT-techs need complementary reconstruction before their full effects appear.[^paradox]
 
 Implementation lag is the mechanism. The shortcut story promises GPT-tech returns without the complementary reconstruction.
 
@@ -753,6 +758,8 @@ AI may become a general purpose technology. Inside firms, `AI` has already becom
 [^dawkins]: Richard Dawkins, *The Selfish Gene*, ch. 11, "Memes: The New Replicators," supplies the replicator logic behind the term `selfish token`. Dawkins's later ["What's in a Meme?"](https://richarddawkins.net/2014/02/whats-in-a-meme/) summary is useful here because it restates the relevant caution: the meme analogy helps explain how ideas spread, but it should not be treated as biological equivalence.
 
 [^mcluhan]: Marshall McLuhan, *Understanding Media*, ch. 1, "The Medium Is the Message," is the source for the media-theory claim that a medium's message is the change of "scale or pace or pattern" it introduces into human affairs. The [Marshall McLuhan estate summary](https://www.marshallmcluhan.com/common-questions/) quotes that passage and the related line that media shape the scale and form of human association and action.
+
+[^channel-matrix]: This table uses a narrow version of the media-ecology question behind Marshall and Eric McLuhan's tetrad in *Laws of Media*: what a medium amplifies and what it pushes out of view. The full tetrad also asks what a medium retrieves and what it reverses into at its limit; those columns are omitted here because this essay's immediate question is how organizational channels preserve portable AI signs and strip away mechanism.
 
 [^innis]: Harold Innis, ["The Bias of Communication"](https://www.cambridge.org/core/journals/canadian-journal-of-economics-and-political-science-revue-canadienne-de-economiques-et-science-politique/article/abs/bias-of-communication/D2AF017715AA6CDE10ECCAEC4552E63B), argues that media differ in their capacity to carry knowledge over time or over space. That is the source of the time-biased / space-biased distinction used here.
 
