@@ -559,7 +559,14 @@ Implementation lag is the mechanism. The shortcut story promises GPT-tech return
 
 This is a form of strategic debt. Borrowing is not automatically irrational; a firm has to invest before the full return appears. The error is spending the social and financial returns as if absorption has already happened: reducing headcount, flattening expertise, declaring productivity, and rewarding adoption before the organization knows which human knowledge, data plumbing, review paths, and maintenance work make the system valuable.
 
-My prediction is not simply mass replacement. It is musical chairs under pressure. Some roles shrink. Some work moves downstream to reviewers, customers, managers, or exception handlers. Some new work appears around integration, evaluation, governance, security, and trust repair. Some senior expertise becomes more valuable after firms discover that tacit knowledge was part of the complement set. Ford's 2026 quality reset makes the complement problem concrete: the company said AI and automation were not enough on their own and hired, promoted, or brought back about 350 experienced technical specialists to mentor staff, lead design reviews, and improve automated quality tools.[^ford-complements]
+When firms spend the AI-token before building the complements, my prediction is a delayed complement cycle:
+
+- **Substitution story.** Firms cut roles, freeze hiring, and count AI adoption as capability. Metrics make participation visible before the operating capability exists.
+- **Displaced work.** Review, exceptions, customer repair, and maintenance move to people outside the automation target. Model output makes artifacts cheaper before it makes judgment, accountability, or integration cheaper.
+- **Rebundled roles.** Work collects around evaluation, data cleanup, integration, governance, security, and system stewardship. The complements skipped in the strategy still have to be done.
+- **Expertise repricing.** Some senior expertise becomes more valuable. AI systems need experienced people to define quality, catch edge cases, mentor reviewers, and improve tools.
+
+The result is uneven labor change: some roles disappear, some move, some get renamed, and some require expertise the substitution story priced as surplus. Ford's 2026 quality reset makes the complement problem concrete: the company said AI and automation were not enough on their own and hired, promoted, or brought back about 350 experienced technical specialists to mentor staff, lead design reviews, and improve automated quality tools.[^ford-complements]
 
 It suggests:
 
