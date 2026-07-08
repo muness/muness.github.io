@@ -113,16 +113,57 @@ After circulation succeeds, people and systems use the sign to sort firms and wo
 <div class="callout callout--metric" markdown="1">
 **How channels compress AI claims**[^channel-matrix]
 
-| Channel | What survives | What gets stripped |
-|---|---|---|
-| Slide title | Category | Workflow |
-| Dashboard | Number | Judgment and review burden |
-| Board deck | Strategic narrative | Implementation detail |
-| Investor call | Future-facing signal | Causal uncertainty |
-| Layoff memo | Justification | Task-level evidence |
-| LinkedIn | Career signal | Mechanism |
-| Twitter/X | Conflict and affiliation | Nuance |
-| LLM output | Familiar phrase | Local context |
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>What survives</th>
+      <th>What gets stripped</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slide title</td>
+      <td>Category</td>
+      <td>Workflow</td>
+    </tr>
+    <tr>
+      <td>Dashboard</td>
+      <td>Number</td>
+      <td>Judgment and review burden</td>
+    </tr>
+    <tr>
+      <td>Board deck</td>
+      <td>Strategic narrative</td>
+      <td>Implementation detail</td>
+    </tr>
+    <tr>
+      <td>Investor call</td>
+      <td>Future-facing signal</td>
+      <td>Causal uncertainty</td>
+    </tr>
+    <tr>
+      <td>Layoff memo</td>
+      <td>Justification</td>
+      <td>Task-level evidence</td>
+    </tr>
+    <tr>
+      <td>LinkedIn</td>
+      <td>Career signal</td>
+      <td>Mechanism</td>
+    </tr>
+    <tr>
+      <td>Twitter/X</td>
+      <td>Conflict and affiliation</td>
+      <td>Nuance</td>
+    </tr>
+    <tr>
+      <td>LLM output</td>
+      <td>Familiar phrase</td>
+      <td>Local context</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 The medium is part of the mechanism. People, firms, and LLMs preserve the short word and discard the workflow. `AI` survives the media chain. The mechanism is what the media chain strips away.
