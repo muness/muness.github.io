@@ -88,7 +88,7 @@ A general purpose technology has to be absorbed. A general purpose token only ha
 </div>
 
 <figure class="essay-figure">
-  <img src="../assets/img/ai-general-purpose-token.png" alt="Diagram showing real AI capability splitting into a slower GPT-tech path and a faster AI-token circulation path.">
+  <img src="/assets/img/ai-general-purpose-token.png" alt="Diagram showing real AI capability splitting into a slower GPT-tech path and a faster AI-token circulation path.">
   <figcaption>Real AI capability moves on two clocks: the slower GPT-tech path of infrastructure, complements, workflow, and trust; and the faster AI-token path of memos, dashboards, markets, and workforce narratives.</figcaption>
 </figure>
 
