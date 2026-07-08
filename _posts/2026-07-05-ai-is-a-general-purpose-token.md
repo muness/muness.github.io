@@ -1,6 +1,6 @@
 ---
 title: "AI: Token or GPT?"
-date: 2026-07-05 00:00:00 -0400
+date: 2026-07-07 20:00:00 -0400
 author: muness
 toc: true
 comments: true
