@@ -605,6 +605,48 @@ AI
 
 That shortcut is the source of both speed and error.
 
+## The authenticity predictions
+
+Expect authenticity polarization outside formal AI strategy.
+
+When people say `that sounds like AI`, sometimes they mean a real defect: generic structure, unsupported claims, padded sentences, fake precision, or missing judgment. Sometimes they do something else: they attack the origin of the work instead of the work. That is an ad hominem version of the AI-token. The burden shifts from criticism to authentication: prove a machine did not touch this.
+
+On the anti-AI side, expect:
+
+- `Human-written`, `no AI`, `handmade`, and `real artist` become claims about craft, care, and accountability. Sometimes the claim will be earned. Sometimes it will be packaging.
+- Writers, students, applicants, and creators keep drafts, revision history, notes, uneven rhythm, personal detail, or visible drafts to prove human involvement.
+- Schools, employers, publishers, and platforms adopt detection rituals because they need an enforceable rule. The rule can punish style instead of cheating.
+- Readers ask `was AI involved?` and stop before asking `is this true, useful, original, or well made?`
+- `AI slop` remains useful when it names bad work: false facts, generic structure, missing judgment, broken code, empty words. It fails when it treats authorship as the reason the work is bad. Slop is slop: human and machine systems can both produce it.
+
+On the pro-AI side, expect the matching ad hominem:
+
+- `You refuse AI` becomes a way to attack someone's competence instead of answering their concern.
+- `AI-native`, `AI-powered`, and `built with agents` signal competence, speed, and modernity even when no one has shown the work is good.
+- Visible human labor gets dismissed as nostalgia, preciousness, or inefficiency.
+- Fast output gets treated as evidence of capability, even when review, integration, and accountability have merely moved elsewhere.
+
+One side uses `AI` to question authenticity. The other uses `AI` to question competence. Both skip the mechanism-level question: what was made, how was it made, what judgment shaped it, and whether the result is any good.
+
+## How to use the analysis
+
+Use the analytical lens in this essay when people use a claim about AI to end an argument too quickly.
+
+Write down the claim. Then separate three things: what the person is saying, what the claim helps them do, and what evidence would make the claim true.
+
+| Claim | What the claim can help people do | Better next question |
+|---|---|---|
+| `That sounds like AI` | Rejecting work by attacking authorship. | What is actually wrong: false claim, generic structure, unsupported evidence, missing judgment, bad style, or no defect at all? |
+| `AI-first` | Claiming future-readiness before the operating model has changed. | Which workflow changed, and what complements now exist: data access, review, governance, skills, maintenance, and trust? |
+| `AI slop` | Naming low-quality generated work, or dismissing abundant work without critique. | What failure appeared: false facts, dead code, boilerplate, duplicated logic, missing context, or review burden? |
+| `You refuse AI` | Recasting caution as incompetence. | What constraint would AI actually change, and what risk is the skeptic preserving? |
+| `Tokenmaxxing` | Treating model usage as participation proof. | Did the work improve, or did the meter run? |
+| `Human-written` / `no AI` | Asking authorship to prove quality. | What quality, judgment, accountability, or care does human authorship add here? |
+
+Once you know the claim, where it is being repeated, and what people are doing with it, the predictions become practical. If managers put the claim in a dashboard, expect rankings, targets, and gaming. If employers use it in hiring, expect status claims and screening rituals. If schools use it in grading, expect disclosure rules and draft-history demands. If people use it in feeds, expect counter-slogans. If executives use it in a layoff memo, expect causal compression.
+
+Do not stop at the claim. Ask what follows from it. If the question is `was AI involved?`, ask what quality failure or value gain follows from that fact. If the question is `are we AI-first?`, ask which constraint changed. If the question is `how many tokens did we use?`, ask what value the work created and what burden moved somewhere else.
+
 ## Mechanism-oriented AI strategy
 
 Mechanism-oriented AI strategy starts with a workflow or job-to-be-done, not with the word `AI`.
