@@ -7,9 +7,9 @@ Constraint: Keep the article link out of the post and put it in the first commen
 
 ## Post
 
-After automated quality systems disappointed, Ford brought veteran engineers into design reviews, training, and improving the tools. The new division of labor is simple: automation scans, tests, and flags at scale; engineers bring the failure knowledge, judgment, and feedback that make that scale useful.
+Ford is one example of a company recognizing a complement shift: automation changed which expertise it needed and where. After automated quality systems disappointed, Ford brought veteran engineers into design reviews, training, and improving the tools. The new division of labor is simple: automation scans, tests, and flags at scale; engineers bring the failure knowledge, judgment, and feedback that make that scale useful.
 
-Ford’s case is industrial quality. LLMs create the same pressure across knowledge work by making it fast and cheap to find, compare, classify, summarize, translate, and recombine information. That changes what the rest of the system needs.
+LLMs create the same pressure across knowledge work by making it fast and cheap to find, compare, classify, summarize, translate, and recombine information. That changes what the rest of the system needs.
 
 Economists call those needs complements. They can be data, evaluation, exception handling, judgment, authority, trust, or a person who owns the result. Some old work disappears. Some moves. Some becomes more valuable. Some has to be invented.
 
