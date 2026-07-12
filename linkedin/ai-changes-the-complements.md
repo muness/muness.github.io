@@ -11,11 +11,9 @@ Over the past three years, Ford assembled about 350 experienced technical specia
 
 Ford also put vehicle engineering, manufacturing, supply chain, and quality under one leader, brought suppliers into design earlier, gave plant operators AI vision systems, and expanded automated software testing.
 
-Ford did not replace automation with people. It added the experience the automated system lacked and changed where that experience enters the work.
+Ford did not replace automation with people. It changed the pairing: automation supplies scale; veteran engineers supply the failure knowledge, judgment, and feedback that make that scale useful.
 
-That is what it means for AI to change the complements.
-
-LLMs make a broad class of information work fast and cheap: finding, comparing, classifying, summarizing, translating, and recombining. That changes what the rest of the system needs.
+Ford’s case is industrial quality. LLMs create the same pressure across knowledge work by making it fast and cheap to find, compare, classify, summarize, translate, and recombine information. That changes what the rest of the system needs.
 
 Economists call those needs complements. They can be data, evaluation, exception handling, judgment, authority, trust, or a person who owns the result. Some old work disappears. Some moves. Some becomes more valuable. Some has to be invented.
 
