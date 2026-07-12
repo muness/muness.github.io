@@ -7,9 +7,13 @@ Constraint: Keep the article link out of the post and put it in the first commen
 
 ## Post
 
-Last year, Commonwealth Bank of Australia (CBA) told 45 customer-service employees that an AI voice bot had made their jobs redundant. Within weeks, the bank reversed the decision. Workers said calls had increased while the bank offered overtime and put team leaders on the phones.
+Over the past three years, Ford assembled about 350 experienced technical specialists after automated quality systems produced disappointing results. Some were former Ford employees; others came from suppliers. Roughly 300 veteran engineers now run mandatory weekly design reviews to find failures before designs reach factories.
 
-The mistake was treating a change in one visible task as proof that the whole job had disappeared. A job is a bundle. A manager gathers status, but also resolves conflict, coaches people, remembers why a promise was made, and absorbs exceptions before they reach the top. A support representative writes replies, but also recognizes the unusual case, repairs bad guidance, and earns trust with a frustrated customer.
+Ford also put vehicle engineering, manufacturing, supply chain, and quality under one leader, brought suppliers into design earlier, gave plant operators AI vision systems, and expanded automated software testing.
+
+Ford did not replace automation with people. It added the experience the automated system lacked and changed where that experience enters the work.
+
+That is what it means for AI to change the complements.
 
 LLMs make a broad class of information work fast and cheap: finding, comparing, classifying, summarizing, translating, and recombining. That changes what the rest of the system needs.
 
@@ -17,7 +21,9 @@ Economists call those needs complements. They can be data, evaluation, exception
 
 If everyone can produce a plan in ten minutes, writing the plan is no longer the constraint. Choosing among the plans, reconciling conflicts, and killing the bad ones may be.
 
-Some roles should disappear. Before removing one, identify what the new system still requires and who or what will provide it.
+Some roles should disappear. Block cut its workforce by more than 40 percent in February. In its first quarterly report afterward, Block said code changes per engineer had risen while incidents after code changes continued to fall. Those are early, company-reported signs consistent with its bet, not proof that the cut caused the improvement. The possibility is real: some companies will become smaller and better.
+
+Before removing a role, identify which parts are now cheap, which parts the new system still needs, and who or what will provide them.
 
 The hiring book Who offers a useful discipline: define the outcome before choosing the candidate. Here the candidates are complete ways of doing the work: people, models, data, process, and authority. The model alone is not the candidate.
 
@@ -29,6 +35,6 @@ The article and sources are in the first comment.
 
 ## First comment
 
-Full article, including the CBA and Salesforce cases and the scorecard adapted from Who:
+Full article, sources, and the scorecard adapted from Who:
 
 https://muness.com/posts/ai-changes-the-complements/
