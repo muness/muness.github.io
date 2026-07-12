@@ -4,86 +4,83 @@ date: 2026-07-12 12:00:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "LLMs make many information transformations fast and cheap. Before deciding which jobs survive, define the outcome, find the judgment, and test the complete work system needed to produce it reliably."
+excerpt: "A model can produce an artifact without replacing the capability behind it. Adapt the scorecard from Who to define the outcome, locate judgment, and test the people, models, and complements needed to produce it."
 ---
 
-*Who: The A Method for Hiring* begins with a simple discipline: write the scorecard before you choose the person.
+*Who: The A Method for Hiring* tells managers to write a scorecard before they interview anybody. Define the mission, the outcomes, and the skills the work requires. Then assess candidates against that scorecard.[^who]
 
-The scorecard is not a generic job description. It names the mission, the outcomes a person must produce, and the competencies the work requires. Only then do you find and assess candidates.[^who]
+Without it, the candidate starts defining the job. Someone charming walks into the room, tells a great story, and the interviewers quietly revise what they thought they needed. The process feels rigorous. Mostly they are reacting to the person in front of them.
 
-That order matters even more now, but the object being scored has changed. Before asking whether an LLM should assist a person, replace a task, or eliminate a role, we need to redefine the work for a world in which transforming information is suddenly cheap.
+We are making the same mistake with LLMs across entire organizations. A model produces a good summary, a plausible analysis, a clean contract clause, or a working piece of code. The artifact is impressive, so we start asking how many people it can replace. We are interviewing the candidate before we have defined the job.
 
-## What became cheap
+## The model changed the price of part of the job
 
-LLMs can find, extract, compare, classify, summarize, translate, and recombine information in seconds. They can turn notes into a plan, a policy into a checklist, a customer history into a suggested response, or a pile of research into a first-pass argument.
+LLMs are good at transforming information. Give one a pile of text and it can find, extract, compare, classify, summarize, translate, and recombine the material in seconds. A customer history becomes a suggested response. Meeting notes become a plan. A policy becomes a checklist. Research becomes a first-pass argument.
 
-Human beings do much of this work too. We search memory, recognize patterns, match a new case to old ones, and assemble an answer from what seems relevant. We are not always good at doing it exhaustively, consistently, or at high volume. An LLM can inspect more material, entertain more combinations, and produce a plausible answer before a person has finished opening the files.
+People do much of this work too. We search memory, match a new case to old ones, decide what seems relevant, and assemble an answer. We are not especially good at doing it exhaustively, consistently, or at high volume. A model can inspect more material and produce more possible answers before a person has finished opening the files.
 
-That is real pressure on knowledge work. It is also an opportunity.
+That changes the price of a broad class of knowledge work. When an important input becomes cheaper, companies do not keep the rest of the system fixed and merely spend less. They reorganize around the new price. Some tasks shrink. Old jobs come apart. The things needed to use the cheap input well become more valuable. The pressure is real even if an LLM never replaces a whole job.
 
-When an important input gets cheaper, a production system does not stay the same and merely spend less on that input. Work gets reorganized around the new price. Some tasks shrink. Some old roles come apart. The complements needed to use the cheaper input well become more valuable. That pressure exists even if an LLM never replaces a whole job.
+## A job is a bundle, not an output
 
-But a plausible answer is not the same as a reliable result. Someone still has to decide whether the question was right, whether the source material can be trusted, which facts matter here, what trade-off to make, and who will answer for the consequence. The model makes a broad class of information transformations cheaper. It does not make the rest of the work disappear.
+Take a manager. The visible work may include gathering status, condensing updates, routing decisions, and monitoring progress. The same person may also notice a conflict before it becomes expensive, remember why a customer promise was made, coach someone through work they have never done, negotiate priorities across teams, and accept responsibility when a plan fails.
 
-The mistake is to look at the generated artifact and conclude that the job has been reproduced.
+The first group of tasks is now cheaper. That creates pressure to change the role. It tells us almost nothing about what should happen to the second group.
 
-## Jobs hide the unit we need to redesign
+The same problem appears throughout knowledge work. A customer-support representative does not merely produce replies. A lawyer does not merely produce clauses. An analyst does not merely produce a deck. A recruiter does not merely match a résumé to a list of requirements.
 
-A job is a bundle assembled under older constraints. Take a manager. The role may include gathering status, routing decisions, explaining strategy, noticing conflict, coaching people, carrying local history, negotiating priorities, and accepting responsibility when a plan fails.
+Jobs bundle information processing with judgment, relationships, authority, memory, and accountability. LLMs change the cost of those ingredients unevenly. Looking at a generated artifact and declaring the job reproduced is like hiring the candidate because the interview went well.
 
-An LLM can help gather status and condense updates. It may even suggest how to route a routine decision. That does not tell us what happens to the coaching, trust, context, negotiation, or accountability that happened alongside the visible administrative work.
+The opposite story is just as shallow. Human judgment matters, therefore the old job must remain intact. That also skips the work of explaining what changed.
 
-The same problem appears elsewhere. A customer-support representative does not merely produce replies. A lawyer does not merely produce clauses. An analyst does not merely produce a deck. A recruiter does not merely match a résumé to a list of requirements. The artifact is evidence that work happened. It is not the whole capability.
+## Score the outcome and the work around it
 
-This is why both common stories about AI and jobs are too easy. “AI can produce the artifact, so we need fewer people” ignores the work surrounding the artifact. “AI cannot exercise human judgment, so the job remains intact” ignores how much of the old bundle can now be done differently. Neither story explains much.
+The useful transfer from *Who* is the order of operations: define what must be accomplished before selecting who or what will do it.
 
-## Apply the scorecard to the work system
+The scorecard now has to describe the outcome and all the work needed to produce it, not an inherited role. Start with the outcome and the ways it can fail. Then separate four parts of the work:
 
-This is the useful transfer from *Who*: define what must be accomplished before selecting who or what will do it.
+1. **Transformation:** What information must be found, compared, classified, summarized, translated, or recombined?
+2. **Judgment:** Where must someone frame the question, decide what matters, resolve ambiguity, make a trade-off, or accept responsibility?
+3. **Complements:** What context, data, expertise, relationships, authority, feedback, evaluation, and controls make the result reliable?
+4. **Evidence:** What would we have to observe before changing the workflow, role, or organization?
 
-For AI-era work, the candidate is no longer just a person. It is a complete configuration of people, models, data, workflow, authority, and controls. The scorecard should answer five questions:
+Once the scorecard exists, the candidate changes. It is no longer the model by itself. The candidates are complete ways of doing the work: a person in the existing job, a person using an LLM, a smaller team with better data and different authority, or a centralized group that operates the model for everyone else.
 
-1. **What outcome must this work produce?** Name the quality bar and the failures that would be expensive, dangerous, or hard to reverse.
-2. **Which information transformations does it require?** Identify what must be found, compared, classified, summarized, translated, or recombined.
-3. **Where is judgment required?** Find the points where someone must frame the question, decide what matters, resolve ambiguity, make a trade-off, or accept responsibility.
-4. **What makes the result reliable?** Name the context, data, expertise, relationships, authority, feedback, evaluation, and controls the work needs.
-5. **What evidence would change the design?** Test more than one configuration on bounded real work and observe quality, speed, review burden, exceptions, and downstream behavior.
+Compare those configurations against the scorecard. A model can produce an artifact after someone supplies the prompt and context. The business outcome still requires the rest of the system.
 
-Only then should we redesign the role or the organization.
+## What happens to expertise?
 
-That sounds slower than buying a tool and setting an adoption target. It is faster than removing a capability you did not know a person was carrying and rebuilding it after quality falls, customers leave, or the remaining staff burn out.
+One early study shows why this matters. Researchers studied 5,179 customer-support agents using a generative-AI assistant. Access to the tool increased issues resolved per hour by 14 percent on average and by 34 percent for novice and lower-skilled workers, with little effect on the most experienced workers.[^support]
 
-## The complements become the work
+The authors found suggestive evidence that the system was making the practices of stronger workers available to newer ones. That is more useful than a claim that “AI improves support productivity.” It tells us something about the mechanism: knowledge that used to travel through experience and informal learning could now reach a novice during the work.
 
-Economists have long argued that general-purpose technologies do not create their full value by being dropped into an unchanged organization. They require complementary investments in processes, skills, products, and business models.[^jcurve] Research on earlier information technology likewise found that the payoff was tied to changes in workplace organization, including broader responsibilities and more decentralized decision-making.[^workplace]
+It also raises the next question. If fewer experts handle routine cases, who keeps discovering the better practices that the system will distribute tomorrow? Who notices the new exception, updates the guidance, checks whether the suggested reply is actually helping the customer, and owns the result when it is wrong?
 
-LLMs make this concrete. If first-pass analysis becomes cheap, then trustworthy context, evaluation, correction, and judgment become a larger share of the cost. If a manager can follow more work, then coaching, exception handling, and attention become the limit. If a support agent can answer faster, then escalation design, product knowledge, and the ability to recognize the unusual case matter more.
+The answer may be that expert work moves away from producing every reply and toward handling exceptions, improving the system, coaching people, and defining the quality bar. It may also be that a company cuts too deeply, stops producing the knowledge its tool depends on, and discovers the loss months later. The study does not answer that. A real operating test has to.
 
-The complements are not generic additions around the model. They depend on the outcome and on what the model made cheap.
+## Look for what the cheaper work now requires
 
-This also means the answer will differ across people and settings. In a study of 5,179 customer-support agents, access to a generative-AI assistant increased issues resolved per hour by 14 percent on average and by 34 percent for novice and lower-skilled workers, with little effect on the most experienced workers.[^support] The same tool changed the value of experience differently inside the same job.
+Economists use the word *complement* for something whose value rises when it is combined with something else. General-purpose technologies have historically required companies to invest in new processes, skills, products, and business models before the gains showed up.[^jcurve] Earlier research found that information technology worked together with organizational changes such as broader responsibilities, decentralized decisions, and self-managing teams.[^workplace]
 
-That result does not give us a universal staffing ratio. It gives us a better question: what knowledge was the system able to make available to novices, what remained scarce among experts, and how should the workflow and role change as a result?
+LLMs will require their own complements, but “people, process, and technology” does not tell us what they are. Look at the information the model made cheaper to transform, then ask what the new way of working requires.
 
-## Test configurations, not demos
+If first-pass analysis becomes cheap, trustworthy context, evaluation, correction, and judgment take a larger share of the work. If a manager can follow more activity, coaching, exception handling, and attention become the limit. If a support agent can answer faster, recognizing the unusual case and fixing the source of recurring questions may matter more than composing the next reply.
 
-A demo asks whether the model can produce something impressive. A work-system test asks whether the organization can produce a reliable outcome repeatedly.
+Some complements will be software: retrieval, permissions, tests, logs, and feedback loops. Some will be organizational: different decision rights, escalation paths, incentives, and team boundaries. Some will be human: expertise, taste, trust, care, negotiation, and the willingness to own a decision.
 
-Suppose a company wants account managers to identify renewal risk earlier. One design gives every account manager an LLM and leaves the job unchanged. Another has the model continuously assemble signals from support, product usage, contracts, and meeting history, then asks account managers to judge the risk and choose an intervention. A third centralizes that analysis in an operations team. A fourth changes which decisions account managers can make without approval.
+We cannot know which ones matter by staring at the org chart. We have to follow the outcome and see what the new system needs.
 
-Those are not four adoption levels. They are four different operating models. Each needs different data, expertise, review, authority, and feedback. The right test is not which one produces the best-looking risk summary. It is which one changes customer conversations early enough to improve renewals without creating false alarms, missed accounts, or a review burden that consumes the gain.
+## Run the interview on real work
 
-The trial should be allowed to change the scorecard too. Real work will reveal outcomes we forgot, failure modes we understated, and judgment that was invisible until we tried to remove it.
+A demo asks whether the model can produce something impressive. A useful test asks whether a complete configuration can produce a reliable outcome repeatedly.
 
-## We have to learn our way through this
+Give competing configurations the same bounded work. Measure the intended outcome, not just output volume. Watch the review burden, the exceptions, the downstream failures, and what people do with the answer. Name the person who still owns the result. Then ask the question a scorecard makes possible: is this configuration good enough?
 
-I do not know which combinations will work. Nobody does yet. LLMs are changing too quickly, and the work they enter is too varied, for one org chart or human-to-agent ratio to be the answer.
+If it is not, change it and run the work again. The trial should be allowed to change the scorecard too. Real work will expose outcomes we forgot, expensive failures we understated, and judgment that was invisible until we tried to remove it.
 
-But we can be more disciplined about learning.
+I do not know which combinations will work. LLMs are changing too quickly, and the work they enter is too varied, for one org chart or human-to-agent ratio to be the answer. That uncertainty is a reason to run better experiments, explain the decisions, and keep the people doing the work involved in redesigning it.
 
-Start with the outcome. Separate cheap information transformation from scarce judgment. Name the complements that make the result reliable. Test a complete configuration in real work. Explain what changed and what the evidence showed. Then revise the roles, the technology, and the scorecard together.
-
-We will get some of this wrong. Calling workers obsolete or leaders narcissists will not help us get it right. We need to explain our decisions plainly, expose what we are assuming, and pull together to repair what the experiments teach us.
+The scorecard will not give us the future of work. It can keep us from hiring the future after one impressive interview.
 
 [^who]: Geoff Smart and Randy Street describe the A Method as Scorecard, Source, Select, and Sell. Their [official excerpt](https://geoffsmart.com/books/who-the-a-method-for-hiring/who-the-book-excerpt/) defines a scorecard through the mission, outcomes, and competencies required for a role.
 [^jcurve]: Erik Brynjolfsson, Daniel Rock, and Chad Syverson, [“The Productivity J-Curve: How Intangibles Complement General Purpose Technologies”](https://www.nber.org/papers/w25148), describe the complementary investments required to absorb general-purpose technologies.
