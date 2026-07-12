@@ -68,7 +68,7 @@ The study does not answer that. The company has to design and test the answer.
 
 ## Use the scorecard to find the missing work
 
-This is where *Who: The A Method for Hiring* becomes useful. Its hiring method starts with a scorecard: define the mission, outcomes, and competencies before interviewing candidates.[^who] Otherwise the impressive candidate starts redefining the job in the interview.
+In *Who*, Geoff Smart and Randy Street tell employers to define the job before assessing candidates. Their scorecard records the job's mission, outcomes, and required competencies.[^who] Otherwise the impressive candidate starts redefining the job in the interview.
 
 The transfer to AI is straightforward: define the outcome before deciding which combination of people and technology should produce it. But there is an important difference. In hiring, the scorecard describes a job that is assumed to exist. Here, the technology is changing the work, so the scorecard must be a hypothesis that changes as the company learns.
 
