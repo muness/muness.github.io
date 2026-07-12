@@ -21,9 +21,9 @@ General-purpose technologies require companies to invent new processes, skills, 
 
 LLMs create this pressure by making a broad class of information work fast and cheap. They can find, extract, compare, classify, summarize, translate, and recombine material in seconds. A customer history becomes a suggested response. Meeting notes become a plan. A policy becomes a checklist. Research becomes a first-pass argument.
 
-When the price of that work falls, the rest of the system does not stay fixed. Some work disappears. Some moves. Some becomes more important. Some has to be invented.
+Those faster drafts and summaries do not finish the work. People still have to check the result, handle exceptions, reconcile conflicts, and decide what happens next.
 
-The simple replacement story stops at what the model can do. The organization still has to ask what it needs now that the model can do it.
+Automating one task does not make the whole role unnecessary. Before removing the role, a company has to identify everything else the person contributed and decide who or what will provide it now.
 
 ## Jobs hide the complements inside them
 
