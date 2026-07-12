@@ -1,18 +1,20 @@
 ---
 id: leaders-redesign-knowledge-work-for-llms
 status: candidate
-mechanism: "Leaders trace how LLMs change the work and its constraints, then rebuild and test the human, technical, and organizational complements needed to produce the outcome reliably."
+mechanism: "Leaders identify what LLMs make cheap, specify the expertise, judgment, feedback, process, and authority the new division of labor needs, then test complete configurations before or after changing roles."
 files:
   - _posts/2026-07-12-ai-changes-the-complements.md
+  - linkedin/ai-changes-the-complements.md
 ---
 
 # Leaders Redesign Knowledge Work for LLMs
 
 ## Aim
 
-**Aim:** When LLMs make part of a job fast and cheap, leaders redesign the
-complements around the new production system instead of eliminating the whole
-role and discovering the missing capability after the cut.
+**Aim:** When LLMs make part of a job fast and cheap, leaders identify how the
+division of labor must change before or after changing roles. They remove work
+that no longer matters, move or strengthen expertise that becomes more
+valuable, and build the feedback, process, and authority the new system needs.
 
 **Why it matters:** Existing jobs bundle information processing with judgment,
 relationships, authority, learning, repair, and accountability. LLMs affect
