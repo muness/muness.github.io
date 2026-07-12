@@ -9,7 +9,7 @@ excerpt: "AI can make part of a job cheap without replacing the capability behin
 
 In July 2025, Commonwealth Bank of Australia (CBA) told 45 customer-service employees that an AI voice bot had made their jobs redundant. Within weeks, the bank reversed the decision. It admitted that it had not considered all the relevant business needs and had not been thorough enough in deciding which roles were still required. Workers told their union that calls had increased while the bank offered overtime and put team leaders on the phones.[^cba]
 
-The bot may have handled some calls. The mistake was jumping from that visible task to the conclusion that the whole role had become unnecessary. The bank tried to remove a bundle of work before it understood which parts the new system still needed.
+The mistake was jumping from that visible task to the conclusion that the whole role had become unnecessary. The bank tried to remove a bundle of work before it understood which parts the new system still needed.
 
 That is a complement problem: the technology changed one part of the work, and the bank had not yet understood what the rest of the system required.
 
@@ -41,6 +41,8 @@ Removing a job because its visible artifact became cheap can remove work that wa
 
 This is not a defense of every role or layer. Some work really can disappear. Some outcomes are no longer worth producing. Some old coordination existed only because information moved slowly, and software can remove it without creating another job.
 
+Nor is widespread AI replacement the current norm. A nationally representative U.S. Census Bureau working paper found that 66 percent of firms using AI used it only to augment tasks; only 2 percent reported an AI-related decrease in employment.[^census]
+
 The work bundle can change in four ways:
 
 - **Some disappear.** Routine gathering, formatting, routing, and translation may no longer be worth paying people to do.
@@ -52,9 +54,9 @@ The work bundle can change in four ways:
 
 ## The expertise has to go somewhere
 
-Salesforce offers a useful contrast to the CBA mistake, with the caveat that this is Salesforce describing its own product and reorganization. The company says its AI support agent handled 2.6 million conversations and resolved 63 percent of customer questions with satisfaction scores similar to human agents. Its support organization shrank through attrition and redeployment, while hundreds of support engineers moved into growing parts of the company.[^salesforce]
+Salesforce describes a different approach. Its evidence is self-reported, but the organizational change is concrete. The company says its AI support agent handled 2.6 million conversations and resolved 63 percent of customer questions with satisfaction scores similar to human agents. Its support organization shrank through attrition and redeployment, while hundreds of support engineers moved into growing parts of the company.[^salesforce]
 
-The interesting part is where the expertise went. Salesforce says it doubled the team evaluating the AI agent's answers and conversations. Former support engineers moved into AI operations, customer adoption, renewals, and roles that feed customer problems back into product development. Routine replies became cheaper; product knowledge, evaluation, prevention, and customer judgment became complements to the new system.
+The interesting part is where the expertise went. Salesforce says it doubled the team evaluating the AI agent's answers and conversations. Former support engineers moved into AI operations, customer adoption, renewals, and roles that feed customer problems back into product development. Routine replies became cheaper; product knowledge, evaluation, prevention, and customer context became complements to the new system.
 
 Research on 5,179 customer-support agents points to the same question. A generative-AI assistant increased issues resolved per hour by 14 percent on average and by 34 percent for novice and lower-skilled workers, with little effect on the most experienced workers. The authors found suggestive evidence that the system was making the practices of stronger workers available to newer ones.[^support]
 
@@ -79,11 +81,9 @@ The same questions belong before a cut. Talk to the people doing the work, obser
 
 ## The work will come back differently
 
-Most AI-using firms are not cutting employment because of it. A nationally representative U.S. Census Bureau working paper found that 66 percent of firms using AI used it only to augment tasks; only 2 percent reported an AI-related decrease in employment.[^census] That is useful contrary evidence. The pressure is real, but a universal wave of AI replacement is not.
-
 Where companies do cut too early, I do not expect a simple return to the old organization. The missing function will show up as rework, stale guidance, unresolved exceptions, customer frustration, executive overload, or burned-out survivors. Companies will rebuild it under new titles, move it to experts or operations teams, encode some of it in software, or restore parts of the old role.
 
-Some firms will become genuinely smaller and better. Others will discover that they removed a capability along with a cost. The difference will not be whether they were optimistic or skeptical about AI. It will be whether they understood and rebuilt the complements.
+Some firms will become genuinely smaller and better. Others will discover that they removed a capability along with a cost. Their results will depend on whether they understood and rebuilt the complements.
 
 I do not know which combination will work for a given company. That is why the explanation matters. When a gap appears, “AI worked” and “AI failed” are both too shallow. Ask which complement changed, where it will come from now, how we will know it works, and who owns the result.
 
@@ -91,7 +91,7 @@ Rebuild the capability, not the old org chart.
 
 [^cba]: Stephanie Chalmers, [“Commonwealth Bank backtracks on AI job cuts, apologises for ‘error’ as call volumes rise”](https://www.abc.net.au/news/2025-08-21/cba-backtracks-on-ai-job-cuts-as-chatbot-lifts-call-volumes/105679492), *ABC News*, August 21, 2025. The call-volume and overtime account came from the [Finance Sector Union](https://www.fsunion.org.au/win-cba-backflips-on-customer-service-job-cuts-admits-they-got-it-wrong/); CBA separately acknowledged that its role assessment had missed relevant business considerations.
 [^jcurve]: Erik Brynjolfsson, Daniel Rock, and Chad Syverson, [“The Productivity J-Curve: How Intangibles Complement General Purpose Technologies”](https://www.nber.org/papers/w25148).
+[^census]: Kathryn Bonney et al., [“The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks”](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html), U.S. Census Bureau working paper, April 2026.
 [^salesforce]: Salesforce's company-authored accounts of its [AI operations and evaluation changes](https://www.salesforce.com/news/stories/agentic-enterprise-workforce-evolution/) and [support-engineer redeployment](https://www.salesforce.com/news/stories/salesforce-reshaping-workforce-in-age-of-ai/).
 [^support]: Erik Brynjolfsson, Danielle Li, and Lindsey Raymond, [“Generative AI at Work”](https://www.nber.org/papers/w31161).
 [^who]: Geoff Smart and Randy Street's [official excerpt from *Who: The A Method for Hiring*](https://geoffsmart.com/books/who-the-a-method-for-hiring/who-the-book-excerpt/).
-[^census]: Kathryn Bonney et al., [“The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks”](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html), U.S. Census Bureau working paper, April 2026.
