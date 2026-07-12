@@ -31,10 +31,10 @@ If the cut has already happened, look at what got worse: quality, exceptions, wo
 
 AI can eliminate tasks. It also changes the work required around them.
 
-The article and sources are in the first comment.
+The article is in the first comment.
 
 ## First comment
 
-Full article, sources, and the scorecard adapted from Who:
+Full article and the scorecard adapted from Who:
 
 https://muness.com/posts/ai-changes-the-complements/
