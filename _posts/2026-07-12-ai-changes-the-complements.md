@@ -7,13 +7,11 @@ comments: true
 excerpt: "LLMs can reduce the work required for some tasks while increasing the need for evaluation, exception handling, judgment, and accountability."
 ---
 
-Over the past three years, Ford assembled about 350 experienced technical specialists, including former employees and engineers from suppliers, after automated quality systems produced disappointing results. Roughly 300 veteran engineers now act as internal auditors, running mandatory weekly design reviews to find failures before designs reach factories.[^ford]
+In July 2025, Commonwealth Bank of Australia (CBA) told 45 customer-service employees that an AI voice bot had made their jobs redundant. Within weeks, the bank reversed the decision. It admitted that it had not considered all the relevant business needs and had not been thorough enough in deciding which roles were still required. Workers told their union that calls had increased while the bank offered overtime and put team leaders on the phones.[^cba]
 
-Ford also put vehicle engineering, manufacturing, supply chain, and quality under one leader, brought suppliers into design earlier, gave plant operators AI vision systems, and expanded automated software testing. In 2026, J.D. Power ranked Ford first among mainstream brands.
+The mistake was jumping from that visible task to the conclusion that the whole role had become unnecessary. The bank tried to remove a bundle of work before it understood which parts the new system still needed.
 
-Ford did not replace automation with people. The veteran engineers contribute decades of failure knowledge. Suppliers find risks earlier. Operators use AI vision to spot anomalies. Automated tests exercise software at a scale people cannot. One leader owns the handoffs, so teams can act on what each part finds.
-
-Ford changed several things at once, so no single intervention explains the quality improvement. The company redesigned a complete way of producing quality. Each part makes the others more useful. Those parts are complements.
+That is a complement problem: the technology changed one part of the work, and the bank had not yet understood what the rest of the system required.
 
 ## AI changes what the rest of the system needs
 
@@ -43,10 +41,6 @@ Removing a job because its visible artifact became cheap can remove work that wa
 
 This is not a defense of every role or layer. Some work really can disappear. Some outcomes are no longer worth producing. Some old coordination existed only because information moved slowly, and software can remove it without creating another job.
 
-Block is making the case that a large cut can work. In February 2026, it reduced its workforce from more than 10,000 people to fewer than 6,000, saying that AI tools allowed a much smaller team to do more. In its first quarterly report after the cut, Block said production code changes per engineer had risen more than 2.5 times since January while incidents after code changes continued to fall.[^block]
-
-Those are early, company-reported signs consistent with Block's bet. They do not prove that the cuts caused the improvement; Block attributed the results to its AI investments and broader reliability work. We do not yet know whether they will last or whether missing work will appear elsewhere. Some firms may become smaller and better.
-
 Nor is widespread AI replacement the current norm. A nationally representative U.S. Census Bureau working paper found that 66 percent of firms using AI used it only to augment tasks; only 2 percent reported an AI-related decrease in employment.[^census]
 
 The work bundle can change in four ways:
@@ -58,9 +52,9 @@ The work bundle can change in four ways:
 
 “Complement” is not another word for a human being. It is a specific contribution the new system needs to produce an outcome. That contribution might come from a person, software, a different process, a new allocation of authority, or a decision to stop producing the outcome at all.
 
-## The expertise still has to go somewhere
+## The expertise has to go somewhere
 
-Salesforce describes a narrower version in customer support. Its evidence is self-reported, but the organizational change is concrete. The company says its AI support agent handled 2.6 million conversations and resolved 63 percent of customer questions with satisfaction scores similar to human agents. Its support organization shrank through attrition and redeployment, while hundreds of support engineers moved into growing parts of the company.[^salesforce]
+Salesforce describes a different approach. Its evidence is self-reported, but the organizational change is concrete. The company says its AI support agent handled 2.6 million conversations and resolved 63 percent of customer questions with satisfaction scores similar to human agents. Its support organization shrank through attrition and redeployment, while hundreds of support engineers moved into growing parts of the company.[^salesforce]
 
 The interesting part is where the expertise went. Salesforce says it doubled the team evaluating the AI agent's answers and conversations. Former support engineers moved into AI operations, customer adoption, renewals, and roles that feed customer problems back into product development. Routine replies became cheaper; product knowledge, evaluation, prevention, and customer context became complements to the new system.
 
@@ -95,10 +89,9 @@ I do not know which combination will work for a given company. That is why the e
 
 Rebuild the capability, not the old org chart.
 
+[^cba]: Stephanie Chalmers, [“Commonwealth Bank backtracks on AI job cuts, apologises for ‘error’ as call volumes rise”](https://www.abc.net.au/news/2025-08-21/cba-backtracks-on-ai-job-cuts-as-chatbot-lifts-call-volumes/105679492), *ABC News*, August 21, 2025. The call-volume and overtime account came from the [Finance Sector Union](https://www.fsunion.org.au/win-cba-backflips-on-customer-service-job-cuts-admits-they-got-it-wrong/); CBA separately acknowledged that its role assessment had missed relevant business considerations.
 [^jcurve]: Erik Brynjolfsson, Daniel Rock, and Chad Syverson, [“The Productivity J-Curve: How Intangibles Complement General Purpose Technologies”](https://www.nber.org/papers/w25148).
 [^census]: Kathryn Bonney et al., [“The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks”](https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html), U.S. Census Bureau working paper, April 2026.
-[^block]: Block's [February 2026 shareholder letter](https://www.sec.gov/Archives/edgar/data/1512673/000119312526076557/d108590dex991.htm) announced the reduction from more than 10,000 employees to fewer than 6,000. Its [May 2026 shareholder letter](https://www.sec.gov/Archives/edgar/data/1512673/000119312526212032/d132441dex991.htm) reported the early engineering measures. Both are company-authored accounts filed with the SEC.
-[^ford]: Bloomberg reported Ford's [use of about 350 experienced specialists after disappointing results from automated quality systems](https://news.bloomberglaw.com/tech-and-telecom-law/ford-ai-hiccups-push-carmaker-to-rehire-gray-beard-inspectors). Ford's company-authored [account of its quality overhaul](https://www.fromtheroad.ford.com/us/en/articles/2026/ford-tops-jd-power-initial-quality-study) describes the roughly 300 internal auditors and the organizational, supplier, plant, and testing changes. [J.D. Power's study](https://www.jdpower.com/business/press-releases/2026-us-initial-quality-study-iqs) independently reports the 2026 ranking; it does not establish which change caused it.
 [^salesforce]: Salesforce's company-authored accounts of its [AI operations and evaluation changes](https://www.salesforce.com/news/stories/agentic-enterprise-workforce-evolution/) and [support-engineer redeployment](https://www.salesforce.com/news/stories/salesforce-reshaping-workforce-in-age-of-ai/).
 [^support]: Erik Brynjolfsson, Danielle Li, and Lindsey Raymond, [“Generative AI at Work”](https://www.nber.org/papers/w31161).
 [^who]: Geoff Smart and Randy Street's [official excerpt from *Who: The A Method for Hiring*](https://geoffsmart.com/books/who-the-a-method-for-hiring/who-the-book-excerpt/).
