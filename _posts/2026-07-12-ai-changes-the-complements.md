@@ -4,7 +4,7 @@ date: 2026-07-12 12:00:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "LLMs can reduce the work required for some tasks while increasing the need for evaluation, exception handling, judgment, and accountability elsewhere."
+excerpt: "LLMs can reduce the work required for some tasks while increasing the need for evaluation, exception handling, judgment, and accountability."
 ---
 
 In July 2025, Commonwealth Bank of Australia (CBA) told 45 customer-service employees that an AI voice bot had made their jobs redundant. Within weeks, the bank reversed the decision. It admitted that it had not considered all the relevant business needs and had not been thorough enough in deciding which roles were still required. Workers told their union that calls had increased while the bank offered overtime and put team leaders on the phones.[^cba]
