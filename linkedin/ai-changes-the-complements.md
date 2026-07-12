@@ -7,11 +7,7 @@ Constraint: Keep the article link out of the post and put it in the first commen
 
 ## Post
 
-Over the past three years, Ford assembled about 350 experienced technical specialists after automated quality systems produced disappointing results. Some were former Ford employees; others came from suppliers. Roughly 300 veteran engineers now run mandatory weekly design reviews to find failures before designs reach factories.
-
-Ford also put vehicle engineering, manufacturing, supply chain, and quality under one leader, brought suppliers into design earlier, gave plant operators AI vision systems, and expanded automated software testing.
-
-Ford did not replace automation with people. It changed the pairing: automation supplies scale; veteran engineers supply the failure knowledge, judgment, and feedback that make that scale useful.
+After automated quality systems disappointed, Ford brought veteran engineers into design reviews, training, and improving the tools. The new division of labor is simple: automation scans, tests, and flags at scale; engineers bring the failure knowledge, judgment, and feedback that make that scale useful.
 
 Ford’s case is industrial quality. LLMs create the same pressure across knowledge work by making it fast and cheap to find, compare, classify, summarize, translate, and recombine information. That changes what the rest of the system needs.
 
