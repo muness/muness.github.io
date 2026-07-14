@@ -32,7 +32,7 @@ The conventional version is in my [résumé](/assets/muness-resume.pdf) and on [
 
 ## Room to choose
 
-I limit consulting so I have time for open-source work, writing, and things I want to make—like a physical knob on the couch controlling the system in the basement.
+I limit consulting so I have time for my family, open-source work, writing, and things I want to make—like a physical knob on the couch controlling the system in the basement.
 
 Find me on [GitHub](https://github.com/muness), read the [writing](/writing/), or [start with a problem](/contact/).
 
