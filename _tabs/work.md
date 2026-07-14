@@ -7,9 +7,8 @@ body_class: consultancy-work
 ---
 
 <header class="consultancy-page-header consultancy-work-header">
-  <h1>The job comes before the model.</h1>
+  <h1>Client systems and public projects.</h1>
   <div class="consultancy-work-header__context">
-    <p>The work below started with someone trying to find an expert, change a business rule, write a review, or staff a project. The model was one part of the system we built around that job.</p>
     <nav aria-label="Work page sections">
       <ul class="consultancy-section-nav">
         <li><a href="#client-systems">Client systems</a></li>
