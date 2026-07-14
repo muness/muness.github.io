@@ -77,8 +77,8 @@ body_class: consultancy-home
 
 <section class="consultancy-closing" aria-labelledby="fit-title">
   <div>
-    <h2 id="fit-title">Have a case we should look at?</h2>
-    <p>Tell me who is doing the job, what they are trying to do, and what makes one case hard.</p>
+    <h2 id="fit-title">Let's talk.</h2>
+    <p>If you want to work together, get in touch.</p>
   </div>
   <a class="consultancy-button" href="/contact/">Tell me about the work</a>
 </section>
