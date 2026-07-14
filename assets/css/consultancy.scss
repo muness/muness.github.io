@@ -15,10 +15,10 @@
   --consult-frame: 70rem;
   --consult-reading: 70ch;
   --consult-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --consult-display: clamp(2.25rem, 4vw, 3.5rem);
-  --consult-section: clamp(1.6rem, 2.3vw, 2.2rem);
-  --consult-subhead: clamp(1.15rem, 1.5vw, 1.35rem);
-  --consult-intro: clamp(1.05rem, 1.6vw, 1.2rem);
+  --consult-display: clamp(2rem, 3.25vw, 3rem);
+  --consult-section: clamp(1.4rem, 1.8vw, 1.9rem);
+  --consult-subhead: clamp(1.1rem, 1.25vw, 1.25rem);
+  --consult-intro: clamp(1rem, 1.25vw, 1.1rem);
 }
 
 html {
@@ -69,25 +69,25 @@ html {
   color: var(--consult-ink);
   font-family: inherit;
   font-variation-settings: "wdth" 88;
-  font-weight: 760;
-  letter-spacing: -0.035em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
 .consultancy-shell h1 {
   max-width: 14ch;
   font-size: var(--consult-display);
-  line-height: 1.02;
+  line-height: 1.06;
 }
 
 .consultancy-shell h2 {
   font-size: var(--consult-section);
-  line-height: 1.08;
+  line-height: 1.12;
 }
 
 .consultancy-shell h3 {
   font-size: var(--consult-subhead);
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
@@ -784,7 +784,7 @@ html {
 
 .consultancy-article__header h1 {
   max-width: 17ch;
-  font-size: clamp(2.25rem, 4.6vw, 3.8rem);
+  font-size: clamp(2rem, 3.4vw, 3rem);
 }
 
 .consultancy-article__dek {
@@ -829,7 +829,7 @@ html {
   margin-top: clamp(3.5rem, 8vw, 6rem);
   padding-top: 1.25rem;
   border-top: 1px solid var(--consult-line);
-  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
 }
 
 .consultancy-article__body h3 {
@@ -1125,7 +1125,7 @@ html {
   }
 
   .consultancy-shell h1 {
-    font-size: clamp(2.1rem, 9vw, 3rem);
+    font-size: clamp(2rem, 8vw, 2.5rem);
   }
 
   .consultancy-portrait {
