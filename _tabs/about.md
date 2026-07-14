@@ -8,7 +8,7 @@ body_class: consultancy-about
 
 <article class="consultancy-prose" markdown="1">
 
-# I build inside the whole system.
+# I build AI systems with the people who know the work.
 
 An innovator needs the right expert. A rule owner needs to change a pipeline. A manager has to turn scattered feedback into a review. These are different jobs. I help the people doing them make better decisions and get the work done.
 
