@@ -40,7 +40,7 @@ body_class: consultancy-home
 
 <section class="consultancy-section" aria-labelledby="selected-title">
   <h2 id="selected-title">What I build in public</h2>
-  <p class="consultancy-section__intro">I keep some of the work public, where other people can inspect the code and build on it. One grew from a client problem; one controls my stereo.</p>
+  <p class="consultancy-section__intro">I make some projects open source because I think they're cool and I can share them.</p>
   <ul class="consultancy-link-list">
     <li>
       <h3><a href="https://github.com/open-horizon-labs/repo-native-alignment">Repo-Native Alignment</a></h3>
