@@ -58,8 +58,7 @@ body_class: consultancy-home
 </section>
 
 <section class="consultancy-section" aria-labelledby="writing-title">
-  <h2 id="writing-title">What I write about</h2>
-  <p class="consultancy-section__intro">I write about what these tools change, where they fail, and what I would try next.</p>
+  <h2 id="writing-title">Writing</h2>
   <ul class="consultancy-link-list">
     <li>
       <h3><a href="/posts/agent-work-that-changes-behavior/">Agent Work That Changes Behavior</a></h3>
