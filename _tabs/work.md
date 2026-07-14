@@ -1,57 +1,132 @@
 ---
 title: Work
-layout: page
+layout: consultancy
 icon: fas fa-briefcase
 order: 1
+body_class: consultancy-work
 ---
 
-## Consulting: change the workflow
+<header class="consultancy-page-header consultancy-work-header">
+  <h1>Build for the people doing the work.</h1>
+  <div class="consultancy-work-header__context">
+    <p>Across health research and financial services, I build systems that let people find the right expert, change a governed pipeline, write a review, or staff a project.</p>
+    <nav aria-label="Work page sections">
+      <ul class="consultancy-section-nav">
+        <li><a href="#method">Method</a></li>
+        <li><a href="#client-systems">Client systems</a></li>
+        <li><a href="#public-proof">Public work</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-Clients usually arrive with a business problem. A workflow costs too much, takes too long, produces inconsistent decisions, or depends on somebody reconstructing the same context every time.
+<section id="method" class="consultancy-section" aria-labelledby="method-title">
+  <h2 id="method-title">How I work</h2>
+  <p class="consultancy-section__intro">Start with the current workflow. Build one path the team can test and change.</p>
+  <ol class="consultancy-process">
+    <li>
+      <h3>Name what has to change.</h3>
+      <p>Define the outcome, the behavior that should change, and the person who owns it.</p>
+    </li>
+    <li>
+      <h3>Map the work.</h3>
+      <p>Find the people, systems, decisions, incentives, and constraints around the current path.</p>
+    </li>
+    <li>
+      <h3>Build one path.</h3>
+      <p>Separate deterministic work from model judgment. Run known cases. Inspect the failures.</p>
+    </li>
+    <li>
+      <h3>Leave a way to change it.</h3>
+      <p>I leave the team with tests, traces, operating rules, and a safe way to change the system.</p>
+    </li>
+  </ol>
+  <p class="consultancy-section__intro">This work needs access to the people and systems involved, direct disagreement, and an owner with authority to change the workflow.</p>
+</section>
 
-I help the team:
+<section id="client-systems" class="consultancy-section" aria-labelledby="clients-title">
+  <h2 id="clients-title">Selected client systems</h2>
+  <div class="consultancy-case-list">
+    <article class="consultancy-case">
+      <h3>Find the right expert from the problem.</h3>
+      <div>
+        <p>An innovator could describe a problem and see experts who might help. I built the ranking system over about 200,000 expert profiles. It combined semantic and exact-term retrieval with domain signals, reranking, and diversification. A diagnostic trace showed why each match ranked, so an operator could challenge and tune the ranking.</p>
+        <p><a href="/posts/hybrid-search-case-study-ranking-better-results/">Read the technical case</a></p>
+      </div>
+    </article>
+    <article class="consultancy-case">
+      <h3>Let the people who know the rules change the pipeline.</h3>
+      <div>
+        <p>People who knew the business rules could change the pipeline without writing code. I built the system. Each correction showed one of two things: the implementation was wrong, or the rule was missing or mistaken. That split led to Sketch-CE.</p>
+        <p><a href="/posts/agents-dont-learn-the-domain-the-system-does/">Read the domain-learning loop</a></p>
+      </div>
+    </article>
+    <article class="consultancy-case">
+      <h3>Draft a review from the work people actually did.</h3>
+      <div>
+        <p>360-degree feedback, the client's skills rubric, and past reviews went in. The system drafted a performance review and career-growth plan.</p>
+      </div>
+    </article>
+    <article class="consultancy-case">
+      <h3>Suggest staffing from the project and the people.</h3>
+      <div>
+        <p>Project briefs, availability, prior assignments, expertise, and performance evidence went in. The assistant suggested staffing.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-- name the outcome and the person who owns it;
-- map the people, systems, decisions, and constraints in the current workflow;
-- separate deterministic steps from the places where model judgment helps;
-- build one path from input to outcome;
-- run known cases, inspect failures, and decide what to keep;
-- leave behind tests, traces, operating rules, and a way to change the system safely.
+<section id="public-proof" class="consultancy-section" aria-labelledby="proof-title">
+  <h2 id="proof-title">Public work</h2>
+  <p class="consultancy-section__intro">The code, checks, and decision record are public.</p>
 
-The team needs access to the people and systems around the workflow, trust for direct disagreement, authority to act, and an owner who will carry the system forward. Without those, we can produce a deck. We cannot change the work.
+  <article class="consultancy-proof">
+    <div>
+      <p class="consultancy-proof__meta">END-TO-END BUILD</p>
+      <h3><a href="https://github.com/open-horizon-labs/northwoods">Northwoods</a></h3>
+    </div>
+    <div class="consultancy-proof__body">
+      <p>I narrowed a broad interview brief to one path: extract fields from handwritten intake forms, send uncertain fields to a reviewer, preserve corrections, and retrieve related cases. Agents worked issues from branch through implementation and review. I set the scope, caught drift, chose the architecture, and decided whether the result was good enough.</p>
+      <p>The aims, guardrails, architecture decisions, tests, and agent session records live beside the code.</p>
+    </div>
+  </article>
 
-[Start with the problem](/contact/).
+  <article class="consultancy-proof">
+    <div>
+      <p class="consultancy-proof__meta">METHOD EXPERIMENT</p>
+      <h3><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches">Sketch-CE</a></h3>
+    </div>
+    <div class="consultancy-proof__body">
+      <p>A coding agent can fix one example without capturing the rule that made it fail. Sketch-CE separates implementation repair from a policy change. A person approves policy-changing counterexamples before the agent revises the governing sketch.</p>
+      <p><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches/blob/7ee5db12c37f834c6accea85a80f5a50aaff5aa4/paper/main.pdf">Read the paper</a></p>
+    </div>
+  </article>
 
-## Selected client systems
+  <details class="consultancy-more">
+    <summary>More public systems</summary>
+    <div class="consultancy-more__content">
+      <ul class="consultancy-link-list">
+        <li>
+          <h3><a href="https://github.com/open-horizon-labs/repo-native-alignment">Repo-Native Alignment</a></h3>
+          <p>One local binary that lets an agent query dependency paths, subsystem boundaries, tests, and links from code to business outcomes over MCP.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/open-horizon-labs/skills">Open Horizons Skills</a></h3>
+          <p>A working sequence for aim, problem framing, solution comparison, execution, review, dissent, and salvage.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/open-horizon-labs/unified-hifi-control">Unified Hi-Fi Control</a></h3>
+          <p>A Rust bridge connecting Roon, LMS, UPnP, and HQPlayer to a physical knob, web UI, Apple clients, and MCP. I use it every day. It is also fun.</p>
+        </li>
+      </ul>
+    </div>
+  </details>
+</section>
 
-I do not name the clients here. The systems include:
-
-- **An innovation connector.** I built a search system over about 200,000 expert profiles. It let an innovator start with the problem rather than the name of an expert. The ranking pipeline combined semantic and exact-term retrieval with domain signals, reranking, and diversification. A diagnostic trace showed why each match ranked, so an operator could challenge the result and tune the system. [Read the technical case.](/posts/hybrid-search-case-study-ranking-better-results/)
-- **Data pipelines.** I built a system so people who knew the business rules could shape pipelines without writing code. Each correction raised one of two questions: was the generated implementation wrong, or was the rule that should govern later implementations missing or mistaken? That distinction led to [Sketch-CE](https://github.com/open-horizon-labs/counterexample-supplemented-sketches). [Read how the domain-learning loop works.](/posts/agents-dont-learn-the-domain-the-system-does/)
-- **Performance synthesis.** A system combined 360-degree feedback from several projects, the client's skills rubric, and past reviews into a performance review and career-growth plan.
-- **Project staffing.** An assistant used project briefs, availability, prior assignments, expertise, and the same performance evidence to suggest assignments.
-
-## Northwoods
-
-[Northwoods](https://github.com/open-horizon-labs/northwoods) began as a weekend interview exercise. I narrowed a broad brief to one path: extract fields from handwritten intake forms, send uncertain fields to a reviewer, preserve corrections, and retrieve related cases.
-
-I kept the aims, guardrails, architecture decisions, tests, and agent session records beside the code.
-
-## Give agents context and a way to work
-
-- **[Repo-Native Alignment](https://github.com/open-horizon-labs/repo-native-alignment).** It indexes a codebase locally and exposes its structure over MCP. An agent can ask what depends on a symbol, how code connects to an outcome, which tests exercise a path, or what crosses a subsystem boundary. It ships as one binary, with no Docker container, external database, or API key.
-- **[Open Horizons Skills](https://github.com/open-horizon-labs/skills).** They give agents a sequence for doing the work: state the behavior that should change, frame the problem, compare solutions, execute, review, dissent, and salvage the learning when the code should be thrown away.
-
-## Let reviewed corrections change the governing sketch
-
-A coding agent can fix one failing example without capturing the rule that made it fail. [Sketch-CE](https://github.com/open-horizon-labs/counterexample-supplemented-sketches) separates a code repair from a policy change.
-
-If the sketch already states the rule, the agent repairs the code. If the failure exposes missing or mistaken policy, a person approves the counterexample before the agent revises the sketch and code. A regression gate checks the result against earlier policy boundaries.
-
-The public CatSynth experiment compares retained code, fresh rebuilds from the evolved sketch, and replay of the raw counterexamples. In one run with one model and one reveal order, the evolved-sketch rebuild passed 19 of 21 withheld cases; replay-all passed 15 of 21. You can inspect the [paper](https://github.com/open-horizon-labs/counterexample-supplemented-sketches/blob/7ee5db12c37f834c6accea85a80f5a50aaff5aa4/paper/main.pdf) and the [captured run artifacts](https://github.com/open-horizon-labs/counterexample-supplemented-sketches/tree/7ee5db12c37f834c6accea85a80f5a50aaff5aa4/examples/catsynth/experiment/results/gpt-5.4-mini-adaptive-open-world-v2-20260712/).
-
-## Control the stereo from one place
-
-[Unified Hi-Fi Control](https://github.com/open-horizon-labs/unified-hifi-control) connects Roon, LMS, UPnP, and HQPlayer to a physical [ESP32 knob](https://github.com/muness/roon-knob), a web UI, an iOS and Apple Watch client in alpha, and an MCP server. The Rust bridge is packaged for Docker, Synology, QNAP, LMS, macOS, Linux, and Windows. Whether a command comes from the knob, web UI, or an agent, the server resolves the zone and sends it to the active music system.
-
-I use it every day. It is also fun.
+<section class="consultancy-closing" aria-labelledby="work-cta-title">
+  <div>
+    <h2 id="work-cta-title">What work is stuck?</h2>
+    <p>Bring the current path, the known failures, and the people who understand why the obvious fix may be wrong.</p>
+  </div>
+  <a class="consultancy-button" href="/contact/">Start with the problem</a>
+</section>

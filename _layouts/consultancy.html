@@ -1,0 +1,65 @@
+---
+layout: compress
+---
+
+<!doctype html>
+
+{% include origin-type.html %}
+{% include lang.html %}
+
+{% if site.theme_mode %}
+  {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
+{% endif %}
+
+<html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
+  {% include consultancy-head.html %}
+
+  <body class="consultancy-shell {{ page.body_class }}{% if page.layout == 'post' %} consultancy-post{% endif %}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="consultancy-header">
+      <div class="consultancy-frame consultancy-header__inner">
+        <a
+          class="consultancy-brand"
+          href="{{ '/' | relative_url }}"
+          {% if page.url == '/' %}aria-current="page"{% endif %}
+        >
+          Muness Castle
+        </a>
+
+        <nav class="consultancy-nav" aria-label="Primary navigation">
+          <a href="{{ '/work/' | relative_url }}" {% if page.url == '/work/' %}aria-current="page"{% endif %}>Work</a>
+          <a
+            href="{{ '/writing/' | relative_url }}"
+            {% if page.url == '/writing/' or page.layout == 'post' %}aria-current="page"{% endif %}
+          >Writing</a>
+          <a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
+          <a
+            class="consultancy-nav__cta"
+            href="{{ '/contact/' | relative_url }}"
+            {% if page.url == '/contact/' %}aria-current="page"{% endif %}
+          >Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="consultancy-main consultancy-frame">
+      {{ content }}
+    </main>
+
+    <footer class="consultancy-footer">
+      <div class="consultancy-frame consultancy-footer__inner">
+        <div>
+          <a class="consultancy-footer__name" href="{{ '/' | relative_url }}">Muness Castle</a>
+          <p>Agent work that changes behavior.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="https://github.com/muness">GitHub</a>
+          <a href="https://linkedin.com/in/muness">LinkedIn</a>
+          <a href="{{ '/writing/' | relative_url }}">Writing</a>
+        </nav>
+        <small>&copy; {{ site.time | date: '%Y' }} Muness Castle</small>
+      </div>
+    </footer>
+  </body>
+</html>

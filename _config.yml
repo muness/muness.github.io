@@ -20,7 +20,7 @@ timezone: America/New_York
 
 title: Muness Castle # the main title
 
-tagline: Agent work that changes behavior — with more judgment, not less
+tagline: Agent work that changes behavior
 
 description: >- # used by seo meta and the atom feed
   Muness Castle helps teams change how they work with agents through consulting, public tools, inspectable experiments, and writing.
