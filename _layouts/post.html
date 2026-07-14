@@ -1,0 +1,42 @@
+---
+layout: consultancy
+---
+
+{% assign author_key = page.author | default: 'muness' %}
+{% assign post_author = site.data.authors[author_key] %}
+
+<article class="consultancy-article">
+  <header class="consultancy-article__header">
+    <a class="consultancy-article__section" href="{{ '/writing/' | relative_url }}">Writing</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt %}
+      <div class="consultancy-article__dek">{{ page.excerpt | markdownify }}</div>
+    {% endif %}
+    <div class="consultancy-article__meta">
+      <span>{{ post_author.name | default: site.social.name }}</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+    </div>
+  </header>
+
+  <div class="consultancy-article__body">
+    {{ content }}
+  </div>
+
+  <footer class="consultancy-article__footer">
+    <a href="{{ '/writing/' | relative_url }}">All writing</a>
+    <nav aria-label="More writing">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}"><span>Previous</span>{{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}"><span>Next</span>{{ page.next.title }}</a>
+      {% endif %}
+    </nav>
+  </footer>
+
+  {% if page.comments and site.comments.active %}
+    <section class="consultancy-comments" aria-label="Comments">
+      {% include comments.html %}
+    </section>
+  {% endif %}
+</article>

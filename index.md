@@ -1,43 +1,89 @@
 ---
-layout: default
-# Index page
-title: "Home"
+layout: consultancy
+title: Home
+body_class: consultancy-home
 ---
 
-<!-- Cal element-click embed code begins -->
-<script type="text/javascript">
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", {origin:"https://app.cal.com"});
+<section class="consultancy-hero" aria-labelledby="home-title">
+  <div class="consultancy-hero__copy">
+    <h1 id="home-title">I build AI systems that help people do their jobs better.</h1>
+    <p class="consultancy-hero__lede">I work with the people who know the job, build something they can use, and test it on real cases.</p>
+    <p class="consultancy-hero__support">In health research and financial services, that has meant finding the right expert, changing a data pipeline, drafting a review, and staffing a project.</p>
+    <div class="consultancy-actions">
+      <a class="consultancy-button" href="/contact/">Start with the problem</a>
+      <a class="consultancy-button consultancy-button--secondary" href="/work/">See how I work</a>
+    </div>
+  </div>
 
-// Important: Make sure to add `data-cal-link="muness/meet"` attribute to the element you want to open Cal on click
-Cal("ui", {"styles":{"branding":{"brandColor":"#e1eeba"}},"hideEventTypeDetails":false});
-</script>
-<!-- Cal element-click embed code ends -->
+  <figure class="consultancy-portrait">
+    <img src="/assets/img/avatar.jpg" width="288" height="288" alt="Muness Castle">
+  </figure>
+</section>
 
-## About me
+<section class="consultancy-section" aria-labelledby="beliefs-title">
+  <h2 id="beliefs-title">Start with the work.</h2>
+  <ul class="consultancy-beliefs">
+    <li>
+      <h3>Start with the workflow.</h3>
+      <p>Map the people, systems, decisions, incentives, and constraints before choosing where an agent belongs.</p>
+    </li>
+    <li>
+      <h3>Keep judgment visible.</h3>
+      <p>Use models where judgment helps. People still own the decision, challenge the result, and accept the risk.</p>
+    </li>
+    <li>
+      <h3>Leave evidence behind.</h3>
+      <p>Tests, traces, reviewed cases, and operating rules let the next change build on this one.</p>
+    </li>
+  </ul>
+</section>
 
-Hi 👋 I am Muness, a technology executive with over 20 years of experience in technology organizations. I specialize in data engineering, strategy, management, organizational design, and software architecture.
+<section class="consultancy-section" aria-labelledby="selected-title">
+  <h2 id="selected-title">Selected work</h2>
+  <p class="consultancy-section__intro">Client work tests the method against real constraints. Public projects show the code, tests, and decisions.</p>
+  <ul class="consultancy-link-list">
+    <li>
+      <h3><a href="/posts/hybrid-search-case-study-ranking-better-results/">Find the right expert from the problem</a></h3>
+      <p>An innovation connector over about 200,000 expert profiles. A trace showed why each match ranked so an operator could challenge the ranking.</p>
+    </li>
+    <li>
+      <h3><a href="/posts/agents-dont-learn-the-domain-the-system-does/">Let the people who know the rules change the pipeline</a></h3>
+      <p>Business experts changed pipeline rules without writing code. Their corrections led to Sketch-CE.</p>
+    </li>
+    <li>
+      <h3><a href="/work/#client-systems">Draft reviews and suggest staffing from the actual record</a></h3>
+      <p>Systems used feedback, skills evidence, past work, availability, and project needs to draft reviews and suggest staffing.</p>
+    </li>
+    <li>
+      <h3><a href="/work/#public-proof">Put the method where people can inspect it</a></h3>
+      <p>Repo-Native Alignment, Open Horizons Skills, Sketch-CE, and a Hi-Fi system I use every day show the code, checks, and decisions behind the work.</p>
+    </li>
+  </ul>
+</section>
 
-My mission is to 10x your data to achieve worthy goals. I do this through clear vision, compelling strategy, extreme ownership, and calm intensity. I believe in the power of data to inform decisions and drive strategy.
-### Career success
+<section class="consultancy-section" aria-labelledby="writing-title">
+  <h2 id="writing-title">Writing is part of the work.</h2>
+  <p class="consultancy-section__intro">I write down the distinctions, failures, and checks so someone else can use them after the project.</p>
+  <ul class="consultancy-link-list">
+    <li>
+      <h3><a href="/posts/agent-work-that-changes-behavior/">Agent Work That Changes Behavior</a></h3>
+      <p>The operating model.</p>
+    </li>
+    <li>
+      <h3><a href="/posts/ai-is-a-general-purpose-token/">AI: Token or GPT?</a></h3>
+      <p>LLMs as a cheap input to many kinds of work.</p>
+    </li>
+    <li>
+      <h3><a href="/posts/ai-changes-the-complements/">When AI Changes the Work, the Complements Change Too</a></h3>
+      <p>How cheaper execution shifts which people and capabilities matter.</p>
+    </li>
+  </ul>
+</section>
 
-Throughout my career, I've been known for getting the right things done by developing autonomous, mission-driven teams. I foster a culture of collaboration and accountability, where team members challenge and support one another. I value judgment, boldness, healthy conflict, feedback, and autonomy. I've had the privilege of leading data teams at companies like Shopify, Zapier, and JPMC, where I've devised and implemented data strategy that led to significant improvements in effectiveness and creating data-informed organizations.
-
-- **Transformative Leadership at Shopify**: Successfully transitioned multiple data teams from a support function to strategic partners, contributing to the scaling of the organization with increased impact and visibility. Established a reputation as a trustworthy partner, sought after for feedback, ideas, and support.
-- **Cultivating a Data-Driven Culture at Zapier**: Spearheaded the development of a culture centered on data-informed decision-making. Pioneered a platform enabling Analytics Engineers and Data Scientists to independently deliver valuable insights while building a future-proof data infrastructure.
-- **Advocacy for Data-Informed Decision Making**: Consistently champions the use of data to inform strategic decisions. Leverages data for business success in professional roles and thought leadership.
-- **Resilience and Personal Growth**: Demonstrated resilience through career transitions and personal growth. Developed systems that foster presence, calmness, and vulnerability, enhancing personal relationships and resilience in the face of change.
-
-Before focusing on data I developed web apps for 15+ years as a developer, agile coach and engineering leader.
-
-### Contacting me
-
-If you'd like to discuss potential collaboration, job opportunities, or just chat about data and leadership, <a href="#" data-cal-link="muness/meet">schedule time to chat</a>. I look forward to connecting with you!
-
-### Find me on the interwebs
-
-- [LinkedIn profile](https://linkedin.com/in/muness)
-- [Twitter](https://twitter.com/muness)
-- [Resume](/assets/muness-resume.pdf)
-- [Blog](/blog) where I write about topics like data strategy, leadership, and career transitions
-- [Schedule time to chat](https://cal.com/muness/c)
+<section class="consultancy-closing" aria-labelledby="fit-title">
+  <div>
+    <h2 id="fit-title">Bring a real workflow.</h2>
+    <p>Show me the cases, let the people who know the work challenge the result, and give someone authority to change the workflow.</p>
+  </div>
+  <a class="consultancy-button" href="/contact/">Start with the problem</a>
+</section>

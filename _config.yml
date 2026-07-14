@@ -20,10 +20,10 @@ timezone: America/New_York
 
 title: Muness Castle # the main title
 
-tagline: Engineering & Analytics leader achieving worthy goals through vision, strategy, ownership, and calm intensity
+tagline: Agent work that changes behavior
 
 description: >- # used by seo meta and the atom feed
-  Muness Castle\'s personal website and blog.
+  Muness Castle helps teams change how they work with agents through consulting, public tools, inspectable experiments, and writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://muness.com"
