@@ -20,10 +20,10 @@ timezone: America/New_York
 
 title: Muness Castle # the main title
 
-tagline: Engineering & Analytics leader achieving worthy goals through vision, strategy, ownership, and calm intensity
+tagline: Hard business problems, from strategy through working systems
 
 description: >- # used by seo meta and the atom feed
-  Muness Castle\'s personal website and blog.
+  Muness Castle helps serious teams solve hard business problems with agents through hands-on consulting, software, research, and writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://muness.com"
