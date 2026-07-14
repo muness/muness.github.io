@@ -7,7 +7,8 @@ body_class: consultancy-home
 <section class="consultancy-hero" aria-labelledby="home-title">
   <div class="consultancy-hero__copy">
     <h1 id="home-title">I build AI systems that help people get better at hard jobs.</h1>
-    <p class="consultancy-hero__lede">I build with the people who know the work, starting with cases they know well. A wrong answer gives us something concrete to fix—and a way to see whether the next version is better.</p>
+    <p class="consultancy-hero__lede">I work with serious people to turn ambiguity into clarity, constraints into choices, and new tools into changes in how they work.</p>
+    <p class="consultancy-hero__support">That can mean consulting, building software, writing, or teaching.</p>
     <div class="consultancy-actions">
       <a class="consultancy-button" href="/contact/">Tell me about the work</a>
       <a class="consultancy-button consultancy-button--secondary" href="/work/">See the work</a>
@@ -20,7 +21,7 @@ body_class: consultancy-home
 </section>
 
 <section class="consultancy-section" aria-labelledby="beliefs-title">
-  <h2 id="beliefs-title">What people could do</h2>
+  <h2 id="beliefs-title">Client work</h2>
   <ul class="consultancy-beliefs">
     <li>
       <h3>Find experts from a problem description.</h3>
