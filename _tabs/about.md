@@ -8,32 +8,28 @@ body_class: consultancy-about
 
 <article class="consultancy-prose" markdown="1">
 
-# I build AI systems with the people who know the work.
+# I want to do work people can pick up and carry forward.
 
-An innovator needs the right expert. A rule owner needs to change a pipeline. A manager has to turn scattered feedback into a review. These are different jobs. I help the people doing them make better decisions and get the work done.
+That might be a client system the team can change, an open-source tool someone else can build on, or an article that helps someone make a decision.
 
-I map the people, systems, rules, and constraints around that job, then build the code that has to work inside it. When the code shows we are solving the wrong problem, I change the plan.
+I work best with people who can use the result, tell me when it is wrong, and carry it forward. Their response is part of how I judge the work.
 
-Agents can do some of the work faster. They do not replace the business rules, the people who know them, or the person who owns the result. I decide what the model should do, what ordinary code should do, and how we will check the result.
+Client work has deadlines, old software, complicated rules, and people who need the result. I keep some projects open source because I enjoy building them and can share them. I write down what the tools change and where they fail.
 
-I do that with teams adding agents to their work. I also build public tools, run experiments, and write about what I find.
+I spent more than fifteen years building web applications, coaching developers, and leading engineering teams. Then I focused on data and led data organizations at JPMC, Zapier, and Shopify. Recent client systems have been in health research and financial services.
 
-I spent more than fifteen years building web applications, coaching developers, and leading engineering teams. Then I focused on data and led data organizations at JPMC, Zapier, and Shopify.
+A demo can look good while the real work gets worse. I want to know how the work holds up under pressure, who checks the result, and who can change the system when it is wrong.
 
-Recent work spans health research and financial services. In both, the work crosses business rules, data, people, and technical systems.
-
-After NerdWallet, I expected another engineering or data leadership role. Hands-on development changed my direction. I now choose work with people who will use what we build, challenge it, and carry it forward.
-
-Leading those organizations changed what I look for when I build. A system can look good on paper and still fail because nobody owns the decision, the team cannot rerun a bad result, or the metric rewards usage instead of useful work. I look for those problems before I call the code finished.
+After NerdWallet, I expected another engineering or data leadership role. I started building with coding agents every day and found I wanted to stay close to the work. I now choose projects with people who will use what we build, tell me when it is wrong, and take it further themselves.
 
 ## Earlier work
 
-The conventional version is in my [résumé](/assets/muness-resume.pdf) and on [LinkedIn](https://linkedin.com/in/muness). The [current work](/work/) is the better description of what I do now.
+My [résumé](/assets/muness-resume.pdf) and [LinkedIn](https://linkedin.com/in/muness) cover the earlier roles. The [current work](/work/) is the better description of what I do now.
 
 ## Room to choose
 
 I limit consulting so I have time for my family, open-source work, writing, and things I want to make—like a physical knob on the couch controlling the system in the basement.
 
-Find me on [GitHub](https://github.com/muness), read the [writing](/writing/), or [start with a problem](/contact/).
+See the [work](/work/), read the [writing](/writing/), or [tell me what you are working on](/contact/).
 
 </article>
