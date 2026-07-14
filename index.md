@@ -6,12 +6,11 @@ body_class: consultancy-home
 
 <section class="consultancy-hero" aria-labelledby="home-title">
   <div class="consultancy-hero__copy">
-    <h1 id="home-title">I build AI systems that help people do their jobs better.</h1>
-    <p class="consultancy-hero__lede">I work with the people who know the job, build something they can use, and test it on real cases.</p>
-    <p class="consultancy-hero__support">In health research and financial services, that has meant finding the right expert, changing a data pipeline, drafting a review, and staffing a project.</p>
+    <h1 id="home-title">I build AI systems that help people get better at hard jobs.</h1>
+    <p class="consultancy-hero__lede">I build with the people who know the work, starting with cases they know well. A wrong answer gives us something concrete to fix—and a way to see whether the next version is better.</p>
     <div class="consultancy-actions">
-      <a class="consultancy-button" href="/contact/">Start with the problem</a>
-      <a class="consultancy-button consultancy-button--secondary" href="/work/">See how I work</a>
+      <a class="consultancy-button" href="/contact/">Tell me about the work</a>
+      <a class="consultancy-button consultancy-button--secondary" href="/work/">See the work</a>
     </div>
   </div>
 
@@ -21,69 +20,65 @@ body_class: consultancy-home
 </section>
 
 <section class="consultancy-section" aria-labelledby="beliefs-title">
-  <h2 id="beliefs-title">Start with the work.</h2>
+  <h2 id="beliefs-title">What people could do</h2>
   <ul class="consultancy-beliefs">
     <li>
-      <h3>Start with the workflow.</h3>
-      <p>Map the people, systems, decisions, incentives, and constraints before choosing where an agent belongs.</p>
+      <h3>Find experts from a problem description.</h3>
+      <p>An innovation connector searched about 200,000 profiles using semantic search, exact terms, domain signals, reranking, and diversification. A trace showed why each result ranked. <a href="/posts/hybrid-search-case-study-ranking-better-results/">Read the technical case.</a></p>
     </li>
     <li>
-      <h3>Keep judgment visible.</h3>
-      <p>Use models where judgment helps. People still own the decision, challenge the result, and accept the risk.</p>
+      <h3>Change a data-pipeline rule without writing code.</h3>
+      <p>Business experts changed complicated rules and ran cases through the pipeline. When one failed, we had to decide whether the code was wrong or the rule was missing or mistaken. That distinction led to <a href="/posts/agents-dont-learn-the-domain-the-system-does/">Sketch-CE</a>.</p>
     </li>
     <li>
-      <h3>Leave evidence behind.</h3>
-      <p>Tests, traces, reviewed cases, and operating rules let the next change build on this one.</p>
+      <h3>Start reviews and staffing decisions with a draft.</h3>
+      <p>One system turned 360-degree feedback, a skills rubric, and past reviews into a draft performance review and growth plan. Another compared project briefs with availability, prior assignments, expertise, and performance evidence to suggest a team. <a href="/work/#client-systems">See the client systems.</a></p>
     </li>
   </ul>
 </section>
 
 <section class="consultancy-section" aria-labelledby="selected-title">
-  <h2 id="selected-title">Selected work</h2>
-  <p class="consultancy-section__intro">Client work tests the method against real constraints. Public projects show the code, tests, and decisions.</p>
+  <h2 id="selected-title">What I build in public</h2>
+  <p class="consultancy-section__intro">I keep some of the work public, where other people can inspect the code and build on it. One grew from a client problem; one controls my stereo.</p>
   <ul class="consultancy-link-list">
     <li>
-      <h3><a href="/posts/hybrid-search-case-study-ranking-better-results/">Find the right expert from the problem</a></h3>
-      <p>An innovation connector over about 200,000 expert profiles. A trace showed why each match ranked so an operator could challenge the ranking.</p>
+      <h3><a href="https://github.com/open-horizon-labs/repo-native-alignment">Repo-Native Alignment</a></h3>
+      <p>A local code graph that lets agents ask what depends on a change, find code by meaning, and connect a commit to the business reason for it.</p>
     </li>
     <li>
-      <h3><a href="/posts/agents-dont-learn-the-domain-the-system-does/">Let the people who know the rules change the pipeline</a></h3>
-      <p>Business experts changed pipeline rules without writing code. Their corrections led to Sketch-CE.</p>
+      <h3><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches">Sketch-CE</a></h3>
+      <p>A method for keeping an agent's code fix separate from a change to the business rule. People approve rule changes; the agent can repair an implementation error without quietly changing the rule.</p>
     </li>
     <li>
-      <h3><a href="/work/#client-systems">Draft reviews and suggest staffing from the actual record</a></h3>
-      <p>Systems used feedback, skills evidence, past work, availability, and project needs to draft reviews and suggest staffing.</p>
-    </li>
-    <li>
-      <h3><a href="/work/#public-proof">Put the method where people can inspect it</a></h3>
-      <p>Repo-Native Alignment, Open Horizons Skills, Sketch-CE, and a Hi-Fi system I use every day show the code, checks, and decisions behind the work.</p>
+      <h3><a href="https://github.com/open-horizon-labs/unified-hifi-control">Unified Hi-Fi Control</a></h3>
+      <p>A Rust bridge connecting four audio systems to a physical knob, web UI, Apple clients, and MCP. I use it every day. It is also fun.</p>
     </li>
   </ul>
 </section>
 
 <section class="consultancy-section" aria-labelledby="writing-title">
-  <h2 id="writing-title">Writing is part of the work.</h2>
-  <p class="consultancy-section__intro">I write down the distinctions, failures, and checks so someone else can use them after the project.</p>
+  <h2 id="writing-title">What I write about</h2>
+  <p class="consultancy-section__intro">I write about what these tools change, where they fail, and what I would try next.</p>
   <ul class="consultancy-link-list">
     <li>
       <h3><a href="/posts/agent-work-that-changes-behavior/">Agent Work That Changes Behavior</a></h3>
-      <p>The operating model.</p>
+      <p>How cases, tests, traces, and review let an agent's next run benefit from the last one.</p>
     </li>
     <li>
       <h3><a href="/posts/ai-is-a-general-purpose-token/">AI: Token or GPT?</a></h3>
-      <p>LLMs as a cheap input to many kinds of work.</p>
+      <p>Why “AI-first” spreads quickly even when the work itself has barely changed.</p>
     </li>
     <li>
       <h3><a href="/posts/ai-changes-the-complements/">When AI Changes the Work, the Complements Change Too</a></h3>
-      <p>How cheaper execution shifts which people and capabilities matter.</p>
+      <p>When AI makes one task cheaper, the rest of the job has to change too.</p>
     </li>
   </ul>
 </section>
 
 <section class="consultancy-closing" aria-labelledby="fit-title">
   <div>
-    <h2 id="fit-title">Bring a real workflow.</h2>
-    <p>Show me the cases, let the people who know the work challenge the result, and give someone authority to change the workflow.</p>
+    <h2 id="fit-title">Have a case we should look at?</h2>
+    <p>Tell me who is doing the job, what they are trying to do, and what makes one case hard.</p>
   </div>
-  <a class="consultancy-button" href="/contact/">Start with the problem</a>
+  <a class="consultancy-button" href="/contact/">Tell me about the work</a>
 </section>
