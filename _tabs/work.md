@@ -31,6 +31,12 @@ I do not name the clients here. The systems include:
 - **Performance synthesis.** A system combined 360-degree feedback from several projects, the client's skills rubric, and past reviews into a performance review and career-growth plan.
 - **Project staffing.** An assistant used project briefs, availability, prior assignments, expertise, and the same performance evidence to suggest assignments.
 
+## Northwoods
+
+[Northwoods](https://github.com/open-horizon-labs/northwoods) began as a weekend interview exercise. I narrowed a broad brief to one path: extract fields from handwritten intake forms, send uncertain fields to a reviewer, preserve corrections, and retrieve related cases.
+
+I kept the aims, guardrails, architecture decisions, tests, and agent session records beside the code.
+
 ## Give agents context and a way to work
 
 - **[Repo-Native Alignment](https://github.com/open-horizon-labs/repo-native-alignment).** It indexes a codebase locally and exposes its structure over MCP. An agent can ask what depends on a symbol, how code connects to an outcome, which tests exercise a path, or what crosses a subsystem boundary. It ships as one binary, with no Docker container, external database, or API key.
