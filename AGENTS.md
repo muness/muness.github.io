@@ -2,9 +2,127 @@
 
 This file provides context and protocols for AI agents working in this repository.
 
+## Sources of Truth
+
+- `PRODUCT.md` is the canonical source for the site's product strategy, audience, brand, and design principles.
+- This file summarizes the operational context agents need while working.
+- Muness's explicit direction overrides inferred priorities. When strategy is unclear or changing, ask rather than manufacturing certainty.
+
 ## Project Context
 
-This is a Jekyll blog (muness.github.io). Posts live in `_posts/` with YYYY-MM-DD prefixed filenames.
+This is Muness Castle's Jekyll site. It connects consulting, public tools and experiments, and writing into one coherent body of work. Posts live in `_posts/` with YYYY-MM-DD prefixed filenames.
+
+The site exists to further Muness's current aims:
+
+- Invest deeply where there is trust, action, reciprocity, and a chance the work will be carried forward.
+- Build agent work that changes how serious people and teams behave, with more human judgment rather than less.
+- Preserve and use margin rather than turning every capability or opportunity into another obligation.
+
+The desired site outcome is a context-rich inquiry from a good-fit team. Visitors should understand the proposition, inspect credible evidence, judge fit without a sales call, and know how to begin.
+
+### Strategic Constraints
+
+- Editorial judgment belongs to Muness. Analytics and visitor feedback may inform it but do not override it.
+- Aim alignment is the primary decision test.
+- Human judgment and responsibility must remain visible in descriptions of agent work.
+- Never invent client outcomes, compromise confidentiality, or use unsupported claims.
+- Public artifacts should provide evidence; adjectives should not carry the argument.
+- Each page, project, and piece of writing needs a clear role in the larger story.
+- Selectivity is a feature. Do not optimize for universal appeal, audience size, or persuading unreceptive people.
+- Respect margin. Avoid expanding scope merely because more work could be done.
+
+### Patterns to Prefer
+
+- Start with the consequential workflow and the person responsible for it.
+- Explain mechanisms, constraints, checks, and observable behavior change.
+- Favor concrete examples and inspectable public work.
+- Route public prose through the writing workflow, preserving Muness's direct, calm, technical, and opinionated voice.
+- Help receptive people act, adapt, teach, or build on the work.
+- Use plans to orient action; let evidence update the plan.
+
+### Patterns to Avoid
+
+- Generic AI-consultancy language, mythology, hype, or interchangeable claims.
+- Presenting automation as a replacement for judgment.
+- Treating every repository or experiment as equally important.
+- Adding work that does not strengthen the coherent agent-work story.
+- Repeatedly explaining harder to poor-fit or chronically unreceptive audiences.
+- Polishing output when the underlying work does not change behavior.
+
+### Decision and Sensemaking Norms
+
+"Done" means the work is technically sound, fits the site's voice and structure, and advances the relevant aim without violating the constraints above.
+
+Pause and reframe when:
+
+- the work no longer has a clear relationship to an aim;
+- tactics are multiplying while the intended behavior change remains vague;
+- repeated patches are not improving the outcome;
+- evidence shows the audience, framing, or mechanism is wrong;
+- the work increases obligation without increasing agency, learning, income, reputation, joy, or useful service.
+
+Keep implementer, reviewer, dissenter, domain expert, and final decision-maker roles distinct when the decision warrants it. Muness is the final decision-maker.
+
+## Open Horizons Working Framework
+
+Use the smallest useful Open Horizons loop for the work:
+
+1. **Aim** — identify the behavior or outcome the work should change.
+2. **Frame** — understand the problem space and state the problem before committing to a solution.
+3. **Explore** — compare viable solutions and their trade-offs.
+4. **Execute** — implement against the chosen aim and constraints.
+5. **Review** — check the result for drift before calling it done.
+6. **Reorient when needed**:
+   - use dissent before consequential or high-confidence decisions;
+   - use salvage when repeated attempts are producing learning but not a viable result;
+   - return to the problem statement when the solution keeps feeling wrong.
+7. **Record durable learning** when it should guide future sessions.
+
+Relevant skills include `aim`, `problem-space`, `problem-statement`, `solution-space`, `execute`, `review`, `dissent`, `salvage`, and `record`. Do not invoke the full sequence mechanically; use the stages that reduce uncertainty or protect aim alignment.
+
+## Writing Workflow
+
+Use `writing-workflow` for broad requests such as "improve," "tighten," "polish," or "review," when multiple writing risks may be active or the correct editing skill is unclear.
+
+Before editing, identify:
+
+- the artifact and its stage;
+- the reader and what they should understand, feel, decide, or do;
+- the highest active risk: structure, facts, voice, clarity, tone, style, engagement, production quality, or executive decision fit.
+
+Choose the earliest skill that resolves that risk. The default pass order is:
+
+1. `developmental-edit` — purpose, audience, argument, structure, evidence, and pacing.
+2. `fact-checker` — claims, sources, dates, numbers, quotations, and technical accuracy.
+3. `muness-voice` — authored site copy and writing that should sound like Muness.
+4. `writing-without-bullshit` — padding, jargon, evasion, unsupported authority, and corporate fog.
+5. `tone` — the reader's felt experience.
+6. `style` — diction, sentences, paragraphs, transitions, and consistency.
+7. `writing-polish` — energy, rhythm, specificity, tension, and memorability.
+8. `proofread` — final mechanics and production cleanup.
+
+Use `exec-speak` instead when the artifact exists to help an executive make a decision.
+
+Skip passes that do not address a live risk. Do not:
+
+- polish around unresolved structural, factual, or voice problems;
+- proofread before wording is stable;
+- run every skill mechanically;
+- make prose generically smoother at the expense of Muness's voice;
+- turn real uncertainty into false confidence;
+- add claims, evidence, or authority that the sources do not support.
+
+For public site prose authored by Muness, `muness-voice` is normally implied. Preserve useful roughness, directness, claim boundaries, uncertainty, evidence, and source context.
+
+When chaining passes, carry a short editorial handoff containing:
+
+- reader, purpose, and desired change;
+- facts, claims, evidence, and uncertainty boundaries;
+- voice, tone, structure, examples, and terminology to preserve;
+- edits already made and risks remaining;
+- the next skill, why it is next, and what it must not change.
+
+A later pass may tighten wording but must not silently alter preserved meaning, claims, evidence, uncertainty, voice, or reader promise.
 
 ---
 
@@ -19,53 +137,6 @@ Diagrams live in `viz/` as `.d2` sources and render to `assets/img/` as **sketch
 - Embed in posts:
   - Live site: `![](/assets/img/<name>.svg)`
   - GitHub PR preview from `_posts/`: `![](../../assets/img/<name>.svg)`
-
----
-
-# Cloud Atlas AI Stack
-
-**No dive is too small for a dive prep.** Start every session with a dive:
-```
-$bottle dive fix       # Bug fix
-$bottle dive plan      # Design work
-$bottle dive explore   # Understanding code
-```
-
-This creates `.wm/dive_context.md` with your intent, relevant context, and suggested workflow. The 30 seconds of setup prevents 30 minutes of thrash.
-
----
-
-## Task Tracking (ba)
-
-**When to use:** Track discrete work items, multi-step tasks, or work spanning sessions.
-
-**Commands:**
-- `ba status` — see active tasks
-- `ba list` — list all tasks
-- `ba create "description" -t task` — create new work
-- `ba claim <id> --session $SESSION` — take ownership
-- `ba finish <id>` — mark complete
-
-**Protocol:** Always track non-trivial work. If it has multiple steps or takes >5 minutes, create a task.
-
----
-
-## Working Memory (wm)
-
-**When to use:** Starting work, need context, after completing work.
-
-**Commands:**
-- `$bottle dive <intent>` — prep context before work
-- `wm compile` — get relevant knowledge
-- `wm distill` — extract learnings after work
-- `wm review` — review current state
-
-**Terminology:**
-- **dive-prep** = preparing context before work
-- **dive pack** = reusable bundle for a type of work
-- **dive context** = session manifest from dive-prep
-
-**Protocol:** Treat wm as external memory. Don't guess at past decisions—check wm first.
 
 ---
 
@@ -86,14 +157,3 @@ This creates `.wm/dive_context.md` with your intent, relevant context, and sugge
 **Protocol:** Opt-in. Use for high-stakes decisions, architectural choices, or when you want a second opinion.
 
 **Results:** `has_concerns: true` = STOP and show user; `has_concerns: false` = continue.
-
----
-
-## Tool Interaction
-
-These tools work together:
-- **ba** tracks what you're doing
-- **superego** reviews how you're doing it
-- **wm** remembers what you learned
-
-Start sessions with context: dive prep, check ba for tasks, then work.
