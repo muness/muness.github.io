@@ -10,11 +10,37 @@ web
 
 ## Users
 
-Serious leaders, operators, product people, and technical teams with a consequential workflow that is slow, inconsistent, expensive, or trapped in a few people's heads. They are evaluating whether Muness can help them change the work, not merely add an AI tool. Receptive collaborators and unusually high-trust operating roles are a secondary audience.
+The economic customer is a serious leader, operator, product person, or technical executive who owns a consequential workflow that is slow, inconsistent, expensive, or trapped in a few people's heads. They are evaluating whether Muness can help them change the work, not merely add an AI tool.
+
+Internal champions and domain participants are equally important to whether the work succeeds. Champions need language and evidence they can carry into a decision. The people doing the job need to see, judge, and change the system. Readers, users, collaborators, and referrers may carry the work forward without ever becoming consulting clients.
 
 ## Product Purpose
 
-Muness.com makes one coherent body of work legible: consulting that changes workflows, public tools and experiments that expose the method, and writing that explains the mechanisms. The primary outcome is a context-rich inquiry from a good-fit team. Success means a visitor understands the proposition and evidence quickly, can judge fit without a sales call, and knows how to start.
+Muness.com is one place where Muness furthers his aims. It makes one coherent body of work legible: consulting that changes workflows, public tools and experiments that expose the method, and writing that explains the mechanisms.
+
+A context-rich inquiry from a good-fit team is one valuable outcome, not the site's only job. Success also includes a receptive person using a post, adopting a tool, teaching a distinction, referring the work, or building on it without Muness having to keep pushing.
+
+## Relationship to Muness's Aims
+
+- **Choose Where I Invest:** Help receptive people recognize the fit and carry the work forward. Let poor-fit people opt out without more persuasion.
+- **Build Agent Work That Changes Behavior:** Connect consulting, public tools, examples, and writing so people can see the mechanism and change how they work.
+- **Use Margin, Don't Just Protect It:** Improve the fit of opportunities without turning attention, audience growth, or every possible inquiry into another obligation.
+
+## Strategy Kernel
+
+**Aim:** A receptive economic customer recognizes their consequential workflow in the site, can say what their team would become able to do, and understands why Muness might be useful in getting them there. Other receptive visitors should carry something useful forward: a tool they adopt, an idea they teach, or work they build on. Poor-fit visitors should be able to opt out without a sales call.
+
+**Mechanism:** Start with the constraint on the work and the capability the team gains. Show how Muness traces the workflow, builds with the people who know it, keeps judgment visible, and leaves the team able to inspect and change the result. Use client systems, public artifacts, and writing as evidence for that mechanism.
+
+**Feedback:** In a 30-second comprehension check, a target visitor can say who the work is for, what the team becomes able to do, and why Muness is credible. Inquiries name a workflow, its owner, and where the current way fails rather than asking for generic AI help. Readers and users can point to a post, tool, practice, or decision they used, adapted, taught, or built on.
+
+**Guardrails:**
+
+- Do not invent outcomes, disclose confidential client context, or let adjectives substitute for evidence.
+- Do not optimize for traffic, generic engagement, or universal appeal.
+- Do not promote consulting conversion into the aim or treat every reader as a lead.
+- Keep human judgment and responsibility visible anywhere AI appears.
+- Preserve margin: the site should improve fit, not manufacture obligation.
 
 ## Brand Personality
 
