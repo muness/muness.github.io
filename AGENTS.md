@@ -124,6 +124,31 @@ When chaining passes, carry a short editorial handoff containing:
 
 A later pass may tighten wording but must not silently alter preserved meaning, claims, evidence, uncertainty, voice, or reader promise.
 
+## Interface Design Workflow
+
+Use the `impeccable` skill family for frontend design, redesign, critique, audit, polish, layout, typography, color, motion, responsive adaptation, accessibility, and other interface work. It is not required for backend-only or prose-only changes.
+
+Before editing an interface:
+
+1. Run the skill's context setup from the project root.
+2. Read the reference for the selected `impeccable` command.
+3. Inspect the existing CSS, layouts, components, tokens, and conventions.
+4. Read the `brand` register guidance; this site's design is part of the product.
+
+`PRODUCT.md` is the brief and the shipped interface is the existing design system. Preserve established identity before applying new defaults from the skill. Use the smallest command that matches the live risk; useful routes include `critique`, `audit`, `polish`, `typeset`, `layout`, `clarify`, `adapt`, `optimize`, and `live`.
+
+Frontend work is not done until it is:
+
+- production-ready rather than a prototype;
+- visually verified in the browser at relevant viewport sizes;
+- legible with enlarged text and at narrow widths;
+- keyboard accessible, focus-visible, and WCAG 2.2 AA compliant;
+- robust to content overflow and interaction edge cases;
+- respectful of reduced-motion preferences;
+- recognizably part of this site rather than a generic AI-designed surface.
+
+Do not replace working identity with fashionable defaults, generic card grids, decorative effects, or category clichés. Prefer concrete hierarchy, inspectable evidence, deliberate typography, and restrained interaction that serves the page's role.
+
 ---
 
 ## Diagrams (D2)

@@ -36,6 +36,12 @@ Calm, technical, and opinionated. The site should feel like direct contact with 
 - Give every page and project one clear role in the story.
 - Use selectivity as useful guidance: help good-fit people act and poor-fit people opt out.
 
+## Design Practice
+
+Frontend design work uses the `impeccable` skill family for shaping, critique, audit, refinement, and visual verification. Treat this file as the design brief and the shipped interface as the existing design system. Preserve established identity before applying new skill defaults.
+
+The site should feel deliberately made for this body of work, not assembled from current landing-page conventions. Design decisions must strengthen hierarchy, comprehension, credibility, and fit. Verify meaningful interface changes in the browser across relevant viewport sizes before shipping.
+
 ## Accessibility & Inclusion
 
 Meet WCAG 2.2 AA for contrast, keyboard access, focus visibility, semantic structure, and target sizing. The responsive site must remain legible at narrow widths and with enlarged text. Motion is optional, never required for comprehension, and must respect reduced-motion preferences.
