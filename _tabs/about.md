@@ -40,7 +40,7 @@ Over more than twenty years, I have worked at the code, team, and executive leve
 <dl class="consultancy-experience-range">
   <div>
     <dt>Built software</dt>
-    <dd>ThoughtWorks, OVE.com, Vonage, Chemical Abstracts, CompuServe, Mayo Clinic, Orion Advisor Technology, JPMC, Relevance</dd>
+    <dd>ThoughtWorks, OVE.com, Vonage, Chemical Abstracts, CompuServe, JPMC, Relevance</dd>
   </div>
   <div>
     <dt>Led engineering and data teams</dt>
