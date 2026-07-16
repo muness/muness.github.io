@@ -1,0 +1,132 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+output="${1:-$root/assets/muness-resume.pdf}"
+build_dir="$(mktemp -d "${TMPDIR:-/tmp}/muness-resume.XXXXXX")"
+server_pid=""
+chrome_pid=""
+
+cleanup() {
+  if [[ -n "$chrome_pid" ]]; then
+    kill "$chrome_pid" 2>/dev/null || true
+    pkill -f "$build_dir/chrome" 2>/dev/null || true
+  fi
+  if [[ -n "$server_pid" ]]; then
+    kill "$server_pid" 2>/dev/null || true
+  fi
+  rm -rf "$build_dir"
+}
+trap cleanup EXIT
+
+if command -v mise >/dev/null 2>&1 && mise where ruby@3.3.6 >/dev/null 2>&1; then
+  jekyll=(mise exec ruby@3.3.6 -- bundle exec jekyll)
+else
+  jekyll=(bundle exec jekyll)
+fi
+
+(
+  cd "$root"
+  JEKYLL_ENV=production "${jekyll[@]}" build --destination "$build_dir/site"
+)
+
+port="${RESUME_PORT:-$(ruby -rsocket -e 'server = TCPServer.new("127.0.0.1", 0); puts server.addr[1]; server.close')}"
+python3 -m http.server "$port" --bind 127.0.0.1 --directory "$build_dir/site" >"$build_dir/server.log" 2>&1 &
+server_pid="$!"
+
+for _ in {1..40}; do
+  if curl --fail --silent "http://127.0.0.1:$port/resume/" >/dev/null; then
+    break
+  fi
+  sleep 0.1
+done
+
+curl --fail --silent "http://127.0.0.1:$port/resume/" >/dev/null
+
+chrome="${CHROME_BIN:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
+if [[ ! -x "$chrome" ]]; then
+  echo "Set CHROME_BIN to a Chrome or Chromium executable." >&2
+  exit 1
+fi
+
+mkdir -p "$(dirname "$output")"
+temporary_pdf="$build_dir/muness-resume.pdf"
+
+"$chrome" \
+  --headless=new \
+  --disable-extensions \
+  --no-pdf-header-footer \
+  --password-store=basic \
+  --run-all-compositor-stages-before-draw \
+  --use-mock-keychain \
+  --user-data-dir="$build_dir/chrome" \
+  --virtual-time-budget=4000 \
+  --print-to-pdf="$temporary_pdf" \
+  "http://127.0.0.1:$port/resume/" >"$build_dir/chrome.log" 2>&1 &
+chrome_pid="$!"
+
+chrome_status=""
+previous_size="0"
+stable_checks="0"
+print_complete="false"
+for _ in {1..200}; do
+  if ! kill -0 "$chrome_pid" 2>/dev/null; then
+    if wait "$chrome_pid"; then
+      chrome_status="0"
+    else
+      chrome_status="$?"
+    fi
+    chrome_pid=""
+    break
+  fi
+
+  if [[ -s "$temporary_pdf" ]]; then
+    current_size="$(wc -c <"$temporary_pdf")"
+    if [[ "$current_size" == "$previous_size" ]]; then
+      stable_checks="$((stable_checks + 1))"
+    else
+      previous_size="$current_size"
+      stable_checks="0"
+    fi
+
+    if [[ "$stable_checks" -ge 10 ]] && python3 - "$temporary_pdf" <<'PY'
+from pathlib import Path
+import sys
+
+pdf = Path(sys.argv[1]).read_bytes()
+raise SystemExit(0 if pdf.startswith(b"%PDF-") and b"%%EOF" in pdf[-2048:] else 1)
+PY
+    then
+      print_complete="true"
+      break
+    fi
+  fi
+
+  sleep 0.1
+done
+
+if [[ "$print_complete" != "true" && "$chrome_status" != "0" ]]; then
+  cat "$build_dir/chrome.log" >&2
+  echo "Chrome failed or timed out while printing the résumé." >&2
+  exit 1
+fi
+
+if [[ -n "$chrome_pid" ]]; then
+  kill "$chrome_pid" 2>/dev/null || true
+  wait "$chrome_pid" 2>/dev/null || true
+  pkill -f "$build_dir/chrome" 2>/dev/null || true
+  chrome_pid=""
+fi
+
+python3 - "$temporary_pdf" <<'PY'
+from pathlib import Path
+import sys
+
+pdf = Path(sys.argv[1]).read_bytes()
+if not pdf.startswith(b"%PDF-") or b"%%EOF" not in pdf[-2048:]:
+    raise SystemExit("Chrome produced an invalid or incomplete PDF.")
+PY
+
+mv "$temporary_pdf" "$output"
+echo "Built $output from resume.md"
