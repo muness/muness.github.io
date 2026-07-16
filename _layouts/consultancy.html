@@ -10,7 +10,11 @@
   {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
 {% endif %}
 
-<html lang="{{ site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
+<html
+  lang="{{ site.alt_lang | default: site.lang }}"
+  {{ prefer_mode }}
+  {% if page.html_class %}class="{{ page.html_class }}"{% endif %}
+>
   {% include consultancy-head.html %}
 
   <body class="consultancy-shell {{ page.body_class }}{% if page.layout == 'post' %} consultancy-post{% endif %}">
@@ -55,6 +59,10 @@
         <nav aria-label="Footer navigation">
           <a href="https://github.com/muness">GitHub</a>
           <a href="https://linkedin.com/in/muness">LinkedIn</a>
+          <a
+            href="{{ '/resume/' | relative_url }}"
+            {% if page.url == '/resume/' %}aria-current="page"{% endif %}
+          >Résumé</a>
           <a href="{{ '/writing/' | relative_url }}">Writing</a>
         </nav>
         <small>&copy; {{ site.time | date: '%Y' }} Muness Castle</small>

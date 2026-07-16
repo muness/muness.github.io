@@ -56,7 +56,7 @@ After NerdWallet, I expected another engineering or data leadership role. Instea
 
 ## Earlier work
 
-My [résumé](/assets/muness-resume.pdf) and [LinkedIn](https://linkedin.com/in/muness) cover the earlier roles. The [current work](/work/) is the better description of what I do now.
+Read my [résumé](/resume/) ([PDF](/assets/muness-resume.pdf)) or [LinkedIn](https://linkedin.com/in/muness) for the role history. For current consulting and public work, see [Work](/work/).
 
 ## What this is in service of
 

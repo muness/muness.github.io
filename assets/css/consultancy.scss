@@ -758,6 +758,136 @@ html {
   color: var(--consult-muted);
 }
 
+.consultancy-resume {
+  max-width: 64rem;
+}
+
+.consultancy-resume-header {
+  display: grid;
+  padding-bottom: clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--consult-ink);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 0.65fr);
+}
+
+.consultancy-resume-header h1 {
+  max-width: none;
+}
+
+.consultancy-resume-header__name {
+  display: none;
+}
+
+.consultancy-resume-header__lede {
+  max-width: 46ch;
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.1rem, 1.55vw, 1.35rem);
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.consultancy-resume-header__summary {
+  max-width: 58ch;
+  margin: 1rem 0 0;
+  color: var(--consult-muted);
+}
+
+.consultancy-resume-header__contact > p {
+  margin: 0;
+  color: var(--consult-muted);
+}
+
+.consultancy-resume-header__contact ul {
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.consultancy-resume-header__contact li + li {
+  margin-top: 0.35rem;
+}
+
+.consultancy-resume-header__contact a {
+  overflow-wrap: anywhere;
+}
+
+.consultancy-resume-actions {
+  margin-top: 1.5rem;
+}
+
+.consultancy-resume-section {
+  display: grid;
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-top: clamp(1.75rem, 4vw, 3rem);
+  border-top: 1px solid var(--consult-line);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  grid-template-columns: minmax(9rem, 0.35fr) minmax(0, 1.65fr);
+}
+
+.consultancy-resume-section > h2 {
+  font-size: var(--consult-subhead);
+}
+
+.consultancy-resume-highlights,
+.consultancy-resume-projects,
+.consultancy-resume-education {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.consultancy-resume-highlights li + li,
+.consultancy-resume-projects li + li,
+.consultancy-resume-education li + li {
+  margin-top: 0.7rem;
+}
+
+.consultancy-resume-roles {
+  border-top: 1px solid var(--consult-ink);
+}
+
+.consultancy-resume-role {
+  padding-block: clamp(1.4rem, 3vw, 2.2rem);
+  border-bottom: 1px solid var(--consult-line);
+}
+
+.consultancy-resume-role__header {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.consultancy-resume-role__header h3 {
+  font-size: var(--consult-subhead);
+}
+
+.consultancy-resume-role__header p {
+  margin: 0.2rem 0 0;
+  color: var(--consult-muted);
+}
+
+.consultancy-resume-role__header > p {
+  margin-top: 0.15rem;
+  font-family: var(--consult-mono);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.consultancy-resume-role > ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.consultancy-resume-role > ul li + li {
+  margin-top: 0.5rem;
+}
+
+.consultancy-resume-page .consultancy-footer nav a[href$="/resume/"] {
+  text-decoration: underline;
+  text-decoration-color: var(--consult-accent);
+  text-decoration-thickness: 0.16em;
+  text-underline-offset: 0.35em;
+}
+
 .consultancy-about-evidence {
   margin-top: 2rem;
 }
@@ -1209,7 +1339,8 @@ html {
 @media (max-width: 52rem) {
   .consultancy-work-header,
   .consultancy-artifact,
-  .consultancy-contact-grid {
+  .consultancy-contact-grid,
+  .consultancy-resume-header {
     grid-template-columns: 1fr;
   }
 
@@ -1335,6 +1466,11 @@ html {
     grid-template-columns: 1fr;
   }
 
+  .consultancy-resume-section {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
   .consultancy-writing-guide {
     grid-template-columns: 1fr;
   }
@@ -1389,6 +1525,15 @@ html {
     padding: 1.5rem;
   }
 
+  .consultancy-resume-role__header {
+    gap: 0.35rem;
+    grid-template-columns: 1fr;
+  }
+
+  .consultancy-resume-role__header > p {
+    white-space: normal;
+  }
+
   .consultancy-footer nav {
     flex-wrap: wrap;
   }
@@ -1404,5 +1549,144 @@ html {
   .consultancy-shell *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.42in 0.5in;
+  }
+
+  html.consultancy-resume-page {
+    font-size: 9pt;
+  }
+
+  body.consultancy-resume-page {
+    background: #fff;
+    color: #111;
+    line-height: 1.35;
+  }
+
+  .consultancy-resume-page .consultancy-header,
+  .consultancy-resume-page .consultancy-footer,
+  .consultancy-resume-page .skip-link,
+  .consultancy-resume-page .consultancy-resume-actions {
+    display: none !important;
+  }
+
+  .consultancy-resume-page .consultancy-main,
+  .consultancy-resume-page .consultancy-frame {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .consultancy-resume-page a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .consultancy-resume-page .consultancy-resume {
+    max-width: none;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header {
+    padding-bottom: 0.14in;
+    gap: 0.28in;
+    grid-template-columns: minmax(0, 1.4fr) minmax(1.6in, 0.6fr);
+  }
+
+  .consultancy-resume-page .consultancy-resume-header h1 {
+    display: inline-block;
+    margin-left: 0.12in;
+    color: #34454b;
+    font-size: 10pt;
+    letter-spacing: 0;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header__name {
+    display: inline-block;
+    margin: 0;
+    color: #111;
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header__lede {
+    margin-top: 0.08in;
+    font-size: 11pt;
+    line-height: 1.3;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header__summary {
+    margin-top: 0.05in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header__contact ul {
+    margin-top: 0.06in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-header__contact li + li {
+    margin-top: 0.02in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-section {
+    margin-top: 0.11in;
+    padding-top: 0.08in;
+    gap: 0.2in;
+    grid-template-columns: 1.08in minmax(0, 1fr);
+  }
+
+  .consultancy-resume-page .consultancy-resume-section > h2,
+  .consultancy-resume-page .consultancy-resume-role__header h3 {
+    font-size: 10pt;
+  }
+
+  .consultancy-resume-page .consultancy-resume-section--experience {
+    display: block;
+  }
+
+  .consultancy-resume-page .consultancy-resume-section--experience > h2 {
+    margin-bottom: 0.06in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-highlights li + li,
+  .consultancy-resume-page .consultancy-resume-projects li + li,
+  .consultancy-resume-page .consultancy-resume-education li + li {
+    margin-top: 0.04in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role {
+    padding-block: 0.07in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role__header {
+    gap: 0.1in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role__header p {
+    margin-top: 0.01in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role__header > p {
+    font-size: 7.5pt;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role > ul {
+    margin-top: 0.06in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role > ul li + li {
+    margin-top: 0.025in;
+  }
+
+  .consultancy-resume-page .consultancy-resume-role__header,
+  .consultancy-resume-page .consultancy-resume-role li,
+  .consultancy-resume-page .consultancy-resume-section--compact {
+    break-inside: avoid;
   }
 }

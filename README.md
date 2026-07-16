@@ -14,3 +14,13 @@ Diagrams live in `viz/` as `.d2` sources and render to `assets/img/` as **sketch
 Embed in posts:
 - For the live site: `![](/assets/img/<name>.svg)`
 - For GitHub PR preview from `_posts/`: `![](../../assets/img/<name>.svg)`
+
+## Résumé
+
+`resume.md` is the canonical public résumé. After changing it or its print styles, rebuild the downloadable version:
+
+```sh
+tools/build-resume-pdf
+```
+
+The command builds the site, prints `/resume/` with headless Chrome, and replaces `assets/muness-resume.pdf` only after the print succeeds.
