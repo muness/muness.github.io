@@ -34,7 +34,7 @@ description: Muness Castle's experience building software, leading engineering a
       <ul class="consultancy-resume-highlights">
         <li>At Zapier, led a roughly 50-person Data Platform and Production Engineering organization: 8 engineering managers, 2 agile practitioners, a product manager, and about 40 individual contributors.</li>
         <li>Ran and sold work for Relevance, a distributed consultancy I helped grow from 5 to 40 employees and $7.5M in annual revenue.</li>
-        <li>Through Artium.AI, built three production systems for Mayo Clinic and an exception-to-regression-test workflow for Orion Advisor Technology.</li>
+        <li>Built production agent systems through a delivery partner whose teams deploy with Claude and OpenAI APIs and help engineers adopt Claude Code and Codex.</li>
         <li>At NerdWallet, led a data warehouse transition that cut historical-data backfills from weeks to under 48 hours.</li>
       </ul>
     </div>
@@ -53,11 +53,11 @@ description: Muness Castle's experience building software, leading engineering a
         </header>
         <ul>
           <li>Work with executives to decide what should change, then with domain experts, product managers, and engineers to build and test it.</li>
-          <li>Deliver enterprise AI systems through Artium.AI for Mayo Clinic and Orion Advisor Technology.</li>
-          <li>At Mayo Clinic, built three production systems: Innovation Connector for expert discovery, Team Composer for strategy teams, and Feedback 360 for structured review synthesis.</li>
-          <li>At Orion Advisor Technology, co-designed and built a system that turns real operational exceptions and domain-expert corrections into regression tests and reviewable prompt or code changes.</li>
+          <li>Build production agent systems through a delivery partner whose teams deploy with Claude and OpenAI APIs and include Claude Partner Network-certified forward-deployed engineers and OpenAI-certified AI engineers.</li>
+          <li>For a healthcare organization, built production systems for expert discovery, team formation, and structured review synthesis.</li>
+          <li>For a financial services organization, co-designed and built a system that turns operational exceptions and domain-expert corrections into regression tests and reviewable prompt or code changes.</li>
           <li>Build full-stack systems with React, Python, Google Cloud, Vertex AI, managed data pipelines, and secure enterprise integrations.</li>
-          <li>Train engineering teams to use decision logs and evaluation loops tied to repository work, so they can see what an agent did, test changes, and improve the system over time.</li>
+          <li>Help engineering teams adopt Claude Code and Codex using decision logs and evaluation loops tied to repository work, so they can see what an agent did, test changes, and improve the system over time.</li>
         </ul>
       </article>
 
