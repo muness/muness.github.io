@@ -824,6 +824,10 @@ html {
   grid-template-columns: minmax(9rem, 0.35fr) minmax(0, 1.65fr);
 }
 
+.consultancy-resume-header + .consultancy-resume-section {
+  border-top: 0;
+}
+
 .consultancy-resume-section > h2 {
   font-size: var(--consult-subhead);
 }
@@ -841,13 +845,13 @@ html {
   margin-top: 0.7rem;
 }
 
-.consultancy-resume-roles {
-  border-top: 1px solid var(--consult-ink);
-}
-
 .consultancy-resume-role {
   padding-block: clamp(1.4rem, 3vw, 2.2rem);
   border-bottom: 1px solid var(--consult-line);
+}
+
+.consultancy-resume-role:last-child {
+  border-bottom: 0;
 }
 
 .consultancy-resume-role__header {
@@ -1684,6 +1688,7 @@ html {
     margin-top: 0.025in;
   }
 
+  .consultancy-resume-page .consultancy-resume-role,
   .consultancy-resume-page .consultancy-resume-role__header,
   .consultancy-resume-page .consultancy-resume-role li,
   .consultancy-resume-page .consultancy-resume-section--compact {

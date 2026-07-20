@@ -110,8 +110,8 @@ body_class: consultancy-work
       <h3><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches">Sketch-CE</a></h3>
     </div>
     <div class="consultancy-proof__body">
-      <p>Sketch-CE demonstrates how I separate an implementation error from a disputed business rule. A domain expert supplies the expected behavior; people approve rule changes; an agent can repair the implementation against the accepted case.</p>
-      <p><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches/blob/7ee5db12c37f834c6accea85a80f5a50aaff5aa4/paper/main.pdf">Read the paper</a></p>
+      <p>Sketch-CE separates an implementation error from a missing or disputed business rule. The person responsible for the rule reviews the corrected behavior and explicitly approves any rule change; the agent then updates the sketch and implementation against that case.</p>
+      <p><a href="https://arxiv.org/abs/2607.15854">Read the paper on arXiv</a></p>
     </div>
   </article>
 
