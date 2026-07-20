@@ -34,8 +34,7 @@ description: Muness Castle's experience building software, leading engineering a
       <ul class="consultancy-resume-highlights">
         <li>At Zapier, led a roughly 50-person Data Platform and Production Engineering organization: 8 engineering managers, 2 agile practitioners, a product manager, and about 40 individual contributors.</li>
         <li>Ran and sold work for Relevance, a distributed consultancy I helped grow from 5 to 40 employees and $7.5M in annual revenue.</li>
-        <li>Built production agent systems through a delivery partner whose teams deploy with Claude and OpenAI APIs and help engineers adopt Claude Code and Codex.</li>
-        <li>At NerdWallet, led a data warehouse transition that cut historical-data backfills from weeks to under 48 hours.</li>
+        <li>Built production agent systems that let teams find expertise, form teams, synthesize reviews, and turn operational exceptions into regression tests and reviewable prompt or code changes.</li>
       </ul>
     </div>
   </section>
@@ -190,10 +189,9 @@ description: Muness Castle's experience building software, leading engineering a
     <h2 id="resume-open-source-title">Public work</h2>
     <div>
       <ul class="consultancy-resume-projects">
+        <li><a href="https://arxiv.org/abs/2607.15854"><cite>Agentic Synthesis against Counterexample-Supplemented Sketches</cite></a>, with Eric Rubeck, presents a method in which a human operator approves corrected behavior and rules, and accepted counterexamples become regression checks for coding agents. arXiv:2607.15854 [cs.SE], July 2026.</li>
         <li><a href="https://github.com/muness/obsidian-ics">Obsidian ICS</a> imports iCalendar events into Obsidian Daily and Periodic Notes; more than 25,000 downloads.</li>
         <li><a href="https://github.com/open-horizon-labs/repo-native-alignment">Repo-Native Alignment</a> gives agents semantic code search, repository maps, and impact analysis over a cross-language code graph.</li>
-        <li><a href="https://github.com/open-horizon-labs/skills">Open Horizons Skills</a> packages the framing, execution, review, shipping, dissent, and salvage workflows I use with agents.</li>
-        <li><a href="https://github.com/open-horizon-labs/unified-hifi-control">HiPhi / Unified Hi-Fi Control</a> controls Roon, LMS, OpenHome/UPnP, and HQPlayer across the web, Apple devices, and MCP.</li>
       </ul>
     </div>
   </section>

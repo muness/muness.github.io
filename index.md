@@ -49,7 +49,7 @@ body_class: consultancy-home
     </li>
     <li>
       <h3><a href="https://github.com/open-horizon-labs/counterexample-supplemented-sketches">Sketch-CE</a></h3>
-      <p>When a system gets a case wrong, the domain expert can show what should have happened without translating it into code. Sketch-CE turns that correction into a check an agent can work against while people keep control of the business rule.</p>
+      <p>When a system gets a case wrong, the person responsible for the rule can say what should have happened. That case becomes a check the agent has to pass, while any change to the rule still needs human approval. <a href="https://arxiv.org/abs/2607.15854">Read the paper on arXiv.</a></p>
     </li>
     <li>
       <h3><a href="https://github.com/open-horizon-labs/unified-hifi-control">Unified Hi-Fi Control</a></h3>
