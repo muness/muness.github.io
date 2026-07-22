@@ -187,6 +187,7 @@ exclude:
   - LICENSE
   - rollup.config.js
   - node_modules
+  - social
   - package*.json
 
 jekyll-archives:

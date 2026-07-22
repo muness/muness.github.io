@@ -1,8 +1,15 @@
-# The Great Flattening — LinkedIn Repost
-
-Target: LinkedIn repost commentary
-Constraint: Keep within LinkedIn's post length limit
-Posted at https://www.linkedin.com/feed/update/urn:li:share:7482061270540578816/
+---
+title: "The Great Flattening — LinkedIn Repost"
+author: muness
+status: published
+artifact: social-post
+platforms:
+  linkedin:
+    format: repost-commentary
+    url: https://www.linkedin.com/feed/update/urn:li:share:7482061270540578816/
+constraints:
+  - Keep within LinkedIn's post length limit.
+---
 
 ## Post
 

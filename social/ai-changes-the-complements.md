@@ -1,9 +1,15 @@
-# AI Changes the Complements — LinkedIn Companion Post
-
-Target: LinkedIn post
-Status: Ready after the article is published
-Article: https://muness.com/posts/ai-changes-the-complements/
-Constraint: Keep the article link out of the post and put it in the first comment
+---
+title: "AI Changes the Complements — LinkedIn Companion Post"
+author: muness
+status: ready-after-article
+artifact: social-post
+source_url: https://muness.com/posts/ai-changes-the-complements/
+platforms:
+  linkedin:
+    format: post-with-first-comment
+constraints:
+  - Keep the article link out of the post and put it in the first comment.
+---
 
 ## Post
 
