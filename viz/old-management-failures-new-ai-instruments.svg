@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">The same old management failures, now with AI</title>
+  <desc id="desc">A two-column grid pairs four old management habits with their AI-era expression: executive announcements become AI-first, activity is counted through tokens and use cases, output becomes generated code and decks, and skepticism becomes being called bad at AI. A demo, a usage count, or a pile of output is not proof that the work improved.</desc>
+
+  <rect width="1200" height="1200" fill="#FFFFFF"/>
+
+  <g fill="#1F2937" font-family="Archivo, Helvetica Neue, Arial, sans-serif">
+    <text x="70" y="94" font-size="50" font-weight="700" letter-spacing="-1.2">The same old management failures,</text>
+    <text x="70" y="152" font-size="50" font-weight="700" letter-spacing="-1.2">now with AI</text>
+  </g>
+
+  <rect x="610" y="264" width="520" height="644" fill="#EAF3F8"/>
+
+  <g fill="#536273" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="23" font-weight="700">
+    <text x="70" y="236">Old habit</text>
+    <text x="670" y="236">What it looks like with AI</text>
+  </g>
+
+  <g stroke="#9AA6B2" stroke-width="2">
+    <line x1="70" y1="264" x2="1130" y2="264"/>
+    <line x1="70" y1="425" x2="1130" y2="425"/>
+    <line x1="70" y1="586" x2="1130" y2="586"/>
+    <line x1="70" y1="747" x2="1130" y2="747"/>
+    <line x1="70" y1="908" x2="1130" y2="908"/>
+    <line x1="610" y1="264" x2="610" y2="908"/>
+  </g>
+
+  <g fill="#1F2937" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="33" font-weight="600">
+    <text x="70" y="334">An executive announcement</text>
+    <text x="70" y="374">counts as strategy</text>
+
+    <text x="70" y="505">Activity counts as progress</text>
+
+    <text x="70" y="666">Output counts as finished work</text>
+
+    <text x="70" y="827">Skepticism looks disloyal</text>
+  </g>
+
+  <g fill="#16354A" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700">
+    <text x="650" y="360">“AI-first”</text>
+    <text x="650" y="521">Tokens and use cases</text>
+    <text x="650" y="682">Generated code and decks</text>
+    <text x="650" y="843">“Bad at AI”</text>
+  </g>
+
+  <line x1="70" y1="994" x2="1130" y2="994" stroke="#1F2937" stroke-width="3"/>
+
+  <g fill="#1F2937" font-family="Archivo, Helvetica Neue, Arial, sans-serif" font-size="33" font-weight="600">
+    <text x="70" y="1062">A demo, a usage count, or a pile of output</text>
+    <text x="70" y="1105">is not proof that the work improved.</text>
+  </g>
+</svg>
