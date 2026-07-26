@@ -4,6 +4,8 @@ layout: consultancy
 
 {% assign author_key = page.author | default: 'muness' %}
 {% assign post_author = site.data.authors[author_key] %}
+{% assign published_day = page.date | date: '%Y-%m-%d' %}
+{% assign modified_day = page.last_modified_at | date: '%Y-%m-%d' %}
 
 <article class="consultancy-article">
   <header class="consultancy-article__header">
@@ -15,6 +17,9 @@ layout: consultancy
     <div class="consultancy-article__meta">
       <span>{{ post_author.name | default: site.social.name }}</span>
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      {% if page.last_modified_at and modified_day != published_day %}
+        <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">Updated {{ page.last_modified_at | date: '%B %-d, %Y' }}</time>
+      {% endif %}
     </div>
   </header>
 
