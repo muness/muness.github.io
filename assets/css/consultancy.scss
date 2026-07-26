@@ -14,6 +14,7 @@
   --consult-focus: oklch(0.63 0.17 74);
   --consult-frame: 70rem;
   --consult-reading: 70ch;
+  --consult-anchor-offset: 6rem;
   --consult-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --consult-display: clamp(2rem, 3.25vw, 3rem);
   --consult-section: clamp(1.4rem, 1.8vw, 1.9rem);
@@ -1127,8 +1128,16 @@ html {
 
 .consultancy-article__body h2,
 .consultancy-article__body h3,
-.consultancy-article__body h4 {
-  scroll-margin-top: 6rem;
+.consultancy-article__body h4,
+.consultancy-article__body sup[id^="fnref:"],
+.consultancy-article__body .footnotes li[id^="fn:"] {
+  scroll-margin-top: var(--consult-anchor-offset);
+}
+
+.consultancy-article__body > h2 + *,
+.consultancy-article__body > h3 + *,
+.consultancy-article__body > h4 + * {
+  margin-top: 2rem;
 }
 
 .consultancy-article__body h2 {
@@ -1402,6 +1411,10 @@ html {
 }
 
 @media (max-width: 40rem) {
+  :root {
+    --consult-anchor-offset: 7.25rem;
+  }
+
   .consultancy-frame {
     width: min(100% - 1.5rem, var(--consult-frame));
   }
