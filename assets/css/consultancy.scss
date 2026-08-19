@@ -1306,6 +1306,15 @@ html {
   border-top: 1px solid var(--consult-line);
 }
 
+/* Disqus still parses host colors as hex/RGB and crashes on OKLCH. */
+#disqus_thread {
+  background-color: #fbfcfc;
+}
+
+#disqus_thread a {
+  color: #004d54;
+}
+
 .consultancy-footer {
   padding-block: 2.5rem;
   border-top: 1px solid var(--consult-line);

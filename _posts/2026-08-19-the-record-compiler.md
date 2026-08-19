@@ -91,6 +91,16 @@ We did not try to describe every malformed record in the first Sketch. We wrote 
 
 It also fixed a few interfaces: the canonical record shape, the semantic span shape, the allowed transformation operations, and the output trace. We left everything else open so a coding agent could not invent policy for cases no analyst had reviewed.
 
+## Keep regex out of semantic extraction
+
+Our first extraction requirement was too loose. A coding agent wrote regex and string-splitting code that parsed raw field values, then assigned our semantic-role labels to the results. The output used classifier vocabulary, but regex had made the semantic decisions.
+
+We tightened the Sketch. GLiNER, our span classifier, had to produce the Phase 1 semantic spans. Regex and string splitting could not assign roles from raw input. Post-processing could split an extracted GLiNER span into traceable child tokens or apply a named fallback rule, but it had to preserve where that evidence came from.
+
+We compiled that obligation into AST checks in CI. The checks reject a projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
+
+Later we replaced GLiNER with GLiNER2. We updated the extraction requirement in the Sketch, regenerated the projection, and ran it against the existing record policy and accepted cases. We did not have to recover the normalization rules from the old extractor.
+
 ## Let the classifier find evidence
 
 We use span classification for character ranges inside a field and whole-field classification when the complete value carries the useful signal.
