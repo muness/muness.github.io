@@ -4,12 +4,12 @@ date: 2026-08-19 14:00:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "Phoenix Architecture tells us what must survive deletion. CESS gives us a way to keep learning while the implementation changes."
+excerpt: "Phoenix Architecture tells us what must survive deletion. This is how we turn failures into approved policy, then rebuild the software without losing what we learned."
 ---
 
 Chad Fowler published [The Specification Is Not a Document](https://aicoding.leaflet.pub/3mtgs36dnq22o) while I was finishing this. He gets to the same problem from the other end: if we can replace the code, where do we keep what we learned from running it? The decisions, incidents, evidence, and tests have to survive because they explain what the next implementation still has to do.
 
-In our case, a failed record gave us evidence. It did not get to rewrite policy. We had to decide whether the implementation broke a rule we already had or an analyst needed to approve a new one. CESS is the loop we used to carry that decision into the next implementation.
+In our case, a failed record gave us evidence. It did not get to rewrite policy. We had to decide whether the implementation broke a rule we already had or an analyst needed to approve a new one. When the analyst approved a new rule, we wrote it into the policy, rebuilt the implementation, and ran the earlier cases again.
 
 ---
 
