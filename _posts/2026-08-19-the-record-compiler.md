@@ -4,7 +4,7 @@ date: 2026-08-19 15:15:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "How we deleted the first implementation, generated prompt and GLiNER projections from the same policy, and tested thousands of real payloads during the spike."
+excerpt: "A coding agent faked semantic extraction with regex. We deleted it, generated two new implementations from governed policy, and tested the result on thousands of real records."
 ---
 
 Twenty minutes after I told a coding agent to use GLiNER to structure a set of messy records, it said it was done. That was too fast. I opened the code. It had parsed the raw fields with regex and string splitting, then attached our semantic-role labels to the pieces. The output looked plausible. The architecture was fake, so we threw away the entire implementation.
@@ -15,7 +15,9 @@ A failed record usually arrives with an obvious local fix: add a regex, split a 
 
 I do not trust a coding agent to preserve an architectural boundary because I wrote it in a prompt. Once we agree on the problem and approach, I have the agent turn those decisions into integration and architecture tests. Then it writes the implementation. The first implementation usually fails those tests. That failure exposes the shortcut, and I can send the agent back to fix the implementation without changing the decision.
 
-Architecture and integration tests protect boundaries we already understand. A new malformed record raises a different question: should this failure change policy, or does the implementation already violate it? We use [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS, for that second loop. An analyst decides what the failed record is allowed to teach, we add the approved rule to a governed specification, and we preserve the corrected record as evidence. The classifier, tokenizer, query evaluator, compiler, and surrounding code can all be replaced. During this spike, all of them were.
+Those tests catch violations of decisions we have already made. They do not tell us what to do with a failure we have never seen before. Did it expose bad code, or did it find a hole in the policy?
+
+We use [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS, to keep a code repair from becoming accidental policy. We keep the policy analysts have approved in a Sketch. For each counterexample, we store the failed input, the approved correction, and the limit of that correction. We generate another implementation from the Sketch, then run every accepted case again. In CESS, that generated implementation is a projection. The classifier, tokenizer, query evaluator, compiler, and surrounding code can all be replaced. We replaced all of them during this spike.
 
 Here are two synthetic inputs. I changed the names, values, and source labels. The mess is representative.
 
@@ -52,16 +54,14 @@ postal_code:       M5V 2T6
 registration_type: Individual
 ```
 
-[Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/) connects CESS to Chad Fowler's Phoenix Architecture. Here the deletion boundary is concrete: the Sketch, counterexamples, stable interfaces, and checks survived while we replaced the code beneath them.
-
-CESS calls the governed specification a Sketch and a generated implementation a projection. An accepted counterexample preserves the bad output, the approved correction, and the bounded policy change that correction supports. We use the current Sketch and stable interfaces to generate replaceable projections. One contains the classifier, query evaluator, and field-writing pipeline. Another applies the same policy through a prompt.
+I wrote about the Phoenix Architecture argument in [Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/). Here I want to stay with what we built and what we deleted.
 
 When a record failed, we made one of two changes:
 
 - If the Sketch already covered the record, we repaired or replaced the implementation.
 - If the Sketch did not cover the record, an analyst decided what the case was allowed to teach us. We updated the Sketch and rebuilt.
 
-We rejected handler patches that added a business rule merely to make the current fixture pass.
+We rejected handler patches that added a business rule merely to make the current fixture pass. The change had to describe a record pattern an analyst intended to reuse.
 
 ## Compile the complete record
 
@@ -73,7 +73,7 @@ We normalize a complete row at a time. A field-by-field cleaner cannot see that:
 - the second address line contains the city, region, and postal code;
 - `IND` describes the record rather than the person.
 
-A name rule may need to update `client_name`, `first_name`, and `last_name` together. An address rule may consume text that must not remain available to a name rule. We therefore produce one transformation plan for the complete record.
+A name rule may need to update `client_name`, `first_name`, and `last_name` together. An address rule may consume text that must not remain available to a name rule. So normalization produces one transformation plan for the complete record.
 
 Source adapters first map each layout into a stable bag of fields. Everything after that boundary operates on the same record shape:
 
@@ -86,7 +86,7 @@ source row
 → normalized record and trace
 ```
 
-The classifier supplies evidence. The policy layer decides what to write.
+The classifier supplies evidence. The selected policy tells the compiler which writes it may produce.
 
 ## Four constraints before the first rule
 
@@ -97,27 +97,25 @@ The first Sketch was small enough to review. It contained four obligations:
 3. Keep normalization policy out of imperative handlers.
 4. Deny ambiguous writes or send the record for review.
 
-We also fixed four interfaces: the canonical record, semantic spans, allowed transformation operations, and output trace. Everything else remained open. The coding agent could choose an implementation, but it could not invent policy for a case no analyst had reviewed.
+We fixed four interfaces as well: the canonical record, semantic spans, allowed transformation operations, and output trace. Everything else remained open. The coding agent could choose an implementation, but it could not invent policy for a case no analyst had reviewed.
 
-## Delete the whole implementation
+## We deleted the whole implementation
 
-[The Phoenix Primitives](https://aicoding.leaflet.pub/3mjfruwwuck2d) gives regenerative architecture a blunt definition:
+Chad Fowler opens [The Phoenix Primitives](https://aicoding.leaflet.pub/3mjfruwwuck2d) with this:
 
 > The architecture of a regenerative system is defined entirely by what you can't delete.
 
-The regex implementation failed that test. It was not a parser we needed to clean up. It was a bad projection. We kept the Sketch, stable record and span contracts, accepted counterexamples, and gate. We deleted the entire implementation.
+We could delete the regex parser. So we did. We kept the Sketch, stable record and span contracts, accepted counterexamples, and gate. Every line of the implementation went.
 
 The next code projection used [GLiNER](https://github.com/urchade/GLiNER) to produce Phase 1 semantic spans, declarative queries to select policy, and a compiler to produce field writes. We tightened the Sketch so post-processing could split a GLiNER span into traceable child tokens or apply a named fallback rule, but could not assign semantic roles by parsing raw input.
 
-That Sketch change also produced AST checks in CI. They reject any later projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
+We generated AST checks from that constraint and put them in CI. A later implementation can pass every current case and still fail the build if it reintroduces regex or string splitting in semantic extraction.
 
-We also implemented the same Sketch as a prompt. It applied the policy through prompt instructions rather than GLiNER spans, compiled queries, and field-write code. We used that prompt projection as an oracle while the code projection evolved. “Oracle” did not mean policy authority. Analysts still approved corrections and Sketch changes. The prompt gave us an independent executable path with different ways to fail.
+We generated a prompt implementation from the same Sketch too. It skipped GLiNER, the query evaluator, and the field-write compiler. We used this separate implementation as an oracle while the code version caught up. Analysts still approved every correction and Sketch change; the prompt only gave us another output to compare.
 
-With the prompt projection as an oracle, we ran thousands of real payloads during the spike. By the end of the spike, more than 95 percent of the reviewed normalized outputs were correct. That is a spike result, not a claim about general accuracy. We could test the policy against real records before committing to one production mechanism.
+We ran thousands of real payloads through the prompt oracle during the spike. By the end, more than 95 percent of the reviewed normalized outputs were correct. That is a result from this spike, not a claim about general accuracy. It let us test the policy against real records before committing to one production mechanism.
 
-Later we replaced GLiNER with [GLiNER2](https://github.com/fastino-ai/GLiNER2). We updated the extraction requirement, reprojected, and ran the result against the same record policy and accepted cases. We reused the normalization policy and cases unchanged.
-
-One Sketch produced a prompt oracle and successive code projections. The old code did not have to survive for the learning to survive.
+Later we replaced GLiNER with [GLiNER2](https://github.com/fastino-ai/GLiNER2). We changed one extraction requirement in the Sketch, generated a new implementation, and put it through the existing normalization policy and accepted cases.
 
 ## The classifier returns spans; policy produces writes
 
@@ -200,9 +198,7 @@ The analyst approved a bounded rule:
 
 The analyst approved no more than that. Deleting every occurrence of Northstar would have been a source-specific exception. The reverse order, relationship markers, registration text, trusts, and name suffixes were still undecided.
 
-We added the rule to the Sketch and reprojected.
-
-Then we ran the opposite order:
+We added the rule to the Sketch and generated the next implementation. Then we ran the opposite order:
 
 ```text
 client_name: Sam B. Turner NORTHSTAR SERVICES LLC
@@ -223,7 +219,7 @@ run a record
 → run the active case and earlier regressions
 ```
 
-We change policy only after someone who owns the data decision reviews the failure. If the Sketch already says what should happen, we repair the projection. If the Sketch is silent or wrong, that person decides what later records may inherit from this one.
+We change policy only after someone who owns the data decision reviews the failure. That person decides what later records may inherit from this one.
 
 ## Express business rules as record queries
 
@@ -362,15 +358,15 @@ We apply a matching rule automatically only when the evidence supports its write
 - the record matches a policy review condition;
 - classifier evidence falls below the operating threshold.
 
-For accepted cases, the deterministic gate compares the proposed fields with the approved output. That catches known regressions. The analyst separately reviews the simulated output against the current Sketch. When a failure proposes a policy change, a second decision covers the new rule's meaning and scope. A disguised special case can make every fixture green and still fail that review.
+For accepted cases, the deterministic gate compares the proposed fields with the approved output. A green gate means known examples still pass. An analyst still has to review the output. If the fix changes policy, the analyst also reviews the new rule's meaning and scope. Otherwise a source-specific exception can make every fixture green and still enter the policy.
 
-The regression gate protects approved examples. Sketch review checks whether generated behavior follows current policy. Sketch-change approval governs what a new example is allowed to teach the system.
+Regression tests protect examples. CESS governs what the examples are allowed to teach the system.
 
-## Replace perception without changing expected behavior
+## Move negation out of the embedding label
 
 We had put negation inside descriptive embedding labels: `means a person name; exclude registration-like tokens`. Embedding similarity did not turn `exclude` into a negation operator. It remained text inside one similarity target; the scorer never produced a separate negative score. The wording happened to work with one checkpoint.
 
-We changed the Sketch so positive role retrieval and demotion were separate. The replacement projection now:
+We moved demotion into explicit policy. The regenerated implementation now:
 
 1. analyzes the field and value shape;
 2. compiles short positive roles and the demotions relevant to that slot;
@@ -380,15 +376,13 @@ We changed the Sketch so positive role retrieval and demotion were separate. The
 6. drops candidates below the configured threshold;
 7. applies bounded structural post-processing.
 
-A registration token can demote an overlapping person-name candidate without suppressing valid registration evidence elsewhere in the row.
-
-We rebuilt perception, then ran the old and new versions against the same 23 accepted inputs and expected outputs, both before and after post-processing. During the replacement, those cases exposed implementation bugs. We fixed the bugs without changing an accepted case or weakening its expected behavior.
+A registration token can demote an overlapping person-name candidate without suppressing valid registration evidence elsewhere in the row. We rebuilt perception, then ran the old and new versions against the same 23 accepted inputs and expected outputs, both before and after post-processing. Those comparisons exposed implementation bugs. We fixed the bugs without changing an accepted case or weakening its expected behavior.
 
 That establishes parity on 23 cases. It does not establish that the new design scales. We still need evidence across other checkpoints, fields, record shapes, and cross-role collisions.
 
-## Keep the decisions; replace the machinery
+## What survived deletion
 
-The durable pieces are:
+We kept:
 
 - the record-level policy and its unresolved holes;
 - the stable record, span, operation, and trace interfaces;
@@ -397,7 +391,7 @@ The durable pieces are:
 - the deterministic comparison and analyst review process;
 - provenance for each policy change and compiled write.
 
-The disposable artifact is the entire projection. In this spike that included:
+These were disposable:
 
 - the regex implementation;
 - the prompt oracle;
@@ -409,8 +403,4 @@ The disposable artifact is the entire projection. In this spike that included:
 - the trace UI;
 - the surrounding Python.
 
-Each projection still took engineering work. During the spike we deleted the regex code, generated the prompt oracle and GLiNER projection, then replaced GLiNER with GLiNER2. The analyst-approved policy and cases survived each change.
-
-The current fixtures establish bounded behavior, not general accuracy. Even so, I can replace the classifier or compiler and still show an analyst the same policy, the same source spans, and the exact writes produced from them.
-
-I still do not trust the next generated projection on sight. I run it through architecture checks, approved-output comparison, and analyst review. When the review authorizes a new rule, we write it into the Sketch and generate the next projection from it. If the implementation is wrong, I can repair it or delete all of it. I do not have to preserve its code to preserve the analyst's decisions.
+I still do not trust the next generated implementation. I run the architecture checks, compare its outputs with the accepted cases, and put unfamiliar results in front of an analyst. When a failure exposes missing policy, the analyst decides what new rule it authorizes. If the implementation took a shortcut, we fix it. If the mechanism is wrong, we delete it and generate another one. The decisions are no longer buried inside code we are afraid to replace.
