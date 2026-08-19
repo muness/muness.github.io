@@ -4,10 +4,20 @@ date: 2026-08-19 15:15:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "How we turned classifier spans and analyst-reviewed counterexamples into declarative record policy, compiled field writes, and replaceable code."
+excerpt: "How we kept analyst-approved normalization rules while replacing the classifier, query evaluator, compiler, and surrounding code."
 ---
 
-The record compiler starts with rows like these. The examples are synthetic: I changed the names, values, and source labels. The mess is representative.
+Twenty minutes after I told a coding agent to use GLiNER to structure a set of messy records, it said it was done. That was too fast. I opened the code. It had parsed the raw fields with regex and string splitting, then attached our semantic-role labels to the pieces. The output looked plausible. The architecture was fake.
+
+On my current engagement, we are rebuilding an ETL process that turns records from hundreds of source layouts into the same dozen-ish fields: names, organizations, addresses, record types, and relationships. The clean layouts give us one fact per column. The bad ones combine several facts in one field, put them in the wrong fields, abbreviate them, repeat them, or contradict one another.
+
+A failed record usually arrives with an obvious local fix: add a regex, split a string, or copy the middle initial from another column. Each patch gets one more row through. After enough of them, the parser becomes a house of cards, and the reasons it behaves that way are mostly forgotten in old commits.
+
+I do not trust a coding agent to preserve an architectural boundary because I wrote it in a prompt. Once we agree on the problem and approach, I have the agent turn those decisions into integration and architecture tests. Then it writes the implementation. The first implementation usually fails those tests. That failure exposes the shortcut, and I can send the agent back to fix the implementation without changing the decision.
+
+Architecture and integration tests protect boundaries we already understand. A new malformed record raises a different question: should this failure change policy, or does the implementation already violate it? We use [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS, for that second loop. An analyst decides what the failed record is allowed to teach, we add the approved rule to a governed specification, and we preserve the corrected record as evidence. The classifier, tokenizer, query evaluator, compiler, and surrounding code can all be replaced.
+
+Here are two synthetic inputs. I changed the names, values, and source labels. The mess is representative.
 
 ```text
 RECORD_NAME:    NORTHSTAR SERVICES LLC Sam B. Turner
@@ -42,20 +52,18 @@ postal_code:       M5V 2T6
 registration_type: Individual
 ```
 
-In the real input, hundreds of source layouts describe the same dozen-ish facts. Some give us one fact per column. Others jam names, organizations, addresses, record types, and relationships together. The work is to apply the business rules across a complete record without hiding those rules in code.
+[Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/) makes the architectural argument. Here I stay with the records: how a failed normalization becomes approved policy, compiled writes, and a constraint on the next implementation.
 
-[Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/) makes the architectural argument for keeping approved decisions outside disposable implementations. This is the machinery we used.
+CESS calls the governed specification a Sketch and the generated implementation a projection. An accepted counterexample preserves the bad output, the approved correction, and the bounded policy change that correction supports. We use the current Sketch and stable interfaces to generate a working classifier, query evaluator, and field-writing pipeline.
 
-We built the spike with [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS. The Sketch holds the policy we have approved so far. Each accepted counterexample records a bad output, the correction, and the smallest general policy change that correction supports. We compile the current Sketch into a working classifier, query evaluator, and field-writing pipeline.
+When a record failed, we made one of two changes:
 
-Every change to intended behavior entered through one of two paths:
+- If the Sketch already covered the record, we repaired or replaced the implementation.
+- If the Sketch did not cover the record, an analyst decided what the case was allowed to teach us. We updated the Sketch and rebuilt.
 
-- The Sketch already covered the record. We repaired or replaced the implementation.
-- The Sketch did not cover the record. An analyst approved what the case was allowed to teach us, we changed the Sketch, and then we rebuilt.
+We rejected handler patches that added a business rule merely to make the current fixture pass.
 
-We rejected patches that added a business rule to a handler just to make the current fixture pass.
-
-## Compile records, not fields
+## Compile the complete record
 
 We normalize a complete row at a time. A field-by-field cleaner cannot see that:
 
@@ -65,7 +73,7 @@ We normalize a complete row at a time. A field-by-field cleaner cannot see that:
 - the second address line contains the city, region, and postal code;
 - `IND` describes the record rather than the person.
 
-A name rule may need to update `client_name`, `first_name`, and `last_name` together. An address rule may consume text that must not remain available to a name rule. These are record transformations.
+A name rule may need to update `client_name`, `first_name`, and `last_name` together. An address rule may consume text that must not remain available to a name rule. We therefore produce one transformation plan for the complete record.
 
 Source adapters first map each layout into a stable bag of fields. Everything after that boundary operates on the same record shape:
 
@@ -78,30 +86,30 @@ source row
 → normalized record and trace
 ```
 
-The classifier does not write the normalized record. It supplies evidence to the policy layer.
+The classifier supplies evidence. The policy layer decides what to write.
 
-## Start with a small Sketch
+## Four constraints before the first rule
 
-We did not try to describe every malformed record in the first Sketch. We wrote down four obligations:
+The first Sketch was small enough to review. It contained four obligations:
 
 1. Transform one complete record, never one isolated field.
 2. Identify semantic roles before moving text.
 3. Keep normalization policy out of imperative handlers.
 4. Deny ambiguous writes or send the record for review.
 
-It also fixed a few interfaces: the canonical record shape, the semantic span shape, the allowed transformation operations, and the output trace. We left everything else open so a coding agent could not invent policy for cases no analyst had reviewed.
+We also fixed four interfaces: the canonical record, semantic spans, allowed transformation operations, and output trace. Everything else remained open. The coding agent could choose an implementation, but it could not invent policy for a case no analyst had reviewed.
 
 ## Keep regex out of semantic extraction
 
-Our first extraction requirement was too loose. A coding agent wrote regex and string-splitting code that parsed raw field values, then assigned our semantic-role labels to the results. The output used classifier vocabulary, but regex had made the semantic decisions.
+That twenty-minute projection revealed a hole in our first Sketch. We had required semantic roles but left the extraction boundary open. The output used classifier vocabulary. Regex had made the semantic decisions.
 
-We tightened the Sketch. GLiNER, our span classifier, had to produce the Phase 1 semantic spans. Regex and string splitting could not assign roles from raw input. Post-processing could split an extracted GLiNER span into traceable child tokens or apply a named fallback rule, but it had to preserve where that evidence came from.
+We tightened the Sketch. [GLiNER](https://github.com/urchade/GLiNER), our span classifier, became the source of Phase 1 semantic spans. Post-processing could split an extracted span into traceable child tokens or apply a named fallback rule. It could not assign roles by parsing the raw input, and every derived token had to retain its source.
 
-We compiled that obligation into AST checks in CI. The checks reject a projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
+That Sketch change produced AST checks in CI. They reject a projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
 
-Later we replaced GLiNER with GLiNER2. We updated the extraction requirement in the Sketch, regenerated the projection, and ran it against the existing record policy and accepted cases. We did not have to recover the normalization rules from the old extractor.
+Later we replaced GLiNER with [GLiNER2](https://github.com/fastino-ai/GLiNER2). We updated the extraction requirement, reprojected, and ran the result against the same record policy and accepted cases. We reused the normalization policy and cases unchanged.
 
-## Let the classifier find evidence
+## The classifier returns spans; policy produces writes
 
 We use span classification for character ranges inside a field and whole-field classification when the complete value carries the useful signal.
 
@@ -140,7 +148,7 @@ We retain the raw span and the derived tokens. We also distinguish model output,
 
 Without provenance, all six failures look like “the model got the record wrong.” That does not tell an engineer what to fix or an analyst what to review.
 
-Our semantic intermediate representation carries at least:
+For every span, we keep at least:
 
 ```text
 field
@@ -156,7 +164,7 @@ label_or_rule_id
 
 The classifier can change as long as the replacement produces this evidence contract.
 
-## Turn a failure into policy
+## An analyst decides what a failed record teaches
 
 Our first name failure was:
 
@@ -174,15 +182,15 @@ first_name:  Sam B.
 last_name:   Turner
 ```
 
-We could have added a branch that removed `NORTHSTAR SERVICES LLC` and copied `B.` into `first_name`. That would have fixed the example and taught the system nothing we could safely reuse.
+A branch that removed `NORTHSTAR SERVICES LLC` and copied `B.` into `first_name` would make this example pass. It would say nothing useful about the next source organization or the reverse ordering.
 
-Instead, the analyst approved a bounded rule:
+The analyst approved a bounded rule:
 
 > When a source organization precedes a person's name in `client_name`, retain the person spans. Build `first_name` from every person token except the last. Use the last person token as `last_name`.
 
 The analyst approved no more than that. Deleting every occurrence of Northstar would have been a source-specific exception. The reverse order, relationship markers, registration text, trusts, and name suffixes were still undecided.
 
-We added the rule to the Sketch and compiled another projection.
+We added the rule to the Sketch and reprojected.
 
 Then we ran the opposite order:
 
@@ -192,9 +200,9 @@ first_name:  Sam
 last_name:   Turner
 ```
 
-The first rule did not cover it. The analyst reviewed the new case and approved an extension: the person may appear before or after the source organization.
+The first rule covered only an organization prefix. The analyst reviewed the new case and approved an extension: the person may appear before or after the source organization.
 
-That is the working rhythm:
+We repeated the same cycle for each failure:
 
 ```text
 run a record
@@ -205,7 +213,7 @@ run a record
 → run the active case and earlier regressions
 ```
 
-A failed case changes policy only after review. If the Sketch already says what should happen, we repair the projection. If the Sketch is silent or wrong, someone who owns the data decision approves what later records may inherit.
+We change policy only after someone who owns the data decision reviews the failure. If the Sketch already says what should happen, we repair the projection. If the Sketch is silent or wrong, that person decides what later records may inherit from this one.
 
 ## Express business rules as record queries
 
@@ -258,15 +266,15 @@ A simplified version of the organization-noise rule looks like this:
 }
 ```
 
-The actual policy has more detail. The important divisions are visible here:
+The three blocks separate matching, mutation, and review:
 
 - `when` selects a record pattern from semantic evidence;
 - `then` names a bounded record operation;
 - `review_when` blocks automatic application when the evidence cannot support a safe write.
 
-The rule does not call the classifier. A different classifier can satisfy the same semantic-role interface. The rule also does not contain field-assignment code. A different compiler can implement the same operation semantics.
+The classifier and compiler sit behind separate interfaces. The semantic-role interface lets us replace the classifier; the operation interface lets us replace the compiler.
 
-This is how business rules stay out of Python branches without pretending that JSON somehow removes complexity. The complexity remains. It becomes inspectable policy with named inputs, scope, exclusions, operations, and review boundaries.
+JSON does not remove the complexity. It puts the inputs, scope, exclusions, operations, and review boundaries where an analyst and engineer can inspect them, rather than distributing those decisions through Python branches.
 
 ## Compile policy into writes
 
@@ -302,7 +310,7 @@ last_name   = "Turner"
 
 Each write carries the old value, proposed value, matched pattern, compiled operation, and source spans. If a reviewer rejects the output, we can locate the failure before changing anything.
 
-That trace is also what keeps the classifier in its proper role. “The model cleaned the name” gives the business owner no useful control. “The classifier returned these spans; this policy selected them; the compiler produced these writes” exposes every boundary where the result can be challenged.
+The trace shows where a bad output entered: extraction, policy selection, or compilation. “The model cleaned the name” hides all three. The actual sequence is available: the classifier returned these spans; this policy selected them; the compiler proposed these writes. An analyst can challenge any boundary in that sequence.
 
 ## Coordinate several rules on one row
 
@@ -330,11 +338,11 @@ normalize_registration
 
 Each operation declares what it reads and writes. Policy sets their order and conflict behavior. The compiler rejects incompatible writes instead of choosing whichever rule ran last. The trace records which operation produced the final value.
 
-The operation vocabulary is an architectural boundary, not a finished ontology. When a failed record requires an operation we do not have, an analyst can approve the behavior and we can add the smallest operation that expresses it without adding a handler for that row.
+We expect the operation vocabulary to grow. When an analyst approves behavior that the current vocabulary cannot express, we add the smallest reusable operation that covers it rather than a handler for that row.
 
-## Deny writes we cannot justify
+## Reject writes we cannot justify
 
-A matching rule is not enough to change the record automatically. We deny the write or request review when:
+We apply a matching rule automatically only when the evidence supports its writes. We reject the write or request review when:
 
 - required source spans are missing;
 - selected spans overlap unexpectedly;
@@ -344,15 +352,13 @@ A matching rule is not enough to change the record automatically. We deny the wr
 - the record matches a policy review condition;
 - classifier evidence falls below the operating threshold.
 
-For accepted cases, the deterministic gate compares the proposed fields with the approved output. The analyst also reviews whether the rule and trace follow the Sketch.
+For accepted cases, the deterministic gate compares the proposed fields with the approved output. That catches known regressions. The analyst separately reviews the simulated output against the current Sketch. When a failure proposes a policy change, a second decision covers the new rule's meaning and scope. A disguised special case can make every fixture green and still fail that review.
 
-The exact comparison catches known regressions. During Sketch review, the analyst rejects a disguised special case that happens to make every fixture green.
+The regression gate protects approved examples. Sketch review checks whether generated behavior follows current policy. Sketch-change approval governs what a new example is allowed to teach the system.
 
-## Rebuild perception against the same expected outputs
+## Replace perception without changing expected behavior
 
-The negation refactor replaced a foundational part of perception.
-
-We had put negation inside descriptive embedding labels: `means a person name; exclude registration-like tokens`. Embeddings do not do negation. We had a prompt formulation that happened to work with one checkpoint, not an operation that subtracted negative evidence.
+We had put negation inside descriptive embedding labels: `means a person name; exclude registration-like tokens`. Embedding similarity did not turn `exclude` into a negation operator. It remained text inside one similarity target; the scorer never produced a separate negative score. The wording happened to work with one checkpoint.
 
 We changed the Sketch so positive role retrieval and demotion were separate. The replacement projection now:
 
@@ -366,11 +372,11 @@ We changed the Sketch so positive role retrieval and demotion were separate. The
 
 A registration token can demote an overlapping person-name candidate without suppressing valid registration evidence elsewhere in the row.
 
-We changed the Sketch and the projection while holding the behavioral constraints fixed. The old and new perception paths both matched the same 23 accepted inputs and expected outputs before and after post-processing. Bugs exposed by the replacement were projection defects; we fixed them without weakening the expected behavior.
+We rebuilt perception, then ran the old and new versions against the same 23 accepted inputs and expected outputs, both before and after post-processing. During the replacement, those cases exposed implementation bugs. We fixed the bugs without changing an accepted case or weakening its expected behavior.
 
 That establishes parity on 23 cases. It does not establish that the new design scales. We still need evidence across other checkpoints, fields, record shapes, and cross-role collisions.
 
-## What we kept and what we threw away
+## Keep the decisions; replace the machinery
 
 The durable pieces are:
 
@@ -391,6 +397,8 @@ The disposable pieces are:
 - the trace UI;
 - the surrounding Python.
 
-Engineers still have to build each projection. Calling it disposable means we do not ask the old projection to remain the only surviving record of the decisions it implements.
+Engineers still build each projection. “Disposable” means the implementation is no longer the only surviving record of the decisions it implements.
 
-The current fixtures establish bounded behavior, not general accuracy. But I can replace the classifier or compiler and still show an analyst the same policy, the same source spans, and the exact writes produced from them. The next implementation starts there, not in the old Python.
+The current fixtures establish bounded behavior, not general accuracy. Even so, I can replace the classifier or compiler and still show an analyst the same policy, the same source spans, and the exact writes produced from them.
+
+I still do not trust the next generated projection on sight. I run it through architecture checks, approved-output comparison, and analyst review. When the review authorizes a new rule, we write it into the Sketch and generate the next projection from it. The next implementation starts from approved decisions, not old Python.
