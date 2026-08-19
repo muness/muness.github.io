@@ -4,10 +4,10 @@ date: 2026-08-19 15:15:00 -0400
 author: muness
 toc: true
 comments: true
-excerpt: "How we kept analyst-approved normalization rules while replacing the classifier, query evaluator, compiler, and surrounding code."
+excerpt: "How we deleted the first implementation, generated prompt and GLiNER projections from the same policy, and tested thousands of real payloads during the spike."
 ---
 
-Twenty minutes after I told a coding agent to use GLiNER to structure a set of messy records, it said it was done. That was too fast. I opened the code. It had parsed the raw fields with regex and string splitting, then attached our semantic-role labels to the pieces. The output looked plausible. The architecture was fake.
+Twenty minutes after I told a coding agent to use GLiNER to structure a set of messy records, it said it was done. That was too fast. I opened the code. It had parsed the raw fields with regex and string splitting, then attached our semantic-role labels to the pieces. The output looked plausible. The architecture was fake, so we threw away the entire implementation.
 
 On my current engagement, we are rebuilding an ETL process that turns records from hundreds of source layouts into the same dozen-ish fields: names, organizations, addresses, record types, and relationships. The clean layouts give us one fact per column. The bad ones combine several facts in one field, put them in the wrong fields, abbreviate them, repeat them, or contradict one another.
 
@@ -15,7 +15,7 @@ A failed record usually arrives with an obvious local fix: add a regex, split a 
 
 I do not trust a coding agent to preserve an architectural boundary because I wrote it in a prompt. Once we agree on the problem and approach, I have the agent turn those decisions into integration and architecture tests. Then it writes the implementation. The first implementation usually fails those tests. That failure exposes the shortcut, and I can send the agent back to fix the implementation without changing the decision.
 
-Architecture and integration tests protect boundaries we already understand. A new malformed record raises a different question: should this failure change policy, or does the implementation already violate it? We use [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS, for that second loop. An analyst decides what the failed record is allowed to teach, we add the approved rule to a governed specification, and we preserve the corrected record as evidence. The classifier, tokenizer, query evaluator, compiler, and surrounding code can all be replaced.
+Architecture and integration tests protect boundaries we already understand. A new malformed record raises a different question: should this failure change policy, or does the implementation already violate it? We use [Counterexample-Supplemented Sketches](https://github.com/open-horizon-labs/counterexample-supplemented-sketches), or CESS, for that second loop. An analyst decides what the failed record is allowed to teach, we add the approved rule to a governed specification, and we preserve the corrected record as evidence. The classifier, tokenizer, query evaluator, compiler, and surrounding code can all be replaced. During this spike, all of them were.
 
 Here are two synthetic inputs. I changed the names, values, and source labels. The mess is representative.
 
@@ -52,9 +52,9 @@ postal_code:       M5V 2T6
 registration_type: Individual
 ```
 
-[Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/) makes the architectural argument. Here I stay with the records: how a failed normalization becomes approved policy, compiled writes, and a constraint on the next implementation.
+[Replacing the Implementation Without Losing the Decisions](/posts/replacing-the-implementation-without-losing-the-decisions/) connects CESS to Chad Fowler's Phoenix Architecture. Here the deletion boundary is concrete: the Sketch, counterexamples, stable interfaces, and checks survived while we replaced the code beneath them.
 
-CESS calls the governed specification a Sketch and the generated implementation a projection. An accepted counterexample preserves the bad output, the approved correction, and the bounded policy change that correction supports. We use the current Sketch and stable interfaces to generate a working classifier, query evaluator, and field-writing pipeline.
+CESS calls the governed specification a Sketch and a generated implementation a projection. An accepted counterexample preserves the bad output, the approved correction, and the bounded policy change that correction supports. We use the current Sketch and stable interfaces to generate replaceable projections. One contains the classifier, query evaluator, and field-writing pipeline. Another applies the same policy through a prompt.
 
 When a record failed, we made one of two changes:
 
@@ -99,15 +99,25 @@ The first Sketch was small enough to review. It contained four obligations:
 
 We also fixed four interfaces: the canonical record, semantic spans, allowed transformation operations, and output trace. Everything else remained open. The coding agent could choose an implementation, but it could not invent policy for a case no analyst had reviewed.
 
-## Keep regex out of semantic extraction
+## Delete the whole implementation
 
-That twenty-minute projection revealed a hole in our first Sketch. We had required semantic roles but left the extraction boundary open. The output used classifier vocabulary. Regex had made the semantic decisions.
+[The Phoenix Primitives](https://aicoding.leaflet.pub/3mjfruwwuck2d) gives regenerative architecture a blunt definition:
 
-We tightened the Sketch. [GLiNER](https://github.com/urchade/GLiNER), our span classifier, became the source of Phase 1 semantic spans. Post-processing could split an extracted span into traceable child tokens or apply a named fallback rule. It could not assign roles by parsing the raw input, and every derived token had to retain its source.
+> The architecture of a regenerative system is defined entirely by what you can't delete.
 
-That Sketch change produced AST checks in CI. They reject a projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
+The regex implementation failed that test. It was not a parser we needed to clean up. It was a bad projection. We kept the Sketch, stable record and span contracts, accepted counterexamples, and gate. We deleted the entire implementation.
+
+The next code projection used [GLiNER](https://github.com/urchade/GLiNER) to produce Phase 1 semantic spans, declarative queries to select policy, and a compiler to produce field writes. We tightened the Sketch so post-processing could split a GLiNER span into traceable child tokens or apply a named fallback rule, but could not assign semantic roles by parsing raw input.
+
+That Sketch change also produced AST checks in CI. They reject any later projection that reintroduces regex or string splitting in the extraction path, even when its outputs satisfy the current regression cases.
+
+We also implemented the same Sketch as a prompt. It applied the policy through prompt instructions rather than GLiNER spans, compiled queries, and field-write code. We used that prompt projection as an oracle while the code projection evolved. “Oracle” did not mean policy authority. Analysts still approved corrections and Sketch changes. The prompt gave us an independent executable path with different ways to fail.
+
+With the prompt projection as an oracle, we ran thousands of real payloads during the spike. By the end of the spike, more than 95 percent of the reviewed normalized outputs were correct. That is a spike result, not a claim about general accuracy. We could test the policy against real records before committing to one production mechanism.
 
 Later we replaced GLiNER with [GLiNER2](https://github.com/fastino-ai/GLiNER2). We updated the extraction requirement, reprojected, and ran the result against the same record policy and accepted cases. We reused the normalization policy and cases unchanged.
+
+One Sketch produced a prompt oracle and successive code projections. The old code did not have to survive for the learning to survive.
 
 ## The classifier returns spans; policy produces writes
 
@@ -387,8 +397,10 @@ The durable pieces are:
 - the deterministic comparison and analyst review process;
 - provenance for each policy change and compiled write.
 
-The disposable pieces are:
+The disposable artifact is the entire projection. In this spike that included:
 
+- the regex implementation;
+- the prompt oracle;
 - the classifier checkpoint;
 - label wording;
 - tokenization and post-processing;
@@ -397,8 +409,8 @@ The disposable pieces are:
 - the trace UI;
 - the surrounding Python.
 
-Engineers still build each projection. “Disposable” means the implementation is no longer the only surviving record of the decisions it implements.
+Each projection still took engineering work. During the spike we deleted the regex code, generated the prompt oracle and GLiNER projection, then replaced GLiNER with GLiNER2. The analyst-approved policy and cases survived each change.
 
 The current fixtures establish bounded behavior, not general accuracy. Even so, I can replace the classifier or compiler and still show an analyst the same policy, the same source spans, and the exact writes produced from them.
 
-I still do not trust the next generated projection on sight. I run it through architecture checks, approved-output comparison, and analyst review. When the review authorizes a new rule, we write it into the Sketch and generate the next projection from it. The next implementation starts from approved decisions, not old Python.
+I still do not trust the next generated projection on sight. I run it through architecture checks, approved-output comparison, and analyst review. When the review authorizes a new rule, we write it into the Sketch and generate the next projection from it. If the implementation is wrong, I can repair it or delete all of it. I do not have to preserve its code to preserve the analyst's decisions.
