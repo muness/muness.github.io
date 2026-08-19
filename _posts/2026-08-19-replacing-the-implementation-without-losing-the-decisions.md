@@ -7,11 +7,9 @@ comments: true
 excerpt: "Phoenix Architecture tells us what must survive deletion. CESS gives us a way to keep learning while the implementation changes."
 ---
 
-Chad Fowler's [The Specification Is Not a Document](https://aicoding.leaflet.pub/3mtgs36dnq22o) names the larger architecture behind this essay. The durable artifact is not a master specification file. It is connected knowledge about claims, evidence, decisions, evaluations, contradictions, and provenance. Code and documentation are projections of that knowledge. Regeneration reveals what remains trapped in the old implementation.
+Chad Fowler published [The Specification Is Not a Document](https://aicoding.leaflet.pub/3mtgs36dnq22o) while I was finishing this. He gets to the same problem from the other end: if we can replace the code, where do we keep what we learned from running it? The decisions, incidents, evidence, and tests have to survive because they explain what the next implementation still has to do.
 
-Chad draws the line that matters here: extracting knowledge is not the same as granting it authority. Production supplies evidence. Somebody still has to decide whether that evidence should constrain future software.
-
-I have been working on a method for that transition. When a running system fails, we separate implementation defects from missing policy. An approved counterexample can authorize a bounded change to the Sketch; then we regenerate the implementation. Phoenix Architecture tells us what must survive deletion. Counterexample-Supplemented Sketches governs how the surviving specification learns.
+In our case, a failed record gave us evidence. It did not get to rewrite policy. We had to decide whether the implementation broke a rule we already had or an analyst needed to approve a new one. CESS is the loop we used to carry that decision into the next implementation.
 
 ---
 
