@@ -41,6 +41,8 @@ If the projection violates an existing rule, fix or replace the projection. If t
 
 Regression tests protect examples. CESS governs what approved examples are allowed to teach the system.
 
+For the full pipeline, [The Record Compiler](/posts/the-record-compiler/) follows a synthetic record from raw fields through classifier spans, policy matching, compiled writes, denials, and analyst review.
+
 ## Use each implementation to answer one question
 
 We tried pattern-specific handlers, classifier-first routing, span extraction without enough policy, regex scaffolding dressed in semantic vocabulary, a decoder experiment, and finer-grained name labels. I did not know which model, tokenizer, query language, or compiler would win. I did not need to know yet.
