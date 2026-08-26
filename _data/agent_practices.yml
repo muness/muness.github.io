@@ -1,0 +1,184 @@
+- id: design-in-practice
+  version: "1.0.0"
+  title: "Design in Practice"
+  summary: "A six-phase design workflow for describing the current state, diagnosing and delimiting a problem, choosing a direction, designing the solution, and developing it."
+  articleUrl: "https://muness.com/posts/design-in-practice-writeup/"
+  whenToUse:
+    - "The team is moving toward implementation before it has a shared understanding of the problem."
+    - "A consequential decision needs its scope, direction, criteria, and rationale made inspectable."
+    - "You need a deliberate point to decide whether to deepen the work or stop and pivot."
+  notFor:
+    - "A request where the problem, direction, and implementation are already settled and only execution remains."
+    - "Replacing the domain owner's judgment about evidence, trade-offs, or readiness."
+  workflow:
+    - id: describe
+      name: "Describe"
+      instruction: "Record the current state, symptoms, and operating context without calling it the problem statement."
+    - id: diagnose
+      name: "Diagnose"
+      instruction: "List plausible problems, then investigate and select the problem to focus on."
+    - id: delimit
+      name: "Delimit"
+      instruction: "State the problem succinctly as unmet objectives and causes, not a missing feature, symptom, or anecdote."
+    - id: direction
+      name: "Direction"
+      instruction: "Choose a strategy and approach; record intentions, alternatives, principles, and decision criteria."
+    - id: design
+      name: "Design"
+      instruction: "Work out the solution specifics against the problem, direction, and stated intentions."
+    - id: develop
+      name: "Develop"
+      instruction: "Build, test, and refine what was designed, with a fresh perspective where practical."
+  contract:
+    inputs:
+      - "A current-state description and context"
+      - "Candidate problems and a selected problem statement"
+      - "A direction with alternatives, criteria, and rationale"
+    outputs:
+      - "Written decisions and a design that can be inspected by the people doing the work"
+      - "A development path with an explicit readiness, stop, or pivot decision"
+    checks:
+      - "Descriptions are consistent, specific, explanatory, and succinct without omitting critical detail."
+      - "Each phase updates understanding and records the decisions that follow from it."
+  humanJudgment:
+    boundary: "The workflow structures inquiry and makes decisions visible; the people who know the work decide whether the evidence, direction, design, and readiness are good enough."
+    requiredFor:
+      - "Choosing which problem is consequential and in scope"
+      - "Judging competing directions and their trade-offs"
+      - "Deciding to deepen, stop, or pivot when evidence changes"
+  provenance:
+    sourceType: article
+    sourceArticlePath: "_posts/2023-06-13-design-in-practice-writeup.md"
+    durableSkills:
+      - "problem-statement"
+      - "solution-space"
+      - "execute"
+      - "review"
+    skillsRepository: "https://github.com/open-horizon-labs/skills"
+    install:
+      mode: optional-manual
+      command: "npx skills add open-horizon-labs/skills -g -a claude-code -y"
+      automatic: false
+      note: "Optional provenance for people who want the durable skills locally; the WebMCP practice tools never install anything."
+
+- id: strategy-and-tactics-trees
+  version: "1.0.0"
+  title: "Strategy & Tactics Trees"
+  summary: "A tree structure that pairs objectives with tactics and records necessity, sufficiency, and tactic-justification reasoning."
+  articleUrl: "https://muness.com/posts/on-s-and-t-trees/"
+  whenToUse:
+    - "A team needs to connect an important objective to concrete actions across several levels."
+    - "Tactics are accumulating without a shared explanation of what they advance or why they are necessary."
+    - "You need to inspect whether a set of child steps is sufficient for its parent objective."
+  notFor:
+    - "A substitute for developing strategy, knowing the context, or deciding whether an objective matters."
+    - "A comprehensive plan that freezes every branch before learning from the work."
+  workflow:
+    - id: objective
+      name: "Set the objective"
+      instruction: "Begin with the overarching achievement that gives the tree direction."
+    - id: steps
+      name: "Pair objectives and tactics"
+      instruction: "Create one step for each strategy/tactic pairing, nesting child objectives under their parent step."
+    - id: justifications
+      name: "Write justifications"
+      instruction: "For each step, explain why its tactic is necessary and why it is a good choice for the objective."
+    - id: sufficiency
+      name: "Check sufficiency"
+      instruction: "For each parent, group its direct child steps and state why that set is enough to address the parent objective."
+    - id: reassess
+      name: "Reassess"
+      instruction: "As an objective is met or new learning arrives, refine the tree and its next important branches."
+  contract:
+    inputs:
+      - "objective: a non-empty overarching objective"
+      - "steps: uniquely identified objective/tactic pairings with necessity and tactic justification"
+      - "sufficiencyGroups: direct child step ids grouped under each parent, with a sufficiency claim"
+    outputs:
+      - "A structurally connected tree of objectives and tactics"
+      - "Inspectable necessity, sufficiency, and parallel-assumption reasoning"
+    checks:
+      - "Every step has a parent that exists, unless it is a root step."
+      - "Every step is covered exactly once by the sufficiency group for its parent."
+      - "The tree has no cycles and every sufficiency group states a non-empty claim."
+  humanJudgment:
+    boundary: "The checker verifies the tree's structure and coverage only; people who understand the domain must judge whether objectives, tactics, justifications, and sufficiency claims are substantively true."
+    requiredFor:
+      - "Selecting important objectives and deciding what not to do"
+      - "Judging necessity, parallel assumptions, and whether a branch is actually sufficient"
+      - "Revising the tree when circumstances or learning change"
+  provenance:
+    sourceType: article
+    sourceArticlePath: "_posts/2023-10-27-on-s-and-t-trees.md"
+    durableSkills:
+      - "problem-statement"
+      - "review"
+    skillsRepository: "https://github.com/open-horizon-labs/skills"
+    install:
+      mode: optional-manual
+      command: "npx skills add open-horizon-labs/skills -g -a claude-code -y"
+      automatic: false
+      note: "Optional provenance for people who want the durable skills locally; the read-only checker never installs or executes a strategy."
+
+- id: open-horizons
+  version: "1.0.0"
+  title: "Open Horizons: Aim. Do. Reflect."
+  summary: "A flexible, principle-driven growth framework using long-horizon aims, small rituals, and nested feedback loops to sustain momentum."
+  articleUrl: "https://muness.com/posts/open-horizons/"
+  whenToUse:
+    - "You need to clarify a motivating direction and connect daily work to it."
+    - "Growth work has become a checklist or short-term plan rather than a durable feedback loop."
+    - "You want to adapt rituals while preserving the signal they provide at the same scale."
+  notFor:
+    - "A rigid productivity prescription or a replacement for understanding a person's context and constraints."
+    - "Setting short-term goals that are disconnected from mission, strengths, evidence, or energy."
+  workflow:
+    - id: anchor
+      name: "Anchor in reality"
+      instruction: "Reflect on three proud achievements and the impact they created."
+    - id: strengths
+      name: "Recognize strengths"
+      instruction: "Identify strengths that energize and empower you, using feedback and assessments as inputs rather than verdicts."
+    - id: mission
+      name: "Affirm the mission"
+      instruction: "Write a motivating purpose and guiding principles that can filter decisions."
+    - id: aims
+      name: "Aim and set priorities"
+      instruction: "Choose no more than three difficult, important, viable, long-horizon growth areas aligned with the mission."
+    - id: weekly-review
+      name: "Review weekly"
+      instruction: "Translate priorities into three to five important, viable, realistic tasks and adjust based on learning."
+    - id: daily-focus
+      name: "Focus daily"
+      instruction: "Connect the day's work to long-term aims and strengths, then reflect and capture learning."
+  contract:
+    inputs:
+      - "Evidence of real achievements and impact"
+      - "Strengths, admired accomplishments, mission, and a small number of long-horizon aims"
+      - "Feedback at daily, weekly, and quarterly scales"
+    outputs:
+      - "A motivating direction with a focused set of priorities"
+      - "Nested rituals that preserve feedback, momentum, and adaptation"
+    checks:
+      - "Aims are difficult, important, viable, few, and likely to span years rather than months."
+      - "If a ritual is removed or changed, another practice preserves its signal at the same scale and frequency."
+      - "Plans guide action but do not become rigid constraints when learning changes the path."
+  humanJudgment:
+    boundary: "The rituals surface evidence, energy, strengths, and learning; each person decides what is worth years of their life and how to adapt the framework without losing its feedback signal."
+    requiredFor:
+      - "Choosing what is genuinely motivating and aligned with the person's mission"
+      - "Interpreting achievements, feedback, and strengths in context"
+      - "Deciding which rituals to keep, adapt, substitute, or stop"
+  provenance:
+    sourceType: article
+    sourceArticlePath: "_posts/2025-09-08-open-horizons.md"
+    durableSkills:
+      - "aim"
+      - "review"
+      - "distill"
+    skillsRepository: "https://github.com/open-horizon-labs/skills"
+    install:
+      mode: optional-manual
+      command: "npx skills add open-horizon-labs/skills -g -a claude-code -y"
+      automatic: false
+      note: "Optional provenance for people who want the durable skills locally; the WebMCP practice contract never installs anything."

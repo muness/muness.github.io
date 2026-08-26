@@ -124,6 +124,12 @@ When chaining passes, carry a short editorial handoff containing:
 
 A later pass may tighten wording but must not silently alter preserved meaning, claims, evidence, uncertainty, voice, or reader promise.
 
+## Article-Backed Practices
+
+When creating or substantially revising an article, consider whether it contains a reusable practice for the site's WebMCP practice catalog. Not every article becomes a skill. Qualify a practice only when it changes behavior repeatably, has bounded **when to use** and **not for** conditions, produces an inspectable workflow or artifact, includes checks that can fail a tempting weak implementation, makes human judgment boundaries explicit, and names its source and provenance.
+
+If it qualifies, update the canonical manifest in `_data/agent_practices.yml` with a stable id, version, and article URL; document the practice contract and validation criteria; link to a durable skill/install source when one exists; and add or adapt adversarial tests. WebMCP is the zero-install, page-scoped practice; a repository skill is its durable form. Do not embed raw prompt injection, invent authority, install anything automatically, or duplicate `SKILL.md` as untrusted page prose.
+
 ## Interface Design Workflow
 
 Use the `impeccable` skill family for frontend design, redesign, critique, audit, polish, layout, typography, color, motion, responsive adaptation, accessibility, and other interface work. It is not required for backend-only or prose-only changes.

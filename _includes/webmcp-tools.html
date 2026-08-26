@@ -223,3 +223,17 @@
     }
   })();
 </script>
+
+<script type="module">
+  import { createPracticeTools } from "{{ '/assets/js/webmcp-practices.mjs' | relative_url }}";
+
+  const practiceModelContext = document.modelContext;
+  if (typeof practiceModelContext?.registerTool === "function") {
+    const practiceTools = createPracticeTools({{ site.data.agent_practices | jsonify }});
+    for (const tool of practiceTools) {
+      practiceModelContext.registerTool(tool).catch((error) => {
+        console.warn(`[webmcp] Unable to register ${tool.name}.`, error);
+      });
+    }
+  }
+</script>
