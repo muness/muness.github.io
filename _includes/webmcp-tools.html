@@ -1,0 +1,225 @@
+<script>
+  (() => {
+    "use strict";
+
+    const preferenceKey = "muness-reading-preferences";
+    const fontScales = {
+      small: 0.9,
+      default: 1,
+      large: 1.15,
+      "extra-large": 1.3
+    };
+
+    const posts = [
+      {% for post in site.posts %}
+      {
+        title: {{ post.title | jsonify }},
+        url: {{ post.url | absolute_url | jsonify }},
+        publishedAt: {{ post.date | date_to_xmlschema | jsonify }},
+        summary: {{ post.excerpt | strip_html | normalize_whitespace | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    const contact = {
+      name: "Muness Castle",
+      email: "muness@217castle.com",
+      location: "Columbus, Ohio",
+      contactUrl: {{ '/contact/' | absolute_url | jsonify }},
+      bookingUrl: "https://cal.com/muness/c",
+      resumeUrl: {{ '/resume/' | absolute_url | jsonify }},
+      resumePdfUrl: {{ '/assets/muness-resume.pdf' | absolute_url | jsonify }},
+      links: {
+        github: "https://github.com/muness",
+        linkedin: "https://linkedin.com/in/muness"
+      }
+    };
+
+    const publicWork = [
+      {
+        name: "Repo-Native Alignment",
+        url: "https://github.com/open-horizon-labs/repo-native-alignment",
+        description: "Semantic code search, repository maps, and impact analysis that help agents recover what a change touches and why before editing."
+      },
+      {
+        name: "Sketch-CE",
+        url: "https://github.com/open-horizon-labs/counterexample-supplemented-sketches",
+        paperUrl: "https://arxiv.org/abs/2607.15854",
+        description: "A method for turning accepted counterexamples into checks for coding agents while keeping rule changes subject to human approval."
+      },
+      {
+        name: "Unified Hi-Fi Control",
+        url: "https://github.com/open-horizon-labs/unified-hifi-control",
+        description: "A physical control that connects four audio systems to the web, Apple clients, and MCP."
+      }
+    ];
+
+    function currentPreferences() {
+      try {
+        return JSON.parse(localStorage.getItem(preferenceKey)) || {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function applyPreferences(preferences) {
+      const fontScale = fontScales[preferences.textSize] || fontScales.default;
+      document.documentElement.style.setProperty("--consult-reader-scale", fontScale);
+      document.documentElement.style.setProperty(
+        "--consult-scroll-behavior",
+        preferences.reduceMotion ? "auto" : "smooth"
+      );
+    }
+
+    function savePreferences(preferences) {
+      localStorage.setItem(preferenceKey, JSON.stringify(preferences));
+      applyPreferences(preferences);
+      return preferences;
+    }
+
+    applyPreferences(currentPreferences());
+
+    function requireObject(value, toolName) {
+      if (!value || typeof value !== "object" || Array.isArray(value)) {
+        throw new TypeError(`${toolName} expects an object of named arguments.`);
+      }
+    }
+
+    function requireOnly(value, allowed, toolName) {
+      for (const key of Object.keys(value)) {
+        if (!allowed.includes(key)) {
+          throw new TypeError(`${toolName} does not accept '${key}'.`);
+        }
+      }
+    }
+
+    const tools = [
+      {
+        name: "search_writing",
+        description: "Search Muness Castle's published writing by title and summary. Returns recent matching posts with canonical URLs.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            query: { type: "string", description: "Words or a phrase to look for. Omit to list the most recent posts." },
+            limit: { type: "integer", minimum: 1, maximum: 20, description: "Maximum number of posts to return; defaults to 8." }
+          },
+          additionalProperties: false
+        },
+        annotations: { readOnlyHint: true },
+        execute(args = {}) {
+          requireObject(args, "search_writing");
+          requireOnly(args, ["query", "limit"], "search_writing");
+          if (args.query !== undefined && (typeof args.query !== "string" || !args.query.trim())) {
+            throw new TypeError("search_writing query must be a non-empty string when provided.");
+          }
+          if (args.limit !== undefined && (!Number.isInteger(args.limit) || args.limit < 1 || args.limit > 20)) {
+            throw new RangeError("search_writing limit must be an integer from 1 through 20.");
+          }
+
+          const query = args.query ? args.query.trim().toLowerCase() : "";
+          const matches = query
+            ? posts.filter((post) => `${post.title} ${post.summary}`.toLowerCase().includes(query))
+            : posts;
+          const limit = args.limit || 8;
+          return {
+            query: args.query || null,
+            totalMatches: matches.length,
+            returned: Math.min(matches.length, limit),
+            posts: matches.slice(0, limit)
+          };
+        }
+      },
+      {
+        name: "get_contact_card",
+        description: "Get Muness Castle's current contact details, scheduling link, résumé, and professional profiles.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: true },
+        execute(args = {}) {
+          requireObject(args, "get_contact_card");
+          requireOnly(args, [], "get_contact_card");
+          return contact;
+        }
+      },
+      {
+        name: "get_consulting_overview",
+        description: "Explain who Muness works with, the kind of consequential workflow he helps change, the approach, and how to start a conversation.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: true },
+        execute(args = {}) {
+          requireObject(args, "get_consulting_overview");
+          requireOnly(args, [], "get_consulting_overview");
+          return {
+            workUrl: {{ '/work/' | absolute_url | jsonify }},
+            contactUrl: contact.contactUrl,
+            whoItsFor: "Leaders and teams with a consequential workflow that is slow, inconsistent, expensive, or trapped in a few people's heads.",
+            approach: "Start with a real case the team understands; trace the workflow, decisions, rules, and evidence; build enough to test the change with the people who do the work; leave them able to inspect and change the result.",
+            firstConversation: "Bring what should have happened, who does the work today, where the current way breaks down, and what has already been tried.",
+            notAGoodFit: "Work without someone who knows the job, without a concrete case to examine, or where the solution is already fixed and only implementation is wanted."
+          };
+        }
+      },
+      {
+        name: "list_public_work",
+        description: "List Muness Castle's public software and research projects, including URLs and concise descriptions.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: true },
+        execute(args = {}) {
+          requireObject(args, "list_public_work");
+          requireOnly(args, [], "list_public_work");
+          return { count: publicWork.length, projects: publicWork };
+        }
+      },
+      {
+        name: "set_reading_preferences",
+        description: "Adjust this reader's text size or reduce motion on this site. Preferences persist in this browser and can be undone with reset_reading_preferences.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            textSize: { type: "string", enum: ["small", "default", "large", "extra-large"], description: "Optional text size." },
+            reduceMotion: { type: "boolean", description: "Optional preference to turn off smooth scrolling and other site motion." }
+          },
+          additionalProperties: false
+        },
+        annotations: { readOnlyHint: false },
+        execute(args = {}) {
+          requireObject(args, "set_reading_preferences");
+          requireOnly(args, ["textSize", "reduceMotion"], "set_reading_preferences");
+          if (args.textSize !== undefined && !Object.hasOwn(fontScales, args.textSize)) {
+            throw new RangeError("set_reading_preferences textSize must be small, default, large, or extra-large.");
+          }
+          if (args.reduceMotion !== undefined && typeof args.reduceMotion !== "boolean") {
+            throw new TypeError("set_reading_preferences reduceMotion must be true or false.");
+          }
+          if (args.textSize === undefined && args.reduceMotion === undefined) {
+            throw new TypeError("set_reading_preferences needs textSize, reduceMotion, or both.");
+          }
+          const preferences = { ...currentPreferences(), ...args };
+          savePreferences(preferences);
+          return { preferences, message: "Reading preferences were updated for this browser." };
+        }
+      },
+      {
+        name: "reset_reading_preferences",
+        description: "Restore this site's default text size and motion behavior, undoing earlier set_reading_preferences calls.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: false },
+        execute(args = {}) {
+          requireObject(args, "reset_reading_preferences");
+          requireOnly(args, [], "reset_reading_preferences");
+          localStorage.removeItem(preferenceKey);
+          applyPreferences({});
+          return { preferences: { textSize: "default", reduceMotion: false }, message: "Reading preferences were restored to the site defaults." };
+        }
+      }
+    ];
+
+    const modelContext = document.modelContext;
+    if (typeof modelContext?.registerTool !== "function") return;
+
+    for (const tool of tools) {
+      modelContext.registerTool(tool).catch((error) => {
+        console.warn(`[webmcp] Unable to register ${tool.name}.`, error);
+      });
+    }
+  })();
+</script>
