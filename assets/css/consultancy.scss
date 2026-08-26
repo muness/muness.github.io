@@ -20,10 +20,13 @@
   --consult-section: clamp(1.4rem, 1.8vw, 1.9rem);
   --consult-subhead: clamp(1.1rem, 1.25vw, 1.25rem);
   --consult-intro: clamp(1rem, 1.25vw, 1.1rem);
+  --consult-reader-scale: 1;
+  --consult-scroll-behavior: smooth;
 }
 
 html {
-  scroll-behavior: smooth;
+  font-size: calc(16px * var(--consult-reader-scale));
+  scroll-behavior: var(--consult-scroll-behavior);
 }
 
 .consultancy-shell {
