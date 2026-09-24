@@ -35,6 +35,8 @@ Linux jobs have CPU and memory limits. On the M4 Max MacBook Pro, a Tart macOS g
 
 The two Linux builders use one `sccache` bucket on the QNAP's MinIO server. A compile cached on the NUC can be reused on the 9950X, and vice versa. I checked both directions with fresh runner containers: each first compile missed, and the same compile on the other host hit.
 
+We had documented a shared NFS directory as safe because `sccache` writes cache files atomically. That missed its index: [the local disk backend supports only one server](https://github.com/mozilla/sccache/blob/main/docs/Local.md), and two builders writing it can race. We changed the runners to use [sccache's S3 backend](https://github.com/mozilla/sccache/blob/main/docs/S3.md) against MinIO, then tested the cross-host hits. Seeing the same files on both machines was not enough to make the cache safe.
+
 I originally kept an ARM64 Linux guest for another build target. Cross-compiling that workload with `cargo-zigbuild` on the 9950X was faster, so I retired the guest. I kept the Mac for Xcode, signing, and native macOS tests.
 
 ## SSH and credentials
@@ -48,6 +50,10 @@ The tokens can read the whole Fleet vault. I use that access for my personal age
 ## Qwen, Jev, and computer use
 
 The local Qwen 27B uses EXL3 weights quantized to 3.5 bits per weight and runs on the 3090 Ti's 24 GB of VRAM. I had to disable app integrations because their tool descriptions took up too much of the prompt.
+
+The stock Codex workspace now shows Qwen alongside the hosted models. A loopback router sends Qwen requests to its local gateway and leaves hosted requests with OpenAI; it keeps the credentials separate. Ordinary turns worked, but a Qwen task failed at compaction: Codex expected a `compaction` item, and ordinary Qwen inference did not produce one. Switching the task to OpenAI failed too, because Qwen's history contained reasoning-item IDs OpenAI had never stored.
+
+[PR #58](https://github.com/open-horizon-labs/homelab-infra/pull/58) makes the router produce the required compaction item, carry a protected summary across model switches, and omit Qwen-only reasoning IDs when replaying history to OpenAI. Switching back to Qwen after OpenAI compaction requires one more OpenAI call to turn its opaque checkpoint into text. A live Codex test went Qwen → compaction → OpenAI → compaction → Qwen while retaining a sentinel, a changed file, and test status. The original failed task has not been resumed.
 
 Cua Driver runs on the computer being controlled. It reads browser state through the debugger or native controls through accessibility. The agent assigns IDs to candidate actions and keeps their click or typing arguments tied to that observation. For example, a Save button gets an ID whose stored arguments refer to that button in the current page. The selector returns the ID; Driver uses the stored arguments to act.
 
@@ -94,6 +100,12 @@ The broker's Docker placement policy passes the MinIO bucket, endpoint, and cach
 The Mac advertises one `macos-arm64` slot. Labels for iOS, watchOS, and the other Apple targets map to that same slot; they do not create more Macs. A controller guest on the NUC runs the provider agent, while the persistent Tart guest on the Mac runs the actual job. The guest keeps Xcode and caches between registrations.
 
 The QNAP broker polls GitHub for queued jobs because it has no public webhook endpoint. It records pending jobs and host leases in a JSON state file. For each job it gets a short-lived repository registration token, asks the selected provider to start a runner, and waits for that runner to appear online. Completion and cancellation release the lease and remove the allocation. After a broker restart, reconciliation checks existing leases before taking more work; a periodic reaper retries cleanup. A drained host receives no new job, and pending jobs wait for capacity.
+
+### Switching Codex models
+
+On the stock Codex workspace, `openai_base_url` points to a router on `127.0.0.1:8082`. A saved model catalog lists the hosted models and local Qwen together. The router sends Qwen requests to the authenticated LiteLLM Responses gateway on port 8081 and hosted requests to OpenAI, without passing ChatGPT credentials to Qwen. The catalog is a snapshot; it needs refreshing when the hosted model list changes.
+
+Codex requests remote compaction by adding `compaction_trigger` to a Responses request. The router asks Qwen for a summary, rejects an empty or incomplete answer, and returns the single `compaction` item Codex expects. It encrypts and authenticates that summary for later replay. A handoff to OpenAI keeps messages and tool-call IDs but removes Qwen reasoning-item IDs that were never stored there. A handoff back to Qwen after native OpenAI compaction asks OpenAI to expand its opaque checkpoint into text first. This works for Codex's full-history HTTP replay; summaries can still lose detail, and rotating the checkpoint key needs migration.
 
 ### A computer-use decision
 
