@@ -10,7 +10,7 @@ permalink: /posts/computer-use-cua-jev-qwen/
 
 I split computer use into observation and choice. Cua Driver reads and acts on the actual Mac; a selector chooses from actions tied to that observation. Jev is the fast first choice when text about the screen is enough. Qwen is the local escalation path when Jev is unsure or cannot return a valid choice, and it can inspect screenshots when the page structure is not enough. That division lets me try a quick hosted decision without sending screenshots, while retaining a vision-capable model on my own GPU for harder cases. It is a design choice, not a measured end-to-end win: the combined booking cascade still needs a benchmark.
 
-I chose Cua Driver because I need one controller that can observe and operate both browser pages and native apps on the Mac. For browser work it reads the page through the browser debugger; for native apps it reads accessibility controls. That gives the selector current UI state to work from instead of making it guess coordinates from an old screenshot. The driver also executes only the candidate action that the controller bound to that observation.
+I chose Cua Driver because I need one controller for browser pages and native Mac apps, and I want the selector to choose from current UI state instead of guess at stale coordinates.
 
 Cua Driver runs on the Mac being controlled. For browser work it reads the page through the browser debugger; for native apps it reads accessibility controls. The controller builds candidate actions from that snapshot, assigns each a short ID, and keeps the actual click or typing arguments locally. It sends the selector descriptions and IDs, not executable arguments. For example:
 
