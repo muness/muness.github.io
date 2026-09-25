@@ -15,7 +15,7 @@ A Linux VM gives Codex a long-lived workspace, while separate ephemeral runners 
 
 This works for my own trusted workloads. It is not a highly available service, and I have not finished testing a fresh-device recovery. The 3090 Ti serves a useful local model, but I still use hosted models for the heavy work. These machines make my tools available where I want them; they do not replace hosted frontier models.
 
-I’m writing one companion post on computer use: [**Computer use with Cua Driver, Jev, and Qwen**](/posts/computer-use-cua-jev-qwen/). It covers how I bind model choices to fresh UI observations and what the speed and accuracy measurements do—and do not—show.
+I’m writing two companion posts. [**Computer use with Cua Driver, Jev, and Qwen**](/posts/computer-use-cua-jev-qwen/) explains the observation, selection, and verification loop. [**One Qwen 27B for Chat and SystemOne**](/posts/qwen-27b-chat-and-systemone/) explains how the local model serves both chat and direct UI selection, and what the speed and accuracy measurements do—and do not—show.
 
 I bought the 9950X system with a 3090 Ti and 64 GB of RAM. Later I added 64 GB of used RAM for about $700. The QNAP, Roon NUC, 3060 Ti, and M4 Max MacBook Pro were already mine. The additional RAM helps guests and build processes; it does not add GPU memory. A Linux workspace can use hosted inference without a local GPU.
 
