@@ -15,13 +15,7 @@ A Linux VM gives Codex a long-lived workspace, while separate ephemeral runners 
 
 This works for my own trusted workloads. It is not a highly available service, and I have not finished testing a fresh-device recovery. The 3090 Ti serves a useful local model, but I still use hosted models for the heavy work. These machines make my tools available where I want them; they do not replace hosted frontier models.
 
-I split the implementation details into these companion drafts for a Homelab Adventure series:
-
-- [**A persistent Coder workspace for Codex**](/posts/coder-workspace-for-codex/) — keeping source, agent state, and build output in the right places, including a cloud-init mistake that could have replaced the VM.
-- [**GitHub Actions across a homelab fleet**](/posts/github-actions-across-the-homelab/) — brokering Linux and Mac jobs, and sharing a compiler cache safely across builders.
-- [**Keyless agent access with Tailscale and 1Password Connect**](/posts/tailnet-and-1password-for-agent-fleet/) — how workspace accounts reach the services and credentials they need.
-- [**Qwen in Codex: compaction and model handoff**](/posts/qwen-in-codex-compaction-and-handoff/) — making a local model survive context compaction and switches to hosted inference.
-- [**Computer use with Cua Driver, Jev, and Qwen**](/posts/computer-use-cua-jev-qwen/) — binding model choices to fresh UI observations and measuring a fast local selection path.
+I’m writing one companion post on computer use: [**Computer use with Cua Driver, Jev, and Qwen**](/posts/computer-use-cua-jev-qwen/). It covers how I bind model choices to fresh UI observations and what the speed and accuracy measurements do—and do not—show.
 
 I bought the 9950X system with a 3090 Ti and 64 GB of RAM. Later I added 64 GB of used RAM for about $700. The QNAP, Roon NUC, 3060 Ti, and M4 Max MacBook Pro were already mine. The additional RAM helps guests and build processes; it does not add GPU memory. A Linux workspace can use hosted inference without a local GPU.
 
