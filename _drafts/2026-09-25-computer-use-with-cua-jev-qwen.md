@@ -8,7 +8,9 @@ excerpt: "A bounded selector chooses among actions tied to a fresh browser or na
 permalink: /posts/computer-use-cua-jev-qwen/
 ---
 
-For computer use, a model should choose among actions grounded in what the computer-use driver just observed. It should not invent coordinates from an old screenshot and hope the page has not changed.
+I split computer use into observation and choice. Cua Driver reads and acts on the actual Mac; a selector chooses from actions tied to that observation. Jev is the fast first choice when text about the screen is enough. Qwen is the local escalation path when Jev is unsure or cannot return a valid choice, and it can inspect screenshots when the page structure is not enough. That division lets me try a quick hosted decision without sending screenshots, while retaining a vision-capable model on my own GPU for harder cases. It is a design choice, not a measured end-to-end win: the combined booking cascade still needs a benchmark.
+
+I chose Cua Driver because I need one controller that can observe and operate both browser pages and native apps on the Mac. For browser work it reads the page through the browser debugger; for native apps it reads accessibility controls. That gives the selector current UI state to work from instead of making it guess coordinates from an old screenshot. The driver also executes only the candidate action that the controller bound to that observation.
 
 Cua Driver runs on the Mac being controlled. For browser work it reads the page through the browser debugger; for native apps it reads accessibility controls. The controller builds candidate actions from that snapshot, assigns each a short ID, and keeps the actual click or typing arguments locally. It sends the selector descriptions and IDs, not executable arguments. For example:
 
@@ -18,11 +20,13 @@ Cua Driver runs on the Mac being controlled. For browser work it reads the page 
 
 If the selector returns `save`, the controller checks that `save` still maps to the current snapshot and then calls Driver with the stored arguments. It observes the page again and sends feedback to the same selector process. One selector process lives for the whole task; that lets it retain the cascade state instead of restarting provider selection at each click.
 
-The `select-fleet --fast jev` wrapper asks hosted Jev first. If Jev reports low confidence or returns invalid output, it escalates to local Qwen through its chat endpoint. A `verified_progress` result can allow another Jev attempt after a fresh observation changes the candidate set. `no_progress` or `uncertain` keeps the task on Qwen. `reobserve` and `abstain` are explicit safe choices. The controller must still verify that the UI changed as intended before reporting success.
+The `select-fleet --fast jev` wrapper asks hosted Jev first. Jev's role is the fast, text-only first pass; it gets descriptions of the current screen and candidate actions, not the screenshot or executable click arguments. If Jev reports low confidence or returns invalid output, the selector escalates to local Qwen through its chat endpoint. Qwen is the fallback because this 27B vision model is already running on the 3090 Ti for local chat, so it can reason over text or inspect the screenshot without keeping a separate 9B decider running on the 3060 Ti. The cost is latency and contention with chat on the 3090 Ti.
+
+A `verified_progress` result can allow another Jev attempt after a fresh observation changes the candidate set. `no_progress` or `uncertain` keeps the task on Qwen. `reobserve` and `abstain` are explicit safe choices. The controller must still verify that the UI changed as intended before reporting success.
 
 Jev receives text observations through a hosted service, so I send it only observations I intend to share. Qwen runs on the local 3090 Ti and can receive screenshots through the model's vision encoder. Credentials are fetched at runtime on the Mac using the fleet's authorized access path; they are not embedded in the candidate data.
 
-I also added a direct local selection endpoint. The inference server's `/v1/choices` scores candidate labels at one output position with reasoning and draft generation disabled. A small FastAPI adapter exposes it as `/v1/systemone`. Chat and selection use the same loaded Qwen model and GPU; they take turns. This route accepts screenshots as well as text, because it uses the same vision-enabled model.
+I also added a direct local selection endpoint for cases where I want to avoid the cascade and measure Qwen itself as a decider. The inference server's `/v1/choices` scores candidate labels at one output position with reasoning and draft generation disabled. A small FastAPI adapter exposes it as `/v1/systemone`. Chat and selection use the same loaded Qwen model and GPU; they take turns. This route accepts screenshots as well as text, because it uses the same vision-enabled model.
 
 In 35 recorded, text-only booking decisions with the model already loaded, direct scoring got 27 right at a median 615 ms per request. Generating reasoning got 34 right at 2,583 ms. Those times cover the model requests, not browser actions. Direct scoring is quicker but gave fewer correct choices in that sample, so I use it selectively and rely on post-action verification.
 
