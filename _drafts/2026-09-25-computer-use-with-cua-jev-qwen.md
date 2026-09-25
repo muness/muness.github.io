@@ -28,7 +28,13 @@ There is a reason to pay the Qwen latency when the fast choice is weak: on the s
 
 Jev receives text observations through a hosted service, so I send it only observations I intend to share. Qwen runs on the local 3090 Ti and can receive screenshots through the model's vision encoder. Credentials are fetched at runtime on the Mac using the fleet's authorized access path; they are not embedded in the candidate data.
 
-I also added a direct local selection endpoint for cases where I want to avoid the cascade and measure Qwen itself as a decider. The inference server's `/v1/choices` scores candidate labels at one output position with reasoning and draft generation disabled. A small FastAPI adapter exposes it as `/v1/systemone`. Chat and selection use the same loaded Qwen model and GPU; they take turns. This route accepts screenshots as well as text, because it uses the same vision-enabled model.
+### SystemOne reuses the chat model
+
+I wanted a direct local path as well as the Jev→Qwen cascade. `/v1/systemone` is a small FastAPI facade: it accepts a goal, an observation, candidate IDs and descriptions, and optionally one inline screenshot. It validates the request and forwards it to `/v1/choices` on the local inference service. The live health response identifies the model as `qwen3.8-27b-exl3-mtp` and reports vision support.
+
+`/v1/choices` does not load another model. It uses the already-loaded 27B Qwen that serves chat on the same GPU, with the same model weights, cache, and generation lock. Chat keeps its normal reasoning behavior. For selection, the endpoint maps each candidate to a distinct one-token label, builds a prompt with the goal and current state, and scores the next-token logits for those labels. It returns the best candidate ID; it does not generate a reasoning trace or run the speculative draft path. When a screenshot is supplied, the Qwen vision encoder processes it before the same candidate-scoring step. This avoids the separate 9B decider and its VRAM allocation on the 3060 Ti.
+
+There is still work on every call: the service must prefill the prompt, and screenshots need image encoding. Chat and selection share the GPU lock, so a long selection or image request delays chat rather than running alongside it. The model returns candidate-normalized scores, not calibrated confidence. `/v1/systemone` labels confidence as unavailable and requires the controller to bind the selected ID to the current snapshot and verify the action.
 
 In 35 recorded, text-only booking decisions with the model already loaded, direct scoring got 27 right at a median 615 ms per request. Generating reasoning got 34 right at 2,583 ms. Those times cover the model requests, not browser actions. Direct scoring is quicker but gave fewer correct choices in that sample, so I use it selectively and rely on post-action verification.
 
